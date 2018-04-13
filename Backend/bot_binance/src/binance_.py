@@ -238,24 +238,22 @@ class Binance_opr(ApiData):
             bot_config {[dict]} -- bot setup from database
             data_decision {[dict]} -- transactions detals
         """
-        check = routines.Routines()
-        if not (check.orderSellStatus(bot_config, data_decision)):
-            print ('entrou na funcao de venda')
-            db = botconfig.Db()
-            if not (bot_config['active']):
-                print('inserindo os dados de venda no bd')  
+        print ('entrou na funcao de venda')
+        db = botconfig.Db()
+        if not (bot_config['active']):
+            print('inserindo os dados de venda no bd')  
+            db.commitSellOrder(data)
+        else:
+            self.loginAPI(bot_config)
+            status = client.get_system_status()
+            if(bot_config['active'] and status['msg'] == 'normal'):
+                print('Pronto pra criar ordem de venda')
+                try:
+                    order = client.create_order(symbol=bot_config['currency'],side=SIDE_SELL,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_GTC, quantity=data_decision['quantity'], price=data_decision['price_now'])
+                except:
+                    print('erro criando a ordem de venda')
+                    return
+
+                data['sell_uuid'] = order['orderId']
                 db.commitSellOrder(data)
-            else:
-                self.loginAPI(bot_config)
-                status = client.get_system_status()
-                if(bot_config['active'] and status['msg'] == 'normal'):
-                    print('Pronto pra criar ordem de venda')
-                    try:
-                        order = client.create_order(symbol=bot_config['currency'],side=SIDE_SELL,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_GTC, quantity=data_decision['quantity'], price=data_decision['price_now'])
-                    except:
-                        print('erro criando a ordem de venda')
-                        return
-    
-                    data['sell_uuid'] = order['orderId']
-                    db.commitSellOrder(data)
         return

@@ -99,8 +99,8 @@ class Functions():
         bn = binance_.Binance_opr()
         for i in range(0, 3):
             if(bot_config['strategy_buy'] == i):
-                #if(self.mapStrategy(bot_config)[i] == 'buy'):
-                bn.createBuyOrder(data, bot_config, data_decision)
+                if(self.mapStrategy(bot_config)[i] == 'buy'):
+                    bn.createBuyOrder(data, bot_config, data_decision)
 
     def sellOrder(self, bot_config):
         bn = binance_.Binance_opr()
@@ -116,6 +116,7 @@ class Functions():
             fixProfit = self.getFixProfit(bot_config, data_decision)
             data = self.getSellData(bot_config, data_decision)
             if(data_decision['price_now'] <= stoploss):
+                print ('venda stop loss alvo ' + str(stoploss))
                 bn.createSellOrder(data, bot_config, data_decision)
                 return
             self.selectSellStrategy(data, bot_config, data_decision, fixProfit)
@@ -124,13 +125,13 @@ class Functions():
     def orderSellStatus(self, bot_config, data_decision):
         if(not data_decision['open_orders'] and not bot_config['active']):
             return 1 
-        elif(not bot_config['active'] and data_decision['open_orders']): ##NAO VENDER EM QUANTO ORDEM DE COMPRA ABERTA
+        elif(not bot_config['active'] and not data_decision['open_orders']): ##NAO VENDER EM QUANTO ORDEM DE COMPRA ABERTA
             return 1
         elif not (data_decision['trans']):
             return 1
-        elif(bot_config['active'] and data_decision['open_orders']): ##NAO VENDER EM QUANTO ORDEM DE COMPRA ABERTA
+        elif(bot_config['active'] and not data_decision['open_orders']): ##NAO VENDER EM QUANTO ORDEM DE COMPRA ABERTA
             return 1
-        elif(bot_config['active'] and data_decision['trans']):
+        elif(bot_config['active'] and not data_decision['trans']):
             if not (self.checkLastOrders(bot_config, data_decision, data_decision['buy_uuid'])): 
                 return 1      
         return 0
@@ -152,6 +153,8 @@ class Functions():
     #seleciona a estrategia
     def selectSellStrategy(self, data, bot_config, data_decision, fixProfit): 
         bn = binance_.Binance_opr()
+
+        print('alvo de venda ' + str(fixProfit))
 
         if(bot_config['strategy_sell'] and data_decision['price_now'] >= fixProfit):
             bn.createSellOrder(data, bot_config, data_decision)   
@@ -184,8 +187,10 @@ class Functions():
 class Routines(Functions):
     def startBuyRoutine(self, bot_config):
         print('1- Iniciando rotina de compra')
+        print(bot_config['id']) 
         super().buyOrder(bot_config)
     def startSellRoutine(self, bot_config):
-        print('1- Iniciando rotina de venda') 
+        print('1- Iniciando rotina de venda bot n ')
+        print(bot_config['id'])  
         super().sellOrder(bot_config)
 

@@ -9,7 +9,7 @@ import time
 
 def main():
     db = botconfig.Db()
-    bot_id = 100 #sys.argv[1]
+    bot_id = sys.argv[1]
     global bot_config
     bot_config = db.getConfigBot(bot_id)
     print ("Started")
