@@ -164,7 +164,7 @@ class Functions():
     def mapStrategy(self, bot_config): 
         """map the strategies
         
-        Arguments:
+        Arguments:s
             bot_config {[dict]} -- bot setup
         
         Returns:
