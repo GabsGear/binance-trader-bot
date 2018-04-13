@@ -62,22 +62,25 @@ def getOrder(uuid, user_id):
 	bittrex = bittrex_lib.Bittrex(acc_config['api_key'], acc_config['api_secret'], api_version='v2.0')
 	return bittrex.get_order(uuid)
 
-def getBalance(user_id):
+def getBalance(user_id, bot_config):
 	acc_config = db.getConfigAcc(user_id)
 	bittrex = bittrex_lib.Bittrex(acc_config['api_key'], acc_config['api_secret'], api_version='v2.0')
-	return bittrex.get_balance('BTC')
+	v = bot_config['currency'].split('-')
+	if(v[0] == 'USDT'):
+		return bittrex.get_balance('USDT')['result']['Available']
+	return bittrex.get_balance('BTC')['result']['Available']
 
 def buyLimit(data, bot_config, price_now):
 	#print data
 	if(bot_config['active'] == 0):
 		db.insertBuyOrder(data)
 	if(bot_config['active'] == 1 and checkConnApi(bot_config= bot_config) == True):
+		print "tentei compra"
 		acc_config = db.getConfigAcc(bot_config['user_id'])
-		ammount = float(getBalance(user_id= bot_config['user_id'])['result']['Available'])*bot_config['order_value']/float(price_now)
-		bittrex = bittrex_lib.Bittrex(acc_config['api_key'], acc_config['api_secret'], api_version='v2.0')
-		#orderBuy = bittrex_v1.buy_limit(market=bot_config['currency'], quantity=ammount, rate=price_now)
-		orderBuy = bittrex.trade_buy(market=bot_config['currency'], order_type='LIMIT', quantity=ammount, rate=price_now, time_in_effect='FILL_OR_KILL',
-                   condition_type='NONE', target=0.0)
+		acc_balance = getBalance(user_id= bot_config['user_id'], bot_config= bot_config)
+		ammount = float(acc_balance)*float(bot_config['order_value'])/float(price_now)
+		bittrex = bittrex_lib.Bittrex(acc_config['api_key'], acc_config['api_secret'], api_version='v1.1')
+		orderBuy = bittrex.buy_limit(market=bot_config['currency'], quantity=ammount, rate=0.00000040)
 		print orderBuy
 		if(orderBuy == None):
 			print "sou novo"
@@ -93,11 +96,11 @@ def sellLimit(data, bot_config, price_now, trans):
 	#print data
 	if(bot_config['active'] == 0):
 		db.commitSellOrder(data)
-	if(bot_config['active'] == 1 and checkConnApi(bot_config= bot_config) == True):
+	if(bot_config['active'] == 1 and checkConnApi(bot_config= bot_config) == True and trans['selled'] == 0):
+		print("to tentando vender")
 		acc_config = db.getConfigAcc(bot_config['user_id'])
-		bittrex = bittrex_lib.Bittrex(acc_config['api_key'], acc_config['api_secret'], api_version='v2.0')
-		orderSell = bittrex.trade_sell(market=bot_config['currency'], order_type='LIMIT', quantity=trans['quantity'], rate=price_now, time_in_effect='FILL_OR_KILL',
-                   condition_type='NONE', target=0.0)
+		bittrex = bittrex_lib.Bittrex(acc_config['api_key'], acc_config['api_secret'], api_version='v1.1')
+		orderSell = bittrex.sell_limit(market=bot_config['currency'], quantity=trans['quantity'], rate=price_now)
 		print orderSell
 		if(orderSell == None):
 			print "sou novo"

@@ -26,31 +26,21 @@ def main():
 	db.setPID(bot_id)
 
 	while(True):
+		t.sleep(10)
 		routine(bot_id)
 
 def routine(bot_id):
 	bot_config = db.getConfigBot(bot_id)
-	buyOrder(bot_config) ##VERIFICANDO ESTRATEGIA DE COMPRA
-	sellOrder(bot_config) ##VERIFICANDO ESTRATEGIA DE VENDA
+	tryBuy(bot_config) ##VERIFICANDO ESTRATEGIA DE COMPRA
+	trySell(bot_config) ##VERIFICANDO ESTRATEGIA DE VENDA
 
-def buyOrder(bot_config):
+def tryBuy(bot_config):
 	##CARREGANDO DADOS DE DECISAO
 	data_decision = strategy.getDataDecision(bot_config)
-	##DADOS PARA INSERCAO NA TABELA
-	if(data_decision['open_orders'] == 1):
+	#############
+	if(orderBuyStatus(bot_config, data_decision) == 1): #VERIFICANDO PENDENCIA DE ORDENS
 		return
-
-	if(bot_config['active'] == 1 and data_decision['open_orders'] == 1):
-		order = bittrex_func.getOrder(uuid= data_decision['trans']['sell_uuid'], user_id= bot_config['user_id'])['result']
-		status = bittrex_func.getOrder(uuid= data_decision['trans']['sell_uuid'], user_id= bot_config['user_id'])['success']
-		if(status == False):
-			print order
-			print("Erro na requisicao de ordem de venda.")
-		else:
-			if(order['IsOpen'] == True):
-				print("ORDEM DE VENDA AINDA ABERTA")
-				return
-
+	
 	####################################
 	#DADOS PARA INSERCAO SQL
 	data = {
@@ -60,43 +50,17 @@ def buyOrder(bot_config):
 		'buy_uuid': '',
 	}
 	####################################
-	if(bot_config['strategy_buy'] == 0 and strategy.contra_turtle(bot_config) == 'buy'):
-		bittrex_func.buyLimit(data, bot_config, data_decision['price_now'])
-
-	if(bot_config['strategy_buy'] == 1 and strategy.inside_bar(bot_config) == 'buy'):
-		bittrex_func.buyLimit(data, bot_config, data_decision['price_now'])
-
-	if(bot_config['strategy_buy'] == 2 and strategy.double_up(bot_config) == 'buy'):
-		bittrex_func.buyLimit(data, bot_config, data_decision['price_now'])
-
-	if(bot_config['strategy_buy'] == 3 and strategy.pivot_up(bot_config) == 'buy'):
-		bittrex_func.buyLimit(data, bot_config, data_decision['price_now'])
-
-	if(bot_config['strategy_buy'] == 4 and strategy.rsi_max(bot_config) == 'buy'):
-		bittrex_func.buyLimit(data, bot_config, data_decision['price_now'])
-
+	checkBuy(data, bot_config, data_decision)
 	#######################################
 
-def sellOrder(bot_config):
+def trySell(bot_config):
 	##CARREGANDO DADOS DE DECISAO
 	data_decision = strategy.getDataDecision(bot_config)
-	#################################################
-	##VERIFICANDO SE EXISTE ORDEM ABERTA
-	if(data_decision['open_orders'] == 0):
+	#############
+	if(orderSellStatus(bot_config, data_decision) == 1): #VERIFICANDO PENDENCIA DE ORDENS
 		return
-
-	if(bot_config['active'] == 1 and data_decision['open_orders'] == 1): ##NAO VENDER EM QUANTO ORDEM DE COMPRA ABERTA
-		order = bittrex_func.getOrder(data_decision['trans']['buy_uuid'], user_id= bot_config['user_id'])['result']
-		status = bittrex_func.getOrder(data_decision['trans']['buy_uuid'], user_id= bot_config['user_id'])['success']
-		if(status == False):
-			print("Erro na requisicao de ordem de compra.")
-		else:
-			if(order['IsOpen'] == True):
-				print("ORDEM DE COMPRA AINDA ABERTA...")
-				return
-
+	
 	stoploss = data_decision['trans']['buy_value']*(1-float(bot_config['stoploss']))
-	fix_profit = data_decision['trans']['buy_value']+data_decision['trans']['buy_value']*bot_config['percentage']
 	###################################
 	#DADOS SQL PARA INSERCAO
 	data = {
@@ -107,28 +71,90 @@ def sellOrder(bot_config):
 	## STOPLOSS
 	if(data_decision['price_now'] <= stoploss):
 		bittrex_func.sellLimit(data, bot_config, data_decision['price_now'], data_decision['trans'])
+		return
+	###################################
+	checkSell(data, bot_config, data_decision)
 	###################################
 
-	##SELECIONANDO E VERIFICANDO ESTRATEGIA
-	if(bot_config['strategy_sell'] == 0 and bot_config['strategy_buy'] == 0 and strategy.contra_turtle(bot_config) == 'sell'): ## VENDA VIA CONTRA TT
-		bittrex_func.sellLimit(data, bot_config, data_decision['price_now'], data_decision['trans'])
+def mapStrategy():
+	map = {
+		0: strategy.contra_turtle(bot_config), #CONTRA TURTLE
+		1: strategy.inside_bar(bot_config), #INSIDE BAR
+		2: strategy.double_up(bot_config), #DOUBLLE UP
+		3: strategy.pivot_up(bot_config), #PIVOT UP
+		4: strategy.rsi_max(bot_config), #RSI RESISTANCE
+	}
+	#print map
+	return map
 
-	if(bot_config['strategy_sell'] == 0 and bot_config['strategy_buy'] == 1 and strategy.inside_bar(bot_config) == 'sell'): ## VENDA VIA INSIDE BAR
-		bittrex_func.sellLimit(data, bot_config, data_decision['price_now'], data_decision['trans'])
 
-	if(bot_config['strategy_sell'] == 0 and bot_config['strategy_buy'] == 2 and strategy.double_up(bot_config) == 'sell'): ## VENDA VIA DOUBLE UP
-		bittrex_func.sellLimit(data, bot_config, data_decision['price_now'], data_decision['trans'])
 
-	if(bot_config['strategy_sell'] == 0 and bot_config['strategy_buy'] == 3 and strategy.pivot_up(bot_config) == 'sell'): ## VENDA VIA DOUBLE UP
-		bittrex_func.sellLimit(data, bot_config, data_decision['price_now'], data_decision['trans'])
+def checkBuy(data, bot_config, data_decision):
+	for i in range(0, 5): #0 a 4
+		if(bot_config['strategy_buy'] == i):
+			#print "MOEDA:"+str(bot_config['currency'])+"\SINAL COMPRA:"+str(mapStrategy()[i])
+			if(mapStrategy()[i] == 'buy'):
+				bittrex_func.buyLimit(data, bot_config, data_decision['price_now'])
+
+def checkSell(data, bot_config, data_decision):
+	fix_profit = data_decision['trans']['buy_value']+data_decision['trans']['buy_value']*bot_config['percentage']
+	for i in range(0, 4):
+		if(bot_config['strategy_sell'] == i):
+			#print "MOEDA:"+str(bot_config['currency'])+"\SINAL VENDA:"+str(mapStrategy()[i])
+			if(mapStrategy()[i] == 'sell' and bot_config['strategy_sell'] == 0):
+				bittrex_func.sellLimit(data, bot_config, data_decision['price_now'], data_decision['trans'])
+			if(bot_config['strategy_sell'] == 1 and data_decision['price_now'] >= fix_profit):
+				bittrex_func.sellLimit(data, bot_config, data_decision['price_now'], data_decision['trans'])
+
+def orderBuyStatus(bot_config, data_decision):
+	#print "ordens aberta"+str(data_decision['open_orders'])
+	if(data_decision['open_orders'] == 1 and bot_config['active'] == 0):
+		#print str(bot_config['currency'])+"ordem de compra ja aberta"
+		return 1 #ORDEM JA ABERTA DE VENDA
+	#BOT ATIVO E COM UMA ORDEM DE VENDA PENDENTE
+	if(data_decision['open_orders'] == 1 and bot_config['active'] == 1): ##SE BOT ATIVO, E ORDEM DE COMPRA ABERTA AINDA NAO HA VENDA PARA VERIFICAR
+		return 1
+
+	if(bot_config['active'] == 1 and data_decision['trans'] != False and data_decision['trans']['selled'] == 1):
+		print str(bot_config['currency'])+" BOT ATIVO E COM NENHUMA ORDEM DE VENDA ABERTA"
+		order = bittrex_func.getOrder(uuid= data_decision['trans']['sell_uuid'], user_id= bot_config['user_id'])['result']
+		status = bittrex_func.getOrder(uuid= data_decision['trans']['sell_uuid'], user_id= bot_config['user_id'])['success']
+		print order
+		if(status == False):
+			print order
+			print("Erro getordersell.")
+		else:
+			if(order['IsOpen'] == True):
+				print("ORDEM DE VENDA AINDA ABERTA")
+				return 1 #ORDEM JA ABERTA DE VENDA
+	return 0
+	#########################
+
+def orderSellStatus(bot_config, data_decision):
+	if(data_decision['open_orders'] == 0 and bot_config['active'] == 0):
+		#print str(bot_config['currency'])+"nao ha nada para vender"
+		return 1 #NAO HA NADA PARA VENDER
 	
-	if(bot_config['strategy_sell'] == 0 and bot_config['strategy_buy'] == 4 and strategy.rsi_max(bot_config) == 'sell'): ## VENDA VIA DOUBLE UP
-		bittrex_func.sellLimit(data, bot_config, data_decision['price_now'], data_decision['trans'])
+	if(data_decision['trans'] == False): #NAO HA ORDEM PARA VERIFICAR
+		return 1
 
-	if(bot_config['strategy_sell'] == 1 and data_decision['price_now'] >= fix_profit): ## VENDA VIA PRECO FIXO
-		bittrex_func.sellLimit(data, bot_config, data_decision['price_now'], data_decision['trans'])
+	if(bot_config['active'] == 1 and data_decision['open_orders'] == 1): ##NAO VENDER EM QUANTO ORDEM DE COMPRA ABERTA
+		print str(bot_config['currency'])+" BOT ATIVO E COM UMA ORDEM DE COMPRA ABERTA"
+		order = bittrex_func.getOrder(data_decision['trans']['buy_uuid'], user_id= bot_config['user_id'])['result']
+		status = bittrex_func.getOrder(data_decision['trans']['buy_uuid'], user_id= bot_config['user_id'])['success']
+		if(status == False):
+			print("Erro getorderbuy.")
+		else:
+			if(order['IsOpen'] == True):
+				print("ORDEM DE COMPRA AINDA ABERTA...")
+				return 1 #NAO HA NADA PARA VENDER
+	return 0
+	#########################
 
 
+
+
+## AUXILIARES
 def perc(buy, sell):
 	x = sell*100/buy
 	if x < 100:
@@ -136,9 +162,6 @@ def perc(buy, sell):
 	if x > 100:
 		return x-100
 	return 0
-
-
-## AUXILIARES
 
 def writeOutput(bot_id, data):
 	file = open('/home/logs/'+str(bot_id)+'-output.txt', 'a+')

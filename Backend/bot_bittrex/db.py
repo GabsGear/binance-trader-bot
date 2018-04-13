@@ -8,51 +8,61 @@ def getConn():
 	cursor = db.cursor()
 	return db, cursor
 
+
 def insertBuyOrder(data):
+	#print data
 	db, cursor = getConn()
 	query = ("INSERT INTO transactions (bot_id, buy_value, quantity, sell_value, selled, date_open, date_close, buy_uuid, sell_uuid) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)")
 	cursor.execute(query, (data['bot_id'], data['valor'], data['qnt'], 0.0, 0, str(time_now()), '-', data['buy_uuid'], ''))
 	db.commit()
 	cursor.close()
 
-def commitSellOrder(self, data):
+def commitSellOrder(data):
 	db, cursor = getConn()
-	row, trans = getBuyOrders(data['bot_id'])
+	trans = getBuyOrder(data['bot_id'])
 	query = ("UPDATE transactions SET sell_value=(%s), selled=(%s), date_close=(%s), sell_uuid=(%s) WHERE id=(%s)")
 	value = float(data['sell_value'])
 	cursor.execute(query, (value, "1", str(time_now()), data['sell_uuid'], trans['id'] ))
 	db.commit()
 	cursor.close()
 
-def getBuyOrders(bot_id):
-	try:
-		db, cursor = getConn()
-		query = ("SELECT * FROM transactions WHERE bot_id = %s and selled = %s")
-		cursor.execute(query, (bot_id, 0))
-		trans = cursor.fetchone()
-		db.commit()
-		cursor.close()
-		if(cursor.rowcount > 0):
-			obj = {
-				'result': True,
-				'id': trans[0],
-				'bot_id': trans[1],
-				'buy_value': trans[2],
-				'quantity': trans[3],
-				'sell_value': trans[4],
-				'selled': trans[5],
-				'buy_uuid': trans[8],
-				'sell_uuid': trans[9],
-			}
-		else:
-			obj = {
-				'result': False,
-			}
-		count = cursor.rowcount
-		print('count')
-		return count, obj
-	except:
-		print("ERRO: getBuyOrders.")
+
+def getBuyOrder(bot_id):
+	#try:
+	db, cursor = getConn()
+	query = ("SELECT * FROM transactions WHERE bot_id = %s order by id desc")
+	cursor.execute(query, (bot_id, ))
+	trans = cursor.fetchone()
+	db.commit()
+	#print(trans)
+	if(cursor.rowcount > 0):
+		obj = {
+			'id': trans[0],
+			'bot_id': trans[1],
+			'buy_value': trans[2],
+			'quantity': trans[3],
+			'sell_value': trans[4],
+			'selled': trans[5],
+			'buy_uuid': trans[8],
+			'sell_uuid': trans[9],
+		}
+	else:
+		obj = False
+	cursor.close()
+	return obj
+	#except:
+	#print("ERRO: getBuyOrders.")
+
+def getOpenOrders(bot_id):
+	db, cursor = getConn()
+	query = ("SELECT * FROM transactions WHERE bot_id = %s and selled = %s")
+	cursor.execute(query, (bot_id, 0))
+	trans = cursor.fetchone()
+	db.commit()
+	count = cursor.rowcount
+	cursor.close()
+	return count
+
 
 def getConfigAcc(user_id):
 	try:
