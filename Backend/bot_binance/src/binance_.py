@@ -209,7 +209,7 @@ class Binance_opr(ApiData):
         if not (check.orderBuyStatus(bot_config, data_decision)):
             db = botconfig.Db()
             print('7- Criando compra')
-            if (bot_config['active'] == 0):
+            if not (bot_config['active']):
                 print('7.1 sim Inserindo os dados de compra simulado no bd')
                 db.insertBuyOrder(data)
 
