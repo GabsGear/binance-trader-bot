@@ -209,20 +209,16 @@ class Binance_opr(ApiData):
         if not (check.orderBuyStatus(bot_config, data_decision)):
             db = botconfig.Db()
             print('7- Criando compra')
-            if (bot_config['active'] == 0):
+            if not (bot_config['active']):
                 print('7.1 sim Inserindo os dados de compra simulado no bd')
                 db.insertBuyOrder(data)
-
             else: 
                 self.loginAPI(bot_config)
                 status = client.get_system_status()
-                print('7.1 real Verificando comunicacao com a api')
                 if(bot_config['active'] == 1 and status['msg'] == 'normal'):
-                    
-                    print('Pronto pra criar ordem de venda')
-                    #ammount = float(self.getClientBalance())*bot_config['order_value']/float(data_decision['price_now'])            
+                    ammount = float(self.getClientBalance())*bot_config['order_value']/float(data_decision['price_now'])            
                     try:
-                        order = client.create_order(symbol=bot_config['currency'],side=SIDE_BUY,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_GTC, quantity=1000, price= '0.00000300')
+                        order = client.create_order(symbol=bot_config['currency'],side=SIDE_BUY,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_GTC, quantity=ammount, price= data_decision['price_now'])
                     except:
                         print('nao foi possivel enviar a ordem')
                         return

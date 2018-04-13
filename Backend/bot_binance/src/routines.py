@@ -79,20 +79,12 @@ class Functions():
         Returns:
             [bool] -- this method return 0 when everything is ok and you want to buy
         """
-        print('2- Verificando pendencias de ordens')
         if (data_decision['open_orders'] and not bot_config['active']):
-            print ('Err Bot desativado com ordem aberta')
-            self.printDL()
             return 1
         elif (data_decision['open_orders'] and bot_config['active']):
-            print('Err Bot ativo com ordem de venda aberta')
-            print(str(data_decision['open_orders']) + ' Ordens abertas')
-            self.printDL()
             return 1 
         elif(bot_config['active'] and data_decision['trans']):
             if not (self.checkLastOrders(bot_config, data_decision, data_decision['buy_uuid'])): 
-                print('Err Selled nao possibilita compra')
-                self.printDL()  
                 return 1            
         return 0
 
@@ -104,13 +96,11 @@ class Functions():
             bot_config {[dict]} -- bot setup
             data_decision {[dict]} -- transactions detals
         """
-        print('5- Selecionando minha estrategia de compra')
         bn = binance_.Binance_opr()
         for i in range(0, 3):
-            print('PROCURANDO O SINAL')
             if(bot_config['strategy_buy'] == i):
-                if(self.mapStrategy(bot_config)[i] == 'buy'):
-                    bn.createBuyOrder(data, bot_config, data_decision)
+                #if(self.mapStrategy(bot_config)[i] == 'buy'):
+                bn.createBuyOrder(data, bot_config, data_decision)
 
     def sellOrder(self, bot_config):
         bn = binance_.Binance_opr()
@@ -126,7 +116,6 @@ class Functions():
             fixProfit = self.getFixProfit(bot_config, data_decision)
             data = self.getSellData(bot_config, data_decision)
             if(data_decision['price_now'] <= stoploss):
-                print('4.5 - Venda por stopLoss')
                 bn.createSellOrder(data, bot_config, data_decision)
                 return
             self.selectSellStrategy(data, bot_config, data_decision, fixProfit)
@@ -135,16 +124,12 @@ class Functions():
     def orderSellStatus(self, bot_config, data_decision):
         if(not data_decision['open_orders'] and not bot_config['active']):
             return 1 
-        
-        elif not (data_decision['trans']):
-            return 1
-
-        elif(bot_config['active'] and data_decision['open_orders']): ##NAO VENDER EM QUANTO ORDEM DE COMPRA ABERTA
-            return 1
-            
         elif(not bot_config['active'] and data_decision['open_orders']): ##NAO VENDER EM QUANTO ORDEM DE COMPRA ABERTA
             return 1
-
+        elif not (data_decision['trans']):
+            return 1
+        elif(bot_config['active'] and data_decision['open_orders']): ##NAO VENDER EM QUANTO ORDEM DE COMPRA ABERTA
+            return 1
         elif(bot_config['active'] and data_decision['trans']):
             if not (self.checkLastOrders(bot_config, data_decision, data_decision['buy_uuid'])): 
                 return 1      
@@ -179,7 +164,7 @@ class Functions():
     def mapStrategy(self, bot_config): 
         """map the strategies
         
-        Arguments:
+        Arguments:s
             bot_config {[dict]} -- bot setup
         
         Returns:
