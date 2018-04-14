@@ -65,6 +65,11 @@ z-index: 999999">
                                 </div>
                             </div>
                         </form>
+                        @if(!empty($success))
+                            <div class="alert alert-success">
+                                {{ $success }}
+                            </div>
+                        @endif
                     </div>
                 </div>
             </div>

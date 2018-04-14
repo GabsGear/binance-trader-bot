@@ -39,13 +39,16 @@ Route::group(['middleware' => ['auth']], function() {
 	Route::post('/account/changepass', 'UserController@reset')->name('acc.changepass');
 	Route::post('/account/logout', 'UserController@logout')->name('acc.logout');
 
-	Route::get('/bot/report',array('as'=>'login', function(){ 
-		return view('reportbots'); 
-	}));
-
 });
 
 Route::get('/botstatus', 'BotController@botsstatus')->name('botstatus');
+
+Route::get('password/reset/{token}', 'Auth\ForgotPasswordController@getReset')->name('forgotpass.get');
+Route::post('password/reset', 'Auth\ForgotPasswordController@postReset')->name('forgotpass.form');
+
+Route::get('forgotpassword', 'EmailController@getEmailForgotPass')->name('email.password.get');
+Route::post('forgotpassword', 'EmailController@postEmailForgotPass')->name('email.password.post');
+
 
 Route::get('/register', function () { 
 	return view('register'); 
