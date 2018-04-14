@@ -1,0 +1,80 @@
+.login-container {
+	position: relative;
+	width: 280px;
+	margin: 120px auto;
+	padding: 20px 15px;
+	text-align: center;
+}
+#output {
+	position: absolute;
+	width: 280px;
+	top: -75px;
+	left: 0;
+	color: #fff;
+}
+.avatar {
+	width: 100px;
+	height: 100px;
+	margin: 20px auto 20px;
+	border-radius: 100%;
+	border: 2px solid #aaa;
+	background-size: cover;
+}
+.form-box input {
+	text-align: center;
+	height: 40px;
+	background: #fafafa;
+	transition: 0.2s ease-in-out;
+}
+.form-box input:focus {
+	outline: 0;
+	background: #eee;
+}
+.form-box button.login {
+	margin-top: 15px;
+	padding: 10px 20px;
+}
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.fadeInUp {
+	animation-name: fadeInUp;
+}
+.avatar {
+	background-image: url('../../img/admin.jpg');
+}
+.btn-primary, .btn-primary.active, .btn-primary.disabled, .btn-primary:active, .btn-primary[disabled] {
+	background-color: #2A9FD6;
+	border-color: #4190eb;
+	outline: none;
+}
+.lockscreen_img{
+	padding: 15px 0;
+	background-color: rgba(255,255,255,0.2);
+}
+.lockscreen_content{
+	background-color: #fff;
+	padding: 20px 40px 40px;
+}

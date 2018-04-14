@@ -1,0 +1,89 @@
+/*//===============wizards======================*/
+.bwizard-buttons .previous {
+    border: 1px solid #4fb7fe;
+    float: left;
+    border-radius: 50px;
+    padding: 10px 15px;
+    list-style: none;
+}
+.bwizard-buttons .next {
+    border: 1px solid #4fb7fe;
+    float:right;
+    border-radius: 50px;
+    padding: 10px 15px;
+    list-style: none;
+}
+.custom_control_description_color{
+    color:#525252 !important
+}
+
+.form_wizzards{
+    padding-left: 0;
+}
+.pager{
+    padding: 0;
+}
+.pager .next>a, .pager .next>span {
+    float: right;
+}
+.pager li>a, .pager li>span {
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: #fff;
+    border: 1px solid #4fb7fe;
+    border-radius: 15px;
+}
+.pager li:hover{
+    cursor: pointer;
+}
+#rootwizard ul li, #rootwizard_no_val ul li{
+    display: inline;
+
+}
+#rootwizard .nav-pills li a span, #rootwizard_no_val .nav-pills li a span
+{
+    background-color: #eee;
+    text-align: center!important;
+    padding: 8px 15px 11px;
+    margin-right: 10px;
+    height: 45px;
+    width: 45px;
+    -webkit-border-radius: 50%!important;
+    -moz-border-radius: 50%!important;
+    border-radius: 50%!important;
+}
+#rootwizard .nav-pills li .active span, #rootwizard_no_val .nav-pills li .active span
+{
+    color: #fff;;
+    background-color: #00cc99 !important;
+    text-align: center!important;
+    padding: 8px 15px 11px;
+    margin-right: 10px;
+    height: 45px;
+    width: 45px;
+    -webkit-border-radius: 50%!important;
+    -moz-border-radius: 50%!important;
+    border-radius: 50%!important;
+}
+#rootwizard_no_val .nav-pills .nav-link.active, #rootwizard .nav-pills .nav-link.active {
+    background-color: white;
+    color: #00cc99;
+}
+.navpills .nav-item a{
+    color: #00cc99;
+}
+.tab_clr{
+    background-color: #75C1EA !important;
+    color: #fff !important;
+}
+.wizard_label_block{
+    display: block;
+}
+#tab11 .previous_btn1,#tab1 .previous{
+    cursor: not-allowed;
+}
+@media (max-width: 500px){
+    #rootwizard ul,#rootwizard_no_val ul{
+        display: block;
+    }
+}

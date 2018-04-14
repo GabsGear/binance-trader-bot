@@ -1,0 +1,93 @@
+.lock_background{
+    background-image: url("../../img/login1_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: -2px 12px 50px -5px #000;
+    border-radius: 5px;
+}
+.lock_section_top{
+    margin: 35% 0;
+}
+.admin_img_border{
+    border-radius: 60px;
+    border:2px solid #ff9933;
+    padding: 68px 5px 22px 5px;
+}
+.admin_img_top{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #4fb7fe;
+}
+.lock_admin{
+    border: 2px solid #ff9933;
+}
+.lock_admin,.admin_img_top3{
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+}
+.admin_img_top3{
+    border: 2px solid #ff9933;
+}
+.lock_admin{
+    margin: 35px 0;
+}
+.admin_img_top{
+    margin-top: -50px;
+}
+.admin_bottom{
+    margin-bottom: -10px;
+}
+.admin_top{
+    margin-top: -12px;
+}
+.lock_section input {
+    padding-left: 20px;
+    background-color: rgba(170, 177, 185,0.5);
+    color: #fff;
+    border: none;
+}
+.lock_section input:focus {
+    background-color: rgba(170, 177, 185,0.5);
+    color: #fff;
+    border: none;
+}
+.m-b-30{
+    margin-bottom:30px;
+}
+/*Lock screen3*/
+.lock3_border {
+    background: rgba(255,255,255,0.04);
+    padding: 25px 30px 20px 30px;
+    box-shadow: 0 0 7px 0 #777;
+}
+.lock_section_top3{
+    margin: 45% 0;
+}
+.lock_admin3{
+    margin: 20px 0 35px;
+}
+.admin_img_top3{
+    margin-top: -80px;
+}
+.lock_section3 input{
+    padding-left: 20px;
+    background-color: rgba(170, 177, 185,0.5);
+    color: #fff;
+    border:none;
+}
+.lock_section3 input:focus{
+    background-color: rgba(170, 177, 185,0.5);
+    color: #fff;
+    border:none;
+}
+.lock_section3 .input-group-addon{
+    background-color: rgba(170, 177, 185,0.5);
+    border:none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.lock_section3 .has-success .form-control:focus {
+    box-shadow:none !important;
+}

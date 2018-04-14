@@ -1,0 +1,30 @@
+body{
+	background:url(../../img/night.jpg) repeat center center #1d1d1d;
+	color:#eee;
+	font-size:13px;
+	margin:0 10%;
+	max-height:100%;
+	max-width:100%;
+	overflow-x:hidden;
+}
+#animate{
+	position:relative;
+	text-align:center;
+	margin:0 auto;
+	width:auto;
+}
+.number{
+	display:inline;	
+	margin-top:20px;
+	font-size:40px;
+}
+@media (min-width:320px) and (max-width: 640px)  {
+	body{
+		max-height:100%;
+		max-width:100%;
+		margin:0 auto;
+		overflow-x:hidden;
+	}
+}
+a {text-decoration: none !important;}
+.img_center {padding: 3% 15%;}

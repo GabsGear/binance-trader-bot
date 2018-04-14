@@ -1,0 +1,41 @@
+.demo svg:not(:root){
+    height: 180px;
+}
+svg:not(:root) {
+    width: 100%;
+}
+
+#chart_5 {
+    position: relative;
+}
+#chart2 .x_tick.plain{
+    display: none;
+}
+#chart_5 .x_tick.plain:last-child {
+    visibility: hidden;
+}
+#chart_5 .x_tick:nth-child(4){
+    margin-left: 5px;
+}
+#chart_5 .x_tick:nth-child(5){
+    margin-left: 8px;
+}
+#chart_5 .x_tick:nth-child(6){
+    margin-left: 15px;
+}
+#chart_5 .x_tick:nth-child(7){
+    margin-left: 23px;
+}
+#chart_5 .x_tick:nth-child(8){
+    margin-left: 31px;
+}
+#legend_chart2, #legend_chart3
+{
+    font-family: "Source Sans Pro", sans-serif;
+}
+@media (max-width:992px){
+    .md_top_align
+    {
+        margin-top: 35px;
+    }
+}
