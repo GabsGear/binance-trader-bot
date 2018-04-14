@@ -13,6 +13,7 @@ import requests
 import helpers
 import botconfig
 import sys
+import json
 import routines
 
 class ApiData:
@@ -151,8 +152,9 @@ class Binance_opr(ApiData):
         """
         r = requests.get("https://www.binance.com/api/v3/ticker/price?symbol=" + coin)
         r = r.content
-        r = r[len(r) - 12: len(r)-2]
-        return float(r)
+        jsonResponse = json.loads(r.decode('utf-8'))
+        return float(jsonResponse['price'])
+
 
     def getOrder(self, bot_config, data_decision, orderID):
         """get order
