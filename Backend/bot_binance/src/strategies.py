@@ -94,13 +94,17 @@ class StrategiesBase(Desicion):
         price_now = binance_.Binance_opr()
         price_now = price_now.getPriceNow(bot_config['currency'])
 
-        close = self.getLclose()
-        tomin = self.getLhigh()
+
+        print('price now = ' + str(price_now))
+        high = self.getLhigh()
+        high = high[len(high) - 2 : len(high)]
+        tomin = self.getLlow()
 
         if(len(tomin) > 0):
-            minn = min(close)
-            maxx = max(close)
-
+            minn = min(high)
+            maxx = max(high)
+            print ('Buy at ' + str(minn))
+            print(' .  ')
             if(data["price_now"] <= minn):
                 return 'buy'
             if(data["price_now"] >= maxx):

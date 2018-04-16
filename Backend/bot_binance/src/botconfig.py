@@ -8,8 +8,8 @@ import helpers
 class Db:
     def getConn(self):
         try:
-            #db = mysql.connect(host="localhost", user="root", passwd="gabsghell", db="protrade")
-            db = mysql.connect(host="127.0.0.1", user="root", passwd="libano252528", db="protrader")
+            db = mysql.connect(host="localhost", user="root", passwd="gabsghell", db="protrade")
+            #db = mysql.connect(host="127.0.0.1", user="root", passwd="libano252528", db="protrader")
             cursor = db.cursor()
             return db, cursor  
         except:
@@ -61,23 +61,23 @@ class Db:
             print("ERRO: getBuyOrders.")
 
     def getConfigAcc(self, user_id):
-        try:
-            db, cursor = self.getConn()
-            query = ("SELECT * FROM users WHERE id = %s")
-            cursor.execute(query, (user_id))
-            data = cursor.fetchone()
-            db.commit()
-            cursor.close()
-            obj = {
-                    'id': data[0],
-                    'name': data[1],
-                    'email': data[2],
-                    'api_secret': data[5],
-                    'api_key': data[6],
-                }
-            return obj
-        except:
-            print("ERRO: getConfigAcc.")
+        #try:
+        db, cursor = self.getConn()
+        query = ("SELECT * FROM users WHERE id = %s")
+        cursor.execute(query, (user_id))
+        data = cursor.fetchone()
+        db.commit()
+        cursor.close()
+        obj = {
+                'id': data[0],
+                'name': data[1],
+                'email': data[2],
+                'api_secret': data[5],
+                'api_key': data[6],
+            }
+        return obj
+        #except:
+        #    print("ERRO: getConfigAcc.")
 
     def getConfigBot(self, bot_id):
         try:
