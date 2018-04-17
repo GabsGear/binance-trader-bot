@@ -17,35 +17,8 @@ import json
 import routines
 
 class ApiData:
-
-    # __key = ""
-    # __secret = ""
-                                                                                                                                                                                                        
-    # def __init__(self):
-    #     # self.__key = ('Du96lndpL2qQcKogKCUi7hYuFTYO06MIiZoFf6oq0guxmXJTv0tomd5yAt0xev6i') #mykey
-    #     # self.__secret = ('r76Q8Q35KipGTmY4BRuQqx1LDp3fWFvMjGYK9avKZnvbXVAzitWNKupzUtoQ34Uj') #mysecret
-    #     self.__key = (' ') #mykey
-    #     self.__secret = (' ') #mysecret      
-
-    # def getKey(self):
-    #     return self.__key
-
-    # def getSecret(self):
-    #     return self.__secret
-
     def checkLogin(self, idt, key):
         client = Client(idt, key)
-        status = client.get_system_status()
-        if (status['msg'] == 'normal'):
-            print ("Market UP, Successful login")
-            print (client.get_server_time())
-        else:
-            sys.exit(0)
-
-    def loginAPI(self, bot_config):
-        db = botconfig.Db()
-        acc_config = db.getConfigAcc(str(bot_config['user_id']))
-        client = Client(acc_config['api_key'], acc_config['api_secret'])
         status = client.get_system_status()
         if (status['msg'] == 'normal'):
             print ("Market UP, Successful login")
@@ -56,6 +29,19 @@ class ApiData:
 login = ApiData()
 client = Client("","")
 login.checkLogin("","")
+
+def loginAPI(bot_config):
+    db = botconfig.Db()
+    print("logando na  api")
+    acc_config = db.getConfigAcc(str(bot_config['user_id']))
+    client = Client(str(acc_config['api_key']), str(acc_config['api_secret']))#acc_config['api_key'], acc_config['api_secret'])
+    status = client.get_system_status()
+    if (status['msg'] == 'normal'):
+        print ("Market UP, Successful login")
+        print (client.get_server_time())
+        return client
+    else:
+        sys.exit(0)
 
 class Binance_opr(ApiData):
     def getCandles(self, coin, period):
@@ -85,23 +71,23 @@ class Binance_opr(ApiData):
         '''
         if(period == 'Day'):
             candles = client.get_klines(symbol= coin, interval=Client.KLINE_INTERVAL_1DAY)
-            candles = candles[len(candles)-30:len(candles)-1]
+            candles = candles[len(candles)-20:len(candles)-1]
 
         elif(period == 'hour'):
             candles = client.get_klines(symbol= coin, interval=Client.KLINE_INTERVAL_1HOUR)
-            candles = candles[len(candles)-30:len(candles)-1]
+            candles = candles[len(candles)-20:len(candles)-1]
                                 
         elif(period == 'thirtyMin'):
             candles = client.get_klines(symbol= coin, interval=Client.KLINE_INTERVAL_30MINUTE)
-            candles = candles[len(candles)-30:len(candles)-1]
+            candles = candles[len(candles)-20:len(candles)-1]
 
         elif(period == 'fiveMin'):
             candles = client.get_klines(symbol= coin, interval=Client.KLINE_INTERVAL_5MINUTE)
-            candles = candles[len(candles)-30:len(candles)-1]
+            candles = candles[len(candles)-20:len(candles)-1]
 
         elif(period == 'oneMin'):
             candles = client.get_klines(symbol= coin, interval=Client.KLINE_INTERVAL_1MINUTE)
-            candles = candles[len(candles)-30:len(candles)-1]
+            candles = candles[len(candles)-20:len(candles)-1]
         #map
         opentime = []
         lopen = []
@@ -156,7 +142,7 @@ class Binance_opr(ApiData):
         return float(jsonResponse['price'])
 
 
-    def getOrder(self, bot_config, data_decision, orderID):
+    def getOrder(self, bot_config, data_decision, orderID, client):
         """get order
         
         Arguments:
@@ -173,7 +159,7 @@ class Binance_opr(ApiData):
         except:
             print("erro ao abrir ordem")
 
-    def getOpenOrders(self, bot_config, data_decision):
+    def getOpenOrders(self, bot_config, data_decision, client):
         """get open orders
         
         Arguments:
@@ -188,7 +174,7 @@ class Binance_opr(ApiData):
             return True   
         return False
 
-    def getClientBalance(self):
+    def getClientBalance(self, client):
         """get client balance from binance wallet
         
         Returns:
@@ -205,9 +191,7 @@ class Binance_opr(ApiData):
             bot_config {[dict]} -- bot setup from database
             data_decision {[dict]} -- transactions detals
         """
-
         check = routines.Routines()
-
         if not (check.orderBuyStatus(bot_config, data_decision)):
             db = botconfig.Db()
             print('7- Criando compra')
@@ -215,18 +199,24 @@ class Binance_opr(ApiData):
                 print('7.1 sim Inserindo os dados de compra simulado no bd')
                 db.insertBuyOrder(data)
             else: 
-                self.loginAPI(bot_config)
+                client = loginAPI(bot_config)
+                print('login')
                 status = client.get_system_status()
+                price = "%.8f" % (data_decision['price_now'])
+                print(price)
                 if(bot_config['active'] == 1 and status['msg'] == 'normal'):
-                    ammount = float(self.getClientBalance())*bot_config['order_value']/float(data_decision['price_now'])            
-                    try:
-                        order = client.create_order(symbol=bot_config['currency'],side=SIDE_BUY,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_GTC, quantity=ammount, price= data_decision['price_now'])
-                    except:
-                        print('nao foi possivel enviar a ordem')
-                        return
-                    
+                    ammount = float(self.getClientBalance(client))*bot_config['order_value']/float(data_decision['price_now'])
+                    ammount = "%.8f" % ammount
+                    print('quantidade')
+                    print(ammount)            
+                    #try:
+                    order = client.create_order(symbol=bot_config['currency'],side=SIDE_BUY,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_GTC, quantity=ammount, price= str(price))
+                    #except:
+                    print (order)
+                    #return     
                     orderID = order['orderId']
-                    orders = self.getOrder(bot_config, data_decision, orderID)
+                    orders = self.getOrder(bot_config, data_decision, orderID, client)
+                    print('ORDEM DE VENDA ABERTA ' + str(order['orderId'])  + ' QUANTIA ' + str(orders['executedQty']))
                     data['qnt'] = orders['executedQty']
                     data['buy_uuid'] = orderID
                     db.insertBuyOrder(data)
@@ -246,16 +236,17 @@ class Binance_opr(ApiData):
             print('inserindo os dados de venda no bd')  
             db.commitSellOrder(data)
         else:
-            self.loginAPI(bot_config)
+            client = loginAPI(bot_config)
             status = client.get_system_status()
             if(bot_config['active'] and status['msg'] == 'normal'):
                 print('Pronto pra criar ordem de venda')
-                try:
-                    order = client.create_order(symbol=bot_config['currency'],side=SIDE_SELL,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_GTC, quantity=data_decision['quantity'], price=data_decision['price_now'])
-                except:
-                    print('erro criando a ordem de venda')
-                    return
-
+                price = "%.8f" % data_decision['price_now']
+                #try:
+                order = client.create_order(symbol=bot_config['currency'],side=SIDE_SELL,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_GTC, quantity=data_decision['trans']['quantity'], price=str(price))
+                #except:
+                print('erro criando a ordem de venda')
+                #    return
+                print ('ORDEM DE VENDA ID ' + str(order['orderId']))
                 data['sell_uuid'] = order['orderId']
                 db.commitSellOrder(data)
         return
