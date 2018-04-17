@@ -13,7 +13,6 @@ def main():
     bot_id = 100#sys.argv[1]
     global bot_config
     bot_config = db.getConfigBot(bot_id)
-    print ("Started")
     db.setPID(bot_id)
     while(bot_config['active'] != 2):
         routine(bot_id)

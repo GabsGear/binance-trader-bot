@@ -64,7 +64,7 @@ class Db:
         #try:
         db, cursor = self.getConn()
         query = ("SELECT * FROM users WHERE id = %s")
-        cursor.execute(query, (user_id))
+        cursor.execute(query, (user_id,))
         data = cursor.fetchone()
         db.commit()
         cursor.close()

@@ -6,22 +6,12 @@ import botconfig
 import time
 
 class Functions():
-    def buyOrder(self, bot_config):
+    def buyOrder(self, bot_config, data_decision):
         """ this function start is responsable to check a possible buy order
             first analyze all last orders and check if haven't a pendent order for buy or sell
         Arguments:
             bot_config {[dict]} -- bot setup
         """
-        bn = binance_.Binance_opr()
-        
-        lopen, lhigh, llow, lclose, lvol, closetime = bn.getCandles(str(bot_config['currency']), bot_config['period'])
-        st = strategies.Desicion(lopen, lhigh, llow, lclose, lvol, closetime)
-        data_decision = st.getDataDesicion(bot_config)
-        
-        if(self.orderBuyStatus(bot_config, data_decision)):
-            print('ordem aberta ')
-            return
-
         data = self.createBuyData(bot_config, data_decision)   
         self.selectBuyStrategy(data, bot_config, data_decision)
         return
@@ -44,7 +34,6 @@ class Functions():
         }
         return data
 
-
     def checkLastOrders(self, bot_config, data_decision, uuid, client): 
         """check the last order and verify the negociation status
         
@@ -62,9 +51,6 @@ class Functions():
             if (order['status'] == 'FILLED'):
                 return True   
         return False 
-
-    def printDL(self):
-        print('-----------------------------------------------')
 
     def orderBuyStatus(self, bot_config, data_decision):
         """the principal method to check the last orders
@@ -100,6 +86,7 @@ class Functions():
                 if(self.mapStrategy(bot_config)[i] == 'buy'):
                     bn.createBuyOrder(data, bot_config, data_decision)
 
+# -----------------------------------------venda
     def sellOrder(self, bot_config):
         bn = binance_.Binance_opr()
         lopen, lhigh, llow, lclose, lvol, closetime = bn.getCandles(str(bot_config['currency']), bot_config['period'])
@@ -108,20 +95,16 @@ class Functions():
         fixProfit = self.getFixProfit(bot_config, data_decision)
         print('Alvo de venda')
         print(fixProfit)
-        if (self.orderSellStatus(bot_config, data_decision)):
-            print('Trancando a venda ')
-            return
-        else:
-            print('Tentando vender')
-            stoploss = self.getStopLoss(bot_config, data_decision)
-            fixProfit = self.getFixProfit(bot_config, data_decision)
-            data = self.getSellData(bot_config, data_decision)
-            if(data_decision['price_now'] <= stoploss):
-                print ('venda stop loss alvo ' + str(stoploss))
-                bn.createSellOrder(data, bot_config, data_decision)
-            elif(bot_config['strategy_sell'] and data_decision['price_now'] >= fixProfit):
-                bn.createSellOrder(data, bot_config, data_decision)  
-        return
+       
+        print('Tentando vender')
+        stoploss = self.getStopLoss(bot_config, data_decision)
+        fixProfit = self.getFixProfit(bot_config, data_decision)
+        data = self.getSellData(bot_config, data_decision)
+        if(data_decision['price_now'] <= stoploss):
+            print ('venda stop loss alvo ' + str(stoploss))
+            bn.createSellOrder(data, bot_config, data_decision)
+        elif(bot_config['strategy_sell'] and data_decision['price_now'] >= fixProfit):
+            bn.createSellOrder(data, bot_config, data_decision)  
 
     def orderSellStatus(self, bot_config, data_decision):
         if(not data_decision['open_orders'] and not bot_config['active']):
@@ -147,10 +130,10 @@ class Functions():
         return data
 
     def getFixProfit(self, bot_config, data_decision):
-        return data_decision['trans']['buy_value']+data_decision['trans']['buy_value']*bot_config['percentage']
+        return float(data_decision['trans']['buy_value']+data_decision['trans']['buy_value']*bot_config['percentage'])
 
     def getStopLoss(self, bot_config, data_decision):
-        return data_decision['trans']['buy_value']*(1-float(bot_config['stoploss']))
+        return float(data_decision['trans']['buy_value']*(1-float(bot_config['stoploss'])))
     
     def mapStrategy(self, bot_config): 
         """map the strategies
@@ -173,10 +156,28 @@ class Functions():
         return map
 
 class Routines(Functions):
+
+    def get_config(self, bot_config):
+        bn = binance_.Binance_opr()
+            
+        lopen, lhigh, llow, lclose, lvol, closetime = bn.getCandles(str(bot_config['currency']), bot_config['period'])
+        st = strategies.Desicion(lopen, lhigh, llow, lclose, lvol, closetime)
+        data_decision = st.getDataDesicion(bot_config)
+        return data_decision
+        
     def startBuyRoutine(self, bot_config):
         print('1- Iniciando rotina de compra')
-        super().buyOrder(bot_config)
+        data_decision = self.get_config(bot_config)
+        if(super().orderBuyStatus(bot_config, data_decision)):
+            print('ordem aberta ')
+            return  
+        super().buyOrder(bot_config, data_decision)
+
     def startSellRoutine(self, bot_config):
         print('1- Iniciando rotina de venda ')
+        data_decision = self.get_config(bot_config)
+        if (super().orderSellStatus(bot_config, data_decision)):
+            print('Trancando a venda ')
+            return
         super().sellOrder(bot_config)
 
