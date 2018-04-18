@@ -48,7 +48,9 @@ class Functions():
         if (bot_config['active']):
             bn = binance_.Binance_opr()
             order = bn.getOrder(bot_config, data_decision, uuid, client)
-            if (order['status'] == 'FILLED'):
+            print('---Status da ultima ordem')
+            print('---' + str(order['status']) + '\n')
+            if (order['status'] != 'NEW'):
                 return True   
         return False 
 
@@ -104,10 +106,10 @@ class Functions():
         
         data = self.getSellData(bot_config, data_decision)
         if(data_decision['price_now'] <= stoploss):
-            print ('venda stop loss alvo ' + str(stoploss))
+            print ('---Venda stop loss alvo ' + str(stoploss))
             bn.createSellOrder(data, bot_config, data_decision)
         elif(data_decision['price_now'] >= fixProfit):
-            print('venda lucro fixo')
+            print('---Venda lucro fixo')
             bn.createSellOrder(data, bot_config, data_decision)  
 
     def orderSellStatus(self, bot_config, data_decision):
@@ -122,6 +124,7 @@ class Functions():
         elif(bot_config['active'] and data_decision['trans']):
             client = binance_.loginAPI(bot_config)
             if not (self.checkLastOrders(bot_config, data_decision, data_decision['trans']['buy_uuid'], client)): 
+                print('---Ordem de compra ainda não executada na exchange')
                 return 1      
         return 0
 
@@ -172,16 +175,15 @@ class Routines(Functions):
         print('1- Iniciando rotina de compra')
         data_decision = self.get_config(bot_config)
         if(super().orderBuyStatus(bot_config, data_decision)):
-            print('ordem aberta ')
-            print('-----')
+            print('---Existem ordens em aberto no banco de dados\n')
             return  
         super().buyOrder(bot_config, data_decision)
 
     def startSellRoutine(self, bot_config):
-        print('1- Iniciando rotina de venda ')
+        print('2- Iniciando rotina de venda ')
         data_decision = self.get_config(bot_config)
         if (super().orderSellStatus(bot_config, data_decision)):
-            print('Sem ordens abertas ')
+            print('----Ainda nao ha nada para vender\n')
             return
         super().sellOrder(bot_config)
 

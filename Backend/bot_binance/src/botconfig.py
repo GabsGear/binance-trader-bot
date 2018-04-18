@@ -72,8 +72,8 @@ class Db:
                 'id': data[0],
                 'name': data[1],
                 'email': data[2],
-                'api_secret': data[5],
-                'api_key': data[6],
+                'api_secret': data[8],
+                'api_key': data[9],
             }
         return obj
         #except:
