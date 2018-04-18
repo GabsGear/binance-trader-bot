@@ -86,24 +86,28 @@ class Functions():
                 if(self.mapStrategy(bot_config)[i] == 'buy'):
                     bn.createBuyOrder(data, bot_config, data_decision)
 
-# -----------------------------------------venda
+# -----------------------------------------sell 
     def sellOrder(self, bot_config):
         bn = binance_.Binance_opr()
         lopen, lhigh, llow, lclose, lvol, closetime = bn.getCandles(str(bot_config['currency']), bot_config['period'])
         st = strategies.Desicion(lopen, lhigh, llow, lclose, lvol, closetime)
         data_decision = st.getDataDesicion(bot_config)
         fixProfit = self.getFixProfit(bot_config, data_decision)
+        stoploss = self.getStopLoss(bot_config, data_decision)
+        print('Price Now')
+        print(data_decision['price_now'])
         print('Alvo de venda')
         print(fixProfit)
-       
-        print('Tentando vender')
-        stoploss = self.getStopLoss(bot_config, data_decision)
-        fixProfit = self.getFixProfit(bot_config, data_decision)
+        print('Stop Loss')
+        print(stoploss)
+        print('-----')
+        
         data = self.getSellData(bot_config, data_decision)
         if(data_decision['price_now'] <= stoploss):
             print ('venda stop loss alvo ' + str(stoploss))
             bn.createSellOrder(data, bot_config, data_decision)
-        elif(bot_config['strategy_sell'] and data_decision['price_now'] >= fixProfit):
+        elif(data_decision['price_now'] >= fixProfit):
+            print('venda lucro fixo')
             bn.createSellOrder(data, bot_config, data_decision)  
 
     def orderSellStatus(self, bot_config, data_decision):
@@ -115,9 +119,9 @@ class Functions():
             return 1
         elif(bot_config['active'] and not data_decision['open_orders']): ##NAO VENDER EM QUANTO ORDEM DE COMPRA ABERTA
             return 1
-        elif(bot_config['active'] and not data_decision['trans']):
+        elif(bot_config['active'] and data_decision['trans']):
             client = binance_.loginAPI(bot_config)
-            if not (self.checkLastOrders(bot_config, data_decision, data_decision['buy_uuid'], client)): 
+            if not (self.checkLastOrders(bot_config, data_decision, data_decision['trans']['buy_uuid'], client)): 
                 return 1      
         return 0
 
@@ -159,7 +163,6 @@ class Routines(Functions):
 
     def get_config(self, bot_config):
         bn = binance_.Binance_opr()
-            
         lopen, lhigh, llow, lclose, lvol, closetime = bn.getCandles(str(bot_config['currency']), bot_config['period'])
         st = strategies.Desicion(lopen, lhigh, llow, lclose, lvol, closetime)
         data_decision = st.getDataDesicion(bot_config)
@@ -170,6 +173,7 @@ class Routines(Functions):
         data_decision = self.get_config(bot_config)
         if(super().orderBuyStatus(bot_config, data_decision)):
             print('ordem aberta ')
+            print('-----')
             return  
         super().buyOrder(bot_config, data_decision)
 
@@ -177,7 +181,7 @@ class Routines(Functions):
         print('1- Iniciando rotina de venda ')
         data_decision = self.get_config(bot_config)
         if (super().orderSellStatus(bot_config, data_decision)):
-            print('Trancando a venda ')
+            print('Sem ordens abertas ')
             return
         super().sellOrder(bot_config)
 
