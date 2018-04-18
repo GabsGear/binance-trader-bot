@@ -106,9 +106,12 @@ class StrategiesBase(Desicion):
             print ('Buy at ' + str(minn))
             print(' .  ')
             if(data["price_now"] <= minn):
+                print('sinal buy')
                 return 'buy'
             if(data["price_now"] >= maxx):
+                print('sinal sell')
                 return 'sell'
+        print('sinal none')
         return 'none'  
 
     def startPivot_up(self, bot_config):
