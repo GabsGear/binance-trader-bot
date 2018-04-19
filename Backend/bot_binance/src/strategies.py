@@ -103,7 +103,7 @@ class StrategiesBase(Desicion):
         if(len(tomin) > 0):
             minn = min(high)
             maxx = max(high)
-            print ('Buy at ' + str(minn))
+            print (' Buy at ' + str(minn))
             print(' .  ')
             if(data["price_now"] <= minn):
                 print('sinal buy')
