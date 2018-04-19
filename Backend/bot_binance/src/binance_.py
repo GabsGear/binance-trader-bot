@@ -175,6 +175,7 @@ class Binance_opr(ApiData):
             [float] -- returns free BTC from botwork
         """
         balance = client.get_asset_balance(asset='BTC')
+        print (balance)
         return balance['free']
          
     def getPrecision(self, coin):
@@ -188,8 +189,8 @@ class Binance_opr(ApiData):
         check = routines.Routines()
         if not (check.orderBuyStatus(bot_config, data_decision)):
             db = botconfig.Db()
-            print('7- Criando compra')
             if not (bot_config['active']):
+                print('Inserindo simulada')
                 db.insertBuyOrder(data)
             else: 
                 client = loginAPI(bot_config)

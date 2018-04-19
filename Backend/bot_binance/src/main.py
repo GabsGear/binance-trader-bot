@@ -9,6 +9,7 @@ import time
 from binance.client import Client 
 
 def main():
+
     db = botconfig.Db()
     bot_id = sys.argv[1]
     global bot_config

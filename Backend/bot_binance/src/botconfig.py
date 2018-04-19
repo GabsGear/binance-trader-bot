@@ -72,8 +72,8 @@ class Db:
                 'id': data[0],
                 'name': data[1],
                 'email': data[2],
-                'api_secret': data[8],
-                'api_key': data[9],
+                'api_secret': data[9],
+                'api_key': data[8],
             }
         return obj
         #except:
@@ -94,14 +94,12 @@ class Db:
                     'exchange': data[2],
                     'currency': currency,
                     'strategy_buy': data[4],
-                    'strategy_sell': data[5],
-                    'percentage': data[6],
-                    'pid': data[7],
-                    'active': data[8],
-                    'max_order': data[9],
-                    'order_value': float(data[10]),
-                    'period': data[11],
-                    'stoploss': data[12]
+                    'percentage': data[5],
+                    'pid': data[6],
+                    'active': data[7],
+                    'order_value': float(data[8]),
+                    'period': data[9],
+                    'stoploss': data[10]
                 }
             return obj
         except:
