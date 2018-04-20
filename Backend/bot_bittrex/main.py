@@ -24,8 +24,11 @@ def main():
 
 	bittrex_func.loadAPI(bot_config)
 	db.setPID(bot_id)
-
-	while(True):
+	
+	if(bot_config['active'] == 2):
+		print("BOT PARADO!")
+		
+	while(bot_config['active'] != 2):
 		t.sleep(10)
 		routine(bot_id)
 
@@ -98,13 +101,8 @@ def checkBuy(data, bot_config, data_decision):
 
 def checkSell(data, bot_config, data_decision):
 	fix_profit = data_decision['trans']['buy_value']+data_decision['trans']['buy_value']*bot_config['percentage']
-	for i in range(0, 4):
-		if(bot_config['strategy_sell'] == i):
-			#print "MOEDA:"+str(bot_config['currency'])+"\SINAL VENDA:"+str(mapStrategy()[i])
-			if(mapStrategy()[i] == 'sell' and bot_config['strategy_sell'] == 0):
-				bittrex_func.sellLimit(data, bot_config, data_decision['price_now'], data_decision['trans'])
-			if(bot_config['strategy_sell'] == 1 and data_decision['price_now'] >= fix_profit):
-				bittrex_func.sellLimit(data, bot_config, data_decision['price_now'], data_decision['trans'])
+	if(data_decision['price_now'] >= fix_profit):
+		bittrex_func.sellLimit(data, bot_config, data_decision['price_now'], data_decision['trans'])
 
 def orderBuyStatus(bot_config, data_decision):
 	#print "ordens aberta"+str(data_decision['open_orders'])

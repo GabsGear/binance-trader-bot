@@ -61,23 +61,23 @@ class Db:
             print("ERRO: getBuyOrders.")
 
     def getConfigAcc(self, user_id):
-        try:
-            db, cursor = self.getConn()
-            query = ("SELECT * FROM users WHERE id = %s")
-            cursor.execute(query, (user_id))
-            data = cursor.fetchone()
-            db.commit()
-            cursor.close()
-            obj = {
-                    'id': data[0],
-                    'name': data[1],
-                    'email': data[2],
-                    'api_secret': data[5],
-                    'api_key': data[6],
-                }
-            return obj
-        except:
-            print("ERRO: getConfigAcc.")
+        #try:
+        db, cursor = self.getConn()
+        query = ("SELECT * FROM users WHERE id = %s")
+        cursor.execute(query, (user_id,))
+        data = cursor.fetchone()
+        db.commit()
+        cursor.close()
+        obj = {
+                'id': data[0],
+                'name': data[1],
+                'email': data[2],
+                'api_secret': data[8],
+                'api_key': data[9],
+            }
+        return obj
+        #except:
+        #    print("ERRO: getConfigAcc.")
 
     def getConfigBot(self, bot_id):
         try:
@@ -94,14 +94,12 @@ class Db:
                     'exchange': data[2],
                     'currency': currency,
                     'strategy_buy': data[4],
-                    'strategy_sell': data[5],
-                    'percentage': data[6],
-                    'pid': data[7],
-                    'active': data[8],
-                    'max_order': data[9],
-                    'order_value': float(data[10]),
-                    'period': data[11],
-                    'stoploss': data[12]
+                    'percentage': data[5],
+                    'pid': data[6],
+                    'active': data[7],
+                    'order_value': float(data[8]),
+                    'period': data[9],
+                    'stoploss': data[10]
                 }
             return obj
         except:

@@ -33,8 +33,8 @@ class EmailController extends Controller
                 $message->to($email);
                 $message->subject('Link Para Reset de Senha');
             });
-            return view('forgotpass')->withSuccess('Link enviado com sucesso, pode demorar ate 5 minutos, verifique sua caixa de spam!');
+            return Redirect::back()->withSuccess('Link enviado com sucesso, pode demorar ate 5 minutos, verifique sua caixa de spam!');
         };
-        return Redirect::back()->withErrors(['Email nao existe.']);
+        return Redirect::back()->withErrors(['Email não existe.']);
     }
 }

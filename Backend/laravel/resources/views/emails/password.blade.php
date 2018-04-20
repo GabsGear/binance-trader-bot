@@ -44,7 +44,7 @@
                                                    none; box-sizing: border-box; font-family: arial;
                                                    width: 100%; text-align: center; color:
                                                    rgb(102,102,102); font-size: 16px; cursor: text;" target="_blank"><span style="font-weight: normal;
-                                                   color: #666;">Esta é uma mensagem automatica, por favor nao responda.
+                                                   color: #666;">Esta é uma mensagem automatica, por favor não responda.
                                                 </span></a>
                                                 </h2>
                                              </td>
@@ -158,7 +158,7 @@
                                                    170%; text-align: left; color: #666; word-wrap:
                                                    break-word;">
                                                    <div style="text-align:
-                                                      center;">Olá, alguém solicitou uma troca de senha para seu email, caso nao tenha solicitado isso ignore, se foi voce basta clicar no botao abaixo. <span style="line-height: 0;
+                                                      center;">Olá, alguém solicitou uma troca de senha para seu email, caso não tenha solicitado isso ignore, se foi voce basta clicar no botão abaixo. <span style="line-height: 0;
                                                          display: none;"></span><span style="line-height:
                                                          0; display:
                                                          none;"></span>.
@@ -185,7 +185,7 @@
                                        center;">
                                        <table style="border-collapse:
                                           collapse; border-spacing: 0; background-color:
-                                          rgb(64,190,255); border-radius: 10px; color:
+                                          #fd4326; border-radius: 10px; color:
                                           rgb(255,255,255); display: inline-block;
                                           font-family: Arial; font-size: 15px; font-weight:
                                           bold; text-align: center;">
@@ -199,7 +199,7 @@
                                                    font-family: arial; color: #fff; font-size: 15px;
                                                    font-weight: bold; margin: 0px; padding: 0px;
                                                    text-align: center; word-wrap: break-word; width:
-                                                   100%; cursor: text;"><a href="{{ route('forgotpass.get', $token) }}">Resetar Senha
+                                                   100%; cursor: text;"><a style="color:white;" href="{{ route('forgotpass.get', $token) }}">Resetar Senha
                                                    </a></td>
                                              </tr>
                                           </tbody>

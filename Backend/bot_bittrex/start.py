@@ -17,9 +17,10 @@ def startBots():
 		if(verifyBot(d[1]) == False):
 			if(d[2] =="bittrex"):
 				command_line = "python /home/bittrex/main.py "+str(d[0])+" &>/dev/null &"
+				os.system(command_line)
 			else:
 				command_line = "python3 /home/binance/src/main.py "+str(d[0])+" &>/dev/null &"
-			os.system(command_line)
+				os.system(command_line)
 
 def verifyBot(pid):
 	return psutil.pid_exists(pid)

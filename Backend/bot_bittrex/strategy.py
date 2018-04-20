@@ -106,7 +106,7 @@ def pivot_up(bot_config):
 	## PERCENTUAL
 	var = perc(pivot['o'], pivot['c'])
 	##STATMENT PARA SE ADEQUAR AO PIVO
-	pivot_up = var > 2.0 and pivot['c'] > max_h 
+	pivot_up = var > 3.0 and pivot['c'] > max_h 
 	pivot_do = var < -1.5 and pivot['c'] < min_l
 
 	if(pivot_up):
@@ -135,7 +135,7 @@ def rsi_max(bot_config):
 	maxx = max(tomax)
 	rsi = statistics.getRSI(data)
 
-	if(rsi < 35.0):
+	if(rsi < 30.0):
 		return 'buy'
 		
 	if(data['price_now'] >= maxx):

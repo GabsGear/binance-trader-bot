@@ -33,10 +33,10 @@
                                 </thead>
                                 <?php  $total = 0; ?>
                                 <tbody>
-                                @foreach($TransController->getAllNotSelled() as $trans)
+                                @foreach($TransController->getAll(0) as $trans)
                                 <tr>
-                                    <td>{{$BotController->getCurrency($trans->bot_id)}}</td>
-                                    <td><?php echo number_format($trans->buy_value, 8, ',', ' '); ?></td>
+                                    <td>{{$trans->currency}}</td>
+                                    <td>{{ number_format($trans->buy_value, 8, '.', ' ') }}</td>
                                     <td>{{$trans->quantity}}</td>
                                     <td>{{$trans->date_open}}</td>
                                 @endforeach

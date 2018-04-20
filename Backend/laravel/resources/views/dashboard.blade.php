@@ -1,10 +1,14 @@
 @inject('BotController', 'App\Http\Controllers\BotController')
 @inject('TransactionController', 'App\Http\Controllers\TransactionController')
 @inject('ProcessController', 'App\Http\Controllers\ProcessController')
-
+@inject('UserController', 'App\Http\Controllers\UserController')
+@inject('User', 'App\User')
+<?php $user = $UserController->getUser(); ?>
 
 @extends('layouts/default')
 @section('content')
+
+<link rel="stylesheet" type="text/css" href="css/pages/widgets.css">
 <header class="head">
     <div class="main-bar">
        <div class="row no-gutters">
@@ -22,97 +26,120 @@
         <div class="row">
             <div class="col-12">
                 <div class="row">
-                    <div class="col-sm-3 col-12">
-                        <div class="bg-primary top_cards"> <!--CARD COMEÇO -->
-                            <div class="row icon_margin_left">
-                                <div class="col-5 icon_padd_left">
-                                    <div class="float-left">
-                                        <span class="fa-stack fa-sm">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-android fa-stack-1x fa-inverse text-primary sales_hover"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-7 icon_padd_right">
-                                    <div class="float-right cards_content">
-                                        <span class="number_val">{{$BotController->getAllBots()->count()}}</span>
-                                        <br/>
-                                        <span class="card_description">Bots Ativos</span>
-                                    </div>
-                                </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="icon_align bg-white section_border">
+                            <div class="float-left progress_icon">
+                                <i class="fa fa-android text-success" aria-hidden="true"></i>
                             </div>
-                        </div> <!--CARD FIM -->
-                    </div>
-                    <div class="col-sm-3 col-12">
-                        <div class="bg-success top_cards">
-                            <div class="row icon_margin_left">
-                                <div class="col-5 icon_padd_left">
-                                    <div class="float-left">
-                                        <span class="fa-stack fa-sm">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-bitcoin fa-stack-1x fa-inverse text-success visit_icon"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-7 icon_padd_right">
-                                    <div class="float-right cards_content">
-                                        <span class="number_val">{{ $BotController->getAllCurrencys() }}</span>
-                                        <br/>
-                                        <span class="card_description">Moedas</span>
-                                    </div>
-                                </div>
+                            <div class="text-right">
+                                <h3 id="widget_count5">{{$BotController->countBots(1)}}</h3>
+                                <p>Bots Ativos</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-3 col-12">
-                        <div class="bg-warning top_cards">
-                            <div class="row icon_margin_left">
-                                <div class="col-5 icon_padd_left">
-                                    <div class="float-left">
-                                        <span class="fa-stack fa-sm">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-dollar fa-stack-1x fa-inverse text-warning revenue_icon"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-7 icon_padd_right">
-                                    <div class="float-right cards_content">
-                                        <span class="number_val">
-                                       <?php echo number_format($TransactionController->getAllTotal(), 2, ',', ' '); ?>
-                                        </span>
-                                        <br/>
-                                        <span class="card_description">Balanço R$</span>
-                                    </div>
-                                </div>
+                    <div class="col-12 col-sm-6 col-lg-3 media_max_573">
+                        <div class="icon_align bg-white section_border">
+                            <div class="float-left progress_icon">
+                                <i class="fa fa-bitcoin text-danger" aria-hidden="true"></i>
+                            </div>
+                            <div class="text-right">
+                                <h3 id="widget_count6">{{ $BotController->getAllCurrencys() }}</h3>
+                                <p>Moedas</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-12">
-                        <div class="bg-mint top_cards">
-                            <div class="row icon_margin_left">
-                                <div class="col-5 icon_padd_left">
-                                    <div class="float-left">
-                                        <span class="fa-stack fa-sm">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-arrows-h  fa-stack-1x fa-inverse text-mint sub"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-7 icon_padd_right">
-                                    <div class="float-right cards_content">
-                                        <span class="number_val">
-                                        {{$TransactionController->getAllTrans()}}
-                                        </span>
-                                        <br/>
-                                        <span class="card_description">Trades</span>
-                                    </div>
-                                </div>
+                    <div class="col-12 col-sm-6 col-lg-3 media_max_991">
+                        <div class="icon_align bg-white section_border">
+                            <div class="float-left progress_icon">
+                                <i class="fa fa-money text-primary" aria-hidden="true"></i>
+                            </div>
+                            <div class="text-right">
+                                <h3 id="widget_count7">
+                                    R$ {{ number_format($TransactionController->getBalanceTotal(), 2, '.', ' ') }}
+                                </h3>
+                                <p>Balanço Total</p>
                             </div>
                         </div>
                     </div>
-                </div>
+                    <div class="col-12 col-sm-6 col-lg-3 media_max_991">
+                        <div class="icon_align bg-white section_border">
+                            <div class="float-left progress_icon">
+                                <img src="img/exchanges/binance.png">
+                            </div>
+                            <div class="text-right">
+                                <h3 id="widget_count8">Binance</h3>
+                                @if($UserController->check_binance() == 1)
+                                    <p>{{number_format($UserController->binance_balance('USDT'), 2, '.', ' ')}} <b>USD</b> | {{number_format($UserController->binance_balance('BTC'), 8, '.', ' ')}} <b>BTC</b></p>
+                                @else
+                                    <p>Não conectado...</p>
+                                @endif
+                            </div>
+                        </div>
+                    </div>
+                </div> <!---FIM ROW-->
+                </br>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="icon_align bg-white section_border">
+                            <div class="float-left progress_icon">
+                                <i class="fa fa-arrows-h text-warning" aria-hidden="true"></i>
+                            </div>
+                            <div class="text-right">
+                                <h3 id="widget_count5">{{$TransactionController->count(1)}}</h3>
+                                <p>Trades Fechados</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 media_max_573">
+                        <div class="widget_icon_bgclr icon_align bg-white section_border">
+                            <div class="float-left progress_icon">
+                                <i class="fa fa-arrows-h text-info" aria-hidden="true"></i>
+                            </div>
+                            <div class="text-right">
+                                <h3 id="widget_count6">{{$TransactionController->count(0)}}</h3>
+                                <p>Trades Abertos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="icon_align bg-white section_border">
+                            <div class="float-left progress_icon">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="text-right">
+                                @if($user->premium == 1 and $UserController->checkPremium() == true)
+                                    <h3 id="widget_count5">Plano <font color="#c0c0c0"><b>Prata</b></font></h3>
+                                    <?php $date = explode('-', $UserController->getUser()->expire_date) ?>
+                                    <a href="#"><p> <i class="fa fa-refresh" aria-hidden="true"></i> UPGRADE</a> | 
+                                    Expira {{$date[2]}}/{{$date[1]}}</p>
+                                @elseif($user->premium == 2 and $UserController->checkPremium() == true)
+                                    <h3 id="widget_count5">Plano <font color="#cd7f32"><b>Ouro</b></font></h3>
+                                    Expira {{$UserController->getUser()->expire_date}}</p>
+                                @else
+                                    <h3 id="widget_count5">Plano <font color="#cd7f32"><b>Bronze</b></font></h3>
+                                    <a href="#"><p> <i class="fa fa-refresh" aria-hidden="true"></i> UPGRADE</a></p>
+                                @endif
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 media_max_991">
+                        <div class="icon_align bg-white section_border">
+                            <div class="float-left progress_icon">
+                                <img src="img/exchanges/bittrex.png">
+                            </div>
+                            <div class="text-right">
+                                <h3 id="widget_count8">Bittrex</h3>
+                                @if($UserController->check_bittrex() == 1)
+                                    <p>{{number_format($UserController->bittrex_balance('USDT'), 2, '.', ' ')}} <b>USD</b> | {{$UserController->bittrex_balance('BTC')}} <b>BTC</b></p>
+                                @else
+                                    <p>Não conectado...</p>
+                                @endif
+                            </div>
+                        </div>
+                    </div>
+                </div> <!---FIM ROW-->
             </div>
-        </div>
+        </div> <!---FIM ROW-->
         <div class="row">
             <div class="col-sm-12 col-12">
                 <div class="card m-t-35">
@@ -133,13 +160,13 @@
                                 <thead class="flip-content">
                                 <tr>
                                     <th>Status</th>
-                                    <th>Par</th>
+                                    <th>ID</th>
+                                    <th>Mercado&Moeda</th>
                                     <th>Corretora</th>
                                     <th>Variação</th>
                                     <th>Capital</th>
                                     <th>Info.</th>
                                     <th>Estado</th>
-                                    <th></th>
                                     <th></th>
                                 </tr>
                                 </thead>
@@ -160,6 +187,7 @@
 
                                         @endif
                                     </td>
+                                    <td>{{ $bot->name }}</td>
                                     <td>{{ $bot->currency }}</td>
                                     @if($bot->exchange == 'bittrex')
                                         <td><img width="15" height="15" src="img/exchanges/bittrex.png"/> Bittrex</td>
@@ -167,7 +195,7 @@
                                         <td><img width="15" height="15" src="img/exchanges/binance.png"/> Binance</td>
                                     @endif
                                     <td>
-                                        <?php echo number_format($TransactionController->getTotal($bot->id), 2, ',', ' '); ?> BRL</td>
+                                        {{ number_format($TransactionController->getBalance($bot->id), 2, '.', ' ') }} BRL</td>
                                     </td>
                                     <td>
                                     {{ Form::open(['method' => 'POST', 'route' => ['bot.updatewallet', $bot->id]]) }}
@@ -215,28 +243,28 @@
                                             RSI + Resistance
                                         @else
                                             Pivot UP
-                                        @endif/
-                                        @if($bot->strategy_sell == 0)
-                                            Via Estrategia
-                                        @else
-                                            Lucro Fixo [{{$bot->percentage}}]
-                                        @endif/Stoploss: {{$bot->stoploss*100}}%/Timeframe: {{$bot->period}}
+                                        @endif
+                                        /Lucro:{{$bot->percentage*100}}%
+                                        /Stoploss: {{$bot->stoploss*100}}%/Timeframe: {{$bot->period}}
                                         "></i>
                                         </center>
                                     </td>
                                     <td>
-                                    {{ Form::open(['method' => 'GET', 'route' => ['bot.active', $bot->id]]) }}
-                                        @if($bot->active == 0)
-                                            <button type="submit" class="btn btn-warning"><i class="fa fa-refresh"></i> Simulando</button>
-                                        @else
-                                            <button type="submit" class="btn btn-success"><i class="fa fa-refresh"></i> Operando</button>
-                                        @endif
+                                    {{ Form::open(['method' => 'POST', 'route' => ['bot.active']]) }}
+                                        <select name="active" class="form-control" onchange='this.form.submit()'>
+                                            @if($bot->active == 0)
+                                                <option selected disabled>Simulando</option>
+                                            @elseif($bot->active == 1)
+                                                <option selected disabled>Operando</option>
+                                            @else
+                                                <option selected disabled>Parado</option>
+                                            @endif
+                                            <option value="0">Simular</option>
+                                            <option value="1">Operar</option>
+                                            <option value="2">Parar</option>
+                                        </select>
+                                        <input type="hidden" name="id" value="{{ $bot->id }}">
                                     {{ Form::close() }}
-                                    </td>
-                                    <td>
-                                        {{ Form::open(['method' => 'GET', 'route' => ['bot.stop', $bot->id]]) }}
-                                            {{ Form::submit('Parar', ['class' => 'btn btn-danger']) }}
-                                        {{ Form::close() }}
                                     </td>
                                     <td>
                                         {{ Form::open(['method' => 'DELETE', 'route' => ['bot.destroy', $bot->id]]) }}
@@ -261,74 +289,82 @@
 </div>
 
 <div class="modal fade" id="modal-newbot" role="dialog" aria-labelledby="modalLabelsuccess" aria-hidden="true" style="display: none;">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog  modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header bg-success">
                 <h4 class="modal-title text-white" id="modalLabelsuccess">Criar Novo Bot</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
             </div>
             <div class="modal-body">
-                <form method="POST" action="{{ route('bot.create') }}">
-                    {{ csrf_field() }}
-                    <label>Corretora <i  data-toggle="tooltip" data-placement="top" title="Hooray!" class="fa fa-question-circle-o" style='color:#00cc99'></i></label></br>
-                    <select id="exchange" name="exchange" class="form-control" onchange="getMarkets()">
-                        <option value="bittrex">Bittrex</option>
-                        <option value="binance">Binance</option>
-                    </select>
-                    </br><label>Mercado <i  data-toggle="tooltip" data-placement="top" title="Hooray!" class="fa fa-question-circle-o" style='color:#00cc99'></i></label></br>
-                    <input id="currencys" type="text" name="currency" class="dropdown-input"/>
-                    <button class="dropdown-btn" type="button"><span class="caret"></span></button>
-                    </br>
-                    </br><label>Tempo Gráfico</label>
-                    <select name="period" class="form-control">
-                        <option value="Day">1 dia</option>
-                        <option value="hour">1 hora</option>
-                        <option value="thirtyMin">30 minutos</option>
-                    </select>
-                    </br><label>Estrategia de Compra <i  data-toggle="tooltip" data-placement="top" title="Hooray!" class="fa fa-question-circle-o" style='color:#00cc99'></i></label></br>
-                    <select name="strategy_buy" class="form-control">
-                        <option value="0">Contra Turtle</option>
-                        <option value="1">Inside Bar</option>
-                        <option value="2">Double UP</option>
-                        <option value="3">Pivot UP</option>
-                        <option value="4">RSI Resistance</option>
-                    </select>
-                    </br><label>Estrategia de Venda <i  data-toggle="tooltip" data-placement="top" title="Hooray!" class="fa fa-question-circle-o" style='color:#00cc99'></i></label></br>
-                    <select name="strategy_sell" class="form-control">
-                        <option value="0">Via Estrategia</option>
-                        <option value="1">Lucro Fixo (preco compra + lucro)</option>
-                    </select>
-                    </br><label>Lucro Fixo % <i  data-toggle="tooltip" data-placement="top" title="Hooray!" class="fa fa-question-circle-o" style='color:#00cc99'></i></label></br>
-                    <select name="percentage" class="form-control">
-                        <option value="0.01">1%</option>
-                        <option value="0.015">1.5%</option>
-                        <option value="0.02">2%</option>
-                        <option value="0.03">3%</option>
-                        <option value="0.05">5%</option>
-                        <option value="0.07">7%</option>
-                        <option value="0.10">10%</option>
-                    </select>
-                    </br><label>Parar Perda % <i  data-toggle="tooltip" data-placement="top" title="Hooray!" class="fa fa-question-circle-o" style='color:#00cc99'></i></label></br>
-                    <select name="stoploss" class="form-control">
-                        <option value="0.01">1%</option>
-                        <option value="0.015">1.5%</option>
-                        <option value="0.02">2%</option>
-                        <option value="0.03">3%</option>
-                        <option value="0.05">5%</option>
-                        <option value="0.07">7%</option>
-                        <option value="0.1">10%</option>
-                        <option value="0.15">15%</option>
-                        <option value="0.2">20%</option>
-                        <option value="0.25">25%</option>
-                        <option value="0.5">50%</option>
-                        <option value="0.75">75%</option>
-                    </select>
-                    </br></br>
-                    <button type="submit" class="btn btn-success">Criar</button>
-                    </br></br>
-                </form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form method="POST" action="{{ route('bot.create') }}">
+                        {{ csrf_field() }}
+                        <label><i  data-toggle="tooltip" data-placement="right" title="Qual corretora o robô ira operar." class="fa fa-question-circle-o" style='color:#00cc99'></i>
+                        Corretora </label></br>
+                        <select id="exchange" name="exchange" class="form-control" onchange="getMarkets()">
+                            <option value="bittrex">Bittrex</option>
+                            <option value="binance">Binance</option>
+                        </select>
+                        </br><label><i data-toggle="tooltip" data-placement="right" title="Para negociar por exemplo Verge por Bitcoin digite (BTC-XVG) ou Dólar digite (USDT-XVG)." class="fa fa-question-circle-o" style='color:#00cc99'></i>
+                        Mercado & Moeda </label></br>
+                        <input id="currencys" type="text" name="currency" class="dropdown-input"/>
+                        <button type="button" id="drop" class="btn btn-light dropdown-toggle b-r-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        </button>
+                        </br>
+                        </br><label><i data-toggle="tooltip" data-placement="right" title="Tempo dos candlesticks que serão analisados." class="fa fa-question-circle-o" style='color:#00cc99'></i></label>
+                        Tempo Gráfico </br>
+                        </label>
+                        <select name="period" class="form-control">
+                            <option value="Day">1 dia</option>
+                            <option value="hour">1 hora</option>
+                            <option value="thirtyMin">30 minutos</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label><i  data-toggle="tooltip" data-placement="right" title="Detalhes sobre cada uma das estratégias de compra estão em nosso blog." class="fa fa-question-circle-o" style='color:#00cc99'></i>
+                        Estratégia de Compra </label></br>
+                        <select name="strategy_buy" class="form-control">
+                            <option value="0">Contra Turtle</option>
+                            <option value="1">Inside Bar</option>
+                            <option value="2">Double UP</option>
+                            <option value="3">Pivot UP</option>
+                            <option value="4">RSI Resistance</option>
+                        </select>
+                        </br><label><i  data-toggle="tooltip" data-placement="right" title="Defina o lucro a ser atingido quando uma compra for efetuada." class="fa fa-question-circle-o" style='color:#00cc99'></i> 
+                        Porcentagem de Lucro </label></br>
+                        <select name="percentage" class="form-control">
+                            <option value="0.01">1%</option>
+                            <option value="0.015">1.5%</option>
+                            <option value="0.02">2%</option>
+                            <option value="0.03">3%</option>
+                            <option value="0.05">5%</option>
+                            <option value="0.07">7%</option>
+                            <option value="0.10">10%</option>
+                        </select>
+                        </br><label><i  data-toggle="tooltip" data-placement="right" title="Proteja seu capital definindo um limite de perda em porcentagem." class="fa fa-question-circle-o" style='color:#00cc99'></i>
+                        Parar Perda % </label></br>
+                        <select name="stoploss" class="form-control">
+                            <option value="0.01">1%</option>
+                            <option value="0.015">1.5%</option>
+                            <option value="0.02">2%</option>
+                            <option value="0.03">3%</option>
+                            <option value="0.05">5%</option>
+                            <option value="0.07">7%</option>
+                            <option value="0.1">10%</option>
+                            <option value="0.15">15%</option>
+                            <option value="0.2">20%</option>
+                            <option value="0.25">25%</option>
+                            <option value="0.5">50%</option>
+                            <option value="0.75">75%</option>
+                        </select>
+                    </div> <!--FIM MD6 -->
+                </div> <!--FIM ARROW -->
             </div>
             <div class="modal-footer">
-                <button class="btn  btn-success" data-dismiss="modal">Sair</button>
+                    <button type="button" data-dismiss="modal" class="btn btn-light">Sair</button>
+                    <button class="btn  btn-success">Criar</button>
+                </form>
             </div>
         </div>
     </div>
@@ -338,36 +374,23 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <script src="http://198.50.194.124/js/awesomplete.js"></script>
 <script type="text/javascript">
-    function getMarkets() {
-        let exchange = document.getElementById("exchange").value;
-        let markets = [];
-        if(exchange == 'binance') {
-            console.log("sou binance eo")
-            markets = ['USDT-BTC', 'USDT-ETH', 'USDT-BNB', 'USDT-BCC', 'USDT-NEO', 'USDT-LTC', 'USDT-QTUM', 'BTC-ETH', 'BTC-LTC', 'BTC-BNB', 'BTC-NEO', 'BTC-BCC', 'BTC-GAS', 'BTC-HSR', 'BTC-MCO', 'BTC-WTC', 'BTC-LRC', 'BTC-QTUM', 'BTC-YOYO', 'BTC-OMG', 'BTC-ZRX', 'BTC-STRAT', 'BTC-SNGLS', 'BTC-BQX', 'BTC-KNC', 'BTC-FUN', 'BTC-SNM', 'BTC-IOTA', 'BTC-LINK', 'BTC-XVG', 'BTC-SALT', 'BTC-MDA', 'BTC-MTL', 'BTC-SUB', 'BTC-EOS', 'BTC-SNT', 'BTC-ETC', 'BTC-MTH', 'BTC-ENG', 'BTC-DNT', 'BTC-ZEC', 'BTC-BNT', 'BTC-AST', 'BTC-DASH', 'BTC-OAX', 'BTC-ICN', 'BTC-BTG', 'BTC-EVX', 'BTC-REQ', 'BTC-VIB', 'BTC-TRX', 'BTC-POWR', 'BTC-ARK', 'BTC-XRP', 'BTC-MOD', 'BTC-ENJ', 'BTC-STORJ', 'BTC-VEN', 'BTC-KMD', 'BTC-RCN', 'BTC-NULS', 'BTC-RDN', 'BTC-XMR', 'BTC-DLT', 'BTC-AMB', 'BTC-BAT', 'BTC-BCPT', 'BTC-ARN', 'BTC-GVT', 'BTC-CDT', 'BTC-GXS', 'BTC-POE', 'BTC-QSP', 'BTC-BTS', 'BTC-XZC', 'BTC-LSK', 'BTC-TNT', 'BTC-FUEL', 'BTC-MANA', 'BTC-BCD', 'BTC-DGD', 'BTC-ADX', 'BTC-ADA', 'BTC-PPT', 'BTC-CMT', 'BTC-XLM', 'BTC-CND', 'BTC-LEND', 'BTC-WABI', 'BTC-TNB', 'BTC-WAVES', 'BTC-GTO', 'BTC-ICX', 'BTC-OST', 'BTC-ELF', 'BTC-AION', 'BTC-NEBL', 'BTC-BRD', 'BTC-EDO', 'BTC-WINGS', 'BTC-NAV', 'BTC-LUN', 'BTC-TRIG', 'BTC-APPC', 'BTC-VIBE', 'BTC-RLC', 'BTC-INS', 'BTC-PIVX', 'BTC-IOST', 'BTC-CHAT', 'BTC-STEEM', 'BTC-NANO', 'BTC-VIA', 'BTC-BLZ', 'BTC-AE', 'BTC-RPX', 'BTC-NCASH', 'BTC-POA', 'BTC-ZIL', 'BTC-ONT', 'BTC-STORM', 'BTC-XEM', 'BTC-WAN', 'BTC-WPR', 'BTC-QLC', 'BTC-SYS', 'BTC-GRS']; 
+    let markets = ['BTC-2GIVE', 'BTC-ABY', 'BTC-ADA', 'BTC-ADT', 'BTC-ADX', 'BTC-AEON', 'BTC-AMP', 'BTC-ANT', 'BTC-ARDR', 'BTC-ARK', 'BTC-AUR', 'BTC-BAT', 'BTC-BAY', 'BTC-BCC', 'BTC-BCPT', 'BTC-BCY', 'BTC-BITB', 'BTC-BLITZ', 'BTC-BLK', 'BTC-BLOCK', 'BTC-BNT', 'BTC-BRK', 'BTC-BRX', 'BTC-BSD', 'BTC-BTG', 'BTC-BURST', 'BTC-BYC', 'BTC-CANN', 'BTC-CFI', 'BTC-CLAM', 'BTC-CLOAK', 'BTC-COVAL', 'BTC-CRB', 'BTC-CRW', 'BTC-CURE', 'BTC-CVC', 'BTC-DASH', 'BTC-DCR', 'BTC-DCT', 'BTC-DGB', 'BTC-DMD', 'BTC-DMT', 'BTC-DNT', 'BTC-DOGE', 'BTC-DOPE', 'BTC-DTB', 'BTC-DYN', 'BTC-EBST', 'BTC-EDG', 'BTC-EFL', 'BTC-EGC', 'BTC-EMC', 'BTC-EMC2', 'BTC-ENG', 'BTC-ENRG', 'BTC-ERC', 'BTC-ETC', 'BTC-ETH', 'BTC-EXCL', 'BTC-EXP', 'BTC-FCT', 'BTC-FLDC', 'BTC-FLO', 'BTC-FTC', 'BTC-GAM', 'BTC-GAME', 'BTC-GBG', 'BTC-GBYTE', 'BTC-GEO', 'BTC-GLD', 'BTC-GNO', 'BTC-GNT', 'BTC-GOLOS', 'BTC-GRC', 'BTC-GRS', 'BTC-GUP', 'BTC-HMQ', 'BTC-IGNIS', 'BTC-INCNT', 'BTC-IOC', 'BTC-ION', 'BTC-IOP', 'BTC-KMD', 'BTC-KORE', 'BTC-LBC', 'BTC-LGD', 'BTC-LMC', 'BTC-LRC', 'BTC-LSK', 'BTC-LTC', 'BTC-LUN', 'BTC-MANA', 'BTC-MCO', 'BTC-MEME', 'BTC-MER', 'BTC-MLN', 'BTC-MONA', 'BTC-MUE', 'BTC-MUSIC', 'BTC-NAV', 'BTC-NBT', 'BTC-NEO', 'BTC-NEOS', 'BTC-NLG', 'BTC-NMR', 'BTC-NXC', 'BTC-NXS', 'BTC-NXT', 'BTC-OK', 'BTC-OMG', 'BTC-OMNI', 'BTC-PART', 'BTC-PAY', 'BTC-PINK', 'BTC-PIVX', 'BTC-PKB', 'BTC-POT', 'BTC-POWR', 'BTC-PPC', 'BTC-PTC', 'BTC-PTOY', 'BTC-QRL', 'BTC-QTUM', 'BTC-QWARK', 'BTC-RADS', 'BTC-RBY', 'BTC-RCN', 'BTC-RDD', 'BTC-REP', 'BTC-RLC', 'BTC-RVR', 'BTC-SALT', 'BTC-SBD', 'BTC-SC', 'BTC-SEQ', 'BTC-SHIFT', 'BTC-SIB', 'BTC-SLR', 'BTC-SLS', 'BTC-SNRG', 'BTC-SNT', 'BTC-SPHR', 'BTC-SPR', 'BTC-SRN', 'BTC-STEEM', 'BTC-STORJ', 'BTC-STRAT', 'BTC-SWIFT', 'BTC-SWT', 'BTC-SYNX', 'BTC-SYS', 'BTC-THC', 'BTC-TIX', 'BTC-TKS', 'BTC-TRST', 'BTC-TRUST', 'BTC-TRX', 'BTC-TUSD', 'BTC-TX', 'BTC-UBQ', 'BTC-UKG', 'BTC-UNB', 'BTC-UP', 'BTC-VEE', 'BTC-VIA', 'BTC-VIB', 'BTC-VRC', 'BTC-VRM', 'BTC-VTC', 'BTC-VTR', 'BTC-WAVES', 'BTC-WAX', 'BTC-WINGS', 'BTC-XCP', 'BTC-XDN', 'BTC-XEL', 'BTC-XEM', 'BTC-XLM', 'BTC-XMG', 'BTC-XMR', 'BTC-XMY', 'BTC-XRP', 'BTC-XST', 'BTC-XVC', 'BTC-XVG', 'BTC-XWC', 'BTC-XZC', 'BTC-ZCL', 'BTC-ZEC', 'BTC-ZEN', 'BTC-ZRX', 'USDT-ADA', 'USDT-BCC', 'USDT-BTC', 'USDT-BTG', 'USDT-DASH', 'USDT-ETC', 'USDT-ETH', 'USDT-LTC', 'USDT-NEO', 'USDT-NXT', 'USDT-OMG', 'USDT-TUSD', 'USDT-XMR', 'USDT-XRP', 'USDT-XVG', 'USDT-ZEC', 'USDT-BNB', 'USDT-QTUM', 'BTC-BNB', 'BTC-GAS', 'BTC-HSR', 'BTC-WTC', 'BTC-YOYO', 'BTC-SNGLS', 'BTC-BQX', 'BTC-KNC', 'BTC-FUN', 'BTC-SNM', 'BTC-IOTA', 'BTC-LINK', 'BTC-MDA', 'BTC-MTL', 'BTC-SUB', 'BTC-EOS', 'BTC-MTH', 'BTC-AST', 'BTC-OAX', 'BTC-ICN', 'BTC-EVX', 'BTC-REQ', 'BTC-MOD', 'BTC-ENJ', 'BTC-VEN', 'BTC-NULS', 'BTC-RDN', 'BTC-DLT', 'BTC-AMB', 'BTC-ARN', 'BTC-GVT', 'BTC-CDT', 'BTC-GXS', 'BTC-POE', 'BTC-QSP', 'BTC-BTS', 'BTC-TNT', 'BTC-FUEL', 'BTC-BCD', 'BTC-DGD', 'BTC-PPT', 'BTC-CMT', 'BTC-CND', 'BTC-LEND', 'BTC-WABI', 'BTC-TNB', 'BTC-GTO', 'BTC-ICX', 'BTC-OST', 'BTC-ELF', 'BTC-AION', 'BTC-NEBL', 'BTC-BRD', 'BTC-EDO', 'BTC-TRIG', 'BTC-APPC', 'BTC-VIBE', 'BTC-INS', 'BTC-IOST', 'BTC-CHAT', 'BTC-NANO', 'BTC-BLZ', 'BTC-AE', 'BTC-RPX', 'BTC-NCASH', 'BTC-POA', 'BTC-ZIL', 'BTC-ONT', 'BTC-STORM', 'BTC-WAN', 'BTC-WPR', 'BTC-QLC'];
+    var comboplete = new Awesomplete('input.dropdown-input', {
+        list: markets,
+        minChars: 0,
+    });
+    Awesomplete.$('#drop').addEventListener("click", function() {
+        if (comboplete.ul.childNodes.length === 0) {
+            comboplete.minChars = 0;
+            comboplete.evaluate();
         }
-        if(exchange == 'bittrex') {
-            console.log("sou bittrex eo")
-            markets = ['BTC-2GIVE','BTC-ABY','BTC-ADA','BTC-ADT','BTC-ADX','BTC-AEON','BTC-AMP','BTC-ANT','BTC-ARDR','BTC-ARK','BTC-AUR','BTC-BAT','BTC-BAY','BTC-BCC','BTC-BCPT','BTC-BCY','BTC-BITB','BTC-BLITZ','BTC-BLK','BTC-BLOCK','BTC-BNT','BTC-BRK','BTC-BRX','BTC-BSD','BTC-BTG','BTC-BURST','BTC-BYC','BTC-CANN','BTC-CFI','BTC-CLAM','BTC-CLOAK','BTC-COVAL','BTC-CRB','BTC-CRW','BTC-CURE','BTC-CVC','BTC-DASH','BTC-DCR','BTC-DCT','BTC-DGB','BTC-DMD','BTC-DMT','BTC-DNT','BTC-DOGE','BTC-DOPE','BTC-DTB','BTC-DYN','BTC-EBST','BTC-EDG','BTC-EFL','BTC-EGC','BTC-EMC','BTC-EMC2','BTC-ENG','BTC-ENRG','BTC-ERC','BTC-ETC','BTC-ETH','BTC-EXCL','BTC-EXP','BTC-FCT','BTC-FLDC','BTC-FLO','BTC-FTC','BTC-GAM','BTC-GAME','BTC-GBG','BTC-GBYTE','BTC-GEO','BTC-GLD','BTC-GNO','BTC-GNT','BTC-GOLOS','BTC-GRC','BTC-GRS','BTC-GUP','BTC-HMQ','BTC-IGNIS','BTC-INCNT','BTC-IOC','BTC-ION','BTC-IOP','BTC-KMD','BTC-KORE','BTC-LBC','BTC-LGD','BTC-LMC','BTC-LRC','BTC-LSK','BTC-LTC','BTC-LUN','BTC-MANA','BTC-MCO','BTC-MEME','BTC-MER','BTC-MLN','BTC-MONA','BTC-MUE','BTC-MUSIC','BTC-NAV','BTC-NBT','BTC-NEO','BTC-NEOS','BTC-NLG','BTC-NMR','BTC-NXC','BTC-NXS','BTC-NXT','BTC-OK','BTC-OMG','BTC-OMNI','BTC-PART','BTC-PAY','BTC-PINK','BTC-PIVX','BTC-PKB','BTC-POT','BTC-POWR','BTC-PPC','BTC-PTC','BTC-PTOY','BTC-QRL','BTC-QTUM','BTC-QWARK','BTC-RADS','BTC-RBY','BTC-RCN','BTC-RDD','BTC-REP','BTC-RLC','BTC-RVR','BTC-SALT','BTC-SBD','BTC-SC','BTC-SEQ','BTC-SHIFT','BTC-SIB','BTC-SLR','BTC-SLS','BTC-SNRG','BTC-SNT','BTC-SPHR','BTC-SPR','BTC-SRN','BTC-STEEM','BTC-STORJ','BTC-STRAT','BTC-SWIFT','BTC-SWT','BTC-SYNX','BTC-SYS','BTC-THC','BTC-TIX','BTC-TKS','BTC-TRST','BTC-TRUST','BTC-TRX','BTC-TUSD','BTC-TX','BTC-UBQ','BTC-UKG','BTC-UNB','BTC-UP','BTC-VEE','BTC-VIA','BTC-VIB','BTC-VRC','BTC-VRM','BTC-VTC','BTC-VTR','BTC-WAVES','BTC-WAX','BTC-WINGS','BTC-XCP','BTC-XDN','BTC-XEL','BTC-XEM','BTC-XLM','BTC-XMG','BTC-XMR','BTC-XMY','BTC-XRP','BTC-XST','BTC-XVC','BTC-XVG','BTC-XWC','BTC-XZC','BTC-ZCL','BTC-ZEC','BTC-ZEN','BTC-ZRX','USDT-ADA','USDT-BCC','USDT-BTC','USDT-BTG','USDT-DASH','USDT-ETC','USDT-ETH','USDT-LTC','USDT-NEO','USDT-NXT','USDT-OMG','USDT-TUSD','USDT-XMR','USDT-XRP','USDT-XVG','USDT-ZEC'];
+        else if (comboplete.ul.hasAttribute('hidden')) {
+            comboplete.open();
         }
-        console.log(exchange);
-        console.log(markets);
-        var comboplete = new Awesomplete('input.dropdown-input', {
-            list: markets,
-            minChars: 0,
-        });
-        Awesomplete.$('.dropdown-btn').addEventListener("click", function() {
-            if (comboplete.ul.childNodes.length === 0) {
-                comboplete.minChars = 0;
-                comboplete.evaluate();
-            }
-            else if (comboplete.ul.hasAttribute('hidden')) {
-                comboplete.open();
-            }
-            else {
-                comboplete.close();
-            }
-        });
-    };
-    </script>
+        else {
+            comboplete.close();
+        }
+    });
+</script>
 @stop
 <!-- /#wrap -->

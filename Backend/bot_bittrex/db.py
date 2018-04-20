@@ -13,7 +13,7 @@ def insertBuyOrder(data):
 	#print data
 	db, cursor = getConn()
 	query = ("INSERT INTO transactions (bot_id, buy_value, quantity, sell_value, selled, date_open, date_close, buy_uuid, sell_uuid) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)")
-	cursor.execute(query, (data['bot_id'], data['valor'], data['qnt'], 0.0, 0, str(time_now()), '-', data['buy_uuid'], ''))
+	cursor.execute(query, (data['bot_id'], data['valor'], data['qnt'], 0.0, 0, time_now(), '-', data['buy_uuid'], ''))
 	db.commit()
 	cursor.close()
 
@@ -76,8 +76,8 @@ def getConfigAcc(user_id):
 				'id': data[0],
 				'name': data[1],
 				'email': data[2],
-				'api_secret': data[5],
-				'api_key': data[6],
+				'bit_api_secret': data[5],
+				'bit_api_key': data[6],
 		       }
 		
 		return obj
@@ -98,14 +98,12 @@ def getConfigBot(bot_id):
 				'exchange': data[2],
 				'currency': data[3],
 				'strategy_buy': data[4],
-				'strategy_sell': data[5],
-				'percentage': data[6],
-				'pid': data[7],
-				'active': data[8],
-				'max_order': data[9],
-				'order_value': float(data[10]),
-				'period': data[11],
-				'stoploss': data[12]
+				'percentage': float(data[5]),
+				'pid': data[6],
+				'active': data[7],
+				'order_value': float(data[8]),
+				'period': data[9],
+				'stoploss': data[10]
 		       }
 		return obj
 	except:
@@ -124,5 +122,4 @@ def setPID(bot_id):
 
 def time_now():
 	brasil = pytz.timezone('America/Sao_Paulo')
-	ct = datetime.datetime.now(tz=brasil)
-	return ct.strftime("%d/%m/%y-%X")
+	return datetime.datetime.now(tz=brasil).strftime('%Y-%m-%d %H:%M:%S')

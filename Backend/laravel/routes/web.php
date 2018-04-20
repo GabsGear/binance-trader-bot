@@ -13,6 +13,7 @@
 
 Route::group(['middleware' => ['auth']], function() {
 	Route::auth();
+
 	//GET MENU ROUTES
 	Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
 	Route::get('/reports/open', 'HomeController@reportsopen')->name('reports.open');
@@ -20,28 +21,34 @@ Route::group(['middleware' => ['auth']], function() {
 	Route::get('/account', 'HomeController@account')->name('account');
 	Route::get('/indicator/{id}', 'HomeController@indicator')->name('indicator');
 	Route::get('/mail', 'EmailController@send')->name('email');
+
 	//GET BOT ROUTES
-	Route::get('/bot/view/{id}', 'BotController@view')->name('bot.view');
-	Route::get('/bot/active/{id}', 'BotController@active')->name('bot.active');
-	Route::get('/bot/stop/{id}', 'BotController@stop')->name('bot.stop');
 	Route::delete('/bot/destroy/{id}', 'BotController@destroy')->name('bot.destroy');
 	Route::get('/dashboard/stopall', 'BotController@stopAll')->name('bot.stopall');
-	Route::get('/bot/candles/{id}', 'BotController@getCandles')->name('bot.candles');
 	Route::get('/bot/trans/{id}', 'TransactionController@getTrans')->name('bot.trans');
 
+	Route::post('/bot/active', 'BotController@active')->name('bot.active');
 	Route::post('/dashboard', [ 'as' => 'bot.create', 'uses' => 'BotController@create']);
-	Route::post('/bot/updateperiod/{id}', 'BotController@changePeriod')->name('bot.period');
-	Route::post('/bot/update/{id}', 'BotController@update')->name('bot.update');
 	Route::post('/bot/updatewallet/{id}', 'BotController@updateWallet')->name('bot.updatewallet');
 
+	// TRANS POST ROUTES
+	Route::post('/trans/filter/date', 'TransactionController@filter_date')->name('trans.filter.date');
+	Route::post('/trans/filter/name', 'TransactionController@filter_name')->name('trans.filter.name');
+
 	## ACC POST ROUTES	
-	Route::post('/account/update', 'UserController@updateAPI')->name('acc.updateapi');
+	Route::post('/account/update/bittrex', 'UserController@update_api_bittrex')->name('acc.api.bittrex');
+	Route::post('/account/update/binance', 'UserController@update_api_binance')->name('acc.api.binance');
 	Route::post('/account/changepass', 'UserController@reset')->name('acc.changepass');
 	Route::post('/account/logout', 'UserController@logout')->name('acc.logout');
 
+	##PAYMENT ROUTES
+	Route::get('/payment/post', 'PaymentController@listen')->name('listen');
+	Route::get('/payment', function () { 
+		return view('coinpayment'); 
+	});
+
 });
 
-Route::get('/botstatus', 'BotController@botsstatus')->name('botstatus');
 
 Route::get('password/reset/{token}', 'Auth\ForgotPasswordController@getReset')->name('forgotpass.get');
 Route::post('password/reset', 'Auth\ForgotPasswordController@postReset')->name('forgotpass.form');
@@ -52,6 +59,10 @@ Route::post('forgotpassword', 'EmailController@postEmailForgotPass')->name('emai
 
 Route::get('/register', function () { 
 	return view('register'); 
+});
+
+Route::get('/termos', function () { 
+	return view('termos'); 
 });
 
 Route::get('/',array('as'=>'login', function(){ 

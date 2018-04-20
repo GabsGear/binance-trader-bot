@@ -59,7 +59,8 @@ z-index: 999999">
                             <div class="row">
                                 <div class="col-12">
                                     <div class="text-center">
-                                        <a href="{{route('register')}}">Ainda não é cadastrado?</a>
+                                        <a href="{{route('register')}}">Ainda não é cadastrado?</a> | 
+                                        <a href="{{route('email.password.get')}}">Perdeu sua senha?</a>
                                         <button type="submit" class="btn btn-success btn-block b_r_20 m-t-20">ENTRAR</button>
                                     </div>
                                 </div>

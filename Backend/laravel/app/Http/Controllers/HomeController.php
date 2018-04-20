@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Bot;
 use Auth;
 use App\Http\Controllers\BotController;
+use App\Http\Controllers\TransactionController;
+use DB;
 
 class HomeController extends Controller
 {
@@ -33,7 +35,8 @@ class HomeController extends Controller
     }
 
     public function reportsclose() {
-        return view('reportsclose');
+        $trans = TransactionController::getAll(1);
+        return view('reportsclose', compact('trans'));
     }
 
     public function account() {

@@ -12,6 +12,36 @@
                    Ordens Finalizadas
                </h4>
            </div>
+           <div class="col-6">
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-4"> 
+                        DATA
+                        {{ Form::open(['method' => 'POST', 'route' => ['trans.filter.date']]) }}        
+                            <select name="date" class="form-control" onchange='this.form.submit()'>
+                            <option selected disabled>Selecione...</option>
+                                <?php $prev_time = mktime (0, 0, 0, date("m")  , date("d"), date("y")); 
+                                for($i = 1; $i <= 30; $i++){
+                                    $date = date('d/m/y', $prev_time);
+                                    $prev_time = mktime (0, 0, 0, date("m")  , date("d")-$i, date("y")); ?>
+                                    <option value="{{$date}}">{{$date}}</option>
+                                <?php } ?>
+                            </select>
+                        {{ Form::close() }}
+                    </div>
+                    <div class="col-4">
+                        BOT
+                        {{ Form::open(['method' => 'POST', 'route' => ['trans.filter.name']]) }}        
+                            <select name="name" class="form-control" onchange='this.form.submit()'>
+                            <option selected disabled>Selecione...</option>
+                                @foreach($BotController->getAllBots() as $bot)
+                                <option value="{{$bot->name}}">{{$bot->currency}} | {{$bot->name}}</option>
+                                @endforeach
+                            </select>
+                        {{ Form::close() }}
+                    </div>
+                </div>
+           </div>
        </div>
     </div>
 </header>
@@ -29,26 +59,38 @@
                                     <th><font size="2px">VALOR COMPRA</font></th>
                                     <th><font size="2px">VALOR VENDA</font></th>
                                     <th><font size="2px">QUANTIA</font></th>
-                                    <th><font size="2px">VARIAÇÃO</font></th>
-                                    <th><font size="2px">VARIAÇÃO (%)</font></th>
+                                    <th><font size="2px">VAR.</font></th>
+                                    <th><font size="2px">VAR.</font></th>
+                                    <th><font size="2px">VAR.</font></th>
+                                    <th><font size="2px">TAXA</font></th>
                                     <th><font size="2px">DATA-ABERTURA</font></th>
                                     <th><font size="2px">DATA-FECHAMENTO</font></th>
                                 </tr>
                                 </thead>
                                 <?php  $total = 0; ?>
                                 <tbody>
-                                @foreach($TransController->getAllSelled() as $trans)
-                                <tr>
-                                    <td>{{$BotController->getCurrency($trans->bot_id)}}</td>
-                                    <td><?php echo number_format($trans->buy_value, 8, ',', ' '); ?></td>
-                                    <td><?php echo number_format($trans->sell_value, 8, ',', ' '); ?></td>
-                                    <td>{{$trans->quantity}}</td>
-                                    <td><?php echo number_format(($trans->sell_value-$trans->buy_value)*$trans->quantity, 8, ',', ' '); ?></td>
-                                    <td><?php echo number_format($TransController->getPercentage($trans->sell_value, $trans->buy_value), 2, ',', ' '); ?>%</td>
-                                    <td>{{$trans->date_open}}</td>
-                                    <td>{{$trans->date_close}}</td>
-                                @endforeach
-                                </tr>
+                                    @foreach($trans as $t)
+                                    <?php 
+                                        $fee = $TransController->getFee($t); 
+                                        $lucro_bruto = ($t->sell_value-$t->buy_value)*$t->quantity;
+                                        $lucro_liquido = $lucro_bruto-$fee;
+                                        $lucro_usd = $lucro_liquido*8100*3.3;
+                                        $percentage = $TransController->getPercentage($t);
+                                        $market = explode('-',$t->currency)
+                                    ?>
+                                    <tr>
+                                        <td>{{ $t->currency }}</td>
+                                        <td>{{ number_format($t->buy_value, 8, '.', ' ') }}</td>
+                                        <td>{{ number_format($t->sell_value, 8, '.', ' ') }}</td>
+                                        <td>{{ $t->quantity}}</td>
+                                        <td>{{ number_format($lucro_liquido, 8, '.', ' ') }} BTC</td>
+                                        <td>{{ number_format($percentage, 2, '.', ' ') }}%</td>
+                                        <td>{{ number_format($lucro_usd, 2, '.', ' ') }}USD</td>
+                                        <td>{{ number_format($fee, 8, '.', ' ') }}</td>
+                                        <td>{{ $t->date_open }}</td> 
+                                        <td>{{ $t->date_close }}</td>
+                                    </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>

@@ -18,12 +18,12 @@
 <div class="outer">
     <div class="inner bg-container">
         <div class="row">
-            <div class="col-sm-6 col-12">
+            <div class="col-sm-4 col-12">
                 <div class="card">
                     <div class="card-header bg-white">
                         Alterar Senha
                     </div>
-                    <div class="col-lg-6 input_field_sections">
+                    <div class="col-lg-12 input_field_sections">
                         <form class="form-horizontal" method="POST" action="{{ route('acc.changepass') }}">
                         {{ csrf_field() }}
                         <label>Senha Atual</label>
@@ -39,23 +39,23 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-12">
+            <div class="col-sm-4 col-12">
                 <div class="card">
                     <div class="card-header bg-white">
-                        Chaves da API - Estado: 
-                        @if($UserController::bittrexbalance() == true)
+                        Chaves da API Bittrex - Estado: 
+                        @if($UserController->check_bittrex() == true)
                             <font color="green"><b>ONLINE</b></font>
                         @else
                             <font color="red"><b>OFFLINE</b></font>
                         @endif
                     </div>
-                    <div class="col-lg-6 input_field_sections">
+                    <div class="col-lg-12 input_field_sections">
                         @if($UserController->getUser()->premium == 1)
-                        <form method="POST" action="{{route('acc.updateapi')}}">
+                        <form method="POST" action="{{route('acc.api.bittrex')}}">
                             {{ csrf_field() }}
                             <label>Key</label>
                             <?php 
-                                if(strlen(strval($UserController->getUser()->api_key)) > 2) {?>
+                                if(strlen($UserController->getUser()->bit_api_key) > 2) {?>
                                     <input type="text" class="form-control" name="api_key" value="******************">
                                 <?php }
                                 else { ?>
@@ -64,7 +64,7 @@
                             ?>
                             <label>Secret</label>
                             <?php 
-                                if(strlen(strval($UserController->getUser()->api_secret)) > 2) {?>
+                                if(strlen($UserController->getUser()->bit_api_secret) > 2) {?>
                                     <input type="text" class="form-control" name="api_secret" value="******************">
                                 <?php }
                                 else { ?>
@@ -72,13 +72,65 @@
                                 <?php }
                             ?>
                             </br>
-                            <button class="btn btn-success">Salvar</button>
+                            <div style="float:right">
+                                <a href="http://protraderbot.com/blog/como-faco-para-encontrar-minha-chave-de-api-na-bittrex-com/" target="_blank">Instruções</a> 
+                            </div>
+                            <div style="float:left">
+                                <button class="btn btn-success">Salvar</button>
+                            </div>
                             </br></br>
                         </form>
                         @endif
                     </div>
                 </div>
             </div>
+
+            <div class="col-sm-4 col-12">
+                <div class="card">
+                    <div class="card-header bg-white">
+                        Chaves API Binance - Estado: 
+                        @if($UserController->check_binance() == 1)
+                            <font color="green"><b>ONLINE</b></font>
+                        @else
+                            <font color="red"><b>OFFLINE</b></font>
+                        @endif
+                    </div>
+                    <div class="col-lg-12 input_field_sections">
+                        @if($UserController->getUser()->premium == 1)
+                        <form method="POST" action="{{route('acc.api.binance')}}">
+                            {{ csrf_field() }}
+                            <label>Key</label>
+                            <?php 
+                                if(strlen($UserController->getUser()->bin_api_key) > 2) {?>
+                                    <input type="text" class="form-control" name="bin_api_key" value="******************">
+                                <?php }
+                                else { ?>
+                                    <input type="text" class="form-control" name="bin_api_key" value="">
+                                <?php }
+                            ?>
+                            <label>Secret</label>
+                            <?php 
+                                if(strlen($UserController->getUser()->bin_api_secret) > 2) {?>
+                                    <input type="text" class="form-control" name="bin_api_secret" value="******************">
+                                <?php }
+                                else { ?>
+                                    <input type="text" class="form-control" name="bin_api_secret" value="">
+                                <?php }
+                            ?>
+                            </br>
+                            <div style="float:right">
+                                <a href="http://protraderbot.com/blog/como-faco-para-encontrar-minha-chave-de-api-na-bittrex-com/" target="_blank">Instruções</a> 
+                            </div>
+                            <div style="float:left">
+                                <button class="btn btn-success">Salvar</button>
+                            </div>
+                            </br></br>
+                        </form>
+                        @endif
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

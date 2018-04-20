@@ -527,7 +527,7 @@ button, .btn {
 /* ================================ End of top bar ===================================*/
 /* ================================ 2.2 Left menu ===================================*/
 #left {
-  background-color: #23272E;
+  background-color: white;
   font-size: 15px;
   margin-top: -1px;
   width: 240px;
@@ -648,7 +648,7 @@ button, .btn {
   width: 250px; }
 
 #menu li a {
-  color: #FFFFFF;
+  color: #525252;
   padding: 15px 8px 15px 15px;
   border-bottom: none; }
 
@@ -660,11 +660,11 @@ button, .btn {
   padding: 10px 8px 10px 30px; }
 
 #menu li.active a {
-  color: #fff; }
+  color: #525252; }
 
 #menu > li.active {
-  background-color: #4fb7fe;
-  color: #fff; }
+  background-color: #f2f2f2;;
+  color: #525252; }
 
 .sidebarbottom {
   top: auto !important;
@@ -706,13 +706,13 @@ button, .btn {
 
 #menu li:not(.active) a:hover {
   background: #fff;
-  border-left: 4px solid #4fb7fe;
+  border-left: 4px solid #fd4326;;
   padding: 15px 8px 15px 11px;
   box-shadow: 0 0 11px #ccc; }
 
 #menu li ul li:not(.active) a:hover {
   background: #fff;
-  border-left: 4px solid #4fb7fe;
+  border-left: 4px solid #fd4326;;
   padding: 10px 8px 10px 26px;
   box-shadow: 0 0 11px #ccc; }
 
@@ -721,7 +721,7 @@ button, .btn {
 
 #menu li.active ul li.active > a {
   color: #fff;
-  background-color: #4fb7fe; }
+  background-color: #fd4326;; }
 
 .sub-menu.sub-submenu.collapse.show li a:hover {
   padding-left: 46px !important; }
@@ -750,19 +750,19 @@ button, .btn {
 /* ================================ End of left menu ===================================*/
 /*========================== 2.3 Minimize menu hover ======================*/
 .dropdown_menu.active:hover {
-  background-color: #4fb7fe !important; }
+  background-color: #fd4326; !important; }
 
 .sidebar-left-hidden .dropdown_menu .sub-menu .active {
-  background-color: #4fb7fe !important; }
+  background-color: #fd4326; !important; }
 
 .sidebar-left-hidden .dropdown_menu .sub-menu li.active > a {
-  background-color: #4fb7fe !important;
+  background-color: #fd4326; !important;
   color: #fff !important;
   padding-top: 10px  !important;
   padding-bottom: 10px !important; }
 
 .sidebar-left-hidden .dropdown_menu li.active > a:hover {
-  background-color: #4fb7fe !important;
+  background-color: #fd4326; !important;
   border-left: 0 !important;
   padding: 10px 8px 10px 30px !important; }
 
@@ -778,10 +778,10 @@ button, .btn {
   background-color: #45b7fe; }
 
 .sidebar-left-hidden .dropdown_menu .collapse li.active > a:hover {
-  background-color: #4fb7fe; }
+  background-color: #fd4326;; }
 
 .sidebar-left-hidden .dropdown_menu.active .collapse li.active > a:hover {
-  background-color: #4fb7fe !important;
+  background-color: #fd4326; !important;
   border-left: 0;
   padding: 10px 8px 10px 30px !important; }
 
@@ -912,14 +912,14 @@ button, .btn {
   border-bottom: 0; }
 
 #request_list li a:hover {
-  color: #4fb7fe; }
+  color: #fd4326;; }
 
 #request_list li a {
   border-bottom: 3px solid #ddd; }
 
 #request_list li a.active {
-  border-bottom: 3px solid #4fb7fe;
-  color: #4fb7fe !important;
+  border-bottom: 3px solid #fd4326;;
+  color: #fd4326; !important;
   transition: 1s; }
 
 /* ==================== End of right menu css ======================*/
@@ -1522,7 +1522,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
     height: auto; }
   body.sidebar-left-hidden #menu > li:not(.active):hover > a {
     background: #fff !important;
-    border-left: 4px solid #4fb7fe !important;
+    border-left: 4px solid #fd4326; !important;
     padding: 15px 8px 15px 11px !important;
     box-shadow: 0 0 11px #ccc !important; }
   body.sidebar-left-hidden #menu > li:hover ul.collapse:not(.sub-submenu) {
@@ -1546,7 +1546,7 @@ table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:a
     opacity: 0; }
   .font-icon-search:before {
     content: "\f002";
-    color: #4fb7fe;
+    color: #fd4326;;
     font-size: 16px; }
   [class*=" font-icon-"]:before, [class^=font-icon-]:before, [data-icon]:before {
     font-family: FontAwesome !important; }
