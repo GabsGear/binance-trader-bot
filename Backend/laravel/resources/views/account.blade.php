@@ -56,19 +56,19 @@
                             <label>Key</label>
                             <?php 
                                 if(strlen($UserController->getUser()->bit_api_key) > 2) {?>
-                                    <input type="text" class="form-control" name="api_key" value="******************">
+                                    <input type="text" class="form-control" name="bit_api_key" value="******************">
                                 <?php }
                                 else { ?>
-                                    <input type="text" class="form-control" name="api_key" value="">
+                                    <input type="text" class="form-control" name="bit_api_key" value="">
                                 <?php }
                             ?>
                             <label>Secret</label>
                             <?php 
                                 if(strlen($UserController->getUser()->bit_api_secret) > 2) {?>
-                                    <input type="text" class="form-control" name="api_secret" value="******************">
+                                    <input type="text" class="form-control" name="bit_api_secret" value="******************">
                                 <?php }
                                 else { ?>
-                                    <input type="text" class="form-control" name="api_secret" value="">
+                                    <input type="text" class="form-control" name="bit_api_secret" value="">
                                 <?php }
                             ?>
                             </br>

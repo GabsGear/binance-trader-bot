@@ -46,8 +46,10 @@ Route::group(['middleware' => ['auth']], function() {
 	Route::get('/payment', function () { 
 		return view('coinpayment'); 
 	});
+	Route::get('/balance', 'UserController@bittrex_balance');
 
 });
+
 
 
 Route::get('password/reset/{token}', 'Auth\ForgotPasswordController@getReset')->name('forgotpass.get');

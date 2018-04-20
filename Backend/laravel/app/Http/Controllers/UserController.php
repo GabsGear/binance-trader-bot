@@ -64,20 +64,17 @@ class UserController extends Controller
         return redirect()->route('account');
     }
 
-    public function bittrex_balance($currency) {
+    public function bittrex_balance() {
         $nonce=time();
         $user = Auth::user();
-        $uri='https://bittrex.com/api/v1.1/account/getbalance?apikey='.$user->bit_api_key.'&nonce='.$nonce.'&currency='.$currency;
+        $uri='https://bittrex.com/api/v1.1/account/getbalances?apikey='.$user->bit_api_key.'&nonce='.$nonce;
         $sign=hash_hmac('sha512', $uri, $user->bit_api_secret);
         $ch = curl_init($uri);
         curl_setopt($ch, CURLOPT_HTTPHEADER, array('apisign:'.$sign));
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $execResult = curl_exec($ch);
         $obj = json_decode($execResult, true);
-        if($currency == 'USDT' and $obj['result']['Balance'] < 1.0){
-            return 0;
-        }
-        return $obj['result']['Balance']; 
+        return $obj['result']; 
     }
 
     public function check_bittrex() {

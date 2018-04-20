@@ -22,8 +22,8 @@
                 <div class="row">
                     <div class="col-sm-12 col-12">
                         <div class="table-responsive m-t-35">
-                            <table class="table">
-                                <thead>
+                            <table class="table table-bordered table-striped flip-content">
+                                <thead class="flip-content">
                                 <tr>
                                     <th><font size="2px">PAR</font></th>
                                     <th><font size="2px">VALOR COMPRA</font></th>
@@ -31,7 +31,6 @@
                                     <th><font size="2px">DATA-ABERTURA</font></th>
                                 </tr>
                                 </thead>
-                                <?php  $total = 0; ?>
                                 <tbody>
                                 @foreach($TransController->getAll(0) as $trans)
                                 <tr>

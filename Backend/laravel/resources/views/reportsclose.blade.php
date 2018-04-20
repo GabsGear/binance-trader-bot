@@ -52,19 +52,19 @@
                 <div class="row">
                     <div class="col-sm-12 col-12">
                         <div class="table-responsive m-t-35">
-                            <table class="table">
-                                <thead>
+                            <table class="table table-bordered table-striped flip-content">
+                                <thead class="flip-content">
                                 <tr>
                                     <th><font size="2px">PAR</font></th>
-                                    <th><font size="2px">VALOR COMPRA</font></th>
-                                    <th><font size="2px">VALOR VENDA</font></th>
+                                    <th><font size="2px">ENTRADA</font></th>
+                                    <th><font size="2px">SAÍDA</font></th>
                                     <th><font size="2px">QUANTIA</font></th>
-                                    <th><font size="2px">VAR.</font></th>
-                                    <th><font size="2px">VAR.</font></th>
-                                    <th><font size="2px">VAR.</font></th>
-                                    <th><font size="2px">TAXA</font></th>
-                                    <th><font size="2px">DATA-ABERTURA</font></th>
-                                    <th><font size="2px">DATA-FECHAMENTO</font></th>
+                                    <th><font size="2px">VARIAÇÃO</font></th>
+                                    <th><font size="2px">VARIAÇÃO</font></th>
+                                    <th><font size="2px">EXCHANGE</font></th>
+                                    <th><font size="2px">LUCRO</font></th>
+                                    <th><font size="2px">ABERTURA</font></th>
+                                    <th><font size="2px">FECHAMENTO</font></th>
                                 </tr>
                                 </thead>
                                 <?php  $total = 0; ?>
@@ -76,17 +76,30 @@
                                         $lucro_liquido = $lucro_bruto-$fee;
                                         $lucro_usd = $lucro_liquido*8100*3.3;
                                         $percentage = $TransController->getPercentage($t);
-                                        $market = explode('-',$t->currency)
+                                        $market = explode('-', $t->currency);
+                                        $lucro_btc = $lucro_liquido/8100;
                                     ?>
                                     <tr>
                                         <td>{{ $t->currency }}</td>
                                         <td>{{ number_format($t->buy_value, 8, '.', ' ') }}</td>
                                         <td>{{ number_format($t->sell_value, 8, '.', ' ') }}</td>
                                         <td>{{ $t->quantity}}</td>
-                                        <td>{{ number_format($lucro_liquido, 8, '.', ' ') }} BTC</td>
+                                        @if($market[0] == 'BTC')
+                                            <td>{{ number_format($lucro_liquido, 8, '.', ' ') }} BTC</td>
+                                        @else
+                                            <td>{{ number_format($lucro_liquido, 2, '.', ' ') }} USD</td>
+                                        @endif
                                         <td>{{ number_format($percentage, 2, '.', ' ') }}%</td>
-                                        <td>{{ number_format($lucro_usd, 2, '.', ' ') }}USD</td>
-                                        <td>{{ number_format($fee, 8, '.', ' ') }}</td>
+                                        @if($t->exchange == 'bittrex')
+                                            <td>0.5 %</td>
+                                        @else
+                                            <td>0.2 %</td>
+                                        @endif
+                                        @if($t->exchange == 'bittrex')
+                                            <td>{{ number_format($percentage-0.5, 2, '.', ' ') }}%</td>
+                                        @else
+                                            <td>{{ number_format($percentage-0.2, 2, '.', ' ') }}%</td>
+                                        @endif
                                         <td>{{ $t->date_open }}</td> 
                                         <td>{{ $t->date_close }}</td>
                                     </tr>

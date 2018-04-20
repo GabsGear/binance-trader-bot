@@ -17,7 +17,7 @@ class TransactionController extends Controller
     public static function getAll($selled) {
         $trans = DB::table('bot')
         ->join('transactions', 'transactions.bot_id', '=', 'bot.id')
-        ->select('transactions.*', 'bot.currency')
+        ->select('transactions.*', 'bot.currency', 'bot.exchange')
         ->where('bot.user_id', Auth::User()->id)
         ->where('transactions.selled', $selled)
         ->orderBy('transactions.id', 'desc')
@@ -29,9 +29,10 @@ class TransactionController extends Controller
         $date = $request['date'];
         $trans = DB::table('bot')
         ->join('transactions', 'transactions.bot_id', '=', 'bot.id')
-        ->select('transactions.*')
+        ->select('transactions.*', 'bot.currency', 'bot.exchange')
         ->where('bot.user_id', Auth::User()->id)
         ->whereDate('date_close', '=', $date)
+        ->where('transactions.selled', 1)
         ->get();
         return view('reportsclose', compact('trans'));
     }
@@ -39,9 +40,10 @@ class TransactionController extends Controller
     public function filter_name(Request $request) {
         $trans = DB::table('bot')
         ->join('transactions', 'transactions.bot_id', '=', 'bot.id')
-        ->select('transactions.*')
+        ->select('transactions.*', 'bot.currency', 'bot.exchange')
         ->where('bot.user_id', Auth::User()->id)
         ->where('bot.name', $request['name'])
+        ->where('transactions.selled', 1)
         ->get();
         return view('reportsclose', compact('trans'));
     }
@@ -96,10 +98,11 @@ class TransactionController extends Controller
             return redirect()->route('dashboard');
     	$all = DB::table('transactions')->where('bot_id', $bot_id)->get();
     	$total = 0;
-    	foreach ($all as $trans) {
-    		if($trans->selled != 0){
-    			$lucro = $trans->sell_value-$trans->buy_value;
-    			$qnt = $lucro*$trans->quantity;
+    	foreach ($all as $t) {
+    		if($t->selled != 0){
+                $fee = TransactionController::getFee($t);
+    			$lucro = $t->sell_value-$t->buy_value;
+    			$qnt = ($lucro*$t->quantity)-$fee;
     			$total = $total + $qnt;
     		}
         }
@@ -121,9 +124,10 @@ class TransactionController extends Controller
         if($trans->count() > 0) {
         	foreach ($trans as $t) {
                 $market = explode('-', $t->currency);
+                $fee = TransactionController::getFee($t);
                 if($t->selled == 1) {
                     $lucro = $t->sell_value-$t->buy_value;
-                    $qnt = $lucro*$t->quantity;
+                    $qnt = ($lucro*$t->quantity)-$fee;
                     if($market[0] == 'USDT' ) {
                         $total_usd = $total_usd + $qnt;
                     }
