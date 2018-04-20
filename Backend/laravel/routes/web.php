@@ -46,7 +46,7 @@ Route::group(['middleware' => ['auth']], function() {
 	Route::get('/payment', function () { 
 		return view('coinpayment'); 
 	});
-	Route::get('/balance', 'UserController@bittrex_balance');
+	Route::get('/balance', 'UserController@binance_balance');
 
 });
 
