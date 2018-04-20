@@ -58,6 +58,8 @@ class Desicion():
         }
         return data
     
+
+
 class StrategiesBase(Desicion):
     """Strategies class
         The classe constructor set binance candlestick detals and start all strategies
@@ -94,17 +96,24 @@ class StrategiesBase(Desicion):
         price_now = binance_.Binance_opr()
         price_now = price_now.getPriceNow(bot_config['currency'])
 
-        close = self.getLclose()
-        tomin = self.getLhigh()
+
+        print('price now = ' + str(price_now))
+        high = self.getLhigh()
+        high = high[len(high) - 2 : len(high)]
+        tomin = self.getLlow()
 
         if(len(tomin) > 0):
-            minn = min(close)
-            maxx = max(close)
-
+            minn = min(high)
+            maxx = max(high)
+            print (' Buy at ' + str(minn))
+            print(' .  ')
             if(data["price_now"] <= minn):
+                print('sinal buy')
                 return 'buy'
             if(data["price_now"] >= maxx):
+                print('sinal sell')
                 return 'sell'
+        print('sinal none')
         return 'none'  
 
     def startPivot_up(self, bot_config):
@@ -159,3 +168,16 @@ class StrategiesBase(Desicion):
             if data['open_orders'] > 0 and data['price_now'] >= data['trans']['buy_value'] * 1.02:
                 return 'sell'
         return 'none'
+
+    def followBTC(self, bot_config):
+        data = super().getDataDesicion(bot_config)
+
+
+
+        if 1 == 1:
+            return 'buy'
+
+        if data['open_orders'] > 0 and data['price_now'] >= data['trans']['buy_value'] * 1.02:
+            return 'sell'
+        
+        return 'none'  
