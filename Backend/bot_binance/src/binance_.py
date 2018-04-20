@@ -5,7 +5,7 @@
 # coding=utf-8
 import numpy as np
 from binance.client import Client 
-from binance.enums import ORDER_TYPE_LIMIT, TIME_IN_FORCE_GTC, SIDE_BUY, SIDE_SELL
+from binance.enums import ORDER_TYPE_LIMIT, TIME_IN_FORCE_GTC, SIDE_BUY, SIDE_SELL, TIME_IN_FORCE_FOK
 import botconfig
 from datetime import datetime
 import numpy as np
@@ -193,6 +193,19 @@ class Binance_opr(ApiData):
         else: 
             return "%.3f" % ammount
 
+    def checkNewOrder(self, bot_config, data_decision, orderID, client):
+        """Check if a new order is commited
+    
+        Returns:
+            Returns a executed Qty is the order are commited
+        """
+        time.sleep(10)
+        orders = self.getOrder(bot_config, data_decision, orderID, client)
+        if(float(orders['executedQty']) == 0 ):
+            print('---Ordem ainda não executada')
+            return False
+        return orders['executedQty']
+        
     def createBuyOrder(self, data, bot_config, data_decision):
         """
             AQUI A MAGICA ACONTECE 
@@ -215,23 +228,18 @@ class Binance_opr(ApiData):
                     print('Quantidade')
                     print(ammount)            
                     #try:
-                    order = client.create_order(symbol=bot_config['currency'],side=SIDE_BUY,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_GTC, quantity=ammount, price= str(price))
-                    time.sleep(300)
-                    #except:
-                    #return 
+                    order = client.create_order(symbol=bot_config['currency'],side=SIDE_BUY,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_FOK, quantity=ammount, price= str(price))
+                    orderID = order['orderId']
+                    newOrderStatus = self.checkNewOrder(bot_config, data_decision, orderID, client)
+                    if not (newOrderStatus):
+                        return
+                    ammount = float(newOrderStatus)
+
                     print (order)    
                     orderID = order['orderId']
-                    orders = self.getOrder(bot_config, data_decision, orderID, client)
-                    if(float(orders['executedQty']) == 0 ):
-                        print('Timeout excedido, ordem cancelada')
-                        client.cancel_order(symbol=bot_config['currency'], orderId=orderID)
-                        return
-                    else:
-                        data['qnt'] = orders['executedQty']
-                        data['qnt'] = ammount
-                        data['buy_uuid'] = orderID
-                        db.insertBuyOrder(data)
-
+                    data['qnt'] = ammount
+                    data['buy_uuid'] = orderID
+                    db.insertBuyOrder(data)
 
     def createSellOrder(self, data, bot_config, data_decision):
         """This function start a sell order
@@ -254,18 +262,15 @@ class Binance_opr(ApiData):
                 price = "%.8f" % data_decision['price_now']
                 ammount = data_decision['trans']['quantity']*0.999
                 ammount = self.checkPrecision(bot_config, ammount)
-                #try:
-                order = client.create_order(symbol=bot_config['currency'],side=SIDE_SELL,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_GTC, quantity=ammount, price=str(price))
-                time.sleep(300)
+                #try: 
+                order = client.create_order(symbol=bot_config['currency'],side=SIDE_SELL,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_FOK, quantity=ammount, price=str(price))
                 #except:
-                #print('erro criando a ordem de venda')
                 #    return
                 orderID = order['orderId']
-                orders = self.getOrder(bot_config, data_decision, orderID, client)
-                if(float(orders['executedQty']) == 0 ):
-                        print('Timeout excedido, ordem cancelada')
-                        client.cancel_order(symbol=bot_config['currency'], orderId=orderID)
-                        return
+                newOrderStatus = False
+                if not (newOrderStatus):
+                    return
+
                 print ('ORDEM DE VENDA ID ' + str(order['orderId']))
-                data['sell_uuid'] = order['orderId']
+                data['sell_uuid'] = orderID
                 db.commitSellOrder(data)

@@ -14,7 +14,6 @@ class Helpers:
     #Time on my timezone  
     def time_now(self):
         """time now 
-        
         Returns:
             [data] -- returns a atual data in sao paulo 
         """
