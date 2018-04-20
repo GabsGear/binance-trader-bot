@@ -1,0 +1,14 @@
+.right_toggle.gauge {
+      width: 100%;
+      height: 150px;
+      display: inline-block;
+      border: 1px solid #ccc;
+      margin: 5px;
+}
+svg text, svg text tspan{
+	font-family: "Source Sans Pro", sans-serif;
+}
+.c3 svg g{
+      font: 12px "Source Sans Pro";
+
+}

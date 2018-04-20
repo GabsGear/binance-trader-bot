@@ -1,0 +1,110 @@
+.colorpicker-saturation {
+	background-image: url(../../img/saturation.png) !important;
+}
+
+.colorpicker-hue {
+	background-image: url(../../img/hue.png) !important;
+}
+.colorpicker-alpha {
+	background-image: url(../../img/alpha.png) !important;
+}
+
+.colorpicker-color {
+	background-image: url(../../img/alpha.png) !important;
+}
+.display_none {display: none;}
+.dtpicker-buttonCont .dtpicker-button{
+	background-color: #0fb0c0;
+	color: #fff !important;
+}
+#dpMonths table{
+	display: none !important;
+}
+#top .btn-default,#top .btn-default:hover {
+	color: #333;
+	background-color: transparent !important;
+	border: none;
+}
+.user-settings button,.user-settings button:hover {
+	color: #333 !important;
+}
+.time_picker_section .btn-primary:hover{
+	background-color: #4fb7fe;
+	color: #fff;
+}
+.daterangepicker.dropdown-menu,.colorpicker{
+	z-index: 999 !important;
+}
+.dtpicker-header .dtpicker-title{
+	font-size: 1.5em;
+	color: #4fb7fe;
+}
+.dtpicker-header .dtpicker-value{
+	font-size: 1.1em;
+	color: #EF6F6C;
+}
+.dtpicker-components .dtpicker-comp > *,.dtpicker-components .dtpicker-comp > *:hover {
+	color: #4fb7fe;
+}
+
+.form_elements_datepicker .input-append.date .add-on i{
+	margin-top: 0;
+}
+.range_inputs .btn-success:hover,.btn-warning.colorpicker-element:hover{
+	color: #fff;
+}
+#left .btn,#top .btn-group:nth-child(2) .btn{
+	border: none;
+}
+#top .btn-group:nth-child(2) .btn-default{
+	border-color: transparent;
+	padding-top: 5px;
+}
+@media (min-width: 1200px) {
+	.daterangepicker{
+		margin-right: 25px !important;
+	}
+}
+.datepicker table tr td.active, .datepicker table tr td.active:hover, .datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled:hover,.datepicker table tr td.selected, .datepicker table tr td.selected:hover, .datepicker table tr td.selected.disabled, .datepicker table tr td.selected.disabled:hover
+{
+	background-image: linear-gradient(to bottom, #4fb7fe, #4fb7fe);
+}
+.datepicker table tr td.today, .datepicker table tr td.today:hover, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover{
+	background-image: linear-gradient(to bottom,#4fb7fe, #4fb7fe);
+	color: #fff !important;
+}
+.datepicker table tr td span.active, .datepicker table tr td span.active:hover, .datepicker table tr td span.active.disabled, .datepicker table tr td span.active.disabled:hover
+{
+	background-image: linear-gradient(to bottom, #4fb7fe, #4fb7fe);
+}
+.daterangepicker td.active, .daterangepicker td.active:hover,
+.daterangepicker .ranges li.active, .daterangepicker .ranges li:hover{
+	background-color: #4fb7fe;
+	border-color: #4fb7fe;
+}
+li.ui-timepicker-selected, .ui-timepicker-list li:hover, .ui-timepicker-list .ui-timepicker-selected:hover {
+	background: #4fb7fe;
+}
+.month.focused,.year.focused{
+	background-color: #4fb7fe !important;
+	color: #fff;
+}
+@media (max-width: 389px) {
+	.daterangepicker{
+		right: 22px !important;
+		left: 22px !important;
+		padding-right: 10px;
+	}
+}
+@media (min-width: 390px) and (max-width: 1200px){
+	.daterangepicker{
+		right: 22px !important;
+		padding:0 5px;
+	}
+}
+@media (min-width: 910px) and (max-width: 1040px){
+	.daterangepicker{
+		left: 400px !important;
+	}
+}

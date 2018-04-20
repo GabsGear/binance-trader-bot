@@ -1,0 +1,82 @@
+.docs-preview {
+    margin-right: -15px;
+}
+
+.img-preview {
+    position: absolute;
+    float: left;
+    top: 0;
+    right: 10px;
+    overflow: hidden;
+}
+
+.img-preview > img {
+    max-width: 100%;
+}
+
+.preview-lg {
+    width: 200px;
+    height: 120px;
+    border: 2px solid #4fb7fe;
+}
+
+.preview-md {
+    width: 139px;
+    height: 78px;
+}
+
+.preview-sm {
+    width: 69px;
+    height: 39px;
+}
+
+.preview-xs {
+    width: 35px;
+    height: 20px;
+    margin-right: 0;
+}
+
+.docs-data > .input-group {
+    margin-bottom: 10px;
+}
+
+.docs-data > .input-group > label {
+    min-width: 80px;
+}
+
+.docs-data > .input-group > span {
+    min-width: 50px;
+}
+
+.docs-buttons > .btn,
+.docs-buttons > .btn-group,
+.docs-buttons > .form-control {
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.docs-toggles > .btn,
+.docs-toggles > .btn-group,
+.docs-toggles > .dropdown {
+    margin-bottom: 10px;
+}
+.cropper-bg
+{
+    min-height: 150px;
+}
+#getCroppedCanvasModal canvas
+{
+    width: 100%;
+}
+
+.btn-group > .btn, .btn-group-vertical > .btn{
+    margin-bottom: 0;
+}
+@media (max-width: 424px){
+    .btn-group-crop{
+        display: block;
+    }
+    .btn-group-crop .btn{
+        margin-top: 10px;
+    }
+}

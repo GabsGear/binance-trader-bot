@@ -1,0 +1,103 @@
+#animated_chart .ct-series-a .ct-bar, #animated_chart .ct-series-a .ct-line, #animated_chart .ct-series-a .ct-point, #animated_chart .ct-series-a .ct-slice-donut
+{
+    stroke:#bac4c5;
+}
+#animated_chart .ct-series-b .ct-bar, #animated_chart .ct-series-b .ct-line, #animated_chart .ct-series-b .ct-point, #animated_chart .ct-series-b .ct-slice-donut
+{
+    stroke: #0fb0c0;
+}
+#animated_chart .ct-series-c .ct-bar, #animated_chart .ct-series-c .ct-line, #animated_chart .ct-series-c .ct-point, #animated_chart .ct-series-c .ct-slice-donut
+{
+    stroke:#ff9933;
+}
+#animated_chart .ct-series-d .ct-bar, #animated_chart .ct-series-d .ct-line, #animated_chart .ct-series-d .ct-point, #animated_chart .ct-series-d .ct-slice-donut
+{
+    stroke:#f2a097;
+}
+#animated_chart .ct-series-e .ct-bar, #animated_chart .ct-series-e .ct-line, #animated_chart .ct-series-e .ct-point, #animated_chart .ct-series-e .ct-slice-donut
+{
+    stroke:#97e9f2;
+}
+#animated_chart .ct-series-f .ct-bar, #animated_chart .ct-series-f .ct-line, #animated_chart .ct-series-f .ct-point, #animated_chart .ct-series-f .ct-slice-donut
+{
+    stroke:#bcda81;
+}
+#animated_chart .ct-series-g .ct-bar, #animated_chart .ct-series-g .ct-line, #animated_chart .ct-series-g .ct-point, #animated_chart .ct-series-g .ct-slice-donut
+{
+    stroke:#4fb7fe;
+}
+
+#stacked_chart .ct-series-a .ct-bar, #stacked_chart .ct-series-a .ct-line, #stacked_chart .ct-series-a .ct-point, #stacked_chart .ct-series-a .ct-slice-donut
+{
+    stroke:#d1a3e6;
+}
+#stacked_chart .ct-series-b .ct-bar, #stacked_chart .ct-series-b .ct-line, #stacked_chart .ct-series-b .ct-point, #stacked_chart .ct-series-b .ct-slice-donut
+{
+    stroke: #0fb0c0;
+}
+#stacked_chart .ct-series-c .ct-bar, #stacked_chart .ct-series-c .ct-line, #stacked_chart .ct-series-c .ct-point, #stacked_chart .ct-series-c .ct-slice-donut
+{
+    stroke:#bcda81;
+}
+#draw_events .ct-series-a .ct-bar, #draw_events .ct-series-a .ct-line, #draw_events .ct-series-a .ct-point, #draw_events .ct-series-a .ct-slice-donut
+{
+    stroke: #0fb0c0;
+}
+
+#draw_events .ct-series-a .ct-area, #draw_events .ct-series-a .ct-slice-pie
+{
+    fill:#0fb0c0
+}
+#smil_animation .ct-series-a .ct-bar, #smil_animation .ct-series-a .ct-line, #smil_animation .ct-series-a .ct-point, #smil_animation .ct-series-a .ct-slice-donut
+{
+    stroke: #4fb7fe;
+}
+#smil_animation .ct-series-b .ct-bar, #smil_animation .ct-series-b .ct-line, #smil_animation .ct-series-b .ct-point, #smil_animation .ct-series-b .ct-slice-donut
+{
+    stroke: #bcda81;
+}
+#smil_animation .ct-series-c .ct-bar, #smil_animation .ct-series-c .ct-line, #smil_animation .ct-series-c .ct-point, #smil_animation .ct-series-c .ct-slice-donut
+{
+    stroke: #ff9933;
+}
+#smil_animation .ct-series-d .ct-bar, #smil_animation .ct-series-d .ct-line, #smil_animation .ct-series-d .ct-point, #smil_animation .ct-series-d .ct-slice-donut
+{
+    stroke: #4fb7fe;
+}
+#path_animation .ct-series-b .ct-area, #path_animation .ct-series-b .ct-slice-pie
+{
+    fill: #4fb7fe;
+}
+#path_animation .ct-series-b .ct-bar, #path_animation .ct-series-b .ct-line, #path_animation .ct-series-b .ct-point, #path_animation .ct-series-b .ct-slice-donut
+{
+    stroke: #4fb7fe;
+}
+#path_animation .ct-series-a .ct-area, #path_animation .ct-series-a .ct-slice-pie
+{
+    fill: #0fb0c0;
+}
+#path_animation .ct-series-a .ct-bar, #path_animation .ct-series-a .ct-line, #path_animation .ct-series-a .ct-point, #path_animation .ct-series-a .ct-slice-donut
+{
+    stroke: #0fb0c0;
+}
+#path_animation .ct-series-c .ct-area, #path_animation .ct-series-c .ct-slice-pie
+{
+    fill: #ff9933;
+}
+#path_animation .ct-series-c .ct-bar, #path_animation .ct-series-c .ct-line, #path_animation .ct-series-c .ct-point, #path_animation .ct-series-c .ct-slice-donut
+{
+    stroke: #ff9933;
+}
+#multi_line .ct-series-a .ct-bar, #multi_line .ct-series-a .ct-line, #multi_line .ct-series-a .ct-point, #multi_line .ct-series-a .ct-slice-donut
+{
+    stroke: #0fb0c0;
+}
+#multi_line .ct-series-b .ct-bar, #multi_line .ct-series-b .ct-line, #multi_line .ct-series-b .ct-point, #multi_line .ct-series-b .ct-slice-donut
+{
+    stroke: #f2a097;
+}
+@media(min-width: 320px) and (max-width: 544px){
+    .ct-slice-pie{
+        display: none;
+    }
+}

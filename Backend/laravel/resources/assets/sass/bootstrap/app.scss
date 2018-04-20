@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro|Hind:500);
+
+@import "variables";
+@import "../../vendors/bootstrap/scss/bootstrap";
+//regular buttons
+.btn-mint {
+  @include button-variant($btn-mint-color, $btn-mint-bg, $btn-mint-border);
+}
+.btn-gray {
+  @include button-variant($btn-gray-color, $btn-gray-bg, $btn-gray-border);
+}
+
+//outline buttons
+.btn-mint-outline {
+  @include button-outline-variant($btn-mint-bg);
+}
+.btn-gray-outline {
+  @include button-outline-variant($btn-gray-bg);
+}
+
+//labels
+.badge-mint {
+  @include badge-variant($brand-mint);
+}
+.badge-gray {
+  @include badge-variant($brand-gray);
+}
+
+//alerts
+.alert-mint {
+  @include alert-variant($brand-mint, $brand-mint, $white);
+}
+.alert-gray {
+  @include alert-variant($brand-gray, $brand-gray, $white);
+}
+
+
+//list group
+@include list-group-item-variant(mint, $brand-mint, $state-success-text);
+@include list-group-item-variant(gray, $brand-gray, $state-success-text);
+
+//cards
+.card-mint {
+  @include card-variant($brand-mint, $brand-mint);
+}
+.card-gray {
+  @include card-variant($brand-gray, $brand-gray);
+}
+
+//bg
+@include bg-variant('.bg-mint', $brand-mint);
+@include bg-variant('.bg-gray', $brand-gray);
+
+.text-white {
+  color:$white;
+}
