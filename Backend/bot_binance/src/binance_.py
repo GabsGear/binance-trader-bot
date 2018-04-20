@@ -184,6 +184,15 @@ class Binance_opr(ApiData):
         data = client.get_symbol_info(coin)
         return data['filters'][1]['minQty']
 
+    def checkPrecision(self, bot_config, ammount):
+        precision = float(self.getPrecision(bot_config['currency']))
+        if (precision == 1):
+            return int(ammount) 
+        elif (precision == 0.01):
+            return "%.2f" % ammount
+        else: 
+            return "%.3f" % ammount
+
     def createBuyOrder(self, data, bot_config, data_decision):
         """
             AQUI A MAGICA ACONTECE 
@@ -202,14 +211,7 @@ class Binance_opr(ApiData):
 
                 if(bot_config['active'] == 1 and status['msg'] == 'normal'):
                     ammount = float(self.getClientBalance(client))*bot_config['order_value']/float(data_decision['price_now'])
-                    precision = float(self.getPrecision(bot_config['currency']))
-                    if (precision == 1):
-                        ammount = int(ammount) 
-                    elif (precision == 0.01):
-                        ammount = "%.2f" % ammount
-                    else: 
-                        ammount = "%.3f" % ammount
-
+                    ammount = self.checkPrecision(bot_config, ammount)
                     print('Quantidade')
                     print(ammount)            
                     #try:
@@ -230,6 +232,7 @@ class Binance_opr(ApiData):
                         data['buy_uuid'] = orderID
                         db.insertBuyOrder(data)
 
+
     def createSellOrder(self, data, bot_config, data_decision):
         """This function start a sell order
         
@@ -249,9 +252,10 @@ class Binance_opr(ApiData):
             if(bot_config['active'] and status['msg'] == 'normal'):
                 print('Pronto pra criar ordem de venda')
                 price = "%.8f" % data_decision['price_now']
-                quantity = data_decision['trans']['quantity']*0.999
+                ammount = data_decision['trans']['quantity']*0.999
+                ammount = self.checkPrecision(bot_config, ammount)
                 #try:
-                order = client.create_order(symbol=bot_config['currency'],side=SIDE_SELL,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_GTC, quantity=int(quantity), price=str(price))
+                order = client.create_order(symbol=bot_config['currency'],side=SIDE_SELL,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_GTC, quantity=ammount, price=str(price))
                 time.sleep(300)
                 #except:
                 #print('erro criando a ordem de venda')
