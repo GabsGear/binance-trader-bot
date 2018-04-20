@@ -58,6 +58,8 @@ class Desicion():
         }
         return data
     
+
+
 class StrategiesBase(Desicion):
     """Strategies class
         The classe constructor set binance candlestick detals and start all strategies
@@ -166,3 +168,16 @@ class StrategiesBase(Desicion):
             if data['open_orders'] > 0 and data['price_now'] >= data['trans']['buy_value'] * 1.02:
                 return 'sell'
         return 'none'
+
+    def followBTC(self, bot_config):
+        data = super().getDataDesicion(bot_config)
+
+
+
+        if 1 == 1:
+            return 'buy'
+
+        if data['open_orders'] > 0 and data['price_now'] >= data['trans']['buy_value'] * 1.02:
+            return 'sell'
+        
+        return 'none'  
