@@ -108,6 +108,9 @@ class Binance_opr(ApiData):
         lvol = np.array(lvol).astype(np.float)
         return lopen, lhigh, llow, lclose, lvol, closetime      
 
+    def getBTCCandles(self, coin, period):
+        return self.getCandles('BTCUSDT', period)
+
     def getMean(self, coin, bot_config):
         """Mean in 30 candles
         
@@ -175,7 +178,6 @@ class Binance_opr(ApiData):
             [float] -- returns free BTC from botwork
         """
         balance = client.get_asset_balance(asset='BTC')
-        print (balance)
         return balance['free']
          
     def getPrecision(self, coin):
@@ -247,8 +249,9 @@ class Binance_opr(ApiData):
             if(bot_config['active'] and status['msg'] == 'normal'):
                 print('Pronto pra criar ordem de venda')
                 price = "%.8f" % data_decision['price_now']
+                quantity = data_decision['trans']['quantity']*0.999
                 #try:
-                order = client.create_order(symbol=bot_config['currency'],side=SIDE_SELL,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_GTC, quantity=data_decision['trans']['quantity'], price=str(price))
+                order = client.create_order(symbol=bot_config['currency'],side=SIDE_SELL,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_GTC, quantity=int(quantity), price=str(price))
                 time.sleep(300)
                 #except:
                 #print('erro criando a ordem de venda')
