@@ -13,48 +13,34 @@ import requests
 import helpers
 import botconfig
 import sys
+import json
 import routines
+import time
 
 class ApiData:
-
-    # __key = ""
-    # __secret = ""
-                                                                                                                                                                                                        
-    # def __init__(self):
-    #     # self.__key = ('Du96lndpL2qQcKogKCUi7hYuFTYO06MIiZoFf6oq0guxmXJTv0tomd5yAt0xev6i') #mykey
-    #     # self.__secret = ('r76Q8Q35KipGTmY4BRuQqx1LDp3fWFvMjGYK9avKZnvbXVAzitWNKupzUtoQ34Uj') #mysecret
-    #     self.__key = (' ') #mykey
-    #     self.__secret = (' ') #mysecret      
-
-    # def getKey(self):
-    #     return self.__key
-
-    # def getSecret(self):
-    #     return self.__secret
-
     def checkLogin(self, idt, key):
         client = Client(idt, key)
         status = client.get_system_status()
         if (status['msg'] == 'normal'):
-            print ("Market UP, Successful login")
-            print (client.get_server_time())
-        else:
-            sys.exit(0)
-
-    def loginAPI(self, bot_config):
-        db = botconfig.Db()
-        acc_config = db.getConfigAcc(str(bot_config['user_id']))
-        client = Client(acc_config['api_key'], acc_config['api_secret'])
-        status = client.get_system_status()
-        if (status['msg'] == 'normal'):
-            print ("Market UP, Successful login")
-            print (client.get_server_time())
+            print ("Logado em simulacao\n")
         else:
             sys.exit(0)
 
 login = ApiData()
 client = Client("","")
 login.checkLogin("","")
+
+def loginAPI(bot_config):
+    db = botconfig.Db()
+    print("logando na  api")
+    acc_config = db.getConfigAcc(str(bot_config['user_id']))
+    client = Client(str(acc_config['api_key']), str(acc_config['api_secret']))
+    status = client.get_system_status()
+    if (status['msg'] == 'normal'):
+        print ("Login Ok")
+        return client
+    else:
+        sys.exit(0)
 
 class Binance_opr(ApiData):
     def getCandles(self, coin, period):
@@ -84,23 +70,19 @@ class Binance_opr(ApiData):
         '''
         if(period == 'Day'):
             candles = client.get_klines(symbol= coin, interval=Client.KLINE_INTERVAL_1DAY)
-            candles = candles[len(candles)-30:len(candles)-1]
-
+            candles = candles[len(candles)-20:len(candles)-1]
         elif(period == 'hour'):
             candles = client.get_klines(symbol= coin, interval=Client.KLINE_INTERVAL_1HOUR)
-            candles = candles[len(candles)-30:len(candles)-1]
-                                
+            candles = candles[len(candles)-20:len(candles)-1]                  
         elif(period == 'thirtyMin'):
             candles = client.get_klines(symbol= coin, interval=Client.KLINE_INTERVAL_30MINUTE)
-            candles = candles[len(candles)-30:len(candles)-1]
-
+            candles = candles[len(candles)-20:len(candles)-1]
         elif(period == 'fiveMin'):
             candles = client.get_klines(symbol= coin, interval=Client.KLINE_INTERVAL_5MINUTE)
-            candles = candles[len(candles)-30:len(candles)-1]
-
+            candles = candles[len(candles)-20:len(candles)-1]
         elif(period == 'oneMin'):
             candles = client.get_klines(symbol= coin, interval=Client.KLINE_INTERVAL_1MINUTE)
-            candles = candles[len(candles)-30:len(candles)-1]
+            candles = candles[len(candles)-20:len(candles)-1]
         #map
         opentime = []
         lopen = []
@@ -125,6 +107,9 @@ class Binance_opr(ApiData):
         lclose = np.array(lclose).astype(np.float)
         lvol = np.array(lvol).astype(np.float)
         return lopen, lhigh, llow, lclose, lvol, closetime      
+
+    def getBTCCandles(self, coin, period):
+        return self.getCandles('BTCUSDT', period)
 
     def getMean(self, coin, bot_config):
         """Mean in 30 candles
@@ -151,10 +136,10 @@ class Binance_opr(ApiData):
         """
         r = requests.get("https://www.binance.com/api/v3/ticker/price?symbol=" + coin)
         r = r.content
-        r = r[len(r) - 12: len(r)-2]
-        return float(r)
+        jsonResponse = json.loads(r.decode('utf-8'))
+        return float(jsonResponse['price'])
 
-    def getOrder(self, bot_config, data_decision, orderID):
+    def getOrder(self, bot_config, data_decision, orderID, client):
         """get order
         
         Arguments:
@@ -171,7 +156,7 @@ class Binance_opr(ApiData):
         except:
             print("erro ao abrir ordem")
 
-    def getOpenOrders(self, bot_config, data_decision):
+    def getOpenOrders(self, bot_config, data_decision, client):
         """get open orders
         
         Arguments:
@@ -186,7 +171,7 @@ class Binance_opr(ApiData):
             return True   
         return False
 
-    def getClientBalance(self):
+    def getClientBalance(self, client):
         """get client balance from binance wallet
         
         Returns:
@@ -195,40 +180,55 @@ class Binance_opr(ApiData):
         balance = client.get_asset_balance(asset='BTC')
         return balance['free']
          
+    def getPrecision(self, coin):
+        data = client.get_symbol_info(coin)
+        return data['filters'][1]['minQty']
+
     def createBuyOrder(self, data, bot_config, data_decision):
-        """This function start a buy order
-        
-        Arguments:
-            data {[dict]} -- data from insert in database 
-            bot_config {[dict]} -- bot setup from database
-            data_decision {[dict]} -- transactions detals
         """
-
+            AQUI A MAGICA ACONTECE 
+        """
         check = routines.Routines()
-
         if not (check.orderBuyStatus(bot_config, data_decision)):
             db = botconfig.Db()
-            print('7- Criando compra')
             if not (bot_config['active']):
-                print('7.1 sim Inserindo os dados de compra simulado no bd')
+                print('Inserindo simulada')
                 db.insertBuyOrder(data)
             else: 
-                self.loginAPI(bot_config)
+                client = loginAPI(bot_config)
                 status = client.get_system_status()
+                price = "%.8f" % (data_decision['price_now'])
+                print(price)
+
                 if(bot_config['active'] == 1 and status['msg'] == 'normal'):
-                    ammount = float(self.getClientBalance())*bot_config['order_value']/float(data_decision['price_now'])            
-                    try:
-                        order = client.create_order(symbol=bot_config['currency'],side=SIDE_BUY,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_GTC, quantity=ammount, price= data_decision['price_now'])
-                    except:
-                        print('nao foi possivel enviar a ordem')
-                        return
-                    
+                    ammount = float(self.getClientBalance(client))*bot_config['order_value']/float(data_decision['price_now'])
+                    precision = float(self.getPrecision(bot_config['currency']))
+                    if (precision == 1):
+                        ammount = int(ammount) 
+                    elif (precision == 0.01):
+                        ammount = "%.2f" % ammount
+                    else: 
+                        ammount = "%.3f" % ammount
+
+                    print('Quantidade')
+                    print(ammount)            
+                    #try:
+                    order = client.create_order(symbol=bot_config['currency'],side=SIDE_BUY,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_GTC, quantity=ammount, price= str(price))
+                    time.sleep(300)
+                    #except:
+                    #return 
+                    print (order)    
                     orderID = order['orderId']
-                    orders = self.getOrder(bot_config, data_decision, orderID)
-                    data['qnt'] = orders['executedQty']
-                    data['buy_uuid'] = orderID
-                    db.insertBuyOrder(data)
-        return
+                    orders = self.getOrder(bot_config, data_decision, orderID, client)
+                    if(float(orders['executedQty']) == 0 ):
+                        print('Timeout excedido, ordem cancelada')
+                        client.cancel_order(symbol=bot_config['currency'], orderId=orderID)
+                        return
+                    else:
+                        data['qnt'] = orders['executedQty']
+                        data['qnt'] = ammount
+                        data['buy_uuid'] = orderID
+                        db.insertBuyOrder(data)
 
     def createSellOrder(self, data, bot_config, data_decision):
         """This function start a sell order
@@ -244,16 +244,24 @@ class Binance_opr(ApiData):
             print('inserindo os dados de venda no bd')  
             db.commitSellOrder(data)
         else:
-            self.loginAPI(bot_config)
+            client = loginAPI(bot_config)
             status = client.get_system_status()
             if(bot_config['active'] and status['msg'] == 'normal'):
                 print('Pronto pra criar ordem de venda')
-                try:
-                    order = client.create_order(symbol=bot_config['currency'],side=SIDE_SELL,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_GTC, quantity=data_decision['quantity'], price=data_decision['price_now'])
-                except:
-                    print('erro criando a ordem de venda')
-                    return
-
+                price = "%.8f" % data_decision['price_now']
+                quantity = data_decision['trans']['quantity']*0.999
+                #try:
+                order = client.create_order(symbol=bot_config['currency'],side=SIDE_SELL,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_GTC, quantity=int(quantity), price=str(price))
+                time.sleep(300)
+                #except:
+                #print('erro criando a ordem de venda')
+                #    return
+                orderID = order['orderId']
+                orders = self.getOrder(bot_config, data_decision, orderID, client)
+                if(float(orders['executedQty']) == 0 ):
+                        print('Timeout excedido, ordem cancelada')
+                        client.cancel_order(symbol=bot_config['currency'], orderId=orderID)
+                        return
+                print ('ORDEM DE VENDA ID ' + str(order['orderId']))
                 data['sell_uuid'] = order['orderId']
                 db.commitSellOrder(data)
-        return

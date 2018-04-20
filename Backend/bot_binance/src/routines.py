@@ -1,8 +1,4 @@
 # coding=utf-8
-# API Key:
-# baYMJ0rCsQEplo9ROTkejMCUhMqKeGHNCs2LnBvTUA7rF0GmzNDmQexCG2zHqAWk
-# Secret Key:  To ensure safety, API Secret Key will only be displayed at the time of being created. And if the key is lost, you should delete the API and set up a new one.
-# Iq7l85XHXxGEwHClejleZG4OAVTTzpQmhgJiSPwjbcMvJWRoodm7FeFVKEhBzuut
 import binance_
 import strategies
 import helpers
@@ -10,21 +6,12 @@ import botconfig
 import time
 
 class Functions():
-    def buyOrder(self, bot_config):
+    def buyOrder(self, bot_config, data_decision):
         """ this function start is responsable to check a possible buy order
             first analyze all last orders and check if haven't a pendent order for buy or sell
         Arguments:
             bot_config {[dict]} -- bot setup
         """
-        bn = binance_.Binance_opr()
-        
-        lopen, lhigh, llow, lclose, lvol, closetime = bn.getCandles(str(bot_config['currency']), bot_config['period'])
-        st = strategies.Desicion(lopen, lhigh, llow, lclose, lvol, closetime)
-        data_decision = st.getDataDesicion(bot_config)
-        
-        if(self.orderBuyStatus(bot_config, data_decision)):
-            return
-
         data = self.createBuyData(bot_config, data_decision)   
         self.selectBuyStrategy(data, bot_config, data_decision)
         return
@@ -47,8 +34,7 @@ class Functions():
         }
         return data
 
-
-    def checkLastOrders(self, bot_config, data_decision, uuid): 
+    def checkLastOrders(self, bot_config, data_decision, uuid, client): 
         """check the last order and verify the negociation status
         
         Arguments:
@@ -61,13 +47,12 @@ class Functions():
         """
         if (bot_config['active']):
             bn = binance_.Binance_opr()
-            order = bn.getOrder(bot_config, data_decision, uuid)
-            if (order['status'] == 'FILLED'):
+            order = bn.getOrder(bot_config, data_decision, uuid, client)
+            print('---Status da ultima ordem')
+            print('---' + str(order['status']) + '\n')
+            if (order['status'] != 'NEW'):
                 return True   
         return False 
-
-    def printDL(self):
-        print('-----------------------------------------------')
 
     def orderBuyStatus(self, bot_config, data_decision):
         """the principal method to check the last orders
@@ -84,7 +69,8 @@ class Functions():
         elif (data_decision['open_orders'] and bot_config['active']):
             return 1 
         elif(bot_config['active'] and data_decision['trans']):
-            if not (self.checkLastOrders(bot_config, data_decision, data_decision['buy_uuid'])): 
+            client = binance_.loginAPI(bot_config)
+            if not (self.checkLastOrders(bot_config, data_decision, data_decision['buy_uuid'], client)): 
                 return 1            
         return 0
 
@@ -102,25 +88,29 @@ class Functions():
                 if(self.mapStrategy(bot_config)[i] == 'buy'):
                     bn.createBuyOrder(data, bot_config, data_decision)
 
+# -----------------------------------------sell 
     def sellOrder(self, bot_config):
         bn = binance_.Binance_opr()
         lopen, lhigh, llow, lclose, lvol, closetime = bn.getCandles(str(bot_config['currency']), bot_config['period'])
         st = strategies.Desicion(lopen, lhigh, llow, lclose, lvol, closetime)
         data_decision = st.getDataDesicion(bot_config)
-
-        if (self.orderSellStatus(bot_config, data_decision)):
-            self.printDL()
-            return
-        else:
-            stoploss = self.getStopLoss(bot_config, data_decision)
-            fixProfit = self.getFixProfit(bot_config, data_decision)
-            data = self.getSellData(bot_config, data_decision)
-            if(data_decision['price_now'] <= stoploss):
-                print ('venda stop loss alvo ' + str(stoploss))
-                bn.createSellOrder(data, bot_config, data_decision)
-                return
-            self.selectSellStrategy(data, bot_config, data_decision, fixProfit)
-        return
+        fixProfit = self.getFixProfit(bot_config, data_decision)
+        stoploss = self.getStopLoss(bot_config, data_decision)
+        print('---Price Now')
+        print('---' + str(data_decision['price_now']))
+        print('---Alvo de venda')
+        print('---' + str(fixProfit))
+        print('---Stop Loss')
+        print('---' + str(stoploss))
+        print('-----')
+        
+        data = self.getSellData(bot_config, data_decision)
+        if(data_decision['price_now'] <= stoploss):
+            print ('---Venda stop loss alvo ' + str(stoploss))
+            bn.createSellOrder(data, bot_config, data_decision)
+        elif(data_decision['price_now'] >= fixProfit):
+            print('---Venda lucro fixo')
+            bn.createSellOrder(data, bot_config, data_decision)  
 
     def orderSellStatus(self, bot_config, data_decision):
         if(not data_decision['open_orders'] and not bot_config['active']):
@@ -131,8 +121,10 @@ class Functions():
             return 1
         elif(bot_config['active'] and not data_decision['open_orders']): ##NAO VENDER EM QUANTO ORDEM DE COMPRA ABERTA
             return 1
-        elif(bot_config['active'] and not data_decision['trans']):
-            if not (self.checkLastOrders(bot_config, data_decision, data_decision['buy_uuid'])): 
+        elif(bot_config['active'] and data_decision['trans']):
+            client = binance_.loginAPI(bot_config)
+            if not (self.checkLastOrders(bot_config, data_decision, data_decision['trans']['buy_uuid'], client)): 
+                print('---Ordem de compra ainda não executada na exchange')
                 return 1      
         return 0
 
@@ -145,25 +137,11 @@ class Functions():
         return data
 
     def getFixProfit(self, bot_config, data_decision):
-        return data_decision['trans']['buy_value']+data_decision['trans']['buy_value']*bot_config['percentage']
+        return float(data_decision['trans']['buy_value']+data_decision['trans']['buy_value']*bot_config['percentage'])
 
     def getStopLoss(self, bot_config, data_decision):
-        return data_decision['trans']['buy_value']*(1-float(bot_config['stoploss']))
+        return float(data_decision['trans']['buy_value']*(1-float(bot_config['stoploss'])))
     
-    #seleciona a estrategia
-    def selectSellStrategy(self, data, bot_config, data_decision, fixProfit): 
-        bn = binance_.Binance_opr()
-
-        print('alvo de venda ' + str(fixProfit))
-
-        if(bot_config['strategy_sell'] and data_decision['price_now'] >= fixProfit):
-            bn.createSellOrder(data, bot_config, data_decision)   
-        else:
-            for i in range(0, 3):
-                if(bot_config['strategy_buy'] == i):
-                    if(self.mapStrategy(bot_config)[i] == 'sell'): #teste
-                        bn.createSellOrder(data, bot_config, data_decision)   
-
     def mapStrategy(self, bot_config): 
         """map the strategies
         
@@ -185,12 +163,27 @@ class Functions():
         return map
 
 class Routines(Functions):
+
+    def get_config(self, bot_config):
+        bn = binance_.Binance_opr()
+        lopen, lhigh, llow, lclose, lvol, closetime = bn.getCandles(str(bot_config['currency']), bot_config['period'])
+        st = strategies.Desicion(lopen, lhigh, llow, lclose, lvol, closetime)
+        data_decision = st.getDataDesicion(bot_config)
+        return data_decision
+        
     def startBuyRoutine(self, bot_config):
         print('1- Iniciando rotina de compra')
-        print(bot_config['id']) 
-        super().buyOrder(bot_config)
+        data_decision = self.get_config(bot_config)
+        if(super().orderBuyStatus(bot_config, data_decision)):
+            print('---Existem ordens em aberto no banco de dados\n')
+            return  
+        super().buyOrder(bot_config, data_decision)
+
     def startSellRoutine(self, bot_config):
-        print('1- Iniciando rotina de venda bot n ')
-        print(bot_config['id'])  
+        print('2- Iniciando rotina de venda ')
+        data_decision = self.get_config(bot_config)
+        if (super().orderSellStatus(bot_config, data_decision)):
+            print('----Ainda nao ha nada para vender\n')
+            return
         super().sellOrder(bot_config)
 
