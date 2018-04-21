@@ -1,0 +1,11 @@
+/***Session Timeout custom css***/
+.note.note-success {
+	background-color: #0fb0c0;
+	border-color: #18bc9c;
+	color: #128f76, 80%;
+}
+.note {
+	margin: 0 0 20px 0;
+	padding: 15px 30px 15px 15px;
+	border-left: 5px solid #0fb0c0;
+}

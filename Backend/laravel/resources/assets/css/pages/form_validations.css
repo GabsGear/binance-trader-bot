@@ -1,0 +1,54 @@
+.form-control.col-lg-6 {
+    width: 50% !important;
+}
+.form-group label{
+    margin-top: 5px;
+}
+.has-error label, .has-error span,.login_validator .help-block{
+    color: #EF6F6C;
+    font-size: 14px;
+}
+#form_inline_validator [data-bv-validator="notEmpty"]{
+    padding-left:15px;
+}
+.formError .formErrorContent{
+    min-width:130px !important;
+}
+.has-error .error_color{
+    color:#525252 !important;
+}
+.check_form_val{
+    margin-top: 0!important;
+}
+.has-success .custom-control{
+    color: #525252;
+}
+.datepicker table tr td.today, .datepicker table tr td.today:hover, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover{
+    background-image: linear-gradient(to bottom,#4fb7fe, #4fb7fe);
+    color: #fff !important;
+}
+.formError .formErrorContent, .formError .formErrorArrow div{
+    background-color: #EF6F6C !important;
+}
+.parentFormpopup-validation{
+    opacity: 1 !important;
+}
+.error_color1 label{
+    display: block;
+}
+@media (min-width: 769px) {
+    .parentFormpopup-validation{
+        width: 232px;
+    }
+}
+@media (min-width: 320px) and (max-width: 460px) {
+    .formError{
+        min-width:130px !important;
+        left: 100px !important;
+    }
+}
+@media (min-width: 461px) and (max-width: 1200px) {
+    .formError{
+        left: 300px !important;
+    }
+}

@@ -1,0 +1,117 @@
+
+//over-write bootstrap grey colors
+$gray-dark:                     #282828 !default;
+$gray:                            #2c2c2c !default;
+$gray-light:                      #424242 !default;
+$white:                           #ffffff !default;
+
+//over-write bootstrap primary colors
+$brand-primary:                   #4fb7fe !default;
+$brand-success:                   #00cc99 !default;
+$brand-info:                      #347dff !default;
+$brand-warning:                   #ff9933 !default;
+$brand-danger:                    #EF6F6C !default;
+
+//our custom colors, will be used to generate buttons etc
+
+/*
+| mint colors related code;'
+*/
+$brand-mint:                      #0FB0C0 !default;
+
+
+
+$btn-mint-color:                  #fff !default;
+$btn-mint-bg:                     $brand-mint !default;
+$btn-mint-border:                 $brand-mint !default;
+
+/*
+| dark colors related code;'
+*/
+
+
+/*
+| Gray colors related code
+*/
+
+$brand-gray:                       #bac4c5 !default;
+
+$btn-gray-color:                  #fff !default;
+$btn-gray-bg:                     $brand-gray !default;
+$btn-gray-border:                 $brand-gray !default;
+
+//over-write fonts
+$font-family-headings:  'Hind', sans-serif;
+$font-family-sans-serif: 'Source Sans Pro', sans-serif;
+
+$headings-font-family: $font-family-headings;
+
+// over-write alert colors, form feedback colors
+$state-success-text:             $white;
+$state-success-bg:               $brand-success;
+$state-success-border:           $brand-success;
+
+$state-info-text:                $white;
+$state-info-bg:                  $brand-info;
+$state-info-border:              $brand-info;
+
+$state-warning-text:             $white;
+$state-warning-bg:               $brand-warning;
+$mark-bg:                        $state-warning-bg !default;
+$state-warning-border:           $brand-warning;
+
+$state-danger-text:              $white;
+$state-danger-bg:                $brand-danger;
+$state-danger-border:            $brand-danger !default;
+
+$state-mint-text:              $white;
+$state-mint-bg:                $brand-mint;
+$state-mint-border:            $brand-mint !default;
+
+
+
+//over-write progress-bars
+
+// breadcrumb
+$breadcrumb-bg:                  transparent !default;
+$breadcrumb-divider-color:       #343434 ;
+$breadcrumb-divider:             "\f101";
+$breadcrumb-padding-y:          .5em !default;
+
+
+
+//over write base font
+
+$font-size-base:                14px;
+
+//header font sizes
+
+$font-size-h1:                   2.57em !default;
+$font-size-h2:                   2.14em !default;
+$font-size-h3:                   1.5em !default;
+$font-size-h4:                   1.28em !default;
+$font-size-h5:                   1.10em !default;
+$font-size-h6:                   0.85em !default;
+
+$headings-color:                #525252 !default;
+
+$headings-font-weight:           500 !default;
+
+$input-height :                  2.5em;
+//link
+
+$link-hover-decoration:          none !default;
+//navbar
+$navbar-border-radius:           0 !default;
+
+//body
+$body-bg:                        #e9e9e9 !default;
+
+//link
+$link-color:                     #525252 !default
+
+//line height
+$line-height-base:                       1.8 !default;
+
+//overwrite placeholder color
+$input-color-placeholder: #999 !default;

@@ -1,0 +1,22 @@
+.card-block .card .card-header{
+    font-size: 14px;
+}
+.parent_card .card{
+    margin-bottom: 0;
+}
+.animations_parent_card .card{
+    margin-top: 10px;
+    cursor: pointer;
+}
+.animations_parent_card .card-block
+{
+    padding: 1.25rem;
+}
+.effects_heading_top_align
+{
+    margin-top: 35px;
+}
+code
+{
+    color:#EF6F6C;
+}

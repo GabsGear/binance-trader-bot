@@ -1,0 +1,50 @@
+.login_background{
+    background-color:#E6ECEA;
+}
+.login_image{
+    background-image: url("../../img/login1_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: -2px 12px 50px -5px #000;
+}
+.login_section .custom-control-description{
+    color: #fff !important;
+}
+.login_section{
+    padding: 25px 30px 30px 30px;
+    border-radius: 5px;
+}
+.login_section_top{
+    margin: 25% 0;
+}
+.login_section input{
+    padding-left: 20px;
+    background-color: rgba(170, 177, 185,0.5);
+    color: #fff;
+    border:none;
+}
+.login_section input:focus{
+    background-color: rgba(170, 177, 185,0.5);
+    color: #fff;
+    border:none;
+}
+.login_bottom{
+    border-bottom: 1px solid #666;
+    padding-bottom: 40px;
+}
+.login_section a{
+    cursor: pointer;
+}
+.admire_logo{
+    width:70px;
+    height:70px;
+}
+/*register*/
+.register_section_top{
+    margin: 10% 0;
+}
+/*forgot password*/
+.forgot_section_top{
+    margin: 35% 0;
+}

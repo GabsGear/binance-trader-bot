@@ -1,0 +1,196 @@
+/* calendar custome code */
+#color-chooser a{color:#FFF}
+.fc-event-inner{padding:2px 2px}
+.fc-event{background:#EF6F6C;border:none}
+.box-bordered{background:#f6f6f6;border:2px dotted #dbdbdb;padding:10px}
+.icheckbox_minimal, .iradio_minimal {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    border: none;
+}
+.dropdown-menu li{
+    cursor: pointer;
+}
+
+#myModal .cal_modal_type,#evt_modal .cal_modal_type{
+    left:-53px;
+}
+/* Custom calendar */
+.external-event {
+    padding: 3px 5px;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 5px 5px 0;
+}
+.fc-header-left {
+    width: 35%;
+    text-align: left;
+    display: block;
+}
+.fc-header-center {
+    text-align: center;
+    display: block;
+    margin-left: 35%;
+}
+.box .box-body .fc-header-title h2  {
+    font-weight:bold;
+}
+.fc-header-right {
+    width: 25%;
+    text-align: right;
+}
+.calendar-list  {
+
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    border: 1px solid #ddd;
+}
+#color-chooser li{
+    padding: 5px 0;
+    cursor:pointer;
+}
+#color-chooser{
+    padding: 0;
+}
+.calendar_icon {
+    background-color: #2180ac;
+    color: #fff;
+    padding: 5px 2px 5px 5px;
+    border-radius: 20px;
+}
+.cal_modal_type .btn{
+    border-radius: 0;
+}
+.cal_btn_hov a:not([href]):not([tabindex]){
+    color: #fff;
+}
+.fc-day-grid-event:focus,.fc-day-grid-event:hover{
+    color: #fff !important;
+}
+.cal_modal_type .btn-primary{
+    margin-top: -6px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+.cal_modal_type .btn-danger{
+    margin-bottom: -6px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+#color-chooser{
+    min-width: 120% !important;
+}
+/*View user*/
+#calendar_mini .header td{
+    width: 20% ;
+}
+#calendar_mini .header .span6{
+    width: 60% ;
+}
+.view_user_cal .fa-arrow-right:hover,.view_user_cal .fa-arrow-left:hover{
+    cursor: pointer;
+}
+.visualmonthyear{
+    font-size: 16px;
+}
+.view_user_cal #calendar_mini .calendar{
+    text-align: center;
+}
+.view_user_cal #calendar_mini .week_days td{
+    width: 12%;
+    text-align: center;
+}
+.view_user_cal .event_popover,.view_user_cal .event_tooltip{
+    background-color:#4fb7fe !important;
+}
+.recent_feeds_header_img{
+    width:27px;
+    height: 27px;
+}
+.recent_feeds_img{
+    width: 35px;
+    height: 35px;
+}
+.manual_popover,.view_user_cal .event_tooltip a{
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    color: #fff;
+}
+.manual_popover{
+    background-color: #EF6F6C;
+}
+.view_user_cal .event_tooltip a{
+    background-color: #ff9933;
+}
+.view_user_cal .arrow_padding,.visualmonthyear{
+    padding-top:12px;
+    margin-bottom: -20px;
+}
+.tab-content .editable{
+    cursor: pointer;
+    border-bottom: 1px dotted #4fb7fe;
+}
+.editable_table button,.editable_table input{
+    border-radius: 0 !important;
+}
+.fa-arrow-right,.fa-arrow-left{
+    margin-top: 3px;
+}
+#external-events .event-clear{
+    padding-left:4px
+}
+.fc-day-grid-event .fc-content{
+    padding: 5px 3px;
+}
+.fc-event .fc-bg{
+    background: transparent !important;
+}
+.color-chooser-btn.btn-default{
+    background-color: #737373;
+}
+.cal_btn_hov .btn.btn-link.btn-xs{
+    margin-top: -4px;
+}
+
+@media (max-width: 340px){
+    .manual_popover, .view_user_cal .event_tooltip a {
+        width: 25px;
+        height: 26px;
+    }
+}
+.fc-day-grid-event .fc-content{
+    padding: 5px;
+}
+.fc-center h2{
+    margin-top: 5px;
+}
+.fc-event-container:hover{
+    color: #fff;
+}
+/*dropdown colors*/
+.cal_btn_hov .btn.btn-link.btn-xs:focus{
+    color: #2c2c2c;
+    box-shadow: none;
+}
+.color_primary,.color_primary:hover{
+    background-color: #4fb7fe;
+}
+.color_success,.color_success:hover{
+    background-color: #00cc99;
+}
+.color_info,.color_info:hover{
+    background-color: #347dff;
+}
+.color_warning,.color_warning:hover{
+    background-color: #ff9933;
+}
+.color_danger,.color_danger:hover{
+    background-color: #EF6F6C ;
+}

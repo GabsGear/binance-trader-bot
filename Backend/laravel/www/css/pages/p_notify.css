@@ -1,0 +1,110 @@
+.notify_page .btn{
+    margin-top: 10px;
+}
+.btn_margin_top{
+    margin-top: 0 !important;
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+    .btn_margin_top{
+        margin-top: 5px !important;
+    }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    .effect_in_margin_top{
+        margin-bottom: 10px;
+    }
+}
+#animate_in,#animate_out{
+    display: inline;
+    width: auto;
+}
+#form_notice{
+    display: none;
+}
+.ui-pnotify-action-button{
+    background-color: #fff !important;
+    color: #525252 !important;
+}
+.m-l-20{
+    margin-left: 20px;
+}
+.card-block h4, .ui-pnotify-title, .pf-heading h3 {
+    color: #fff !important;
+}
+.P-notify .wrapper{
+    background:transparent !important;
+}
+.card h5{
+    margin-bottom: 0;
+}
+.opacity .btn-warning{
+    background-color: rgba(255,153,51,0.7);
+}
+.opacity .btn-success{
+    background-color: rgba(0, 204, 153,0.7);
+    border-color: #009973;
+}
+.opacity .btn-info{
+    background-color: rgba(52,125,255,0.7);
+}
+.opacity .btn-danger{
+    background-color: rgba(255, 102, 102,0.7);
+}
+.opacity .btn-mint{
+    background-color: rgba(	15, 176, 192,0.7);
+    border:1px solid #0B8591 !important;
+}
+.alert-warning{
+    background-color: rgba(255,153,51,0.9);
+    border: 1px solid #FF8000;
+}
+.alert-success{
+    background-color: rgba(0, 204, 153,0.9);
+    border: 1px solid #009973;
+}
+.alert-info{
+    background-color: rgba(52,125,255,0.9);
+    border: 1px solid #015CFF;
+}
+.alert-danger{
+    background-color: rgba(255, 102, 102,0.9);
+    border: 1px solid #FF3333;
+}
+.source{
+    width: 90%;
+}
+.ui-pnotify-icon{
+    margin-top: 2px !important;
+}
+@media (max-width: 767px) {
+    html > body > .ui-pnotify {
+        bottom: auto !important;
+        left: 0 !important;
+        margin: 0 !important;
+        right: 0 !important;
+        top: 60px !important;
+        width: auto !important;
+    }
+
+    html > body > .ui-pnotify .notification {
+        border-radius: 0 !important;
+        height: auto !important;
+        position: static !important;
+        width: 100%;
+    }
+
+    html > body > .ui-pnotify .notification .ui-pnotify-title,
+    html > body > .ui-pnotify .notification .ui-pnotify-text {
+        padding-right: 35px !important;
+    }
+
+    html > body > .ui-pnotify .notification .ui-pnotify-sticker {
+        display: none !important;
+    }
+
+    html > body > .ui-pnotify .notification .ui-pnotify-closer {
+        display: block !important;
+        font-size: 24px !important;
+        visibility: visible !important;
+    }
+}

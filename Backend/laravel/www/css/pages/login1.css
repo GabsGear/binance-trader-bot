@@ -1,0 +1,95 @@
+.btn-primary:hover{
+    border-color: #2a9fd6;
+    background: #2180ac !important;
+}
+
+.loginpage_border{
+    cursor: pointer;
+}
+.custom-control .custom-control-indicator {
+    margin-top: 2px !important;
+}
+.form-actions {
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.admire_logo{
+    width: 45px;
+    height: 45px;
+}
+.bg-white{
+    background-color: #fff;
+}
+.loginpage_border {
+    border-radius: 5px;
+}
+.login_border_radius{
+    border-radius: 0 0 5px 5px;
+}
+.login_border_radius1{
+    border-radius: 5px 5px 0 0;
+}
+body {
+    background-image: url(../../img/login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.login_button {
+    border: none;
+}
+.has-error label, .has-error small{
+    color: #ff8080;
+}
+.help-block{
+    font-size:14px;
+}
+.icon-white {
+    color: #fff;
+}
+.icon_padding {
+    padding: 6px 0 6px 8px;
+}
+.btn-facebook {background: #3b5998;}
+.btn-twitter {background: #00aced;}
+.btn-google {background: #c32f10;}
+
+.login_content {
+    padding: 15px;
+}
+.login_logo{
+    padding-bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.forgot_pwd a:focus{
+    outline: 0 !important;
+}
+.forgotpwd_margin {
+    margin: 26% 0;
+}
+.forgottxt_clr{
+    color: #282828;
+}
+.forgottxt_clr:hover{
+    color: #00c0ef !important;
+}
+.login_hover:hover{
+    color: #35a4d7 !important;
+}
+.login_top_bottom{
+    margin: 9% 0;
+}
+@media (min-width: 1441px) {
+    .login_top_bottom{
+        margin: 22% 0;
+    }
+    .forgotpwd_margin {
+        margin: 45% 0;
+    }
+}
+@media (max-width: 600px) {
+    body{
+        background-repeat: repeat-y;
+    }
+}
