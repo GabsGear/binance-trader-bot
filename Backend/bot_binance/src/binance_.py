@@ -108,7 +108,7 @@ class Binance_opr(ApiData):
         lvol = np.array(lvol).astype(np.float)
         return lopen, lhigh, llow, lclose, lvol, closetime      
 
-    def getBTCCandles(self, coin, period):
+    def getBTCCandles(self, period):
         return self.getCandles('BTCUSDT', period)
 
     def getMean(self, coin, bot_config):

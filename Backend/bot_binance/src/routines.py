@@ -93,7 +93,7 @@ class Functions():
         bn = binance_.Binance_opr()
         lopen, lhigh, llow, lclose, lvol, closetime = bn.getCandles(str(bot_config['currency']), bot_config['period'])
         st = strategies.Desicion(lopen, lhigh, llow, lclose, lvol, closetime)
-        data_decision = st.getDataDesicion(bot_config)
+        data_decision = st.getDataDecision(bot_config)
         fixProfit = self.getFixProfit(bot_config, data_decision)
         stoploss = self.getStopLoss(bot_config, data_decision)
         print('---Price Now')
@@ -158,17 +158,17 @@ class Functions():
             0: st.startTurtle(bot_config), #CONTRA TURTLE
             1: st.startInside(bot_config), #INSIDE BAR
             2: st.startDoubleUp(bot_config), #DOUBLLE UP
-            3: st.startPivot_up(bot_config), #PIVOT UP
+            3: st.startPivotUp(bot_config), #PIVOT UP
         }
         return map
+    
 
 class Routines(Functions):
-
     def get_config(self, bot_config):
         bn = binance_.Binance_opr()
         lopen, lhigh, llow, lclose, lvol, closetime = bn.getCandles(str(bot_config['currency']), bot_config['period'])
         st = strategies.Desicion(lopen, lhigh, llow, lclose, lvol, closetime)
-        data_decision = st.getDataDesicion(bot_config)
+        data_decision = st.getDataDecision(bot_config)
         return data_decision
         
     def startBuyRoutine(self, bot_config):
