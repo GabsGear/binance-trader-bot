@@ -180,7 +180,7 @@ class StrategiesBase(Desicion):
                 return 'sell'
         return 'none'
 
-    def followBTC(self, bot_config):
+    def startFollowBTC(self, bot_config):
         """
             Search pivot up on btc 
         """
@@ -199,7 +199,7 @@ class StrategiesBase(Desicion):
 
         pivotUp = var > 3.0 and pivot['c'] > maxHigh 
         pivotDown = var < -1.5 and pivot['c'] < maxLow
-
+        print('followbtcResult')
         if pivotUp:
             return 'buy'
 
