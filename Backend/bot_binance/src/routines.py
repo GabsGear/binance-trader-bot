@@ -83,7 +83,7 @@ class Functions():
             data_decision {[dict]} -- transactions detals
         """
         bn = binance_.Binance_opr()
-        for i in range(0, 5):
+        for i in range(0, 6):
             if(bot_config['strategy_buy'] == i):
                 print(self.mapStrategy(bot_config)[i])
                 if(self.mapStrategy(bot_config)[i] == 'buy'):
@@ -160,7 +160,8 @@ class Functions():
             1: st.startInside(bot_config), #INSIDE BAR
             2: st.startDoubleUp(bot_config), #DOUBLLE UP
             3: st.startPivotUp(bot_config), #PIVOT UP
-            4: st.startFollowBTC(bot_config),
+            4: st.startRSIMax(bot_config), #RSI
+            5: st.startFollowBTC(bot_config), #BTC
         }
         return map
     
