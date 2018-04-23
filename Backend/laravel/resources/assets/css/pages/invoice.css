@@ -1,0 +1,19 @@
+/*//====================invoice css===========================*/
+.invoice_body_billing_details{
+    margin-top: 20px;
+}
+.invoice_details {
+    background-color: #e2e2e2;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+@media print{
+    .invoice_print, #left, .head, #top,.btn-success {
+        display:none;
+    }
+}
+@media (max-width: 540px){
+    .button-alignment{
+        margin-top: 15px;
+    }
+}

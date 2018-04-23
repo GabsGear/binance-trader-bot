@@ -1,0 +1,169 @@
+/*bling buttons*/
+.puffIn:hover {
+    animation-duration: 1s;
+    animation-name: puffIn;
+}
+
+@keyframes puffIn {
+    0% {
+        opacity: 0;
+        transform-origin: 50% 50%;
+        transform: scale(2, 2);
+        filter: blur(2px);
+    }
+
+    100% {
+        opacity: 1;
+        transform-origin: 50% 50%;
+        transform: scale(1, 1);
+        filter: blur(0px);
+    }
+}
+
+.puffOut:hover {
+    animation-duration: 1s;
+    animation-name: puffOut;
+}
+
+@keyframes puffOut {
+    0% {
+        opacity: 1;
+        transform-origin: 50% 50%;
+        transform: scale(1, 1);
+        filter: blur(0px);
+    }
+    100% {
+        opacity: 0;
+        transform-origin: 50% 50%;
+        transform: scale(2, 2);
+        filter: blur(2px);
+    }
+
+}
+
+.vanishIn:hover {
+    animation-duration: 1s;
+    -webkit-animation-name: vanishIn;
+    animation-name: vanishIn;
+}
+
+@-webkit-keyframes vanishIn {
+    0% {
+        opacity: 0;
+        -webkit-transform-origin: 50% 50%;
+        -webkit-transform: scale(2, 2);
+        -webkit-filter: blur(90px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform-origin: 50% 50%;
+        -webkit-transform: scale(1, 1);
+        -webkit-filter: blur(0px);
+    }
+}
+
+@keyframes vanishIn {
+    0% {
+        opacity: 0;
+        transform-origin: 50% 50%;
+        transform: scale(2, 2);
+        -webkit-filter: blur(90px);
+    }
+    100% {
+        opacity: 1;
+        transform-origin: 50% 50%;
+        transform: scale(1, 1);
+        -webkit-filter: blur(0px);
+    }
+}
+
+.vanishOut:hover {
+    animation-duration: 1s;
+    -webkit-animation-name: vanishOut;
+    animation-name: vanishOut;
+}
+
+@-webkit-keyframes vanishOut {
+    0% {
+        opacity: 1;
+        -webkit-transform-origin: 50% 50%;
+        -webkit-transform: scale(1, 1);
+        -webkit-filter: blur(0px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform-origin: 50% 50%;
+        -webkit-transform: scale(2, 2);
+        -webkit-filter: blur(20px);
+    }
+}
+
+@keyframes vanishOut {
+    0% {
+        opacity: 1;
+        transform-origin: 50% 50%;
+        transform: scale(1, 1);
+        -webkit-filter: blur(0px);
+    }
+    100% {
+        opacity: 0;
+        transform-origin: 50% 50%;
+        transform: scale(2, 2);
+        -webkit-filter: blur(20px);
+    }
+}
+
+/*end of bling buttons*/
+
+.animations_page .btn{
+    margin:10px 10px 0 0;
+}
+.curls_border>.btn{
+    border: none;
+}
+.speech_bubbles .btn-mint:hover {
+    background-color: #0fb0c0;
+    border-color: #0fb0c0;
+}
+.speech_bubbles .btn-info:hover{
+    background-color: #347dff;
+    border-color: #347dff;
+}
+.speech_bubbles .btn-primary:hover {
+    background-color: #4fb4fe;
+    border-color: #4fb4fe;
+}
+.speech_bubbles .btn-success:hover {
+    background-color: #00cc99;
+    border-color: #00cc99;
+}
+.speech_bubbles>.hvr-bubble-float-top:before  {
+    border-color: transparent transparent #0fb0c0 transparent;
+}
+.speech_bubbles>.hvr-bubble-float-right:before  {
+    border-color: transparent transparent transparent #347dff;
+}
+.speech_bubbles>.hvr-bubble-float-bottom:before  {
+    border-color: #4fb4fe transparent transparent transparent;
+}
+.speech_bubbles>.hvr-bubble-float-left:before  {
+    border-color: transparent #00cc99 transparent transparent;
+}
+.loading{
+     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+     background-size: 40px 40px;
+    animation: 2s linear 0s normal none infinite progress-bar-stripes;
+    -webkit-animation: progress-bar-stripes 2s linear infinite;
+}
+.animated_buttons>.btn{
+    background-image: linear-gradient(45deg, rgba(235, 235, 235, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(235, 235, 235, 0.15) 50%, rgba(235, 235, 235, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+}
+.input-group-btn:not(:first-child) > .btn{
+    margin-top: 0;
+}
+.btn-outline-warning:hover,.btn-outline-warning:active,.btn-outline-warning:focus{
+    outline: none;
+}
+.wow_animation .card {
+    margin-bottom: 0;
+}

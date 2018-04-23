@@ -1,0 +1,124 @@
+/* dashboard css start */
+
+ .bodr{
+    border-top: 1px solid #fff !important;
+}
+.pad-20{
+    padding-top: 20px;
+}
+.no-padding {padding: 0px !important;}
+.no-margin {margin: 0px !important;}
+
+
+.todo .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 20px 12px !important;
+    border-radius:20px !important;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+/* to do */
+.todolist_list {
+    display: inline-block;
+    width: 100%;
+    padding: 2px 5px 0px 4px;
+    background: #fff;
+    float: left;
+}
+.todolist_list:hover {
+    background: #fafafa;
+}
+.showbtnschk {display:none;}
+#todoedit {
+    color: #418bca;
+    padding-right: 3px;
+}
+.todoedit, .todoedit:hover {
+    color: #418bca !important;
+    text-decoration: none;
+}
+.showactions .glyphicon {
+    font-size: 10px;
+    padding-top: 5px;
+}
+#tododelete {
+    color: #F00;
+    padding-left: 3px;
+}
+.tododelete, .tododelete:hover {
+    color: #F00 !important;
+    text-decoration: none;
+}
+.todolist_list > form {
+    background: #fff;
+    margin: 0 !important;
+    padding-top: 3px;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    color:#ca0002;
+}
+.todoitemcheck {
+    float: left;
+    margin-left: 5px;
+    margin-right: 8px;
+}
+.seperator {
+    width: 95%;
+    float: left;
+    border-top:1px solid #eee;
+    padding-left: 100px;
+    margin-left: 2%;
+    padding:0px 15px 0px 5px;
+}
+.todoitem {padding-top: 2px;}
+.todoitembtns {
+    padding: 4px 20px 0px 0px;
+    text-align: right;
+}
+
+.todo_primarybadge {padding:10px 0px 8px 0px; margin:0px; border:2px solid #2180ac; float:left;}
+.todo_infobadge {padding:10px 0px 8px 0px; margin:0px; border:2px solid #9933cc; float:left;}
+.todo_warningbadge {padding:10px 0px 8px 0px; margin:0px; border:2px solid #ff8800; float:left;}
+.todo_dangerbadge {padding:10px 0px 8px 0px; margin:0px; border:2px solid #cc0000; float:left;}
+.todo_successbadge {padding:10px 0px 8px 0px; margin:0px; border:2px solid #77b300; float:left;}
+.todo_mintbadge {padding:10px 0px 8px 0px; margin:0px; border:2px solid #18bc9c; float:left;}
+
+
+.flotChart3 {
+    width: 100%;
+    height: 250px;
+
+}
+.legendColorBox {padding-right: 5px !important}
+.legendColorBox > div {border:0px !important; padding:0px 2px 0px 0px; color:red !important; }
+
+.donut_hdng {float:left; font-size:16px;background-color:#0fb0c0; color: #fff; padding:10px; border-radius:20px;}
+.calendar_icon {background-color:#2180ac; color: #fff; padding:5px 2px 5px 5px; border-radius:20px;}
+.activity_icon {background-color:#cc6000; color: #fff; padding:5px 2px 5px 5px; border-radius:20px;}
+.todo_icon {background-color:#558000; color: #fff; padding:5px 2px 5px 5px; border-radius:20px;}
+
+
+/* user and sales statistics */
+.userstat_hdng {background-color:#9678dc; padding:7px; text-align:center; color:#fff;}
+.salesstat_hdng {background-color:#2a9fd6; padding:7px; text-align:center; color:#fff;}
+.userstat_progress {padding:18px 0px; float: left;}
+.userstat_seperator {border-bottom:1px solid #eee; margin-bottom:15px;}
+.userstat_circle {padding:5px; margin-top:4px; float:left; border-radius :5px;}
+.userstat_progreelist {padding:0px 0px 20px 0px;}
+.userstat_details {margin:25px 0px 10px 0px; padding-top:10px;}
+.stat_spark {width:50%; margin-left:20% ;text-align:center;}
