@@ -1,7 +1,3 @@
-#dict = {'nome':'null', 'key':'null', 'secret':'null'}
-#dict['nome'] = ('gabriel_')
-#dict['key'] = ('q4r6zw4CXMGynsdQhRgzcs1PuOBfT1uCCwBG2op0fue7Qr33XvH23Cn0W5SMgWGU') 
-#dict['secret'] = ('8PVopsBzr0piU66t3dEiPoxTuZUfVCemWdkjI5zN9OhEZcyPxgeO4UaAD1jM0zG0')
 # coding=utf-8
 import numpy as np
 from binance.client import Client 
@@ -172,13 +168,18 @@ class Binance_opr(ApiData):
             return True   
         return False
 
-    def getClientBalance(self, client):
+    def getClientBalance(self, client, bot_config):
         """get client balance from binance wallet
         
         Returns:
             [float] -- returns free BTC from botwork
         """
-        balance = client.get_asset_balance(asset='BTC')
+        currency = str(bot_config['currency'])
+        pair = currency[len(currency)-4:len(currency)]
+        if(pair == 'USDT'):
+            balance = client.get_asset_balance(asset='USDT')
+        else:
+            balance = client.get_asset_balance(asset='BTC')
         return balance['free']
          
     def getPrecision(self, coin):
