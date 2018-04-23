@@ -230,7 +230,7 @@ class Binance_opr(ApiData):
                 print(price)
 
                 if(bot_config['active'] == 1 and status['msg'] == 'normal'):
-                    ammount = float(self.getClientBalance(client))*bot_config['order_value']/float(data_decision['price_now'])
+                    ammount = float(self.getClientBalance(client, bot_config))*bot_config['order_value']/float(data_decision['price_now'])
                     ammount = self.checkPrecision(bot_config, ammount)
                     print('Quantidade')
                     print(ammount)            
