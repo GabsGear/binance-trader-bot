@@ -3,7 +3,7 @@ import binance_
 import helpers
 import botconfig
 import numpy as np
-import pandas as pd
+import talib as tb
 
 class Desicion():
     """Data decision class
@@ -67,48 +67,22 @@ class Desicion():
             return float(x-100)
         return float(0)
 
-    def getRSI(self, data):
-        size = len(data['c'])
-        data['c'] = np.array(data['c'], dtype=float)
-        rsi = self.RSI(data['c'], 20)
-        if(rsi[size-1] > 0.0):
-            return rsi[size-1]
-        else:
-            return self.getRSISmall(data)
+    # def getRSI(self, data):
+    #     size = len(data['c'])
+    #     data['c'] = np.array(data['c'], dtype=float)
+    #     rsi = tb.RSI(data['c'], 20)
+    #     if(rsi[size-1] > 0.0):
+    #         return rsi[size-1]
+    #     else:
+    #         return tb.getRSISmall(data)
 
-    def getRSISmall(self, data):
-        size = len(data['c'])
-        data['c']= np.array(data['c'], dtype=float)
-        for c in data['c']:
-            c = c*100
-        rsi = self.RSI(data['c'], 20)
-        return rsi[size-1]
-
-
-    def RSI(self, df, n):  
-        i = 0  
-        UpI = [0]  
-        DoI = [0]  
-        while i + 1 <= df.index[-1]:  
-            UpMove = df.get_value(i + 1, 'High') - df.get_value(i, 'High')  
-            DoMove = df.get_value(i, 'Low') - df.get_value(i + 1, 'Low')  
-            if UpMove > DoMove and UpMove > 0:  
-                UpD = UpMove  
-            else: UpD = 0  
-            UpI.append(UpD)  
-            if DoMove > UpMove and DoMove > 0:  
-                DoD = DoMove  
-            else: DoD = 0  
-            DoI.append(DoD)  
-            i = i + 1  
-        UpI = pd.Series(UpI)  
-        DoI = pd.Series(DoI)  
-        PosDI = pd.Series(pd.ewma(UpI, span = n, min_periods = n - 1))  
-        NegDI = pd.Series(pd.ewma(DoI, span = n, min_periods = n - 1))  
-        RSI = pd.Series(PosDI / (PosDI + NegDI), name = 'RSI_' + str(n))  
-        df = df.join(RSI)  
-        return df
-
+    # def getRSISmall(self, data):
+    #     size = len(data['c'])
+    #     data['c']= np.array(data['c'], dtype=float)
+    #     for c in data['c']:
+    #         c = c*100
+    #     rsi = tb.RSI(data['c'], 20)
+    #     return rsi[size-1]
 
 class StrategiesBase(Desicion):
     """Strategies class
@@ -150,7 +124,6 @@ class StrategiesBase(Desicion):
         tomax = self.getLhigh()
         tomax = tomax[len(tomax) - 3 : len(tomax) - 1]
         tomin = self.getLlow()
-
         if(len(tomin) > 0):
             minn = min(tomin)
             maxx = max(tomax)
@@ -240,24 +213,25 @@ class StrategiesBase(Desicion):
 
         pivotUp = var > 3.0 and pivot['c'] > maxHigh 
         pivotDown = var < -1.5 and pivot['c'] < maxLow
+        
         if pivotUp:
             return 'buy'
         if pivotDown:
                 return 'sell'
         return 'none'
 
-    def startRSIMax(self, bot_config):
-        data = self.getDataDecision(bot_config)
-        high = self.getLhigh()
-        size = len(high)
-        tomax = high[size-3:size-1]
-        maxx = max(tomax)
-        rsi = super().getRSI(data)
+    # def startRSIMax(self, bot_config):
+    #     data = self.getDataDecision(bot_config)
+    #     high = self.getLhigh()
+    #     size = len(high)
+    #     tomax = high[size-3:size-1]
+    #     maxx = max(tomax)
+    #     rsi = super().getRSI(data)
 
-        if(rsi < 30):
-            return 'buy'
-        if(data['price_now'] >= maxx):
-            return 'sell'
-        return 'none'
+    #     if(rsi < 30):
+    #         return 'buy'
+    #     if(data['price_now'] >= maxx):
+    #         return 'sell'
+    #     return 'none'
 	
  
