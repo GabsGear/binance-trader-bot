@@ -43,7 +43,6 @@ def contra_turtle(bot_config):
 		if(data['price_now'] >= maxx):
 			#print "LANCEI VENDA"
 			return 'sell'
-
 	return 'none'
 
 
@@ -53,14 +52,12 @@ def inside_bar(bot_config):
 	flag = False
 
 	high = np.array(data['h'][size-3:size-1]) ##CORTO O VETOR DE CANDLES E DEIXO ELES COM TAMANHO 4
-	low = np.array(data['l'][size-3:size-1]) ##CORTO O VETOR DE CANDLES E DEIXO ELES COM TAMANHO 4
 	close = np.array(data['c'][size-3:size-1]) ##CORTO O VETOR DE CANDLES E DEIXO ELES COM TAMANHO 4
 
 	if(len(high) > 0):
 		if (high[1] < high[0]) and (close[1] >= close[0]):
 			if data['price_now'] > high[0]:
 				flag = True
-
 	   
 		if (flag):
 			return 'buy'
@@ -69,7 +66,6 @@ def inside_bar(bot_config):
 			return 'sell'
 
 	return 'none'
-
 
 def double_up(bot_config):
 	data = getDataDecision(bot_config)
@@ -80,9 +76,8 @@ def double_up(bot_config):
 	close = np.array(data['c'][size-3:size-1]) ##CORTO O VETOR DE CANDLES E DEIXO ELES COM TAMANHO 4
 
 	if(len(close) > 0):
-		if (close[1] > close[0]) and (vol[1] >= vol[0]):
+		if (close[len(close) - 1 ] > close[len(close)]) and (vol[len(vol) - 1] >= vol[len(vol)]):
 			flag = True
-
 	   
 		if (flag):
 			return 'buy'

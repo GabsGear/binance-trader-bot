@@ -3,6 +3,7 @@ import binance_
 import helpers
 import botconfig
 import numpy as np
+import talib as tb
 
 class Desicion():
     """Data decision class
@@ -40,7 +41,7 @@ class Desicion():
     def getCloseTime(self):
         return self.__closetime  
 
-    def getDataDesicion(self, bot_config):
+    def getDataDecision(self, bot_config):
         db = botconfig.Db()
         bn = binance_.Binance_opr()
         price_now = bn.getPriceNow(bot_config['currency'])
@@ -58,7 +59,30 @@ class Desicion():
         }
         return data
     
+    def perc(self, buy, sell):
+        x = sell*100/buy
+        if x < 100:
+            return float(-1*(100-x))
+        if x > 100:
+            return float(x-100)
+        return float(0)
 
+    # def getRSI(self, data):
+    #     size = len(data['c'])
+    #     data['c'] = np.array(data['c'], dtype=float)
+    #     rsi = tb.RSI(data['c'], 20)
+    #     if(rsi[size-1] > 0.0):
+    #         return rsi[size-1]
+    #     else:
+    #         return tb.getRSISmall(data)
+
+    # def getRSISmall(self, data):
+    #     size = len(data['c'])
+    #     data['c']= np.array(data['c'], dtype=float)
+    #     for c in data['c']:
+    #         c = c*100
+    #     rsi = tb.RSI(data['c'], 20)
+    #     return rsi[size-1]
 
 class StrategiesBase(Desicion):
     """Strategies class
@@ -92,19 +116,17 @@ class StrategiesBase(Desicion):
         return self.__lvol       
 
     def startTurtle(self, bot_config):
-        data = super().getDataDesicion(bot_config)
+        data = super().getDataDecision(bot_config)
         price_now = binance_.Binance_opr()
         price_now = price_now.getPriceNow(bot_config['currency'])
 
-
         print('price now = ' + str(price_now))
-        high = self.getLhigh()
-        high = high[len(high) - 2 : len(high)]
+        tomax = self.getLhigh()
+        tomax = tomax[len(tomax) - 3 : len(tomax) - 1]
         tomin = self.getLlow()
-
         if(len(tomin) > 0):
-            minn = min(high)
-            maxx = max(high)
+            minn = min(tomin)
+            maxx = max(tomax)
             print (' Buy at ' + str(minn))
             print(' .  ')
             if(data["price_now"] <= minn):
@@ -113,36 +135,40 @@ class StrategiesBase(Desicion):
             if(data["price_now"] >= maxx):
                 print('sinal sell')
                 return 'sell'
-        print('sinal none')
         return 'none'  
 
-    def startPivot_up(self, bot_config):
-        data = super().getDataDesicion(bot_config)
-        flag = False
-        close = self.getLclose() 
-        pivot = max(close)
+    def startPivotUp(self, bot_config):
+        lclose, lopen, lhigh, llow = self.getLclose(), self.getLopen(), self.getLhigh(), self.getLlow()
+        size = len(lclose)
+        pivot = {
+            'c': lclose[size - 2],
+            'o': lopen[size - 2]
+        }
 
-        if(len(close) > 0):
-            if (data['price_now'] > pivot):
-                flag = True
+        maxHigh = max(lhigh)
+        maxLow = max(llow)
+        var = super().perc(pivot['o'], pivot['c'])
 
-            if (flag):
-                return 'buy'
+        pivotUp = var > 3.0 and pivot['c'] > maxHigh 
+        pivotDown = var < -1.5 and pivot['c'] < maxLow
 
-            if data['open_orders'] > 0 and data['price_now'] >= data['trans']['buy_value'] * 1.03:
+        if(pivotUp):
+            return 'buy'
+
+        if pivotDown:
                 return 'sell'
         return 'none'
 
     def startInside(self, bot_config):
-        data = super().getDataDesicion(bot_config)
-        high, low = self.getLhigh(), self.getLlow()
+        data = super().getDataDecision(bot_config)
+        high, close= self.getLhigh(), self.getLclose()
         flag = False
-        size = len(high) - 1
+        size = len(close) - 1
 
-        if (high[size] < high[size - 1]) and (low[size] > low[size - 1]):
+        if (high[size - 1] < high[size - 2]) and (close[size - 1] >= close[size - 2]):
             price_now = binance_.Binance_opr()
             price_now = price_now.getPriceNow(bot_config['currency'])
-            if price_now > high[size - 1]:
+            if price_now > high[size]:
                 flag = True
 
         if (flag):
@@ -154,12 +180,12 @@ class StrategiesBase(Desicion):
         return 'none'
 
     def startDoubleUp(self, bot_config):
-        data = super().getDataDesicion(bot_config)
+        data = super().getDataDecision(bot_config)
         close = self.getLclose()
-        flag = False
         vol   = self.getLvol()
+        flag = False
         if(len(close) > 0):
-            if (close[1] > close[0]) and (vol[1] >= vol[0]):
+            if (close[len(close) - 2] > close[len(close) - 1]) and (vol[len(vol) - 2] >= vol[len(vol) - 1]):
                 flag = True
         
             if (flag):
@@ -169,15 +195,43 @@ class StrategiesBase(Desicion):
                 return 'sell'
         return 'none'
 
-    def followBTC(self, bot_config):
-        data = super().getDataDesicion(bot_config)
+    def startFollowBTC(self, bot_config):
+        """
+            Search pivot up on btc 
+        """
+        dt = binance_.Binance_opr()
+        lopen, lhigh, llow, lclose, lvol, closetime = dt.getBTCCandles(bot_config['period'])
 
+        size = len(lclose)
+        pivot = {
+            'c': lclose[size - 2],
+            'o': lopen[size - 2]
+        }
+        maxHigh = max(lhigh)
+        maxLow = max(llow)
+        var = super().perc(pivot['o'], pivot['c'])
 
-
-        if 1 == 1:
-            return 'buy'
-
-        if data['open_orders'] > 0 and data['price_now'] >= data['trans']['buy_value'] * 1.02:
-            return 'sell'
+        pivotUp = var > 3.0 and pivot['c'] > maxHigh 
+        pivotDown = var < -1.5 and pivot['c'] < maxLow
         
-        return 'none'  
+        if pivotUp:
+            return 'buy'
+        if pivotDown:
+                return 'sell'
+        return 'none'
+
+    # def startRSIMax(self, bot_config):
+    #     data = self.getDataDecision(bot_config)
+    #     high = self.getLhigh()
+    #     size = len(high)
+    #     tomax = high[size-3:size-1]
+    #     maxx = max(tomax)
+    #     rsi = super().getRSI(data)
+
+    #     if(rsi < 30):
+    #         return 'buy'
+    #     if(data['price_now'] >= maxx):
+    #         return 'sell'
+    #     return 'none'
+	
+ 

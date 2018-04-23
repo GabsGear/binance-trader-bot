@@ -543,7 +543,7 @@ getConfigBot	../bot_bittrex/db.py	/^def getConfigBot(bot_id):$/;"	kind:function	
 getConn	../bot_binance/src/botconfig.py	/^    def getConn(self):$/;"	kind:member	line:9
 getConn	../bot_bittrex/db.py	/^def getConn():$/;"	kind:function	line:6
 getDataDecision	../bot_bittrex/strategy.py	/^def getDataDecision(bot_config):$/;"	kind:function	line:93
-getDataDesicion	../bot_binance/src/strategies.py	/^    def getDataDesicion(self, bot_config):$/;"	kind:member	line:43
+getDataDecision	../bot_binance/src/strategies.py	/^    def getDataDecision(self, bot_config):$/;"	kind:member	line:43
 getFixProfit	../bot_binance/src/routines.py	/^    def getFixProfit(self, bot_config, data_decision):$/;"	kind:member	line:139
 getKey	../Testador/Testador_ftp/12hour/binance_.py	/^    def getKey(self):$/;"	kind:member	line:18
 getKey	../Testador/Testador_ftp/15min/binance_.py	/^    def getKey(self):$/;"	kind:member	line:18
