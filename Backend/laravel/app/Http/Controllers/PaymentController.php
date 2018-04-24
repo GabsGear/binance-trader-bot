@@ -12,6 +12,7 @@ use Auth;
 use App\Http\Controllers\ProcessController;
 use Symfony\Component\Process\Process;
 use Symfony\Component\Process\Exception\ProcessFailedException;
+Use Redirect;
 
 class PaymentController extends Controller {
 
@@ -73,9 +74,9 @@ class PaymentController extends Controller {
 				]
 			);
 			EmailController::postPayment($data['status_url'], $data['txn_id'], $req['item_name'], $data['amount'], $req['currency2']);
-			return Redirect::back()->withSuccess('Fatura criada com sucesso, encaminhamos ela para seu e-mail. Agradecemos por estar conosco.');
+			return view('payment')->withSuccess('A fatura foi gerada com sucesso e foi encaminhada para seu e-mail, verifique sua caixa de spam!');
 		}
-		return Redirect::back()->withErrors(['Dados incorretos.']);
+		return view('payment');
 	}
 
 

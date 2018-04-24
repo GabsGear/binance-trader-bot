@@ -42,8 +42,10 @@ def getCandleList(market, time):
 	return data
 
 def getTicker(market):
-	data =  bittrex_v1.get_ticker(market)['result']
-	return data
+	price_now =  float(bittrex_v1.get_ticker(market)['result']['Ask'])
+	if(price_now < 0.00001000):
+		price_now =  float(bittrex_v1.get_ticker(market)['result']['Last'])
+	return price_now
 
 def getMarketCurrency():
 	return bittrex_v1.get_markets()['result']
@@ -75,26 +77,47 @@ def getBalance(user_id, bot_config):
 	return bittrex.get_balance('BTC')['result']['Available']
 
 def buyLimit(data, bot_config, price_now):
-	#print data
 	if(bot_config['active'] == 0):
 		db.insertBuyOrder(data)
 		t.sleep(60)
 	if(bot_config['active'] == 1 and checkConnApi(bot_config= bot_config) == True):
-		print "tentei compra"
 		acc_config = db.getConfigAcc(bot_config['user_id'])
 		acc_balance = getBalance(user_id= bot_config['user_id'], bot_config= bot_config)
-		ammount = float(acc_balance)*float(bot_config['order_value'])/float(price_now)
-		bittrex = bittrex_lib.Bittrex(acc_config['bit_api_key'], acc_config['bit_api_secret'], api_version='v1.1')
-		orderBuy = bittrex.buy_limit(market=bot_config['currency'], quantity=ammount, rate=0.00003108)
-		print orderBuy
-		if(orderBuy['success'] == False or orderBuy == None):
-			print orderBuy
+		##CALCULANDO QUANTIDADE BASEADO NO BALANCO DISPONIVEL DE BTC OU USDT
+		amount = float(acc_balance)*float(bot_config['order_value'])/float(price_now)
+		##VERIFICANDO SE A QUANTIDADE CALCULADA PARA COMPRA E MAIOR QUE A ORDEM MINIMA
+		if(check_min_order(bot_config['min_order'], amount, bot_config['currency']) == 0):
 			return
-		##print getOrder(uuid= orderBuy['result']['uuid'], user_id= bot_config['user_id'])
+		bittrex = bittrex_lib.Bittrex(acc_config['bit_api_key'], acc_config['bit_api_secret'], api_version='v1.1')
+		##LANCANDO ORDEM DE COMPRA NA EXCHANGE
+		orderBuy = bittrex.buy_limit(market=bot_config['currency'], quantity=amount, rate=price_now)
+		if(orderBuy['success'] == False or orderBuy == None):
+			return
+		##TRANSFERINDO A QUANTIDADE COMPRADA PARA O DICIONARIO DATA PARA INSERIR NO BANCO DE DADOS
 		data['qnt'] = getOrder(uuid= orderBuy['result']['uuid'], user_id= bot_config['user_id'])['result']['Quantity']
 		data['buy_uuid'] = orderBuy['result']['uuid']
 		db.insertBuyOrder(data)
 		t.sleep(60)
+
+def get_market(currency):
+	markets = currency.split('-')
+	if(markets[0] == 'USDT'):
+		return 'USDT'
+	return 'BTC'
+
+def check_min_order(min_order, amount, currency):
+	if(get_market(currency) == 'USDT'):
+			total_brl = amount*3.3
+			if(min_order < total_brl):
+				return 0 ## 0 : NAO PASSOU NA VERIFICACAO MINIMA
+			else:
+				return 1 ## 1 :  PASSOU NA VERIFICACAO MINIMA
+	if(get_market(currency) == 'BTC'):
+			total_brl = amount*9000*3.3
+			if(min_order < total_brl):
+				return 0 ## 0 : NAO PASSOU NA VERIFICACAO MINIMA
+			else:
+				return 1 ## 1 :  PASSOU NA VERIFICACAO MINIMA
 
 def sellLimit(data, bot_config, price_now, trans):
 	#print data
@@ -123,7 +146,7 @@ def check_delta_time(trans_time):
 	date = delta.split(":")
 	hour = int(date[0])
 	minute = int(date[1])
-	if(hour > 0 or minute > 5):
+	if(hour > 0 or minute > 1):
 		return 1
 	return 0
 

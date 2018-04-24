@@ -119,7 +119,8 @@ def getConfigBot(bot_id):
 				'active': data[7],
 				'order_value': float(data[8]),
 				'period': data[9],
-				'stoploss': data[10]
+				'stoploss': data[10],
+				'min_order': data[11]
 		       }
 		return obj
 	except:

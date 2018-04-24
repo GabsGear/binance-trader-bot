@@ -43,7 +43,7 @@ Route::group(['middleware' => ['auth']], function() {
 	Route::post('/account/logout', 'UserController@logout')->name('acc.logout');
 
 	##PAYMENT ROUTES
-	Route::post('/payment/create', 'PaymentController@create')->name('payment.create');
+	Route::post('/payment', 'PaymentController@create')->name('payment.create');
 	Route::get('/payment', function () { 
 		return view('payment'); 
 	})->name('payment.view');

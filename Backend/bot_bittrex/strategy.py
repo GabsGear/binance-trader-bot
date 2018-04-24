@@ -8,13 +8,9 @@ import statistics
 def getDataDecision(bot_config):
 	#try:
 	candles = bittrex_func.getCandleList(bot_config['currency'], bot_config['period'])
-	trans = db.getOrder(bot_config['id'])
-	open_orders = db.getOpenOrders(bot_config['id'])
-	price_now = bittrex_func.getTicker(bot_config['currency'])['Last']
+	price_now = bittrex_func.getTicker(bot_config['currency'])
 	data = {
 	'price_now': price_now,
-	'open_orders': open_orders,
-	'trans': trans,
 	'o': candles['o'], 
 	'h': candles['h'], 
 	'l': candles['l'], 
@@ -31,18 +27,12 @@ def contra_turtle(bot_config):
 	size = len(data['c'])
 
 	tomin = data['l'][size-21:size-1] ##CORTO O VETOR DE CANDLES E DEIXO ELES COM TAMANHO 20
-	tomax = data['h'][size-3:size-1]  ##CORTO O VETOR DE CANDLES E DEIXO ELES COM TAMANHO 2
 
 	if(len(tomin) > 0):
 		#print "maior que 0"
 		minn = min(tomin) ## CALCULO O MINIMO DESSES 20 CANDLES
-		maxx = max(tomax) ## CALCULO O MAXIMO DESSES 2 CANDLES
 		if(data['price_now'] <= minn):
-			#print "LANCEI COMPRA"
 			return 'buy'
-		if(data['price_now'] >= maxx):
-			#print "LANCEI VENDA"
-			return 'sell'
 
 	return 'none'
 
@@ -54,19 +44,11 @@ def inside_bar(bot_config):
 
 	high = np.array(data['h'][size-3:size-1]) ##CORTO O VETOR DE CANDLES E DEIXO ELES COM TAMANHO 4
 	low = np.array(data['l'][size-3:size-1]) ##CORTO O VETOR DE CANDLES E DEIXO ELES COM TAMANHO 4
-	close = np.array(data['c'][size-3:size-1]) ##CORTO O VETOR DE CANDLES E DEIXO ELES COM TAMANHO 4
 
 	if(len(high) > 0):
-		if (high[1] < high[0]) and (close[1] >= close[0]):
-			if data['price_now'] > high[0]:
-				flag = True
-
-	   
-		if (flag):
+		if (high[1] < high[0]) and (low[1] >= low[0] and data['price_now'] > high[0]):
 			return 'buy'
-		
-		if data['open_orders'] > 0 and data['price_now'] >= data['trans']['buy_value'] * 1.05:
-			return 'sell'
+
 
 	return 'none'
 
@@ -81,17 +63,13 @@ def double_up(bot_config):
 
 	if(len(close) > 0):
 		if (close[1] > close[0]) and (vol[1] >= vol[0]):
-			flag = True
-
-	   
-		if (flag):
 			return 'buy'
-		
-		if data['open_orders'] > 0 and data['price_now'] >= data['trans']['buy_value'] * 1.02:
-			return 'sell'
 
 	return 'none'
 
+
+##ESTRATeGIA PIVO DE ALTA
+##VALOR NO BANCO: 2
 def pivot_up(bot_config):
 	data = getDataDecision(bot_config)
 	size = len(data['c'])
@@ -111,9 +89,6 @@ def pivot_up(bot_config):
 
 	if(pivot_up):
 		return 'buy'
-		
-	if(pivot_do):
-		return 'sell'
 
 	return 'none'
 
@@ -134,7 +109,7 @@ def rsi_max(bot_config):
 
 	maxx = max(tomax)
 	rsi = statistics.getRSI(data)
-	print rsi
+
 	if(bot_config['period'] == 'hour'):
 		if(rsi < 30.0):
 			return 'buy'	
@@ -144,34 +119,13 @@ def rsi_max(bot_config):
 	return 'none'
 	
 
-def donchain_rsi(bot_config):
-	data = getDataDecision(bot_config)
-	size = len(data['c'])
-
-	tomin = data['l'][size-21:size-1] ##CORTO O VETOR DE CANDLES E DEIXO ELES COM TAMANHO 20
-	tomax = data['h'][size-3:size-1]  ##CORTO O VETOR DE CANDLES E DEIXO ELES COM TAMANHO 2
-
-	if(len(tomin) > 0):
-		#print "maior que 0"
-		minn = min(tomin) ## CALCULO O MINIMO DESSES 20 CANDLES
-		maxx = max(tomax) ## CALCULO O MAXIMO DESSES 2 CANDLES
-		if(data['price_now'] <= minn):
-			#print "LANCEI COMPRA"
-			return 'buy'
-		if(data['price_now'] >= maxx):
-			#print "LANCEI VENDA"
-			return 'sell'
-
-	return 'none'
-
-
-def map():
+def map(bot_config):
 	map = {
-		0: strategy.contra_turtle(bot_config), #CONTRA TURTLE
-		1: strategy.inside_bar(bot_config), #INSIDE BAR
-		2: strategy.double_up(bot_config), #DOUBLLE UP
-		#3: strategy.pivot_up(bot_config), #PIVOT UP
-		4: strategy.rsi_max(bot_config), #RSI RESISTANCE
+		0: contra_turtle(bot_config), #CONTRA TURTLE
+		1: inside_bar(bot_config), #INSIDE BAR
+		2: double_up(bot_config), #DOUBLLE UP
+		#3:pivot_up(bot_config), #PIVOT UP
+		4: rsi_max(bot_config), #RSI RESISTANCE
 	}
 	#print map
 	return map

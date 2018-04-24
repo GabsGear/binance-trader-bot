@@ -163,6 +163,7 @@
                                                          0; display:
                                                          none;"></span>.
                                                    </div>
+                                                   <div style="text-align:center; margin-top:20px;"> 
                                                       <h2 style="font-weight: normal; margin: 0px; padding:
                                                       0px; color: #666; word-wrap: break-word;"><a style="display: inline-block; text-decoration:
                                                       none; box-sizing: border-box; font-family: arial;
@@ -171,7 +172,6 @@
                                                       cursor: text;" target="_blank"><span style="font-size: inherit; text-align: center;
                                                       width: 100%; color: #666;">Detalhes</span></a>
                                                       </h2>
-                                                   <div style="text-align:center;"> 
                                                       <b>Plano:</b> {{ $item_name }} |
                                                       <b>Moeda:</b> {{ $currency }} |
                                                       <b>Total:</b> {{ $amount }}

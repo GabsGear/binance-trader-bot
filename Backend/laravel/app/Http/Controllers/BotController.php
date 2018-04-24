@@ -62,8 +62,8 @@ class BotController extends Controller
             $bot->strategy_buy = BotController::test_input($request['strategy_buy']);
             $bot->percentage = BotController::test_input($request['percentage']);
             $bot->pid = 0;
-            $bot->active = 2;
-            $bot->order_value = 0.05;
+            $bot->active = BotController::test_input($request['active']);
+            $bot->min_order = BotController::test_input($request['min_order']);
             $bot->period = BotController::test_input($request['period']);
             $bot->stoploss = BotController::test_input($request['stoploss']);
             $bot->save();

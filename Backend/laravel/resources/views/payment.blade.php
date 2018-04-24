@@ -18,12 +18,12 @@
 <div class="outer">
     <div class="inner bg-container">
         <div class="row">
-            <div class="col-sm-6 col-12">
+            <div class="col-sm-6 col-6">
                 <div class="card">
                     <div class="card-header bg-white">
-                        Upgrade de Plano
+                        Gerar Fatura
                     </div>
-                    <div class="col-lg-6 input_field_sections">
+                    <div class="col-lg-12" style="padding:10px;">
                         @if($errors->any())
                             <div class="alert alert-danger">
                                 {{$errors->first()}}
@@ -34,15 +34,17 @@
                                 {{ $success }}
                             </div>
                         @endif
+                    </div>
+                    <div class="col-lg-8 input_field_sections">
                         <form class="form-horizontal" method="POST" action="{{ route('payment.create') }}">
 							{{ csrf_field() }}
 							<label>Plano</label></br>
 							<select name="item_name" class="form-control">
 								<option selected disabled>Selecione...</option>
-								<option value="ProTraderBot-Prata-30-dias">Prata 30 dias - 20%OFF</option>
-                                <option value="ProTraderBot-Prata-90-dias">Prata 90 dias - 40%OFF</option>
-                                <option value="ProTraderBot-Ouro-30-dias">Ouro 30 dias - 20%OFF</option>
-								<option value="ProTraderBot-Ouro-90-dias">Ouro 90 dias - 40%OFF</option>
+								<option value="ProTraderBot-Prata-30-dias">Prata 30 dias - 5 bots - 20%OFF</option>
+                                <option value="ProTraderBot-Prata-90-dias">Prata 90 dias - 5 bots - 40%OFF</option>
+                                <option value="ProTraderBot-Ouro-30-dias">Ouro 30 dias - 10 bots - 20%OFF</option>
+								<option value="ProTraderBot-Ouro-90-dias">Ouro 90 dias - 10 bots - 40%OFF</option>
 							</select></br>
 							<label>Moeda</label></br>
 							<select name="currency2" class="form-control">

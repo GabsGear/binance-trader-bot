@@ -50,7 +50,7 @@
                         @endif
                     </div>
                     <div class="col-lg-12 input_field_sections">
-                        @if($UserController->getUser()->premium == 1)
+                        @if($UserController->getUser()->premium > 0)
                         <form method="POST" action="{{route('acc.api.bittrex')}}">
                             {{ csrf_field() }}
                             <label>Key</label>
@@ -96,7 +96,7 @@
                         @endif
                     </div>
                     <div class="col-lg-12 input_field_sections">
-                        @if($UserController->getUser()->premium == 1)
+                        @if($UserController->getUser()->premium > 0)
                         <form method="POST" action="{{route('acc.api.binance')}}">
                             {{ csrf_field() }}
                             <label>Key</label>

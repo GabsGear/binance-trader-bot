@@ -107,17 +107,18 @@
                                 <i class="fa fa-star-o" aria-hidden="true"></i>
                             </div>
                             <div class="text-right">
+                            <?php $date = explode('-', $UserController->getUser()->expire_date) ?>
                                 @if($user->premium == 1 and $UserController->checkPremium() == true)
                                     <h3 id="widget_count5">Plano <font color="#c0c0c0"><b>Prata</b></font></h3>
-                                    <?php $date = explode('-', $UserController->getUser()->expire_date) ?>
-                                    <a href="#"><p> <i class="fa fa-refresh" aria-hidden="true"></i> UPGRADE</a> | 
+                                    <a href="{{route('payment.view')}}"><p> <i class="fa fa-refresh" aria-hidden="true"></i> RENOVAR</a> | 
                                     Expira {{$date[2]}}/{{$date[1]}}</p>
                                 @elseif($user->premium == 2 and $UserController->checkPremium() == true)
                                     <h3 id="widget_count5">Plano <font color="#cd7f32"><b>Ouro</b></font></h3>
-                                    Expira {{$UserController->getUser()->expire_date}}</p>
+                                    <a href="{{route('payment.view')}}"><p> <i class="fa fa-refresh" aria-hidden="true"></i> RENOVAR</a> | 
+                                    Expira {{$date[2]}}/{{$date[1]}}</p>
                                 @else
                                     <h3 id="widget_count5">Plano <font color="#cd7f32"><b>Bronze</b></font></h3>
-                                    <a href="#"><p> <i class="fa fa-refresh" aria-hidden="true"></i> UPGRADE</a></p>
+                                    <a href="{{route('payment.view')}}"><p> <i class="fa fa-refresh" aria-hidden="true"></i> CONTRATAR</a></p>
                                 @endif
                             </div>
                         </div>
@@ -202,6 +203,7 @@
                                     @if($bot->active == 1)
                                         <select name="order_value" class="form-control" onchange='this.form.submit()'>
                                             <option selected disabled>{{$bot->order_value*100}} %</option>
+                                            <option value="0.05">5%</option>
                                             <option value="0.1">10%</option>
                                             <option value="0.25">25%</option>
                                             <option value="0.35">35%</option>
@@ -246,6 +248,7 @@
                                         @endif
                                         /Lucro:{{$bot->percentage*100}}%
                                         /Stoploss: {{$bot->stoploss*100}}%/Timeframe: {{$bot->period}}
+                                        /Ordem mínima: R${{ $bot->min_order }}
                                         "></i>
                                         </center>
                                     </td>
@@ -306,7 +309,7 @@
                             <option value="bittrex">Bittrex</option>
                             <option value="binance">Binance</option>
                         </select>
-                        </br><label><i data-toggle="tooltip" data-placement="right" title="Para negociar por exemplo Verge por Bitcoin digite (BTC-XVG) ou Dólar digite (USDT-XVG)." class="fa fa-question-circle-o" style='color:#00cc99'></i>
+                        </br><label><i data-toggle="tooltip" data-placement="right" title="Digite a sigla oficial da moeda por exemplo Litecoin é LTC." class="fa fa-question-circle-o" style='color:#00cc99'></i>
                         Mercado & Moeda </label></br>
                         <input id="currencys" type="text" name="currency" class="dropdown-input"/>
                         <button type="button" id="drop" class="btn btn-light dropdown-toggle b-r-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -319,6 +322,18 @@
                             <option value="Day">1 dia</option>
                             <option value="hour">1 hora</option>
                             <option value="thirtyMin">30 minutos</option>
+                        </select>
+                        </br><label><i data-toggle="tooltip" data-placement="right" title="Defina um valor mínimo em reais para abrir uma ordem de compra." class="fa fa-question-circle-o" style='color:#00cc99'></i></label>
+                        Ordem Mínima </br>
+                        </label>
+                        <select name="min_order" class="form-control">
+                            <option value="50">R$50.00</option>
+                            <option value="100">R$100.00</option>
+                            <option value="200">R$200.00</option>
+                            <option value="300">R$300.00</option>
+                            <option value="500">R$500.00</option>
+                            <option value="1000">R$1000.00</option>
+                            <option value="2000">R$2000.00</option>
                         </select>
                     </div>
                     <div class="col-md-6">
@@ -357,6 +372,14 @@
                             <option value="0.25">25%</option>
                             <option value="0.5">50%</option>
                             <option value="0.75">75%</option>
+                        </select>
+                        </br><label><i data-toggle="tooltip" data-placement="right" title="Defina que modo o seu bot irá iniciar." class="fa fa-question-circle-o" style='color:#00cc99'></i></label>
+                        Modo </br>
+                        </label>
+                        <select name="active" class="form-control">
+                            <option value="2">Parado</option>
+                            <option value="0">Simulação</option>
+                            <option value="1">Operação</option>
                         </select>
                     </div> <!--FIM MD6 -->
                 </div> <!--FIM ARROW -->
