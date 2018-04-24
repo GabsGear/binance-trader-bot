@@ -34,6 +34,7 @@ Route::group(['middleware' => ['auth']], function() {
 	// TRANS POST ROUTES
 	Route::post('/trans/filter/date', 'TransactionController@filter_date')->name('trans.filter.date');
 	Route::post('/trans/filter/name', 'TransactionController@filter_name')->name('trans.filter.name');
+	Route::delete('/trans/delete/{id}', 'TransactionController@destroy')->name('trans.delete');
 
 	## ACC POST ROUTES	
 	Route::post('/account/update/bittrex', 'UserController@update_api_bittrex')->name('acc.api.bittrex');
@@ -42,11 +43,13 @@ Route::group(['middleware' => ['auth']], function() {
 	Route::post('/account/logout', 'UserController@logout')->name('acc.logout');
 
 	##PAYMENT ROUTES
-	Route::get('/payment/post', 'PaymentController@listen')->name('listen');
+	Route::post('/payment/create', 'PaymentController@create')->name('payment.create');
 	Route::get('/payment', function () { 
-		return view('coinpayment'); 
-	});
-	Route::get('/balance', 'UserController@binance_balance');
+		return view('payment'); 
+	})->name('payment.view');
+
+	Route::get('/balance/binance/{currency}', 'UserController@binance_balance')->name('binance.balance');
+	Route::get('/balance/bittrex/{currency}', 'UserController@bittrex_balance')->name('bittrex.balance');
 
 });
 

@@ -142,6 +142,11 @@ class TransactionController extends Controller
         }
     }
 
+    public function destroy($id) {
+        DB::table('transactions')->where('id', $id)->delete();
+        return redirect()->back();
+    }
+
   
 
 }

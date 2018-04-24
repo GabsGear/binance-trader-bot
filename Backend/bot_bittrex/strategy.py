@@ -8,7 +8,7 @@ import statistics
 def getDataDecision(bot_config):
 	#try:
 	candles = bittrex_func.getCandleList(bot_config['currency'], bot_config['period'])
-	trans = db.getBuyOrder(bot_config['id'])
+	trans = db.getOrder(bot_config['id'])
 	open_orders = db.getOpenOrders(bot_config['id'])
 	price_now = bittrex_func.getTicker(bot_config['currency'])['Last']
 	data = {
@@ -134,13 +134,13 @@ def rsi_max(bot_config):
 
 	maxx = max(tomax)
 	rsi = statistics.getRSI(data)
-
-	if(rsi < 30.0):
-		return 'buy'
-		
-	if(data['price_now'] >= maxx):
-		return 'sell'
-
+	print rsi
+	if(bot_config['period'] == 'hour'):
+		if(rsi < 30.0):
+			return 'buy'	
+	if(bot_config['period'] == 'thirtyMin'):
+		if(rsi < 35.0):
+			return 'buy'	
 	return 'none'
 	
 
@@ -163,3 +163,15 @@ def donchain_rsi(bot_config):
 			return 'sell'
 
 	return 'none'
+
+
+def map():
+	map = {
+		0: strategy.contra_turtle(bot_config), #CONTRA TURTLE
+		1: strategy.inside_bar(bot_config), #INSIDE BAR
+		2: strategy.double_up(bot_config), #DOUBLLE UP
+		#3: strategy.pivot_up(bot_config), #PIVOT UP
+		4: strategy.rsi_max(bot_config), #RSI RESISTANCE
+	}
+	#print map
+	return map

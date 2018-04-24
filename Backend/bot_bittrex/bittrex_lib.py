@@ -752,7 +752,7 @@ class Bittrex(object):
         :return:
         """
         return self._api_query(path_dict={
-            API_V2_0: '/key/market/tradebuy'
+            API_V2_0: '/key/market/Tradebuy'
         }, options={
             'marketname': market,
             'ordertype': order_type,

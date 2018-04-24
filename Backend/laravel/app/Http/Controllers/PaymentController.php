@@ -16,17 +16,34 @@ use Symfony\Component\Process\Exception\ProcessFailedException;
 class PaymentController extends Controller {
 
 
-    public function callbackError(int $errorCode, string $errorMessage) {
-	    throw new Exception('#'.$errorCode.' There was a problem establishing integrity with the request: '.$errorMessage);
-    }
-
-
-    public function api_call($req = array()) {        
+    public function create(Request $post) {        
 		// Set the API command and required fields
-        $req['version'] = 1;
+		$req = array();
+		$req['item_name'] = $post['item_name'];
+		$req['currency2'] = $post['currency2'];
+		$req['merchant_id'] = 'f52b660a92f4299714be645564075956';
+		$req['currency1'] = 'USD';
+		$req['version'] = 1;
 		$req['cmd'] = 'create_transaction';
-		$req['key'] = '53fd5ff818629a2c87b9e87ca789070f56941f68c6adbb56e59523151694c9d8';
+		$req['key'] = '53fd5ff818629a2c87b9e87ca789070f56941f68c6adbb56e59523151694c9d8'; 
 		$req['format'] = 'json'; //supported values are json and xml
+		$req['buyer_email'] = Auth::User()->email;
+
+		if($req['item_name'] == "ProTraderBot-Prata-30-dias"){
+			$req['amount'] = 48.0;
+		}
+		else if($req['item_name'] == "ProTraderBot-Prata-90-dias"){
+			$req['amount'] = 109.0;
+		}
+		else if($req['item_name'] == "ProTraderBot-Ouro-30-dias"){
+			$req['amount'] = 72.0;
+		}
+		else if($req['item_name'] == "ProTraderBot-Ouro-90-dias"){
+			$req['amount'] = 163.0;
+		}
+		else {
+			die("Plano inexistente");
+		}
 
 		// Generate the query string
 		$post_data = http_build_query($req, '', '&');
@@ -41,39 +58,60 @@ class PaymentController extends Controller {
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array('HMAC: '.$hmac));
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
-	    
-		return curl_exec($ch);                
+		$json = json_decode(curl_exec($ch), true);
+		if($json['error'] == 'ok') {
+			$data = $json['result'];
+			DB::table('payments')->insert(
+				[
+					'amount' => $data['amount'], 
+					'currency' => $req['currency2'], 
+					'item_name' => $req['item_name'], 
+					'tx_id' => $data['txn_id'], 
+					'address' => $data['address'],
+					'user_id' => Auth::User()->id,
+					'status' => 0
+				]
+			);
+			EmailController::postPayment($data['status_url'], $data['txn_id'], $req['item_name'], $data['amount'], $req['currency2']);
+			return Redirect::back()->withSuccess('Fatura criada com sucesso, encaminhamos ela para seu e-mail. Agradecemos por estar conosco.');
+		}
+		return Redirect::back()->withErrors(['Dados incorretos.']);
 	}
 
-	public function listen() {
-		$merchant_id = 'f52b660a92f4299714be645564075956';
-		$secret = 'libano25258';
 
-		if (!isset($_SERVER['HTTP_HMAC']) || empty($_SERVER['HTTP_HMAC'])) {
-			die("No HMAC signature sent");
+	public function check_payments() {
+		$payments = DB::table('payments')->where('status', 0)->get();
+		foreach($payments as $pay) {
+			echo "VERIFICANDO TRANS ID:".$pay->tx_id;
+			$data = PaymentController::getInfo($pay->tx_id);
+			if($json['error'] == 'ok') {
+				if ($data['status'] == 100) {
+					switch($pay->item_name) {
+						case 'ProTraderBot-Prata-30-dias':
+							$user->premium == 1;
+							$user->expire_date == date('Y-m-d', strtotime("+30 days"));
+							break;
+						case 'ProTraderBot-Prata-90-dias':
+							$user->premium == 1;
+							$user->expire_date == date('Y-m-d', strtotime("+90 days"));
+							break;	
+						case 'ProTraderBot-Ouro-30-dias':
+							$user->premium == 2;
+							$user->expire_date == date('Y-m-d', strtotime("+30 days"));
+							break;
+						case 'ProTraderBot-Ouro-90-dias':
+							$user->premium == 2;
+							$user->expire_date == date('Y-m-d', strtotime("+90 days"));
+							break;
+					}
+				}
+				DB::table('payments')
+				->where('id', $pay->id)
+				->update(['status' => $data['status']]);	
+			}
 		}
-		  
-		$merchant = isset($_POST['merchant']) ? $_POST['merchant']:'';
-		if (empty($merchant)) {
-		die("No Merchant ID passed");
-		}
-		  
-		if ($merchant != $merchant_id) {
-			die("Invalid Merchant ID");
-		}
-		
-		$request = file_get_contents('php://input');
-		if ($request === FALSE || empty($request)) {
-			die("Error reading POST data");
-		}
-		
-		$hmac = hash_hmac("sha512", $request, $secret);
-		if ($hmac != $_SERVER['HTTP_HMAC']) {
-			die("HMAC signature does not match");
-		}
-
 	}
-
+	
 
 
 }

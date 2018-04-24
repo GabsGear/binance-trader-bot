@@ -1,6 +1,9 @@
 import bittrex_lib
 import db
 import time as t
+import datetime
+import pytz
+
 
 def loadAPI(bot_config):
 	global bittrex
@@ -75,23 +78,23 @@ def buyLimit(data, bot_config, price_now):
 	#print data
 	if(bot_config['active'] == 0):
 		db.insertBuyOrder(data)
+		t.sleep(60)
 	if(bot_config['active'] == 1 and checkConnApi(bot_config= bot_config) == True):
 		print "tentei compra"
 		acc_config = db.getConfigAcc(bot_config['user_id'])
 		acc_balance = getBalance(user_id= bot_config['user_id'], bot_config= bot_config)
 		ammount = float(acc_balance)*float(bot_config['order_value'])/float(price_now)
 		bittrex = bittrex_lib.Bittrex(acc_config['bit_api_key'], acc_config['bit_api_secret'], api_version='v1.1')
-		orderBuy = bittrex.buy_limit(market=bot_config['currency'], quantity=ammount, rate=0.00000040)
+		orderBuy = bittrex.buy_limit(market=bot_config['currency'], quantity=ammount, rate=0.00003108)
 		print orderBuy
-		if(orderBuy == None):
-			print "sou novo"
-		if(orderBuy['success'] == False):
+		if(orderBuy['success'] == False or orderBuy == None):
 			print orderBuy
 			return
 		##print getOrder(uuid= orderBuy['result']['uuid'], user_id= bot_config['user_id'])
 		data['qnt'] = getOrder(uuid= orderBuy['result']['uuid'], user_id= bot_config['user_id'])['result']['Quantity']
 		data['buy_uuid'] = orderBuy['result']['uuid']
 		db.insertBuyOrder(data)
+		t.sleep(60)
 
 def sellLimit(data, bot_config, price_now, trans):
 	#print data
@@ -102,13 +105,40 @@ def sellLimit(data, bot_config, price_now, trans):
 		print("to tentando vender")
 		acc_config = db.getConfigAcc(bot_config['user_id'])
 		bittrex = bittrex_lib.Bittrex(acc_config['bit_api_key'], acc_config['bit_api_secret'], api_version='v1.1')
-		orderSell = bittrex.sell_limit(market=bot_config['currency'], quantity=trans['quantity'], rate=price_now)
+		orderSell = bittrex.sell_limit(market=bot_config['currency'], quantity=trans['quantity'], rate=price_now*1.1)
 		print orderSell
-		if(orderSell == None):
-			print "sou novo"
-		if(orderSell['success'] == False):
+		if(orderSell['success'] == False or orderSell == None):
 			print orderSell
 			return
 		data['sell_uuid'] = orderSell['result']['uuid']
 		db.commitSellOrder(data)
-		sleep(60)
+		t.sleep(60)
+
+
+def check_delta_time(trans_time):
+	brasil = pytz.timezone('America/Sao_Paulo')
+	time_now = datetime.datetime.now(tz=brasil).strftime('%Y-%m-%d %H:%M:%S')
+	time = datetime.datetime.strptime(time_now, "%Y-%m-%d %H:%M:%S")
+	delta = str(time-trans_time)
+	date = delta.split(":")
+	hour = int(date[0])
+	minute = int(date[1])
+	if(hour > 0 or minute > 5):
+		return 1
+	return 0
+
+	
+def cancel_order(bot_id, uuid, date, user_id, order_type):
+	time = check_delta_time(date) ##SE 0 NAO FAZ NADA / SE 1 EXCLUI
+	print("verificando tempo de cancelamento...")
+	if(time == 1):
+		acc_config = db.getConfigAcc(user_id)
+		bittrex = bittrex_lib.Bittrex(acc_config['bit_api_key'], acc_config['bit_api_secret'], api_version='v1.1')
+		bittrex.cancel(uuid)
+		order = db.getOrder(bot_id)
+		if(order_type == 'buy'):
+			db.delete_trans(order['id'])
+			print("cancelei a ordem de COMPRA e deletei do banco de dados.")
+		else:
+			db.update_trans(order['id'])
+			print("cancelei a ordem de VENDA e atualizei a transacao.")

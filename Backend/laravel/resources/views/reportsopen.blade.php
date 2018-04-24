@@ -29,6 +29,7 @@
                                     <th><font size="2px">VALOR COMPRA</font></th>
                                     <th><font size="2px">QUANTIA</font></th>
                                     <th><font size="2px">DATA-ABERTURA</font></th>
+                                    <th></th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -38,6 +39,11 @@
                                     <td>{{ number_format($trans->buy_value, 8, '.', ' ') }}</td>
                                     <td>{{$trans->quantity}}</td>
                                     <td>{{$trans->date_open}}</td>
+                                    <td>
+                                        {{ Form::open(['method' => 'DELETE', 'route' => ['trans.delete', $trans->id]]) }}
+                                            <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                                        {{ Form::close() }}
+                                    </td>
                                 @endforeach
                                 </tr>
                                 </tbody>

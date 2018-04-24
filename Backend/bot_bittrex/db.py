@@ -13,7 +13,7 @@ def insertBuyOrder(data):
 	#print data
 	db, cursor = getConn()
 	query = ("INSERT INTO transactions (bot_id, buy_value, quantity, sell_value, selled, date_open, date_close, buy_uuid, sell_uuid) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)")
-	cursor.execute(query, (data['bot_id'], data['valor'], data['qnt'], 0.0, 0, time_now(), '-', data['buy_uuid'], ''))
+	cursor.execute(query, (data['bot_id'], data['valor'], data['qnt'], 0.0, 0, time_now(), '', data['buy_uuid'], ''))
 	db.commit()
 	cursor.close()
 
@@ -22,12 +22,12 @@ def commitSellOrder(data):
 	trans = getBuyOrder(data['bot_id'])
 	query = ("UPDATE transactions SET sell_value=(%s), selled=(%s), date_close=(%s), sell_uuid=(%s) WHERE id=(%s)")
 	value = float(data['sell_value'])
-	cursor.execute(query, (value, "1", str(time_now()), data['sell_uuid'], trans['id'] ))
+	cursor.execute(query, (value, "1", time_now(), data['sell_uuid'], trans['id'] ))
 	db.commit()
 	cursor.close()
 
 
-def getBuyOrder(bot_id):
+def getOrder(bot_id):
 	#try:
 	db, cursor = getConn()
 	query = ("SELECT * FROM transactions WHERE bot_id = %s order by id desc")
@@ -43,6 +43,8 @@ def getBuyOrder(bot_id):
 			'quantity': trans[3],
 			'sell_value': trans[4],
 			'selled': trans[5],
+			'date_open': trans[6],
+			'date_close': trans[7],
 			'buy_uuid': trans[8],
 			'sell_uuid': trans[9],
 		}
@@ -52,6 +54,20 @@ def getBuyOrder(bot_id):
 	return obj
 	#except:
 	#print("ERRO: getBuyOrders.")
+
+def delete_trans(id):
+	db, cursor = getConn()
+	query = ("DELETE FROM transactions WHERE id = %s")
+	cursor.execute(query, (id,))
+	db.commit()
+	cursor.close()
+
+def update_trans(id):
+	db, cursor = getConn()
+	query = ("UPDATE transactions SET sell_value=(%s), selled=(%s), date_close=(%s), sell_uuid=(%s) WHERE id=(%s)")
+	cursor.execute(query, (0, '0', '', '', id))
+	db.commit()
+	cursor.close()
 
 def getOpenOrders(bot_id):
 	db, cursor = getConn()

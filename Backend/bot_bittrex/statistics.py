@@ -6,13 +6,13 @@ def getRSISmall(data):
 	data['c']= np.array(data['c'], dtype=float)
 	for c in data['c']:
 		c = c*100
-	rsi = tb.RSI(data['c'], timeperiod=20)
+	rsi = tb.RSI(data['c'], timeperiod=14)
 	return rsi[size-1]
 
 def getRSI(data):
 	size = len(data['c'])
 	data['c'] = np.array(data['c'], dtype=float)
-	rsi = tb.RSI(data['c'], timeperiod=20)
+	rsi = tb.RSI(data['c'], timeperiod=14)
 	#print rsi[size-1]
 	if(rsi[size-1] > 0.0):
 		return rsi[size-1]

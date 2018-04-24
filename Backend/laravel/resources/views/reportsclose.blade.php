@@ -65,6 +65,7 @@
                                     <th><font size="2px">LUCRO</font></th>
                                     <th><font size="2px">ABERTURA</font></th>
                                     <th><font size="2px">FECHAMENTO</font></th>
+                                    <th></th>
                                 </tr>
                                 </thead>
                                 <?php  $total = 0; ?>
@@ -102,6 +103,11 @@
                                         @endif
                                         <td>{{ $t->date_open }}</td> 
                                         <td>{{ $t->date_close }}</td>
+                                        <td>
+                                            {{ Form::open(['method' => 'DELETE', 'route' => ['trans.delete', $t->id]]) }}
+                                                <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                                            {{ Form::close() }}
+                                        </td>
                                     </tr>
                                     @endforeach
                                 </tbody>

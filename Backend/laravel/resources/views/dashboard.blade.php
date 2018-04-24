@@ -67,9 +67,9 @@
                                 <img src="img/exchanges/binance.png">
                             </div>
                             <div class="text-right">
-                                <h3 id="widget_count8">Binance</h3>
+                                <h4 id="widget_count8">Binance</h4>
                                 @if($UserController->check_binance() == 1)
-                                    <p>{{number_format($UserController->binance_balance('USDT'), 2, '.', ' ')}} <b>USD</b> | {{number_format($UserController->binance_balance('BTC'), 8, '.', ' ')}} <b>BTC</b></p>
+                                    <p id="bin_balance">Carregando...</p>
                                 @else
                                     <p>Não conectado...</p>
                                 @endif
@@ -130,7 +130,7 @@
                             <div class="text-right">
                                 <h3 id="widget_count8">Bittrex</h3>
                                 @if($UserController->check_bittrex() == 1)
-                                    <p>{{number_format($UserController->bittrex_balance('USDT'), 2, '.', ' ')}} <b>USD</b> | {{$UserController->bittrex_balance('BTC')}} <b>BTC</b></p>
+                                    <p id="bit_balance">Carregando...</p>
                                 @else
                                     <p>Não conectado...</p>
                                 @endif
@@ -391,6 +391,28 @@
             comboplete.close();
         }
     });
+
+    let bin_btc = 0;
+    let bin_usd = 0;
+    let bit_btc = 0;
+    let bit_usd = 0;
+
+    $.get("http://198.50.194.124/balance/binance/BTC", function(bin_btc) {
+        return bin_btc;
+    }).then(function(bin_btc) {
+        $.getJSON("http://198.50.194.124/balance/binance/USDT", function(bin_usd) {
+            $("#bin_balance").html(bin_usd+" <b>USD</b>|"+bin_btc+" <b>BTC</b>");
+        });
+    });
+
+    $.get("http://198.50.194.124/balance/bittrex/BTC", function(bit_btc) {
+        return bit_btc;
+    }).then(function(bit_btc) {
+        $.getJSON("http://198.50.194.124/balance/bittrex/USDT", function(bit_usd) {
+            $("#bit_balance").html(bit_usd+" <b>USD</b>|"+bit_btc+" <b>BTC</b>");
+        });
+    });
+
 </script>
 @stop
 <!-- /#wrap -->
