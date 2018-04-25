@@ -3,7 +3,7 @@ import binance_
 import helpers
 import botconfig
 import numpy as np
-import talib as tb
+#import talib as tb
 
 class Desicion():
     """Data decision class
@@ -119,21 +119,26 @@ class StrategiesBase(Desicion):
         data = super().getDataDecision(bot_config)
         price_now = binance_.Binance_opr()
         price_now = price_now.getPriceNow(bot_config['currency'])
+        hp = helpers.Helpers()
 
-        print('price now = ' + str(price_now))
+        log = ('price now = ' + str(price_now))
+        hp.writeOutput(bot_config['id'], log)
+
         tomax = self.getLhigh()
         tomax = tomax[len(tomax) - 3 : len(tomax) - 1]
         tomin = self.getLlow()
         if(len(tomin) > 0):
             minn = min(tomin)
             maxx = max(tomax)
-            print (' Buy at ' + str(minn))
-            print(' .  ')
+            log =  ('\n Buy at ' + str(minn))
+            hp.writeOutput(bot_config['id'], log)
             if(data["price_now"] <= minn):
-                print('sinal buy')
+                log = ('sinal buy')
+                hp.writeOutput(bot_config['id'], log)
                 return 'buy'
             if(data["price_now"] >= maxx):
-                print('sinal sell')
+                log = ('sinal sell')
+                hp.writeOutput(bot_config['id'], log)
                 return 'sell'
         return 'none'  
 

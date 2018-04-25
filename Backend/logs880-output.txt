@@ -1,0 +1,2986 @@
+[2018-04-25 15:53:14] 1- Iniciando rotina de compra
+[2018-04-25 15:53:15] price now = 0.0163
+[2018-04-25 15:53:15] 
+ Buy at 0.015915
+[2018-04-25 15:53:16] 2- Iniciando rotina de venda 
+[2018-04-25 15:53:16] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:53:26] 1- Iniciando rotina de compra
+[2018-04-25 15:53:28] price now = 0.0163
+[2018-04-25 15:53:28] 
+ Buy at 0.015915
+[2018-04-25 15:53:28] 2- Iniciando rotina de venda 
+[2018-04-25 15:53:29] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:53:39] 1- Iniciando rotina de compra
+[2018-04-25 15:53:40] price now = 0.016273
+[2018-04-25 15:53:40] 
+ Buy at 0.015915
+[2018-04-25 15:53:40] 2- Iniciando rotina de venda 
+[2018-04-25 15:53:41] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:53:51] 1- Iniciando rotina de compra
+[2018-04-25 15:53:52] price now = 0.0163
+[2018-04-25 15:53:52] 
+ Buy at 0.015915
+[2018-04-25 15:53:53] 2- Iniciando rotina de venda 
+[2018-04-25 15:53:53] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:54:03] 1- Iniciando rotina de compra
+[2018-04-25 15:54:05] price now = 0.016329
+[2018-04-25 15:54:05] 
+ Buy at 0.015915
+[2018-04-25 15:54:05] 2- Iniciando rotina de venda 
+[2018-04-25 15:54:05] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:54:15] 1- Iniciando rotina de compra
+[2018-04-25 15:54:17] price now = 0.01633
+[2018-04-25 15:54:17] 
+ Buy at 0.015915
+[2018-04-25 15:54:17] 2- Iniciando rotina de venda 
+[2018-04-25 15:54:17] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:54:27] 1- Iniciando rotina de compra
+[2018-04-25 15:54:29] price now = 0.01633
+[2018-04-25 15:54:29] 
+ Buy at 0.015915
+[2018-04-25 15:54:29] 2- Iniciando rotina de venda 
+[2018-04-25 15:54:30] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:54:40] 1- Iniciando rotina de compra
+[2018-04-25 15:54:42] price now = 0.016304
+[2018-04-25 15:54:42] 
+ Buy at 0.015915
+[2018-04-25 15:54:42] 2- Iniciando rotina de venda 
+[2018-04-25 15:54:43] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:54:53] 1- Iniciando rotina de compra
+[2018-04-25 15:54:55] price now = 0.016305
+[2018-04-25 15:54:55] 
+ Buy at 0.015915
+[2018-04-25 15:54:56] 2- Iniciando rotina de venda 
+[2018-04-25 15:54:57] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:55:07] 1- Iniciando rotina de compra
+[2018-04-25 15:55:09] price now = 0.016303
+[2018-04-25 15:55:09] 
+ Buy at 0.015915
+[2018-04-25 15:55:09] 2- Iniciando rotina de venda 
+[2018-04-25 15:55:10] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:55:20] 1- Iniciando rotina de compra
+[2018-04-25 15:55:22] price now = 0.016299
+[2018-04-25 15:55:22] 
+ Buy at 0.015915
+[2018-04-25 15:55:23] 2- Iniciando rotina de venda 
+[2018-04-25 15:55:24] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:55:34] 1- Iniciando rotina de compra
+[2018-04-25 15:55:35] price now = 0.016287
+[2018-04-25 15:55:35] 
+ Buy at 0.015915
+[2018-04-25 15:55:36] 2- Iniciando rotina de venda 
+[2018-04-25 15:55:37] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:55:47] 1- Iniciando rotina de compra
+[2018-04-25 15:55:49] price now = 0.016292
+[2018-04-25 15:55:49] 
+ Buy at 0.015915
+[2018-04-25 15:55:49] 2- Iniciando rotina de venda 
+[2018-04-25 15:55:50] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:56:00] 1- Iniciando rotina de compra
+[2018-04-25 15:56:01] price now = 0.0163
+[2018-04-25 15:56:01] 
+ Buy at 0.015915
+[2018-04-25 15:56:02] 2- Iniciando rotina de venda 
+[2018-04-25 15:56:02] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:56:12] 1- Iniciando rotina de compra
+[2018-04-25 15:56:13] price now = 0.016265
+[2018-04-25 15:56:13] 
+ Buy at 0.015915
+[2018-04-25 15:56:14] 2- Iniciando rotina de venda 
+[2018-04-25 15:56:14] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:56:24] 1- Iniciando rotina de compra
+[2018-04-25 15:56:27] price now = 0.016252
+[2018-04-25 15:56:27] 
+ Buy at 0.015915
+[2018-04-25 15:56:27] 2- Iniciando rotina de venda 
+[2018-04-25 15:56:28] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:56:38] 1- Iniciando rotina de compra
+[2018-04-25 15:56:39] price now = 0.016288
+[2018-04-25 15:56:39] 
+ Buy at 0.015915
+[2018-04-25 15:56:39] 2- Iniciando rotina de venda 
+[2018-04-25 15:56:40] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:56:50] 1- Iniciando rotina de compra
+[2018-04-25 15:56:52] price now = 0.016255
+[2018-04-25 15:56:52] 
+ Buy at 0.015915
+[2018-04-25 15:56:52] 2- Iniciando rotina de venda 
+[2018-04-25 15:56:53] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:57:03] 1- Iniciando rotina de compra
+[2018-04-25 15:57:04] price now = 0.01626
+[2018-04-25 15:57:04] 
+ Buy at 0.015915
+[2018-04-25 15:57:04] 2- Iniciando rotina de venda 
+[2018-04-25 15:57:05] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:57:15] 1- Iniciando rotina de compra
+[2018-04-25 15:57:16] price now = 0.01626
+[2018-04-25 15:57:16] 
+ Buy at 0.015915
+[2018-04-25 15:57:17] 2- Iniciando rotina de venda 
+[2018-04-25 15:57:17] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:57:27] 1- Iniciando rotina de compra
+[2018-04-25 15:57:29] price now = 0.016249
+[2018-04-25 15:57:29] 
+ Buy at 0.015915
+[2018-04-25 15:57:30] 2- Iniciando rotina de venda 
+[2018-04-25 15:57:30] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:57:40] 1- Iniciando rotina de compra
+[2018-04-25 15:57:42] price now = 0.016274
+[2018-04-25 15:57:42] 
+ Buy at 0.015915
+[2018-04-25 15:57:42] 2- Iniciando rotina de venda 
+[2018-04-25 15:57:43] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:57:53] 1- Iniciando rotina de compra
+[2018-04-25 15:57:55] price now = 0.016249
+[2018-04-25 15:57:55] 
+ Buy at 0.015915
+[2018-04-25 15:57:55] 2- Iniciando rotina de venda 
+[2018-04-25 15:57:56] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:58:06] 1- Iniciando rotina de compra
+[2018-04-25 15:58:07] price now = 0.016257
+[2018-04-25 15:58:07] 
+ Buy at 0.015915
+[2018-04-25 15:58:08] 2- Iniciando rotina de venda 
+[2018-04-25 15:58:08] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:58:18] 1- Iniciando rotina de compra
+[2018-04-25 15:58:19] price now = 0.016259
+[2018-04-25 15:58:19] 
+ Buy at 0.015915
+[2018-04-25 15:58:20] 2- Iniciando rotina de venda 
+[2018-04-25 15:58:20] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:58:30] 1- Iniciando rotina de compra
+[2018-04-25 15:58:32] price now = 0.016259
+[2018-04-25 15:58:32] 
+ Buy at 0.015915
+[2018-04-25 15:58:32] 2- Iniciando rotina de venda 
+[2018-04-25 15:58:33] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:58:43] 1- Iniciando rotina de compra
+[2018-04-25 15:58:45] price now = 0.016259
+[2018-04-25 15:58:45] 
+ Buy at 0.015915
+[2018-04-25 15:58:45] 2- Iniciando rotina de venda 
+[2018-04-25 15:58:46] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:58:56] 1- Iniciando rotina de compra
+[2018-04-25 15:58:58] price now = 0.016259
+[2018-04-25 15:58:58] 
+ Buy at 0.015915
+[2018-04-25 15:58:58] 2- Iniciando rotina de venda 
+[2018-04-25 15:58:59] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:59:09] 1- Iniciando rotina de compra
+[2018-04-25 15:59:11] price now = 0.01629
+[2018-04-25 15:59:11] 
+ Buy at 0.015915
+[2018-04-25 15:59:11] 2- Iniciando rotina de venda 
+[2018-04-25 15:59:12] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:59:22] 1- Iniciando rotina de compra
+[2018-04-25 15:59:24] price now = 0.016292
+[2018-04-25 15:59:24] 
+ Buy at 0.015915
+[2018-04-25 15:59:24] 2- Iniciando rotina de venda 
+[2018-04-25 15:59:25] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:59:35] 1- Iniciando rotina de compra
+[2018-04-25 15:59:37] price now = 0.016328
+[2018-04-25 15:59:37] 
+ Buy at 0.015915
+[2018-04-25 15:59:38] 2- Iniciando rotina de venda 
+[2018-04-25 15:59:39] ----Ainda nao ha nada para vender
+
+[2018-04-25 15:59:49] 1- Iniciando rotina de compra
+[2018-04-25 15:59:50] price now = 0.016305
+[2018-04-25 15:59:50] 
+ Buy at 0.015915
+[2018-04-25 15:59:51] 2- Iniciando rotina de venda 
+[2018-04-25 15:59:51] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:00:01] 1- Iniciando rotina de compra
+[2018-04-25 16:00:03] price now = 0.0163
+[2018-04-25 16:00:03] 
+ Buy at 0.015915
+[2018-04-25 16:00:04] 2- Iniciando rotina de venda 
+[2018-04-25 16:00:04] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:00:14] 1- Iniciando rotina de compra
+[2018-04-25 16:00:16] price now = 0.016301
+[2018-04-25 16:00:16] 
+ Buy at 0.015915
+[2018-04-25 16:00:16] 2- Iniciando rotina de venda 
+[2018-04-25 16:00:17] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:00:27] 1- Iniciando rotina de compra
+[2018-04-25 16:00:29] price now = 0.016312
+[2018-04-25 16:00:29] 
+ Buy at 0.015915
+[2018-04-25 16:00:29] 2- Iniciando rotina de venda 
+[2018-04-25 16:00:30] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:00:40] 1- Iniciando rotina de compra
+[2018-04-25 16:00:42] price now = 0.016293
+[2018-04-25 16:00:42] 
+ Buy at 0.015915
+[2018-04-25 16:00:42] 2- Iniciando rotina de venda 
+[2018-04-25 16:00:43] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:00:53] 1- Iniciando rotina de compra
+[2018-04-25 16:00:56] price now = 0.016285
+[2018-04-25 16:00:56] 
+ Buy at 0.015915
+[2018-04-25 16:00:56] 2- Iniciando rotina de venda 
+[2018-04-25 16:00:57] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:01:07] 1- Iniciando rotina de compra
+[2018-04-25 16:01:09] price now = 0.016284
+[2018-04-25 16:01:09] 
+ Buy at 0.015915
+[2018-04-25 16:01:09] 2- Iniciando rotina de venda 
+[2018-04-25 16:01:10] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:01:20] 1- Iniciando rotina de compra
+[2018-04-25 16:01:22] price now = 0.016289
+[2018-04-25 16:01:22] 
+ Buy at 0.015915
+[2018-04-25 16:01:22] 2- Iniciando rotina de venda 
+[2018-04-25 16:01:23] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:01:33] 1- Iniciando rotina de compra
+[2018-04-25 16:01:34] price now = 0.016289
+[2018-04-25 16:01:34] 
+ Buy at 0.015915
+[2018-04-25 16:01:35] 2- Iniciando rotina de venda 
+[2018-04-25 16:01:36] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:01:46] 1- Iniciando rotina de compra
+[2018-04-25 16:01:47] price now = 0.016284
+[2018-04-25 16:01:47] 
+ Buy at 0.015915
+[2018-04-25 16:01:48] 2- Iniciando rotina de venda 
+[2018-04-25 16:01:48] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:01:59] 1- Iniciando rotina de compra
+[2018-04-25 16:02:01] price now = 0.016273
+[2018-04-25 16:02:01] 
+ Buy at 0.015915
+[2018-04-25 16:02:01] 2- Iniciando rotina de venda 
+[2018-04-25 16:02:02] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:02:12] 1- Iniciando rotina de compra
+[2018-04-25 16:02:13] price now = 0.016243
+[2018-04-25 16:02:14] 
+ Buy at 0.015915
+[2018-04-25 16:02:14] 2- Iniciando rotina de venda 
+[2018-04-25 16:02:15] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:02:25] 1- Iniciando rotina de compra
+[2018-04-25 16:02:27] price now = 0.01628
+[2018-04-25 16:02:27] 
+ Buy at 0.015915
+[2018-04-25 16:02:28] 2- Iniciando rotina de venda 
+[2018-04-25 16:02:29] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:02:39] 1- Iniciando rotina de compra
+[2018-04-25 16:02:41] price now = 0.016256
+[2018-04-25 16:02:41] 
+ Buy at 0.015915
+[2018-04-25 16:02:41] 2- Iniciando rotina de venda 
+[2018-04-25 16:02:42] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:02:52] 1- Iniciando rotina de compra
+[2018-04-25 16:02:54] price now = 0.016268
+[2018-04-25 16:02:54] 
+ Buy at 0.015915
+[2018-04-25 16:02:55] 2- Iniciando rotina de venda 
+[2018-04-25 16:02:56] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:03:06] 1- Iniciando rotina de compra
+[2018-04-25 16:03:08] price now = 0.01628
+[2018-04-25 16:03:08] 
+ Buy at 0.015915
+[2018-04-25 16:03:08] 2- Iniciando rotina de venda 
+[2018-04-25 16:03:09] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:03:19] 1- Iniciando rotina de compra
+[2018-04-25 16:03:20] price now = 0.01628
+[2018-04-25 16:03:20] 
+ Buy at 0.015915
+[2018-04-25 16:03:21] 2- Iniciando rotina de venda 
+[2018-04-25 16:03:21] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:03:31] 1- Iniciando rotina de compra
+[2018-04-25 16:03:33] price now = 0.016263
+[2018-04-25 16:03:33] 
+ Buy at 0.015915
+[2018-04-25 16:03:34] 2- Iniciando rotina de venda 
+[2018-04-25 16:03:35] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:03:45] 1- Iniciando rotina de compra
+[2018-04-25 16:03:47] price now = 0.016281
+[2018-04-25 16:03:47] 
+ Buy at 0.015915
+[2018-04-25 16:03:48] 2- Iniciando rotina de venda 
+[2018-04-25 16:03:48] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:03:58] 1- Iniciando rotina de compra
+[2018-04-25 16:04:00] price now = 0.01627
+[2018-04-25 16:04:00] 
+ Buy at 0.015915
+[2018-04-25 16:04:00] 2- Iniciando rotina de venda 
+[2018-04-25 16:04:01] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:04:11] 1- Iniciando rotina de compra
+[2018-04-25 16:04:13] price now = 0.016261
+[2018-04-25 16:04:13] 
+ Buy at 0.015915
+[2018-04-25 16:04:14] 2- Iniciando rotina de venda 
+[2018-04-25 16:04:14] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:04:24] 1- Iniciando rotina de compra
+[2018-04-25 16:04:26] price now = 0.01627
+[2018-04-25 16:04:26] 
+ Buy at 0.015915
+[2018-04-25 16:04:27] 2- Iniciando rotina de venda 
+[2018-04-25 16:04:27] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:04:37] 1- Iniciando rotina de compra
+[2018-04-25 16:04:40] price now = 0.01627
+[2018-04-25 16:04:40] 
+ Buy at 0.015915
+[2018-04-25 16:04:41] 2- Iniciando rotina de venda 
+[2018-04-25 16:04:42] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:04:52] 1- Iniciando rotina de compra
+[2018-04-25 16:04:54] price now = 0.016273
+[2018-04-25 16:04:54] 
+ Buy at 0.015915
+[2018-04-25 16:04:54] 2- Iniciando rotina de venda 
+[2018-04-25 16:04:55] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:05:06] 1- Iniciando rotina de compra
+[2018-04-25 16:05:07] price now = 0.01627
+[2018-04-25 16:05:07] 
+ Buy at 0.015915
+[2018-04-25 16:05:08] 2- Iniciando rotina de venda 
+[2018-04-25 16:05:08] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:05:18] 1- Iniciando rotina de compra
+[2018-04-25 16:05:20] price now = 0.01628
+[2018-04-25 16:05:20] 
+ Buy at 0.015915
+[2018-04-25 16:05:20] 2- Iniciando rotina de venda 
+[2018-04-25 16:05:22] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:05:32] 1- Iniciando rotina de compra
+[2018-04-25 16:05:34] price now = 0.016271
+[2018-04-25 16:05:34] 
+ Buy at 0.015915
+[2018-04-25 16:05:34] 2- Iniciando rotina de venda 
+[2018-04-25 16:05:35] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:05:45] 1- Iniciando rotina de compra
+[2018-04-25 16:05:48] price now = 0.016282
+[2018-04-25 16:05:48] 
+ Buy at 0.015915
+[2018-04-25 16:05:48] 2- Iniciando rotina de venda 
+[2018-04-25 16:05:49] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:05:59] 1- Iniciando rotina de compra
+[2018-04-25 16:06:01] price now = 0.016266
+[2018-04-25 16:06:01] 
+ Buy at 0.015915
+[2018-04-25 16:06:02] 2- Iniciando rotina de venda 
+[2018-04-25 16:06:03] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:06:13] 1- Iniciando rotina de compra
+[2018-04-25 16:06:14] price now = 0.01629
+[2018-04-25 16:06:14] 
+ Buy at 0.015915
+[2018-04-25 16:06:15] 2- Iniciando rotina de venda 
+[2018-04-25 16:06:15] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:06:25] 1- Iniciando rotina de compra
+[2018-04-25 16:06:27] price now = 0.01629
+[2018-04-25 16:06:27] 
+ Buy at 0.015915
+[2018-04-25 16:06:27] 2- Iniciando rotina de venda 
+[2018-04-25 16:06:27] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:06:37] 1- Iniciando rotina de compra
+[2018-04-25 16:06:39] price now = 0.016276
+[2018-04-25 16:06:39] 
+ Buy at 0.015915
+[2018-04-25 16:06:39] 2- Iniciando rotina de venda 
+[2018-04-25 16:06:39] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:06:49] 1- Iniciando rotina de compra
+[2018-04-25 16:06:51] price now = 0.016271
+[2018-04-25 16:06:51] 
+ Buy at 0.015915
+[2018-04-25 16:06:51] 2- Iniciando rotina de venda 
+[2018-04-25 16:06:51] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:07:01] 1- Iniciando rotina de compra
+[2018-04-25 16:07:03] price now = 0.016305
+[2018-04-25 16:07:03] 
+ Buy at 0.015915
+[2018-04-25 16:07:03] 2- Iniciando rotina de venda 
+[2018-04-25 16:07:04] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:07:14] 1- Iniciando rotina de compra
+[2018-04-25 16:07:15] price now = 0.016299
+[2018-04-25 16:07:15] 
+ Buy at 0.015915
+[2018-04-25 16:07:15] 2- Iniciando rotina de venda 
+[2018-04-25 16:07:16] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:07:26] 1- Iniciando rotina de compra
+[2018-04-25 16:07:27] price now = 0.0163
+[2018-04-25 16:07:27] 
+ Buy at 0.015915
+[2018-04-25 16:07:27] 2- Iniciando rotina de venda 
+[2018-04-25 16:07:28] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:07:38] 1- Iniciando rotina de compra
+[2018-04-25 16:07:39] price now = 0.016277
+[2018-04-25 16:07:39] 
+ Buy at 0.015915
+[2018-04-25 16:07:40] 2- Iniciando rotina de venda 
+[2018-04-25 16:07:40] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:07:50] 1- Iniciando rotina de compra
+[2018-04-25 16:07:52] price now = 0.0163
+[2018-04-25 16:07:52] 
+ Buy at 0.015915
+[2018-04-25 16:07:52] 2- Iniciando rotina de venda 
+[2018-04-25 16:07:53] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:08:03] 1- Iniciando rotina de compra
+[2018-04-25 16:08:04] price now = 0.0163
+[2018-04-25 16:08:04] 
+ Buy at 0.015915
+[2018-04-25 16:08:05] 2- Iniciando rotina de venda 
+[2018-04-25 16:08:05] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:08:15] 1- Iniciando rotina de compra
+[2018-04-25 16:08:17] price now = 0.016273
+[2018-04-25 16:08:17] 
+ Buy at 0.015915
+[2018-04-25 16:08:18] 2- Iniciando rotina de venda 
+[2018-04-25 16:08:18] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:08:28] 1- Iniciando rotina de compra
+[2018-04-25 16:08:30] price now = 0.01629
+[2018-04-25 16:08:30] 
+ Buy at 0.015915
+[2018-04-25 16:08:30] 2- Iniciando rotina de venda 
+[2018-04-25 16:08:31] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:08:41] 1- Iniciando rotina de compra
+[2018-04-25 16:08:42] price now = 0.016299
+[2018-04-25 16:08:42] 
+ Buy at 0.015915
+[2018-04-25 16:08:42] 2- Iniciando rotina de venda 
+[2018-04-25 16:08:43] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:08:53] 1- Iniciando rotina de compra
+[2018-04-25 16:08:54] price now = 0.016299
+[2018-04-25 16:08:54] 
+ Buy at 0.015915
+[2018-04-25 16:08:55] 2- Iniciando rotina de venda 
+[2018-04-25 16:08:55] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:09:05] 1- Iniciando rotina de compra
+[2018-04-25 16:09:06] price now = 0.016289
+[2018-04-25 16:09:06] 
+ Buy at 0.015915
+[2018-04-25 16:09:07] 2- Iniciando rotina de venda 
+[2018-04-25 16:09:07] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:09:17] 1- Iniciando rotina de compra
+[2018-04-25 16:09:19] price now = 0.016299
+[2018-04-25 16:09:19] 
+ Buy at 0.015915
+[2018-04-25 16:09:19] 2- Iniciando rotina de venda 
+[2018-04-25 16:09:20] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:09:30] 1- Iniciando rotina de compra
+[2018-04-25 16:09:31] price now = 0.016298
+[2018-04-25 16:09:31] 
+ Buy at 0.015915
+[2018-04-25 16:09:32] 2- Iniciando rotina de venda 
+[2018-04-25 16:09:32] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:09:42] 1- Iniciando rotina de compra
+[2018-04-25 16:09:44] price now = 0.01625
+[2018-04-25 16:09:44] 
+ Buy at 0.015915
+[2018-04-25 16:09:44] 2- Iniciando rotina de venda 
+[2018-04-25 16:09:45] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:09:55] 1- Iniciando rotina de compra
+[2018-04-25 16:09:57] price now = 0.016292
+[2018-04-25 16:09:57] 
+ Buy at 0.015915
+[2018-04-25 16:09:57] 2- Iniciando rotina de venda 
+[2018-04-25 16:09:58] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:10:08] 1- Iniciando rotina de compra
+[2018-04-25 16:10:09] price now = 0.016293
+[2018-04-25 16:10:09] 
+ Buy at 0.015915
+[2018-04-25 16:10:09] 2- Iniciando rotina de venda 
+[2018-04-25 16:10:10] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:10:20] 1- Iniciando rotina de compra
+[2018-04-25 16:10:21] price now = 0.016299
+[2018-04-25 16:10:21] 
+ Buy at 0.015915
+[2018-04-25 16:10:22] 2- Iniciando rotina de venda 
+[2018-04-25 16:10:22] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:10:32] 1- Iniciando rotina de compra
+[2018-04-25 16:10:34] price now = 0.016272
+[2018-04-25 16:10:34] 
+ Buy at 0.015915
+[2018-04-25 16:10:35] 2- Iniciando rotina de venda 
+[2018-04-25 16:10:35] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:10:45] 1- Iniciando rotina de compra
+[2018-04-25 16:10:47] price now = 0.016271
+[2018-04-25 16:10:47] 
+ Buy at 0.015915
+[2018-04-25 16:10:47] 2- Iniciando rotina de venda 
+[2018-04-25 16:10:48] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:10:58] 1- Iniciando rotina de compra
+[2018-04-25 16:11:01] price now = 0.016295
+[2018-04-25 16:11:01] 
+ Buy at 0.015915
+[2018-04-25 16:11:01] 2- Iniciando rotina de venda 
+[2018-04-25 16:11:02] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:11:12] 1- Iniciando rotina de compra
+[2018-04-25 16:11:14] price now = 0.016265
+[2018-04-25 16:11:14] 
+ Buy at 0.015915
+[2018-04-25 16:11:14] 2- Iniciando rotina de venda 
+[2018-04-25 16:11:15] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:11:25] 1- Iniciando rotina de compra
+[2018-04-25 16:11:27] price now = 0.016272
+[2018-04-25 16:11:27] 
+ Buy at 0.015915
+[2018-04-25 16:11:28] 2- Iniciando rotina de venda 
+[2018-04-25 16:11:29] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:11:39] 1- Iniciando rotina de compra
+[2018-04-25 16:11:40] price now = 0.016272
+[2018-04-25 16:11:40] 
+ Buy at 0.015915
+[2018-04-25 16:11:41] 2- Iniciando rotina de venda 
+[2018-04-25 16:11:41] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:11:51] 1- Iniciando rotina de compra
+[2018-04-25 16:11:53] price now = 0.01627
+[2018-04-25 16:11:53] 
+ Buy at 0.015915
+[2018-04-25 16:11:53] 2- Iniciando rotina de venda 
+[2018-04-25 16:11:54] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:12:04] 1- Iniciando rotina de compra
+[2018-04-25 16:12:06] price now = 0.016266
+[2018-04-25 16:12:06] 
+ Buy at 0.015915
+[2018-04-25 16:12:07] 2- Iniciando rotina de venda 
+[2018-04-25 16:12:07] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:12:17] 1- Iniciando rotina de compra
+[2018-04-25 16:12:19] price now = 0.016269
+[2018-04-25 16:12:19] 
+ Buy at 0.015915
+[2018-04-25 16:12:20] 2- Iniciando rotina de venda 
+[2018-04-25 16:12:21] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:12:31] 1- Iniciando rotina de compra
+[2018-04-25 16:12:33] price now = 0.016265
+[2018-04-25 16:12:33] 
+ Buy at 0.015915
+[2018-04-25 16:12:34] 2- Iniciando rotina de venda 
+[2018-04-25 16:12:34] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:12:44] 1- Iniciando rotina de compra
+[2018-04-25 16:12:47] price now = 0.016269
+[2018-04-25 16:12:47] 
+ Buy at 0.015915
+[2018-04-25 16:12:47] 2- Iniciando rotina de venda 
+[2018-04-25 16:12:48] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:12:58] 1- Iniciando rotina de compra
+[2018-04-25 16:13:01] price now = 0.016253
+[2018-04-25 16:13:01] 
+ Buy at 0.015915
+[2018-04-25 16:13:01] 2- Iniciando rotina de venda 
+[2018-04-25 16:13:01] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:13:11] 1- Iniciando rotina de compra
+[2018-04-25 16:13:13] price now = 0.016253
+[2018-04-25 16:13:13] 
+ Buy at 0.015915
+[2018-04-25 16:13:13] 2- Iniciando rotina de venda 
+[2018-04-25 16:13:14] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:13:24] 1- Iniciando rotina de compra
+[2018-04-25 16:13:25] price now = 0.016264
+[2018-04-25 16:13:25] 
+ Buy at 0.015915
+[2018-04-25 16:13:26] 2- Iniciando rotina de venda 
+[2018-04-25 16:13:26] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:13:36] 1- Iniciando rotina de compra
+[2018-04-25 16:13:39] price now = 0.01629
+[2018-04-25 16:13:39] 
+ Buy at 0.015915
+[2018-04-25 16:13:39] 2- Iniciando rotina de venda 
+[2018-04-25 16:13:40] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:13:50] 1- Iniciando rotina de compra
+[2018-04-25 16:13:52] price now = 0.016289
+[2018-04-25 16:13:52] 
+ Buy at 0.015915
+[2018-04-25 16:13:52] 2- Iniciando rotina de venda 
+[2018-04-25 16:13:52] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:14:02] 1- Iniciando rotina de compra
+[2018-04-25 16:14:04] price now = 0.01626
+[2018-04-25 16:14:04] 
+ Buy at 0.015915
+[2018-04-25 16:14:05] 2- Iniciando rotina de venda 
+[2018-04-25 16:14:06] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:14:16] 1- Iniciando rotina de compra
+[2018-04-25 16:14:17] price now = 0.016261
+[2018-04-25 16:14:17] 
+ Buy at 0.015915
+[2018-04-25 16:14:18] 2- Iniciando rotina de venda 
+[2018-04-25 16:14:18] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:14:28] 1- Iniciando rotina de compra
+[2018-04-25 16:14:30] price now = 0.01629
+[2018-04-25 16:14:30] 
+ Buy at 0.015915
+[2018-04-25 16:14:31] 2- Iniciando rotina de venda 
+[2018-04-25 16:14:32] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:14:42] 1- Iniciando rotina de compra
+[2018-04-25 16:14:44] price now = 0.01626
+[2018-04-25 16:14:44] 
+ Buy at 0.015915
+[2018-04-25 16:14:44] 2- Iniciando rotina de venda 
+[2018-04-25 16:14:45] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:14:55] 1- Iniciando rotina de compra
+[2018-04-25 16:14:57] price now = 0.01629
+[2018-04-25 16:14:57] 
+ Buy at 0.015915
+[2018-04-25 16:14:57] 2- Iniciando rotina de venda 
+[2018-04-25 16:15:03] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:15:13] 1- Iniciando rotina de compra
+[2018-04-25 16:15:14] price now = 0.01626
+[2018-04-25 16:15:14] 
+ Buy at 0.015915
+[2018-04-25 16:15:14] 2- Iniciando rotina de venda 
+[2018-04-25 16:15:15] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:15:25] 1- Iniciando rotina de compra
+[2018-04-25 16:15:26] price now = 0.016261
+[2018-04-25 16:15:26] 
+ Buy at 0.015915
+[2018-04-25 16:15:27] 2- Iniciando rotina de venda 
+[2018-04-25 16:15:28] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:15:38] 1- Iniciando rotina de compra
+[2018-04-25 16:15:40] price now = 0.016261
+[2018-04-25 16:15:40] 
+ Buy at 0.015915
+[2018-04-25 16:15:41] 2- Iniciando rotina de venda 
+[2018-04-25 16:15:42] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:15:52] 1- Iniciando rotina de compra
+[2018-04-25 16:15:53] price now = 0.01626
+[2018-04-25 16:15:53] 
+ Buy at 0.015915
+[2018-04-25 16:15:54] 2- Iniciando rotina de venda 
+[2018-04-25 16:15:54] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:16:04] 1- Iniciando rotina de compra
+[2018-04-25 16:16:05] price now = 0.016279
+[2018-04-25 16:16:05] 
+ Buy at 0.015915
+[2018-04-25 16:16:06] 2- Iniciando rotina de venda 
+[2018-04-25 16:16:06] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:16:16] 1- Iniciando rotina de compra
+[2018-04-25 16:16:18] price now = 0.016279
+[2018-04-25 16:16:18] 
+ Buy at 0.015915
+[2018-04-25 16:16:18] 2- Iniciando rotina de venda 
+[2018-04-25 16:16:19] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:16:29] 1- Iniciando rotina de compra
+[2018-04-25 16:16:30] price now = 0.016279
+[2018-04-25 16:16:30] 
+ Buy at 0.015915
+[2018-04-25 16:16:30] 2- Iniciando rotina de venda 
+[2018-04-25 16:16:31] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:16:41] 1- Iniciando rotina de compra
+[2018-04-25 16:16:42] price now = 0.016279
+[2018-04-25 16:16:42] 
+ Buy at 0.015915
+[2018-04-25 16:16:42] 2- Iniciando rotina de venda 
+[2018-04-25 16:16:43] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:16:53] 1- Iniciando rotina de compra
+[2018-04-25 16:16:54] price now = 0.016282
+[2018-04-25 16:16:54] 
+ Buy at 0.015915
+[2018-04-25 16:16:55] 2- Iniciando rotina de venda 
+[2018-04-25 16:16:55] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:17:05] 1- Iniciando rotina de compra
+[2018-04-25 16:17:07] price now = 0.016282
+[2018-04-25 16:17:07] 
+ Buy at 0.015915
+[2018-04-25 16:17:07] 2- Iniciando rotina de venda 
+[2018-04-25 16:17:08] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:17:18] 1- Iniciando rotina de compra
+[2018-04-25 16:17:20] price now = 0.016282
+[2018-04-25 16:17:20] 
+ Buy at 0.015915
+[2018-04-25 16:17:20] 2- Iniciando rotina de venda 
+[2018-04-25 16:17:21] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:17:31] 1- Iniciando rotina de compra
+[2018-04-25 16:17:33] price now = 0.016279
+[2018-04-25 16:17:33] 
+ Buy at 0.015915
+[2018-04-25 16:17:33] 2- Iniciando rotina de venda 
+[2018-04-25 16:17:34] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:17:44] 1- Iniciando rotina de compra
+[2018-04-25 16:17:46] price now = 0.01628
+[2018-04-25 16:17:46] 
+ Buy at 0.015915
+[2018-04-25 16:17:47] 2- Iniciando rotina de venda 
+[2018-04-25 16:17:48] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:17:58] 1- Iniciando rotina de compra
+[2018-04-25 16:17:59] price now = 0.016279
+[2018-04-25 16:17:59] 
+ Buy at 0.015915
+[2018-04-25 16:17:59] 2- Iniciando rotina de venda 
+[2018-04-25 16:18:00] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:18:10] 1- Iniciando rotina de compra
+[2018-04-25 16:18:12] price now = 0.016281
+[2018-04-25 16:18:12] 
+ Buy at 0.015915
+[2018-04-25 16:18:12] 2- Iniciando rotina de venda 
+[2018-04-25 16:18:13] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:18:23] 1- Iniciando rotina de compra
+[2018-04-25 16:18:26] price now = 0.016279
+[2018-04-25 16:18:26] 
+ Buy at 0.015915
+[2018-04-25 16:18:26] 2- Iniciando rotina de venda 
+[2018-04-25 16:18:27] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:18:37] 1- Iniciando rotina de compra
+[2018-04-25 16:18:39] price now = 0.01627
+[2018-04-25 16:18:39] 
+ Buy at 0.015915
+[2018-04-25 16:18:39] 2- Iniciando rotina de venda 
+[2018-04-25 16:18:40] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:18:50] 1- Iniciando rotina de compra
+[2018-04-25 16:18:53] price now = 0.01627
+[2018-04-25 16:18:53] 
+ Buy at 0.015915
+[2018-04-25 16:18:53] 2- Iniciando rotina de venda 
+[2018-04-25 16:18:54] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:19:04] 1- Iniciando rotina de compra
+[2018-04-25 16:19:06] price now = 0.016261
+[2018-04-25 16:19:06] 
+ Buy at 0.015915
+[2018-04-25 16:19:06] 2- Iniciando rotina de venda 
+[2018-04-25 16:19:07] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:19:17] 1- Iniciando rotina de compra
+[2018-04-25 16:19:18] price now = 0.016263
+[2018-04-25 16:19:18] 
+ Buy at 0.015915
+[2018-04-25 16:19:18] 2- Iniciando rotina de venda 
+[2018-04-25 16:19:19] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:19:29] 1- Iniciando rotina de compra
+[2018-04-25 16:19:30] price now = 0.016263
+[2018-04-25 16:19:30] 
+ Buy at 0.015915
+[2018-04-25 16:19:31] 2- Iniciando rotina de venda 
+[2018-04-25 16:19:31] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:19:41] 1- Iniciando rotina de compra
+[2018-04-25 16:19:42] price now = 0.016265
+[2018-04-25 16:19:42] 
+ Buy at 0.015915
+[2018-04-25 16:19:43] 2- Iniciando rotina de venda 
+[2018-04-25 16:19:43] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:19:53] 1- Iniciando rotina de compra
+[2018-04-25 16:19:54] price now = 0.016281
+[2018-04-25 16:19:54] 
+ Buy at 0.015915
+[2018-04-25 16:19:55] 2- Iniciando rotina de venda 
+[2018-04-25 16:19:55] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:20:05] 1- Iniciando rotina de compra
+[2018-04-25 16:20:06] price now = 0.016295
+[2018-04-25 16:20:06] 
+ Buy at 0.015915
+[2018-04-25 16:20:07] 2- Iniciando rotina de venda 
+[2018-04-25 16:20:07] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:20:17] 1- Iniciando rotina de compra
+[2018-04-25 16:20:19] price now = 0.016295
+[2018-04-25 16:20:19] 
+ Buy at 0.015915
+[2018-04-25 16:20:19] 2- Iniciando rotina de venda 
+[2018-04-25 16:20:19] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:20:29] 1- Iniciando rotina de compra
+[2018-04-25 16:20:31] price now = 0.016295
+[2018-04-25 16:20:31] 
+ Buy at 0.015915
+[2018-04-25 16:20:32] 2- Iniciando rotina de venda 
+[2018-04-25 16:20:33] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:20:43] 1- Iniciando rotina de compra
+[2018-04-25 16:20:45] price now = 0.016294
+[2018-04-25 16:20:45] 
+ Buy at 0.015915
+[2018-04-25 16:20:45] 2- Iniciando rotina de venda 
+[2018-04-25 16:20:46] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:20:56] 1- Iniciando rotina de compra
+[2018-04-25 16:20:58] price now = 0.016293
+[2018-04-25 16:20:58] 
+ Buy at 0.015915
+[2018-04-25 16:20:59] 2- Iniciando rotina de venda 
+[2018-04-25 16:21:00] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:21:10] 1- Iniciando rotina de compra
+[2018-04-25 16:21:11] price now = 0.016294
+[2018-04-25 16:21:11] 
+ Buy at 0.015915
+[2018-04-25 16:21:12] 2- Iniciando rotina de venda 
+[2018-04-25 16:21:12] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:21:22] 1- Iniciando rotina de compra
+[2018-04-25 16:21:24] price now = 0.016273
+[2018-04-25 16:21:24] 
+ Buy at 0.015915
+[2018-04-25 16:21:24] 2- Iniciando rotina de venda 
+[2018-04-25 16:21:25] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:21:35] 1- Iniciando rotina de compra
+[2018-04-25 16:21:36] price now = 0.01629
+[2018-04-25 16:21:36] 
+ Buy at 0.015915
+[2018-04-25 16:21:37] 2- Iniciando rotina de venda 
+[2018-04-25 16:21:37] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:21:47] 1- Iniciando rotina de compra
+[2018-04-25 16:21:50] price now = 0.01629
+[2018-04-25 16:21:50] 
+ Buy at 0.015915
+[2018-04-25 16:21:50] 2- Iniciando rotina de venda 
+[2018-04-25 16:21:51] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:22:01] 1- Iniciando rotina de compra
+[2018-04-25 16:22:02] price now = 0.016272
+[2018-04-25 16:22:02] 
+ Buy at 0.015915
+[2018-04-25 16:22:03] 2- Iniciando rotina de venda 
+[2018-04-25 16:22:04] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:22:14] 1- Iniciando rotina de compra
+[2018-04-25 16:22:15] price now = 0.016272
+[2018-04-25 16:22:15] 
+ Buy at 0.015915
+[2018-04-25 16:22:16] 2- Iniciando rotina de venda 
+[2018-04-25 16:22:17] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:22:27] 1- Iniciando rotina de compra
+[2018-04-25 16:22:28] price now = 0.016272
+[2018-04-25 16:22:28] 
+ Buy at 0.015915
+[2018-04-25 16:22:29] 2- Iniciando rotina de venda 
+[2018-04-25 16:22:30] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:22:40] 1- Iniciando rotina de compra
+[2018-04-25 16:22:41] price now = 0.01627
+[2018-04-25 16:22:41] 
+ Buy at 0.015915
+[2018-04-25 16:22:44] 2- Iniciando rotina de venda 
+[2018-04-25 16:22:46] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:22:56] 1- Iniciando rotina de compra
+[2018-04-25 16:22:58] price now = 0.016272
+[2018-04-25 16:22:58] 
+ Buy at 0.015915
+[2018-04-25 16:22:59] 2- Iniciando rotina de venda 
+[2018-04-25 16:23:00] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:23:10] 1- Iniciando rotina de compra
+[2018-04-25 16:23:12] price now = 0.01628
+[2018-04-25 16:23:12] 
+ Buy at 0.015915
+[2018-04-25 16:23:13] 2- Iniciando rotina de venda 
+[2018-04-25 16:23:14] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:23:24] 1- Iniciando rotina de compra
+[2018-04-25 16:23:26] price now = 0.016267
+[2018-04-25 16:23:26] 
+ Buy at 0.015915
+[2018-04-25 16:23:26] 2- Iniciando rotina de venda 
+[2018-04-25 16:23:27] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:23:37] 1- Iniciando rotina de compra
+[2018-04-25 16:23:38] price now = 0.016264
+[2018-04-25 16:23:38] 
+ Buy at 0.015915
+[2018-04-25 16:23:39] 2- Iniciando rotina de venda 
+[2018-04-25 16:23:39] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:23:49] 1- Iniciando rotina de compra
+[2018-04-25 16:23:51] price now = 0.016289
+[2018-04-25 16:23:51] 
+ Buy at 0.015915
+[2018-04-25 16:23:51] 2- Iniciando rotina de venda 
+[2018-04-25 16:23:52] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:24:02] 1- Iniciando rotina de compra
+[2018-04-25 16:24:05] price now = 0.01629
+[2018-04-25 16:24:05] 
+ Buy at 0.015915
+[2018-04-25 16:24:05] 2- Iniciando rotina de venda 
+[2018-04-25 16:24:06] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:24:16] 1- Iniciando rotina de compra
+[2018-04-25 16:24:18] price now = 0.016287
+[2018-04-25 16:24:18] 
+ Buy at 0.015915
+[2018-04-25 16:24:19] 2- Iniciando rotina de venda 
+[2018-04-25 16:24:19] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:24:29] 1- Iniciando rotina de compra
+[2018-04-25 16:24:31] price now = 0.016286
+[2018-04-25 16:24:31] 
+ Buy at 0.015915
+[2018-04-25 16:24:31] 2- Iniciando rotina de venda 
+[2018-04-25 16:24:31] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:24:41] 1- Iniciando rotina de compra
+[2018-04-25 16:24:43] price now = 0.016272
+[2018-04-25 16:24:43] 
+ Buy at 0.015915
+[2018-04-25 16:24:43] 2- Iniciando rotina de venda 
+[2018-04-25 16:24:44] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:24:54] 1- Iniciando rotina de compra
+[2018-04-25 16:24:55] price now = 0.016281
+[2018-04-25 16:24:55] 
+ Buy at 0.015915
+[2018-04-25 16:24:57] 2- Iniciando rotina de venda 
+[2018-04-25 16:24:58] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:25:08] 1- Iniciando rotina de compra
+[2018-04-25 16:25:11] price now = 0.016272
+[2018-04-25 16:25:11] 
+ Buy at 0.015915
+[2018-04-25 16:25:13] 2- Iniciando rotina de venda 
+[2018-04-25 16:25:13] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:25:23] 1- Iniciando rotina de compra
+[2018-04-25 16:25:25] price now = 0.016267
+[2018-04-25 16:25:25] 
+ Buy at 0.015915
+[2018-04-25 16:25:26] 2- Iniciando rotina de venda 
+[2018-04-25 16:25:27] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:25:37] 1- Iniciando rotina de compra
+[2018-04-25 16:25:39] price now = 0.016272
+[2018-04-25 16:25:39] 
+ Buy at 0.015915
+[2018-04-25 16:25:39] 2- Iniciando rotina de venda 
+[2018-04-25 16:25:40] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:25:50] 1- Iniciando rotina de compra
+[2018-04-25 16:25:51] price now = 0.016272
+[2018-04-25 16:25:51] 
+ Buy at 0.015915
+[2018-04-25 16:25:52] 2- Iniciando rotina de venda 
+[2018-04-25 16:25:53] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:26:03] 1- Iniciando rotina de compra
+[2018-04-25 16:26:05] price now = 0.016272
+[2018-04-25 16:26:05] 
+ Buy at 0.015915
+[2018-04-25 16:26:06] 2- Iniciando rotina de venda 
+[2018-04-25 16:26:06] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:26:16] 1- Iniciando rotina de compra
+[2018-04-25 16:26:18] price now = 0.016272
+[2018-04-25 16:26:18] 
+ Buy at 0.015915
+[2018-04-25 16:26:18] 2- Iniciando rotina de venda 
+[2018-04-25 16:26:18] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:26:28] 1- Iniciando rotina de compra
+[2018-04-25 16:26:30] price now = 0.016286
+[2018-04-25 16:26:30] 
+ Buy at 0.015915
+[2018-04-25 16:26:31] 2- Iniciando rotina de venda 
+[2018-04-25 16:26:31] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:26:41] 1- Iniciando rotina de compra
+[2018-04-25 16:26:43] price now = 0.016265
+[2018-04-25 16:26:43] 
+ Buy at 0.015915
+[2018-04-25 16:26:44] 2- Iniciando rotina de venda 
+[2018-04-25 16:26:45] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:26:55] 1- Iniciando rotina de compra
+[2018-04-25 16:26:57] price now = 0.016287
+[2018-04-25 16:26:57] 
+ Buy at 0.015915
+[2018-04-25 16:26:57] 2- Iniciando rotina de venda 
+[2018-04-25 16:26:57] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:27:08] 1- Iniciando rotina de compra
+[2018-04-25 16:27:09] price now = 0.016293
+[2018-04-25 16:27:09] 
+ Buy at 0.015915
+[2018-04-25 16:27:10] 2- Iniciando rotina de venda 
+[2018-04-25 16:27:11] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:27:21] 1- Iniciando rotina de compra
+[2018-04-25 16:27:23] price now = 0.016294
+[2018-04-25 16:27:23] 
+ Buy at 0.015915
+[2018-04-25 16:27:23] 2- Iniciando rotina de venda 
+[2018-04-25 16:27:24] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:27:34] 1- Iniciando rotina de compra
+[2018-04-25 16:27:35] price now = 0.016272
+[2018-04-25 16:27:35] 
+ Buy at 0.015915
+[2018-04-25 16:27:36] 2- Iniciando rotina de venda 
+[2018-04-25 16:27:36] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:27:47] 1- Iniciando rotina de compra
+[2018-04-25 16:27:48] price now = 0.01626
+[2018-04-25 16:27:48] 
+ Buy at 0.015915
+[2018-04-25 16:27:48] 2- Iniciando rotina de venda 
+[2018-04-25 16:27:50] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:28:00] 1- Iniciando rotina de compra
+[2018-04-25 16:28:04] price now = 0.016285
+[2018-04-25 16:28:04] 
+ Buy at 0.015915
+[2018-04-25 16:28:04] 2- Iniciando rotina de venda 
+[2018-04-25 16:28:05] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:28:15] 1- Iniciando rotina de compra
+[2018-04-25 16:28:18] price now = 0.01628
+[2018-04-25 16:28:18] 
+ Buy at 0.015915
+[2018-04-25 16:28:18] 2- Iniciando rotina de venda 
+[2018-04-25 16:28:19] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:28:29] 1- Iniciando rotina de compra
+[2018-04-25 16:28:31] price now = 0.01626
+[2018-04-25 16:28:31] 
+ Buy at 0.015915
+[2018-04-25 16:28:32] 2- Iniciando rotina de venda 
+[2018-04-25 16:28:33] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:28:43] 1- Iniciando rotina de compra
+[2018-04-25 16:28:45] price now = 0.016261
+[2018-04-25 16:28:45] 
+ Buy at 0.015915
+[2018-04-25 16:28:45] 2- Iniciando rotina de venda 
+[2018-04-25 16:28:46] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:28:56] 1- Iniciando rotina de compra
+[2018-04-25 16:28:58] price now = 0.01628
+[2018-04-25 16:28:58] 
+ Buy at 0.015915
+[2018-04-25 16:28:59] 2- Iniciando rotina de venda 
+[2018-04-25 16:29:00] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:29:10] 1- Iniciando rotina de compra
+[2018-04-25 16:29:12] price now = 0.01626
+[2018-04-25 16:29:12] 
+ Buy at 0.015915
+[2018-04-25 16:29:12] 2- Iniciando rotina de venda 
+[2018-04-25 16:29:13] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:29:23] 1- Iniciando rotina de compra
+[2018-04-25 16:29:24] price now = 0.01626
+[2018-04-25 16:29:24] 
+ Buy at 0.015915
+[2018-04-25 16:29:25] 2- Iniciando rotina de venda 
+[2018-04-25 16:29:25] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:29:35] 1- Iniciando rotina de compra
+[2018-04-25 16:29:36] price now = 0.01626
+[2018-04-25 16:29:36] 
+ Buy at 0.015915
+[2018-04-25 16:29:37] 2- Iniciando rotina de venda 
+[2018-04-25 16:29:37] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:29:47] 1- Iniciando rotina de compra
+[2018-04-25 16:29:48] price now = 0.016262
+[2018-04-25 16:29:48] 
+ Buy at 0.015915
+[2018-04-25 16:29:49] 2- Iniciando rotina de venda 
+[2018-04-25 16:29:50] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:30:00] 1- Iniciando rotina de compra
+[2018-04-25 16:30:01] price now = 0.016284
+[2018-04-25 16:30:01] 
+ Buy at 0.015915
+[2018-04-25 16:30:01] 2- Iniciando rotina de venda 
+[2018-04-25 16:30:02] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:30:12] 1- Iniciando rotina de compra
+[2018-04-25 16:30:14] price now = 0.01626
+[2018-04-25 16:30:14] 
+ Buy at 0.015915
+[2018-04-25 16:30:14] 2- Iniciando rotina de venda 
+[2018-04-25 16:30:15] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:30:25] 1- Iniciando rotina de compra
+[2018-04-25 16:30:27] price now = 0.016283
+[2018-04-25 16:30:27] 
+ Buy at 0.015915
+[2018-04-25 16:30:27] 2- Iniciando rotina de venda 
+[2018-04-25 16:30:28] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:30:38] 1- Iniciando rotina de compra
+[2018-04-25 16:30:40] price now = 0.016283
+[2018-04-25 16:30:40] 
+ Buy at 0.015915
+[2018-04-25 16:30:40] 2- Iniciando rotina de venda 
+[2018-04-25 16:30:41] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:30:51] 1- Iniciando rotina de compra
+[2018-04-25 16:30:53] price now = 0.016261
+[2018-04-25 16:30:53] 
+ Buy at 0.015915
+[2018-04-25 16:30:54] 2- Iniciando rotina de venda 
+[2018-04-25 16:30:55] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:31:05] 1- Iniciando rotina de compra
+[2018-04-25 16:31:08] price now = 0.01626
+[2018-04-25 16:31:08] 
+ Buy at 0.015915
+[2018-04-25 16:31:08] 2- Iniciando rotina de venda 
+[2018-04-25 16:31:09] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:31:19] 1- Iniciando rotina de compra
+[2018-04-25 16:31:20] price now = 0.016269
+[2018-04-25 16:31:20] 
+ Buy at 0.015915
+[2018-04-25 16:31:21] 2- Iniciando rotina de venda 
+[2018-04-25 16:31:22] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:31:32] 1- Iniciando rotina de compra
+[2018-04-25 16:31:34] price now = 0.01626
+[2018-04-25 16:31:34] 
+ Buy at 0.015915
+[2018-04-25 16:31:34] 2- Iniciando rotina de venda 
+[2018-04-25 16:31:36] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:31:46] 1- Iniciando rotina de compra
+[2018-04-25 16:31:47] price now = 0.01627
+[2018-04-25 16:31:47] 
+ Buy at 0.015915
+[2018-04-25 16:31:47] 2- Iniciando rotina de venda 
+[2018-04-25 16:31:48] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:31:58] 1- Iniciando rotina de compra
+[2018-04-25 16:31:59] price now = 0.01626
+[2018-04-25 16:31:59] 
+ Buy at 0.015915
+[2018-04-25 16:32:00] 2- Iniciando rotina de venda 
+[2018-04-25 16:32:01] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:32:11] 1- Iniciando rotina de compra
+[2018-04-25 16:32:12] price now = 0.01626
+[2018-04-25 16:32:12] 
+ Buy at 0.015915
+[2018-04-25 16:32:13] 2- Iniciando rotina de venda 
+[2018-04-25 16:32:13] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:32:23] 1- Iniciando rotina de compra
+[2018-04-25 16:32:24] price now = 0.016247
+[2018-04-25 16:32:24] 
+ Buy at 0.015915
+[2018-04-25 16:32:25] 2- Iniciando rotina de venda 
+[2018-04-25 16:32:27] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:32:37] 1- Iniciando rotina de compra
+[2018-04-25 16:32:38] price now = 0.016247
+[2018-04-25 16:32:38] 
+ Buy at 0.015915
+[2018-04-25 16:32:39] 2- Iniciando rotina de venda 
+[2018-04-25 16:32:39] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:32:49] 1- Iniciando rotina de compra
+[2018-04-25 16:32:51] price now = 0.016246
+[2018-04-25 16:32:51] 
+ Buy at 0.015915
+[2018-04-25 16:32:51] 2- Iniciando rotina de venda 
+[2018-04-25 16:32:52] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:33:02] 1- Iniciando rotina de compra
+[2018-04-25 16:33:04] price now = 0.016246
+[2018-04-25 16:33:04] 
+ Buy at 0.015915
+[2018-04-25 16:33:04] 2- Iniciando rotina de venda 
+[2018-04-25 16:33:05] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:33:15] 1- Iniciando rotina de compra
+[2018-04-25 16:33:16] price now = 0.016245
+[2018-04-25 16:33:16] 
+ Buy at 0.015915
+[2018-04-25 16:33:17] 2- Iniciando rotina de venda 
+[2018-04-25 16:33:17] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:33:27] 1- Iniciando rotina de compra
+[2018-04-25 16:33:29] price now = 0.016247
+[2018-04-25 16:33:29] 
+ Buy at 0.015915
+[2018-04-25 16:33:29] 2- Iniciando rotina de venda 
+[2018-04-25 16:33:30] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:33:40] 1- Iniciando rotina de compra
+[2018-04-25 16:33:42] price now = 0.016247
+[2018-04-25 16:33:42] 
+ Buy at 0.015915
+[2018-04-25 16:33:42] 2- Iniciando rotina de venda 
+[2018-04-25 16:33:43] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:33:53] 1- Iniciando rotina de compra
+[2018-04-25 16:33:54] price now = 0.016268
+[2018-04-25 16:33:54] 
+ Buy at 0.015915
+[2018-04-25 16:33:54] 2- Iniciando rotina de venda 
+[2018-04-25 16:33:55] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:34:05] 1- Iniciando rotina de compra
+[2018-04-25 16:34:07] price now = 0.016268
+[2018-04-25 16:34:07] 
+ Buy at 0.015915
+[2018-04-25 16:34:08] 2- Iniciando rotina de venda 
+[2018-04-25 16:34:08] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:34:18] 1- Iniciando rotina de compra
+[2018-04-25 16:34:20] price now = 0.016268
+[2018-04-25 16:34:20] 
+ Buy at 0.015915
+[2018-04-25 16:34:21] 2- Iniciando rotina de venda 
+[2018-04-25 16:34:21] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:34:31] 1- Iniciando rotina de compra
+[2018-04-25 16:34:32] price now = 0.016261
+[2018-04-25 16:34:32] 
+ Buy at 0.015915
+[2018-04-25 16:34:33] 2- Iniciando rotina de venda 
+[2018-04-25 16:34:33] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:34:43] 1- Iniciando rotina de compra
+[2018-04-25 16:34:45] price now = 0.01626
+[2018-04-25 16:34:45] 
+ Buy at 0.015915
+[2018-04-25 16:34:46] 2- Iniciando rotina de venda 
+[2018-04-25 16:34:47] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:34:57] 1- Iniciando rotina de compra
+[2018-04-25 16:34:58] price now = 0.01626
+[2018-04-25 16:34:58] 
+ Buy at 0.015915
+[2018-04-25 16:34:59] 2- Iniciando rotina de venda 
+[2018-04-25 16:35:00] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:35:10] 1- Iniciando rotina de compra
+[2018-04-25 16:35:12] price now = 0.016268
+[2018-04-25 16:35:12] 
+ Buy at 0.015915
+[2018-04-25 16:35:13] 2- Iniciando rotina de venda 
+[2018-04-25 16:35:13] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:35:23] 1- Iniciando rotina de compra
+[2018-04-25 16:35:24] price now = 0.016252
+[2018-04-25 16:35:24] 
+ Buy at 0.015915
+[2018-04-25 16:35:25] 2- Iniciando rotina de venda 
+[2018-04-25 16:35:26] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:35:36] 1- Iniciando rotina de compra
+[2018-04-25 16:35:37] price now = 0.016251
+[2018-04-25 16:35:37] 
+ Buy at 0.015915
+[2018-04-25 16:35:38] 2- Iniciando rotina de venda 
+[2018-04-25 16:35:39] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:35:49] 1- Iniciando rotina de compra
+[2018-04-25 16:35:50] price now = 0.016276
+[2018-04-25 16:35:50] 
+ Buy at 0.015915
+[2018-04-25 16:35:50] 2- Iniciando rotina de venda 
+[2018-04-25 16:35:51] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:36:01] 1- Iniciando rotina de compra
+[2018-04-25 16:36:02] price now = 0.01626
+[2018-04-25 16:36:02] 
+ Buy at 0.015915
+[2018-04-25 16:36:03] 2- Iniciando rotina de venda 
+[2018-04-25 16:36:03] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:36:13] 1- Iniciando rotina de compra
+[2018-04-25 16:36:15] price now = 0.016296
+[2018-04-25 16:36:15] 
+ Buy at 0.015915
+[2018-04-25 16:36:15] 2- Iniciando rotina de venda 
+[2018-04-25 16:36:16] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:36:26] 1- Iniciando rotina de compra
+[2018-04-25 16:36:27] price now = 0.016289
+[2018-04-25 16:36:27] 
+ Buy at 0.015915
+[2018-04-25 16:36:28] 2- Iniciando rotina de venda 
+[2018-04-25 16:36:28] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:36:38] 1- Iniciando rotina de compra
+[2018-04-25 16:36:39] price now = 0.016291
+[2018-04-25 16:36:39] 
+ Buy at 0.015915
+[2018-04-25 16:36:40] 2- Iniciando rotina de venda 
+[2018-04-25 16:36:41] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:36:51] 1- Iniciando rotina de compra
+[2018-04-25 16:36:52] price now = 0.016289
+[2018-04-25 16:36:52] 
+ Buy at 0.015915
+[2018-04-25 16:36:52] 2- Iniciando rotina de venda 
+[2018-04-25 16:36:53] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:37:03] 1- Iniciando rotina de compra
+[2018-04-25 16:37:05] price now = 0.016289
+[2018-04-25 16:37:05] 
+ Buy at 0.015915
+[2018-04-25 16:37:05] 2- Iniciando rotina de venda 
+[2018-04-25 16:37:06] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:37:16] 1- Iniciando rotina de compra
+[2018-04-25 16:37:17] price now = 0.016283
+[2018-04-25 16:37:17] 
+ Buy at 0.015915
+[2018-04-25 16:37:18] 2- Iniciando rotina de venda 
+[2018-04-25 16:37:19] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:37:29] 1- Iniciando rotina de compra
+[2018-04-25 16:37:30] price now = 0.016268
+[2018-04-25 16:37:30] 
+ Buy at 0.015915
+[2018-04-25 16:37:31] 2- Iniciando rotina de venda 
+[2018-04-25 16:37:31] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:37:41] 1- Iniciando rotina de compra
+[2018-04-25 16:37:43] price now = 0.016299
+[2018-04-25 16:37:43] 
+ Buy at 0.015915
+[2018-04-25 16:37:44] 2- Iniciando rotina de venda 
+[2018-04-25 16:37:44] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:37:54] 1- Iniciando rotina de compra
+[2018-04-25 16:37:56] price now = 0.016265
+[2018-04-25 16:37:56] 
+ Buy at 0.015915
+[2018-04-25 16:37:57] 2- Iniciando rotina de venda 
+[2018-04-25 16:37:58] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:38:08] 1- Iniciando rotina de compra
+[2018-04-25 16:38:10] price now = 0.016268
+[2018-04-25 16:38:10] 
+ Buy at 0.015915
+[2018-04-25 16:38:10] 2- Iniciando rotina de venda 
+[2018-04-25 16:38:11] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:38:21] 1- Iniciando rotina de compra
+[2018-04-25 16:38:23] price now = 0.016273
+[2018-04-25 16:38:23] 
+ Buy at 0.015915
+[2018-04-25 16:38:24] 2- Iniciando rotina de venda 
+[2018-04-25 16:38:25] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:38:35] 1- Iniciando rotina de compra
+[2018-04-25 16:38:37] price now = 0.0163
+[2018-04-25 16:38:37] 
+ Buy at 0.015915
+[2018-04-25 16:38:38] 2- Iniciando rotina de venda 
+[2018-04-25 16:38:38] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:38:48] 1- Iniciando rotina de compra
+[2018-04-25 16:38:50] price now = 0.0163
+[2018-04-25 16:38:50] 
+ Buy at 0.015915
+[2018-04-25 16:38:51] 2- Iniciando rotina de venda 
+[2018-04-25 16:38:52] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:39:02] 1- Iniciando rotina de compra
+[2018-04-25 16:39:04] price now = 0.0163
+[2018-04-25 16:39:04] 
+ Buy at 0.015915
+[2018-04-25 16:39:04] 2- Iniciando rotina de venda 
+[2018-04-25 16:39:05] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:39:15] 1- Iniciando rotina de compra
+[2018-04-25 16:39:16] price now = 0.016292
+[2018-04-25 16:39:16] 
+ Buy at 0.015915
+[2018-04-25 16:39:16] 2- Iniciando rotina de venda 
+[2018-04-25 16:39:17] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:39:27] 1- Iniciando rotina de compra
+[2018-04-25 16:39:28] price now = 0.01629
+[2018-04-25 16:39:28] 
+ Buy at 0.015915
+[2018-04-25 16:39:29] 2- Iniciando rotina de venda 
+[2018-04-25 16:39:29] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:39:39] 1- Iniciando rotina de compra
+[2018-04-25 16:39:41] price now = 0.016291
+[2018-04-25 16:39:41] 
+ Buy at 0.015915
+[2018-04-25 16:39:41] 2- Iniciando rotina de venda 
+[2018-04-25 16:39:42] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:39:52] 1- Iniciando rotina de compra
+[2018-04-25 16:39:54] price now = 0.016299
+[2018-04-25 16:39:54] 
+ Buy at 0.015915
+[2018-04-25 16:39:54] 2- Iniciando rotina de venda 
+[2018-04-25 16:39:55] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:40:05] 1- Iniciando rotina de compra
+[2018-04-25 16:40:06] price now = 0.01629
+[2018-04-25 16:40:06] 
+ Buy at 0.015915
+[2018-04-25 16:40:07] 2- Iniciando rotina de venda 
+[2018-04-25 16:40:07] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:40:17] 1- Iniciando rotina de compra
+[2018-04-25 16:40:19] price now = 0.016282
+[2018-04-25 16:40:19] 
+ Buy at 0.015915
+[2018-04-25 16:40:20] 2- Iniciando rotina de venda 
+[2018-04-25 16:40:20] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:40:30] 1- Iniciando rotina de compra
+[2018-04-25 16:40:32] price now = 0.016285
+[2018-04-25 16:40:32] 
+ Buy at 0.015915
+[2018-04-25 16:40:32] 2- Iniciando rotina de venda 
+[2018-04-25 16:40:33] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:40:43] 1- Iniciando rotina de compra
+[2018-04-25 16:40:45] price now = 0.01629
+[2018-04-25 16:40:45] 
+ Buy at 0.015915
+[2018-04-25 16:40:45] 2- Iniciando rotina de venda 
+[2018-04-25 16:40:46] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:40:56] 1- Iniciando rotina de compra
+[2018-04-25 16:40:58] price now = 0.016288
+[2018-04-25 16:40:58] 
+ Buy at 0.015915
+[2018-04-25 16:40:58] 2- Iniciando rotina de venda 
+[2018-04-25 16:40:59] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:41:09] 1- Iniciando rotina de compra
+[2018-04-25 16:41:10] price now = 0.01629
+[2018-04-25 16:41:10] 
+ Buy at 0.015915
+[2018-04-25 16:41:11] 2- Iniciando rotina de venda 
+[2018-04-25 16:41:12] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:41:22] 1- Iniciando rotina de compra
+[2018-04-25 16:41:23] price now = 0.01629
+[2018-04-25 16:41:23] 
+ Buy at 0.015915
+[2018-04-25 16:41:24] 2- Iniciando rotina de venda 
+[2018-04-25 16:41:24] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:41:35] 1- Iniciando rotina de compra
+[2018-04-25 16:41:36] price now = 0.016284
+[2018-04-25 16:41:36] 
+ Buy at 0.015915
+[2018-04-25 16:41:36] 2- Iniciando rotina de venda 
+[2018-04-25 16:41:37] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:41:47] 1- Iniciando rotina de compra
+[2018-04-25 16:41:49] price now = 0.016289
+[2018-04-25 16:41:49] 
+ Buy at 0.015915
+[2018-04-25 16:41:50] 2- Iniciando rotina de venda 
+[2018-04-25 16:41:51] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:42:01] 1- Iniciando rotina de compra
+[2018-04-25 16:42:03] price now = 0.016284
+[2018-04-25 16:42:03] 
+ Buy at 0.015915
+[2018-04-25 16:42:03] 2- Iniciando rotina de venda 
+[2018-04-25 16:42:04] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:42:14] 1- Iniciando rotina de compra
+[2018-04-25 16:42:16] price now = 0.01628
+[2018-04-25 16:42:16] 
+ Buy at 0.015915
+[2018-04-25 16:42:16] 2- Iniciando rotina de venda 
+[2018-04-25 16:42:17] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:42:27] 1- Iniciando rotina de compra
+[2018-04-25 16:42:28] price now = 0.016284
+[2018-04-25 16:42:28] 
+ Buy at 0.015915
+[2018-04-25 16:42:29] 2- Iniciando rotina de venda 
+[2018-04-25 16:42:29] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:42:39] 1- Iniciando rotina de compra
+[2018-04-25 16:42:42] price now = 0.01628
+[2018-04-25 16:42:42] 
+ Buy at 0.015915
+[2018-04-25 16:42:42] 2- Iniciando rotina de venda 
+[2018-04-25 16:42:43] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:42:53] 1- Iniciando rotina de compra
+[2018-04-25 16:42:55] price now = 0.016284
+[2018-04-25 16:42:55] 
+ Buy at 0.015915
+[2018-04-25 16:42:56] 2- Iniciando rotina de venda 
+[2018-04-25 16:42:56] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:43:06] 1- Iniciando rotina de compra
+[2018-04-25 16:43:09] price now = 0.01624
+[2018-04-25 16:43:09] 
+ Buy at 0.015915
+[2018-04-25 16:43:09] 2- Iniciando rotina de venda 
+[2018-04-25 16:43:10] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:43:20] 1- Iniciando rotina de compra
+[2018-04-25 16:43:22] price now = 0.01628
+[2018-04-25 16:43:22] 
+ Buy at 0.015915
+[2018-04-25 16:43:22] 2- Iniciando rotina de venda 
+[2018-04-25 16:43:23] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:43:33] 1- Iniciando rotina de compra
+[2018-04-25 16:43:34] price now = 0.01628
+[2018-04-25 16:43:34] 
+ Buy at 0.015915
+[2018-04-25 16:43:35] 2- Iniciando rotina de venda 
+[2018-04-25 16:43:36] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:43:46] 1- Iniciando rotina de compra
+[2018-04-25 16:43:47] price now = 0.016284
+[2018-04-25 16:43:47] 
+ Buy at 0.015915
+[2018-04-25 16:43:47] 2- Iniciando rotina de venda 
+[2018-04-25 16:43:48] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:43:58] 1- Iniciando rotina de compra
+[2018-04-25 16:43:59] price now = 0.016284
+[2018-04-25 16:43:59] 
+ Buy at 0.015915
+[2018-04-25 16:44:00] 2- Iniciando rotina de venda 
+[2018-04-25 16:44:01] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:44:11] 1- Iniciando rotina de compra
+[2018-04-25 16:44:13] price now = 0.016282
+[2018-04-25 16:44:13] 
+ Buy at 0.015915
+[2018-04-25 16:44:13] 2- Iniciando rotina de venda 
+[2018-04-25 16:44:14] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:44:24] 1- Iniciando rotina de compra
+[2018-04-25 16:44:25] price now = 0.016283
+[2018-04-25 16:44:25] 
+ Buy at 0.015915
+[2018-04-25 16:44:26] 2- Iniciando rotina de venda 
+[2018-04-25 16:44:26] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:44:36] 1- Iniciando rotina de compra
+[2018-04-25 16:44:39] price now = 0.016251
+[2018-04-25 16:44:39] 
+ Buy at 0.015915
+[2018-04-25 16:44:39] 2- Iniciando rotina de venda 
+[2018-04-25 16:44:40] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:44:50] 1- Iniciando rotina de compra
+[2018-04-25 16:44:52] price now = 0.016267
+[2018-04-25 16:44:52] 
+ Buy at 0.015915
+[2018-04-25 16:44:52] 2- Iniciando rotina de venda 
+[2018-04-25 16:44:53] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:45:03] 1- Iniciando rotina de compra
+[2018-04-25 16:45:05] price now = 0.016282
+[2018-04-25 16:45:05] 
+ Buy at 0.015915
+[2018-04-25 16:45:06] 2- Iniciando rotina de venda 
+[2018-04-25 16:45:07] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:45:17] 1- Iniciando rotina de compra
+[2018-04-25 16:45:18] price now = 0.016248
+[2018-04-25 16:45:18] 
+ Buy at 0.015915
+[2018-04-25 16:45:19] 2- Iniciando rotina de venda 
+[2018-04-25 16:45:20] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:45:30] 1- Iniciando rotina de compra
+[2018-04-25 16:45:32] price now = 0.016251
+[2018-04-25 16:45:32] 
+ Buy at 0.015915
+[2018-04-25 16:45:32] 2- Iniciando rotina de venda 
+[2018-04-25 16:45:33] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:45:43] 1- Iniciando rotina de compra
+[2018-04-25 16:45:45] price now = 0.016271
+[2018-04-25 16:45:45] 
+ Buy at 0.015915
+[2018-04-25 16:45:46] 2- Iniciando rotina de venda 
+[2018-04-25 16:45:46] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:45:56] 1- Iniciando rotina de compra
+[2018-04-25 16:45:58] price now = 0.016271
+[2018-04-25 16:45:58] 
+ Buy at 0.015915
+[2018-04-25 16:45:59] 2- Iniciando rotina de venda 
+[2018-04-25 16:46:00] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:46:10] 1- Iniciando rotina de compra
+[2018-04-25 16:46:11] price now = 0.016268
+[2018-04-25 16:46:11] 
+ Buy at 0.015915
+[2018-04-25 16:46:12] 2- Iniciando rotina de venda 
+[2018-04-25 16:46:13] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:46:23] 1- Iniciando rotina de compra
+[2018-04-25 16:46:24] price now = 0.016266
+[2018-04-25 16:46:24] 
+ Buy at 0.015915
+[2018-04-25 16:46:25] 2- Iniciando rotina de venda 
+[2018-04-25 16:46:26] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:46:36] 1- Iniciando rotina de compra
+[2018-04-25 16:46:38] price now = 0.016243
+[2018-04-25 16:46:38] 
+ Buy at 0.015915
+[2018-04-25 16:46:38] 2- Iniciando rotina de venda 
+[2018-04-25 16:46:39] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:46:49] 1- Iniciando rotina de compra
+[2018-04-25 16:46:51] price now = 0.016263
+[2018-04-25 16:46:51] 
+ Buy at 0.015915
+[2018-04-25 16:46:51] 2- Iniciando rotina de venda 
+[2018-04-25 16:46:53] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:47:03] 1- Iniciando rotina de compra
+[2018-04-25 16:47:04] price now = 0.016279
+[2018-04-25 16:47:04] 
+ Buy at 0.015915
+[2018-04-25 16:47:05] 2- Iniciando rotina de venda 
+[2018-04-25 16:47:06] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:47:16] 1- Iniciando rotina de compra
+[2018-04-25 16:47:18] price now = 0.01628
+[2018-04-25 16:47:18] 
+ Buy at 0.015915
+[2018-04-25 16:47:18] 2- Iniciando rotina de venda 
+[2018-04-25 16:47:19] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:47:29] 1- Iniciando rotina de compra
+[2018-04-25 16:47:31] price now = 0.016278
+[2018-04-25 16:47:31] 
+ Buy at 0.015915
+[2018-04-25 16:47:31] 2- Iniciando rotina de venda 
+[2018-04-25 16:47:32] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:47:42] 1- Iniciando rotina de compra
+[2018-04-25 16:47:43] price now = 0.016278
+[2018-04-25 16:47:43] 
+ Buy at 0.015915
+[2018-04-25 16:47:44] 2- Iniciando rotina de venda 
+[2018-04-25 16:47:44] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:47:54] 1- Iniciando rotina de compra
+[2018-04-25 16:47:56] price now = 0.016279
+[2018-04-25 16:47:56] 
+ Buy at 0.015915
+[2018-04-25 16:47:56] 2- Iniciando rotina de venda 
+[2018-04-25 16:47:57] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:48:07] 1- Iniciando rotina de compra
+[2018-04-25 16:48:08] price now = 0.016278
+[2018-04-25 16:48:08] 
+ Buy at 0.015915
+[2018-04-25 16:48:09] 2- Iniciando rotina de venda 
+[2018-04-25 16:48:09] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:48:19] 1- Iniciando rotina de compra
+[2018-04-25 16:48:20] price now = 0.016279
+[2018-04-25 16:48:20] 
+ Buy at 0.015915
+[2018-04-25 16:48:21] 2- Iniciando rotina de venda 
+[2018-04-25 16:48:21] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:48:31] 1- Iniciando rotina de compra
+[2018-04-25 16:48:33] price now = 0.016279
+[2018-04-25 16:48:33] 
+ Buy at 0.015915
+[2018-04-25 16:48:34] 2- Iniciando rotina de venda 
+[2018-04-25 16:48:34] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:48:44] 1- Iniciando rotina de compra
+[2018-04-25 16:48:45] price now = 0.016279
+[2018-04-25 16:48:45] 
+ Buy at 0.015915
+[2018-04-25 16:48:46] 2- Iniciando rotina de venda 
+[2018-04-25 16:48:46] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:48:56] 1- Iniciando rotina de compra
+[2018-04-25 16:48:58] price now = 0.016265
+[2018-04-25 16:48:58] 
+ Buy at 0.015915
+[2018-04-25 16:48:58] 2- Iniciando rotina de venda 
+[2018-04-25 16:48:59] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:49:09] 1- Iniciando rotina de compra
+[2018-04-25 16:49:11] price now = 0.016265
+[2018-04-25 16:49:11] 
+ Buy at 0.015915
+[2018-04-25 16:49:12] 2- Iniciando rotina de venda 
+[2018-04-25 16:49:12] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:49:22] 1- Iniciando rotina de compra
+[2018-04-25 16:49:23] price now = 0.016277
+[2018-04-25 16:49:23] 
+ Buy at 0.015915
+[2018-04-25 16:49:24] 2- Iniciando rotina de venda 
+[2018-04-25 16:49:24] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:49:34] 1- Iniciando rotina de compra
+[2018-04-25 16:49:36] price now = 0.016264
+[2018-04-25 16:49:36] 
+ Buy at 0.015915
+[2018-04-25 16:49:36] 2- Iniciando rotina de venda 
+[2018-04-25 16:49:37] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:49:47] 1- Iniciando rotina de compra
+[2018-04-25 16:49:48] price now = 0.016266
+[2018-04-25 16:49:48] 
+ Buy at 0.015915
+[2018-04-25 16:49:49] 2- Iniciando rotina de venda 
+[2018-04-25 16:49:50] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:50:00] 1- Iniciando rotina de compra
+[2018-04-25 16:50:02] price now = 0.016266
+[2018-04-25 16:50:02] 
+ Buy at 0.015915
+[2018-04-25 16:50:02] 2- Iniciando rotina de venda 
+[2018-04-25 16:50:03] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:50:13] 1- Iniciando rotina de compra
+[2018-04-25 16:50:16] price now = 0.016266
+[2018-04-25 16:50:16] 
+ Buy at 0.015915
+[2018-04-25 16:50:16] 2- Iniciando rotina de venda 
+[2018-04-25 16:50:17] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:50:27] 1- Iniciando rotina de compra
+[2018-04-25 16:50:28] price now = 0.016266
+[2018-04-25 16:50:28] 
+ Buy at 0.015915
+[2018-04-25 16:50:29] 2- Iniciando rotina de venda 
+[2018-04-25 16:50:29] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:50:39] 1- Iniciando rotina de compra
+[2018-04-25 16:50:41] price now = 0.016264
+[2018-04-25 16:50:41] 
+ Buy at 0.015915
+[2018-04-25 16:50:42] 2- Iniciando rotina de venda 
+[2018-04-25 16:50:43] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:50:53] 1- Iniciando rotina de compra
+[2018-04-25 16:50:55] price now = 0.016265
+[2018-04-25 16:50:55] 
+ Buy at 0.015915
+[2018-04-25 16:50:56] 2- Iniciando rotina de venda 
+[2018-04-25 16:50:56] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:51:06] 1- Iniciando rotina de compra
+[2018-04-25 16:51:08] price now = 0.016281
+[2018-04-25 16:51:08] 
+ Buy at 0.015915
+[2018-04-25 16:51:08] 2- Iniciando rotina de venda 
+[2018-04-25 16:51:09] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:51:19] 1- Iniciando rotina de compra
+[2018-04-25 16:51:21] price now = 0.016279
+[2018-04-25 16:51:21] 
+ Buy at 0.015915
+[2018-04-25 16:51:22] 2- Iniciando rotina de venda 
+[2018-04-25 16:51:23] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:51:33] 1- Iniciando rotina de compra
+[2018-04-25 16:51:34] price now = 0.016278
+[2018-04-25 16:51:34] 
+ Buy at 0.015915
+[2018-04-25 16:51:35] 2- Iniciando rotina de venda 
+[2018-04-25 16:51:36] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:51:46] 1- Iniciando rotina de compra
+[2018-04-25 16:51:47] price now = 0.016275
+[2018-04-25 16:51:47] 
+ Buy at 0.015915
+[2018-04-25 16:51:47] 2- Iniciando rotina de venda 
+[2018-04-25 16:51:48] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:51:59] 1- Iniciando rotina de compra
+[2018-04-25 16:52:00] price now = 0.016274
+[2018-04-25 16:52:00] 
+ Buy at 0.015915
+[2018-04-25 16:52:00] 2- Iniciando rotina de venda 
+[2018-04-25 16:52:02] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:52:12] 1- Iniciando rotina de compra
+[2018-04-25 16:52:13] price now = 0.016264
+[2018-04-25 16:52:13] 
+ Buy at 0.015915
+[2018-04-25 16:52:14] 2- Iniciando rotina de venda 
+[2018-04-25 16:52:14] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:52:24] 1- Iniciando rotina de compra
+[2018-04-25 16:52:25] price now = 0.016265
+[2018-04-25 16:52:25] 
+ Buy at 0.015915
+[2018-04-25 16:52:26] 2- Iniciando rotina de venda 
+[2018-04-25 16:52:26] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:52:36] 1- Iniciando rotina de compra
+[2018-04-25 16:52:38] price now = 0.016265
+[2018-04-25 16:52:38] 
+ Buy at 0.015915
+[2018-04-25 16:52:38] 2- Iniciando rotina de venda 
+[2018-04-25 16:52:39] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:52:49] 1- Iniciando rotina de compra
+[2018-04-25 16:52:51] price now = 0.016273
+[2018-04-25 16:52:51] 
+ Buy at 0.015915
+[2018-04-25 16:52:52] 2- Iniciando rotina de venda 
+[2018-04-25 16:52:52] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:53:02] 1- Iniciando rotina de compra
+[2018-04-25 16:53:05] price now = 0.016271
+[2018-04-25 16:53:05] 
+ Buy at 0.015915
+[2018-04-25 16:53:05] 2- Iniciando rotina de venda 
+[2018-04-25 16:53:06] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:53:16] 1- Iniciando rotina de compra
+[2018-04-25 16:53:18] price now = 0.016272
+[2018-04-25 16:53:18] 
+ Buy at 0.015915
+[2018-04-25 16:53:19] 2- Iniciando rotina de venda 
+[2018-04-25 16:53:20] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:53:30] 1- Iniciando rotina de compra
+[2018-04-25 16:53:32] price now = 0.016271
+[2018-04-25 16:53:32] 
+ Buy at 0.015915
+[2018-04-25 16:53:32] 2- Iniciando rotina de venda 
+[2018-04-25 16:53:33] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:53:43] 1- Iniciando rotina de compra
+[2018-04-25 16:53:45] price now = 0.016274
+[2018-04-25 16:53:45] 
+ Buy at 0.015915
+[2018-04-25 16:53:45] 2- Iniciando rotina de venda 
+[2018-04-25 16:53:46] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:53:56] 1- Iniciando rotina de compra
+[2018-04-25 16:53:58] price now = 0.016281
+[2018-04-25 16:53:58] 
+ Buy at 0.015915
+[2018-04-25 16:53:58] 2- Iniciando rotina de venda 
+[2018-04-25 16:53:59] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:54:09] 1- Iniciando rotina de compra
+[2018-04-25 16:54:12] price now = 0.016272
+[2018-04-25 16:54:12] 
+ Buy at 0.015915
+[2018-04-25 16:54:13] 2- Iniciando rotina de venda 
+[2018-04-25 16:54:13] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:54:23] 1- Iniciando rotina de compra
+[2018-04-25 16:54:25] price now = 0.016285
+[2018-04-25 16:54:25] 
+ Buy at 0.015915
+[2018-04-25 16:54:25] 2- Iniciando rotina de venda 
+[2018-04-25 16:54:27] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:54:37] 1- Iniciando rotina de compra
+[2018-04-25 16:54:39] price now = 0.016288
+[2018-04-25 16:54:39] 
+ Buy at 0.015915
+[2018-04-25 16:54:40] 2- Iniciando rotina de venda 
+[2018-04-25 16:54:41] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:54:51] 1- Iniciando rotina de compra
+[2018-04-25 16:54:52] price now = 0.016284
+[2018-04-25 16:54:52] 
+ Buy at 0.015915
+[2018-04-25 16:54:53] 2- Iniciando rotina de venda 
+[2018-04-25 16:54:53] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:55:03] 1- Iniciando rotina de compra
+[2018-04-25 16:55:05] price now = 0.016285
+[2018-04-25 16:55:05] 
+ Buy at 0.015915
+[2018-04-25 16:55:05] 2- Iniciando rotina de venda 
+[2018-04-25 16:55:06] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:55:16] 1- Iniciando rotina de compra
+[2018-04-25 16:55:17] price now = 0.016285
+[2018-04-25 16:55:17] 
+ Buy at 0.015915
+[2018-04-25 16:55:18] 2- Iniciando rotina de venda 
+[2018-04-25 16:55:18] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:55:28] 1- Iniciando rotina de compra
+[2018-04-25 16:55:30] price now = 0.016288
+[2018-04-25 16:55:30] 
+ Buy at 0.015915
+[2018-04-25 16:55:30] 2- Iniciando rotina de venda 
+[2018-04-25 16:55:30] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:55:40] 1- Iniciando rotina de compra
+[2018-04-25 16:55:42] price now = 0.016287
+[2018-04-25 16:55:42] 
+ Buy at 0.015915
+[2018-04-25 16:55:42] 2- Iniciando rotina de venda 
+[2018-04-25 16:55:43] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:55:53] 1- Iniciando rotina de compra
+[2018-04-25 16:55:54] price now = 0.016282
+[2018-04-25 16:55:54] 
+ Buy at 0.015915
+[2018-04-25 16:55:55] 2- Iniciando rotina de venda 
+[2018-04-25 16:55:56] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:56:06] 1- Iniciando rotina de compra
+[2018-04-25 16:56:08] price now = 0.016273
+[2018-04-25 16:56:08] 
+ Buy at 0.015915
+[2018-04-25 16:56:08] 2- Iniciando rotina de venda 
+[2018-04-25 16:56:09] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:56:19] 1- Iniciando rotina de compra
+[2018-04-25 16:56:21] price now = 0.016284
+[2018-04-25 16:56:21] 
+ Buy at 0.015915
+[2018-04-25 16:56:22] 2- Iniciando rotina de venda 
+[2018-04-25 16:56:23] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:56:33] 1- Iniciando rotina de compra
+[2018-04-25 16:56:34] price now = 0.016266
+[2018-04-25 16:56:34] 
+ Buy at 0.015915
+[2018-04-25 16:56:34] 2- Iniciando rotina de venda 
+[2018-04-25 16:56:35] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:56:45] 1- Iniciando rotina de compra
+[2018-04-25 16:56:47] price now = 0.016266
+[2018-04-25 16:56:47] 
+ Buy at 0.015915
+[2018-04-25 16:56:47] 2- Iniciando rotina de venda 
+[2018-04-25 16:56:48] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:56:58] 1- Iniciando rotina de compra
+[2018-04-25 16:57:00] price now = 0.016266
+[2018-04-25 16:57:00] 
+ Buy at 0.015915
+[2018-04-25 16:57:01] 2- Iniciando rotina de venda 
+[2018-04-25 16:57:02] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:57:12] 1- Iniciando rotina de compra
+[2018-04-25 16:57:14] price now = 0.016266
+[2018-04-25 16:57:14] 
+ Buy at 0.015915
+[2018-04-25 16:57:14] 2- Iniciando rotina de venda 
+[2018-04-25 16:57:15] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:57:25] 1- Iniciando rotina de compra
+[2018-04-25 16:57:26] price now = 0.016286
+[2018-04-25 16:57:26] 
+ Buy at 0.015915
+[2018-04-25 16:57:27] 2- Iniciando rotina de venda 
+[2018-04-25 16:57:28] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:57:38] 1- Iniciando rotina de compra
+[2018-04-25 16:57:40] price now = 0.016279
+[2018-04-25 16:57:40] 
+ Buy at 0.015915
+[2018-04-25 16:57:40] 2- Iniciando rotina de venda 
+[2018-04-25 16:57:41] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:57:51] 1- Iniciando rotina de compra
+[2018-04-25 16:57:53] price now = 0.0163
+[2018-04-25 16:57:53] 
+ Buy at 0.015915
+[2018-04-25 16:57:54] 2- Iniciando rotina de venda 
+[2018-04-25 16:57:54] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:58:04] 1- Iniciando rotina de compra
+[2018-04-25 16:58:06] price now = 0.016322
+[2018-04-25 16:58:06] 
+ Buy at 0.015915
+[2018-04-25 16:58:07] 2- Iniciando rotina de venda 
+[2018-04-25 16:58:08] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:58:18] 1- Iniciando rotina de compra
+[2018-04-25 16:58:20] price now = 0.016355
+[2018-04-25 16:58:20] 
+ Buy at 0.015915
+[2018-04-25 16:58:21] 2- Iniciando rotina de venda 
+[2018-04-25 16:58:21] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:58:31] 1- Iniciando rotina de compra
+[2018-04-25 16:58:32] price now = 0.016326
+[2018-04-25 16:58:32] 
+ Buy at 0.015915
+[2018-04-25 16:58:33] 2- Iniciando rotina de venda 
+[2018-04-25 16:58:34] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:58:44] 1- Iniciando rotina de compra
+[2018-04-25 16:58:46] price now = 0.0163
+[2018-04-25 16:58:46] 
+ Buy at 0.015915
+[2018-04-25 16:58:46] 2- Iniciando rotina de venda 
+[2018-04-25 16:58:47] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:58:57] 1- Iniciando rotina de compra
+[2018-04-25 16:58:59] price now = 0.0163
+[2018-04-25 16:58:59] 
+ Buy at 0.015915
+[2018-04-25 16:59:00] 2- Iniciando rotina de venda 
+[2018-04-25 16:59:01] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:59:11] 1- Iniciando rotina de compra
+[2018-04-25 16:59:13] price now = 0.01631
+[2018-04-25 16:59:13] 
+ Buy at 0.015915
+[2018-04-25 16:59:13] 2- Iniciando rotina de venda 
+[2018-04-25 16:59:14] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:59:24] 1- Iniciando rotina de compra
+[2018-04-25 16:59:27] price now = 0.016301
+[2018-04-25 16:59:27] 
+ Buy at 0.015915
+[2018-04-25 16:59:28] 2- Iniciando rotina de venda 
+[2018-04-25 16:59:29] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:59:39] 1- Iniciando rotina de compra
+[2018-04-25 16:59:41] price now = 0.0163
+[2018-04-25 16:59:41] 
+ Buy at 0.015915
+[2018-04-25 16:59:41] 2- Iniciando rotina de venda 
+[2018-04-25 16:59:42] ----Ainda nao ha nada para vender
+
+[2018-04-25 16:59:52] 1- Iniciando rotina de compra
+[2018-04-25 16:59:54] price now = 0.016301
+[2018-04-25 16:59:54] 
+ Buy at 0.015915
+[2018-04-25 16:59:55] 2- Iniciando rotina de venda 
+[2018-04-25 16:59:56] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:00:06] 1- Iniciando rotina de compra
+[2018-04-25 17:00:08] price now = 0.016293
+[2018-04-25 17:00:08] 
+ Buy at 0.015915
+[2018-04-25 17:00:08] 2- Iniciando rotina de venda 
+[2018-04-25 17:00:09] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:00:19] 1- Iniciando rotina de compra
+[2018-04-25 17:00:21] price now = 0.0163
+[2018-04-25 17:00:21] 
+ Buy at 0.015915
+[2018-04-25 17:00:22] 2- Iniciando rotina de venda 
+[2018-04-25 17:00:23] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:00:33] 1- Iniciando rotina de compra
+[2018-04-25 17:00:34] price now = 0.016293
+[2018-04-25 17:00:34] 
+ Buy at 0.015915
+[2018-04-25 17:00:35] 2- Iniciando rotina de venda 
+[2018-04-25 17:00:36] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:00:46] 1- Iniciando rotina de compra
+[2018-04-25 17:00:47] price now = 0.016291
+[2018-04-25 17:00:47] 
+ Buy at 0.015915
+[2018-04-25 17:00:48] 2- Iniciando rotina de venda 
+[2018-04-25 17:00:49] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:00:59] 1- Iniciando rotina de compra
+[2018-04-25 17:01:01] price now = 0.016291
+[2018-04-25 17:01:01] 
+ Buy at 0.015915
+[2018-04-25 17:01:02] 2- Iniciando rotina de venda 
+[2018-04-25 17:01:03] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:01:13] 1- Iniciando rotina de compra
+[2018-04-25 17:01:15] price now = 0.016267
+[2018-04-25 17:01:15] 
+ Buy at 0.015915
+[2018-04-25 17:01:15] 2- Iniciando rotina de venda 
+[2018-04-25 17:01:16] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:01:26] 1- Iniciando rotina de compra
+[2018-04-25 17:01:31] price now = 0.016249
+[2018-04-25 17:01:31] 
+ Buy at 0.015915
+[2018-04-25 17:01:32] 2- Iniciando rotina de venda 
+[2018-04-25 17:01:32] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:01:42] 1- Iniciando rotina de compra
+[2018-04-25 17:01:44] price now = 0.016242
+[2018-04-25 17:01:44] 
+ Buy at 0.015915
+[2018-04-25 17:01:45] 2- Iniciando rotina de venda 
+[2018-04-25 17:01:46] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:01:56] 1- Iniciando rotina de compra
+[2018-04-25 17:01:57] price now = 0.016255
+[2018-04-25 17:01:57] 
+ Buy at 0.015915
+[2018-04-25 17:01:58] 2- Iniciando rotina de venda 
+[2018-04-25 17:01:59] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:02:09] 1- Iniciando rotina de compra
+[2018-04-25 17:02:11] price now = 0.016249
+[2018-04-25 17:02:11] 
+ Buy at 0.015915
+[2018-04-25 17:04:56] 1- Iniciando rotina de compra
+[2018-04-25 17:04:57] price now = 0.016257
+[2018-04-25 17:04:57] 
+ Buy at 0.015915
+[2018-04-25 17:04:57] 2- Iniciando rotina de venda 
+[2018-04-25 17:04:58] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:05:08] 1- Iniciando rotina de compra
+[2018-04-25 17:05:09] price now = 0.016282
+[2018-04-25 17:05:09] 
+ Buy at 0.015915
+[2018-04-25 17:05:10] 2- Iniciando rotina de venda 
+[2018-04-25 17:05:10] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:05:20] 1- Iniciando rotina de compra
+[2018-04-25 17:05:22] price now = 0.016282
+[2018-04-25 17:05:22] 
+ Buy at 0.015915
+[2018-04-25 17:05:22] 2- Iniciando rotina de venda 
+[2018-04-25 17:05:23] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:05:33] 1- Iniciando rotina de compra
+[2018-04-25 17:05:34] price now = 0.01626
+[2018-04-25 17:05:34] 
+ Buy at 0.015915
+[2018-04-25 17:05:35] 2- Iniciando rotina de venda 
+[2018-04-25 17:05:35] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:05:45] 1- Iniciando rotina de compra
+[2018-04-25 17:05:46] price now = 0.016282
+[2018-04-25 17:05:46] 
+ Buy at 0.015915
+[2018-04-25 17:05:47] 2- Iniciando rotina de venda 
+[2018-04-25 17:05:47] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:05:57] 1- Iniciando rotina de compra
+[2018-04-25 17:05:59] price now = 0.016268
+[2018-04-25 17:05:59] 
+ Buy at 0.015915
+[2018-04-25 17:05:59] 2- Iniciando rotina de venda 
+[2018-04-25 17:06:00] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:06:10] 1- Iniciando rotina de compra
+[2018-04-25 17:06:13] price now = 0.016282
+[2018-04-25 17:06:13] 
+ Buy at 0.015915
+[2018-04-25 17:06:15] 2- Iniciando rotina de venda 
+[2018-04-25 17:06:16] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:06:26] 1- Iniciando rotina de compra
+[2018-04-25 17:06:27] price now = 0.016269
+[2018-04-25 17:06:27] 
+ Buy at 0.015915
+[2018-04-25 17:06:28] 2- Iniciando rotina de venda 
+[2018-04-25 17:06:29] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:06:39] 1- Iniciando rotina de compra
+[2018-04-25 17:06:40] price now = 0.016272
+[2018-04-25 17:06:40] 
+ Buy at 0.015915
+[2018-04-25 17:06:41] 2- Iniciando rotina de venda 
+[2018-04-25 17:06:41] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:06:51] 1- Iniciando rotina de compra
+[2018-04-25 17:06:53] price now = 0.016276
+[2018-04-25 17:06:53] 
+ Buy at 0.015915
+[2018-04-25 17:06:53] 2- Iniciando rotina de venda 
+[2018-04-25 17:06:54] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:07:04] 1- Iniciando rotina de compra
+[2018-04-25 17:07:06] price now = 0.016272
+[2018-04-25 17:07:06] 
+ Buy at 0.015915
+[2018-04-25 17:07:07] 2- Iniciando rotina de venda 
+[2018-04-25 17:07:07] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:07:17] 1- Iniciando rotina de compra
+[2018-04-25 17:07:19] price now = 0.01627
+[2018-04-25 17:07:19] 
+ Buy at 0.015915
+[2018-04-25 17:07:20] 2- Iniciando rotina de venda 
+[2018-04-25 17:07:21] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:07:31] 1- Iniciando rotina de compra
+[2018-04-25 17:07:32] price now = 0.016272
+[2018-04-25 17:07:32] 
+ Buy at 0.015915
+[2018-04-25 17:07:33] 2- Iniciando rotina de venda 
+[2018-04-25 17:07:34] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:07:44] 1- Iniciando rotina de compra
+[2018-04-25 17:07:46] price now = 0.016271
+[2018-04-25 17:07:46] 
+ Buy at 0.015915
+[2018-04-25 17:07:47] 2- Iniciando rotina de venda 
+[2018-04-25 17:07:48] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:07:58] 1- Iniciando rotina de compra
+[2018-04-25 17:08:00] price now = 0.016293
+[2018-04-25 17:08:00] 
+ Buy at 0.015915
+[2018-04-25 17:08:01] 2- Iniciando rotina de venda 
+[2018-04-25 17:08:02] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:08:12] 1- Iniciando rotina de compra
+[2018-04-25 17:08:13] price now = 0.016285
+[2018-04-25 17:08:13] 
+ Buy at 0.015915
+[2018-04-25 17:08:14] 2- Iniciando rotina de venda 
+[2018-04-25 17:08:14] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:08:24] 1- Iniciando rotina de compra
+[2018-04-25 17:08:25] price now = 0.016285
+[2018-04-25 17:08:25] 
+ Buy at 0.015915
+[2018-04-25 17:08:26] 2- Iniciando rotina de venda 
+[2018-04-25 17:08:27] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:08:37] 1- Iniciando rotina de compra
+[2018-04-25 17:08:38] price now = 0.016287
+[2018-04-25 17:08:38] 
+ Buy at 0.015915
+[2018-04-25 17:08:39] 2- Iniciando rotina de venda 
+[2018-04-25 17:08:39] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:08:49] 1- Iniciando rotina de compra
+[2018-04-25 17:08:51] price now = 0.016284
+[2018-04-25 17:08:51] 
+ Buy at 0.015915
+[2018-04-25 17:08:52] 2- Iniciando rotina de venda 
+[2018-04-25 17:08:52] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:09:02] 1- Iniciando rotina de compra
+[2018-04-25 17:09:03] price now = 0.016284
+[2018-04-25 17:09:03] 
+ Buy at 0.015915
+[2018-04-25 17:09:04] 2- Iniciando rotina de venda 
+[2018-04-25 17:09:04] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:09:14] 1- Iniciando rotina de compra
+[2018-04-25 17:09:15] price now = 0.016287
+[2018-04-25 17:09:15] 
+ Buy at 0.015915
+[2018-04-25 17:09:16] 2- Iniciando rotina de venda 
+[2018-04-25 17:09:16] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:09:27] 1- Iniciando rotina de compra
+[2018-04-25 17:09:28] price now = 0.016275
+[2018-04-25 17:09:28] 
+ Buy at 0.015915
+[2018-04-25 17:09:28] 2- Iniciando rotina de venda 
+[2018-04-25 17:09:29] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:09:39] 1- Iniciando rotina de compra
+[2018-04-25 17:09:40] price now = 0.016274
+[2018-04-25 17:09:40] 
+ Buy at 0.015915
+[2018-04-25 17:09:40] 2- Iniciando rotina de venda 
+[2018-04-25 17:09:41] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:09:51] 1- Iniciando rotina de compra
+[2018-04-25 17:09:52] price now = 0.016273
+[2018-04-25 17:09:52] 
+ Buy at 0.015915
+[2018-04-25 17:09:53] 2- Iniciando rotina de venda 
+[2018-04-25 17:09:53] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:10:03] 1- Iniciando rotina de compra
+[2018-04-25 17:10:04] price now = 0.016288
+[2018-04-25 17:10:04] 
+ Buy at 0.015915
+[2018-04-25 17:10:05] 2- Iniciando rotina de venda 
+[2018-04-25 17:10:05] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:10:15] 1- Iniciando rotina de compra
+[2018-04-25 17:10:16] price now = 0.016274
+[2018-04-25 17:10:16] 
+ Buy at 0.015915
+[2018-04-25 17:10:17] 2- Iniciando rotina de venda 
+[2018-04-25 17:10:17] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:10:27] 1- Iniciando rotina de compra
+[2018-04-25 17:10:28] price now = 0.016276
+[2018-04-25 17:10:28] 
+ Buy at 0.015915
+[2018-04-25 17:10:29] 2- Iniciando rotina de venda 
+[2018-04-25 17:10:30] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:10:40] 1- Iniciando rotina de compra
+[2018-04-25 17:10:41] price now = 0.016286
+[2018-04-25 17:10:41] 
+ Buy at 0.015915
+[2018-04-25 17:10:41] 2- Iniciando rotina de venda 
+[2018-04-25 17:10:42] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:10:52] 1- Iniciando rotina de compra
+[2018-04-25 17:10:53] price now = 0.016303
+[2018-04-25 17:10:53] 
+ Buy at 0.015915
+[2018-04-25 17:10:53] 2- Iniciando rotina de venda 
+[2018-04-25 17:10:54] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:11:04] 1- Iniciando rotina de compra
+[2018-04-25 17:11:05] price now = 0.01629
+[2018-04-25 17:11:05] 
+ Buy at 0.015915
+[2018-04-25 17:11:06] 2- Iniciando rotina de venda 
+[2018-04-25 17:11:06] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:11:16] 1- Iniciando rotina de compra
+[2018-04-25 17:11:17] price now = 0.01629
+[2018-04-25 17:11:17] 
+ Buy at 0.015915
+[2018-04-25 17:11:18] 2- Iniciando rotina de venda 
+[2018-04-25 17:11:18] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:11:28] 1- Iniciando rotina de compra
+[2018-04-25 17:11:29] price now = 0.01629
+[2018-04-25 17:11:29] 
+ Buy at 0.015915
+[2018-04-25 17:11:30] 2- Iniciando rotina de venda 
+[2018-04-25 17:11:30] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:11:40] 1- Iniciando rotina de compra
+[2018-04-25 17:11:42] price now = 0.016287
+[2018-04-25 17:11:42] 
+ Buy at 0.015915
+[2018-04-25 17:11:42] 2- Iniciando rotina de venda 
+[2018-04-25 17:11:43] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:11:53] 1- Iniciando rotina de compra
+[2018-04-25 17:11:54] price now = 0.016288
+[2018-04-25 17:11:54] 
+ Buy at 0.015915
+[2018-04-25 17:11:54] 2- Iniciando rotina de venda 
+[2018-04-25 17:11:55] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:12:05] 1- Iniciando rotina de compra
+[2018-04-25 17:12:06] price now = 0.016288
+[2018-04-25 17:12:06] 
+ Buy at 0.015915
+[2018-04-25 17:12:07] 2- Iniciando rotina de venda 
+[2018-04-25 17:12:07] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:12:17] 1- Iniciando rotina de compra
+[2018-04-25 17:12:18] price now = 0.016288
+[2018-04-25 17:12:18] 
+ Buy at 0.015915
+[2018-04-25 17:12:19] 2- Iniciando rotina de venda 
+[2018-04-25 17:12:19] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:12:29] 1- Iniciando rotina de compra
+[2018-04-25 17:12:30] price now = 0.016287
+[2018-04-25 17:12:30] 
+ Buy at 0.015915
+[2018-04-25 17:12:31] 2- Iniciando rotina de venda 
+[2018-04-25 17:12:31] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:12:41] 1- Iniciando rotina de compra
+[2018-04-25 17:12:43] price now = 0.016286
+[2018-04-25 17:12:43] 
+ Buy at 0.015915
+[2018-04-25 17:12:44] 2- Iniciando rotina de venda 
+[2018-04-25 17:12:45] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:12:55] 1- Iniciando rotina de compra
+[2018-04-25 17:12:57] price now = 0.016277
+[2018-04-25 17:12:57] 
+ Buy at 0.015915
+[2018-04-25 17:12:58] 2- Iniciando rotina de venda 
+[2018-04-25 17:12:59] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:13:09] 1- Iniciando rotina de compra
+[2018-04-25 17:13:11] price now = 0.016277
+[2018-04-25 17:13:11] 
+ Buy at 0.015915
+[2018-04-25 17:13:11] 2- Iniciando rotina de venda 
+[2018-04-25 17:13:12] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:13:22] 1- Iniciando rotina de compra
+[2018-04-25 17:13:24] price now = 0.016278
+[2018-04-25 17:13:24] 
+ Buy at 0.015915
+[2018-04-25 17:13:25] 2- Iniciando rotina de venda 
+[2018-04-25 17:13:25] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:13:35] 1- Iniciando rotina de compra
+[2018-04-25 17:13:36] price now = 0.016278
+[2018-04-25 17:13:36] 
+ Buy at 0.015915
+[2018-04-25 17:13:37] 2- Iniciando rotina de venda 
+[2018-04-25 17:13:38] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:13:48] 1- Iniciando rotina de compra
+[2018-04-25 17:13:50] price now = 0.016286
+[2018-04-25 17:13:50] 
+ Buy at 0.015915
+[2018-04-25 17:13:51] 2- Iniciando rotina de venda 
+[2018-04-25 17:13:52] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:14:02] 1- Iniciando rotina de compra
+[2018-04-25 17:14:04] price now = 0.01628
+[2018-04-25 17:14:04] 
+ Buy at 0.015915
+[2018-04-25 17:14:05] 2- Iniciando rotina de venda 
+[2018-04-25 17:14:06] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:14:16] 1- Iniciando rotina de compra
+[2018-04-25 17:14:18] price now = 0.016278
+[2018-04-25 17:14:18] 
+ Buy at 0.015915
+[2018-04-25 17:14:19] 2- Iniciando rotina de venda 
+[2018-04-25 17:14:19] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:14:29] 1- Iniciando rotina de compra
+[2018-04-25 17:14:32] price now = 0.016281
+[2018-04-25 17:14:32] 
+ Buy at 0.015915
+[2018-04-25 17:14:32] 2- Iniciando rotina de venda 
+[2018-04-25 17:14:33] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:14:43] 1- Iniciando rotina de compra
+[2018-04-25 17:14:44] price now = 0.016281
+[2018-04-25 17:14:44] 
+ Buy at 0.015915
+[2018-04-25 17:14:44] 2- Iniciando rotina de venda 
+[2018-04-25 17:14:45] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:14:55] 1- Iniciando rotina de compra
+[2018-04-25 17:14:56] price now = 0.016281
+[2018-04-25 17:14:56] 
+ Buy at 0.015915
+[2018-04-25 17:14:57] 2- Iniciando rotina de venda 
+[2018-04-25 17:14:57] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:15:07] 1- Iniciando rotina de compra
+[2018-04-25 17:15:08] price now = 0.016285
+[2018-04-25 17:15:08] 
+ Buy at 0.015915
+[2018-04-25 17:15:09] 2- Iniciando rotina de venda 
+[2018-04-25 17:15:09] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:15:19] 1- Iniciando rotina de compra
+[2018-04-25 17:15:20] price now = 0.016284
+[2018-04-25 17:15:20] 
+ Buy at 0.015915
+[2018-04-25 17:15:21] 2- Iniciando rotina de venda 
+[2018-04-25 17:15:21] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:15:31] 1- Iniciando rotina de compra
+[2018-04-25 17:15:32] price now = 0.016284
+[2018-04-25 17:15:32] 
+ Buy at 0.015915
+[2018-04-25 17:15:33] 2- Iniciando rotina de venda 
+[2018-04-25 17:15:33] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:15:43] 1- Iniciando rotina de compra
+[2018-04-25 17:15:45] price now = 0.01629
+[2018-04-25 17:15:45] 
+ Buy at 0.015915
+[2018-04-25 17:15:45] 2- Iniciando rotina de venda 
+[2018-04-25 17:15:46] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:15:56] 1- Iniciando rotina de compra
+[2018-04-25 17:15:57] price now = 0.016279
+[2018-04-25 17:15:57] 
+ Buy at 0.015915
+[2018-04-25 17:15:57] 2- Iniciando rotina de venda 
+[2018-04-25 17:15:58] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:16:08] 1- Iniciando rotina de compra
+[2018-04-25 17:16:09] price now = 0.016289
+[2018-04-25 17:16:09] 
+ Buy at 0.015915
+[2018-04-25 17:16:09] 2- Iniciando rotina de venda 
+[2018-04-25 17:16:10] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:16:20] 1- Iniciando rotina de compra
+[2018-04-25 17:16:21] price now = 0.016265
+[2018-04-25 17:16:21] 
+ Buy at 0.015915
+[2018-04-25 17:16:22] 2- Iniciando rotina de venda 
+[2018-04-25 17:16:22] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:16:32] 1- Iniciando rotina de compra
+[2018-04-25 17:16:33] price now = 0.016289
+[2018-04-25 17:16:33] 
+ Buy at 0.015915
+[2018-04-25 17:16:34] 2- Iniciando rotina de venda 
+[2018-04-25 17:16:35] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:16:45] 1- Iniciando rotina de compra
+[2018-04-25 17:16:46] price now = 0.016289
+[2018-04-25 17:16:46] 
+ Buy at 0.015915
+[2018-04-25 17:16:47] 2- Iniciando rotina de venda 
+[2018-04-25 17:16:47] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:16:57] 1- Iniciando rotina de compra
+[2018-04-25 17:16:58] price now = 0.016288
+[2018-04-25 17:16:58] 
+ Buy at 0.015915
+[2018-04-25 17:16:59] 2- Iniciando rotina de venda 
+[2018-04-25 17:16:59] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:17:09] 1- Iniciando rotina de compra
+[2018-04-25 17:17:10] price now = 0.01629
+[2018-04-25 17:17:10] 
+ Buy at 0.015915
+[2018-04-25 17:17:11] 2- Iniciando rotina de venda 
+[2018-04-25 17:17:12] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:17:22] 1- Iniciando rotina de compra
+[2018-04-25 17:17:23] price now = 0.016288
+[2018-04-25 17:17:23] 
+ Buy at 0.015915
+[2018-04-25 17:17:23] 2- Iniciando rotina de venda 
+[2018-04-25 17:17:24] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:17:34] 1- Iniciando rotina de compra
+[2018-04-25 17:17:35] price now = 0.016288
+[2018-04-25 17:17:35] 
+ Buy at 0.015915
+[2018-04-25 17:17:35] 2- Iniciando rotina de venda 
+[2018-04-25 17:17:36] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:17:46] 1- Iniciando rotina de compra
+[2018-04-25 17:17:47] price now = 0.016287
+[2018-04-25 17:17:47] 
+ Buy at 0.015915
+[2018-04-25 17:17:48] 2- Iniciando rotina de venda 
+[2018-04-25 17:17:48] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:17:58] 1- Iniciando rotina de compra
+[2018-04-25 17:17:59] price now = 0.016288
+[2018-04-25 17:17:59] 
+ Buy at 0.015915
+[2018-04-25 17:18:00] 2- Iniciando rotina de venda 
+[2018-04-25 17:18:00] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:18:10] 1- Iniciando rotina de compra
+[2018-04-25 17:18:11] price now = 0.016302
+[2018-04-25 17:18:11] 
+ Buy at 0.015915
+[2018-04-25 17:18:12] 2- Iniciando rotina de venda 
+[2018-04-25 17:18:12] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:18:22] 1- Iniciando rotina de compra
+[2018-04-25 17:18:23] price now = 0.016303
+[2018-04-25 17:18:23] 
+ Buy at 0.015915
+[2018-04-25 17:18:24] 2- Iniciando rotina de venda 
+[2018-04-25 17:18:24] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:18:34] 1- Iniciando rotina de compra
+[2018-04-25 17:18:36] price now = 0.016318
+[2018-04-25 17:18:36] 
+ Buy at 0.015915
+[2018-04-25 17:18:37] 2- Iniciando rotina de venda 
+[2018-04-25 17:18:38] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:18:48] 1- Iniciando rotina de compra
+[2018-04-25 17:18:49] price now = 0.016317
+[2018-04-25 17:18:49] 
+ Buy at 0.015915
+[2018-04-25 17:18:50] 2- Iniciando rotina de venda 
+[2018-04-25 17:18:51] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:19:01] 1- Iniciando rotina de compra
+[2018-04-25 17:19:02] price now = 0.016291
+[2018-04-25 17:19:02] 
+ Buy at 0.015915
+[2018-04-25 17:19:03] 2- Iniciando rotina de venda 
+[2018-04-25 17:19:04] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:19:14] 1- Iniciando rotina de compra
+[2018-04-25 17:19:16] price now = 0.016318
+[2018-04-25 17:19:16] 
+ Buy at 0.015915
+[2018-04-25 17:19:16] 2- Iniciando rotina de venda 
+[2018-04-25 17:19:17] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:19:27] 1- Iniciando rotina de compra
+[2018-04-25 17:19:30] price now = 0.016312
+[2018-04-25 17:19:30] 
+ Buy at 0.015915
+[2018-04-25 17:19:30] 2- Iniciando rotina de venda 
+[2018-04-25 17:19:31] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:19:41] 1- Iniciando rotina de compra
+[2018-04-25 17:19:43] price now = 0.016312
+[2018-04-25 17:19:43] 
+ Buy at 0.015915
+[2018-04-25 17:19:44] 2- Iniciando rotina de venda 
+[2018-04-25 17:19:45] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:19:55] 1- Iniciando rotina de compra
+[2018-04-25 17:19:57] price now = 0.016293
+[2018-04-25 17:19:57] 
+ Buy at 0.015915
+[2018-04-25 17:19:58] 2- Iniciando rotina de venda 
+[2018-04-25 17:19:58] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:20:08] 1- Iniciando rotina de compra
+[2018-04-25 17:20:10] price now = 0.016292
+[2018-04-25 17:20:10] 
+ Buy at 0.015915
+[2018-04-25 17:20:11] 2- Iniciando rotina de venda 
+[2018-04-25 17:20:12] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:20:22] 1- Iniciando rotina de compra
+[2018-04-25 17:20:24] price now = 0.016292
+[2018-04-25 17:20:24] 
+ Buy at 0.015915
+[2018-04-25 17:20:25] 2- Iniciando rotina de venda 
+[2018-04-25 17:20:26] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:20:36] 1- Iniciando rotina de compra
+[2018-04-25 17:20:38] price now = 0.016292
+[2018-04-25 17:20:38] 
+ Buy at 0.015915
+[2018-04-25 17:20:38] 2- Iniciando rotina de venda 
+[2018-04-25 17:20:39] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:20:49] 1- Iniciando rotina de compra
+[2018-04-25 17:20:51] price now = 0.0163
+[2018-04-25 17:20:51] 
+ Buy at 0.015915
+[2018-04-25 17:20:52] 2- Iniciando rotina de venda 
+[2018-04-25 17:20:53] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:21:03] 1- Iniciando rotina de compra
+[2018-04-25 17:21:04] price now = 0.01629
+[2018-04-25 17:21:04] 
+ Buy at 0.015915
+[2018-04-25 17:21:05] 2- Iniciando rotina de venda 
+[2018-04-25 17:21:05] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:21:15] 1- Iniciando rotina de compra
+[2018-04-25 17:21:16] price now = 0.016288
+[2018-04-25 17:21:16] 
+ Buy at 0.015915
+[2018-04-25 17:21:17] 2- Iniciando rotina de venda 
+[2018-04-25 17:21:17] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:21:27] 1- Iniciando rotina de compra
+[2018-04-25 17:21:28] price now = 0.016289
+[2018-04-25 17:21:28] 
+ Buy at 0.015915
+[2018-04-25 17:21:29] 2- Iniciando rotina de venda 
+[2018-04-25 17:21:29] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:21:39] 1- Iniciando rotina de compra
+[2018-04-25 17:21:41] price now = 0.016281
+[2018-04-25 17:21:41] 
+ Buy at 0.015915
+[2018-04-25 17:21:41] 2- Iniciando rotina de venda 
+[2018-04-25 17:21:42] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:21:52] 1- Iniciando rotina de compra
+[2018-04-25 17:21:53] price now = 0.016263
+[2018-04-25 17:21:53] 
+ Buy at 0.015915
+[2018-04-25 17:21:53] 2- Iniciando rotina de venda 
+[2018-04-25 17:21:54] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:22:04] 1- Iniciando rotina de compra
+[2018-04-25 17:22:05] price now = 0.016264
+[2018-04-25 17:22:05] 
+ Buy at 0.015915
+[2018-04-25 17:22:06] 2- Iniciando rotina de venda 
+[2018-04-25 17:22:06] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:22:17] 1- Iniciando rotina de compra
+[2018-04-25 17:22:18] price now = 0.01627
+[2018-04-25 17:22:18] 
+ Buy at 0.015915
+[2018-04-25 17:22:18] 2- Iniciando rotina de venda 
+[2018-04-25 17:22:19] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:22:29] 1- Iniciando rotina de compra
+[2018-04-25 17:22:30] price now = 0.016269
+[2018-04-25 17:22:30] 
+ Buy at 0.015915
+[2018-04-25 17:22:30] 2- Iniciando rotina de venda 
+[2018-04-25 17:22:31] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:22:41] 1- Iniciando rotina de compra
+[2018-04-25 17:22:42] price now = 0.016269
+[2018-04-25 17:22:42] 
+ Buy at 0.015915
+[2018-04-25 17:22:42] 2- Iniciando rotina de venda 
+[2018-04-25 17:22:43] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:22:53] 1- Iniciando rotina de compra
+[2018-04-25 17:22:54] price now = 0.016269
+[2018-04-25 17:22:54] 
+ Buy at 0.015915
+[2018-04-25 17:22:55] 2- Iniciando rotina de venda 
+[2018-04-25 17:22:56] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:23:06] 1- Iniciando rotina de compra
+[2018-04-25 17:23:07] price now = 0.016288
+[2018-04-25 17:23:07] 
+ Buy at 0.015915
+[2018-04-25 17:23:07] 2- Iniciando rotina de venda 
+[2018-04-25 17:23:08] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:23:18] 1- Iniciando rotina de compra
+[2018-04-25 17:23:19] price now = 0.016289
+[2018-04-25 17:23:19] 
+ Buy at 0.015915
+[2018-04-25 17:23:19] 2- Iniciando rotina de venda 
+[2018-04-25 17:23:20] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:23:30] 1- Iniciando rotina de compra
+[2018-04-25 17:23:31] price now = 0.016288
+[2018-04-25 17:23:31] 
+ Buy at 0.015915
+[2018-04-25 17:23:32] 2- Iniciando rotina de venda 
+[2018-04-25 17:23:32] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:23:42] 1- Iniciando rotina de compra
+[2018-04-25 17:23:43] price now = 0.016286
+[2018-04-25 17:23:43] 
+ Buy at 0.015915
+[2018-04-25 17:23:44] 2- Iniciando rotina de venda 
+[2018-04-25 17:23:44] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:23:54] 1- Iniciando rotina de compra
+[2018-04-25 17:23:55] price now = 0.016268
+[2018-04-25 17:23:55] 
+ Buy at 0.015915
+[2018-04-25 17:23:56] 2- Iniciando rotina de venda 
+[2018-04-25 17:23:57] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:24:07] 1- Iniciando rotina de compra
+[2018-04-25 17:24:08] price now = 0.016248
+[2018-04-25 17:24:08] 
+ Buy at 0.015915
+[2018-04-25 17:24:08] 2- Iniciando rotina de venda 
+[2018-04-25 17:24:09] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:24:19] 1- Iniciando rotina de compra
+[2018-04-25 17:24:20] price now = 0.016287
+[2018-04-25 17:24:20] 
+ Buy at 0.015915
+[2018-04-25 17:24:21] 2- Iniciando rotina de venda 
+[2018-04-25 17:24:21] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:24:31] 1- Iniciando rotina de compra
+[2018-04-25 17:24:32] price now = 0.01629
+[2018-04-25 17:24:32] 
+ Buy at 0.015915
+[2018-04-25 17:24:33] 2- Iniciando rotina de venda 
+[2018-04-25 17:24:33] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:24:43] 1- Iniciando rotina de compra
+[2018-04-25 17:24:44] price now = 0.016287
+[2018-04-25 17:24:44] 
+ Buy at 0.015915
+[2018-04-25 17:24:45] 2- Iniciando rotina de venda 
+[2018-04-25 17:24:45] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:24:55] 1- Iniciando rotina de compra
+[2018-04-25 17:24:56] price now = 0.01631
+[2018-04-25 17:24:56] 
+ Buy at 0.015915
+[2018-04-25 17:24:57] 2- Iniciando rotina de venda 
+[2018-04-25 17:24:58] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:25:08] 1- Iniciando rotina de compra
+[2018-04-25 17:25:09] price now = 0.016318
+[2018-04-25 17:25:09] 
+ Buy at 0.015915
+[2018-04-25 17:25:09] 2- Iniciando rotina de venda 
+[2018-04-25 17:25:10] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:25:20] 1- Iniciando rotina de compra
+[2018-04-25 17:25:21] price now = 0.016293
+[2018-04-25 17:25:21] 
+ Buy at 0.015915
+[2018-04-25 17:25:22] 2- Iniciando rotina de venda 
+[2018-04-25 17:25:22] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:25:32] 1- Iniciando rotina de compra
+[2018-04-25 17:25:33] price now = 0.016293
+[2018-04-25 17:25:33] 
+ Buy at 0.015915
+[2018-04-25 17:25:34] 2- Iniciando rotina de venda 
+[2018-04-25 17:25:34] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:25:44] 1- Iniciando rotina de compra
+[2018-04-25 17:25:46] price now = 0.016313
+[2018-04-25 17:25:46] 
+ Buy at 0.015915
+[2018-04-25 17:25:47] 2- Iniciando rotina de venda 
+[2018-04-25 17:25:47] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:25:57] 1- Iniciando rotina de compra
+[2018-04-25 17:25:58] price now = 0.016296
+[2018-04-25 17:25:58] 
+ Buy at 0.015915
+[2018-04-25 17:25:59] 2- Iniciando rotina de venda 
+[2018-04-25 17:25:59] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:26:09] 1- Iniciando rotina de compra
+[2018-04-25 17:26:10] price now = 0.01631
+[2018-04-25 17:26:10] 
+ Buy at 0.015915
+[2018-04-25 17:26:11] 2- Iniciando rotina de venda 
+[2018-04-25 17:26:11] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:26:22] 1- Iniciando rotina de compra
+[2018-04-25 17:26:23] price now = 0.016288
+[2018-04-25 17:26:23] 
+ Buy at 0.015915
+[2018-04-25 17:26:23] 2- Iniciando rotina de venda 
+[2018-04-25 17:26:24] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:26:34] 1- Iniciando rotina de compra
+[2018-04-25 17:26:35] price now = 0.016312
+[2018-04-25 17:26:35] 
+ Buy at 0.015915
+[2018-04-25 17:26:35] 2- Iniciando rotina de venda 
+[2018-04-25 17:26:36] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:26:46] 1- Iniciando rotina de compra
+[2018-04-25 17:26:47] price now = 0.016308
+[2018-04-25 17:26:47] 
+ Buy at 0.015915
+[2018-04-25 17:26:48] 2- Iniciando rotina de venda 
+[2018-04-25 17:26:48] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:26:58] 1- Iniciando rotina de compra
+[2018-04-25 17:26:59] price now = 0.016283
+[2018-04-25 17:26:59] 
+ Buy at 0.015915
+[2018-04-25 17:27:00] 2- Iniciando rotina de venda 
+[2018-04-25 17:27:00] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:27:10] 1- Iniciando rotina de compra
+[2018-04-25 17:27:11] price now = 0.016306
+[2018-04-25 17:27:11] 
+ Buy at 0.015915
+[2018-04-25 17:27:12] 2- Iniciando rotina de venda 
+[2018-04-25 17:27:12] ----Ainda nao ha nada para vender
+
+[2018-04-25 17:27:22] 1- Iniciando rotina de compra
+[2018-04-25 17:27:23] price now = 0.016283
+[2018-04-25 17:27:23] 
+ Buy at 0.015915
+[2018-04-25 17:27:24] 2- Iniciando rotina de venda 
+[2018-04-25 17:27:24] ----Ainda nao ha nada para vender
+
