@@ -8,8 +8,8 @@ import helpers
 class Db:
     def getConn(self):
         try:
-            #db = mysql.connect(host="localhost", user="root", passwd="gabsghell", db="protrade")
-            db = mysql.connect(host="127.0.0.1", user="root", passwd="libano252528", db="protrader")
+            db = mysql.connect(host="localhost", user="root", passwd="gabsghell", db="protrade")
+            #db = mysql.connect(host="127.0.0.1", user="root", passwd="libano252528", db="protrader")
             cursor = db.cursor()
             return db, cursor  
         except:

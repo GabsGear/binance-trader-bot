@@ -206,10 +206,8 @@ class Binance_opr(ApiData):
         """
         time.sleep(2)
         orders = self.getOrder(bot_config, data_decision, orderID, client)
-        print(orders['status'])
         orders['executedQty']
         if(str(orders['status']) == 'EXPIRED' ):
-            print('---Ordem não executada')
             return False
         return orders['executedQty']
 
@@ -217,15 +215,16 @@ class Binance_opr(ApiData):
         currency = str(bot_config['currency'])
         pair = currency[len(currency)-4:len(currency)]
         if(pair == 'USDT'):
-            balanceBRL = ammount*3.3
-            if(bot_config['min_order'] < balanceBRL):
+            priceBRL = ammount*3.3
+            if(float(bot_config['min_order']) < priceBRL):
                 return False
             else:
                 return True
         else:
             btc = self.getPriceNow('BTCUSDT')
-            balanceBRL = ammount*btc*3.3
-            if(bot_config['min_order'] < balanceBRL):
+            priceBRL = ammount*btc*3.3
+            print(float(bot_config['min_order']))
+            if(float(bot_config['min_order']) < priceBRL):
                 return False
             else: 
                 return True
@@ -240,18 +239,16 @@ class Binance_opr(ApiData):
             if not (bot_config['active']):
                 print('Inserindo simulada')
                 db.insertBuyOrder(data)
+                time.sleep(30)
             else: 
                 client = loginAPI(bot_config)
                 status = client.get_system_status()
                 price = "%.8f" % (data_decision['price_now'])
-                print(price)
                 if(bot_config['active'] == 1 and status['msg'] == 'normal'):
                     ammount = float(self.getClientBalance(client, bot_config))*bot_config['order_value']/float(data_decision['price_now'])
                     ammount = self.checkPrecision(bot_config, ammount)
-                    print('Quantidade')
-                    print(ammount) 
                     if not self.checkMinOrder(bot_config, ammount):
-                        return           
+                        return     
                     try:
                         order = client.create_order(symbol=bot_config['currency'],side=SIDE_BUY,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_FOK, quantity=ammount, price= str(price))
                         print(order)
@@ -263,11 +260,11 @@ class Binance_opr(ApiData):
                         return
                     ammount = float(newOrderStatus)
 
-                    print (order)    
                     orderID = order['orderId']
                     data['qnt'] = ammount
                     data['buy_uuid'] = orderID
                     db.insertBuyOrder(data)
+                    time.sleep(30)
 
     def createSellOrder(self, data, bot_config, data_decision):
         """This function start a sell order
@@ -289,10 +286,7 @@ class Binance_opr(ApiData):
                 print('Pronto pra criar ordem de venda')
                 price = "%.8f" % data_decision['price_now']
                 ammount = data_decision['trans']['quantity'] * 0.999
-                print(ammount)
                 ammount = self.checkPrecision(bot_config, ammount)
-                print('quantidade')
-                print(ammount)
                 try: 
                     order = client.create_order(symbol=bot_config['currency'],side=SIDE_SELL,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_FOK, quantity=ammount, price=str(price))
                     print(order)
