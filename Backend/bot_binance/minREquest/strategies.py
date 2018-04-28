@@ -230,6 +230,10 @@ class StrategiesBase(Desicion):
         maxx = max(tomax)
         rsi = super().getRSI(data)
 
+        hp = helpers.Helpers()
+        log = ('---Estrategia RSI -- RSI = ' + str(rsi))
+        hp.writeOutput(bot_config['id'], log)
+        
         if(bot_config['period'] == 'day'):
             if(rsi < 30.0):
                 return 'buy'
@@ -249,19 +253,16 @@ class StrategiesBase(Desicion):
 
         if(len(tomin) > 0):
             #print "maior que 0"
-            minn = min(tomin) ## CALCULO O MINIMO DESSES 20 CANDLES
-            maxx = min(tomax) ## CALCULO O MINIMO DESSES 20 CANDLES
+            minn = min(tomin) 
+            maxx = min(tomax) 
 
-            print ('min')
-            print(minn)
-            print ('last')
-            print (last)
+            hp = helpers.Helpers()
+            log = ('--- Estrategia Breack Channel MIN = ' + str(minn) + ' MAX = ' + str(maxx))
+            hp.writeOutput(bot_config['id'], log)
+
             if(last <= minn):
-                print('buy breack channel')
                 return 'buy'
 
             if(data['price_now'] >= maxx):
-                print('sell breack channel')
                 return 'sell'
-        print ('none breack')
         return 'none' 
