@@ -1,11 +1,7 @@
-#dict = {'nome':'null', 'key':'null', 'secret':'null'}
-#dict['nome'] = ('gabriel_')
-#dict['key'] = ('q4r6zw4CXMGynsdQhRgzcs1PuOBfT1uCCwBG2op0fue7Qr33XvH23Cn0W5SMgWGU') 
-#dict['secret'] = ('8PVopsBzr0piU66t3dEiPoxTuZUfVCemWdkjI5zN9OhEZcyPxgeO4UaAD1jM0zG0')
 # coding=utf-8
 import numpy as np
 from binance.client import Client 
-from binance.enums import ORDER_TYPE_LIMIT, TIME_IN_FORCE_GTC, SIDE_BUY, SIDE_SELL
+from binance.enums import ORDER_TYPE_LIMIT, TIME_IN_FORCE_GTC, SIDE_BUY, SIDE_SELL, TIME_IN_FORCE_FOK
 import botconfig
 from datetime import datetime
 import numpy as np
@@ -31,6 +27,7 @@ client = Client("","")
 login.checkLogin("","")
 
 def loginAPI(bot_config):
+    
     db = botconfig.Db()
     print("logando na  api")
     acc_config = db.getConfigAcc(str(bot_config['user_id']))
@@ -108,7 +105,7 @@ class Binance_opr(ApiData):
         lvol = np.array(lvol).astype(np.float)
         return lopen, lhigh, llow, lclose, lvol, closetime      
 
-    def getBTCCandles(self, coin, period):
+    def getBTCCandles(self, period):
         return self.getCandles('BTCUSDT', period)
 
     def getMean(self, coin, bot_config):
@@ -143,7 +140,7 @@ class Binance_opr(ApiData):
         """get order
         
         Arguments:
-            bot_config {[dict]} -- bot setup
+            bot_config {[dict]} -- b    ot setup
             data_decision {[dict]} -- decision dict
             orderID {[string]} -- order id from binance
         
@@ -171,19 +168,51 @@ class Binance_opr(ApiData):
             return True   
         return False
 
-    def getClientBalance(self, client):
+    def getClientBalance(self, client, bot_config):
         """get client balance from binance wallet
         
         Returns:
             [float] -- returns free BTC from botwork
         """
-        balance = client.get_asset_balance(asset='BTC')
+        currency = str(bot_config['currency'])
+        pair = currency[len(currency)-4:len(currency)]
+        if(pair == 'USDT'):
+            balance = client.get_asset_balance(asset='USDT')
+        else:
+            balance = client.get_asset_balance(asset='BTC')
         return balance['free']
          
     def getPrecision(self, coin):
         data = client.get_symbol_info(coin)
         return data['filters'][1]['minQty']
 
+
+    def checkPrecision(self, bot_config, ammount):
+        precision = float(self.getPrecision(bot_config['currency']))
+        if (precision == 1):
+            return int(ammount) 
+        elif (precision == 0.01):
+            ammount = str(ammount)[:4]
+            return float(ammount)
+        else: 
+            ammount = str(ammount)[:5]
+            return float(ammount)
+
+    def checkNewOrder(self, bot_config, data_decision, orderID, client):
+        """Check if a new order is commited
+    
+        Returns:
+            Returns a executed Qty is the order are commited
+        """
+        time.sleep(2)
+        orders = self.getOrder(bot_config, data_decision, orderID, client)
+        print(orders['status'])
+        orders['executedQty']
+        if(str(orders['status']) == 'EXPIRED' ):
+            print('---Ordem não executada')
+            return False
+        return orders['executedQty']
+        
     def createBuyOrder(self, data, bot_config, data_decision):
         """
             AQUI A MAGICA ACONTECE 
@@ -201,34 +230,26 @@ class Binance_opr(ApiData):
                 print(price)
 
                 if(bot_config['active'] == 1 and status['msg'] == 'normal'):
-                    ammount = float(self.getClientBalance(client))*bot_config['order_value']/float(data_decision['price_now'])
-                    precision = float(self.getPrecision(bot_config['currency']))
-                    if (precision == 1):
-                        ammount = int(ammount) 
-                    elif (precision == 0.01):
-                        ammount = "%.2f" % ammount
-                    else: 
-                        ammount = "%.3f" % ammount
-
+                    ammount = float(self.getClientBalance(client, bot_config))*bot_config['order_value']/float(data_decision['price_now'])
+                    ammount = self.checkPrecision(bot_config, ammount)
                     print('Quantidade')
                     print(ammount)            
-                    #try:
-                    order = client.create_order(symbol=bot_config['currency'],side=SIDE_BUY,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_GTC, quantity=ammount, price= str(price))
-                    time.sleep(300)
-                    #except:
-                    #return 
+                    try:
+                        order = client.create_order(symbol=bot_config['currency'],side=SIDE_BUY,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_FOK, quantity=ammount, price= str(price))
+                        print(order)
+                    except:
+                        return
+                    orderID = order['orderId']
+                    newOrderStatus = self.checkNewOrder(bot_config, data_decision, orderID, client)
+                    if not (newOrderStatus):
+                        return
+                    ammount = float(newOrderStatus)
+
                     print (order)    
                     orderID = order['orderId']
-                    orders = self.getOrder(bot_config, data_decision, orderID, client)
-                    if(float(orders['executedQty']) == 0 ):
-                        print('Timeout excedido, ordem cancelada')
-                        client.cancel_order(symbol=bot_config['currency'], orderId=orderID)
-                        return
-                    else:
-                        data['qnt'] = orders['executedQty']
-                        data['qnt'] = ammount
-                        data['buy_uuid'] = orderID
-                        db.insertBuyOrder(data)
+                    data['qnt'] = ammount
+                    data['buy_uuid'] = orderID
+                    db.insertBuyOrder(data)
 
     def createSellOrder(self, data, bot_config, data_decision):
         """This function start a sell order
@@ -249,19 +270,21 @@ class Binance_opr(ApiData):
             if(bot_config['active'] and status['msg'] == 'normal'):
                 print('Pronto pra criar ordem de venda')
                 price = "%.8f" % data_decision['price_now']
-                quantity = data_decision['trans']['quantity']*0.999
-                #try:
-                order = client.create_order(symbol=bot_config['currency'],side=SIDE_SELL,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_GTC, quantity=int(quantity), price=str(price))
-                time.sleep(300)
-                #except:
-                #print('erro criando a ordem de venda')
-                #    return
+                ammount = data_decision['trans']['quantity'] * 0.999
+                print(ammount)
+                ammount = self.checkPrecision(bot_config, ammount)
+                print('quantidade')
+                print(ammount)
+                try: 
+                    order = client.create_order(symbol=bot_config['currency'],side=SIDE_SELL,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_FOK, quantity=ammount, price=str(price))
+                    print(order)
+                except:
+                    return
                 orderID = order['orderId']
-                orders = self.getOrder(bot_config, data_decision, orderID, client)
-                if(float(orders['executedQty']) == 0 ):
-                        print('Timeout excedido, ordem cancelada')
-                        client.cancel_order(symbol=bot_config['currency'], orderId=orderID)
-                        return
+                newOrderStatus = self.checkNewOrder(bot_config, data_decision, orderID, client)
+                if not (newOrderStatus):
+                    return
+
                 print ('ORDEM DE VENDA ID ' + str(order['orderId']))
-                data['sell_uuid'] = order['orderId']
+                data['sell_uuid'] = orderID
                 db.commitSellOrder(data)
