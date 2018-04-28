@@ -1,4 +1,5 @@
 # coding=utf-8
+# pylint: disable=W0612
 import MySQLdb as mysql
 import os
 import datetime

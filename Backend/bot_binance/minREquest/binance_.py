@@ -72,19 +72,19 @@ class Binance_opr(ApiData):
         if(period == 'Day'):
             candles = client.get_klines(
                 symbol=coin, interval=Client.KLINE_INTERVAL_1DAY)
-            candles = candles[len(candles)-20:len(candles)-1]
+            candles = candles[len(candles)-100:len(candles)-1]
         elif(period == 'hour'):
             candles = client.get_klines(
                 symbol=coin, interval=Client.KLINE_INTERVAL_1HOUR)
-            candles = candles[len(candles)-20:len(candles)-1]
+            candles = candles[len(candles)-100:len(candles)-1]
         elif(period == 'thirtyMin'):
             candles = client.get_klines(
                 symbol=coin, interval=Client.KLINE_INTERVAL_30MINUTE)
-            candles = candles[len(candles)-20:len(candles)-1]
+            candles = candles[len(candles)-100:len(candles)-1]
         elif(period == 'fiveMin'):
             candles = client.get_klines(
                 symbol=coin, interval=Client.KLINE_INTERVAL_5MINUTE)
-            candles = candles[len(candles)-20:len(candles)-1]
+            candles = candles[len(candles)-100:len(candles)-1]
         elif(period == 'oneMin'):
             candles = client.get_klines(
                 symbol=coin, interval=Client.KLINE_INTERVAL_1MINUTE)

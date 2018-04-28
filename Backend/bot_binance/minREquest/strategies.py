@@ -1,4 +1,6 @@
 # coding=utf-8
+# pylint: disable=E1101
+# pylint: disable=W0612
 import binance_
 import helpers
 import botconfig
@@ -69,10 +71,9 @@ class Desicion():
 
     def getRSI(self, data):
         size = len(data['c'])
-        data['c'] = np.array(data['c'], dtype=float)
-        rsi = talib.RSI(data['c'], 20)
+        data = np.array(data['c'], dtype=float)
+        rsi = talib.RSI(data, 20)
         if(rsi[size-1] > 0.0):
-            print(rsi)
             return rsi[size-1]
         else:
             return self.getRSISmall(data)
@@ -83,7 +84,6 @@ class Desicion():
         for c in data['c']:
             c = c*100
         rsi = talib.RSI(data['c'], 20)
-        print(rsi)
         return rsi[size-1]
 
 class StrategiesBase(Desicion):
@@ -127,6 +127,8 @@ class StrategiesBase(Desicion):
         tomax = self.getLhigh()
         tomax = tomax[len(tomax) - 3 : len(tomax) - 1]
         tomin = self.getLlow()
+        tomin = tomin[len(tomin)-21:len(tomin)-1] 
+
         if(len(tomin) > 0):
             minn = min(tomin)
             maxx = max(tomax)
@@ -197,7 +199,7 @@ class StrategiesBase(Desicion):
                 return 'sell'
         return 'none'
 
-    def startFollowBTC(self, bot_config):
+    def startFollowBTC(self, bot_config, data):
         """
             Search pivot up on btc 
         """
@@ -215,7 +217,6 @@ class StrategiesBase(Desicion):
 
         pivotUp = var > 3.0 and pivot['c'] > maxHigh 
         pivotDown = var < -1.5 and pivot['c'] < maxLow
-        
         if pivotUp:
             return 'buy'
         if pivotDown:
@@ -229,10 +230,38 @@ class StrategiesBase(Desicion):
         maxx = max(tomax)
         rsi = super().getRSI(data)
 
-        if(rsi < 30):
-            return 'buy'
-        if(data['price_now'] >= maxx):
-            return 'sell'
-        return 'none'
-	
- 
+        if(bot_config['period'] == 'day'):
+            if(rsi < 30.0):
+                return 'buy'
+        if(bot_config['period'] == 'hour'):
+            if(rsi < 35.0):
+                return 'buy'    
+        if(bot_config['period'] == 'thirtyMin'):
+            if(rsi < 40.0):
+                return 'buy'    
+        return 'none' 
+        
+    def startBreackChannel(self, bot_config, data):
+        size = len(data['c'])
+        tomin = data['l'][size-21:size-1] 
+        tomax = data['c'][size-3:size-1] 
+        last = data['l'][size-2:size-1]
+
+        if(len(tomin) > 0):
+            #print "maior que 0"
+            minn = min(tomin) ## CALCULO O MINIMO DESSES 20 CANDLES
+            maxx = min(tomax) ## CALCULO O MINIMO DESSES 20 CANDLES
+
+            print ('min')
+            print(minn)
+            print ('last')
+            print (last)
+            if(last <= minn):
+                print('buy breack channel')
+                return 'buy'
+
+            if(data['price_now'] >= maxx):
+                print('sell breack channel')
+                return 'sell'
+        print ('none breack')
+        return 'none' 

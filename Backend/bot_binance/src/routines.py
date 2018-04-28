@@ -166,8 +166,8 @@ class Functions():
             1: st.startInside(bot_config), #INSIDE BAR
             2: st.startDoubleUp(bot_config), #DOUBLLE UP
             3: st.startPivotUp(bot_config), #PIVOT UP
-            #4: st.startRSIMax(bot_config), #RSI
-            #4: st.startFollowBTC(bot_config), #BTC
+            4: st.startRSIMax(bot_config), #RSI
+            54: st.startFollowBTC(bot_config), #BTC
         }
         return map
     

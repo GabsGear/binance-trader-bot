@@ -1,4 +1,5 @@
 # coding=utf-8
+# pylint: disable=W0612
 import binance_
 import strategies
 import helpers
@@ -77,7 +78,7 @@ class Functions():
             data_decision {[dict]} -- transactions detals
         """
         bn = binance_.Binance_opr()
-        for i in range(0, 5): #0 ate 5
+        for i in range(0, 7): #0 ate 5
             if(bot_config['strategy_buy'] == i):
                 if(self.mapStrategy(bot_config, data_decision)[i] == 'buy'):
                     bn.createBuyOrder(data, bot_config, data_decision)
@@ -91,6 +92,7 @@ class Functions():
         data_decision = st.getDataDecision(bot_config)
         fixProfit = self.getFixProfit(bot_config, data_decision)
         stoploss = self.getStopLoss(bot_config, data_decision)
+        
         log = ('---Price Now')
         hp.writeOutput(bot_config['id'], log)
         log = ('---' + str(data_decision['price_now']))
@@ -111,6 +113,11 @@ class Functions():
             log = ('---Venda stop loss alvo ' + str(stoploss))
             hp.writeOutput(bot_config['id'], log)
             bn.createSellOrder(data, bot_config, data_decision)
+        
+        elif(bot_config['percentage'] == 101 and bot_config['strategy_buy'] == 6):
+            bn.createSellOrder(data, bot_config, data_decision)  
+            return 
+
         elif(data_decision['price_now'] >= fixProfit):
             log = ('---Venda lucro fixo')
             hp.writeOutput(bot_config['id'], log)
@@ -159,7 +166,8 @@ class Functions():
             2: st.startDoubleUp(bot_config, data_decision), #DOUBLLE UP
             3: st.startPivotUp(bot_config, data_decision), #PIVOT UP
             4: st.startRSIMax(bot_config, data_decision), #RSI
-            #4: st.startFollowBTC(bot_config), #BTC
+            5: st.startFollowBTC(bot_config, data_decision), #BTC
+            6: st.startBreackChannel(bot_config, data_decision) #breack channel
         }
         return map
     
