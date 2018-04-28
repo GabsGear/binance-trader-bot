@@ -41,19 +41,18 @@
 							<label>Plano</label></br>
 							<select name="item_name" class="form-control">
 								<option selected disabled>Selecione...</option>
-								<option value="ProTraderBot-Prata-30-dias">Prata 30 dias - 5 bots - 20%OFF</option>
-                                <option value="ProTraderBot-Prata-90-dias">Prata 90 dias - 5 bots - 40%OFF</option>
-                                <option value="ProTraderBot-Ouro-30-dias">Ouro 30 dias - 10 bots - 20%OFF</option>
-								<option value="ProTraderBot-Ouro-90-dias">Ouro 90 dias - 10 bots - 40%OFF</option>
+								<option value="ProTraderBot-Prata-30-dias">Prata 30 dias - 10 bots - 30%OFF</option>
+                                <option value="ProTraderBot-Ouro-30-dias">Ouro 30 dias - 30 bots - 50%OFF</option>
 							</select></br>
 							<label>Moeda</label></br>
 							<select name="currency2" class="form-control">
 								<option selected disabled>Selecione...</option>
-								<option value="BTC">Bitcoin</option>
+								<option value="BCC">Bitcoin Cash</option>
 								<option value="LTC">Litecoin</option>
 								<option value="ETH">Etherum</option>
 							</select></br>
-							<button type="submit" class="btn btn-success">Criar Fatura</button>
+                            <button type="submit" class="btn btn-success">Criar Fatura</button></br></br>
+                            Certifique-se de utilizar um e-mail válido em sua conta, a fatura será enviada diretamente a ele.
 							</br></br>
                     	</form>
                     </div>

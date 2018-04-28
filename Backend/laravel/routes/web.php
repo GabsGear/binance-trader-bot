@@ -76,3 +76,5 @@ Route::get('/',array('as'=>'login', function(){
 
 Route::post('/register', 'Auth\RegisterController@create')->name('register');
 Route::post('/login', 'Auth\LoginController@login')->name('customlogin');
+
+Route::get('/cleandb', 'TransactionController@clean_db');

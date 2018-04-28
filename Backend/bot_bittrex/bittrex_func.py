@@ -78,6 +78,7 @@ def getBalance(user_id, bot_config):
 
 def buyLimit(data, bot_config, price_now):
 	if(bot_config['active'] == 0):
+		print ("--[6]--Compra executada, via simulacao.. \n")
 		db.insertBuyOrder(data)
 		t.sleep(60)
 	if(bot_config['active'] == 1 and checkConnApi(bot_config= bot_config) == True):
@@ -86,17 +87,34 @@ def buyLimit(data, bot_config, price_now):
 		##CALCULANDO QUANTIDADE BASEADO NO BALANCO DISPONIVEL DE BTC OU USDT
 		amount = float(acc_balance)*float(bot_config['order_value'])/float(price_now)
 		##VERIFICANDO SE A QUANTIDADE CALCULADA PARA COMPRA E MAIOR QUE A ORDEM MINIMA
-		if(check_min_order(bot_config['min_order'], amount, bot_config['currency']) == 0):
-			return
+		#if(check_min_order(bot_config['min_order'], amount, bot_config['currency']) == 0):
+		#print ("--[6]--Ordem minima nao atingida para compra.. \n")
+		#return
 		bittrex = bittrex_lib.Bittrex(acc_config['bit_api_key'], acc_config['bit_api_secret'], api_version='v1.1')
 		##LANCANDO ORDEM DE COMPRA NA EXCHANGE
-		orderBuy = bittrex.buy_limit(market=bot_config['currency'], quantity=amount, rate=price_now)
-		if(orderBuy['success'] == False or orderBuy == None):
-			return
+		order_buy = bittrex.buy_limit(market=bot_config['currency'], quantity=amount, rate=price_now)
+		if(order_buy['success'] == False or order_buy == None):
+			return ##QUITANDO
+		#####################################
+		##CARREGANDO DADOS
+		UUID = order_buy['result']['uuid']
+		USER_ID = bot_config['user_id']
+		t.sleep(10)
+		##CHECKAR SE A ORDEM FOI EXECUTADA
+		order_status  = None
+		while(order_status == None):
+			order_status  = getOrder(uuid= UUID, user_id=  USER_ID)['result']
+
+		if(order_status['IsOpen'] == True):
+			cancel_order(uuid= UUID, user_id= USER_ID)
+			return  ##QUITANDO
+		
+		#####################################
 		##TRANSFERINDO A QUANTIDADE COMPRADA PARA O DICIONARIO DATA PARA INSERIR NO BANCO DE DADOS
-		data['qnt'] = getOrder(uuid= orderBuy['result']['uuid'], user_id= bot_config['user_id'])['result']['Quantity']
-		data['buy_uuid'] = orderBuy['result']['uuid']
+		data['qnt'] = getOrder(uuid= UUID, user_id= USER_ID)['result']['Quantity']
+		data['buy_uuid'] = UUID
 		db.insertBuyOrder(data)
+		print ("--[6]--Compra executada, modo real. \n")
 		t.sleep(60)
 
 def get_market(currency):
@@ -123,18 +141,32 @@ def sellLimit(data, bot_config, price_now, trans):
 	#print data
 	if(bot_config['active'] == 0):
 		db.commitSellOrder(data)
+		print ("--[11]--Venda executada, via simulacao.. \n")
 		t.sleep(60)
 	if(bot_config['active'] == 1 and checkConnApi(bot_config= bot_config) == True and trans['selled'] == 0):
-		print("to tentando vender")
 		acc_config = db.getConfigAcc(bot_config['user_id'])
 		bittrex = bittrex_lib.Bittrex(acc_config['bit_api_key'], acc_config['bit_api_secret'], api_version='v1.1')
-		orderSell = bittrex.sell_limit(market=bot_config['currency'], quantity=trans['quantity'], rate=price_now*1.1)
-		print orderSell
-		if(orderSell['success'] == False or orderSell == None):
-			print orderSell
+		order_sell = bittrex.sell_limit(market=bot_config['currency'], quantity=trans['quantity'], rate=price_now*1.1)
+		if(order_sell['success'] == False or order_sell == None):
 			return
-		data['sell_uuid'] = orderSell['result']['uuid']
+		#####################################
+		##CARREGANDO DADOS
+		UUID = order_sell['result']['uuid']
+		USER_ID = bot_config['user_id']
+		t.sleep(10)
+		##CHECKAR SE A ORDEM FOI EXECUTADA
+		order_status  = None
+		while(order_status == None):
+			order_status  = getOrder(uuid= UUID, user_id=  USER_ID)['result']
+
+		if(order_status['IsOpen'] == True):
+			cancel_order(uuid= UUID, user_id= USER_ID)
+			return  ##QUITANDO
+		#####################################
+		##COMITANDO A ORDEM DE VENDA NO BANCO DE DADOS
+		data['sell_uuid'] = UUID
 		db.commitSellOrder(data)
+		print ("--[11]--Venda executada, bot ativo.. \n")
 		t.sleep(60)
 
 
@@ -151,17 +183,9 @@ def check_delta_time(trans_time):
 	return 0
 
 	
-def cancel_order(bot_id, uuid, date, user_id, order_type):
-	time = check_delta_time(date) ##SE 0 NAO FAZ NADA / SE 1 EXCLUI
-	print("verificando tempo de cancelamento...")
-	if(time == 1):
-		acc_config = db.getConfigAcc(user_id)
-		bittrex = bittrex_lib.Bittrex(acc_config['bit_api_key'], acc_config['bit_api_secret'], api_version='v1.1')
-		bittrex.cancel(uuid)
-		order = db.getOrder(bot_id)
-		if(order_type == 'buy'):
-			db.delete_trans(order['id'])
-			print("cancelei a ordem de COMPRA e deletei do banco de dados.")
-		else:
-			db.update_trans(order['id'])
-			print("cancelei a ordem de VENDA e atualizei a transacao.")
+def cancel_order(uuid, user_id):
+	acc_config = db.getConfigAcc(user_id)
+	bittrex = bittrex_lib.Bittrex(acc_config['bit_api_key'], acc_config['bit_api_secret'], api_version='v1.1')
+	order_cancel = None
+	while(order_cancel == None):
+		order_cancel = bittrex.cancel(uuid)

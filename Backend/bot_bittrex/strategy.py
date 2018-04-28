@@ -31,6 +31,8 @@ def contra_turtle(bot_config):
 	if(len(tomin) > 0):
 		#print "maior que 0"
 		minn = min(tomin) ## CALCULO O MINIMO DESSES 20 CANDLES
+		msg = "Buy at:"+str(minn)+"|Price at:"+str(data['price_now'])
+		writeOutput(bot_config['id'], msg)
 		if(data['price_now'] <= minn):
 			return 'buy'
 
@@ -129,3 +131,8 @@ def map(bot_config):
 	}
 	#print map
 	return map
+
+
+def writeOutput(bot_id, data):
+	file = open('/home/bittrex/logs/'+str(bot_id)+'.txt', 'a+')
+	file.write(data + "\n")

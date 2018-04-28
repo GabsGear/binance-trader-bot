@@ -37,6 +37,12 @@ class TransactionController extends Controller
         return view('reportsclose', compact('trans'));
     }
     
+    public function convert_date($date) {
+        $slice_1 = explode(' ', $date);
+        $slice_2 = explode('-', $slice_1[0]);
+        return $slice_2[2]."/".$slice_2[1]."/".$slice_2[0]."-".$slice_1[1];
+    }
+    
     public function filter_name(Request $request) {
         $trans = DB::table('bot')
         ->join('transactions', 'transactions.bot_id', '=', 'bot.id')
@@ -146,7 +152,67 @@ class TransactionController extends Controller
         DB::table('transactions')->where('id', $id)->delete();
         return redirect()->back();
     }
-
+    
+    public function clean_db() {
+        $trans = DB::table('bot')
+        ->join('transactions', 'transactions.bot_id', '=', 'bot.id')
+        ->select('transactions.*', 'bot.strategy_buy', 'bot.currency')
+        ->where('transactions.selled', 1)
+        ->get();
+        $total_tt = array(0, 0); //MEDIDA DE GANHO/PERCA 0
+        $total_ib = array(0, 0); //MEDIDA DE GANHO/PERCA 1
+        $total_du = array(0, 0); //MEDIDA DE GANHO/PERCA 2
+        $total_pu = array(0, 0); //MEDIDA DE GANHO/PERCA 3
+        foreach($trans as $t) {
+            if($t->strategy_buy == 0 and $t->currency != 'BTC-DOGE') { // CONTRA TURTLE
+                if($t->buy_value <= $t->sell_value) { // LUCRO
+                    $var = TransactionController::getPercentage($t);
+                    $total_tt[0] = $total_tt[0] + 1;  //CALCULANDO TOTAL DE VEZES QUE GANHOU
+                } else { // PREJUIZO
+                    $total_tt[1] = $total_tt[1] + 1;  //CALCULANDO TOTAL DE VEZES QUE PERDEU
+                }
+            }
+            ###################################
+            if($t->strategy_buy == 1 and $t->currency != 'BTC-DOGE') { // CONTRA TURTLE
+                if($t->buy_value <= $t->sell_value) { // LUCRO
+                    $var = TransactionController::getPercentage($t);
+                    $total_ib[0] = $total_ib[0] + 1;  //CALCULANDO TOTAL DE VEZES QUE GANHOU
+                } else { // PREJUIZO
+                    $total_ib[1] = $total_ib[1] + 1;  //CALCULANDO TOTAL DE VEZES QUE PERDEU
+                }
+            }
+            ##################################
+            if($t->strategy_buy == 2 and $t->currency != 'BTC-DOGE') { // CONTRA TURTLE
+                if($t->buy_value <= $t->sell_value) { // LUCRO
+                    $var = TransactionController::getPercentage($t);
+                    $total_du[0] = $total_du[0] + 1;  //CALCULANDO TOTAL DE VEZES QUE GANHOU
+                } else { // PREJUIZO
+                    $total_du[1] = $total_du[1] + 1;  //CALCULANDO TOTAL DE VEZES QUE PERDEU
+                }
+            }
+            ################################
+            if($t->strategy_buy == 4 and $t->currency != 'BTC-DOGE') { // CONTRA TURTLE
+                if($t->buy_value <= $t->sell_value) { // LUCRO
+                    $var = TransactionController::getPercentage($t);
+                    $total_pu[0] = $total_pu[0] + 1;  //CALCULANDO TOTAL DE VEZES QUE GANHOU
+                } else { // PREJUIZO
+                    $total_pu[1] = $total_pu[1] + 1;  //CALCULANDO TOTAL DE VEZES QUE PERDEU
+                }
+            }
+        }
+       // $tx_acerto_tt = ($total_tt[1]/$total_tt[0])*100;
+        //$tx_acerto_ib = ($total_ib[1]/$total_ib[0])*100;
+        //$tx_acerto_du = ($total_du[1]/$total_du[0])*100;
+        //$tx_acerto_pu = ($total_pu[1]/$total_pu[0])*100;
+        //echo "|CONTRA TURTLE|TAXA DE ACERTO:".$tx_acerto_tt."%|</br>";
+        //echo "|CONTRA TURTLE|TAXA DE ACERTO:".$tx_acerto_ib."%|</br>";
+        //echo "|CONTRA TURTLE|TAXA DE ACERTO:".$tx_acerto_du."%|</br>";
+        //echo "|CONTRA TURTLE|TAXA DE ACERTO:".$tx_acerto_pu."%|</br>";
+        var_dump($total_tt);
+        var_dump($total_ib);
+        var_dump($total_du);
+        var_dump($total_pu);
+    }
   
 
 }

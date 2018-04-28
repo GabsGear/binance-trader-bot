@@ -20,10 +20,11 @@
                         {{ Form::open(['method' => 'POST', 'route' => ['trans.filter.date']]) }}        
                             <select name="date" class="form-control" onchange='this.form.submit()'>
                             <option selected disabled>Selecione...</option>
-                                <?php $prev_time = mktime (0, 0, 0, date("m")  , date("d"), date("y")); 
-                                for($i = 1; $i <= 30; $i++){
-                                    $date = date('d/m/y', $prev_time);
-                                    $prev_time = mktime (0, 0, 0, date("m")  , date("d")-$i, date("y")); ?>
+                                <?php 
+                                $prev_time = mktime (0, 0, 0, date("m")  , date("d"), date("Y"));
+                                for($i = 1; $i <= 30; $i++) {
+                                    $date = date('Y-m-d', $prev_time);
+                                    $prev_time = mktime (0, 0, 0, date("m")  , date("d")-$i, date("Y")); ?>
                                     <option value="{{$date}}">{{$date}}</option>
                                 <?php } ?>
                             </select>
@@ -102,7 +103,7 @@
                                             <td>{{ number_format($percentage-0.2, 2, '.', ' ') }}%</td>
                                         @endif
                                         <td>{{ $t->date_open }}</td> 
-                                        <td>{{ $t->date_close }}</td>
+                                        <td>{{ $t->date_close  }}</td>
                                         <td>
                                             {{ Form::open(['method' => 'DELETE', 'route' => ['trans.delete', $t->id]]) }}
                                                 <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i></button>

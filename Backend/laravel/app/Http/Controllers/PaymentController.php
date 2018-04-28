@@ -23,7 +23,7 @@ class PaymentController extends Controller {
 		$req['item_name'] = $post['item_name'];
 		$req['currency2'] = $post['currency2'];
 		$req['merchant_id'] = 'f52b660a92f4299714be645564075956';
-		$req['currency1'] = 'USD';
+		$req['currency1'] = 'BTC';
 		$req['version'] = 1;
 		$req['cmd'] = 'create_transaction';
 		$req['key'] = '53fd5ff818629a2c87b9e87ca789070f56941f68c6adbb56e59523151694c9d8'; 
@@ -31,16 +31,10 @@ class PaymentController extends Controller {
 		$req['buyer_email'] = Auth::User()->email;
 
 		if($req['item_name'] == "ProTraderBot-Prata-30-dias"){
-			$req['amount'] = 48.0;
-		}
-		else if($req['item_name'] == "ProTraderBot-Prata-90-dias"){
-			$req['amount'] = 109.0;
+			$req['amount'] = 0,0049;
 		}
 		else if($req['item_name'] == "ProTraderBot-Ouro-30-dias"){
-			$req['amount'] = 72.0;
-		}
-		else if($req['item_name'] == "ProTraderBot-Ouro-90-dias"){
-			$req['amount'] = 163.0;
+			$req['amount'] = 0,0083;
 		}
 		else {
 			die("Plano inexistente");
@@ -92,17 +86,9 @@ class PaymentController extends Controller {
 							$user->premium == 1;
 							$user->expire_date == date('Y-m-d', strtotime("+30 days"));
 							break;
-						case 'ProTraderBot-Prata-90-dias':
-							$user->premium == 1;
-							$user->expire_date == date('Y-m-d', strtotime("+90 days"));
-							break;	
 						case 'ProTraderBot-Ouro-30-dias':
 							$user->premium == 2;
 							$user->expire_date == date('Y-m-d', strtotime("+30 days"));
-							break;
-						case 'ProTraderBot-Ouro-90-dias':
-							$user->premium == 2;
-							$user->expire_date == date('Y-m-d', strtotime("+90 days"));
 							break;
 					}
 				}

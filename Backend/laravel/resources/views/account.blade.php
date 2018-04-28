@@ -21,17 +21,19 @@
             <div class="col-sm-4 col-12">
                 <div class="card">
                     <div class="card-header bg-white">
-                        Alterar Senha
+                        Editar Dados
                     </div>
                     <div class="col-lg-12 input_field_sections">
                         <form class="form-horizontal" method="POST" action="{{ route('acc.changepass') }}">
                         {{ csrf_field() }}
+                        <label>Email</label>
+                        <input id="email" type="email" class="form-control" name="email" value="{{Auth::User()->email}}">
                         <label>Senha Atual</label>
-                        <input id="password" type="password" class="form-control" name="oldpass" required>
+                        <input id="password" type="password" class="form-control" name="oldpass">
                         <label>Nova Senha</label>
-                        <input id="password" type="password" class="form-control" name="password" required>
+                        <input id="password" type="password" class="form-control" name="password">
                         <label>Confirmar Nova Senha</label>
-                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation">
                         </br>
                         <button class="btn btn-success">Salvar</button>
                         </br></br>
@@ -54,32 +56,21 @@
                         <form method="POST" action="{{route('acc.api.bittrex')}}">
                             {{ csrf_field() }}
                             <label>Key</label>
-                            <?php 
-                                if(strlen($UserController->getUser()->bit_api_key) > 2) {?>
-                                    <input type="text" class="form-control" name="bit_api_key" value="******************">
-                                <?php }
-                                else { ?>
-                                    <input type="text" class="form-control" name="bit_api_key" value="">
-                                <?php }
-                            ?>
+                            <input type="password" class="form-control" name="bit_api_key" value="{{Auth::User()->bit_api_key}}">
                             <label>Secret</label>
-                            <?php 
-                                if(strlen($UserController->getUser()->bit_api_secret) > 2) {?>
-                                    <input type="text" class="form-control" name="bit_api_secret" value="******************">
-                                <?php }
-                                else { ?>
-                                    <input type="text" class="form-control" name="bit_api_secret" value="">
-                                <?php }
-                            ?>
+                            <input type="password" class="form-control" name="bit_api_secret" value="{{Auth::User()->bit_api_secret}}">
                             </br>
-                            <div style="float:right">
-                                <a href="http://protraderbot.com/blog/como-faco-para-encontrar-minha-chave-de-api-na-bittrex-com/" target="_blank">Instruções</a> 
-                            </div>
                             <div style="float:left">
                                 <button class="btn btn-success">Salvar</button>
                             </div>
-                            </br></br>
-                        </form>
+                            </form>
+                            <div style="float:right">
+                                <a href="http://protraderbot.com/blog/como-faco-para-encontrar-minha-chave-de-api-na-bittrex-com/" target="_blank">
+                                    <button class="btn btn-light">Instruções</button>
+                                </a> 
+                            </div>
+                            </br>
+                            </br>
                         @endif
                     </div>
                 </div>
@@ -100,29 +91,16 @@
                         <form method="POST" action="{{route('acc.api.binance')}}">
                             {{ csrf_field() }}
                             <label>Key</label>
-                            <?php 
-                                if(strlen($UserController->getUser()->bin_api_key) > 2) {?>
-                                    <input type="text" class="form-control" name="bin_api_key" value="******************">
-                                <?php }
-                                else { ?>
-                                    <input type="text" class="form-control" name="bin_api_key" value="">
-                                <?php }
-                            ?>
+                            <input type="password" class="form-control" name="bin_api_key" value="{{Auth::User()->bin_api_key}}">
                             <label>Secret</label>
-                            <?php 
-                                if(strlen($UserController->getUser()->bin_api_secret) > 2) {?>
-                                    <input type="text" class="form-control" name="bin_api_secret" value="******************">
-                                <?php }
-                                else { ?>
-                                    <input type="text" class="form-control" name="bin_api_secret" value="">
-                                <?php }
-                            ?>
+                            <input type="password" class="form-control" name="bin_api_secret" value="{{Auth::User()->bin_api_secret}}">
                             </br>
-                            <div style="float:right">
-                                <a href="http://protraderbot.com/blog/como-faco-para-encontrar-minha-chave-de-api-na-bittrex-com/" target="_blank">Instruções</a> 
-                            </div>
                             <div style="float:left">
                                 <button class="btn btn-success">Salvar</button>
+                            </div>
+                            </form>
+                            <div style="float:right">
+                                <button class="btn btn-light"><a href="http://protraderbot.com/blog/como-faco-para-encontrar-minha-chave-de-api-na-binance/" target="_blank">Instruções</a></button>
                             </div>
                             </br></br>
                         </form>

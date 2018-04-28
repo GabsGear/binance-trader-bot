@@ -4,7 +4,7 @@ import datetime
 import pytz
 
 def getConn():
-	db = mysql.connect(host="127.0.0.1", user="root", passwd="libano252528", db="protrader")
+	db = mysql.connect(host="127.0.0.1", user="root", passwd="Gv9KP70E316v", db="protrader")
 	cursor = db.cursor()
 	return db, cursor
 
@@ -19,7 +19,7 @@ def insertBuyOrder(data):
 
 def commitSellOrder(data):
 	db, cursor = getConn()
-	trans = getBuyOrder(data['bot_id'])
+	trans = getOrder(data['bot_id'])
 	query = ("UPDATE transactions SET sell_value=(%s), selled=(%s), date_close=(%s), sell_uuid=(%s) WHERE id=(%s)")
 	value = float(data['sell_value'])
 	cursor.execute(query, (value, "1", time_now(), data['sell_uuid'], trans['id'] ))
