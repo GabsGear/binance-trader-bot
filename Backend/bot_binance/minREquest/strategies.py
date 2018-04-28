@@ -3,7 +3,7 @@ import binance_
 import helpers
 import botconfig
 import numpy as np
-#import talib as tb
+import talib
 
 class Desicion():
     """Data decision class
@@ -67,22 +67,24 @@ class Desicion():
             return float(x-100)
         return float(0)
 
-    # def getRSI(self, data):
-    #     size = len(data['c'])
-    #     data['c'] = np.array(data['c'], dtype=float)
-    #     rsi = tb.RSI(data['c'], 20)
-    #     if(rsi[size-1] > 0.0):
-    #         return rsi[size-1]
-    #     else:
-    #         return tb.getRSISmall(data)
+    def getRSI(self, data):
+        size = len(data['c'])
+        data['c'] = np.array(data['c'], dtype=float)
+        rsi = talib.RSI(data['c'], 20)
+        if(rsi[size-1] > 0.0):
+            print(rsi)
+            return rsi[size-1]
+        else:
+            return self.getRSISmall(data)
 
-    # def getRSISmall(self, data):
-    #     size = len(data['c'])
-    #     data['c']= np.array(data['c'], dtype=float)
-    #     for c in data['c']:
-    #         c = c*100
-    #     rsi = tb.RSI(data['c'], 20)
-    #     return rsi[size-1]
+    def getRSISmall(self, data):
+        size = len(data['c'])
+        data['c']= np.array(data['c'], dtype=float)
+        for c in data['c']:
+            c = c*100
+        rsi = talib.RSI(data['c'], 20)
+        print(rsi)
+        return rsi[size-1]
 
 class StrategiesBase(Desicion):
     """Strategies class
@@ -168,8 +170,8 @@ class StrategiesBase(Desicion):
         size = len(close) - 1
 
         if (high[size - 1] < high[size - 2]) and (close[size - 1] >= close[size - 2]):
-            price_now = str(data['price_now'])
-            if price_now > high[size]:
+            price_now = float(data['price_now'])
+            if price_now > float(high[size]):
                 flag = True
 
         if (flag):
@@ -220,18 +222,17 @@ class StrategiesBase(Desicion):
                 return 'sell'
         return 'none'
 
-    # def startRSIMax(self, bot_config):
-    #     data = self.getDataDecision(bot_config)
-    #     high = self.getLhigh()
-    #     size = len(high)
-    #     tomax = high[size-3:size-1]
-    #     maxx = max(tomax)
-    #     rsi = super().getRSI(data)
+    def startRSIMax(self, bot_config, data):
+        high = self.getLhigh()
+        size = len(high)
+        tomax = high[size-3:size-1]
+        maxx = max(tomax)
+        rsi = super().getRSI(data)
 
-    #     if(rsi < 30):
-    #         return 'buy'
-    #     if(data['price_now'] >= maxx):
-    #         return 'sell'
-    #     return 'none'
+        if(rsi < 30):
+            return 'buy'
+        if(data['price_now'] >= maxx):
+            return 'sell'
+        return 'none'
 	
  

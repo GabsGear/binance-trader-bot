@@ -15,7 +15,7 @@ def main():
     global bot_config
     bot_config = db.getConfigBot(bot_id)
     db.setPID(bot_id)
-    while(bot_config['active'] == 1):
+    while(bot_config['active'] != 2):
         routine(bot_id)
         time.sleep(10)
 
