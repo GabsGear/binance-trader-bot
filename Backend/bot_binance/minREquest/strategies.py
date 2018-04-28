@@ -125,9 +125,9 @@ class StrategiesBase(Desicion):
         hp.writeOutput(bot_config['id'], log)
 
         tomax = self.getLhigh()
-        tomax = tomax[len(tomax) - 3 : len(tomax) - 1]
+        tomax = tomax[len(tomax) - 2 : len(tomax)]
         tomin = self.getLlow()
-        tomin = tomin[len(tomin)-21:len(tomin)-1] 
+        tomin = tomin[len(tomin)-20:len(tomin)] 
 
         if(len(tomin) > 0):
             minn = min(tomin)
@@ -229,11 +229,12 @@ class StrategiesBase(Desicion):
         tomax = high[size-3:size-1]
         maxx = max(tomax)
         rsi = super().getRSI(data)
-
         hp = helpers.Helpers()
         log = ('---Estrategia RSI -- RSI = ' + str(rsi))
         hp.writeOutput(bot_config['id'], log)
         
+        print ('---Estrategia RSI -- RSI = ' + str(rsi))
+
         if(bot_config['period'] == 'day'):
             if(rsi < 30.0):
                 return 'buy'
