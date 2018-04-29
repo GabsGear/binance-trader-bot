@@ -45,6 +45,7 @@ client = loginAPI(bot_config)
 
 class Binance_opr(ApiData):
     def getCandles(self, coin, period):
+        print('request')
         """This function returns a candlestick list in a especific time interval
 
         Arguments:
