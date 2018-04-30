@@ -25,21 +25,24 @@ def getCandleList(market, time):
 	###################
 	o, h, l, c, v, t = [], [], [], [], [], []
 	####################
-	for candle in candles:
-		o.append(candle['O'])
-		h.append(candle['H'])
-		l.append(candle['L'])
-		c.append(candle['C'])
-		v.append(candle['BV'])
-		t.append(candle['T'])
-	data = {
-		'o': o, 
-		'h': h, 
-		'l': l, 
-		'c': c,
-		'v': v,
-		't': t, }
-	return data
+	try:
+		for candle in candles:
+			o.append(candle['O'])
+			h.append(candle['H'])
+			l.append(candle['L'])
+			c.append(candle['C'])
+			v.append(candle['BV'])
+			t.append(candle['T'])
+		data = {
+			'o': o, 
+			'h': h, 
+			'l': l, 
+			'c': c,
+			'v': v,
+			't': t, }
+		return data
+	except:
+		print "Erro getcandlelist."
 
 def getTicker(market):
 	price_now =  float(bittrex_v1.get_ticker(market)['result']['Ask'])
@@ -145,23 +148,29 @@ def sellLimit(data, bot_config, price_now, trans):
 		t.sleep(60)
 	if(bot_config['active'] == 1 and checkConnApi(bot_config= bot_config) == True and trans['selled'] == 0):
 		acc_config = db.getConfigAcc(bot_config['user_id'])
+		print("ABRINDO VENDA.... \n")
+		print("QUANTIA....:"+str(trans['quantity']))
+		print("PRECO DE....:"+str(price_now))
 		bittrex = bittrex_lib.Bittrex(acc_config['bit_api_key'], acc_config['bit_api_secret'], api_version='v1.1')
-		order_sell = bittrex.sell_limit(market=bot_config['currency'], quantity=trans['quantity'], rate=price_now*1.1)
+		order_sell = bittrex.sell_limit(market=bot_config['currency'], quantity=trans['quantity'], rate=price_now)
+		print order_sell
 		if(order_sell['success'] == False or order_sell == None):
+			print("ERRO SELLL")
 			return
 		#####################################
 		##CARREGANDO DADOS
 		UUID = order_sell['result']['uuid']
 		USER_ID = bot_config['user_id']
-		t.sleep(10)
 		##CHECKAR SE A ORDEM FOI EXECUTADA
 		order_status  = None
 		while(order_status == None):
+			print "Preso no while de venda gogo"
 			order_status  = getOrder(uuid= UUID, user_id=  USER_ID)['result']
-
-		if(order_status['IsOpen'] == True):
-			cancel_order(uuid= UUID, user_id= USER_ID)
-			return  ##QUITANDO
+		print order_status
+		#if(order_status['IsOpen'] == True):
+		#print("cancelei porque nao executou")
+		#cancel_order(uuid= UUID, user_id= USER_ID)
+		#return  ##QUITANDO
 		#####################################
 		##COMITANDO A ORDEM DE VENDA NO BANCO DE DADOS
 		data['sell_uuid'] = UUID
@@ -186,6 +195,4 @@ def check_delta_time(trans_time):
 def cancel_order(uuid, user_id):
 	acc_config = db.getConfigAcc(user_id)
 	bittrex = bittrex_lib.Bittrex(acc_config['bit_api_key'], acc_config['bit_api_secret'], api_version='v1.1')
-	order_cancel = None
-	while(order_cancel == None):
-		order_cancel = bittrex.cancel(uuid)
+	bittrex.cancel(uuid)

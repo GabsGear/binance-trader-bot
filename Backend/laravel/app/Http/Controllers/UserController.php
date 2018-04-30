@@ -85,7 +85,9 @@ class UserController extends Controller
             $execResult = curl_exec($ch);
             $obj = json_decode($execResult, true)['result'];
             $total_btc = 0;
-            $btc_price = UserController::btc_price();
+            $btc_price = 9100;
+            $usd_to_btc = 0;
+            $usd = 0; 
             foreach($obj as $result) {
                 if($result['Currency'] == 'BTC') ## SE FOR BITCOIN
                     $btc = $result['Balance'];   ##SALDO DISPONIVEL EM BTC

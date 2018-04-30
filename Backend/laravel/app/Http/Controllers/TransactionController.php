@@ -153,65 +153,91 @@ class TransactionController extends Controller
         return redirect()->back();
     }
     
-    public function clean_db() {
-        $trans = DB::table('bot')
-        ->join('transactions', 'transactions.bot_id', '=', 'bot.id')
-        ->select('transactions.*', 'bot.strategy_buy', 'bot.currency')
-        ->where('transactions.selled', 1)
-        ->get();
-        $total_tt = array(0, 0); //MEDIDA DE GANHO/PERCA 0
-        $total_ib = array(0, 0); //MEDIDA DE GANHO/PERCA 1
-        $total_du = array(0, 0); //MEDIDA DE GANHO/PERCA 2
-        $total_pu = array(0, 0); //MEDIDA DE GANHO/PERCA 3
-        foreach($trans as $t) {
-            if($t->strategy_buy == 0 and $t->currency != 'BTC-DOGE') { // CONTRA TURTLE
-                if($t->buy_value <= $t->sell_value) { // LUCRO
-                    $var = TransactionController::getPercentage($t);
-                    $total_tt[0] = $total_tt[0] + 1;  //CALCULANDO TOTAL DE VEZES QUE GANHOU
-                } else { // PREJUIZO
-                    $total_tt[1] = $total_tt[1] + 1;  //CALCULANDO TOTAL DE VEZES QUE PERDEU
-                }
+    public function show_stats() {
+        ##REQUISITANDO TRANSACOES DAS ESTRATEGIAS
+        $trans_pivot = TransactionController::show_strategy(3);
+        $trans_rsi = TransactionController::show_strategy(4);
+        $trans_break = TransactionController::show_strategy(6);
+        ##RETORNANDO DADOS COMPACTADOS DE CADA ESTRATEGIA
+        $data_pivot = TransactionController::show_profit($trans_pivot);
+        $data_rsi = TransactionController::show_profit($trans_rsi);
+        $data_break = TransactionController::show_profit($trans_break);
+        ##TAXA DE ACERTO
+        $pivot_tax = ($data_pivot[2]/($data_pivot[2]+$data_pivot[3]))*100;
+        $rsi_tax = ($data_rsi[2]/($data_rsi[2]+$data_rsi[3]))*100;
+        $break_tax = ($data_break[2]/($data_break[2]+$data_break[3]))*100;
+        ##RETORNANDO PRA VIEW OS DADOS
+        $msg = "
+            Inicio dos logs: 29/04/2018 | Capital investido: 1 BTC
+            </br></br>
+            <table border='1px solid black' cellspacing='10'>
+                <tr>
+                    <td>Estratégia</td>
+                    <td>Ganhos Total dos Bots BTC</td>
+                    <td>Ganhos Total dos Bots USDT</td>
+                    <td>Acertos/Erros</td>
+                    <td>Taxa de Acerto</td>
+                </tr>
+                <tr>
+                    <td>Pivo de Alta</td>
+                    <td>".$data_pivot[0]." BTC</td>
+                    <td>".$data_pivot[1]." USDT</td>
+                    <td>".$data_pivot[2]."/".$data_pivot[3]."</td>
+                    <td>".$pivot_tax." %</td>
+                </tr>
+                <tr>
+                    <td>Indice de Forca</td>
+                    <td>".$data_rsi[0]." BTC</td>
+                    <td>".$data_rsi[1]." USDT</td>
+                    <td>".$data_rsi[2]."/".$data_rsi[3]."</td>
+                    <td>".$rsi_tax." %</td>
+                </tr>
+                <tr>
+                    <td>Quebra de Canal</td>
+                    <td>".$data_break[0]." BTC</td>
+                    <td>".$data_break[1]." USDT</td>
+                    <td>".$data_break[2]."/".$data_break[3]."</td>
+                    <td>".$break_tax." %</td>
+                </tr>
+            </table>
+        
+        ";
+        return $msg;
+
+    }
+
+    public function show_profit($dict) {
+        $total_btc = 0;
+        $total_usd = 0;
+        $total_acerto = 0;
+        $total_erro = 0;
+        foreach($dict as $t) {
+            $cur = explode("-", $t->currency);
+            $lucro  = ($t->sell_value-$t->buy_value)*$t->quantity;
+            if($cur[0] == 'USDT' ){
+                $total_usd = $total_usd + $lucro;
             }
-            ###################################
-            if($t->strategy_buy == 1 and $t->currency != 'BTC-DOGE') { // CONTRA TURTLE
-                if($t->buy_value <= $t->sell_value) { // LUCRO
-                    $var = TransactionController::getPercentage($t);
-                    $total_ib[0] = $total_ib[0] + 1;  //CALCULANDO TOTAL DE VEZES QUE GANHOU
-                } else { // PREJUIZO
-                    $total_ib[1] = $total_ib[1] + 1;  //CALCULANDO TOTAL DE VEZES QUE PERDEU
-                }
+            if($cur[0] == 'BTC' ){
+                $total_btc = $total_btc + $lucro;
             }
-            ##################################
-            if($t->strategy_buy == 2 and $t->currency != 'BTC-DOGE') { // CONTRA TURTLE
-                if($t->buy_value <= $t->sell_value) { // LUCRO
-                    $var = TransactionController::getPercentage($t);
-                    $total_du[0] = $total_du[0] + 1;  //CALCULANDO TOTAL DE VEZES QUE GANHOU
-                } else { // PREJUIZO
-                    $total_du[1] = $total_du[1] + 1;  //CALCULANDO TOTAL DE VEZES QUE PERDEU
-                }
-            }
-            ################################
-            if($t->strategy_buy == 4 and $t->currency != 'BTC-DOGE') { // CONTRA TURTLE
-                if($t->buy_value <= $t->sell_value) { // LUCRO
-                    $var = TransactionController::getPercentage($t);
-                    $total_pu[0] = $total_pu[0] + 1;  //CALCULANDO TOTAL DE VEZES QUE GANHOU
-                } else { // PREJUIZO
-                    $total_pu[1] = $total_pu[1] + 1;  //CALCULANDO TOTAL DE VEZES QUE PERDEU
-                }
+            if($lucro > 0) {
+                $total_acerto = $total_acerto + 1;
+            }else {
+                $total_erro = $total_erro + 1;
             }
         }
-       // $tx_acerto_tt = ($total_tt[1]/$total_tt[0])*100;
-        //$tx_acerto_ib = ($total_ib[1]/$total_ib[0])*100;
-        //$tx_acerto_du = ($total_du[1]/$total_du[0])*100;
-        //$tx_acerto_pu = ($total_pu[1]/$total_pu[0])*100;
-        //echo "|CONTRA TURTLE|TAXA DE ACERTO:".$tx_acerto_tt."%|</br>";
-        //echo "|CONTRA TURTLE|TAXA DE ACERTO:".$tx_acerto_ib."%|</br>";
-        //echo "|CONTRA TURTLE|TAXA DE ACERTO:".$tx_acerto_du."%|</br>";
-        //echo "|CONTRA TURTLE|TAXA DE ACERTO:".$tx_acerto_pu."%|</br>";
-        var_dump($total_tt);
-        var_dump($total_ib);
-        var_dump($total_du);
-        var_dump($total_pu);
+        return array($total_btc, $total_usd, $total_acerto, $total_erro);
+    }
+
+    public function show_strategy($id) {
+        $trans = DB::table('bot')
+        ->join('transactions', 'transactions.bot_id', '=', 'bot.id')
+        ->select('transactions.*', 'bot.strategy_buy', 'bot.currency', 'bot.user_id')
+        ->where('transactions.selled', 1)
+        ->where('bot.strategy_buy', $id)
+        ->where('bot.user_id', 6)
+        ->get();
+        return $trans;
     }
   
 

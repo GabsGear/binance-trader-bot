@@ -29,12 +29,31 @@ def contra_turtle(bot_config):
 	tomin = data['l'][size-21:size-1] ##CORTO O VETOR DE CANDLES E DEIXO ELES COM TAMANHO 20
 
 	if(len(tomin) > 0):
+		if(data['price_now'] <= min(tomin)):
+			return 'buy'
+
+
+	return 'none'
+
+def break_channel(bot_config):
+	data = getDataDecision(bot_config)
+	size = len(data['c'])
+	tomin = data['l'][size-21:size-1] ##CORTO O VETOR DE CANDLES E DEIXO ELES COM TAMANHO 20
+	tomax = data['h'][size-3:size-1] ##CORTO O VETOR DE CANDLES E DEIXO ELES COM TAMANHO 20
+	last = data['l'][size-2:size-1]
+
+	if(len(tomin) > 0):
 		#print "maior que 0"
 		minn = min(tomin) ## CALCULO O MINIMO DESSES 20 CANDLES
-		msg = "Buy at:"+str(minn)+"|Price at:"+str(data['price_now'])
-		writeOutput(bot_config['id'], msg)
-		if(data['price_now'] <= minn):
+		maxx = max(tomax) ## CALCULO O MINIMO DESSES 20 CANDLES
+		print("PRICE_NOW:"+str(data['price_now']))
+		print("ALVO VENDA:"+str(maxx))
+		print("ALVO COMPRA"+str(minn))
+		if(last[0] <= minn):
 			return 'buy'
+
+		if(data['price_now'] >= maxx):
+			return 'sell'
 
 	return 'none'
 
@@ -76,21 +95,16 @@ def pivot_up(bot_config):
 	data = getDataDecision(bot_config)
 	size = len(data['c'])
 	##REUNINDO DADOS SOBRE O CANDIDATO A PIVO
-	pivot = {
-		'c': data['c'][size-2],
-		'o': data['o'][size-2],
-	}
-	##RETIRANDO A MAXIMA DOS 20 CANDLES ATRAS DO PIVO
-	max_h = max(data['h'][size-22:size-2])
-	min_l = max(data['l'][size-22:size-2])
-	## PERCENTUAL
-	var = perc(pivot['o'], pivot['c'])
-	##STATMENT PARA SE ADEQUAR AO PIVO
-	pivot_up = var > 3.0 and pivot['c'] > max_h 
-	pivot_do = var < -1.5 and pivot['c'] < min_l
-
-	if(pivot_up):
-		return 'buy'
+	if(size > 0):
+		pivot = {
+			'c': data['c'][size-2],
+			'o': data['o'][size-2],
+		}
+		## PERCENTUAL
+		var = perc(pivot['o'], pivot['c'])
+		##STATMENT PARA SE ADEQUAR AO PIVO
+		if(var > 2.0):
+			return 'buy'
 
 	return 'none'
 
@@ -105,18 +119,16 @@ def perc(buy, sell):
 
 def rsi_max(bot_config):
 	data = getDataDecision(bot_config)
-	size = len(data['h'])
-
-	tomax = data['h'][size-3:size-1]
-
-	maxx = max(tomax)
 	rsi = statistics.getRSI(data)
-
-	if(bot_config['period'] == 'hour'):
+	
+	if(bot_config['period'] == 'day'):
 		if(rsi < 30.0):
+			return 'buy'
+	if(bot_config['period'] == 'hour'):
+		if(rsi < 35.0):
 			return 'buy'	
 	if(bot_config['period'] == 'thirtyMin'):
-		if(rsi < 35.0):
+		if(rsi < 40.0):
 			return 'buy'	
 	return 'none'
 	
@@ -126,8 +138,9 @@ def map(bot_config):
 		0: contra_turtle(bot_config), #CONTRA TURTLE
 		1: inside_bar(bot_config), #INSIDE BAR
 		2: double_up(bot_config), #DOUBLLE UP
-		#3:pivot_up(bot_config), #PIVOT UP
+		3:pivot_up(bot_config), #PIVOT UP
 		4: rsi_max(bot_config), #RSI RESISTANCE
+		6: break_channel(bot_config), #BREAK CHANNEL
 	}
 	#print map
 	return map

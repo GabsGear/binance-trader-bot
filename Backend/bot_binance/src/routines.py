@@ -1,4 +1,5 @@
 # coding=utf-8
+# pylint: disable=W0612
 import binance_
 import strategies
 import helpers
@@ -48,8 +49,6 @@ class Functions():
         if (bot_config['active']):
             bn = binance_.Binance_opr()
             order = bn.getOrder(bot_config, data_decision, uuid, client)
-            print('---Status da ultima ordem')
-            print('---' + str(order['status']) + '\n')
             if (order['status'] != 'NEW'):
                 return True   
         return False 
@@ -67,11 +66,7 @@ class Functions():
         if (data_decision['open_orders'] and not bot_config['active']):
             return 1
         elif (data_decision['open_orders'] and bot_config['active']):
-            return 1 
-        elif(bot_config['active'] and data_decision['trans']):
-            client = binance_.loginAPI(bot_config)
-            if not (self.checkLastOrders(bot_config, data_decision, data_decision['buy_uuid'], client)): 
-                return 1            
+            return 1         
         return 0
 
     def selectBuyStrategy(self, data, bot_config, data_decision): 
@@ -83,33 +78,49 @@ class Functions():
             data_decision {[dict]} -- transactions detals
         """
         bn = binance_.Binance_opr()
-        for i in range(0, 3):
+        for i in range(0, 7): #0 ate 5
             if(bot_config['strategy_buy'] == i):
-                if(self.mapStrategy(bot_config)[i] == 'buy'):
+                if(self.mapStrategy(bot_config, data_decision)[i] == 'buy'):
                     bn.createBuyOrder(data, bot_config, data_decision)
 
-# -----------------------------------------sell 
+# ----------------------------------------sell 
     def sellOrder(self, bot_config):
         bn = binance_.Binance_opr()
+        hp = helpers.Helpers()
         lopen, lhigh, llow, lclose, lvol, closetime = bn.getCandles(str(bot_config['currency']), bot_config['period'])
         st = strategies.Desicion(lopen, lhigh, llow, lclose, lvol, closetime)
-        data_decision = st.getDataDesicion(bot_config)
+        data_decision = st.getDataDecision(bot_config)
         fixProfit = self.getFixProfit(bot_config, data_decision)
         stoploss = self.getStopLoss(bot_config, data_decision)
-        print('---Price Now')
-        print('---' + str(data_decision['price_now']))
-        print('---Alvo de venda')
-        print('---' + str(fixProfit))
-        print('---Stop Loss')
-        print('---' + str(stoploss))
-        print('-----')
+        
+        log = ('---Price Now')
+        hp.writeOutput(bot_config['id'], log)
+        log = ('---' + str(data_decision['price_now']))
+        hp.writeOutput(bot_config['id'], log)
+        log = ('---Alvo de venda')
+        hp.writeOutput(bot_config['id'], log)
+        log = ('---' + str(fixProfit))
+        hp.writeOutput(bot_config['id'], log)
+        log = ('---Stop Loss')
+        hp.writeOutput(bot_config['id'], log)
+        log = ('---' + str(stoploss))
+        hp.writeOutput(bot_config['id'], log)
+        log = ('-----')
+        hp.writeOutput(bot_config['id'], log)
         
         data = self.getSellData(bot_config, data_decision)
         if(data_decision['price_now'] <= stoploss):
-            print ('---Venda stop loss alvo ' + str(stoploss))
+            log = ('---Venda stop loss alvo ' + str(stoploss))
+            hp.writeOutput(bot_config['id'], log)
             bn.createSellOrder(data, bot_config, data_decision)
+           
+        elif(bot_config['strategy_buy'] == 6 and self.mapStrategy(bot_config, data_decision)[6] == 'sell'):
+            bn.createSellOrder(data, bot_config, data_decision)
+            return  
+
         elif(data_decision['price_now'] >= fixProfit):
-            print('---Venda lucro fixo')
+            log = ('---Venda lucro fixo')
+            hp.writeOutput(bot_config['id'], log)
             bn.createSellOrder(data, bot_config, data_decision)  
 
     def orderSellStatus(self, bot_config, data_decision):
@@ -120,12 +131,7 @@ class Functions():
         elif not (data_decision['trans']):
             return 1
         elif(bot_config['active'] and not data_decision['open_orders']): ##NAO VENDER EM QUANTO ORDEM DE COMPRA ABERTA
-            return 1
-        elif(bot_config['active'] and data_decision['trans']):
-            client = binance_.loginAPI(bot_config)
-            if not (self.checkLastOrders(bot_config, data_decision, data_decision['trans']['buy_uuid'], client)): 
-                print('---Ordem de compra ainda não executada na exchange')
-                return 1      
+            return 1  
         return 0
 
     def getSellData(self, bot_config, data_decision):
@@ -142,7 +148,7 @@ class Functions():
     def getStopLoss(self, bot_config, data_decision):
         return float(data_decision['trans']['buy_value']*(1-float(bot_config['stoploss'])))
     
-    def mapStrategy(self, bot_config): 
+    def mapStrategy(self, bot_config, data_decision): 
         """map the strategies
         
         Arguments:s
@@ -155,35 +161,46 @@ class Functions():
         lopen, lhigh, llow, lclose, lvol, closetime = bn.getCandles(str(bot_config['currency']), bot_config['period'])
         st = strategies.StrategiesBase(lopen, lhigh, llow, lclose, lvol)
         map = {
-            0: st.startTurtle(bot_config), #CONTRA TURTLE
-            1: st.startInside(bot_config), #INSIDE BAR
-            2: st.startDoubleUp(bot_config), #DOUBLLE UP
-            3: st.startPivot_up(bot_config), #PIVOT UP
+            0: st.startTurtle(bot_config, data_decision), #CONTRA TURTLE
+            1: st.startInside(bot_config, data_decision), #INSIDE BAR
+            2: st.startDoubleUp(bot_config, data_decision), #DOUBLLE UP
+            3: st.startPivotUp(bot_config, data_decision), #PIVOT UP
+            4: st.startRSIMax(bot_config, data_decision), #RSI
+            5: st.startFollowBTC(bot_config, data_decision), #BTC
+            6: st.startBreackChannel(bot_config, data_decision) #breack channel
         }
         return map
+    
 
 class Routines(Functions):
-
     def get_config(self, bot_config):
         bn = binance_.Binance_opr()
         lopen, lhigh, llow, lclose, lvol, closetime = bn.getCandles(str(bot_config['currency']), bot_config['period'])
         st = strategies.Desicion(lopen, lhigh, llow, lclose, lvol, closetime)
-        data_decision = st.getDataDesicion(bot_config)
+        data_decision = st.getDataDecision(bot_config)
         return data_decision
         
     def startBuyRoutine(self, bot_config):
-        print('1- Iniciando rotina de compra')
+        hp = helpers.Helpers()
+        log = ('1- Iniciando rotina de compra')
+        hp.writeOutput(bot_config['id'], log)
         data_decision = self.get_config(bot_config)
         if(super().orderBuyStatus(bot_config, data_decision)):
-            print('---Existem ordens em aberto no banco de dados\n')
+            hp = helpers.Helpers()
+            log = ('---Existem ordens em aberto no banco de dados\n')
+            hp.writeOutput(bot_config['id'], log)
             return  
         super().buyOrder(bot_config, data_decision)
 
     def startSellRoutine(self, bot_config):
-        print('2- Iniciando rotina de venda ')
+        hp = helpers.Helpers()
+        log = ('2- Iniciando rotina de venda ')
+        hp.writeOutput(bot_config['id'], log)
         data_decision = self.get_config(bot_config)
         if (super().orderSellStatus(bot_config, data_decision)):
-            print('----Ainda nao ha nada para vender\n')
+            hp = helpers.Helpers()
+            log = ('----Ainda nao ha nada para vender\n')
+            hp.writeOutput(bot_config['id'], log)
             return
         super().sellOrder(bot_config)
 

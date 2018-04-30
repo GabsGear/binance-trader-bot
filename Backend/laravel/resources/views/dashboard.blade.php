@@ -24,6 +24,11 @@
 <div class="outer">
     <div class="inner bg-container">
         <div class="row">
+             <div class="col-6">
+                <div class="alert alert-info alert-dismissable">
+                    Aumentamos o limite de robôs permitidos para os planos Prata e Ouro.
+                </div>
+            </div>
             <div class="col-12">
                 <div class="row">
                     <div class="col-12 col-sm-6 col-lg-3">
@@ -240,11 +245,13 @@
                                         @elseif($bot->strategy_buy == 1)
                                             Inside Bar
                                         @elseif($bot->strategy_buy == 2)
-                                            Double UP
+                                            Alta Dupla
+                                        @elseif($bot->strategy_buy == 3)
+                                            Pivo de Alta
                                         @elseif($bot->strategy_buy == 4)
-                                            RSI + Resistance
-                                        @else
-                                            Pivot UP
+                                            Indice de Forca (RSI)
+                                        @elseif($bot->strategy_buy == 6)
+                                            Break Channel
                                         @endif
                                         /Lucro:{{$bot->percentage*100}}%
                                         /Stoploss: {{$bot->stoploss*100}}%/Timeframe: {{$bot->period}}
@@ -342,12 +349,17 @@
                         <select name="strategy_buy" class="form-control">
                             <option value="0">Contra Turtle</option>
                             <option value="1">Inside Bar</option>
-                            <option value="2">Double UP</option>
-                            <option value="3">Pivot UP</option>
-                            <option value="4">RSI Resistance</option>
+                            <option value="2">Alta Dupla</option>
+                            <option value="3">Pivô de Alta</option>
+                            <option value="4">Indíce de Força (RSI)</option>
+                            <option value="6">Quebra de Canal</option>
+                            <option value="5" disabled="">Bandas de Boiller</option>
+                            <option value="6" disabled="">Fluxo Monetário</option>
+                            <option value="7" disabled="">Follow BTC</option>
+                            <option value="7" disabled="">Three Inside UP</option>
                         </select>
                         </br><label><i  data-toggle="tooltip" data-placement="right" title="Defina o lucro a ser atingido quando uma compra for efetuada." class="fa fa-question-circle-o" style='color:#00cc99'></i> 
-                        Porcentagem de Lucro </label></br>
+                        Lucro Desejado </label></br>
                         <select name="percentage" class="form-control">
                             <option value="0.01">1%</option>
                             <option value="0.015">1.5%</option>
@@ -420,18 +432,18 @@
     let bit_btc = 0;
     let bit_usd = 0;
 
-    $.get("http://198.50.194.124/balance/binance/BTC", function(bin_btc) {
+    $.get("http://painel.protraderbot.com/balance/binance/BTC", function(bin_btc) {
         return bin_btc;
     }).then(function(bin_btc) {
-        $.getJSON("http://198.50.194.124/balance/binance/USDT", function(bin_usd) {
+        $.getJSON("http://painel.protraderbot.com/balance/binance/USDT", function(bin_usd) {
             $("#bin_balance").html(bin_usd+" <b>USD</b>|"+bin_btc+" <b>BTC</b>");
         });
     });
 
-    $.get("http://198.50.194.124/balance/bittrex/BTC", function(bit_btc) {
+    $.get("http://painel.protraderbot.com/balance/bittrex/BTC", function(bit_btc) {
         return bit_btc;
     }).then(function(bit_btc) {
-        $.getJSON("http://198.50.194.124/balance/bittrex/USDT", function(bit_usd) {
+        $.getJSON("http://painel.protraderbot.com/balance/bittrex/USDT", function(bit_usd) {
             $("#bit_balance").html(bit_usd+" <b>USD</b>|"+bit_btc+" <b>BTC</b>");
         });
     });

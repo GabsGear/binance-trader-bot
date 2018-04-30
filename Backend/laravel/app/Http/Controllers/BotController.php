@@ -30,9 +30,9 @@ class BotController extends Controller
             ##VALIDACAO
             if($count_bots >= 2 && Auth::user()->premium == 0)
                 return Redirect::back()->withErrors(['Você atingiu o limite de bots permitido.']);
-            if($count_bots >= 5 && Auth::user()->premium == 1)
+            if($count_bots >= 10 && Auth::user()->premium == 1)
                 return Redirect::back()->withErrors(['Você atingiu o limite de bots permitido.']);
-            if($count_bots >= 10 && Auth::user()->premium == 2)
+            if($count_bots >= 30 && Auth::user()->premium == 2)
                 return Redirect::back()->withErrors(['Você atingiu o limite de bots permitido.']);
             if($count_bots >= 30 && Auth::user()->premium == 3)
                 return Redirect::back()->withErrors(['Você atingiu o limite de bots permitido.']);

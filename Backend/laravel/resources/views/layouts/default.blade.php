@@ -8,15 +8,15 @@
     <title>ProTraderBot</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="http://198.50.194.124/img/icon.png"/>
+    <link rel="shortcut icon" href="http://painel.protraderbot.com/img/icon.png"/>
 
     <!--global styles-->
-    <link type="text/css" rel="stylesheet" href="http://198.50.194.124/css/components.css"/>
-    <link type="text/css" rel="stylesheet" href="http://198.50.194.124/css/custom.css"/>
+    <link type="text/css" rel="stylesheet" href="http://painel.protraderbot.com/css/components.css"/>
+    <link type="text/css" rel="stylesheet" href="http://painel.protraderbot.com/css/custom.css"/>
     <!-- end of global styles-->
-    <link type="text/css" rel="stylesheet" href="http://198.50.194.124/vendors/c3/css/c3.min.css"/>
-    <link type="text/css" rel="stylesheet" href="http://198.50.194.124/vendors/switchery/css/switchery.min.css"/>
-    <link type="text/css" rel="stylesheet" href="http://198.50.194.124/css/pages/new_dashboard.css"/>
+    <link type="text/css" rel="stylesheet" href="http://painel.protraderbot.com/vendors/c3/css/c3.min.css"/>
+    <link type="text/css" rel="stylesheet" href="http://painel.protraderbot.com/vendors/switchery/css/switchery.min.css"/>
+    <link type="text/css" rel="stylesheet" href="http://painel.protraderbot.com/css/pages/new_dashboard.css"/>
 </head>
 
 <body class="body">
@@ -46,7 +46,7 @@ z-index: 999999">
         <nav class="navbar navbar-static-top">
             <div class="container-fluid m-0"> 
                 <a class="navbar-brand float-left" href="{{route('dashboard')}}">
-                    <img class="admin_img" style="width:180px;" src="http://198.50.194.124/img/logo.png" /> 
+                    <img class="admin_img" style="width:180px;" src="http://painel.protraderbot.com/img/logo.png" /> 
                 </a>
                 <div class="menu">
                     <span class="toggle-left" id="menu-toggle">
@@ -112,7 +112,7 @@ z-index: 999999">
                         </a>
                     </li>
                     <li>
-                        <a href="{{route('account')}}">
+                        <a href="http://protraderbot.com/blog/contato/" target="_blank">
                             <i class="fa fa-envelope-o"></i>
                             <span class="link-title menu_hide">&nbsp;Suporte
                             </span>
@@ -140,17 +140,17 @@ z-index: 999999">
 </div>
 <!-- /#wrap -->
 <!-- global scripts-->
-<script type="text/javascript" src="http://198.50.194.124/js/components.js"></script>
-<script type="text/javascript" src="http://198.50.194.124/js/custom.js"></script>
+<script type="text/javascript" src="http://painel.protraderbot.com/js/components.js"></script>
+<script type="text/javascript" src="http://painel.protraderbot.com/js/custom.js"></script>
 <!-- global scripts end-->
-<script type="text/javascript" src="http://198.50.194.124/vendors/slimscroll/js/jquery.slimscroll.min.js"></script>
-<script type="text/javascript" src="http://198.50.194.124/vendors/raphael/js/raphael-min.js"></script>
-<script type="text/javascript" src="http://198.50.194.124/vendors/d3/js/d3.min.js"></script>
-<script type="text/javascript" src="http://198.50.194.124/vendors/c3/js/c3.min.js"></script>
-<script type="text/javascript" src="http://198.50.194.124/vendors/switchery/js/switchery.min.js"></script>
+<script type="text/javascript" src="http://painel.protraderbot.com/vendors/slimscroll/js/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="http://painel.protraderbot.com/vendors/raphael/js/raphael-min.js"></script>
+<script type="text/javascript" src="http://painel.protraderbot.com/vendors/d3/js/d3.min.js"></script>
+<script type="text/javascript" src="http://painel.protraderbot.com/vendors/c3/js/c3.min.js"></script>
+<script type="text/javascript" src="http://painel.protraderbot.com/vendors/switchery/js/switchery.min.js"></script>
 
-<script type="text/javascript" src="http://198.50.194.124/vendors/jquery_newsTicker/js/newsTicker.js"></script>
-<script type="text/javascript" src="http://198.50.194.124/vendors/countUp.js/js/countUp.min.js"></script>
+<script type="text/javascript" src="http://painel.protraderbot.com/vendors/jquery_newsTicker/js/newsTicker.js"></script>
+<script type="text/javascript" src="http://painel.protraderbot.com/vendors/countUp.js/js/countUp.min.js"></script>
 <!--end of plugin scripts-->
 
 </body>

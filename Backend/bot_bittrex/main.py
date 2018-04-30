@@ -21,10 +21,11 @@ def main():
 	global bot_config
 	bot_config = db.getConfigBot(bot_id)
 	print("STARTED...")
-
+	#acc_config = db.getConfigAcc(bot_config['user_id'])
 	bittrex_func.loadAPI(bot_config)
 	db.setPID(bot_id)
-	
+	#bittrex = bittrex_lib.Bittrex(acc_config['bit_api_key'], acc_config['bit_api_secret'], api_version='v1.1')	
+	#print bittrex.get_balances()
 	while(bot_config['active'] != 2):
 		routine(bot_id)
 
@@ -88,7 +89,7 @@ def trySell(bot_config):
 
 
 def checkBuy(data, bot_config, price_now):
-	for i in range(0, 5): #0 a 4
+	for i in range(0, 7): #0 a 4
 		if(bot_config['strategy_buy'] == i):
 			print ("--[5]--Recebendo sinais de compra.. \n")
 			if(strategy.map(bot_config)[i] == 'buy'):
@@ -97,9 +98,14 @@ def checkBuy(data, bot_config, price_now):
 
 def checkSell(data, bot_config, trans, price_now):
 	fix_profit = trans['buy_value']+(trans['buy_value']*bot_config['percentage'])
-	print ("--[10]--Calculando lucro fixo.. \n")
-	if(price_now >= fix_profit):
+	##VENDENDO VIA MEDIA MOVEL ID 101 SO TEM PRA ESTRATEGIA BREAK CHANNEL
+	if(bot_config['strategy_buy'] == 6 and strategy.map(bot_config)[6] == 'sell'):
+		print("fui tentar vender via break channel")
 		bittrex_func.sellLimit(data, bot_config, price_now, trans)
+		return
+	if(price_now >= fix_profit and bot_config['strategy_buy'] != 6):
+		bittrex_func.sellLimit(data, bot_config, price_now, trans)
+		return 
 
 
 ##VERIFICA SE PODE COMPRAR, 

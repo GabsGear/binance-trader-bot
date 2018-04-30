@@ -12,8 +12,8 @@ def getConn():
 def insertBuyOrder(data):
 	#print data
 	db, cursor = getConn()
-	query = ("INSERT INTO transactions (bot_id, buy_value, quantity, sell_value, selled, date_open, date_close, buy_uuid, sell_uuid) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)")
-	cursor.execute(query, (data['bot_id'], data['valor'], data['qnt'], 0.0, 0, time_now(), '', data['buy_uuid'], ''))
+	query = ("INSERT INTO transactions (bot_id, buy_value, quantity, sell_value, selled, date_open, buy_uuid, sell_uuid) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)")
+	cursor.execute(query, (data['bot_id'], data['valor'], data['qnt'], 0.0, 0, time_now(), data['buy_uuid'], ''))
 	db.commit()
 	cursor.close()
 
