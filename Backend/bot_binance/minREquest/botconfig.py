@@ -9,7 +9,7 @@ import helpers
 class Db:
     def getConn(self):
         try:
-            db = mysql.connect(host="localhost", user="root", passwd="gabsghell", db="protrade")
+            db = mysql.connect(host="localhost", user="root", passwd="libano252528", db="protrader")
             #db = mysql.connect(host="127.0.0.1", user="root", passwd="Gv9KP70E316v", db="protrader")
             cursor = db.cursor()
             return db, cursor  
@@ -19,8 +19,8 @@ class Db:
     def insertBuyOrder(self, data):
         dt = helpers.Helpers()
         db, cursor = self.getConn()
-        query = ("INSERT INTO transactions (bot_id, buy_value, quantity, sell_value, selled, date_open, date_close, buy_uuid, sell_uuid) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)")
-        cursor.execute(query, (data['bot_id'], data['valor'], data['qnt'], 0.0, 0, str(dt.time_now()), '-', data['buy_uuid'], ''))
+        query = ("INSERT INTO transactions (bot_id, buy_value, quantity, sell_value, selled, date_open, buy_uuid, sell_uuid) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)")
+        cursor.execute(query, (data['bot_id'], data['valor'], data['qnt'], 0.0, 0, dt.time_now(), data['buy_uuid'], ''))
         db.commit()
         cursor.close()
 
@@ -30,7 +30,7 @@ class Db:
         row, trans = self.getBuyOrders(data['bot_id']) 
         query = ("UPDATE transactions SET sell_value=(%s), selled=(%s), date_close=(%s), sell_uuid=(%s) WHERE id=(%s)")
         value = float(data['sell_value'])
-        cursor.execute(query, (value, "1", str(dt.time_now()), data['sell_uuid'], trans['id'] ))
+        cursor.execute(query, (value, "1", dt.time_now(), data['sell_uuid'], trans['id'] ))
         db.commit()
         cursor.close()
 
@@ -106,7 +106,6 @@ class Db:
             return obj
         except:
             print ('Erro, getCOnfigBot()')
-
 
     def convert(self, string):
         try:

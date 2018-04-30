@@ -77,11 +77,23 @@ class Functions():
             bot_config {[dict]} -- bot setup
             data_decision {[dict]} -- transactions detals
         """
-        bn = binance_.Binance_opr()
-        for i in range(0, 8): #0 ate 5
-            if(bot_config['strategy_buy'] == i):
-                if(self.mapStrategy(bot_config, data_decision)[i] == 'buy'):
-                    bn.createBuyOrder(data, bot_config, data_decision)
+        st = strategies.StrategiesBase()
+        if(bot_config['strategy_buy'] == 0):
+            st.startTurtle(bot_config, data_decision), #CONTRA TURTLE
+        elif (bot_config['strategy_buy'] == 1):
+            st.startInside(bot_config, data_decision), #INSIDE BAR
+        elif(bot_config['strategy_buy'] == 2):        
+            st.startDoubleUp(bot_config, data_decision), #DOUBLLE UP
+        elif(bot_config['strategy_buy'] == 3):   
+            st.startPivotUp(bot_config, data_decision), #PIVOT UP
+        elif(bot_config['strategy_buy'] == 4):   
+            st.startRSIMax(bot_config, data_decision), #RSI
+        elif(bot_config['strategy_buy'] == 5):   
+            st.startFollowBTC(bot_config, data_decision), #BTC
+        elif(bot_config['strategy_buy'] == 6):   
+            st.startBreackChannel(bot_config, data_decision), #breack channel
+        elif(bot_config['strategy_buy'] == 7):   
+            st.startBollingerBand(bot_config, data_decision)
 
 # ----------------------------------------sell 
     def sellOrder(self, bot_config, data_decision):
@@ -89,6 +101,7 @@ class Functions():
         hp = helpers.Helpers()
         fixProfit = self.getFixProfit(bot_config, data_decision)
         stoploss = self.getStopLoss(bot_config, data_decision)
+        st = strategies.StrategiesBase()
         
         log = ('---Price Now')
         hp.writeOutput(bot_config['id'], log)
@@ -110,15 +123,18 @@ class Functions():
             log = ('---Venda stop loss alvo ' + str(stoploss))
             hp.writeOutput(bot_config['id'], log)
             bn.createSellOrder(data, bot_config, data_decision)
+            return
            
-        elif(bot_config['strategy_buy'] == 6 and self.mapStrategy(bot_config, data_decision)[6] == 'sell'):
-            bn.createSellOrder(data, bot_config, data_decision)
-            return  
+        elif(bot_config['strategy_buy'] == 6):
+            if(st.startBreackChannel(bot_config, data_decision) == 'sell'):
+                bn.createSellOrder(data, bot_config, data_decision)
+                return  
 
-        elif(data_decision['price_now'] >= fixProfit):
+        elif(data_decision['price_now'] >= fixProfit and bot_config['strategy_buy'] != 6):
             log = ('---Venda lucro fixo')
             hp.writeOutput(bot_config['id'], log)
             bn.createSellOrder(data, bot_config, data_decision)  
+            return
 
     def orderSellStatus(self, bot_config, data_decision):
         if(not data_decision['open_orders'] and not bot_config['active']):
@@ -144,28 +160,6 @@ class Functions():
 
     def getStopLoss(self, bot_config, data_decision):
         return float(data_decision['trans']['buy_value']*(1-float(bot_config['stoploss'])))
-    
-    def mapStrategy(self, bot_config, data_decision): 
-        """map the strategies
-        
-        Arguments:s
-            bot_config {[dict]} -- bot setup
-        
-        Returns:
-            [type] -- return a map with all strategies
-        """
-        st = strategies.StrategiesBase()
-        map = {
-            0: st.startTurtle(bot_config, data_decision), #CONTRA TURTLE
-            1: st.startInside(bot_config, data_decision), #INSIDE BAR
-            2: st.startDoubleUp(bot_config, data_decision), #DOUBLLE UP
-            3: st.startPivotUp(bot_config, data_decision), #PIVOT UP
-            4: st.startRSIMax(bot_config, data_decision), #RSI
-            5: st.startFollowBTC(bot_config, data_decision), #BTC
-            6: st.startBreackChannel(bot_config, data_decision), #breack channel
-            7: st.startBollingerBand(bot_config, data_decision)
-        }
-        return map
     
 class Routines(Functions):
     def get_config(self, bot_config):

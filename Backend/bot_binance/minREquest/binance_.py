@@ -237,7 +237,7 @@ class Binance_opr(ApiData):
             return False
         return orders['executedQty']
 
-    def checkMinOrder(self, bot_config, ammount):
+    def checkMinOrder(self, data_decision, bot_config, ammount):
         currency = str(bot_config['currency'])
         pair = currency[len(currency)-4:len(currency)]
         if(pair == 'USDT'):
@@ -247,7 +247,7 @@ class Binance_opr(ApiData):
             else:
                 return True
         else:
-            priceBRL = ammount*bot_config['price_now']*3.3
+            priceBRL = ammount*data_decision['price_now']*3.3
             print('preço brl')
             print(priceBRL)
             print('min order')
@@ -255,7 +255,6 @@ class Binance_opr(ApiData):
             if(float(bot_config['min_order']) > priceBRL):
                 return False
             else:
-                print('aqui')
                 return True
 
     def createBuyOrder(self, data, bot_config, data_decision):
@@ -277,15 +276,14 @@ class Binance_opr(ApiData):
                     ammount = float(self.getClientBalance(
                         client, bot_config))*bot_config['order_value']/float(data_decision['price_now'])
                     ammount = self.checkPrecision(bot_config, ammount)
-                    if not self.checkMinOrder(bot_config, ammount):
+                    if not self.checkMinOrder(data_decision, bot_config, ammount):
                         log = ('Erro minOrder')
                         hp.writeOutput(bot_config['id'], log)
                         return
                     try:
                         order = client.create_order(
                             symbol=bot_config['currency'], side=SIDE_BUY, type=ORDER_TYPE_LIMIT, timeInForce=TIME_IN_FORCE_FOK, quantity=ammount, price=str(price))
-                        log = order
-                        hp.writeOutput(bot_config['id'], log)
+                        hp.writeOutput(bot_config['id'], order)
 
                     except:
                         log = ('Erro, nao foi possivel abrir a ordem')

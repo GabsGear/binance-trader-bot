@@ -17,7 +17,7 @@ def main():
     db.setPID(bot_id)
     while(bot_config['active'] != 2):
         routine(bot_id)
-        time.sleep(10)
+        time.sleep(30)
 
 def routine(bot_id):
     db = botconfig.Db()
