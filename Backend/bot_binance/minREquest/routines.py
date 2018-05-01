@@ -13,8 +13,11 @@ class Functions():
         Arguments:
             bot_config {[dict]} -- bot setup
         """
-        data = self.createBuyData(bot_config, data_decision)   
-        self.selectBuyStrategy(data, bot_config, data_decision)
+        bn = binance_.Binance_opr()
+        data = self.createBuyData(bot_config, data_decision) 
+        print(self.selectBuyStrategy(data, bot_config, data_decision))  
+        if (self.selectBuyStrategy(data, bot_config, data_decision) == 'buy'):
+            bn.createBuyOrder(data, bot_config, data_decision)
         return
 
     def createBuyData(self, bot_config, data_decision):  
@@ -77,23 +80,24 @@ class Functions():
             bot_config {[dict]} -- bot setup
             data_decision {[dict]} -- transactions detals
         """
+        print('Selecionando estrategia numero ' + str(bot_config['strategy_buy']))
         st = strategies.StrategiesBase()
         if(bot_config['strategy_buy'] == 0):
-            st.startTurtle(bot_config, data_decision), #CONTRA TURTLE
+            return st.startTurtle(bot_config, data_decision) #CONTRA TURTLE
         elif (bot_config['strategy_buy'] == 1):
-            st.startInside(bot_config, data_decision), #INSIDE BAR
+            return st.startInside(bot_config, data_decision) #INSIDE BAR
         elif(bot_config['strategy_buy'] == 2):        
-            st.startDoubleUp(bot_config, data_decision), #DOUBLLE UP
+            return st.startDoubleUp(bot_config, data_decision) #DOUBLLE UP
         elif(bot_config['strategy_buy'] == 3):   
-            st.startPivotUp(bot_config, data_decision), #PIVOT UP
+            return st.startPivotUp(bot_config, data_decision) #PIVOT UP
         elif(bot_config['strategy_buy'] == 4):   
-            st.startRSIMax(bot_config, data_decision), #RSI
+            return st.startRSIMax(bot_config, data_decision) #RSI
         elif(bot_config['strategy_buy'] == 5):   
-            st.startFollowBTC(bot_config, data_decision), #BTC
-        elif(bot_config['strategy_buy'] == 6):   
-            st.startBreackChannel(bot_config, data_decision), #breack channel
+            return st.startFollowBTC(bot_config, data_decision) #BTC
+        elif(bot_config['strategy_buy'] == 6):  
+            return st.startBreackChannel(bot_config, data_decision) #breack channel
         elif(bot_config['strategy_buy'] == 7):   
-            st.startBollingerBand(bot_config, data_decision)
+            return st.startBollingerBand(bot_config, data_decision)
 
 # ----------------------------------------sell 
     def sellOrder(self, bot_config, data_decision):

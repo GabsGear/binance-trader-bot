@@ -240,18 +240,20 @@ class Binance_opr(ApiData):
     def checkMinOrder(self, data_decision, bot_config, ammount):
         currency = str(bot_config['currency'])
         pair = currency[len(currency)-4:len(currency)]
+        print('minOrder ')
+        print('ammount ' + str(ammount))
+        print('minOrder ' + str(bot_config['min_order']))
         if(pair == 'USDT'):
-            priceBRL = ammount*3.3
-            if(float(bot_config['min_order']) < priceBRL):
+            priceBRL = ammount * 3.3 * data_decision ['price_now']
+            print('usdt')
+            print('priceBRL ' + str(priceBRL))           
+            if(float(bot_config['min_order']) > priceBRL):
                 return False
             else:
                 return True
         else:
-            priceBRL = ammount*data_decision['price_now']*3.3
-            print('preço brl')
-            print(priceBRL)
-            print('min order')
-            print(bot_config['min_order'])
+            priceBRL = ammount * data_decision ['price_now'] * 3.3 * 8900
+            print('priceBRL ' + str(priceBRL))   
             if(float(bot_config['min_order']) > priceBRL):
                 return False
             else:
@@ -284,7 +286,7 @@ class Binance_opr(ApiData):
                         order = client.create_order(
                             symbol=bot_config['currency'], side=SIDE_BUY, type=ORDER_TYPE_LIMIT, timeInForce=TIME_IN_FORCE_FOK, quantity=ammount, price=str(price))
                         hp.writeOutput(bot_config['id'], order)
-
+                        print(order)
                     except:
                         log = ('Erro, nao foi possivel abrir a ordem')
                         hp.writeOutput(bot_config['id'], log)

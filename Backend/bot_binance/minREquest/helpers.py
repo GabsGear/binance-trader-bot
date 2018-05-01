@@ -39,6 +39,5 @@ class Helpers:
         try:
             file = open('/home/gabs/binance/logs/'+str(bot_id)+'-output.txt', 'a+')
             file.write('['+str(self.time_now())+'] ' + data + "\n")
-
         except:
             return
