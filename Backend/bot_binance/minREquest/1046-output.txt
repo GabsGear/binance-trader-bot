@@ -1,0 +1,1926 @@
+[2018-04-28 16:43:46] logando na  api
+[2018-04-28 16:43:46] Login Ok
+[2018-04-28 16:43:46] 1- Iniciando rotina de compra
+[2018-04-28 16:43:47] price now = 7.71e-06
+[2018-04-28 16:43:47] Buy at 7.66e-06
+[2018-04-28 16:44:47] logando na  api
+[2018-04-28 16:44:48] Login Ok
+[2018-04-28 16:44:48] 1- Iniciando rotina de compra
+[2018-04-28 16:44:49] price now = 7.69e-06
+[2018-04-28 16:44:49] Buy at 7.66e-06
+[2018-04-28 16:45:48] logando na  api
+[2018-04-28 16:45:48] Login Ok
+[2018-04-28 16:45:48] 1- Iniciando rotina de compra
+[2018-04-28 16:45:49] price now = 7.69e-06
+[2018-04-28 16:45:49] Buy at 7.66e-06
+[2018-04-28 16:46:49] logando na  api
+[2018-04-28 16:46:50] Login Ok
+[2018-04-28 16:46:50] 1- Iniciando rotina de compra
+[2018-04-28 16:46:51] price now = 7.7e-06
+[2018-04-28 16:46:51] Buy at 7.66e-06
+[2018-04-28 16:47:50] logando na  api
+[2018-04-28 16:47:51] Login Ok
+[2018-04-28 16:47:51] 1- Iniciando rotina de compra
+[2018-04-28 16:47:52] price now = 7.7e-06
+[2018-04-28 16:47:52] Buy at 7.66e-06
+[2018-04-28 16:47:52] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:47:52] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:47:52] 2- Iniciando rotina de venda 
+[2018-04-28 16:47:53] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:48:03] 1- Iniciando rotina de compra
+[2018-04-28 16:48:03] price now = 7.7e-06
+[2018-04-28 16:48:03] Buy at 7.66e-06
+[2018-04-28 16:48:03] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:48:04] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:48:04] 2- Iniciando rotina de venda 
+[2018-04-28 16:48:04] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:48:14] 1- Iniciando rotina de compra
+[2018-04-28 16:48:15] price now = 7.7e-06
+[2018-04-28 16:48:15] Buy at 7.66e-06
+[2018-04-28 16:48:15] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:48:15] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:48:15] 2- Iniciando rotina de venda 
+[2018-04-28 16:48:15] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:48:25] 1- Iniciando rotina de compra
+[2018-04-28 16:48:27] price now = 7.7e-06
+[2018-04-28 16:48:27] Buy at 7.66e-06
+[2018-04-28 16:48:27] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:48:27] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:48:27] 2- Iniciando rotina de venda 
+[2018-04-28 16:48:27] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:48:37] 1- Iniciando rotina de compra
+[2018-04-28 16:48:38] price now = 7.69e-06
+[2018-04-28 16:48:38] Buy at 7.66e-06
+[2018-04-28 16:48:38] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:48:39] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:48:39] 2- Iniciando rotina de venda 
+[2018-04-28 16:48:39] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:48:49] 1- Iniciando rotina de compra
+[2018-04-28 16:48:50] price now = 7.69e-06
+[2018-04-28 16:48:50] Buy at 7.66e-06
+[2018-04-28 16:48:50] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:48:50] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:48:50] 2- Iniciando rotina de venda 
+[2018-04-28 16:48:50] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:49:00] 1- Iniciando rotina de compra
+[2018-04-28 16:49:01] price now = 7.68e-06
+[2018-04-28 16:49:01] Buy at 7.66e-06
+[2018-04-28 16:49:01] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:49:01] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:49:01] 2- Iniciando rotina de venda 
+[2018-04-28 16:49:02] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:49:12] 1- Iniciando rotina de compra
+[2018-04-28 16:49:12] price now = 7.68e-06
+[2018-04-28 16:49:12] Buy at 7.66e-06
+[2018-04-28 16:49:12] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:49:13] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:49:13] 2- Iniciando rotina de venda 
+[2018-04-28 16:49:13] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:49:23] 1- Iniciando rotina de compra
+[2018-04-28 16:49:24] price now = 7.68e-06
+[2018-04-28 16:49:24] Buy at 7.66e-06
+[2018-04-28 16:49:24] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:49:25] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:49:25] 2- Iniciando rotina de venda 
+[2018-04-28 16:49:25] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:49:35] 1- Iniciando rotina de compra
+[2018-04-28 16:49:36] price now = 7.68e-06
+[2018-04-28 16:49:36] Buy at 7.66e-06
+[2018-04-28 16:49:36] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:49:36] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:49:36] 2- Iniciando rotina de venda 
+[2018-04-28 16:49:37] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:49:47] 1- Iniciando rotina de compra
+[2018-04-28 16:49:49] price now = 7.68e-06
+[2018-04-28 16:49:49] Buy at 7.66e-06
+[2018-04-28 16:49:49] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:49:50] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:49:50] 2- Iniciando rotina de venda 
+[2018-04-28 16:49:50] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:50:01] 1- Iniciando rotina de compra
+[2018-04-28 16:50:02] price now = 7.68e-06
+[2018-04-28 16:50:02] Buy at 7.66e-06
+[2018-04-28 16:50:02] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:50:03] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:50:03] 2- Iniciando rotina de venda 
+[2018-04-28 16:50:03] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:50:13] 1- Iniciando rotina de compra
+[2018-04-28 16:50:15] price now = 7.68e-06
+[2018-04-28 16:50:15] Buy at 7.66e-06
+[2018-04-28 16:50:15] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:50:15] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:50:15] 2- Iniciando rotina de venda 
+[2018-04-28 16:50:15] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:50:25] 1- Iniciando rotina de compra
+[2018-04-28 16:50:27] price now = 7.69e-06
+[2018-04-28 16:50:27] Buy at 7.66e-06
+[2018-04-28 16:50:27] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:50:28] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:50:28] 2- Iniciando rotina de venda 
+[2018-04-28 16:50:29] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:50:39] 1- Iniciando rotina de compra
+[2018-04-28 16:50:40] price now = 7.69e-06
+[2018-04-28 16:50:40] Buy at 7.66e-06
+[2018-04-28 16:50:40] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:50:41] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:50:41] 2- Iniciando rotina de venda 
+[2018-04-28 16:50:41] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:50:51] 1- Iniciando rotina de compra
+[2018-04-28 16:50:53] price now = 7.69e-06
+[2018-04-28 16:50:53] Buy at 7.66e-06
+[2018-04-28 16:50:53] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:50:53] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:50:53] 2- Iniciando rotina de venda 
+[2018-04-28 16:50:54] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:51:04] 1- Iniciando rotina de compra
+[2018-04-28 16:51:06] price now = 7.7e-06
+[2018-04-28 16:51:06] Buy at 7.66e-06
+[2018-04-28 16:51:06] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:51:06] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:51:06] 2- Iniciando rotina de venda 
+[2018-04-28 16:51:07] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:51:17] 1- Iniciando rotina de compra
+[2018-04-28 16:51:18] price now = 7.7e-06
+[2018-04-28 16:51:18] Buy at 7.66e-06
+[2018-04-28 16:51:18] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:51:18] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:51:18] 2- Iniciando rotina de venda 
+[2018-04-28 16:51:19] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:51:29] 1- Iniciando rotina de compra
+[2018-04-28 16:51:30] price now = 7.7e-06
+[2018-04-28 16:51:30] Buy at 7.66e-06
+[2018-04-28 16:51:30] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:51:30] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:51:30] 2- Iniciando rotina de venda 
+[2018-04-28 16:51:32] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:51:42] 1- Iniciando rotina de compra
+[2018-04-28 16:51:43] price now = 7.7e-06
+[2018-04-28 16:51:43] Buy at 7.66e-06
+[2018-04-28 16:51:43] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:51:43] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:51:43] 2- Iniciando rotina de venda 
+[2018-04-28 16:51:44] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:51:54] 1- Iniciando rotina de compra
+[2018-04-28 16:51:55] price now = 7.7e-06
+[2018-04-28 16:51:55] Buy at 7.66e-06
+[2018-04-28 16:51:55] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:51:55] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:51:55] 2- Iniciando rotina de venda 
+[2018-04-28 16:51:56] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:52:06] 1- Iniciando rotina de compra
+[2018-04-28 16:52:07] price now = 7.7e-06
+[2018-04-28 16:52:07] Buy at 7.66e-06
+[2018-04-28 16:52:07] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:52:08] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:52:08] 2- Iniciando rotina de venda 
+[2018-04-28 16:52:09] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:52:19] 1- Iniciando rotina de compra
+[2018-04-28 16:52:22] price now = 7.69e-06
+[2018-04-28 16:52:22] Buy at 7.66e-06
+[2018-04-28 16:52:22] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:52:23] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:52:23] 2- Iniciando rotina de venda 
+[2018-04-28 16:52:23] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:52:33] 1- Iniciando rotina de compra
+[2018-04-28 16:52:35] price now = 7.7e-06
+[2018-04-28 16:52:35] Buy at 7.66e-06
+[2018-04-28 16:52:35] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:52:35] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:52:35] 2- Iniciando rotina de venda 
+[2018-04-28 16:52:36] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:52:46] 1- Iniciando rotina de compra
+[2018-04-28 16:52:47] price now = 7.7e-06
+[2018-04-28 16:52:47] Buy at 7.66e-06
+[2018-04-28 16:52:47] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:52:48] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:52:48] 2- Iniciando rotina de venda 
+[2018-04-28 16:52:48] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:52:58] 1- Iniciando rotina de compra
+[2018-04-28 16:52:59] price now = 7.7e-06
+[2018-04-28 16:52:59] Buy at 7.66e-06
+[2018-04-28 16:52:59] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:53:00] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:53:00] 2- Iniciando rotina de venda 
+[2018-04-28 16:53:00] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:53:10] 1- Iniciando rotina de compra
+[2018-04-28 16:53:11] price now = 7.69e-06
+[2018-04-28 16:53:11] Buy at 7.66e-06
+[2018-04-28 16:53:11] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:53:12] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:53:12] 2- Iniciando rotina de venda 
+[2018-04-28 16:53:13] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:53:23] 1- Iniciando rotina de compra
+[2018-04-28 16:53:25] price now = 7.69e-06
+[2018-04-28 16:53:25] Buy at 7.66e-06
+[2018-04-28 16:53:25] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:53:26] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:53:26] 2- Iniciando rotina de venda 
+[2018-04-28 16:53:27] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:53:37] 1- Iniciando rotina de compra
+[2018-04-28 16:53:38] price now = 7.69e-06
+[2018-04-28 16:53:38] Buy at 7.66e-06
+[2018-04-28 16:53:38] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:53:38] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:53:38] 2- Iniciando rotina de venda 
+[2018-04-28 16:53:39] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:53:49] 1- Iniciando rotina de compra
+[2018-04-28 16:53:49] price now = 7.69e-06
+[2018-04-28 16:53:49] Buy at 7.66e-06
+[2018-04-28 16:53:49] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:53:50] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:53:50] 2- Iniciando rotina de venda 
+[2018-04-28 16:53:50] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:54:00] 1- Iniciando rotina de compra
+[2018-04-28 16:54:01] price now = 7.69e-06
+[2018-04-28 16:54:01] Buy at 7.66e-06
+[2018-04-28 16:54:01] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:54:02] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:54:02] 2- Iniciando rotina de venda 
+[2018-04-28 16:54:02] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:54:12] 1- Iniciando rotina de compra
+[2018-04-28 16:54:13] price now = 7.69e-06
+[2018-04-28 16:54:13] Buy at 7.66e-06
+[2018-04-28 16:54:13] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:54:13] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:54:13] 2- Iniciando rotina de venda 
+[2018-04-28 16:54:13] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:54:23] 1- Iniciando rotina de compra
+[2018-04-28 16:54:25] price now = 7.69e-06
+[2018-04-28 16:54:25] Buy at 7.66e-06
+[2018-04-28 16:54:25] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:54:25] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:54:25] 2- Iniciando rotina de venda 
+[2018-04-28 16:54:26] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:54:36] 1- Iniciando rotina de compra
+[2018-04-28 16:54:36] price now = 7.68e-06
+[2018-04-28 16:54:36] Buy at 7.66e-06
+[2018-04-28 16:54:36] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:54:37] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:54:37] 2- Iniciando rotina de venda 
+[2018-04-28 16:54:37] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:54:47] 1- Iniciando rotina de compra
+[2018-04-28 16:54:48] price now = 7.68e-06
+[2018-04-28 16:54:48] Buy at 7.66e-06
+[2018-04-28 16:54:48] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:54:49] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:54:49] 2- Iniciando rotina de venda 
+[2018-04-28 16:54:50] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:55:00] 1- Iniciando rotina de compra
+[2018-04-28 16:55:01] price now = 7.69e-06
+[2018-04-28 16:55:01] Buy at 7.66e-06
+[2018-04-28 16:55:01] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:55:01] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:55:01] 2- Iniciando rotina de venda 
+[2018-04-28 16:55:02] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:55:12] 1- Iniciando rotina de compra
+[2018-04-28 16:55:13] price now = 7.69e-06
+[2018-04-28 16:55:13] Buy at 7.66e-06
+[2018-04-28 16:55:13] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:55:14] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:55:14] 2- Iniciando rotina de venda 
+[2018-04-28 16:55:14] ----Ainda nao ha nada para vender
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      [2018-04-28 16:58:36] logando na  api
+[2018-04-28 16:58:37] Login Ok
+[2018-04-28 16:58:37] 1- Iniciando rotina de compra
+[2018-04-28 16:58:38] price now = 7.69e-06
+[2018-04-28 16:58:38] Buy at 7.66e-06
+[2018-04-28 16:58:38] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:58:38] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:58:38] 2- Iniciando rotina de venda 
+[2018-04-28 16:58:38] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:58:48] 1- Iniciando rotina de compra
+[2018-04-28 16:58:50] price now = 7.68e-06
+[2018-04-28 16:58:50] Buy at 7.66e-06
+[2018-04-28 16:58:50] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:58:50] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:58:50] 2- Iniciando rotina de venda 
+[2018-04-28 16:58:50] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:59:00] 1- Iniciando rotina de compra
+[2018-04-28 16:59:02] price now = 7.68e-06
+[2018-04-28 16:59:02] Buy at 7.66e-06
+[2018-04-28 16:59:02] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:59:02] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:59:02] 2- Iniciando rotina de venda 
+[2018-04-28 16:59:03] ----Ainda nao ha nada para vender
+
+[2018-04-28 16:59:13] 1- Iniciando rotina de compra
+[2018-04-28 16:59:15] price now = 7.69e-06
+[2018-04-28 16:59:15] Buy at 7.66e-06
+[2018-04-28 16:59:15] ---Estrategia RSI -- RSI = nan
+[2018-04-28 16:59:15] --- Estrategia Breack Channel MIN = 7.66e-06 MAX = 7.71e-06
+[2018-04-28 16:59:15] 2- Iniciando rotina de venda 
+[2018-04-28 16:59:18] ----Ainda nao ha nada para vender
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  [2018-04-28 17:04:46] logando na  api
+[2018-04-28 17:04:46] Login Ok
+[2018-04-28 17:04:46] 1- Iniciando rotina de compra
+[2018-04-28 17:04:47] price now = 7.67e-06
+[2018-04-28 17:04:47] Buy at 7.68e-06
+[2018-04-28 17:04:47] sinal buy
+[2018-04-28 17:04:47] ---Estrategia RSI -- RSI = nan
+[2018-04-28 17:04:48] --- Estrategia Breack Channel MIN = 7.68e-06 MAX = 7.72e-06
+[2018-04-28 17:04:51] 2- Iniciando rotina de venda 
+[2018-04-28 17:04:52] ----Ainda nao ha nada para vender
+
+[2018-04-28 17:05:02] 1- Iniciando rotina de compra
+[2018-04-28 17:05:04] price now = 7.68e-06
+[2018-04-28 17:05:04] Buy at 7.68e-06
+[2018-04-28 17:05:04] sinal buy
+[2018-04-28 17:05:04] ---Estrategia RSI -- RSI = nan
+[2018-04-28 17:05:05] --- Estrategia Breack Channel MIN = 7.68e-06 MAX = 7.72e-06
+[2018-04-28 17:05:38] 2- Iniciando rotina de venda 
+[2018-04-28 17:05:39] ---Price Now
+[2018-04-28 17:05:39] ---7.67e-06
+[2018-04-28 17:05:39] ---Alvo de venda
+[2018-04-28 17:05:39] ---7.833599999999999e-06
+[2018-04-28 17:05:39] ---Stop Loss
+[2018-04-28 17:05:39] ---7.449599999999999e-06
+[2018-04-28 17:05:39] -----
+[2018-04-28 17:05:49] 1- Iniciando rotina de compra
+[2018-04-28 17:05:50] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:05:50] 2- Iniciando rotina de venda 
+[2018-04-28 17:05:52] ---Price Now
+[2018-04-28 17:05:52] ---7.67e-06
+[2018-04-28 17:05:52] ---Alvo de venda
+[2018-04-28 17:05:52] ---7.833599999999999e-06
+[2018-04-28 17:05:52] ---Stop Loss
+[2018-04-28 17:05:52] ---7.449599999999999e-06
+[2018-04-28 17:05:52] -----
+[2018-04-28 17:06:02] 1- Iniciando rotina de compra
+[2018-04-28 17:06:03] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:06:03] 2- Iniciando rotina de venda 
+[2018-04-28 17:06:04] ---Price Now
+[2018-04-28 17:06:04] ---7.67e-06
+[2018-04-28 17:06:04] ---Alvo de venda
+[2018-04-28 17:06:04] ---7.833599999999999e-06
+[2018-04-28 17:06:04] ---Stop Loss
+[2018-04-28 17:06:04] ---7.449599999999999e-06
+[2018-04-28 17:06:04] -----
+[2018-04-28 17:06:14] 1- Iniciando rotina de compra
+[2018-04-28 17:06:15] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:06:15] 2- Iniciando rotina de venda 
+[2018-04-28 17:06:17] ---Price Now
+[2018-04-28 17:06:17] ---7.68e-06
+[2018-04-28 17:06:17] ---Alvo de venda
+[2018-04-28 17:06:17] ---7.833599999999999e-06
+[2018-04-28 17:06:17] ---Stop Loss
+[2018-04-28 17:06:17] ---7.449599999999999e-06
+[2018-04-28 17:06:17] -----
+[2018-04-28 17:06:27] 1- Iniciando rotina de compra
+[2018-04-28 17:06:27] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:06:27] 2- Iniciando rotina de venda 
+[2018-04-28 17:06:29] ---Price Now
+[2018-04-28 17:06:29] ---7.68e-06
+[2018-04-28 17:06:29] ---Alvo de venda
+[2018-04-28 17:06:29] ---7.833599999999999e-06
+[2018-04-28 17:06:29] ---Stop Loss
+[2018-04-28 17:06:29] ---7.449599999999999e-06
+[2018-04-28 17:06:29] -----
+[2018-04-28 17:06:39] 1- Iniciando rotina de compra
+[2018-04-28 17:06:40] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:06:40] 2- Iniciando rotina de venda 
+[2018-04-28 17:06:41] ---Price Now
+[2018-04-28 17:06:41] ---7.67e-06
+[2018-04-28 17:06:41] ---Alvo de venda
+[2018-04-28 17:06:41] ---7.833599999999999e-06
+[2018-04-28 17:06:41] ---Stop Loss
+[2018-04-28 17:06:41] ---7.449599999999999e-06
+[2018-04-28 17:06:41] -----
+[2018-04-28 17:06:51] 1- Iniciando rotina de compra
+[2018-04-28 17:06:51] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:06:51] 2- Iniciando rotina de venda 
+[2018-04-28 17:06:52] ---Price Now
+[2018-04-28 17:06:52] ---7.67e-06
+[2018-04-28 17:06:52] ---Alvo de venda
+[2018-04-28 17:06:52] ---7.833599999999999e-06
+[2018-04-28 17:06:52] ---Stop Loss
+[2018-04-28 17:06:52] ---7.449599999999999e-06
+[2018-04-28 17:06:52] -----
+[2018-04-28 17:07:02] 1- Iniciando rotina de compra
+[2018-04-28 17:07:03] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:07:03] 2- Iniciando rotina de venda 
+[2018-04-28 17:07:04] ---Price Now
+[2018-04-28 17:07:04] ---7.67e-06
+[2018-04-28 17:07:04] ---Alvo de venda
+[2018-04-28 17:07:04] ---7.833599999999999e-06
+[2018-04-28 17:07:04] ---Stop Loss
+[2018-04-28 17:07:04] ---7.449599999999999e-06
+[2018-04-28 17:07:04] -----
+[2018-04-28 17:07:14] 1- Iniciando rotina de compra
+[2018-04-28 17:07:14] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:07:14] 2- Iniciando rotina de venda 
+[2018-04-28 17:07:15] ---Price Now
+[2018-04-28 17:07:15] ---7.67e-06
+[2018-04-28 17:07:15] ---Alvo de venda
+[2018-04-28 17:07:15] ---7.833599999999999e-06
+[2018-04-28 17:07:15] ---Stop Loss
+[2018-04-28 17:07:15] ---7.449599999999999e-06
+[2018-04-28 17:07:15] -----
+[2018-04-28 17:07:25] 1- Iniciando rotina de compra
+[2018-04-28 17:07:25] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:07:25] 2- Iniciando rotina de venda 
+[2018-04-28 17:07:26] ---Price Now
+[2018-04-28 17:07:26] ---7.67e-06
+[2018-04-28 17:07:26] ---Alvo de venda
+[2018-04-28 17:07:26] ---7.833599999999999e-06
+[2018-04-28 17:07:26] ---Stop Loss
+[2018-04-28 17:07:26] ---7.449599999999999e-06
+[2018-04-28 17:07:26] -----
+[2018-04-28 17:07:36] 1- Iniciando rotina de compra
+[2018-04-28 17:07:37] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:07:37] 2- Iniciando rotina de venda 
+[2018-04-28 17:07:38] ---Price Now
+[2018-04-28 17:07:38] ---7.68e-06
+[2018-04-28 17:07:38] ---Alvo de venda
+[2018-04-28 17:07:38] ---7.833599999999999e-06
+[2018-04-28 17:07:38] ---Stop Loss
+[2018-04-28 17:07:38] ---7.449599999999999e-06
+[2018-04-28 17:07:38] -----
+[2018-04-28 17:07:48] 1- Iniciando rotina de compra
+[2018-04-28 17:07:48] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:07:48] 2- Iniciando rotina de venda 
+[2018-04-28 17:07:49] ---Price Now
+[2018-04-28 17:07:49] ---7.67e-06
+[2018-04-28 17:07:49] ---Alvo de venda
+[2018-04-28 17:07:49] ---7.833599999999999e-06
+[2018-04-28 17:07:49] ---Stop Loss
+[2018-04-28 17:07:49] ---7.449599999999999e-06
+[2018-04-28 17:07:49] -----
+[2018-04-28 17:07:59] 1- Iniciando rotina de compra
+[2018-04-28 17:08:00] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:08:00] 2- Iniciando rotina de venda 
+[2018-04-28 17:08:01] ---Price Now
+[2018-04-28 17:08:01] ---7.67e-06
+[2018-04-28 17:08:01] ---Alvo de venda
+[2018-04-28 17:08:01] ---7.833599999999999e-06
+[2018-04-28 17:08:01] ---Stop Loss
+[2018-04-28 17:08:01] ---7.449599999999999e-06
+[2018-04-28 17:08:01] -----
+[2018-04-28 17:08:11] 1- Iniciando rotina de compra
+[2018-04-28 17:08:11] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:08:11] 2- Iniciando rotina de venda 
+[2018-04-28 17:08:12] ---Price Now
+[2018-04-28 17:08:12] ---7.68e-06
+[2018-04-28 17:08:12] ---Alvo de venda
+[2018-04-28 17:08:12] ---7.833599999999999e-06
+[2018-04-28 17:08:12] ---Stop Loss
+[2018-04-28 17:08:12] ---7.449599999999999e-06
+[2018-04-28 17:08:12] -----
+[2018-04-28 17:08:22] 1- Iniciando rotina de compra
+[2018-04-28 17:08:23] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:08:23] 2- Iniciando rotina de venda 
+[2018-04-28 17:08:24] ---Price Now
+[2018-04-28 17:08:24] ---7.68e-06
+[2018-04-28 17:08:24] ---Alvo de venda
+[2018-04-28 17:08:24] ---7.833599999999999e-06
+[2018-04-28 17:08:24] ---Stop Loss
+[2018-04-28 17:08:24] ---7.449599999999999e-06
+[2018-04-28 17:08:24] -----
+[2018-04-28 17:08:34] 1- Iniciando rotina de compra
+[2018-04-28 17:08:35] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:08:35] 2- Iniciando rotina de venda 
+[2018-04-28 17:08:39] ---Price Now
+[2018-04-28 17:08:39] ---7.68e-06
+[2018-04-28 17:08:39] ---Alvo de venda
+[2018-04-28 17:08:39] ---7.833599999999999e-06
+[2018-04-28 17:08:39] ---Stop Loss
+[2018-04-28 17:08:39] ---7.449599999999999e-06
+[2018-04-28 17:08:39] -----
+[2018-04-28 17:08:49] 1- Iniciando rotina de compra
+[2018-04-28 17:08:49] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:08:49] 2- Iniciando rotina de venda 
+[2018-04-28 17:08:51] ---Price Now
+[2018-04-28 17:08:51] ---7.68e-06
+[2018-04-28 17:08:51] ---Alvo de venda
+[2018-04-28 17:08:51] ---7.833599999999999e-06
+[2018-04-28 17:08:51] ---Stop Loss
+[2018-04-28 17:08:51] ---7.449599999999999e-06
+[2018-04-28 17:08:51] -----
+[2018-04-28 17:09:01] 1- Iniciando rotina de compra
+[2018-04-28 17:09:02] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:09:02] 2- Iniciando rotina de venda 
+[2018-04-28 17:09:10] ---Price Now
+[2018-04-28 17:09:10] ---7.68e-06
+[2018-04-28 17:09:10] ---Alvo de venda
+[2018-04-28 17:09:10] ---7.833599999999999e-06
+[2018-04-28 17:09:10] ---Stop Loss
+[2018-04-28 17:09:10] ---7.449599999999999e-06
+[2018-04-28 17:09:10] -----
+[2018-04-28 17:09:20] 1- Iniciando rotina de compra
+[2018-04-28 17:09:21] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:09:21] 2- Iniciando rotina de venda 
+[2018-04-28 17:09:22] ---Price Now
+[2018-04-28 17:09:22] ---7.68e-06
+[2018-04-28 17:09:22] ---Alvo de venda
+[2018-04-28 17:09:22] ---7.833599999999999e-06
+[2018-04-28 17:09:22] ---Stop Loss
+[2018-04-28 17:09:22] ---7.449599999999999e-06
+[2018-04-28 17:09:22] -----
+[2018-04-28 17:09:32] 1- Iniciando rotina de compra
+[2018-04-28 17:09:33] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:09:33] 2- Iniciando rotina de venda 
+[2018-04-28 17:09:35] ---Price Now
+[2018-04-28 17:09:35] ---7.67e-06
+[2018-04-28 17:09:35] ---Alvo de venda
+[2018-04-28 17:09:35] ---7.833599999999999e-06
+[2018-04-28 17:09:35] ---Stop Loss
+[2018-04-28 17:09:35] ---7.449599999999999e-06
+[2018-04-28 17:09:35] -----
+[2018-04-28 17:09:45] 1- Iniciando rotina de compra
+[2018-04-28 17:09:45] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:09:45] 2- Iniciando rotina de venda 
+[2018-04-28 17:09:47] ---Price Now
+[2018-04-28 17:09:47] ---7.68e-06
+[2018-04-28 17:09:47] ---Alvo de venda
+[2018-04-28 17:09:47] ---7.833599999999999e-06
+[2018-04-28 17:09:47] ---Stop Loss
+[2018-04-28 17:09:47] ---7.449599999999999e-06
+[2018-04-28 17:09:47] -----
+[2018-04-28 17:09:57] 1- Iniciando rotina de compra
+[2018-04-28 17:09:57] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:09:57] 2- Iniciando rotina de venda 
+[2018-04-28 17:09:58] ---Price Now
+[2018-04-28 17:09:58] ---7.68e-06
+[2018-04-28 17:09:58] ---Alvo de venda
+[2018-04-28 17:09:58] ---7.833599999999999e-06
+[2018-04-28 17:09:58] ---Stop Loss
+[2018-04-28 17:09:58] ---7.449599999999999e-06
+[2018-04-28 17:09:58] -----
+[2018-04-28 17:10:08] 1- Iniciando rotina de compra
+[2018-04-28 17:10:09] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:10:09] 2- Iniciando rotina de venda 
+[2018-04-28 17:10:10] ---Price Now
+[2018-04-28 17:10:10] ---7.68e-06
+[2018-04-28 17:10:10] ---Alvo de venda
+[2018-04-28 17:10:10] ---7.833599999999999e-06
+[2018-04-28 17:10:10] ---Stop Loss
+[2018-04-28 17:10:10] ---7.449599999999999e-06
+[2018-04-28 17:10:10] -----
+[2018-04-28 17:10:20] 1- Iniciando rotina de compra
+[2018-04-28 17:10:20] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:10:20] 2- Iniciando rotina de venda 
+[2018-04-28 17:10:21] ---Price Now
+[2018-04-28 17:10:21] ---7.67e-06
+[2018-04-28 17:10:21] ---Alvo de venda
+[2018-04-28 17:10:21] ---7.833599999999999e-06
+[2018-04-28 17:10:21] ---Stop Loss
+[2018-04-28 17:10:21] ---7.449599999999999e-06
+[2018-04-28 17:10:21] -----
+[2018-04-28 17:10:31] 1- Iniciando rotina de compra
+[2018-04-28 17:10:32] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:10:32] 2- Iniciando rotina de venda 
+[2018-04-28 17:10:33] ---Price Now
+[2018-04-28 17:10:33] ---7.67e-06
+[2018-04-28 17:10:33] ---Alvo de venda
+[2018-04-28 17:10:33] ---7.833599999999999e-06
+[2018-04-28 17:10:33] ---Stop Loss
+[2018-04-28 17:10:33] ---7.449599999999999e-06
+[2018-04-28 17:10:33] -----
+[2018-04-28 17:10:43] 1- Iniciando rotina de compra
+[2018-04-28 17:10:44] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:10:44] 2- Iniciando rotina de venda 
+[2018-04-28 17:10:45] ---Price Now
+[2018-04-28 17:10:45] ---7.67e-06
+[2018-04-28 17:10:45] ---Alvo de venda
+[2018-04-28 17:10:45] ---7.833599999999999e-06
+[2018-04-28 17:10:45] ---Stop Loss
+[2018-04-28 17:10:45] ---7.449599999999999e-06
+[2018-04-28 17:10:45] -----
+[2018-04-28 17:10:55] 1- Iniciando rotina de compra
+[2018-04-28 17:10:55] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:10:55] 2- Iniciando rotina de venda 
+[2018-04-28 17:10:57] ---Price Now
+[2018-04-28 17:10:57] ---7.67e-06
+[2018-04-28 17:10:57] ---Alvo de venda
+[2018-04-28 17:10:57] ---7.833599999999999e-06
+[2018-04-28 17:10:57] ---Stop Loss
+[2018-04-28 17:10:57] ---7.449599999999999e-06
+[2018-04-28 17:10:57] -----
+[2018-04-28 17:11:07] 1- Iniciando rotina de compra
+[2018-04-28 17:11:07] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:11:07] 2- Iniciando rotina de venda 
+[2018-04-28 17:11:08] ---Price Now
+[2018-04-28 17:11:08] ---7.67e-06
+[2018-04-28 17:11:08] ---Alvo de venda
+[2018-04-28 17:11:08] ---7.833599999999999e-06
+[2018-04-28 17:11:08] ---Stop Loss
+[2018-04-28 17:11:08] ---7.449599999999999e-06
+[2018-04-28 17:11:08] -----
+[2018-04-28 17:11:18] 1- Iniciando rotina de compra
+[2018-04-28 17:11:19] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:11:19] 2- Iniciando rotina de venda 
+[2018-04-28 17:11:20] ---Price Now
+[2018-04-28 17:11:20] ---7.68e-06
+[2018-04-28 17:11:20] ---Alvo de venda
+[2018-04-28 17:11:20] ---7.833599999999999e-06
+[2018-04-28 17:11:20] ---Stop Loss
+[2018-04-28 17:11:20] ---7.449599999999999e-06
+[2018-04-28 17:11:20] -----
+[2018-04-28 17:11:30] 1- Iniciando rotina de compra
+[2018-04-28 17:11:30] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:11:30] 2- Iniciando rotina de venda 
+[2018-04-28 17:11:32] ---Price Now
+[2018-04-28 17:11:32] ---7.68e-06
+[2018-04-28 17:11:32] ---Alvo de venda
+[2018-04-28 17:11:32] ---7.833599999999999e-06
+[2018-04-28 17:11:32] ---Stop Loss
+[2018-04-28 17:11:32] ---7.449599999999999e-06
+[2018-04-28 17:11:32] -----
+[2018-04-28 17:11:42] 1- Iniciando rotina de compra
+[2018-04-28 17:11:42] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:11:42] 2- Iniciando rotina de venda 
+[2018-04-28 17:11:43] ---Price Now
+[2018-04-28 17:11:43] ---7.68e-06
+[2018-04-28 17:11:43] ---Alvo de venda
+[2018-04-28 17:11:43] ---7.833599999999999e-06
+[2018-04-28 17:11:43] ---Stop Loss
+[2018-04-28 17:11:43] ---7.449599999999999e-06
+[2018-04-28 17:11:43] -----
+[2018-04-28 17:11:53] 1- Iniciando rotina de compra
+[2018-04-28 17:11:53] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:11:53] 2- Iniciando rotina de venda 
+[2018-04-28 17:11:55] ---Price Now
+[2018-04-28 17:11:55] ---7.68e-06
+[2018-04-28 17:11:55] ---Alvo de venda
+[2018-04-28 17:11:55] ---7.833599999999999e-06
+[2018-04-28 17:11:55] ---Stop Loss
+[2018-04-28 17:11:55] ---7.449599999999999e-06
+[2018-04-28 17:11:55] -----
+[2018-04-28 17:12:05] 1- Iniciando rotina de compra
+[2018-04-28 17:12:05] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:12:05] 2- Iniciando rotina de venda 
+[2018-04-28 17:12:06] ---Price Now
+[2018-04-28 17:12:06] ---7.67e-06
+[2018-04-28 17:12:06] ---Alvo de venda
+[2018-04-28 17:12:06] ---7.833599999999999e-06
+[2018-04-28 17:12:06] ---Stop Loss
+[2018-04-28 17:12:06] ---7.449599999999999e-06
+[2018-04-28 17:12:06] -----
+[2018-04-28 17:12:16] 1- Iniciando rotina de compra
+[2018-04-28 17:12:17] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:12:17] 2- Iniciando rotina de venda 
+[2018-04-28 17:12:19] ---Price Now
+[2018-04-28 17:12:19] ---7.68e-06
+[2018-04-28 17:12:19] ---Alvo de venda
+[2018-04-28 17:12:19] ---7.833599999999999e-06
+[2018-04-28 17:12:19] ---Stop Loss
+[2018-04-28 17:12:19] ---7.449599999999999e-06
+[2018-04-28 17:12:19] -----
+[2018-04-28 17:12:29] 1- Iniciando rotina de compra
+[2018-04-28 17:12:30] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:12:30] 2- Iniciando rotina de venda 
+[2018-04-28 17:12:32] ---Price Now
+[2018-04-28 17:12:32] ---7.66e-06
+[2018-04-28 17:12:32] ---Alvo de venda
+[2018-04-28 17:12:32] ---7.833599999999999e-06
+[2018-04-28 17:12:32] ---Stop Loss
+[2018-04-28 17:12:32] ---7.449599999999999e-06
+[2018-04-28 17:12:32] -----
+[2018-04-28 17:12:42] 1- Iniciando rotina de compra
+[2018-04-28 17:12:43] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:12:43] 2- Iniciando rotina de venda 
+[2018-04-28 17:12:45] ---Price Now
+[2018-04-28 17:12:45] ---7.68e-06
+[2018-04-28 17:12:45] ---Alvo de venda
+[2018-04-28 17:12:45] ---7.833599999999999e-06
+[2018-04-28 17:12:45] ---Stop Loss
+[2018-04-28 17:12:45] ---7.449599999999999e-06
+[2018-04-28 17:12:45] -----
+[2018-04-28 17:12:55] 1- Iniciando rotina de compra
+[2018-04-28 17:12:56] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:12:56] 2- Iniciando rotina de venda 
+[2018-04-28 17:12:58] ---Price Now
+[2018-04-28 17:12:58] ---7.68e-06
+[2018-04-28 17:12:58] ---Alvo de venda
+[2018-04-28 17:12:58] ---7.833599999999999e-06
+[2018-04-28 17:12:58] ---Stop Loss
+[2018-04-28 17:12:58] ---7.449599999999999e-06
+[2018-04-28 17:12:58] -----
+[2018-04-28 17:13:08] 1- Iniciando rotina de compra
+[2018-04-28 17:13:09] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:13:09] 2- Iniciando rotina de venda 
+[2018-04-28 17:13:11] ---Price Now
+[2018-04-28 17:13:11] ---7.68e-06
+[2018-04-28 17:13:11] ---Alvo de venda
+[2018-04-28 17:13:11] ---7.833599999999999e-06
+[2018-04-28 17:13:11] ---Stop Loss
+[2018-04-28 17:13:11] ---7.449599999999999e-06
+[2018-04-28 17:13:11] -----
+[2018-04-28 17:13:21] 1- Iniciando rotina de compra
+[2018-04-28 17:13:22] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:13:22] 2- Iniciando rotina de venda 
+[2018-04-28 17:13:24] ---Price Now
+[2018-04-28 17:13:24] ---7.68e-06
+[2018-04-28 17:13:24] ---Alvo de venda
+[2018-04-28 17:13:24] ---7.833599999999999e-06
+[2018-04-28 17:13:24] ---Stop Loss
+[2018-04-28 17:13:24] ---7.449599999999999e-06
+[2018-04-28 17:13:24] -----
+[2018-04-28 17:13:34] 1- Iniciando rotina de compra
+[2018-04-28 17:13:35] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:13:35] 2- Iniciando rotina de venda 
+[2018-04-28 17:13:37] ---Price Now
+[2018-04-28 17:13:37] ---7.68e-06
+[2018-04-28 17:13:37] ---Alvo de venda
+[2018-04-28 17:13:37] ---7.833599999999999e-06
+[2018-04-28 17:13:37] ---Stop Loss
+[2018-04-28 17:13:37] ---7.449599999999999e-06
+[2018-04-28 17:13:37] -----
+[2018-04-28 17:13:47] 1- Iniciando rotina de compra
+[2018-04-28 17:13:48] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:13:48] 2- Iniciando rotina de venda 
+[2018-04-28 17:13:49] ---Price Now
+[2018-04-28 17:13:49] ---7.68e-06
+[2018-04-28 17:13:49] ---Alvo de venda
+[2018-04-28 17:13:49] ---7.833599999999999e-06
+[2018-04-28 17:13:49] ---Stop Loss
+[2018-04-28 17:13:49] ---7.449599999999999e-06
+[2018-04-28 17:13:49] -----
+[2018-04-28 17:13:59] 1- Iniciando rotina de compra
+[2018-04-28 17:13:59] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:13:59] 2- Iniciando rotina de venda 
+[2018-04-28 17:14:00] ---Price Now
+[2018-04-28 17:14:00] ---7.68e-06
+[2018-04-28 17:14:00] ---Alvo de venda
+[2018-04-28 17:14:00] ---7.833599999999999e-06
+[2018-04-28 17:14:00] ---Stop Loss
+[2018-04-28 17:14:00] ---7.449599999999999e-06
+[2018-04-28 17:14:00] -----
+[2018-04-28 17:14:10] 1- Iniciando rotina de compra
+[2018-04-28 17:14:11] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:14:11] 2- Iniciando rotina de venda 
+[2018-04-28 17:14:13] ---Price Now
+[2018-04-28 17:14:13] ---7.67e-06
+[2018-04-28 17:14:13] ---Alvo de venda
+[2018-04-28 17:14:13] ---7.833599999999999e-06
+[2018-04-28 17:14:13] ---Stop Loss
+[2018-04-28 17:14:13] ---7.449599999999999e-06
+[2018-04-28 17:14:13] -----
+[2018-04-28 17:14:23] 1- Iniciando rotina de compra
+[2018-04-28 17:14:24] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:14:24] 2- Iniciando rotina de venda 
+[2018-04-28 17:14:27] ---Price Now
+[2018-04-28 17:14:27] ---7.67e-06
+[2018-04-28 17:14:27] ---Alvo de venda
+[2018-04-28 17:14:27] ---7.833599999999999e-06
+[2018-04-28 17:14:27] ---Stop Loss
+[2018-04-28 17:14:27] ---7.449599999999999e-06
+[2018-04-28 17:14:27] -----
+[2018-04-28 17:14:37] 1- Iniciando rotina de compra
+[2018-04-28 17:14:37] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:14:37] 2- Iniciando rotina de venda 
+[2018-04-28 17:14:39] ---Price Now
+[2018-04-28 17:14:39] ---7.68e-06
+[2018-04-28 17:14:39] ---Alvo de venda
+[2018-04-28 17:14:39] ---7.833599999999999e-06
+[2018-04-28 17:14:39] ---Stop Loss
+[2018-04-28 17:14:39] ---7.449599999999999e-06
+[2018-04-28 17:14:39] -----
+[2018-04-28 17:14:49] 1- Iniciando rotina de compra
+[2018-04-28 17:14:50] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:14:50] 2- Iniciando rotina de venda 
+[2018-04-28 17:14:52] ---Price Now
+[2018-04-28 17:14:52] ---7.68e-06
+[2018-04-28 17:14:52] ---Alvo de venda
+[2018-04-28 17:14:52] ---7.833599999999999e-06
+[2018-04-28 17:14:52] ---Stop Loss
+[2018-04-28 17:14:52] ---7.449599999999999e-06
+[2018-04-28 17:14:52] -----
+[2018-04-28 17:15:02] 1- Iniciando rotina de compra
+[2018-04-28 17:15:03] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:15:03] 2- Iniciando rotina de venda 
+[2018-04-28 17:15:05] ---Price Now
+[2018-04-28 17:15:05] ---7.68e-06
+[2018-04-28 17:15:05] ---Alvo de venda
+[2018-04-28 17:15:05] ---7.833599999999999e-06
+[2018-04-28 17:15:05] ---Stop Loss
+[2018-04-28 17:15:05] ---7.449599999999999e-06
+[2018-04-28 17:15:05] -----
+[2018-04-28 17:15:15] 1- Iniciando rotina de compra
+[2018-04-28 17:15:16] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:15:16] 2- Iniciando rotina de venda 
+[2018-04-28 17:15:17] ---Price Now
+[2018-04-28 17:15:17] ---7.68e-06
+[2018-04-28 17:15:17] ---Alvo de venda
+[2018-04-28 17:15:17] ---7.833599999999999e-06
+[2018-04-28 17:15:17] ---Stop Loss
+[2018-04-28 17:15:17] ---7.449599999999999e-06
+[2018-04-28 17:15:17] -----
+[2018-04-28 17:15:27] 1- Iniciando rotina de compra
+[2018-04-28 17:15:27] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:15:27] 2- Iniciando rotina de venda 
+[2018-04-28 17:15:28] ---Price Now
+[2018-04-28 17:15:28] ---7.68e-06
+[2018-04-28 17:15:28] ---Alvo de venda
+[2018-04-28 17:15:28] ---7.833599999999999e-06
+[2018-04-28 17:15:28] ---Stop Loss
+[2018-04-28 17:15:28] ---7.449599999999999e-06
+[2018-04-28 17:15:28] -----
+[2018-04-28 17:15:38] 1- Iniciando rotina de compra
+[2018-04-28 17:15:39] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:15:39] 2- Iniciando rotina de venda 
+[2018-04-28 17:15:40] ---Price Now
+[2018-04-28 17:15:40] ---7.68e-06
+[2018-04-28 17:15:40] ---Alvo de venda
+[2018-04-28 17:15:40] ---7.833599999999999e-06
+[2018-04-28 17:15:40] ---Stop Loss
+[2018-04-28 17:15:40] ---7.449599999999999e-06
+[2018-04-28 17:15:40] -----
+[2018-04-28 17:15:50] 1- Iniciando rotina de compra
+[2018-04-28 17:15:50] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:15:50] 2- Iniciando rotina de venda 
+[2018-04-28 17:15:51] ---Price Now
+[2018-04-28 17:15:52] ---7.68e-06
+[2018-04-28 17:15:52] ---Alvo de venda
+[2018-04-28 17:15:52] ---7.833599999999999e-06
+[2018-04-28 17:15:52] ---Stop Loss
+[2018-04-28 17:15:52] ---7.449599999999999e-06
+[2018-04-28 17:15:52] -----
+[2018-04-28 17:16:02] 1- Iniciando rotina de compra
+[2018-04-28 17:16:02] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:16:02] 2- Iniciando rotina de venda 
+[2018-04-28 17:16:03] ---Price Now
+[2018-04-28 17:16:03] ---7.68e-06
+[2018-04-28 17:16:03] ---Alvo de venda
+[2018-04-28 17:16:03] ---7.833599999999999e-06
+[2018-04-28 17:16:03] ---Stop Loss
+[2018-04-28 17:16:03] ---7.449599999999999e-06
+[2018-04-28 17:16:03] -----
+[2018-04-28 17:16:13] 1- Iniciando rotina de compra
+[2018-04-28 17:16:14] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:16:14] 2- Iniciando rotina de venda 
+[2018-04-28 17:16:14] ---Price Now
+[2018-04-28 17:16:14] ---7.67e-06
+[2018-04-28 17:16:14] ---Alvo de venda
+[2018-04-28 17:16:14] ---7.833599999999999e-06
+[2018-04-28 17:16:14] ---Stop Loss
+[2018-04-28 17:16:14] ---7.449599999999999e-06
+[2018-04-28 17:16:14] -----
+[2018-04-28 17:16:24] 1- Iniciando rotina de compra
+[2018-04-28 17:16:25] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:16:25] 2- Iniciando rotina de venda 
+[2018-04-28 17:16:26] ---Price Now
+[2018-04-28 17:16:26] ---7.67e-06
+[2018-04-28 17:16:26] ---Alvo de venda
+[2018-04-28 17:16:26] ---7.833599999999999e-06
+[2018-04-28 17:16:26] ---Stop Loss
+[2018-04-28 17:16:26] ---7.449599999999999e-06
+[2018-04-28 17:16:26] -----
+[2018-04-28 17:16:36] 1- Iniciando rotina de compra
+[2018-04-28 17:16:36] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:16:36] 2- Iniciando rotina de venda 
+[2018-04-28 17:16:38] ---Price Now
+[2018-04-28 17:16:38] ---7.67e-06
+[2018-04-28 17:16:38] ---Alvo de venda
+[2018-04-28 17:16:38] ---7.833599999999999e-06
+[2018-04-28 17:16:38] ---Stop Loss
+[2018-04-28 17:16:38] ---7.449599999999999e-06
+[2018-04-28 17:16:38] -----
+[2018-04-28 17:16:48] 1- Iniciando rotina de compra
+[2018-04-28 17:16:49] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:16:49] 2- Iniciando rotina de venda 
+[2018-04-28 17:16:50] ---Price Now
+[2018-04-28 17:16:50] ---7.68e-06
+[2018-04-28 17:16:50] ---Alvo de venda
+[2018-04-28 17:16:50] ---7.833599999999999e-06
+[2018-04-28 17:16:50] ---Stop Loss
+[2018-04-28 17:16:50] ---7.449599999999999e-06
+[2018-04-28 17:16:50] -----
+[2018-04-28 17:17:00] 1- Iniciando rotina de compra
+[2018-04-28 17:17:01] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:17:01] 2- Iniciando rotina de venda 
+[2018-04-28 17:17:02] ---Price Now
+[2018-04-28 17:17:02] ---7.67e-06
+[2018-04-28 17:17:02] ---Alvo de venda
+[2018-04-28 17:17:02] ---7.833599999999999e-06
+[2018-04-28 17:17:02] ---Stop Loss
+[2018-04-28 17:17:02] ---7.449599999999999e-06
+[2018-04-28 17:17:02] -----
+[2018-04-28 17:17:12] 1- Iniciando rotina de compra
+[2018-04-28 17:17:12] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:17:12] 2- Iniciando rotina de venda 
+[2018-04-28 17:17:13] ---Price Now
+[2018-04-28 17:17:13] ---7.68e-06
+[2018-04-28 17:17:13] ---Alvo de venda
+[2018-04-28 17:17:13] ---7.833599999999999e-06
+[2018-04-28 17:17:13] ---Stop Loss
+[2018-04-28 17:17:13] ---7.449599999999999e-06
+[2018-04-28 17:17:13] -----
+[2018-04-28 17:17:23] 1- Iniciando rotina de compra
+[2018-04-28 17:17:24] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:17:24] 2- Iniciando rotina de venda 
+[2018-04-28 17:17:25] ---Price Now
+[2018-04-28 17:17:25] ---7.68e-06
+[2018-04-28 17:17:25] ---Alvo de venda
+[2018-04-28 17:17:25] ---7.833599999999999e-06
+[2018-04-28 17:17:25] ---Stop Loss
+[2018-04-28 17:17:25] ---7.449599999999999e-06
+[2018-04-28 17:17:25] -----
+[2018-04-28 17:17:35] 1- Iniciando rotina de compra
+[2018-04-28 17:17:35] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:17:35] 2- Iniciando rotina de venda 
+[2018-04-28 17:17:37] ---Price Now
+[2018-04-28 17:17:37] ---7.68e-06
+[2018-04-28 17:17:37] ---Alvo de venda
+[2018-04-28 17:17:37] ---7.833599999999999e-06
+[2018-04-28 17:17:37] ---Stop Loss
+[2018-04-28 17:17:37] ---7.449599999999999e-06
+[2018-04-28 17:17:37] -----
+[2018-04-28 17:17:47] 1- Iniciando rotina de compra
+[2018-04-28 17:17:47] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:17:47] 2- Iniciando rotina de venda 
+[2018-04-28 17:17:48] ---Price Now
+[2018-04-28 17:17:48] ---7.68e-06
+[2018-04-28 17:17:48] ---Alvo de venda
+[2018-04-28 17:17:48] ---7.833599999999999e-06
+[2018-04-28 17:17:48] ---Stop Loss
+[2018-04-28 17:17:48] ---7.449599999999999e-06
+[2018-04-28 17:17:48] -----
+[2018-04-28 17:17:58] 1- Iniciando rotina de compra
+[2018-04-28 17:17:59] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:17:59] 2- Iniciando rotina de venda 
+[2018-04-28 17:18:00] ---Price Now
+[2018-04-28 17:18:00] ---7.68e-06
+[2018-04-28 17:18:00] ---Alvo de venda
+[2018-04-28 17:18:00] ---7.833599999999999e-06
+[2018-04-28 17:18:00] ---Stop Loss
+[2018-04-28 17:18:00] ---7.449599999999999e-06
+[2018-04-28 17:18:00] -----
+[2018-04-28 17:18:10] 1- Iniciando rotina de compra
+[2018-04-28 17:18:10] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:18:10] 2- Iniciando rotina de venda 
+[2018-04-28 17:18:11] ---Price Now
+[2018-04-28 17:18:11] ---7.68e-06
+[2018-04-28 17:18:11] ---Alvo de venda
+[2018-04-28 17:18:11] ---7.833599999999999e-06
+[2018-04-28 17:18:11] ---Stop Loss
+[2018-04-28 17:18:11] ---7.449599999999999e-06
+[2018-04-28 17:18:11] -----
+[2018-04-28 17:18:21] 1- Iniciando rotina de compra
+[2018-04-28 17:18:22] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:18:22] 2- Iniciando rotina de venda 
+[2018-04-28 17:18:23] ---Price Now
+[2018-04-28 17:18:23] ---7.68e-06
+[2018-04-28 17:18:23] ---Alvo de venda
+[2018-04-28 17:18:23] ---7.833599999999999e-06
+[2018-04-28 17:18:23] ---Stop Loss
+[2018-04-28 17:18:23] ---7.449599999999999e-06
+[2018-04-28 17:18:23] -----
+[2018-04-28 17:18:33] 1- Iniciando rotina de compra
+[2018-04-28 17:18:36] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:18:36] 2- Iniciando rotina de venda 
+[2018-04-28 17:18:37] ---Price Now
+[2018-04-28 17:18:37] ---7.67e-06
+[2018-04-28 17:18:37] ---Alvo de venda
+[2018-04-28 17:18:37] ---7.833599999999999e-06
+[2018-04-28 17:18:37] ---Stop Loss
+[2018-04-28 17:18:37] ---7.449599999999999e-06
+[2018-04-28 17:18:37] -----
+[2018-04-28 17:18:47] 1- Iniciando rotina de compra
+[2018-04-28 17:18:47] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:18:47] 2- Iniciando rotina de venda 
+[2018-04-28 17:18:48] ---Price Now
+[2018-04-28 17:18:48] ---7.67e-06
+[2018-04-28 17:18:48] ---Alvo de venda
+[2018-04-28 17:18:48] ---7.833599999999999e-06
+[2018-04-28 17:18:48] ---Stop Loss
+[2018-04-28 17:18:48] ---7.449599999999999e-06
+[2018-04-28 17:18:48] -----
+[2018-04-28 17:18:58] 1- Iniciando rotina de compra
+[2018-04-28 17:18:59] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:18:59] 2- Iniciando rotina de venda 
+[2018-04-28 17:19:00] ---Price Now
+[2018-04-28 17:19:00] ---7.68e-06
+[2018-04-28 17:19:00] ---Alvo de venda
+[2018-04-28 17:19:00] ---7.833599999999999e-06
+[2018-04-28 17:19:00] ---Stop Loss
+[2018-04-28 17:19:00] ---7.449599999999999e-06
+[2018-04-28 17:19:00] -----
+[2018-04-28 17:19:10] 1- Iniciando rotina de compra
+[2018-04-28 17:19:10] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:19:10] 2- Iniciando rotina de venda 
+[2018-04-28 17:19:13] ---Price Now
+[2018-04-28 17:19:13] ---7.67e-06
+[2018-04-28 17:19:13] ---Alvo de venda
+[2018-04-28 17:19:13] ---7.833599999999999e-06
+[2018-04-28 17:19:13] ---Stop Loss
+[2018-04-28 17:19:13] ---7.449599999999999e-06
+[2018-04-28 17:19:13] -----
+[2018-04-28 17:19:23] 1- Iniciando rotina de compra
+[2018-04-28 17:19:23] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:19:23] 2- Iniciando rotina de venda 
+[2018-04-28 17:19:24] ---Price Now
+[2018-04-28 17:19:24] ---7.68e-06
+[2018-04-28 17:19:24] ---Alvo de venda
+[2018-04-28 17:19:24] ---7.833599999999999e-06
+[2018-04-28 17:19:24] ---Stop Loss
+[2018-04-28 17:19:24] ---7.449599999999999e-06
+[2018-04-28 17:19:24] -----
+[2018-04-28 17:19:34] 1- Iniciando rotina de compra
+[2018-04-28 17:19:35] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:19:35] 2- Iniciando rotina de venda 
+[2018-04-28 17:19:36] ---Price Now
+[2018-04-28 17:19:36] ---7.68e-06
+[2018-04-28 17:19:36] ---Alvo de venda
+[2018-04-28 17:19:36] ---7.833599999999999e-06
+[2018-04-28 17:19:36] ---Stop Loss
+[2018-04-28 17:19:36] ---7.449599999999999e-06
+[2018-04-28 17:19:36] -----
+[2018-04-28 17:19:46] 1- Iniciando rotina de compra
+[2018-04-28 17:19:46] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:19:46] 2- Iniciando rotina de venda 
+[2018-04-28 17:19:47] ---Price Now
+[2018-04-28 17:19:47] ---7.68e-06
+[2018-04-28 17:19:47] ---Alvo de venda
+[2018-04-28 17:19:47] ---7.833599999999999e-06
+[2018-04-28 17:19:47] ---Stop Loss
+[2018-04-28 17:19:47] ---7.449599999999999e-06
+[2018-04-28 17:19:47] -----
+[2018-04-28 17:19:57] 1- Iniciando rotina de compra
+[2018-04-28 17:19:58] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:19:58] 2- Iniciando rotina de venda 
+[2018-04-28 17:19:59] ---Price Now
+[2018-04-28 17:19:59] ---7.68e-06
+[2018-04-28 17:19:59] ---Alvo de venda
+[2018-04-28 17:19:59] ---7.833599999999999e-06
+[2018-04-28 17:19:59] ---Stop Loss
+[2018-04-28 17:19:59] ---7.449599999999999e-06
+[2018-04-28 17:19:59] -----
+[2018-04-28 17:20:09] 1- Iniciando rotina de compra
+[2018-04-28 17:20:09] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:20:09] 2- Iniciando rotina de venda 
+[2018-04-28 17:20:10] ---Price Now
+[2018-04-28 17:20:10] ---7.68e-06
+[2018-04-28 17:20:10] ---Alvo de venda
+[2018-04-28 17:20:10] ---7.833599999999999e-06
+[2018-04-28 17:20:10] ---Stop Loss
+[2018-04-28 17:20:10] ---7.449599999999999e-06
+[2018-04-28 17:20:10] -----
+[2018-04-28 17:20:20] 1- Iniciando rotina de compra
+[2018-04-28 17:20:21] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:20:21] 2- Iniciando rotina de venda 
+[2018-04-28 17:20:22] ---Price Now
+[2018-04-28 17:20:22] ---7.67e-06
+[2018-04-28 17:20:22] ---Alvo de venda
+[2018-04-28 17:20:22] ---7.833599999999999e-06
+[2018-04-28 17:20:22] ---Stop Loss
+[2018-04-28 17:20:22] ---7.449599999999999e-06
+[2018-04-28 17:20:22] -----
+[2018-04-28 17:20:32] 1- Iniciando rotina de compra
+[2018-04-28 17:20:32] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:20:32] 2- Iniciando rotina de venda 
+[2018-04-28 17:20:33] ---Price Now
+[2018-04-28 17:20:33] ---7.67e-06
+[2018-04-28 17:20:33] ---Alvo de venda
+[2018-04-28 17:20:33] ---7.833599999999999e-06
+[2018-04-28 17:20:33] ---Stop Loss
+[2018-04-28 17:20:33] ---7.449599999999999e-06
+[2018-04-28 17:20:33] -----
+[2018-04-28 17:20:43] 1- Iniciando rotina de compra
+[2018-04-28 17:20:44] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:20:44] 2- Iniciando rotina de venda 
+[2018-04-28 17:20:45] ---Price Now
+[2018-04-28 17:20:45] ---7.68e-06
+[2018-04-28 17:20:45] ---Alvo de venda
+[2018-04-28 17:20:45] ---7.833599999999999e-06
+[2018-04-28 17:20:45] ---Stop Loss
+[2018-04-28 17:20:45] ---7.449599999999999e-06
+[2018-04-28 17:20:45] -----
+[2018-04-28 17:20:55] 1- Iniciando rotina de compra
+[2018-04-28 17:20:56] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:20:56] 2- Iniciando rotina de venda 
+[2018-04-28 17:20:56] ---Price Now
+[2018-04-28 17:20:56] ---7.67e-06
+[2018-04-28 17:20:56] ---Alvo de venda
+[2018-04-28 17:20:56] ---7.833599999999999e-06
+[2018-04-28 17:20:56] ---Stop Loss
+[2018-04-28 17:20:56] ---7.449599999999999e-06
+[2018-04-28 17:20:56] -----
+[2018-04-28 17:21:06] 1- Iniciando rotina de compra
+[2018-04-28 17:21:07] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:21:07] 2- Iniciando rotina de venda 
+[2018-04-28 17:21:08] ---Price Now
+[2018-04-28 17:21:08] ---7.67e-06
+[2018-04-28 17:21:08] ---Alvo de venda
+[2018-04-28 17:21:08] ---7.833599999999999e-06
+[2018-04-28 17:21:08] ---Stop Loss
+[2018-04-28 17:21:08] ---7.449599999999999e-06
+[2018-04-28 17:21:08] -----
+[2018-04-28 17:21:18] 1- Iniciando rotina de compra
+[2018-04-28 17:21:18] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:21:18] 2- Iniciando rotina de venda 
+[2018-04-28 17:21:19] ---Price Now
+[2018-04-28 17:21:19] ---7.68e-06
+[2018-04-28 17:21:19] ---Alvo de venda
+[2018-04-28 17:21:19] ---7.833599999999999e-06
+[2018-04-28 17:21:19] ---Stop Loss
+[2018-04-28 17:21:19] ---7.449599999999999e-06
+[2018-04-28 17:21:19] -----
+[2018-04-28 17:21:29] 1- Iniciando rotina de compra
+[2018-04-28 17:21:30] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:21:30] 2- Iniciando rotina de venda 
+[2018-04-28 17:21:31] ---Price Now
+[2018-04-28 17:21:31] ---7.68e-06
+[2018-04-28 17:21:31] ---Alvo de venda
+[2018-04-28 17:21:31] ---7.833599999999999e-06
+[2018-04-28 17:21:31] ---Stop Loss
+[2018-04-28 17:21:31] ---7.449599999999999e-06
+[2018-04-28 17:21:31] -----
+[2018-04-28 17:21:41] 1- Iniciando rotina de compra
+[2018-04-28 17:21:41] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:21:41] 2- Iniciando rotina de venda 
+[2018-04-28 17:21:42] ---Price Now
+[2018-04-28 17:21:42] ---7.68e-06
+[2018-04-28 17:21:42] ---Alvo de venda
+[2018-04-28 17:21:42] ---7.833599999999999e-06
+[2018-04-28 17:21:42] ---Stop Loss
+[2018-04-28 17:21:42] ---7.449599999999999e-06
+[2018-04-28 17:21:42] -----
+[2018-04-28 17:21:52] 1- Iniciando rotina de compra
+[2018-04-28 17:21:53] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:21:53] 2- Iniciando rotina de venda 
+[2018-04-28 17:21:53] ---Price Now
+[2018-04-28 17:21:53] ---7.67e-06
+[2018-04-28 17:21:53] ---Alvo de venda
+[2018-04-28 17:21:53] ---7.833599999999999e-06
+[2018-04-28 17:21:53] ---Stop Loss
+[2018-04-28 17:21:53] ---7.449599999999999e-06
+[2018-04-28 17:21:53] -----
+[2018-04-28 17:22:03] 1- Iniciando rotina de compra
+[2018-04-28 17:22:04] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:22:04] 2- Iniciando rotina de venda 
+[2018-04-28 17:22:05] ---Price Now
+[2018-04-28 17:22:05] ---7.68e-06
+[2018-04-28 17:22:05] ---Alvo de venda
+[2018-04-28 17:22:05] ---7.833599999999999e-06
+[2018-04-28 17:22:05] ---Stop Loss
+[2018-04-28 17:22:05] ---7.449599999999999e-06
+[2018-04-28 17:22:05] -----
+[2018-04-28 17:22:15] 1- Iniciando rotina de compra
+[2018-04-28 17:22:15] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:22:15] 2- Iniciando rotina de venda 
+[2018-04-28 17:22:16] ---Price Now
+[2018-04-28 17:22:16] ---7.68e-06
+[2018-04-28 17:22:16] ---Alvo de venda
+[2018-04-28 17:22:16] ---7.833599999999999e-06
+[2018-04-28 17:22:16] ---Stop Loss
+[2018-04-28 17:22:16] ---7.449599999999999e-06
+[2018-04-28 17:22:16] -----
+[2018-04-28 17:22:26] 1- Iniciando rotina de compra
+[2018-04-28 17:22:27] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:22:27] 2- Iniciando rotina de venda 
+[2018-04-28 17:22:28] ---Price Now
+[2018-04-28 17:22:28] ---7.67e-06
+[2018-04-28 17:22:28] ---Alvo de venda
+[2018-04-28 17:22:28] ---7.833599999999999e-06
+[2018-04-28 17:22:28] ---Stop Loss
+[2018-04-28 17:22:28] ---7.449599999999999e-06
+[2018-04-28 17:22:28] -----
+[2018-04-28 17:22:38] 1- Iniciando rotina de compra
+[2018-04-28 17:22:38] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:22:38] 2- Iniciando rotina de venda 
+[2018-04-28 17:22:39] ---Price Now
+[2018-04-28 17:22:39] ---7.68e-06
+[2018-04-28 17:22:39] ---Alvo de venda
+[2018-04-28 17:22:39] ---7.833599999999999e-06
+[2018-04-28 17:22:39] ---Stop Loss
+[2018-04-28 17:22:39] ---7.449599999999999e-06
+[2018-04-28 17:22:39] -----
+[2018-04-28 17:22:49] 1- Iniciando rotina de compra
+[2018-04-28 17:22:50] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:22:50] 2- Iniciando rotina de venda 
+[2018-04-28 17:22:51] ---Price Now
+[2018-04-28 17:22:51] ---7.68e-06
+[2018-04-28 17:22:51] ---Alvo de venda
+[2018-04-28 17:22:51] ---7.833599999999999e-06
+[2018-04-28 17:22:51] ---Stop Loss
+[2018-04-28 17:22:51] ---7.449599999999999e-06
+[2018-04-28 17:22:51] -----
+[2018-04-28 17:23:01] 1- Iniciando rotina de compra
+[2018-04-28 17:23:01] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:23:01] 2- Iniciando rotina de venda 
+[2018-04-28 17:23:02] ---Price Now
+[2018-04-28 17:23:02] ---7.67e-06
+[2018-04-28 17:23:02] ---Alvo de venda
+[2018-04-28 17:23:02] ---7.833599999999999e-06
+[2018-04-28 17:23:02] ---Stop Loss
+[2018-04-28 17:23:02] ---7.449599999999999e-06
+[2018-04-28 17:23:02] -----
+[2018-04-28 17:23:12] 1- Iniciando rotina de compra
+[2018-04-28 17:23:13] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:23:13] 2- Iniciando rotina de venda 
+[2018-04-28 17:23:14] ---Price Now
+[2018-04-28 17:23:14] ---7.67e-06
+[2018-04-28 17:23:14] ---Alvo de venda
+[2018-04-28 17:23:14] ---7.833599999999999e-06
+[2018-04-28 17:23:14] ---Stop Loss
+[2018-04-28 17:23:14] ---7.449599999999999e-06
+[2018-04-28 17:23:14] -----
+[2018-04-28 17:23:24] 1- Iniciando rotina de compra
+[2018-04-28 17:23:24] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:23:24] 2- Iniciando rotina de venda 
+[2018-04-28 17:23:26] ---Price Now
+[2018-04-28 17:23:26] ---7.68e-06
+[2018-04-28 17:23:26] ---Alvo de venda
+[2018-04-28 17:23:26] ---7.833599999999999e-06
+[2018-04-28 17:23:26] ---Stop Loss
+[2018-04-28 17:23:26] ---7.449599999999999e-06
+[2018-04-28 17:23:26] -----
+[2018-04-28 17:23:36] 1- Iniciando rotina de compra
+[2018-04-28 17:23:37] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:23:37] 2- Iniciando rotina de venda 
+[2018-04-28 17:23:38] ---Price Now
+[2018-04-28 17:23:38] ---7.67e-06
+[2018-04-28 17:23:38] ---Alvo de venda
+[2018-04-28 17:23:38] ---7.833599999999999e-06
+[2018-04-28 17:23:38] ---Stop Loss
+[2018-04-28 17:23:38] ---7.449599999999999e-06
+[2018-04-28 17:23:38] -----
+[2018-04-28 17:23:48] 1- Iniciando rotina de compra
+[2018-04-28 17:23:48] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:23:48] 2- Iniciando rotina de venda 
+[2018-04-28 17:23:49] ---Price Now
+[2018-04-28 17:23:49] ---7.68e-06
+[2018-04-28 17:23:49] ---Alvo de venda
+[2018-04-28 17:23:49] ---7.833599999999999e-06
+[2018-04-28 17:23:49] ---Stop Loss
+[2018-04-28 17:23:49] ---7.449599999999999e-06
+[2018-04-28 17:23:49] -----
+[2018-04-28 17:23:59] 1- Iniciando rotina de compra
+[2018-04-28 17:24:00] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:24:00] 2- Iniciando rotina de venda 
+[2018-04-28 17:24:01] ---Price Now
+[2018-04-28 17:24:01] ---7.68e-06
+[2018-04-28 17:24:01] ---Alvo de venda
+[2018-04-28 17:24:01] ---7.833599999999999e-06
+[2018-04-28 17:24:01] ---Stop Loss
+[2018-04-28 17:24:01] ---7.449599999999999e-06
+[2018-04-28 17:24:01] -----
+[2018-04-28 17:24:11] 1- Iniciando rotina de compra
+[2018-04-28 17:24:12] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:24:12] 2- Iniciando rotina de venda 
+[2018-04-28 17:24:14] ---Price Now
+[2018-04-28 17:24:14] ---7.67e-06
+[2018-04-28 17:24:14] ---Alvo de venda
+[2018-04-28 17:24:14] ---7.833599999999999e-06
+[2018-04-28 17:24:14] ---Stop Loss
+[2018-04-28 17:24:14] ---7.449599999999999e-06
+[2018-04-28 17:24:14] -----
+[2018-04-28 17:24:24] 1- Iniciando rotina de compra
+[2018-04-28 17:24:24] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:24:24] 2- Iniciando rotina de venda 
+[2018-04-28 17:24:25] ---Price Now
+[2018-04-28 17:24:25] ---7.67e-06
+[2018-04-28 17:24:25] ---Alvo de venda
+[2018-04-28 17:24:25] ---7.833599999999999e-06
+[2018-04-28 17:24:25] ---Stop Loss
+[2018-04-28 17:24:25] ---7.449599999999999e-06
+[2018-04-28 17:24:25] -----
+[2018-04-28 17:24:35] 1- Iniciando rotina de compra
+[2018-04-28 17:24:36] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:24:36] 2- Iniciando rotina de venda 
+[2018-04-28 17:24:37] ---Price Now
+[2018-04-28 17:24:37] ---7.67e-06
+[2018-04-28 17:24:37] ---Alvo de venda
+[2018-04-28 17:24:37] ---7.833599999999999e-06
+[2018-04-28 17:24:37] ---Stop Loss
+[2018-04-28 17:24:37] ---7.449599999999999e-06
+[2018-04-28 17:24:37] -----
+[2018-04-28 17:24:47] 1- Iniciando rotina de compra
+[2018-04-28 17:24:48] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:24:48] 2- Iniciando rotina de venda 
+[2018-04-28 17:24:50] ---Price Now
+[2018-04-28 17:24:50] ---7.67e-06
+[2018-04-28 17:24:50] ---Alvo de venda
+[2018-04-28 17:24:50] ---7.833599999999999e-06
+[2018-04-28 17:24:50] ---Stop Loss
+[2018-04-28 17:24:50] ---7.449599999999999e-06
+[2018-04-28 17:24:50] -----
+[2018-04-28 17:25:00] 1- Iniciando rotina de compra
+[2018-04-28 17:25:01] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:25:01] 2- Iniciando rotina de venda 
+[2018-04-28 17:25:03] ---Price Now
+[2018-04-28 17:25:03] ---7.67e-06
+[2018-04-28 17:25:03] ---Alvo de venda
+[2018-04-28 17:25:03] ---7.833599999999999e-06
+[2018-04-28 17:25:03] ---Stop Loss
+[2018-04-28 17:25:03] ---7.449599999999999e-06
+[2018-04-28 17:25:03] -----
+[2018-04-28 17:25:13] 1- Iniciando rotina de compra
+[2018-04-28 17:25:13] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:25:13] 2- Iniciando rotina de venda 
+[2018-04-28 17:25:14] ---Price Now
+[2018-04-28 17:25:14] ---7.68e-06
+[2018-04-28 17:25:14] ---Alvo de venda
+[2018-04-28 17:25:14] ---7.833599999999999e-06
+[2018-04-28 17:25:14] ---Stop Loss
+[2018-04-28 17:25:14] ---7.449599999999999e-06
+[2018-04-28 17:25:14] -----
+[2018-04-28 17:25:24] 1- Iniciando rotina de compra
+[2018-04-28 17:25:25] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:25:25] 2- Iniciando rotina de venda 
+[2018-04-28 17:25:26] ---Price Now
+[2018-04-28 17:25:26] ---7.67e-06
+[2018-04-28 17:25:26] ---Alvo de venda
+[2018-04-28 17:25:26] ---7.833599999999999e-06
+[2018-04-28 17:25:26] ---Stop Loss
+[2018-04-28 17:25:26] ---7.449599999999999e-06
+[2018-04-28 17:25:26] -----
+[2018-04-28 17:25:36] 1- Iniciando rotina de compra
+[2018-04-28 17:25:36] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:25:36] 2- Iniciando rotina de venda 
+[2018-04-28 17:25:37] ---Price Now
+[2018-04-28 17:25:37] ---7.68e-06
+[2018-04-28 17:25:37] ---Alvo de venda
+[2018-04-28 17:25:37] ---7.833599999999999e-06
+[2018-04-28 17:25:37] ---Stop Loss
+[2018-04-28 17:25:37] ---7.449599999999999e-06
+[2018-04-28 17:25:37] -----
+[2018-04-28 17:25:47] 1- Iniciando rotina de compra
+[2018-04-28 17:25:48] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:25:48] 2- Iniciando rotina de venda 
+[2018-04-28 17:25:49] ---Price Now
+[2018-04-28 17:25:49] ---7.67e-06
+[2018-04-28 17:25:49] ---Alvo de venda
+[2018-04-28 17:25:49] ---7.833599999999999e-06
+[2018-04-28 17:25:49] ---Stop Loss
+[2018-04-28 17:25:49] ---7.449599999999999e-06
+[2018-04-28 17:25:49] -----
+[2018-04-28 17:25:59] 1- Iniciando rotina de compra
+[2018-04-28 17:25:59] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:25:59] 2- Iniciando rotina de venda 
+[2018-04-28 17:26:00] ---Price Now
+[2018-04-28 17:26:00] ---7.68e-06
+[2018-04-28 17:26:00] ---Alvo de venda
+[2018-04-28 17:26:00] ---7.833599999999999e-06
+[2018-04-28 17:26:00] ---Stop Loss
+[2018-04-28 17:26:00] ---7.449599999999999e-06
+[2018-04-28 17:26:00] -----
+[2018-04-28 17:26:10] 1- Iniciando rotina de compra
+[2018-04-28 17:26:11] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:26:11] 2- Iniciando rotina de venda 
+[2018-04-28 17:26:12] ---Price Now
+[2018-04-28 17:26:12] ---7.68e-06
+[2018-04-28 17:26:12] ---Alvo de venda
+[2018-04-28 17:26:12] ---7.833599999999999e-06
+[2018-04-28 17:26:12] ---Stop Loss
+[2018-04-28 17:26:12] ---7.449599999999999e-06
+[2018-04-28 17:26:12] -----
+[2018-04-28 17:26:22] 1- Iniciando rotina de compra
+[2018-04-28 17:26:23] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:26:23] 2- Iniciando rotina de venda 
+[2018-04-28 17:26:25] ---Price Now
+[2018-04-28 17:26:25] ---7.68e-06
+[2018-04-28 17:26:25] ---Alvo de venda
+[2018-04-28 17:26:25] ---7.833599999999999e-06
+[2018-04-28 17:26:25] ---Stop Loss
+[2018-04-28 17:26:25] ---7.449599999999999e-06
+[2018-04-28 17:26:25] -----
+[2018-04-28 17:26:35] 1- Iniciando rotina de compra
+[2018-04-28 17:26:36] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:26:36] 2- Iniciando rotina de venda 
+[2018-04-28 17:26:37] ---Price Now
+[2018-04-28 17:26:37] ---7.67e-06
+[2018-04-28 17:26:37] ---Alvo de venda
+[2018-04-28 17:26:37] ---7.833599999999999e-06
+[2018-04-28 17:26:37] ---Stop Loss
+[2018-04-28 17:26:37] ---7.449599999999999e-06
+[2018-04-28 17:26:37] -----
+[2018-04-28 17:26:47] 1- Iniciando rotina de compra
+[2018-04-28 17:26:48] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:26:48] 2- Iniciando rotina de venda 
+[2018-04-28 17:26:49] ---Price Now
+[2018-04-28 17:26:49] ---7.67e-06
+[2018-04-28 17:26:49] ---Alvo de venda
+[2018-04-28 17:26:49] ---7.833599999999999e-06
+[2018-04-28 17:26:49] ---Stop Loss
+[2018-04-28 17:26:49] ---7.449599999999999e-06
+[2018-04-28 17:26:49] -----
+[2018-04-28 17:26:59] 1- Iniciando rotina de compra
+[2018-04-28 17:27:00] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:27:00] 2- Iniciando rotina de venda 
+[2018-04-28 17:27:01] ---Price Now
+[2018-04-28 17:27:01] ---7.67e-06
+[2018-04-28 17:27:01] ---Alvo de venda
+[2018-04-28 17:27:01] ---7.833599999999999e-06
+[2018-04-28 17:27:01] ---Stop Loss
+[2018-04-28 17:27:01] ---7.449599999999999e-06
+[2018-04-28 17:27:01] -----
+[2018-04-28 17:27:11] 1- Iniciando rotina de compra
+[2018-04-28 17:27:11] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:27:11] 2- Iniciando rotina de venda 
+[2018-04-28 17:27:12] ---Price Now
+[2018-04-28 17:27:12] ---7.67e-06
+[2018-04-28 17:27:12] ---Alvo de venda
+[2018-04-28 17:27:12] ---7.833599999999999e-06
+[2018-04-28 17:27:12] ---Stop Loss
+[2018-04-28 17:27:12] ---7.449599999999999e-06
+[2018-04-28 17:27:12] -----
+[2018-04-28 17:27:22] 1- Iniciando rotina de compra
+[2018-04-28 17:27:23] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:27:23] 2- Iniciando rotina de venda 
+[2018-04-28 17:27:23] ---Price Now
+[2018-04-28 17:27:23] ---7.67e-06
+[2018-04-28 17:27:23] ---Alvo de venda
+[2018-04-28 17:27:23] ---7.833599999999999e-06
+[2018-04-28 17:27:23] ---Stop Loss
+[2018-04-28 17:27:23] ---7.449599999999999e-06
+[2018-04-28 17:27:23] -----
+[2018-04-28 17:27:33] 1- Iniciando rotina de compra
+[2018-04-28 17:27:34] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:27:34] 2- Iniciando rotina de venda 
+[2018-04-28 17:27:36] ---Price Now
+[2018-04-28 17:27:36] ---7.67e-06
+[2018-04-28 17:27:36] ---Alvo de venda
+[2018-04-28 17:27:36] ---7.833599999999999e-06
+[2018-04-28 17:27:36] ---Stop Loss
+[2018-04-28 17:27:36] ---7.449599999999999e-06
+[2018-04-28 17:27:36] -----
+[2018-04-28 17:27:46] 1- Iniciando rotina de compra
+[2018-04-28 17:27:46] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:27:46] 2- Iniciando rotina de venda 
+[2018-04-28 17:27:47] ---Price Now
+[2018-04-28 17:27:47] ---7.67e-06
+[2018-04-28 17:27:47] ---Alvo de venda
+[2018-04-28 17:27:47] ---7.833599999999999e-06
+[2018-04-28 17:27:47] ---Stop Loss
+[2018-04-28 17:27:47] ---7.449599999999999e-06
+[2018-04-28 17:27:47] -----
+[2018-04-28 17:27:57] 1- Iniciando rotina de compra
+[2018-04-28 17:28:54] logando na  api
+[2018-04-28 17:28:55] Login Ok
+[2018-04-28 17:28:55] 1- Iniciando rotina de compra
+[2018-04-28 17:28:55] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:28:55] 2- Iniciando rotina de venda 
+[2018-04-28 17:28:56] ---Price Now
+[2018-04-28 17:28:56] ---7.67e-06
+[2018-04-28 17:28:56] ---Alvo de venda
+[2018-04-28 17:28:56] ---7.833599999999999e-06
+[2018-04-28 17:28:56] ---Stop Loss
+[2018-04-28 17:28:56] ---7.449599999999999e-06
+[2018-04-28 17:28:56] -----
+[2018-04-28 17:29:06] 1- Iniciando rotina de compra
+[2018-04-28 17:29:07] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:29:07] 2- Iniciando rotina de venda 
+[2018-04-28 17:29:08] ---Price Now
+[2018-04-28 17:29:08] ---7.67e-06
+[2018-04-28 17:29:08] ---Alvo de venda
+[2018-04-28 17:29:08] ---7.833599999999999e-06
+[2018-04-28 17:29:08] ---Stop Loss
+[2018-04-28 17:29:08] ---7.449599999999999e-06
+[2018-04-28 17:29:08] -----
+[2018-04-28 17:29:18] 1- Iniciando rotina de compra
+[2018-04-28 17:29:19] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:29:19] 2- Iniciando rotina de venda 
+[2018-04-28 17:29:21] ---Price Now
+[2018-04-28 17:29:21] ---7.68e-06
+[2018-04-28 17:29:21] ---Alvo de venda
+[2018-04-28 17:29:21] ---7.833599999999999e-06
+[2018-04-28 17:29:21] ---Stop Loss
+[2018-04-28 17:29:21] ---7.449599999999999e-06
+[2018-04-28 17:29:21] -----
+[2018-04-28 17:29:31] 1- Iniciando rotina de compra
+[2018-04-28 17:29:32] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:29:32] 2- Iniciando rotina de venda 
+[2018-04-28 17:29:34] ---Price Now
+[2018-04-28 17:29:34] ---7.66e-06
+[2018-04-28 17:29:34] ---Alvo de venda
+[2018-04-28 17:29:34] ---7.833599999999999e-06
+[2018-04-28 17:29:34] ---Stop Loss
+[2018-04-28 17:29:34] ---7.449599999999999e-06
+[2018-04-28 17:29:34] -----
+[2018-04-28 17:29:44] 1- Iniciando rotina de compra
+[2018-04-28 17:29:45] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:29:45] 2- Iniciando rotina de venda 
+[2018-04-28 17:29:46] ---Price Now
+[2018-04-28 17:29:46] ---7.66e-06
+[2018-04-28 17:29:46] ---Alvo de venda
+[2018-04-28 17:29:46] ---7.833599999999999e-06
+[2018-04-28 17:29:46] ---Stop Loss
+[2018-04-28 17:29:46] ---7.449599999999999e-06
+[2018-04-28 17:29:46] -----
+[2018-04-28 17:29:56] 1- Iniciando rotina de compra
+[2018-04-28 17:29:56] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:29:56] 2- Iniciando rotina de venda 
+[2018-04-28 17:29:57] ---Price Now
+[2018-04-28 17:29:57] ---7.66e-06
+[2018-04-28 17:29:57] ---Alvo de venda
+[2018-04-28 17:29:57] ---7.833599999999999e-06
+[2018-04-28 17:29:57] ---Stop Loss
+[2018-04-28 17:29:57] ---7.449599999999999e-06
+[2018-04-28 17:29:57] -----
+[2018-04-28 17:30:07] 1- Iniciando rotina de compra
+[2018-04-28 17:30:08] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:30:08] 2- Iniciando rotina de venda 
+[2018-04-28 17:30:10] ---Price Now
+[2018-04-28 17:30:10] ---7.66e-06
+[2018-04-28 17:30:10] ---Alvo de venda
+[2018-04-28 17:30:10] ---7.833599999999999e-06
+[2018-04-28 17:30:10] ---Stop Loss
+[2018-04-28 17:30:10] ---7.449599999999999e-06
+[2018-04-28 17:30:10] -----
+[2018-04-28 17:30:20] 1- Iniciando rotina de compra
+[2018-04-28 17:30:21] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:30:21] 2- Iniciando rotina de venda 
+[2018-04-28 17:30:23] ---Price Now
+[2018-04-28 17:30:23] ---7.66e-06
+[2018-04-28 17:30:23] ---Alvo de venda
+[2018-04-28 17:30:23] ---7.833599999999999e-06
+[2018-04-28 17:30:23] ---Stop Loss
+[2018-04-28 17:30:23] ---7.449599999999999e-06
+[2018-04-28 17:30:23] -----
+[2018-04-28 17:30:33] 1- Iniciando rotina de compra
+[2018-04-28 17:30:34] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:30:34] 2- Iniciando rotina de venda 
+[2018-04-28 17:30:36] ---Price Now
+[2018-04-28 17:30:36] ---7.67e-06
+[2018-04-28 17:30:36] ---Alvo de venda
+[2018-04-28 17:30:36] ---7.833599999999999e-06
+[2018-04-28 17:30:36] ---Stop Loss
+[2018-04-28 17:30:36] ---7.449599999999999e-06
+[2018-04-28 17:30:36] -----
+[2018-04-28 17:30:46] 1- Iniciando rotina de compra
+[2018-04-28 17:30:47] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:30:47] 2- Iniciando rotina de venda 
+[2018-04-28 17:30:48] ---Price Now
+[2018-04-28 17:30:48] ---7.67e-06
+[2018-04-28 17:30:48] ---Alvo de venda
+[2018-04-28 17:30:48] ---7.833599999999999e-06
+[2018-04-28 17:30:48] ---Stop Loss
+[2018-04-28 17:30:48] ---7.449599999999999e-06
+[2018-04-28 17:30:48] -----
+[2018-04-28 17:30:58] 1- Iniciando rotina de compra
+[2018-04-28 17:30:59] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:30:59] 2- Iniciando rotina de venda 
+[2018-04-28 17:31:00] ---Price Now
+[2018-04-28 17:31:00] ---7.67e-06
+[2018-04-28 17:31:00] ---Alvo de venda
+[2018-04-28 17:31:00] ---7.833599999999999e-06
+[2018-04-28 17:31:00] ---Stop Loss
+[2018-04-28 17:31:00] ---7.449599999999999e-06
+[2018-04-28 17:31:00] -----
+[2018-04-28 17:31:10] 1- Iniciando rotina de compra
+[2018-04-28 17:31:11] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:31:11] 2- Iniciando rotina de venda 
+[2018-04-28 17:31:13] ---Price Now
+[2018-04-28 17:31:13] ---7.67e-06
+[2018-04-28 17:31:13] ---Alvo de venda
+[2018-04-28 17:31:13] ---7.833599999999999e-06
+[2018-04-28 17:31:13] ---Stop Loss
+[2018-04-28 17:31:13] ---7.449599999999999e-06
+[2018-04-28 17:31:13] -----
+[2018-04-28 17:31:23] 1- Iniciando rotina de compra
+[2018-04-28 17:31:23] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:31:23] 2- Iniciando rotina de venda 
+[2018-04-28 17:31:24] ---Price Now
+[2018-04-28 17:31:24] ---7.67e-06
+[2018-04-28 17:31:24] ---Alvo de venda
+[2018-04-28 17:31:24] ---7.833599999999999e-06
+[2018-04-28 17:31:24] ---Stop Loss
+[2018-04-28 17:31:24] ---7.449599999999999e-06
+[2018-04-28 17:31:24] -----
+[2018-04-28 17:31:34] 1- Iniciando rotina de compra
+[2018-04-28 17:31:35] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:31:35] 2- Iniciando rotina de venda 
+[2018-04-28 17:31:36] ---Price Now
+[2018-04-28 17:31:36] ---7.67e-06
+[2018-04-28 17:31:36] ---Alvo de venda
+[2018-04-28 17:31:36] ---7.833599999999999e-06
+[2018-04-28 17:31:36] ---Stop Loss
+[2018-04-28 17:31:36] ---7.449599999999999e-06
+[2018-04-28 17:31:36] -----
+[2018-04-28 17:31:46] 1- Iniciando rotina de compra
+[2018-04-28 17:31:46] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:31:46] 2- Iniciando rotina de venda 
+[2018-04-28 17:31:48] ---Price Now
+[2018-04-28 17:31:48] ---7.67e-06
+[2018-04-28 17:31:48] ---Alvo de venda
+[2018-04-28 17:31:48] ---7.833599999999999e-06
+[2018-04-28 17:31:48] ---Stop Loss
+[2018-04-28 17:31:48] ---7.449599999999999e-06
+[2018-04-28 17:31:48] -----
+[2018-04-28 17:31:58] 1- Iniciando rotina de compra
+[2018-04-28 17:31:58] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:31:58] 2- Iniciando rotina de venda 
+[2018-04-28 17:31:59] ---Price Now
+[2018-04-28 17:31:59] ---7.67e-06
+[2018-04-28 17:31:59] ---Alvo de venda
+[2018-04-28 17:31:59] ---7.833599999999999e-06
+[2018-04-28 17:31:59] ---Stop Loss
+[2018-04-28 17:31:59] ---7.449599999999999e-06
+[2018-04-28 17:31:59] -----
+[2018-04-28 17:32:10] 1- Iniciando rotina de compra
+[2018-04-28 17:32:10] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:32:10] 2- Iniciando rotina de venda 
+[2018-04-28 17:32:11] ---Price Now
+[2018-04-28 17:32:11] ---7.66e-06
+[2018-04-28 17:32:11] ---Alvo de venda
+[2018-04-28 17:32:11] ---7.833599999999999e-06
+[2018-04-28 17:32:11] ---Stop Loss
+[2018-04-28 17:32:11] ---7.449599999999999e-06
+[2018-04-28 17:32:11] -----
+[2018-04-28 17:32:21] 1- Iniciando rotina de compra
+[2018-04-28 17:32:21] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 17:32:21] 2- Iniciando rotina de venda 
+[2018-04-28 17:32:22] ---Price Now
+[2018-04-28 17:32:22] ---7.67e-06
+[2018-04-28 17:32:22] ---Alvo de venda
+[2018-04-28 17:32:22] ---7.833599999999999e-06
+[2018-04-28 17:32:22] ---Stop Loss
+[2018-04-28 17:32:22] ---7.449599999999999e-06
+[2018-04-28 17:32:22] -----
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            [2018-04-28 18:03:54] logando na  api
+[2018-04-28 18:03:54] Login Ok
+[2018-04-28 18:03:54] 1- Iniciando rotina de compra
+[2018-04-28 18:03:55] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 18:03:55] 2- Iniciando rotina de venda 
+[2018-04-28 18:03:56] ---Price Now
+[2018-04-28 18:03:56] ---7.67e-06
+[2018-04-28 18:03:56] ---Alvo de venda
+[2018-04-28 18:03:56] ---7.833599999999999e-06
+[2018-04-28 18:03:56] ---Stop Loss
+[2018-04-28 18:03:56] ---7.449599999999999e-06
+[2018-04-28 18:03:56] -----
+[2018-04-28 18:04:06] 1- Iniciando rotina de compra
+[2018-04-28 18:04:06] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 18:04:06] 2- Iniciando rotina de venda 
+[2018-04-28 18:04:07] ---Price Now
+[2018-04-28 18:04:07] ---7.67e-06
+[2018-04-28 18:04:07] ---Alvo de venda
+[2018-04-28 18:04:07] ---7.833599999999999e-06
+[2018-04-28 18:04:07] ---Stop Loss
+[2018-04-28 18:04:07] ---7.449599999999999e-06
+[2018-04-28 18:04:07] -----
+[2018-04-28 18:04:17] 1- Iniciando rotina de compra
+[2018-04-28 18:04:18] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 18:04:18] 2- Iniciando rotina de venda 
+[2018-04-28 18:04:19] ---Price Now
+[2018-04-28 18:04:19] ---7.66e-06
+[2018-04-28 18:04:19] ---Alvo de venda
+[2018-04-28 18:04:19] ---7.833599999999999e-06
+[2018-04-28 18:04:19] ---Stop Loss
+[2018-04-28 18:04:19] ---7.449599999999999e-06
+[2018-04-28 18:04:19] -----
+[2018-04-28 18:04:29] 1- Iniciando rotina de compra
+[2018-04-28 18:04:29] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 18:04:29] 2- Iniciando rotina de venda 
+[2018-04-28 18:04:30] ---Price Now
+[2018-04-28 18:04:30] ---7.66e-06
+[2018-04-28 18:04:30] ---Alvo de venda
+[2018-04-28 18:04:30] ---7.833599999999999e-06
+[2018-04-28 18:04:30] ---Stop Loss
+[2018-04-28 18:04:30] ---7.449599999999999e-06
+[2018-04-28 18:04:30] -----
+[2018-04-28 18:04:40] 1- Iniciando rotina de compra
+[2018-04-28 18:04:41] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 18:04:41] 2- Iniciando rotina de venda 
+[2018-04-28 18:04:42] ---Price Now
+[2018-04-28 18:04:42] ---7.67e-06
+[2018-04-28 18:04:42] ---Alvo de venda
+[2018-04-28 18:04:42] ---7.833599999999999e-06
+[2018-04-28 18:04:42] ---Stop Loss
+[2018-04-28 18:04:42] ---7.449599999999999e-06
+[2018-04-28 18:04:42] -----
+[2018-04-28 18:04:52] 1- Iniciando rotina de compra
+[2018-04-28 18:04:52] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 18:04:52] 2- Iniciando rotina de venda 
+[2018-04-28 18:04:53] ---Price Now
+[2018-04-28 18:04:53] ---7.67e-06
+[2018-04-28 18:04:53] ---Alvo de venda
+[2018-04-28 18:04:53] ---7.833599999999999e-06
+[2018-04-28 18:04:53] ---Stop Loss
+[2018-04-28 18:04:53] ---7.449599999999999e-06
+[2018-04-28 18:04:53] -----
+[2018-04-28 18:05:03] 1- Iniciando rotina de compra
+[2018-04-28 18:05:03] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 18:05:03] 2- Iniciando rotina de venda 
+[2018-04-28 18:05:05] ---Price Now
+[2018-04-28 18:05:05] ---7.67e-06
+[2018-04-28 18:05:05] ---Alvo de venda
+[2018-04-28 18:05:05] ---7.833599999999999e-06
+[2018-04-28 18:05:05] ---Stop Loss
+[2018-04-28 18:05:05] ---7.449599999999999e-06
+[2018-04-28 18:05:05] -----
+[2018-04-28 18:05:15] 1- Iniciando rotina de compra
+[2018-04-28 18:05:16] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 18:05:16] 2- Iniciando rotina de venda 
+[2018-04-28 18:05:16] ---Price Now
+[2018-04-28 18:05:16] ---7.67e-06
+[2018-04-28 18:05:16] ---Alvo de venda
+[2018-04-28 18:05:16] ---7.833599999999999e-06
+[2018-04-28 18:05:16] ---Stop Loss
+[2018-04-28 18:05:16] ---7.449599999999999e-06
+[2018-04-28 18:05:16] -----
+[2018-04-28 18:05:26] 1- Iniciando rotina de compra
+[2018-04-28 18:05:27] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 18:05:27] 2- Iniciando rotina de venda 
+[2018-04-28 18:05:28] ---Price Now
+[2018-04-28 18:05:28] ---7.67e-06
+[2018-04-28 18:05:28] ---Alvo de venda
+[2018-04-28 18:05:28] ---7.833599999999999e-06
+[2018-04-28 18:05:28] ---Stop Loss
+[2018-04-28 18:05:28] ---7.449599999999999e-06
+[2018-04-28 18:05:28] -----
+[2018-04-28 18:05:38] 1- Iniciando rotina de compra
+[2018-04-28 18:05:38] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 18:05:38] 2- Iniciando rotina de venda 
+[2018-04-28 18:05:39] ---Price Now
+[2018-04-28 18:05:39] ---7.67e-06
+[2018-04-28 18:05:39] ---Alvo de venda
+[2018-04-28 18:05:39] ---7.833599999999999e-06
+[2018-04-28 18:05:39] ---Stop Loss
+[2018-04-28 18:05:39] ---7.449599999999999e-06
+[2018-04-28 18:05:39] -----
+[2018-04-28 18:05:49] 1- Iniciando rotina de compra
+[2018-04-28 18:05:50] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 18:05:50] 2- Iniciando rotina de venda 
+[2018-04-28 18:05:51] ---Price Now
+[2018-04-28 18:05:51] ---7.67e-06
+[2018-04-28 18:05:51] ---Alvo de venda
+[2018-04-28 18:05:51] ---7.833599999999999e-06
+[2018-04-28 18:05:51] ---Stop Loss
+[2018-04-28 18:05:51] ---7.449599999999999e-06
+[2018-04-28 18:05:51] -----
+[2018-04-28 18:06:01] 1- Iniciando rotina de compra
+[2018-04-28 18:06:01] ---Existem ordens em aberto no banco de dados
+
+[2018-04-28 18:06:01] 2- Iniciando rotina de venda 

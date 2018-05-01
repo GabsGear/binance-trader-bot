@@ -67,22 +67,27 @@ class Desicion():
             return float(x-100)
         return float(0)
 
-    # def getRSI(self, data):
-    #     size = len(data['c'])
-    #     data['c'] = np.array(data['c'], dtype=float)
-    #     rsi = tb.RSI(data['c'], 20)
-    #     if(rsi[size-1] > 0.0):
-    #         return rsi[size-1]
-    #     else:
-    #         return tb.getRSISmall(data)
+    def getRSI(self, data):
+        size = len(data['c'])
+        data['c'] = np.array(data['c'], dtype=float)
+        print(data['c'])
+        rsi = tb.RSI(data['c'], 20)
+        print(rsi)
+        print (rsi)
+        if(rsi[size-1] > 0.0):
+            return rsi[size-1]
+        else:
+            return tb.getRSISmall(data)
 
-    # def getRSISmall(self, data):
-    #     size = len(data['c'])
-    #     data['c']= np.array(data['c'], dtype=float)
-    #     for c in data['c']:
-    #         c = c*100
-    #     rsi = tb.RSI(data['c'], 20)
-    #     return rsi[size-1]
+    def getRSISmall(self, data):
+        size = len(data['c'])
+        data['c']= np.array(data['c'], dtype=float)
+        for c in data['c']:
+            c = c*100
+        rsi = tb.RSI(data['c'], 20)
+        print('small rsi')
+        print(rsi)
+        return rsi[size-1]
 
 class StrategiesBase(Desicion):
     """Strategies class
@@ -119,21 +124,29 @@ class StrategiesBase(Desicion):
         data = super().getDataDecision(bot_config)
         price_now = binance_.Binance_opr()
         price_now = price_now.getPriceNow(bot_config['currency'])
+        hp = helpers.Helpers()
 
-        print('price now = ' + str(price_now))
+        log = ('price now = ' + str(price_now))
+        hp.writeOutput(bot_config['id'], log)
+
         tomax = self.getLhigh()
         tomax = tomax[len(tomax) - 3 : len(tomax) - 1]
         tomin = self.getLlow()
+        tomax = tomax[len(tomax)-30: len(tomax)]
+        tomin = tomin[len(tomin)-30: len(tomin)]
+
         if(len(tomin) > 0):
             minn = min(tomin)
             maxx = max(tomax)
-            print (' Buy at ' + str(minn))
-            print(' .  ')
+            log =  ('\n Buy at ' + str(minn))
+            hp.writeOutput(bot_config['id'], log)
             if(data["price_now"] <= minn):
-                print('sinal buy')
+                log = ('sinal buy')
+                hp.writeOutput(bot_config['id'], log)
                 return 'buy'
             if(data["price_now"] >= maxx):
-                print('sinal sell')
+                log = ('sinal sell')
+                hp.writeOutput(bot_config['id'], log)
                 return 'sell'
         return 'none'  
 
@@ -195,7 +208,7 @@ class StrategiesBase(Desicion):
                 return 'sell'
         return 'none'
 
-    def startFollowBTC(self, bot_config):
+    def startFollowBTC(self, bot_config, data):
         """
             Search pivot up on btc 
         """
@@ -220,18 +233,17 @@ class StrategiesBase(Desicion):
                 return 'sell'
         return 'none'
 
-    # def startRSIMax(self, bot_config):
-    #     data = self.getDataDecision(bot_config)
-    #     high = self.getLhigh()
-    #     size = len(high)
-    #     tomax = high[size-3:size-1]
-    #     maxx = max(tomax)
-    #     rsi = super().getRSI(data)
+    def startRSIMax(self, bot_config, data):
+        high = self.getLhigh()
+        size = len(high)
+        tomax = high[size-3:size-1]
+        maxx = max(tomax)
+        rsi = super().getRSI(data)
 
-    #     if(rsi < 30):
-    #         return 'buy'
-    #     if(data['price_now'] >= maxx):
-    #         return 'sell'
-    #     return 'none'
+        if(rsi < 30):
+            return 'buy'
+        if(data['price_now'] >= maxx):
+            return 'sell'
+        return 'none'
 	
  

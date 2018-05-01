@@ -8,8 +8,8 @@ import helpers
 class Db:
     def getConn(self):
         try:
-            #db = mysql.connect(host="localhost", user="root", passwd="gabsghell", db="protrade")
-            db = mysql.connect(host="127.0.0.1", user="root", passwd="libano252528", db="protrader")
+            db = mysql.connect(host="localhost", user="root", passwd="gabsghell", db="protrade")
+            #db = mysql.connect(host="127.0.0.1", user="root", passwd="libano252528", db="protrader")
             cursor = db.cursor()
             return db, cursor  
         except:
@@ -99,7 +99,8 @@ class Db:
                     'active': data[7],
                     'order_value': float(data[8]),
                     'period': data[9],
-                    'stoploss': data[10]
+                    'stoploss': data[10],
+                    'min_order': data[11]
                 }
             return obj
         except:
