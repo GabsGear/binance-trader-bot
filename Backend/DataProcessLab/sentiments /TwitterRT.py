@@ -1,16 +1,4 @@
-"""
-    Consumer Key (API Key)	kNoBoo1wg6j9zZce2v5W2NFdh
-    Consumer Secret (API Secret)	dZTYm4I1dqXYcXkM3CLK2qwEQihTU4DHtmn10oM1Z0rfqD3HEt
-    Access Level	Read and write (modify app permissions)
-    Owner	gabrielgheller1
-    Owner ID	991736288238886912
 
-    Access Token	991736288238886912-mH7f5OwdByFWXT6SUXnfxU83ZMXDKYG
-    Access Token Secret	wQF5RAfA12pFrx1VBzenoBjys1iP91wxstyIdpTCLFr2K
-    Access Level	Read and write
-    Owner	gabrielgheller1
-    Owner ID	991736288238886912
-"""
 
 from textblob import TextBlob as tb
 import tweepy
@@ -24,10 +12,10 @@ class AnalyzerTwiterRT():
     Returns:
         sentiments 
     """
-    __consumer_key = 'kNoBoo1wg6j9zZce2v5W2NFdh'
-    __consumer_secret = 'dZTYm4I1dqXYcXkM3CLK2qwEQihTU4DHtmn10oM1Z0rfqD3HEt'
-    __access_token = '991736288238886912-mH7f5OwdByFWXT6SUXnfxU83ZMXDKYG'
-    __access_token_secret = 'wQF5RAfA12pFrx1VBzenoBjys1iP91wxstyIdpTCLFr2K'
+    __consumer_key = ''
+    __consumer_secret = ''
+    __access_token = ''
+    __access_token_secret = ''
 
     def getTokens(self):
         return self.__consumer_key, self.__consumer_secret, self.__access_token, self.__access_token_secret
@@ -51,7 +39,7 @@ class AnalyzerTwiterRT():
 
             # Write a row to the CSV file. I use encode UTF-8
             csvWriter.writerow([tweet.text.encode('utf-8')])
-            #print (tweet.created_at, tweet.text)
+            print (tweet.created_at, tweet.text)
         csvFile.close()
 
     #search tweets for textblob
@@ -59,15 +47,21 @@ class AnalyzerTwiterRT():
         api = self.loginAPI()
         return api.search(q=keyword, count=nItens)
 
-    def analysis(self, keyword):
+    def analysis(self, keyword, nItens):
         #textblob analysis, return a average os sentiments
-        public_tweets = self.search(keyword)
+        public_tweets = self.search(keyword, nItens)
         analysis = None
         result = []
+        positive = negative = neutral = 0
         for tw in public_tweets:
             analysis = tb(tw.text)
-            if(analysis.sentiment.polarity != 0.0):
-                result.append(analysis.sentiment.polarity)
+            result.append(analysis.sentiment.polarity)
+            if(analysis.sentiment.polarity > 0):
+                positive += 1
+            if(analysis.sentiment.polarity == 0):
+                neutral += 1
+            else:
+                negative += 1
 
         average = np.mean(result)
-        return average
+        return average, positive, negative, neutral

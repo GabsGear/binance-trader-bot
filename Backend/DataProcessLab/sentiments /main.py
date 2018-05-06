@@ -2,22 +2,29 @@
 import TwitterRT
 import pandas as pd
 import scienceLAB
+import os
 
 def main():
+    nTweets = 100
     #Routine for analysis using NLTK
+    os.remove('/home/gabs/Backend/Backend/DataProcessLab/sentiments /inputs/result.csv')
     source = TwitterRT.AnalyzerTwiterRT()
-    tweets = source.getCSV('Trump', 100)
+    tweets = source.getCSV('iota', nTweets)
     lab = scienceLAB.Lab()
     tweets = pd.read_csv(
         '/home/gabs/Backend/Backend/DataProcessLab/sentiments /inputs/result.csv', encoding="ISO-8859-1")
 
-    print(tweets['text'][0])
     tweets = lab.cleanData(tweets)
-    print(tweets['text'][0])
-    lab.sentimentAnalysis(tweets)
+    result = lab.sentimentAnalysis(tweets)
+    print('nltk result')
+    print(result)
 
-    #FOR use textblob
-    analysis = source.analysis('Trump', 100)
-    print('Sentiments Average, -1 Bad, +1 Good = ' + str(analysis))
+    #====
+    average, positive, negative, neutral = source.analysis('Trump', nTweets)
+
+    print('TextBlob')
+    print('Negative = ' + str(negative))
+    print('Neutral = ' + str(neutral))
+    print('Positive = ' + str(positive))
 
 main()
