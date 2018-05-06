@@ -5,7 +5,6 @@ import botconfig
 from datetime import datetime
 import numpy as np
 import requests
-import helpers
 import sys
 import json
 import routines
