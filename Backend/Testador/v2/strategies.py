@@ -112,10 +112,6 @@ class StrategiesBase(Desicion):
         data = super().getDataDecision(bot_config)
         price_now = binance_.Binance_opr()
         price_now = price_now.getPriceNow(bot_config['currency'])
-        hp = helpers.Helpers()
-
-        log = ('price now = ' + str(price_now))
-        hp.writeOutput(bot_config['id'], log)
 
         tomax = self.getLhigh()
         tomax = tomax[len(tomax) - 3 : len(tomax) - 1]
@@ -126,15 +122,9 @@ class StrategiesBase(Desicion):
         if(len(tomin) > 0):
             minn = min(tomin)
             maxx = max(tomax)
-            log =  ('\n Buy at ' + str(minn))
-            hp.writeOutput(bot_config['id'], log)
             if(data["price_now"] <= minn):
-                log = ('sinal buy')
-                hp.writeOutput(bot_config['id'], log)
                 return 'buy'
             if(data["price_now"] >= maxx):
-                log = ('sinal sell')
-                hp.writeOutput(bot_config['id'], log)
                 return 'sell'
         return 'none'  
 

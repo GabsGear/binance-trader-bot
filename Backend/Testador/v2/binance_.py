@@ -105,21 +105,13 @@ class Binance_opr(ApiData):
         return lclose.mean()
 
     def createBuyOrder(self, data, bot_config, data_decision):
-        hp = helpers.Helpers()
         check = routines.Routines()
         if not (check.orderBuyStatus(bot_config, data_decision)):
             db = botconfig.Db()
             if not (bot_config['active']):
-                log = ('Inserindo simulada')
-                hp.writeOutput(bot_config['id'], log)
                 db.insertBuyOrder(data)
 
     def createSellOrder(self, data, bot_config, data_decision):
-        hp = helpers.Helpers()
-        log = ('entrou na funcao de venda')
-        hp.writeOutput(bot_config['id'], log)
         db = botconfig.Db()
         if not (bot_config['active']):
-            log= ('inserindo os dados de venda no bd')
-            hp.writeOutput(bot_config['id'], log)
             db.commitSellOrder(data)

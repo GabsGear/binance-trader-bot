@@ -2,7 +2,6 @@
 # pylint: disable=W0612
 import binance_
 import strategies
-import helpers
 import botconfig
 import time
 
@@ -30,13 +29,6 @@ class Functions():
         return 0
 
     def selectBuyStrategy(self, data, bot_config, data_decision): 
-        """select strategy
-        
-        Arguments:
-            data {[type]} -- data to create a buy order
-            bot_config {[dict]} -- bot setup
-            data_decision {[dict]} -- transactions detals
-        """
         print('Selecionando estrategia numero ' + str(bot_config['strategy_buy']))
         st = strategies.StrategiesBase()
         if(bot_config['strategy_buy'] == 0):
@@ -59,15 +51,12 @@ class Functions():
 # ----------------------------------------sell 
     def sellOrder(self, bot_config, data_decision):
         bn = binance_.Binance_opr()
-        hp = helpers.Helpers()
         fixProfit = self.getFixProfit(bot_config, data_decision)
         stoploss = self.getStopLoss(bot_config, data_decision)
         st = strategies.StrategiesBase()
         
         data = self.getSellData(bot_config, data_decision)
         if(data_decision['price_now'] <= stoploss):
-            log = ('---Venda stop loss alvo ' + str(stoploss))
-            hp.writeOutput(bot_config['id'], log)
             bn.createSellOrder(data, bot_config, data_decision)
             return
            
@@ -77,8 +66,6 @@ class Functions():
                 return  
 
         elif(data_decision['price_now'] >= fixProfit and bot_config['strategy_buy'] != 6):
-            log = ('---Venda lucro fixo')
-            hp.writeOutput(bot_config['id'], log)
             bn.createSellOrder(data, bot_config, data_decision)  
             return
 
@@ -116,25 +103,13 @@ class Routines(Functions):
         return data_decision
         
     def startBuyRoutine(self, bot_config):
-        hp = helpers.Helpers()
-        log = ('1- Iniciando rotina de compra')
-        hp.writeOutput(bot_config['id'], log)
         data_decision = self.get_config(bot_config)
         if(super().orderBuyStatus(bot_config, data_decision)):
-            hp = helpers.Helpers()
-            log = ('---Existem ordens em aberto no banco de dados\n')
-            hp.writeOutput(bot_config['id'], log)
             return  
         super().buyOrder(bot_config, data_decision)
 
-    def startSellRoutine(self, bot_config):
-        hp = helpers.Helpers()
-        log = ('2- Iniciando rotina de venda ')
-        hp.writeOutput(bot_config['id'], log)
+    def startSellRoutine(self, bot_config):   
         data_decision = self.get_config(bot_config)
         if (super().orderSellStatus(bot_config, data_decision)):
-            hp = helpers.Helpers()
-            log = ('----Ainda nao ha nada para vender\n')
-            hp.writeOutput(bot_config['id'], log)
             return
         super().sellOrder(bot_config, data_decision)
