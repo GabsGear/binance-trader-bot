@@ -6,11 +6,10 @@ import botconfig
 import time
 
 class Functions():
-    def buyOrder(self, bot_config, data_decision):
+    def buyOrder(self, bot_config, data_decision, pos):
         bn = binance_.Binance_opr()
         data = self.createBuyData(bot_config, data_decision) 
-        print(self.selectBuyStrategy(data, bot_config, data_decision))  
-        if (self.selectBuyStrategy(data, bot_config, data_decision) == 'buy'):
+        if (self.selectBuyStrategy(data, bot_config, data_decision, pos) == 'buy'):
             bn.createBuyOrder(data, bot_config, data_decision)
         return
 
@@ -28,28 +27,27 @@ class Functions():
             return 1       
         return 0
 
-    def selectBuyStrategy(self, data, bot_config, data_decision): 
-        print('Selecionando estrategia numero ' + str(bot_config['strategy_buy']))
+    def selectBuyStrategy(self, data, bot_config, data_decision, pos): 
         st = strategies.StrategiesBase()
         if(bot_config['strategy_buy'] == 0):
-            return st.startTurtle(bot_config, data_decision) #CONTRA TURTLE
+            return st.startTurtle(bot_config, data_decision, pos) #CONTRA TURTLE
         elif (bot_config['strategy_buy'] == 1):
-            return st.startInside(bot_config, data_decision) #INSIDE BAR
+            return st.startInside(bot_config, data_decision, pos) #INSIDE BAR
         elif(bot_config['strategy_buy'] == 2):        
-            return st.startDoubleUp(bot_config, data_decision) #DOUBLLE UP
+            return st.startDoubleUp(bot_config, data_decision, pos) #DOUBLLE UP
         elif(bot_config['strategy_buy'] == 3):   
-            return st.startPivotUp(bot_config, data_decision) #PIVOT UP
+            return st.startPivotUp(bot_config, data_decision, pos) #PIVOT UP
         elif(bot_config['strategy_buy'] == 4):   
-            return st.startRSIMax(bot_config, data_decision) #RSI
+            return st.startRSIMax(bot_config, data_decision, pos) #RSI
         elif(bot_config['strategy_buy'] == 5):   
-            return st.startFollowBTC(bot_config, data_decision) #BTC
+            return st.startFollowBTC(bot_config, data_decision, pos) #BTC
         elif(bot_config['strategy_buy'] == 6):  
-            return st.startBreackChannel(bot_config, data_decision) #breack channel
+            return st.startBreackChannel(bot_config, data_decision, pos) #breack channel
         elif(bot_config['strategy_buy'] == 7):   
-            return st.startBollingerBand(bot_config, data_decision)
+            return st.startBollingerBand(bot_config, data_decision, pos)
 
 # ----------------------------------------sell 
-    def sellOrder(self, bot_config, data_decision):
+    def sellOrder(self, bot_config, data_decision, pos):
         bn = binance_.Binance_opr()
         fixProfit = self.getFixProfit(bot_config, data_decision)
         stoploss = self.getStopLoss(bot_config, data_decision)
@@ -61,7 +59,7 @@ class Functions():
             return
            
         elif(bot_config['strategy_buy'] == 6):
-            if(st.startBreackChannel(bot_config, data_decision) == 'sell'):
+            if(st.startBreackChannel(bot_config, data_decision, pos) == 'sell'):
                 bn.createSellOrder(data, bot_config, data_decision)
                 return  
 
@@ -95,21 +93,21 @@ class Functions():
         return float(data_decision['trans']['buy_value']*(1-float(bot_config['stoploss'])))
     
 class Routines(Functions):
-    def get_config(self, bot_config):
+    def get_config(self, bot_config, pos):
         bn = binance_.Binance_opr()
         lopen, lhigh, llow, lclose, lvol, closetime = bn.getCandles(str(bot_config['currency']), bot_config['period'])
         st = strategies.Desicion(lopen, lhigh, llow, lclose, lvol, closetime)
-        data_decision = st.getDataDecision(bot_config)
+        data_decision = st.getDataDecision(bot_config, pos)
         return data_decision
         
-    def startBuyRoutine(self, bot_config):
-        data_decision = self.get_config(bot_config)
+    def startBuyRoutine(self, bot_config, pos):
+        data_decision = self.get_config(bot_config, pos)
         if(super().orderBuyStatus(bot_config, data_decision)):
             return  
-        super().buyOrder(bot_config, data_decision)
+        super().buyOrder(bot_config, data_decision, pos)
 
-    def startSellRoutine(self, bot_config):   
-        data_decision = self.get_config(bot_config)
+    def startSellRoutine(self, bot_config, pos):   
+        data_decision = self.get_config(bot_config, pos)
         if (super().orderSellStatus(bot_config, data_decision)):
             return
-        super().sellOrder(bot_config, data_decision)
+        super().sellOrder(bot_config, data_decision, pos)

@@ -10,6 +10,7 @@ import json
 import routines
 import time
 
+
 class ApiData:
     def checkLogin(self, idt, key):
         client = Client(idt, key)
@@ -19,9 +20,11 @@ class ApiData:
         else:
             sys.exit(0)
 
+
 login = ApiData()
 client = Client("", "")
 login.checkLogin("", "")
+
 
 class Binance_opr(ApiData):
     def getCandles(self, coin, period):
@@ -50,25 +53,20 @@ class Binance_opr(ApiData):
             "17928899.62484339" // Ignore
         '''
         if(period == 'Day'):
-            candles = client.get_klines(
-                symbol=coin, interval=Client.KLINE_INTERVAL_1DAY)
-            candles = candles[len(candles)-100:len(candles)-1]
+            candles = client.get_historical_klines(
+                coin, Client.KLINE_INTERVAL_1DAY, "1 Jan, 2018", "1 Mai, 2018")
         elif(period == 'hour'):
-            candles = client.get_klines(
-                symbol=coin, interval=Client.KLINE_INTERVAL_1HOUR)
-            candles = candles[len(candles)-100:len(candles)-1]
+            candles = client.get_historical_klines(
+                coin, Client.KLINE_INTERVAL_1HOUR, "1 Jan, 2018", "1 Mai, 2018")
         elif(period == 'thirtyMin'):
-            candles = client.get_klines(
-                symbol=coin, interval=Client.KLINE_INTERVAL_30MINUTE)
-            candles = candles[len(candles)-100:len(candles)-1]
+            candles = client.get_historical_klines(
+                coin, Client.KLINE_INTERVAL_30MINUTE, "1 Jan, 2018", "1 Mai, 2018")
         elif(period == 'fiveMin'):
-            candles = client.get_klines(
-                symbol=coin, interval=Client.KLINE_INTERVAL_5MINUTE)
-            candles = candles[len(candles)-100:len(candles)-1]
+            candles = client.get_historical_klines(
+                coin, Client.KLINE_INTERVAL_5MINUTE, "1 Jan, 2018", "1 Mai, 2018")
         elif(period == 'oneMin'):
-            candles = client.get_klines(
-                symbol=coin, interval=Client.KLINE_INTERVAL_1MINUTE)
-            candles = candles[len(candles)-100:len(candles)-1]
+            candles = client.get_historical_klines(
+                coin, Client.KLINE_INTERVAL_1MINUTE, "1 Jan, 2018", "1 Mai                                                                                                                                                              , 2018")
         # map
         opentime = []
         lopen = []
@@ -96,7 +94,7 @@ class Binance_opr(ApiData):
 
     def getBTCCandles(self, period):
         return self.getCandles('BTCUSDT', period)
-
+    
     def getMean(self, coin, bot_config):
         lclose = self.getCandles(coin, bot_config['period'])
         lclose = np.array(lclose).astype(np.float)
@@ -114,3 +112,4 @@ class Binance_opr(ApiData):
         db = botconfig.Db()
         if not (bot_config['active']):
             db.commitSellOrder(data)
+
