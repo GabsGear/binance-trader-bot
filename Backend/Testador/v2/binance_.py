@@ -101,15 +101,22 @@ class Binance_opr(ApiData):
         lclose = lclose[len(lclose)-30:len(lclose)]
         return lclose.mean()
 
-    def createBuyOrder(self, data, bot_config, data_decision):
+    def createBuyOrder(self, data, bot_config, data_decision, price_now):
         check = routines.Routines()
+        wallet = bot_config['wallet']
+        data['wallet'] = "%.8f" % (float(wallet) - data['qnt'] * price_now)
+        print(data['wallet'])
         if not (check.orderBuyStatus(bot_config, data_decision)):
             db = botconfig.Db()
             if not (bot_config['active']):
-                db.insertBuyOrder(data)
+                db.insertBuyOrder(data, bot_config['id'])
 
-    def createSellOrder(self, data, bot_config, data_decision):
+    def createSellOrder(self, data, bot_config, data_decision, price_now):
         db = botconfig.Db()
+        open_order, trans = db.getBuyOrders(bot_config['id'])
+        wallet = bot_config['wallet']
+        data['wallet'] = "%.8f" % (float(wallet) + trans['quantity'] * price_now)
+        print(data['wallet'])
         if not (bot_config['active']):
-            db.commitSellOrder(data)
+            db.commitSellOrder(data, bot_config['id'])
 

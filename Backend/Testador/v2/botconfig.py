@@ -5,31 +5,40 @@ import datetime
 import pytz
 import helpers
 
+
 class Db:
     def getConn(self):
         try:
-            db = mysql.connect(host="localhost", user="root", passwd="gabsghell", db="protrade")
+            db = mysql.connect(host="localhost", user="root",
+                               passwd="gabsghell", db="protrade")
             #db = mysql.connect(host="127.0.0.1", user="root", passwd="libano252528", db="protrader")
             cursor = db.cursor()
-            return db, cursor  
+            return db, cursor
         except:
-            print ('Erro, getCOnn()')    
-    
-    def insertBuyOrder(self, data):
+            print('Erro, getCOnn()')
+
+    def insertBuyOrder(self, data, bot_id):
         dt = helpers.Helpers()
         db, cursor = self.getConn()
         query = ("INSERT INTO transactions (bot_id, buy_value, quantity, sell_value, selled, date_open, date_close, buy_uuid, sell_uuid) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)")
-        cursor.execute(query, (data['bot_id'], data['valor'], data['qnt'], 0.0, 0, str(dt.time_now()), '-', data['buy_uuid'], ''))
+        cursor.execute(query, (data['bot_id'], data['valor'], data['qnt'], 0.0, 0, str(
+            dt.time_now()), str(dt.time_now()), data['buy_uuid'], ''))
+        query = ("UPDATE bot SET name=(%s) WHERE id=(%s)")
+        cursor.execute(query, (data['wallet'], bot_id))
         db.commit()
         cursor.close()
 
-    def commitSellOrder(self, data):
+    def commitSellOrder(self, data, bot_id):
         dt = helpers.Helpers()
         db, cursor = self.getConn()
-        row, trans = self.getBuyOrders(data['bot_id']) 
-        query = ("UPDATE transactions SET sell_value=(%s), selled=(%s), date_close=(%s), sell_uuid=(%s) WHERE id=(%s)")
+        row, trans = self.getBuyOrders(data['bot_id'])
+        query = (
+            "UPDATE transactions SET sell_value=(%s), selled=(%s), date_close=(%s), sell_uuid=(%s) WHERE id=(%s)")
         value = float(data['sell_value'])
-        cursor.execute(query, (value, "1", str(dt.time_now()), data['sell_uuid'], trans['id'] ))
+        cursor.execute(query, (value, "1", str(dt.time_now()),
+                               data['sell_uuid'], trans['id']))
+        query = ("UPDATE bot SET name=(%s) WHERE id=(%s)")
+        cursor.execute(query, (data['wallet'], bot_id))
         db.commit()
         cursor.close()
 
@@ -53,7 +62,7 @@ class Db:
                     'buy_uuid': trans[8],
                     'sell_uuid': trans[9],
                 }
-            else: 
+            else:
                 return False, False
             count = cursor.rowcount
             return count, obj
@@ -61,7 +70,7 @@ class Db:
             print("ERRO: getBuyOrders.")
 
     def getConfigAcc(self, user_id):
-        #try:
+        # try:
         db, cursor = self.getConn()
         query = ("SELECT * FROM users WHERE id = %s")
         cursor.execute(query, (user_id,))
@@ -69,14 +78,14 @@ class Db:
         db.commit()
         cursor.close()
         obj = {
-                'id': data[0],
-                'name': data[1],
-                'email': data[2],
-                'api_secret': data[9],
-                'api_key': data[8],
-            }
+            'id': data[0],
+            'name': data[1],
+            'email': data[2],
+            'api_secret': data[9],
+            'api_key': data[8],
+        }
         return obj
-        #except:
+        # except:
         #    print("ERRO: getConfigAcc.")
 
     def getConfigBot(self, bot_id):
@@ -89,27 +98,26 @@ class Db:
             db.commit()
             cursor.close()
             obj = {
-                    'id': data[0],
-                    'user_id': data[1],
-                    'exchange': data[2],
-                    'currency': currency,
-                    'strategy_buy': data[4],
-                    'percentage': data[5],
-                    'pid': data[6],
-                    'active': data[7],
-                    'order_value': float(data[8]),
-                    'period': data[9],
-                    'stoploss': data[10],
-                    'min_order': data[11]
-                }
+                'id': data[0],
+                'user_id': data[1],
+                'exchange': data[2],
+                'currency': currency,
+                'strategy_buy': data[4],
+                'percentage': data[5],
+                'pid': data[6],
+                'active': data[7],
+                'order_value': float(data[8]),
+                'period': data[9],
+                'stoploss': data[10],
+                'wallet': data[11]
+            }
             return obj
         except:
-            print ('Erro, getCOnfigBot()')
-
+            print('Erro, getCOnfigBot()')
 
     def convert(self, string):
         try:
-            converted = string.split('-') 
+            converted = string.split('-')
             converted = converted[1] + converted[0]
             return converted
         except:
@@ -124,4 +132,4 @@ class Db:
             db.commit()
             cursor.close()
         except:
-            print("ERRO: setPID.")         
+            print("ERRO: setPID.")

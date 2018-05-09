@@ -73,13 +73,7 @@ class Functions():
         return 0
 
     def selectBuyStrategy(self, data, bot_config, data_decision): 
-        """select strategy
-        
-        Arguments:
-            data {[type]} -- data to create a buy order
-            bot_config {[dict]} -- bot setup
-            data_decision {[dict]} -- transactions detals
-        """
+
         print('Selecionando estrategia numero ' + str(bot_config['strategy_buy']))
         st = strategies.StrategiesBase()
         if(bot_config['strategy_buy'] == 0):

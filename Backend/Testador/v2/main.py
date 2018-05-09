@@ -1,4 +1,5 @@
 # coding=utf-8
+# pylint: disable=W0612
 import binance_
 import strategies
 import helpers
@@ -17,24 +18,35 @@ def main():
     bot_config = db.getConfigBot(bot_id)
     db.setPID(bot_id)
     obj = helpers.Helpers()
+    # base de dados da simulacao
+    lopen, lhigh, llow, lclose, lvol, closetime = cd.getCandles(
+        str(bot_config['currency']), bot_config['period'])
+    pos = 20
+    st = strategies.Desicion(lopen, lhigh, llow, lclose, lvol, closetime)
+    saveDatabase(lopen, lhigh, llow, lclose, lvol, closetime)
+    data_decision = st.getDataDecision(bot_config, pos)
 
-    #base de dados da simulacao
-    lopen, lhigh, llow, lclose, lvol, closetime = cd.getCandles(str(bot_config['currency']), bot_config['period'])
-    pos = 20    
-
-    while(pos != len(lopen)):
-        obj.progress(pos, len(lopen)-1, status=' Analisando estrategia || Candle ' + str(pos) + ' de ' + str(len(lopen)-1))
-        routine(bot_id, pos)
-        time.sleep(10)
+    while(pos != (len(lopen) -1)):
+        routine(bot_id, data_decision, pos)
         pos += 1
+        time.sleep(1/10)
+    print('Analise completa')
 
-def routine(bot_id, pos):
+
+def saveDatabase(lopen, lhigh, llow, lclose, lvol, closetime):
+    thefile = open('test.txt', 'w')
+    thefile.write("Data; Volume; Open,High;Low;close \n")
+    for item in range(0, len(lopen)):
+        thefile.write(
+            str(closetime[item]) + '; ' + str(lvol[item]) + '; ' + str(lopen[item]) + '; ' 
+            + str(lhigh[item]) + '; ' + str(llow[item]) + '; ' + str(lclose[item]) + '\n')
+
+def routine(bot_id, data_decision, pos):
     db = botconfig.Db()
     routine = routines.Routines()
     bot_config = db.getConfigBot(bot_id)
-    routine.startBuyRoutine(bot_config, pos)
-    routine.startSellRoutine(bot_config, pos)
-
+    routine.startBuyRoutine(bot_config, data_decision, pos)
+    routine.startSellRoutine(bot_config, data_decision, pos)
 
 
 main()

@@ -44,15 +44,7 @@ class Desicion():
         return self.__closetime  
 
     def getDataDecision(self, bot_config, pos):
-        db = botconfig.Db()
-        bn = binance_.Binance_opr()
-        open = self.getLopen()
-        price_now = open[pos + 1]
-        open_order, trans = db.getBuyOrders(bot_config['id'])
         data = {
-            'price_now': price_now,
-            'open_orders': open_order,
-            'trans':trans,
             'o': self.getLopen(),
             'h': self.getLhigh(), 
             'l': self.getLlow(), 
@@ -91,19 +83,19 @@ class statics():
 class StrategiesBase(statics):
 
     def startTurtle(self, bot_config, data, pos):
-        price_now = data['o'] 
-        price_now = price_now[pos+1]
+        high = data['h']
         tomax = data['h']
-        tomax = tomax[len(tomax) - 2 : len(tomax)]
+        tomax = tomax[pos - 2 : pos]
         tomin = data['l']
-        tomin = tomin[len(tomin)-20:len(tomin)] 
-
+        tomin = tomin[pos-20: pos] 
+        open = data['o']
+        price_now = open[pos + 1]
         if(len(tomin) > 0):
             minn = min(tomin)
             maxx = max(tomax)
-            if(data["price_now"] <= minn):
+            if(price_now <= minn):
                 return 'buy'
-            if(data["price_now"] >= maxx):
+            if(price_now >= maxx):
                 return 'sell'
         return 'none'  
 
@@ -113,7 +105,7 @@ class StrategiesBase(statics):
         lhigh = data['h']
         llow = data['l']
         
-        size = len(lclose)
+        size = pos
         pivot = {
             'c': lclose[size - 2],
             'o': lopen[size - 2]
@@ -135,11 +127,11 @@ class StrategiesBase(statics):
 
     def startInside(self, bot_config, data, pos):
         high, close= data['h'], data['c']
+        open = data['o']
         flag = False
-        size = len(close) - 1
-
+        size = pos
+        price_now = open[pos+1]
         if (high[size - 1] < high[size - 2]) and (close[size - 1] >= close[size - 2]):
-            price_now = price_now[pos+1]
             if price_now > float(high[size]):
                 flag = True
 
@@ -147,13 +139,15 @@ class StrategiesBase(statics):
             flag = False
             return 'buy'
                     
-        if int(data['open_orders']) > 0 and float(data['price_now']) >= float(data['trans']['buy_value']) * 1.05:
+        if int(data['open_orders']) > 0 and float(price_now) >= float(data['trans']['buy_value']) * 1.05:
             return 'sell'        
         return 'none'
 
     def startDoubleUp(self, bot_config, data, pos):
         close = data['c']
         vol   = data['v']
+        open = data['o']
+        price_now = data[pos+1]
         flag = False
         if(len(close) > 0):
             if (close[len(close) - 2] > close[len(close) - 1]) and (vol[len(vol) - 2] >= vol[len(vol) - 1]):
@@ -162,7 +156,7 @@ class StrategiesBase(statics):
             if (flag):
                 return 'buy'
             
-            if data['open_orders'] > 0 and data['price_now'] >= data['trans']['buy_value'] * 1.02:
+            if data['open_orders'] > 0 and float(price_now) >= data['trans']['buy_value'] * 1.02:
                 return 'sell'
         return 'none'
 
@@ -172,7 +166,7 @@ class StrategiesBase(statics):
         """
         dt = binance_.Binance_opr()
         lopen, lhigh, llow, lclose, lvol, closetime = dt.getBTCCandles(bot_config['period'])
-
+        
         size = len(lclose)
         pivot = {
             'c': lclose[size - 2],
@@ -213,7 +207,8 @@ class StrategiesBase(statics):
         tomin = data['l'][size-20:size] 
         tomax = data['h'][size-2:size] 
         last = data['l'][size-1:size]
-        price_now = data['price_now']
+        open = data['o']
+        price_now = data[pos+1]
 
         if(len(tomin) > 0):
             #print "maior que 0"

@@ -102,6 +102,7 @@ class StrategiesBase(statics):
         log = ('price now = ' + str(price_now))
         hp.writeOutput(bot_config['id'], log)
 
+        print()
         tomax = data['h']
         tomax = tomax[len(tomax) - 2 : len(tomax)]
         tomin = data['l']
