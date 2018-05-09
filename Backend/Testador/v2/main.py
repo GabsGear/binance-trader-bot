@@ -48,5 +48,4 @@ def routine(bot_id, data_decision, pos):
     routine.startBuyRoutine(bot_config, data_decision, pos)
     routine.startSellRoutine(bot_config, data_decision, pos)
 
-
 main()

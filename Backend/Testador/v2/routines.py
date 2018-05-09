@@ -103,7 +103,6 @@ class Functions():
         data = {
             'bot_id': bot_config['id'],
             'sell_value': price_now,
-            'sell_uuid': '',
         }
         return data
 

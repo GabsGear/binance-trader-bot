@@ -5,7 +5,6 @@ import datetime
 import pytz
 import helpers
 
-
 class Db:
     def getConn(self):
         try:
@@ -20,9 +19,9 @@ class Db:
     def insertBuyOrder(self, data, bot_id):
         dt = helpers.Helpers()
         db, cursor = self.getConn()
-        query = ("INSERT INTO transactions (bot_id, buy_value, quantity, sell_value, selled, date_open, date_close, buy_uuid, sell_uuid) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)")
+        query = ("INSERT INTO transactions (bot_id, buy_value, quantity, sell_value, selled, date_open, date_close, buy_wallet, sell_wallet) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)")
         cursor.execute(query, (data['bot_id'], data['valor'], data['qnt'], 0.0, 0, str(
-            dt.time_now()), str(dt.time_now()), data['buy_uuid'], ''))
+            dt.time_now()), str(dt.time_now()), data['buy_wallet'], ''))
         query = ("UPDATE bot SET name=(%s) WHERE id=(%s)")
         cursor.execute(query, (data['wallet'], bot_id))
         db.commit()
@@ -33,11 +32,11 @@ class Db:
         db, cursor = self.getConn()
         row, trans = self.getBuyOrders(data['bot_id'])
         query = (
-            "UPDATE transactions SET sell_value=(%s), selled=(%s), date_close=(%s), sell_uuid=(%s) WHERE id=(%s)")
+            "UPDATE transactions SET sell_value=(%s), selled=(%s), date_close=(%s), sell_wallet=(%s) WHERE id=(%s)")
         value = float(data['sell_value'])
         cursor.execute(query, (value, "1", str(dt.time_now()),
-                               data['sell_uuid'], trans['id']))
-        query = ("UPDATE bot SET name=(%s) WHERE id=(%s)")
+                               data['sell_wallet'], trans['id']))
+        query = ("UPDATE bot SET wallet=(%s) WHERE id=(%s)")
         cursor.execute(query, (data['wallet'], bot_id))
         db.commit()
         cursor.close()
@@ -59,8 +58,8 @@ class Db:
                     'quantity': trans[3],
                     'sell_value': trans[4],
                     'selled': trans[5],
-                    'buy_uuid': trans[8],
-                    'sell_uuid': trans[9],
+                    'buy_wallet': trans[8],
+                    'sell_wallet': trans[9],
                 }
             else:
                 return False, False

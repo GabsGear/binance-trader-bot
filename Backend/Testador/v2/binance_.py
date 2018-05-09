@@ -104,6 +104,7 @@ class Binance_opr(ApiData):
     def createBuyOrder(self, data, bot_config, data_decision, price_now):
         check = routines.Routines()
         wallet = bot_config['wallet']
+        data['buy_wallet'] = wallet
         data['wallet'] = "%.8f" % (float(wallet) - data['qnt'] * price_now)
         print(data['wallet'])
         if not (check.orderBuyStatus(bot_config, data_decision)):
@@ -115,6 +116,7 @@ class Binance_opr(ApiData):
         db = botconfig.Db()
         open_order, trans = db.getBuyOrders(bot_config['id'])
         wallet = bot_config['wallet']
+        data['sell_wallet'] = wallet
         data['wallet'] = "%.8f" % (float(wallet) + trans['quantity'] * price_now)
         print(data['wallet'])
         if not (bot_config['active']):
