@@ -5,6 +5,7 @@ import pytz
 import sys
 import binance_
 
+
 class Helpers:
     """Helper functions
 
@@ -29,11 +30,11 @@ class Helpers:
         Arguments:
             timestamp {[timestamp]}
         """
-        return(
-            datetime.datetime.fromtimestamp(
-                int(timestamp)/1000.0
-            ).strftime('%Y-%m-%d %H:%M:%S')
-        )
+        data = datetime.datetime.fromtimestamp(
+            int(timestamp)/1000.0
+        ).strftime("%Y-%m-%d %H:%M:%S")
+        print(data)
+        return data
 
     def writeOutput(self, bot_id, data):
         try:
@@ -50,4 +51,4 @@ class Helpers:
         bar = '=' * filled_len + '-' * (bar_len - filled_len)
 
         sys.stdout.write('[%s] %s%s ...%s\r' % (bar, percents, '%', status))
-        sys.stdout.flush()  
+        sys.stdout.flush()

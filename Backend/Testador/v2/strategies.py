@@ -63,21 +63,23 @@ class statics():
             return float(x-100)
         return float(0)
 
-    def getRSI(self, data):
-        size = len(data['c'])
-        data = np.array(data['c'], dtype=float)
-        rsi = talib.RSI(data, 20)
+    def getRSI(self, data, pos):
+        size = pos
+        close = data['c'][pos - 50: pos]
+        data['c']= np.array(close, dtype=float)
+        rsi = talib.RSI(data['c'], 14)
         if(rsi[size-1] > 0.0):
             return rsi[size-1]
         else:
-            return self.getRSISmall(data)
+            return self.getRSISmall(data, pos)
 
-    def getRSISmall(self, data):
-        size = len(data['c'])
-        data['c']= np.array(data['c'], dtype=float)
+    def getRSISmall(self, data, pos):
+        size = pos
+        close = data['c'][pos - 50: pos]
+        data['c']= np.array(close, dtype=float)
         for c in data['c']:
             c = c*100
-        rsi = talib.RSI(data['c'], 20)
+        rsi = talib.RSI(data['c'], 14)
         return rsi[size-1]
 
 class StrategiesBase(statics):
@@ -186,41 +188,40 @@ class StrategiesBase(statics):
 
     def startRSIMax(self, bot_config, data, pos):
         high = data['h']
-        size = len(high)
-        tomax = high[size-3:size-1]
+        tomax = high[pos-3:pos-1]
         maxx = max(tomax)
-        rsi = super().getRSI(data)
+        print('calculando rsi')
+        rsi = super().getRSI(data, pos)
 
+        print('rsi = ' + str(rsi))
         if(bot_config['period'] == 'day'):
-            if(rsi < 30.0):
-                return 'buy'
-        if(bot_config['period'] == 'hour'):
-            if(rsi < 35.0):
-                return 'buy'    
+            if(rsi <= 30.0):
+                return 'buy'  
         if(bot_config['period'] == 'thirtyMin'):
-            if(rsi < 40.0):
-                return 'buy'    
+            if(rsi >= 60.0):
+                return 'sell'    
         return 'none' 
         
     def startBreackChannel(self, bot_config, data, pos):
-        size = len(data['h'])
-        tomin = data['l'][size-20:size] 
-        tomax = data['h'][size-2:size] 
-        last = data['l'][size-1:size]
-        open = data['o']
-        price_now = data[pos+1]
+        tomin = data['l'][pos-20:pos] 
+        tomax = data['h'][pos-2:pos] 
+        last_l = data['l'][pos-1:pos]
+        last_h = data['h'][pos-1:pos]
 
         if(len(tomin) > 0):
             #print "maior que 0"
             minn = min(tomin) 
             maxx = max(tomax) 
-
-            if(last[0] <= minn):
+            hp = helpers.Helpers()
+            #log = ('--- Estrategia Breack Channel MIN = ' + str(minn) + ' MAX = ' + str(maxx))
+            #hp.writeOutput(bot_config['id'], log)
+            
+            if(last_l[0] <= minn):
                 return 'buy'
 
-            if(price_now >= maxx):
+            if(last_h[0]  >= maxx):
                 return 'sell'
-        return 'none' 
+        return 'none'   
 
     def startBollingerBand(self, bot_config, data, pos):
         lclose = data['c']

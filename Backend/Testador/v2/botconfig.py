@@ -1,4 +1,5 @@
 # coding=utf-8
+# pylint: disable=W0612
 import MySQLdb as mysql
 import os
 import datetime
@@ -20,9 +21,9 @@ class Db:
         dt = helpers.Helpers()
         db, cursor = self.getConn()
         query = ("INSERT INTO transactions (bot_id, buy_value, quantity, sell_value, selled, date_open, date_close, buy_wallet, sell_wallet) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)")
-        cursor.execute(query, (data['bot_id'], data['valor'], data['qnt'], 0.0, 0, str(
-            dt.time_now()), str(dt.time_now()), data['buy_wallet'], ''))
-        query = ("UPDATE bot SET name=(%s) WHERE id=(%s)")
+        cursor.execute(query, (data['bot_id'], data['valor'], data['qnt'], 0.0, 0,
+            str(data['data']), str(data['data']), data['buy_wallet'], '0.0'))
+        query = ("UPDATE bot SET wallet=(%s) WHERE id=(%s)")
         cursor.execute(query, (data['wallet'], bot_id))
         db.commit()
         cursor.close()
@@ -34,7 +35,7 @@ class Db:
         query = (
             "UPDATE transactions SET sell_value=(%s), selled=(%s), date_close=(%s), sell_wallet=(%s) WHERE id=(%s)")
         value = float(data['sell_value'])
-        cursor.execute(query, (value, "1", str(dt.time_now()),
+        cursor.execute(query, (value, "1", str(data['data']),
                                data['sell_wallet'], trans['id']))
         query = ("UPDATE bot SET wallet=(%s) WHERE id=(%s)")
         cursor.execute(query, (data['wallet'], bot_id))

@@ -102,18 +102,19 @@ class StrategiesBase(statics):
         log = ('price now = ' + str(price_now))
         hp.writeOutput(bot_config['id'], log)
 
-        print()
         tomax = data['h']
+        size = len(data['h'])
         tomax = tomax[len(tomax) - 2 : len(tomax)]
         tomin = data['l']
         tomin = tomin[len(tomin)-20:len(tomin)] 
+        last_l = data['l'][size-1:size]
 
         if(len(tomin) > 0):
             minn = min(tomin)
             maxx = max(tomax)
             log =  ('Buy at ' + str(minn))
             hp.writeOutput(bot_config['id'], log)
-            if(data["price_now"] <= minn):
+            if(last_l[0] <= minn):
                 log = ('sinal buy')
                 hp.writeOutput(bot_config['id'], log)
                 return 'buy'
@@ -232,21 +233,23 @@ class StrategiesBase(statics):
         size = len(data['h'])
         tomin = data['l'][size-20:size] 
         tomax = data['h'][size-2:size] 
-        last = data['l'][size-1:size]
+        last_l = data['l'][size-1:size]
+        last_h = data['h'][size-1:size]
 
         if(len(tomin) > 0):
             #print "maior que 0"
             minn = min(tomin) 
             maxx = max(tomax) 
             hp = helpers.Helpers()
-            log = ('--- Estrategia Breack Channel MIN = ' + str(minn) + ' MAX = ' + str(maxx))
-            hp.writeOutput(bot_config['id'], log)
+            #log = ('--- Estrategia Breack Channel MIN = ' + str(minn) + ' MAX = ' + str(maxx))
+            #hp.writeOutput(bot_config['id'], log)
             
-            if(last[0] <= minn):
-                hp.writeOutput(bot_config['id'], "indicou compra no break")
+            if(last_l[0] <= minn):
+                hp.writeOutput(bot_config['id'], "indicou compra no break.")
                 return 'buy'
 
-            if(data['price_now'] >= maxx):
+            if(last_h[0]  >= maxx):
+                hp.writeOutput(bot_config['id'], "indicou venda no break.")
                 return 'sell'
         return 'none' 
 

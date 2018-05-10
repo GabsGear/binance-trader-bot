@@ -1,4 +1,5 @@
 # coding=utf-8
+# pylint: disable=W0612
 import numpy as np
 from binance.client import Client
 import botconfig
@@ -54,19 +55,19 @@ class Binance_opr(ApiData):
         '''
         if(period == 'Day'):
             candles = client.get_historical_klines(
-                coin, Client.KLINE_INTERVAL_1DAY, "1 Jan, 2018", "1 Mai, 2018")
+                coin, Client.KLINE_INTERVAL_1DAY, "16 Jul, 2017", "5 May, 2018")
         elif(period == 'hour'):
             candles = client.get_historical_klines(
-                coin, Client.KLINE_INTERVAL_1HOUR, "1 Jan, 2018", "1 Mai, 2018")
+                coin, Client.KLINE_INTERVAL_1HOUR, "25 Jul, 2017", "5 May, 2018")
         elif(period == 'thirtyMin'):
             candles = client.get_historical_klines(
-                coin, Client.KLINE_INTERVAL_30MINUTE, "1 Jan, 2018", "1 Mai, 2018")
+                coin, Client.KLINE_INTERVAL_30MINUTE, "19 Nov, 2017", "5 May, 2018")
         elif(period == 'fiveMin'):
             candles = client.get_historical_klines(
-                coin, Client.KLINE_INTERVAL_5MINUTE, "1 Jan, 2018", "1 Mai, 2018")
+                coin, Client.KLINE_INTERVAL_5MINUTE, "19 Nov, 2017", "5 May, 2018")
         elif(period == 'oneMin'):
             candles = client.get_historical_klines(
-                coin, Client.KLINE_INTERVAL_1MINUTE, "1 Jan, 2018", "1 Mai                                                                                                                                                              , 2018")
+                coin, Client.KLINE_INTERVAL_1MINUTE, "19 Nov, 2018", "1 Mai                                                                                                                                                              , 2018")
         # map
         opentime = []
         lopen = []
@@ -104,20 +105,23 @@ class Binance_opr(ApiData):
     def createBuyOrder(self, data, bot_config, data_decision, price_now):
         check = routines.Routines()
         wallet = bot_config['wallet']
-        data['buy_wallet'] = wallet
-        data['wallet'] = "%.8f" % (float(wallet) - data['qnt'] * price_now)
+        wallet = float(wallet)*(1 - bot_config['order_value'])
+        data['wallet'] = wallet
+        data['buy_wallet'] = data['wallet']
         print(data['wallet'])
         if not (check.orderBuyStatus(bot_config, data_decision)):
             db = botconfig.Db()
             if not (bot_config['active']):
                 db.insertBuyOrder(data, bot_config['id'])
 
-    def createSellOrder(self, data, bot_config, data_decision, price_now):
+    def createSellOrder(self, data, bot_config, data_decision, price_now, pos):
         db = botconfig.Db()
         open_order, trans = db.getBuyOrders(bot_config['id'])
-        wallet = bot_config['wallet']
-        data['sell_wallet'] = wallet
-        data['wallet'] = "%.8f" % (float(wallet) + trans['quantity'] * price_now)
+        wallet = trans['buy_wallet']
+        wallet = float(wallet) + trans['quantity'] * price_now
+        data['wallet'] = wallet
+        data['sell_wallet'] = data['wallet']
+        data['data'] = data_decision['t'][pos+1]
         print(data['wallet'])
         if not (bot_config['active']):
             db.commitSellOrder(data, bot_config['id'])

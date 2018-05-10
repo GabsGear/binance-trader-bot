@@ -7,6 +7,7 @@ import botconfig
 import sys
 import routines
 import time
+import os   
 from binance.client import Client
 
 
@@ -21,20 +22,21 @@ def main():
     # base de dados da simulacao
     lopen, lhigh, llow, lclose, lvol, closetime = cd.getCandles(
         str(bot_config['currency']), bot_config['period'])
-    pos = 20
+    pos = 24
     st = strategies.Desicion(lopen, lhigh, llow, lclose, lvol, closetime)
     saveDatabase(lopen, lhigh, llow, lclose, lvol, closetime)
     data_decision = st.getDataDecision(bot_config, pos)
 
     while(pos != (len(lopen) -1)):
+        bot_config = db.getConfigBot(bot_id)
         routine(bot_id, data_decision, pos)
         pos += 1
-        time.sleep(1/10)
     print('Analise completa')
 
 
 def saveDatabase(lopen, lhigh, llow, lclose, lvol, closetime):
-    thefile = open('test.txt', 'w')
+    os.remove("test2.csv")
+    thefile = open('test2.csv', 'w')
     thefile.write("Data; Volume; Open,High;Low;close \n")
     for item in range(0, len(lopen)):
         thefile.write(

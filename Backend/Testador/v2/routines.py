@@ -11,7 +11,7 @@ class Functions():
         price_now = data_decision['o'] 
         price_now = price_now[pos+1]
 
-        data = self.createBuyData(bot_config, data_decision, price_now)
+        data = self.createBuyData(bot_config, data_decision, price_now, pos)
         print('Estrategia ' + str(bot_config['strategy_buy']) + ' Signal = ' + str(
             self.selectBuyStrategy(data, bot_config, data_decision, pos)) + ' Candle ' + str(pos))
 
@@ -19,12 +19,12 @@ class Functions():
             bn.createBuyOrder(data, bot_config, data_decision, price_now)
         return
 
-    def createBuyData(self, bot_config, data_decision, price_now):      
+    def createBuyData(self, bot_config, data_decision, price_now, pos):      
         data = {
             'bot_id': bot_config['id'],
             'valor': price_now,
             'qnt': (float(bot_config['wallet'])*bot_config['order_value']/price_now),
-            'buy_uuid': '',
+            'data': data_decision['t'][pos+1]
         }
         return data
 
@@ -42,16 +42,15 @@ class Functions():
             return st.startTurtle(bot_config, data_decision, pos)
         elif (bot_config['strategy_buy'] == 1):
             return st.startInside(bot_config, data_decision, pos)  # INSIDE BAR
-        elif(bot_config['strategy_buy'] == 2):
-            # DOUBLLE UP
+        elif(bot_config['strategy_buy'] == 2):# DOUBLLE UP
             return st.startDoubleUp(bot_config, data_decision, pos)
         elif(bot_config['strategy_buy'] == 3):
             return st.startPivotUp(bot_config, data_decision, pos)  # PIVOT UP
-        elif(bot_config['strategy_buy'] == 4):
-            return st.startRSIMax(bot_config, data_decision, pos)  # RSI
-        elif(bot_config['strategy_buy'] == 5):
-            return st.startFollowBTC(bot_config, data_decision, pos)  # BTC
         elif(bot_config['strategy_buy'] == 6):
+            return st.startRSIMax(bot_config, data_decision, pos)  # RSI
+        elif(bot_config['strategy_buy'] == 4):
+            return st.startFollowBTC(bot_config, data_decision, pos)  # BTC
+        elif(bot_config['strategy_buy'] == 5):
             # breack channel
             return st.startBreackChannel(bot_config, data_decision, pos)
         elif(bot_config['strategy_buy'] == 7):
@@ -70,17 +69,17 @@ class Functions():
         data = self.getSellData(bot_config, data_decision, pos)
         if(price_now <= stoploss):
             print('stop loss')
-            bn.createSellOrder(data, bot_config, data_decision, price_now)
+            bn.createSellOrder(data, bot_config, data_decision, price_now, pos)
             return
 
         elif(bot_config['strategy_buy'] == 6):
-            if(st.startBreackChannel(bot_config, data_decision, pos) == 'sell'):
+            if(st.startRSIMax(bot_config, data_decision, pos) == 'sell'):
                 print('Sell')
-                bn.createSellOrder(data, bot_config, data_decision, price_now)
+                bn.createSellOrder(data, bot_config, data_decision, price_now, pos)
                 return
 
         elif(price_now >= fixProfit and bot_config['strategy_buy'] != 6):
-            bn.createSellOrder(data, bot_config, data_decision, price_now)
+            bn.createSellOrder(data, bot_config, data_decision, price_now, pos)
             return
 
     def orderSellStatus(self, bot_config, data_decision):
@@ -92,8 +91,7 @@ class Functions():
         elif(not bot_config['active'] and not open_order):
             return 1
         elif not (trans):
-            return 1
-        # NAO VENDER EM QUANTO ORDEM DE COMPRA ABERTA
+            return 1 # NAO VENDER EM QUANTO ORDEM DE COMPRA ABERTA
         return 0
 
     def getSellData(self, bot_config, data_decision, pos):
@@ -103,6 +101,7 @@ class Functions():
         data = {
             'bot_id': bot_config['id'],
             'sell_value': price_now,
+            'data': data_decision['t'][pos+1]
         }
         return data
 
