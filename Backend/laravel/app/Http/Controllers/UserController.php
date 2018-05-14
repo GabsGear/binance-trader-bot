@@ -95,6 +95,7 @@ class UserController extends Controller
                     $usd_to_btc = floatval($result['Balance'])/$btc_price; ##CONVERTENDO SALDO EM USDT PARA BTC
                     $usd = $result['Balance']; ##SALDO USDT DISPONIVEL
                 }
+                ##CALCULANDO MOEDAS ALT
                 if($result['Balance'] != 0 and $result['Currency'] != 'USDT' and $result['Currency'] != 'BTC') {
                     $file = file_get_contents("https://bittrex.com/api/v1.1/public/getticker?market=BTC-".$result['Currency']);
                     $data = json_decode($file, true);
@@ -102,13 +103,14 @@ class UserController extends Controller
                     $convert = $result['Balance']*$value_in_btc;
                     $total_btc = $total_btc + $convert;
                 }
+
             }
+            $total = $total_btc + $btc + $usd_to_btc;
             if($currency == 'USDT') {
-                $total = ($total_btc+$btc)*$btc_price;
-                return number_format($total+$usd, 2, '.', ' ');
+                return number_format($total*9100, 2, '.', ' ');
+            } else {
+                return number_format($total, 8, '.', ' ');
             }
-            ############
-            return number_format($total_btc + $btc + $usd_to_btc, 8, '.', ' ');
         }
         return 'Não conectado.';
     }

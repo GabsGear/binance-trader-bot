@@ -45,6 +45,7 @@ client = loginAPI(bot_config)
 
 class Binance_opr(ApiData):
     def getCandles(self, coin, period):
+        print('request')
         """This function returns a candlestick list in a especific time interval
 
         Arguments:
@@ -236,25 +237,26 @@ class Binance_opr(ApiData):
             return False
         return orders['executedQty']
 
-    def checkMinOrder(self, bot_config, ammount):
+    def checkMinOrder(self, data_decision, bot_config, ammount):
         currency = str(bot_config['currency'])
         pair = currency[len(currency)-4:len(currency)]
+        print('minOrder ')
+        print('ammount ' + str(ammount))
+        print('minOrder ' + str(bot_config['min_order']))
         if(pair == 'USDT'):
-            priceBRL = ammount*3.3
-            if(float(bot_config['min_order']) < priceBRL):
+            priceBRL = ammount * 3.3 * data_decision ['price_now']
+            print('usdt')
+            print('priceBRL ' + str(priceBRL))           
+            if(float(bot_config['min_order']) > priceBRL):
                 return False
             else:
                 return True
         else:
-            priceBRL = ammount*bot_config['price_now']*3.3
-            print('preço brl')
-            print(priceBRL)
-            print('min order')
-            print(bot_config['min_order'])
+            priceBRL = ammount * data_decision ['price_now'] * 3.3 * 8900
+            print('priceBRL ' + str(priceBRL))   
             if(float(bot_config['min_order']) > priceBRL):
                 return False
             else:
-                print('aqui')
                 return True
 
     def createBuyOrder(self, data, bot_config, data_decision):
@@ -276,16 +278,15 @@ class Binance_opr(ApiData):
                     ammount = float(self.getClientBalance(
                         client, bot_config))*bot_config['order_value']/float(data_decision['price_now'])
                     ammount = self.checkPrecision(bot_config, ammount)
-                    if not self.checkMinOrder(bot_config, ammount):
+                    if not self.checkMinOrder(data_decision, bot_config, ammount):
                         log = ('Erro minOrder')
                         hp.writeOutput(bot_config['id'], log)
                         return
                     try:
                         order = client.create_order(
                             symbol=bot_config['currency'], side=SIDE_BUY, type=ORDER_TYPE_LIMIT, timeInForce=TIME_IN_FORCE_FOK, quantity=ammount, price=str(price))
-                        log = order
-                        hp.writeOutput(bot_config['id'], log)
-
+                        hp.writeOutput(bot_config['id'], order)
+                        print(order)
                     except:
                         log = ('Erro, nao foi possivel abrir a ordem')
                         hp.writeOutput(bot_config['id'], log)

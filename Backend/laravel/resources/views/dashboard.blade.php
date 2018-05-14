@@ -3,7 +3,10 @@
 @inject('ProcessController', 'App\Http\Controllers\ProcessController')
 @inject('UserController', 'App\Http\Controllers\UserController')
 @inject('User', 'App\User')
-<?php $user = $UserController->getUser(); ?>
+
+
+<?php $user = $UserController->getUser(); 
+?>
 
 @extends('layouts/default')
 @section('content')
@@ -156,11 +159,14 @@
                         <button class="btn btn-raised btn-success md-trigger adv_cust_mod_btn" data-toggle="modal" data-target="#modal-newbot">Novo Bot</button>
                         <a href="{{route('bot.stopall')}}">
                             <button class="btn btn-danger">Parar Todos</button>
-                        </a></br>
+                        </a></br></br>
                         @if($errors->any())
-                            {{$errors->first()}}
+                            <div class="col-6">
+                                <div class="alert alert-warning alert-dismissable">
+                                    {{$errors->first()}}
+                                </div>
+                            </div>
                         @endif
-                        </br>
                         <div class="m-t-35 table-responsive">
                             <table class="table table-bordered table-striped flip-content">
                                 <thead class="flip-content">
@@ -200,9 +206,24 @@
                                     @else
                                         <td><img width="15" height="15" src="img/exchanges/binance.png"/> Binance</td>
                                     @endif
-                                    <td>
-                                        {{ number_format($TransactionController->getBalance($bot->id), 2, '.', ' ') }} BRL</td>
-                                    </td>
+                                    <?php $balance = $TransactionController->getBalance($bot->id); ?>
+                                    @if($balance < 0)
+                                        <td>
+                                            <div class="server_item text-danger">
+                                                <span>
+                                                {{ number_format($balance, 2, '.', ' ') }} BRL
+                                                </span>
+                                            </div>
+                                        </td>
+                                    @else
+                                        <td>
+                                            <div class="server_item text-success">
+                                                <span>
+                                                {{ number_format($balance, 2, '.', ' ') }} BRL
+                                                </span>
+                                            </div>
+                                        </td>
+                                    @endif
                                     <td>
                                     {{ Form::open(['method' => 'POST', 'route' => ['bot.updatewallet', $bot->id]]) }}
                                     @if($bot->active == 1)
@@ -383,15 +404,6 @@
                             <option value="0.2">20%</option>
                             <option value="0.25">25%</option>
                             <option value="0.5">50%</option>
-                            <option value="0.75">75%</option>
-                        </select>
-                        </br><label><i data-toggle="tooltip" data-placement="right" title="Defina que modo o seu bot irá iniciar." class="fa fa-question-circle-o" style='color:#00cc99'></i></label>
-                        Modo </br>
-                        </label>
-                        <select name="active" class="form-control">
-                            <option value="2">Parado</option>
-                            <option value="0">Simulação</option>
-                            <option value="1">Operação</option>
                         </select>
                     </div> <!--FIM MD6 -->
                 </div> <!--FIM ARROW -->

@@ -78,3 +78,5 @@ Route::post('/register', 'Auth\RegisterController@create')->name('register');
 Route::post('/login', 'Auth\LoginController@login')->name('customlogin');
 
 Route::get('/showstats', 'TransactionController@show_stats');
+
+Route::get('/showstats/{id}', 'TransactionController@capital_acumulado');

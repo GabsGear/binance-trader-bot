@@ -27,6 +27,7 @@ class Kernel extends ConsoleKernel
     {
         $schedule->call(function () {
             PaymentController::check_payments();
+            
         })->everyFiveMinutes();
     }
 

@@ -36,6 +36,8 @@ class BotController extends Controller
                 return Redirect::back()->withErrors(['Você atingiu o limite de bots permitido.']);
             if($count_bots >= 30 && Auth::user()->premium == 3)
                 return Redirect::back()->withErrors(['Você atingiu o limite de bots permitido.']);
+            if($request['exchange'] == 'binance' and Auth::user()->premium == 0)
+                return Redirect::back()->withErrors(['Para simular você deve criar um bot na Bittrex.']);
             ############
             
             $bot = new Bot;
@@ -62,12 +64,11 @@ class BotController extends Controller
             $bot->strategy_buy = BotController::test_input($request['strategy_buy']);
             $bot->percentage = BotController::test_input($request['percentage']);
             $bot->pid = 0;
-            $bot->active = BotController::test_input($request['active']);
+            $bot->active = 2;
             $bot->min_order = BotController::test_input($request['min_order']);
             $bot->period = BotController::test_input($request['period']);
             $bot->stoploss = BotController::test_input($request['stoploss']);
             $bot->save();
-            unset($_POST);
             return redirect()->route('dashboard');
         } catch (Exception $e) {
             dd($e);
@@ -139,11 +140,25 @@ class BotController extends Controller
     public function active(Request $request) {
         try {
             $bot = Bot::find($request['id']);
-            if(Auth::User()->premium == 0 or Auth::user()->id != $bot->user_id)
+            $user = Auth::user();
+            $stats = $request['active'];
+            ##verificacao de seguranca
+            if($user->id != $bot->user_id)
                 return redirect()->route('dashboard');
-            $bot->active = $request['active'];
-            $bot->save();
-            return redirect()->route('dashboard');
+            if($stats == 1) { //ALTERAR PRO MODO REAL
+                if($user->premium == 1 or $user->premium == 2) { //VERIFICACAO DE PREMIUM
+                    $bot->active = $stats;
+                    $bot->order_value = 0.1;
+                    $bot->save();
+                    return redirect()->route('dashboard');
+                }
+                //DISPARAR ERRO SE NAO POSSUIR PLANO
+                return Redirect::back()->withErrors(['Você precisa adquirir um plano parar operar no modo real.']);
+            } else {
+                $bot->active = $stats;
+                $bot->save();
+                return redirect()->route('dashboard');
+            }
         } catch (Exception $e) {
             dd($e);
             return "Erro na troca de modo de operacao.";
@@ -188,12 +203,8 @@ class BotController extends Controller
         $bot = Bot::find($id);
         if(Auth::user()->id != $bot->user_id)  //verificacao de seguranca
             return redirect()->route('dashboard');
-        $pid = $bot->pid;
-        $count = DB::table('transactions')->where('bot_id', $id)->get()->count();
         shell_exec('sudo kill -9 '.$bot->pid.' > /dev/null &');
         Bot::where('id', $id)->delete();
-        if($count > 0)
-            DB::table('transactions')->where('bot_id', $id)->delete();
         return redirect()->route('dashboard');
     }
 

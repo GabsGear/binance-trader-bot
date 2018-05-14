@@ -77,7 +77,12 @@ class TransactionController extends Controller
 
     public function getFee($t) {
         $delta = ($t->sell_value-$t->buy_value)*$t->quantity;
-        $fee = $delta*0.005;
+        $bot = Bot::find($t->bot_id);
+        if($bot->exchange == 'binance') {
+            $fee = $delta*0.001;
+        } else {
+            $fee = $delta*0.005;
+        }
         if($fee < 0)
             $fee = $fee*(-1);
         return $fee;
@@ -124,7 +129,7 @@ class TransactionController extends Controller
         $total_usd = 0;
         $trans = DB::table('bot')
         ->join('transactions', 'transactions.bot_id', '=', 'bot.id')
-        ->select('transactions.*', 'bot.currency')
+        ->select('transactions.*', 'bot.currency', 'bot.exchange')
         ->where('bot.user_id', Auth::User()->id)
         ->get();
         if($trans->count() > 0) {
@@ -167,7 +172,7 @@ class TransactionController extends Controller
         $rsi_tax = ($data_rsi[2]/($data_rsi[2]+$data_rsi[3]))*100;
         $break_tax = ($data_break[2]/($data_break[2]+$data_break[3]))*100;
         ##RETORNANDO PRA VIEW OS DADOS
-        $msg = "
+        echo  "
             Inicio dos logs: 29/04/2018 | Capital investido: 1 BTC
             </br></br>
             <table border='1px solid black' cellspacing='10'>
@@ -200,10 +205,8 @@ class TransactionController extends Controller
                     <td>".$break_tax." %</td>
                 </tr>
             </table>
-        
         ";
-        return $msg;
-
+        echo TransactionController::capital_acumulado();
     }
 
     public function show_profit($dict) {
@@ -238,6 +241,65 @@ class TransactionController extends Controller
         ->where('bot.user_id', 6)
         ->get();
         return $trans;
+    }
+
+
+    public function capital_acumulado($id) {
+        $capital = 0.05;
+        $capital_inicial = 0.05;
+        $i = 0; 
+        $acerto = 0;
+        $erro = 0;
+        $vec_x = array('0.05');
+        $trans = DB::table('transactions')
+        ->where('bot_id', $id)
+        ->where('selled', 1)
+        ->get();
+        $bot = Bot::find($id);
+        echo "</br></br>";
+        echo "PAR:".$bot->currency."</br>";
+        echo "ID: ".$bot->id." | Strategy: ".$bot->strategy_buy." | Profit: ".$bot->percentage." | Stoploss: ".$bot->stoploss;
+        echo "</br>
+        -----------------------------------------------------------
+        </br>";
+        foreach($trans as $t) {
+            $trade  = ($t->sell_value-$t->buy_value)*$t->quantity;
+            $fee = $trade*0.002;
+            if($trade > 0) {
+                echo "[OP-".$i."] Saldo:".$capital."+".$trade."|fee:".$fee."-</br>";
+                echo "Open:".$t->date_open." | Close:".$t->date_close."</br>";
+                $acerto = $acerto + 1;
+            }
+            else {
+                echo "[OP-".$i."] Saldo:".$capital."".$trade."|fee:".$fee."-</br>";
+                $erro = $erro + 1;
+            }
+            $capital = $capital + $trade - $fee;
+            echo "----------------------</br>
+            Subtotal:
+            ".$capital."</br>------------------</br>";
+            $i = $i+1;
+            array_push($vec_x, $capital);
+        }
+        echo "</br>
+        -----------------------------------------------------------
+        </br>";
+        $l = $capital - $capital_inicial;
+        $percentage = ($l*100/$capital_inicial);
+        echo "</br>Total:".$capital;
+        echo "</br>Inicial USD:".$capital_inicial*8600;
+        echo "</br>Final USD:".$capital*8600;
+        echo "</br>Porcentagem de ganho:".$percentage."%";
+        echo "</br>Acerto:".$acerto;
+        echo "</br>Erros:".$erro."</br>";
+        /*foreach($vec_x as $x) {
+            echo $x."</br>";
+        }*/
+        $drowndawn = (min($vec_x)-max($vec_x))/max($vec_x);
+        echo "</br>Max-gain: ".max($vec_x)."</br>";
+        echo "</br>Min-gain: ".min($vec_x)."</br>";
+        echo "</br>Drowndawn-max: ".$drowndawn."</br>";
+ 
     }
   
 

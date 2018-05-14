@@ -60,7 +60,8 @@ class Desicion():
             't': self.getCloseTime(),
         }
         return data
-    
+
+class statics():
     def perc(self, buy, sell):
         x = sell*100/buy
         if x < 100:
@@ -86,37 +87,14 @@ class Desicion():
         rsi = talib.RSI(data['c'], 20)
         return rsi[size-1]
 
-class StrategiesBase(Desicion):
+class StrategiesBase(statics):
+
     """Strategies class
         The classe constructor set binance candlestick detals and start all strategies
     
     Returns:
         [string] -- this functions analyze the data and search a buy or sell oportunity
-    """
-    __lopen = __lhigh = __llow = __lclose = __lvol = " "
-
-    def __init__(self, lopen, lhigh, llow, lclose, lvol):
-        self.__lopen = (lopen) 
-        self.__lhigh = (lhigh) 
-        self.__llow = (llow) 
-        self.__lclose = (lclose) 
-        self.__lvol = (lvol) 
-
-    def getLopen(self):
-        return self.__lopen
-    
-    def getLhigh(self):
-        return self.__lhigh      
-    
-    def getLlow(self):
-        return self.__llow
-
-    def getLclose(self):
-        return self.__lclose
-
-    def getLvol(self):
-        return self.__lvol       
-
+    """    
     def startTurtle(self, bot_config, data):
         price_now = str(data['price_now'])
         hp = helpers.Helpers()
@@ -124,17 +102,19 @@ class StrategiesBase(Desicion):
         log = ('price now = ' + str(price_now))
         hp.writeOutput(bot_config['id'], log)
 
-        tomax = self.getLhigh()
+        tomax = data['h']
+        size = len(data['h'])
         tomax = tomax[len(tomax) - 2 : len(tomax)]
-        tomin = self.getLlow()
+        tomin = data['l']
         tomin = tomin[len(tomin)-20:len(tomin)] 
+        last_l = data['l'][size-1:size]
 
         if(len(tomin) > 0):
             minn = min(tomin)
             maxx = max(tomax)
             log =  ('Buy at ' + str(minn))
             hp.writeOutput(bot_config['id'], log)
-            if(data["price_now"] <= minn):
+            if(last_l[0] <= minn):
                 log = ('sinal buy')
                 hp.writeOutput(bot_config['id'], log)
                 return 'buy'
@@ -145,7 +125,11 @@ class StrategiesBase(Desicion):
         return 'none'  
 
     def startPivotUp(self, bot_config, data):
-        lclose, lopen, lhigh, llow = self.getLclose(), self.getLopen(), self.getLhigh(), self.getLlow()
+        lclose = data['c']
+        lopen = data['o']
+        lhigh = data['h']
+        llow = data['l']
+        
         size = len(lclose)
         pivot = {
             'c': lclose[size - 2],
@@ -156,7 +140,7 @@ class StrategiesBase(Desicion):
         maxLow = max(llow)
         var = super().perc(pivot['o'], pivot['c'])
 
-        pivotUp = var > 3.0 and pivot['c'] > maxHigh 
+        pivotUp = var > 2.0 and pivot['c'] > maxHigh 
         pivotDown = var < -1.5 and pivot['c'] < maxLow
 
         if(pivotUp):
@@ -167,7 +151,7 @@ class StrategiesBase(Desicion):
         return 'none'
 
     def startInside(self, bot_config, data):
-        high, close= self.getLhigh(), self.getLclose()
+        high, close= data['h'], data['c']
         flag = False
         size = len(close) - 1
 
@@ -185,8 +169,8 @@ class StrategiesBase(Desicion):
         return 'none'
 
     def startDoubleUp(self, bot_config, data):
-        close = self.getLclose()
-        vol   = self.getLvol() 
+        close = data['c']
+        vol   = data['v']
         flag = False
         if(len(close) > 0):
             if (close[len(close) - 2] > close[len(close) - 1]) and (vol[len(vol) - 2] >= vol[len(vol) - 1]):
@@ -224,7 +208,7 @@ class StrategiesBase(Desicion):
         return 'none'
 
     def startRSIMax(self, bot_config, data):
-        high = self.getLhigh()
+        high = data['h']
         size = len(high)
         tomax = high[size-3:size-1]
         maxx = max(tomax)
@@ -233,7 +217,6 @@ class StrategiesBase(Desicion):
         log = ('---Estrategia RSI -- RSI = ' + str(rsi))
         hp.writeOutput(bot_config['id'], log)
         
-        print ('---Estrategia RSI -- RSI = ' + str(rsi))
 
         if(bot_config['period'] == 'day'):
             if(rsi < 30.0):
@@ -250,19 +233,47 @@ class StrategiesBase(Desicion):
         size = len(data['h'])
         tomin = data['l'][size-20:size] 
         tomax = data['h'][size-2:size] 
-        last = data['l'][size-1:size]
+        last_l = data['l'][size-1:size]
+        last_h = data['h'][size-1:size]
 
         if(len(tomin) > 0):
             #print "maior que 0"
             minn = min(tomin) 
             maxx = max(tomax) 
             hp = helpers.Helpers()
-            log = ('--- Estrategia Breack Channel MIN = ' + str(minn) + ' MAX = ' + str(maxx))
-            hp.writeOutput(bot_config['id'], log)
-
-            if(last <= minn):
+            #log = ('--- Estrategia Breack Channel MIN = ' + str(minn) + ' MAX = ' + str(maxx))
+            #hp.writeOutput(bot_config['id'], log)
+            
+            if(last_l[0] <= minn):
+                hp.writeOutput(bot_config['id'], "indicou compra no break.")
                 return 'buy'
 
-            if(data['price_now'] >= maxx):
+            if(last_h[0]  >= maxx):
+                hp.writeOutput(bot_config['id'], "indicou venda no break.")
                 return 'sell'
         return 'none' 
+
+    def startBollingerBand(self, bot_config, data):
+        lclose = data['c']
+        llow = data['l']
+        lhigh = data['h']
+        interval = 20 #numero de candles
+        nDesvios = 2 #numero de desvios padrao
+        size = len(lclose)
+
+        close = lclose[size - interval: size]
+        mean = np.mean(close)
+        desvio = np.std(close)
+
+        upperBand = mean + (desvio * nDesvios)
+        lowerBand = mean - (desvio * nDesvios)
+        
+        if(llow[size-1] <= lowerBand):
+            return 'buy'
+
+        if(lhigh[size-1] >= upperBand):
+            return 'sell'
+        
+        return 'none'
+
+        

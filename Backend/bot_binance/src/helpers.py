@@ -19,7 +19,8 @@ class Helpers:
             [data] -- returns a atual data in sao paulo 
         """
         brasil = pytz.timezone('America/Sao_Paulo')
-        return datetime.datetime.now(tz=brasil).strftime('%Y-%m-%d %H:%M:%S')
+        ct = datetime.datetime.now(tz=brasil)
+        return ct.strftime("%Y-%m-%d %H:%M:%S")
 
     # convert timestamp to date
     def tstampToData(self, timestamp):
@@ -36,7 +37,8 @@ class Helpers:
 
     def writeOutput(self, bot_id, data):
         try:
-            file = open('/home/binance/logs/'+str(bot_id)+'-output.txt', 'a+')
+            file = open('/home/gabs/binance/logs/'+str(bot_id)+'-output.txt', 'a+')
             file.write('['+str(self.time_now())+'] ' + data + "\n")
+
         except:
             return

@@ -1,4 +1,5 @@
 # coding=utf-8
+# pylint: disable=W0612
 import MySQLdb as mysql
 import os
 import datetime
@@ -18,8 +19,8 @@ class Db:
     def insertBuyOrder(self, data):
         dt = helpers.Helpers()
         db, cursor = self.getConn()
-        query = ("INSERT INTO transactions (bot_id, buy_value, quantity, sell_value, selled, date_open, date_close, buy_uuid, sell_uuid) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)")
-        cursor.execute(query, (data['bot_id'], data['valor'], data['qnt'], 0.0, 0, dt.time_now(), '-', data['buy_uuid'], ''))
+        query = ("INSERT INTO transactions (bot_id, buy_value, quantity, sell_value, selled, date_open, buy_uuid, sell_uuid) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)")
+        cursor.execute(query, (data['bot_id'], data['valor'], data['qnt'], 0.0, 0, dt.time_now(), data['buy_uuid'], ''))
         db.commit()
         cursor.close()
 
@@ -105,7 +106,6 @@ class Db:
             return obj
         except:
             print ('Erro, getCOnfigBot()')
-
 
     def convert(self, string):
         try:

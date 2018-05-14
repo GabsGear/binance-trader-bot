@@ -12,8 +12,6 @@
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
         "laravelcollective/html": "~5.0",
-        "ronmelkhior/coinpayments-ipn": "^1.0",
-        "scopdrag/laravel-google-chart": "^1.0",
         "symfony/finder": "^3.4",
         "symfony/symfony": "^3.4"
     },

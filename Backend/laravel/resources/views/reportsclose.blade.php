@@ -79,7 +79,6 @@
                                         $lucro_usd = $lucro_liquido*8100*3.3;
                                         $percentage = $TransController->getPercentage($t);
                                         $market = explode('-', $t->currency);
-                                        $lucro_btc = $lucro_liquido/8100;
                                     ?>
                                     <tr>
                                         <td>{{ $t->currency }}</td>
@@ -98,12 +97,44 @@
                                             <td>0.2 %</td>
                                         @endif
                                         @if($t->exchange == 'bittrex')
-                                            <td>{{ number_format($percentage-0.5, 2, '.', ' ') }}%</td>
+                                            @if($percentage-0.5 < 0)
+                                                <td>
+                                                    <div class="server_item text-danger">
+                                                        <span>
+                                                        {{ number_format($percentage-0.5, 2, '.', ' ') }}%
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            @else
+                                                <td>
+                                                    <div class="server_item text-success">
+                                                        <span>
+                                                        {{ number_format($percentage-0.5, 2, '.', ' ') }}%
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            @endif
                                         @else
-                                            <td>{{ number_format($percentage-0.2, 2, '.', ' ') }}%</td>
+                                            @if($percentage-0.2 < 0)
+                                                <td>
+                                                    <div class="server_item text-danger">
+                                                        <span>
+                                                        {{ number_format($percentage-0.2, 2, '.', ' ') }}%
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            @else
+                                                <td>
+                                                    <div class="server_item text-success">
+                                                        <span>
+                                                        {{ number_format($percentage-0.2, 2, '.', ' ') }}%
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            @endif
                                         @endif
-                                        <td>{{ $t->date_open }}</td> 
-                                        <td>{{ $t->date_close  }}</td>
+                                        <td>{{ $TransController->convert_date($t->date_open) }}</td> 
+                                        <td>{{ $TransController->convert_date($t->date_close) }}</td> 
                                         <td>
                                             {{ Form::open(['method' => 'DELETE', 'route' => ['trans.delete', $t->id]]) }}
                                                 <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i></button>

@@ -68,7 +68,6 @@ def trySell(bot_config):
 	if(orderSellStatus(bot_config) == 1): #VERIFICANDO PENDENCIA DE ORDENS
 		return
 	print ("--[9]--Checagem de venda conluida... \n")
-	stoploss = trans['buy_value']*(1-float(bot_config['stoploss']))
 	###################################
 	#DADOS SQL PARA INSERCAO
 	data = {
@@ -77,16 +76,9 @@ def trySell(bot_config):
 		'sell_uuid': '',
 	}
 	## STOPLOSS
-	print ("--[9]--Stoploss calculado ... \n")
-	if(price_now <= stoploss):
-		bittrex_func.sellLimit(data, bot_config, price_now, trans)
-		return
-	print ("--[9]--Nao atingi o stop entao posso receber sinais de venda ... \n")
 	###################################
 	checkSell(data, bot_config, trans, price_now)
 	###################################
-
-
 
 def checkBuy(data, bot_config, price_now):
 	for i in range(0, 7): #0 a 4
@@ -98,9 +90,16 @@ def checkBuy(data, bot_config, price_now):
 
 def checkSell(data, bot_config, trans, price_now):
 	fix_profit = trans['buy_value']+(trans['buy_value']*bot_config['percentage'])
+	stoploss = trans['buy_value']*(1-float(bot_config['stoploss']))
+	
+	print ("--[9]--Stoploss calculado ... \n")
+	if(price_now <= stoploss):
+		bittrex_func.sellLimit(data, bot_config, price_now, trans)
+		t.sleep(1800)
+		return
+	print ("--[9]--Nao atingi o stop entao posso receber sinais de venda ... \n")
 	##VENDENDO VIA MEDIA MOVEL ID 101 SO TEM PRA ESTRATEGIA BREAK CHANNEL
 	if(bot_config['strategy_buy'] == 6 and strategy.map(bot_config)[6] == 'sell'):
-		print("fui tentar vender via break channel")
 		bittrex_func.sellLimit(data, bot_config, price_now, trans)
 		return
 	if(price_now >= fix_profit and bot_config['strategy_buy'] != 6):

@@ -4,7 +4,7 @@ import binance_
 import strategies
 import helpers
 import botconfig
-import time
+import time as t
 
 class Functions():
     def buyOrder(self, bot_config, data_decision):
@@ -13,8 +13,11 @@ class Functions():
         Arguments:
             bot_config {[dict]} -- bot setup
         """
-        data = self.createBuyData(bot_config, data_decision)   
-        self.selectBuyStrategy(data, bot_config, data_decision)
+        bn = binance_.Binance_opr()
+        data = self.createBuyData(bot_config, data_decision) 
+        print(self.selectBuyStrategy(data, bot_config, data_decision))  
+        if (self.selectBuyStrategy(data, bot_config, data_decision) == 'buy'):
+            bn.createBuyOrder(data, bot_config, data_decision)
         return
 
     def createBuyData(self, bot_config, data_decision):  
@@ -77,21 +80,32 @@ class Functions():
             bot_config {[dict]} -- bot setup
             data_decision {[dict]} -- transactions detals
         """
-        bn = binance_.Binance_opr()
-        for i in range(0, 7): #0 ate 5
-            if(bot_config['strategy_buy'] == i):
-                if(self.mapStrategy(bot_config, data_decision)[i] == 'buy'):
-                    bn.createBuyOrder(data, bot_config, data_decision)
+        print('Selecionando estrategia numero ' + str(bot_config['strategy_buy']))
+        st = strategies.StrategiesBase()
+        if(bot_config['strategy_buy'] == 0):
+            return st.startTurtle(bot_config, data_decision) #CONTRA TURTLE
+        elif (bot_config['strategy_buy'] == 1):
+            return st.startInside(bot_config, data_decision) #INSIDE BAR
+        elif(bot_config['strategy_buy'] == 2):        
+            return st.startDoubleUp(bot_config, data_decision) #DOUBLLE UP
+        elif(bot_config['strategy_buy'] == 3):   
+            return st.startPivotUp(bot_config, data_decision) #PIVOT UP
+        elif(bot_config['strategy_buy'] == 4):   
+            return st.startRSIMax(bot_config, data_decision) #RSI
+        elif(bot_config['strategy_buy'] == 5):   
+            return st.startFollowBTC(bot_config, data_decision) #BTC
+        elif(bot_config['strategy_buy'] == 6):  
+            return st.startBreackChannel(bot_config, data_decision) #breack channel
+        elif(bot_config['strategy_buy'] == 7):   
+            return st.startBollingerBand(bot_config, data_decision)
 
 # ----------------------------------------sell 
-    def sellOrder(self, bot_config):
+    def sellOrder(self, bot_config, data_decision):
         bn = binance_.Binance_opr()
         hp = helpers.Helpers()
-        lopen, lhigh, llow, lclose, lvol, closetime = bn.getCandles(str(bot_config['currency']), bot_config['period'])
-        st = strategies.Desicion(lopen, lhigh, llow, lclose, lvol, closetime)
-        data_decision = st.getDataDecision(bot_config)
         fixProfit = self.getFixProfit(bot_config, data_decision)
         stoploss = self.getStopLoss(bot_config, data_decision)
+        st = strategies.StrategiesBase()
         
         log = ('---Price Now')
         hp.writeOutput(bot_config['id'], log)
@@ -113,15 +127,19 @@ class Functions():
             log = ('---Venda stop loss alvo ' + str(stoploss))
             hp.writeOutput(bot_config['id'], log)
             bn.createSellOrder(data, bot_config, data_decision)
+            t.sleep(1800)
+            return
            
-        elif(bot_config['strategy_buy'] == 6 and self.mapStrategy(bot_config, data_decision)[6] == 'sell'):
-            bn.createSellOrder(data, bot_config, data_decision)
-            return  
+        elif(bot_config['strategy_buy'] == 6):
+            if(st.startBreackChannel(bot_config, data_decision) == 'sell'):
+                bn.createSellOrder(data, bot_config, data_decision)
+                return  
 
-        elif(data_decision['price_now'] >= fixProfit):
+        elif(data_decision['price_now'] >= fixProfit and bot_config['strategy_buy'] != 6):
             log = ('---Venda lucro fixo')
             hp.writeOutput(bot_config['id'], log)
             bn.createSellOrder(data, bot_config, data_decision)  
+            return
 
     def orderSellStatus(self, bot_config, data_decision):
         if(not data_decision['open_orders'] and not bot_config['active']):
@@ -148,30 +166,6 @@ class Functions():
     def getStopLoss(self, bot_config, data_decision):
         return float(data_decision['trans']['buy_value']*(1-float(bot_config['stoploss'])))
     
-    def mapStrategy(self, bot_config, data_decision): 
-        """map the strategies
-        
-        Arguments:s
-            bot_config {[dict]} -- bot setup
-        
-        Returns:
-            [type] -- return a map with all strategies
-        """
-        bn = binance_.Binance_opr()
-        lopen, lhigh, llow, lclose, lvol, closetime = bn.getCandles(str(bot_config['currency']), bot_config['period'])
-        st = strategies.StrategiesBase(lopen, lhigh, llow, lclose, lvol)
-        map = {
-            0: st.startTurtle(bot_config, data_decision), #CONTRA TURTLE
-            1: st.startInside(bot_config, data_decision), #INSIDE BAR
-            2: st.startDoubleUp(bot_config, data_decision), #DOUBLLE UP
-            3: st.startPivotUp(bot_config, data_decision), #PIVOT UP
-            4: st.startRSIMax(bot_config, data_decision), #RSI
-            5: st.startFollowBTC(bot_config, data_decision), #BTC
-            6: st.startBreackChannel(bot_config, data_decision) #breack channel
-        }
-        return map
-    
-
 class Routines(Functions):
     def get_config(self, bot_config):
         bn = binance_.Binance_opr()
@@ -202,5 +196,5 @@ class Routines(Functions):
             log = ('----Ainda nao ha nada para vender\n')
             hp.writeOutput(bot_config['id'], log)
             return
-        super().sellOrder(bot_config)
+        super().sellOrder(bot_config, data_decision)
 
