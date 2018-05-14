@@ -10,7 +10,11 @@ class Db:
     def getConn(self):
         try:
             #db = mysql.connect(host="localhost", user="root", passwd="gabsghell", db="protrade")
+<<<<<<< HEAD
             db = mysql.connect(host="127.0.0.1", user="root", passwd="Gv9KP70E316v", db="protrader")
+=======
+            db = mysql.connect(host="127.0.0.1", user="root", passwd="libano252528", db="protrader")
+>>>>>>> 16a0b954ffb031d38ffc5bb59ef366fd3aab1144
             cursor = db.cursor()
             return db, cursor  
         except:

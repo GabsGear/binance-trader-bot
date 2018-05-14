@@ -72,7 +72,6 @@ def inside_bar(bot_config):
 
 	return 'none'
 
-
 def double_up(bot_config):
 	data = getDataDecision(bot_config)
 	size = len(data['c'])
