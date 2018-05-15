@@ -1,23 +1,6 @@
 import bittrex_lib as bit
 import backtrader.feeds as btfeed
-
-class OHLC(btfeef.GenericCSVData):
-    params = (
-        ('fromdate', datetime.datetime(2000, 1, 1)),
-        ('todate', datetime.datetime(2000, 12, 31)),
-        ('nullvalue', 0.0),
-        ('dtformat', ('%Y-%m-%d')),
-        ('tmformat', ('%H.%M.%S')),
-
-        ('datetime', 0),
-        ('time', 1),
-        ('high', 2),
-        ('low', 3),
-        ('open', 4),
-        ('close', 5),
-        ('volume', 6),
-        ('openinterest', -1)
-    )
+import pandas as pd
 
 def getCandles(market, time):
 	bittrex = bit.Bittrex('', '', api_version='v2.0')
@@ -46,7 +29,8 @@ def getCandleList(market, time):
 		return data
 	except:
 		print("Erro getcandlelist.")
+		
 
-
-
-print(getCandleList('BTC-SC', 'hour')['o'])
+candles = getCandleList('BTC-SC', 'hour')
+d = {'o': candles['o'], 'c': candles['c']}
+df = pd.DataFrame(data=d)
