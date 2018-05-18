@@ -4,7 +4,9 @@ import numpy as np
 import pytz
 import sys
 import binance_
-
+import os
+import csv
+import json
 
 class Helpers:
     """Helper functions
@@ -52,3 +54,15 @@ class Helpers:
 
         sys.stdout.write('[%s] %s%s ...%s\r' % (bar, percents, '%', status))
         sys.stdout.flush()
+
+    def saveDatabase(self, lopen, lhigh, llow, lclose, lvol, closetime):
+        os.remove("test2.csv")
+        thefile = open('test2.csv', 'w')
+        thefile.write("Data; Volume; Open;High;Low;close \n")
+        for item in range(0, len(lopen)):
+            thefile.write(
+                str(closetime[item]) + '; ' + str(lvol[item]) + '; ' + str(lopen[item]) + '; ' 
+                + str(lhigh[item]) + '; ' + str(llow[item]) + '; ' + str(lclose[item]) + '\n')
+
+
+        

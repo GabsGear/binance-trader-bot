@@ -84,6 +84,13 @@ class statics():
         rsi = talib.RSI(close, 20)
         return rsi[size-1]
 
+    def getMean(self, coin, bot_config):
+        lclose=self.getCandles(coin, bot_config['period'])
+        lclose=np.array(lclose).astype(np.float)
+        lclose=lclose[len(lclose)-30:len(lclose)]
+        return lclose.mean()
+
+
 class StrategiesBase(statics):
 
     def startTurtle(self, bot_config, data, pos):

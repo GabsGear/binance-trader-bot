@@ -96,19 +96,12 @@ class Binance_opr(ApiData):
     def getBTCCandles(self, period):
         return self.getCandles('BTCUSDT', period)
 
-    def getMean(self, coin, bot_config):
-        lclose=self.getCandles(coin, bot_config['period'])
-        lclose=np.array(lclose).astype(np.float)
-        lclose=lclose[len(lclose)-30:len(lclose)]
-        return lclose.mean()
-
     def createBuyOrder(self, data, bot_config, data_decision, price_now):
         check=routines.Routines()
         wallet=bot_config['wallet']
         wallet=float(wallet)*(1 - bot_config['order_value'])
         data['wallet']=wallet
         data['buy_wallet']=data['wallet']
-        print(data['wallet'])
         if not (check.orderBuyStatus(bot_config, data_decision)):
             db=botconfig.Db()
             if not (bot_config['active']):
@@ -121,7 +114,7 @@ class Binance_opr(ApiData):
         wallet=float(wallet) + trans['quantity'] * price_now
         data['wallet']=wallet
         data['sell_wallet']=data['wallet']
-        data['data']=data_decision['t'][pos+1]
-        print(data['wallet'])
+        day = data_decision['t']
+        data['data']=day[pos+1]
         if not (bot_config['active']):
             db.commitSellOrder(data, bot_config['id'])
