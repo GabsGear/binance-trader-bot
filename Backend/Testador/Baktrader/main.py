@@ -5,41 +5,47 @@ import datetime  # For datetime objects
 import os.path  # To manage paths
 import sys  # To find out the script name (in argv[0])
 import strat as st
-
-
-# Import the backtrader platform
 import backtrader as bt
+import binance_ as bn
+import helpers as hp
+
 
 def main():
-    # Create a cerebro entity
+    # cd = bn.Binance_opr()
+    # h = hp.Helpers()
+    # lopen, lhigh, llow, lclose, lvol, closetime = cd.getCandles(
+    #     'ETHBTC', 'hour')
+
+    # h.saveDatabase(lopen, lhigh, llow, lclose, lvol,
+    #             closetime, 'ETHBTC','hour' , '1', '2')
+
     cerebro = bt.Cerebro()
 
-    # Add a strategy
     cerebro.addstrategy(st.TestStrategy)
+    # cerebro.addanalyzer(bt.analyzers.Returns, _name='returns')
+    # cerebro.addanalyzer(bt.analyzers.DrawDown, _name='drawdown')
+    # cerebro.addanalyzer(bt.analyzers.SQN, _name='sqn')
 
-    # Add the Data Feed to Cerebro
-    datapath = os.path.join('/home/gabs/Backend/Backend/Testador/Baktrader/backtrader_/datas/orcl-1995-2014.txt')
+    datapath = os.path.join(
+        '/home/gabs/Backend/Backend/Testador/Baktrader/databases/BNBBTC-thirtyMin-Jul, 2017-May, 2018.csv')
 
     data = bt.feeds.YahooFinanceCSVData(
         dataname=datapath,
-        # Do not pass values before this date
-        fromdate=datetime.datetime(2000, 1, 1),
-        # Do not pass values before this date
-        todate=datetime.datetime(2000, 12, 31),
-        # Do not pass values after this date
+        fromdate=datetime.datetime(2017, 7, 3),
+        todate=datetime.datetime(2018, 5, 17),
+        decimals=8,
+        adjclose=True,
         reverse=False)
 
     cerebro.adddata(data)
-    # Set our desired cash start
     cerebro.broker.setcash(100000.0)
 
-    # Print out the starting conditions
-    print('Starting Portfolio Value: %.2f' % cerebro.broker.getvalue())
+    print('Starting Portfolio Value: %.8f' % cerebro.broker.getvalue())
 
-    # Run over everything
     cerebro.run()
-    # Print out the final result
-    print('Final Portfolio Value: %.2f' % cerebro.broker.getvalue())
+    print('Final Portfolio Value: %.8f' % cerebro.broker.getvalue())
 
     cerebro.plot()
+
+
 main()

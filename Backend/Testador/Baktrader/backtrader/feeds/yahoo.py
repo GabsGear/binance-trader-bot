@@ -81,7 +81,7 @@ class YahooFinanceCSVData(feed.CSVDataBase):
         ('reverse', False),
         ('adjclose', True),
         ('round', True),
-        ('decimals', 2),
+        ('decimals', 8),
         ('version', 'v7'),
         ('swapcloses', False),
     )
