@@ -45,9 +45,7 @@ def getCandleList(market, time):
 		print "Erro getcandlelist."
 
 def getTicker(market):
-	price_now =  float(bittrex_v1.get_ticker(market)['result']['Ask'])
-	if(price_now < 0.00001000):
-		price_now =  float(bittrex_v1.get_ticker(market)['result']['Last'])
+	price_now =  float(bittrex_v1.get_ticker(market)['result']['Last'])
 	return price_now
 
 def getMarketCurrency():
@@ -102,13 +100,13 @@ def buyLimit(data, bot_config, price_now):
 		##CARREGANDO DADOS
 		UUID = order_buy['result']['uuid']
 		USER_ID = bot_config['user_id']
-		t.sleep(10)
+		ORDER_STATUS  = None
 		##CHECKAR SE A ORDEM FOI EXECUTADA
-		order_status  = None
-		while(order_status == None):
-			order_status  = getOrder(uuid= UUID, user_id=  USER_ID)['result']
+		while(ORDER_STATUS == None):
+			ORDER_STATUS  = getOrder(uuid= UUID, user_id=  USER_ID)['result']
+		t.sleep(20)
 
-		if(order_status['IsOpen'] == True):
+		if(ORDER_STATUS['IsOpen'] == True):
 			cancel_order(uuid= UUID, user_id= USER_ID)
 			return  ##QUITANDO
 		
@@ -117,65 +115,44 @@ def buyLimit(data, bot_config, price_now):
 		data['qnt'] = getOrder(uuid= UUID, user_id= USER_ID)['result']['Quantity']
 		data['buy_uuid'] = UUID
 		db.insertBuyOrder(data)
-		print ("--[6]--Compra executada, modo real. \n")
 		t.sleep(60)
 
-def get_market(currency):
-	markets = currency.split('-')
-	if(markets[0] == 'USDT'):
-		return 'USDT'
-	return 'BTC'
-
-def check_min_order(min_order, amount, currency):
-	if(get_market(currency) == 'USDT'):
-			total_brl = amount*3.3
-			if(min_order < total_brl):
-				return 0 ## 0 : NAO PASSOU NA VERIFICACAO MINIMA
-			else:
-				return 1 ## 1 :  PASSOU NA VERIFICACAO MINIMA
-	if(get_market(currency) == 'BTC'):
-			total_brl = amount*9000*3.3
-			if(min_order < total_brl):
-				return 0 ## 0 : NAO PASSOU NA VERIFICACAO MINIMA
-			else:
-				return 1 ## 1 :  PASSOU NA VERIFICACAO MINIMA
 
 def sellLimit(data, bot_config, price_now, trans):
 	#print data
 	if(bot_config['active'] == 0):
 		db.commitSellOrder(data)
-		print ("--[11]--Venda executada, via simulacao.. \n")
 		t.sleep(60)
+	
 	if(bot_config['active'] == 1 and checkConnApi(bot_config= bot_config) == True and trans['selled'] == 0):
+		print("chama na venda")
 		acc_config = db.getConfigAcc(bot_config['user_id'])
-		print("ABRINDO VENDA.... \n")
-		print("QUANTIA....:"+str(trans['quantity']))
-		print("PRECO DE....:"+str(price_now))
 		bittrex = bittrex_lib.Bittrex(acc_config['bit_api_key'], acc_config['bit_api_secret'], api_version='v1.1')
 		order_sell = bittrex.sell_limit(market=bot_config['currency'], quantity=trans['quantity'], rate=price_now)
-		print order_sell
+		
 		if(order_sell['success'] == False or order_sell == None):
 			print("ERRO SELLL")
 			return
+
 		#####################################
 		##CARREGANDO DADOS
 		UUID = order_sell['result']['uuid']
 		USER_ID = bot_config['user_id']
+		ORDER_STATUS  = None
 		##CHECKAR SE A ORDEM FOI EXECUTADA
-		order_status  = None
-		while(order_status == None):
-			print "Preso no while de venda gogo"
-			order_status  = getOrder(uuid= UUID, user_id=  USER_ID)['result']
-		print order_status
-		#if(order_status['IsOpen'] == True):
-		#print("cancelei porque nao executou")
-		#cancel_order(uuid= UUID, user_id= USER_ID)
-		#return  ##QUITANDO
+		while(ORDER_STATUS == None):
+			ORDER_STATUS  = getOrder(uuid= UUID, user_id=  USER_ID)['result']
+
+		t.sleep(20)
+
+		if(ORDER_STATUS['IsOpen'] == True):
+			cancel_order(uuid= UUID, user_id= USER_ID)
+			return  ##saindo do programa
+
 		#####################################
 		##COMITANDO A ORDEM DE VENDA NO BANCO DE DADOS
 		data['sell_uuid'] = UUID
 		db.commitSellOrder(data)
-		print ("--[11]--Venda executada, bot ativo.. \n")
 		t.sleep(60)
 
 
@@ -196,3 +173,23 @@ def cancel_order(uuid, user_id):
 	acc_config = db.getConfigAcc(user_id)
 	bittrex = bittrex_lib.Bittrex(acc_config['bit_api_key'], acc_config['bit_api_secret'], api_version='v1.1')
 	bittrex.cancel(uuid)
+
+def get_market(currency):
+	markets = currency.split('-')
+	if(markets[0] == 'USDT'):
+		return 'USDT'
+	return 'BTC'
+
+def check_min_order(min_order, amount, currency):
+	if(get_market(currency) == 'USDT'):
+			total_brl = amount*3.3
+			if(min_order < total_brl):
+				return 0 ## 0 : NAO PASSOU NA VERIFICACAO MINIMA
+			else:
+				return 1 ## 1 :  PASSOU NA VERIFICACAO MINIMA
+	if(get_market(currency) == 'BTC'):
+			total_brl = amount*9000*3.3
+			if(min_order < total_brl):
+				return 0 ## 0 : NAO PASSOU NA VERIFICACAO MINIMA
+			else:
+				return 1 ## 1 :  PASSOU NA VERIFICACAO MINIMA

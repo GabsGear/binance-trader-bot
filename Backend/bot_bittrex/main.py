@@ -75,7 +75,6 @@ def trySell(bot_config):
 		'sell_value': price_now,
 		'sell_uuid': '',
 	}
-	## STOPLOSS
 	###################################
 	checkSell(data, bot_config, trans, price_now)
 	###################################
@@ -93,6 +92,8 @@ def checkSell(data, bot_config, trans, price_now):
 	stoploss = trans['buy_value']*(1-float(bot_config['stoploss']))
 	
 	print ("--[9]--Stoploss calculado ... \n")
+	print("stop em:%.8f"%stoploss)
+	print("price em:%.8f"%price_now)
 	if(price_now <= stoploss):
 		bittrex_func.sellLimit(data, bot_config, price_now, trans)
 		t.sleep(1800)
