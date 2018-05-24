@@ -222,10 +222,10 @@ class StrategiesBase(statics):
             if(rsi < 30.0):
                 return 'buy'
         if(bot_config['period'] == 'hour'):
-            if(rsi < 35.0):
+            if(rsi < 30.0):
                 return 'buy'    
         if(bot_config['period'] == 'thirtyMin'):
-            if(rsi < 40.0):
+            if(rsi < 30.0):
                 return 'buy'    
         return 'none' 
         

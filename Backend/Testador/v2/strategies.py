@@ -65,9 +65,10 @@ class statics():
 
     def getRSI(self, data, pos):
         size = pos
-        close = data['c'][pos - 50: pos]
-        data['c']= np.array(close, dtype=float)
-        rsi = talib.RSI(data['c'], 14)
+        close = data['c']
+        close = close[0 : size]
+        close= np.array(close, dtype=float)
+        rsi = talib.RSI(close, 20)
         if(rsi[size-1] > 0.0):
             return rsi[size-1]
         else:
@@ -75,12 +76,20 @@ class statics():
 
     def getRSISmall(self, data, pos):
         size = pos
-        close = data['c'][pos - 50: pos]
-        data['c']= np.array(close, dtype=float)
-        for c in data['c']:
+        close = data['c']
+        close = close[0 : size]
+        close= np.array(close, dtype=float)
+        for c in close:
             c = c*100
-        rsi = talib.RSI(data['c'], 14)
+        rsi = talib.RSI(close, 20)
         return rsi[size-1]
+
+    def getMean(self, coin, bot_config):
+        lclose=self.getCandles(coin, bot_config['period'])
+        lclose=np.array(lclose).astype(np.float)
+        lclose=lclose[len(lclose)-30:len(lclose)]
+        return lclose.mean()
+
 
 class StrategiesBase(statics):
 

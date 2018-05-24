@@ -5,14 +5,14 @@
 # 8PVopsBzr0piU66t3dEiPoxTuZUfVCemWdkjI5zN9OhEZcyPxgeO4UaAD1jM0zG0
 from binance.client import Client 
 from binance.enums import ORDER_TYPE_MARKET, ORDER_TYPE_LIMIT, TIME_IN_FORCE_GTC, SIDE_BUY, SIDE_SELL, TIME_IN_FORCE_FOK
-client = Client("Du96lndpL2qQcKogKCUi7hYuFTYO06MIiZoFf6oq0guxmXJTv0tomd5yAt0xev6i", "r76Q8Q35KipGTmY4BRuQqx1LDp3fWFvMjGYK9avKZnvbXVAzitWNKupzUtoQ34Uj")
-
+#client = Client("Du96lndpL2qQcKogKCUi7hYuFTYO06MIiZoFf6oq0guxmXJTv0tomd5yAt0xev6i", "r76Q8Q35KipGTmY4BRuQqx1LDp3fWFvMjGYK9avKZnvbXVAzitWNKupzUtoQ34Uj")
+client = Client("", "")
 #order = client.create_order(symbol='NCASHBTC', side=SIDE_BUY,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_FOK, quantity=300, price= '0.00000450')
-order = client.get_order(symbol='NCASHBTC', orderId=9045958)#(str(bot_config['currency'])), orderId=orderID)
+# order = client.get_order(symbol='NCASHBTC', orderId=9045958)#(str(bot_config['currency'])), orderId=orderID)
 
-print(order)
-orderID = order['orderId']
-qt = order['executedQty']
+# print(order)
+# orderID = order['orderId']
+# qt = order['executedQty']
 
 # result = client.cancel_order(symbol='NCASHBTC',orderId=orderID)
 
@@ -73,7 +73,10 @@ qt = order['executedQty']
 # klines = client.get_historical_klines("BNBBTC", Client.KLINE_INTERVAL_1MINUTE, "1 day ago UTC")
 
 # # fetch 30 minute klines for the last month of 2017
-#candles = client.get_historical_klines("ETHBTC", Client.KLINE_INTERVAL_30MINUTE, "1 Dec, 2017", "1 Jan, 2018")
+candles = client.get_historical_klines("ETHBTC", Client.KLINE_INTERVAL_1HOUR, "1 Dec, 2017", "1 Jan, 2018")
+
+for candle in candles:
+    print(str(candle[1])  +  ' ' + str(candle[4]))
 
 # closetime = []
 

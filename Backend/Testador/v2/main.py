@@ -7,7 +7,7 @@ import botconfig
 import sys
 import routines
 import time
-import os   
+import os
 from binance.client import Client
 
 
@@ -24,24 +24,17 @@ def main():
         str(bot_config['currency']), bot_config['period'])
     pos = 24
     st = strategies.Desicion(lopen, lhigh, llow, lclose, lvol, closetime)
-    saveDatabase(lopen, lhigh, llow, lclose, lvol, closetime)
+    obj.saveDatabase(lopen, lhigh, llow, lclose, lvol, closetime)
     data_decision = st.getDataDecision(bot_config, pos)
-
-    while(pos != (len(lopen) -1)):
+    size = len(lopen) - 1
+    while(pos != (size)):
+        obj.progress(pos, size-1, status=' Analisando estrategia || candle  ' +
+                    str(pos) + ' de ' + str(size))
         bot_config = db.getConfigBot(bot_id)
         routine(bot_id, data_decision, pos)
         pos += 1
     print('Analise completa')
 
-
-def saveDatabase(lopen, lhigh, llow, lclose, lvol, closetime):
-    os.remove("test2.csv")
-    thefile = open('test2.csv', 'w')
-    thefile.write("Data; Volume; Open,High;Low;close \n")
-    for item in range(0, len(lopen)):
-        thefile.write(
-            str(closetime[item]) + '; ' + str(lvol[item]) + '; ' + str(lopen[item]) + '; ' 
-            + str(lhigh[item]) + '; ' + str(llow[item]) + '; ' + str(lclose[item]) + '\n')
 
 def routine(bot_id, data_decision, pos):
     db = botconfig.Db()
@@ -49,5 +42,6 @@ def routine(bot_id, data_decision, pos):
     bot_config = db.getConfigBot(bot_id)
     routine.startBuyRoutine(bot_config, data_decision, pos)
     routine.startSellRoutine(bot_config, data_decision, pos)
+
 
 main()

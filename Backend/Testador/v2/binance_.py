@@ -67,15 +67,15 @@ class Binance_opr(ApiData):
                 coin, Client.KLINE_INTERVAL_5MINUTE, "19 Nov, 2017", "5 May, 2018")
         elif(period == 'oneMin'):
             candles = client.get_historical_klines(
-                coin, Client.KLINE_INTERVAL_1MINUTE, "19 Nov, 2018", "1 Mai                                                                                                                                                              , 2018")
+                coin, Client.KLINE_INTERVAL_1MINUTE, "19 Nov, 2018", "1 Mai, 2018")
         # map
-        opentime = []
-        lopen = []
-        lhigh = []
-        llow = []
-        lclose = []
-        lvol = []
-        closetime = []
+        opentime=[]
+        lopen=[]
+        lhigh=[]
+        llow=[]
+        lclose=[]
+        lvol=[]
+        closetime=[]
 
         for candle in candles:
             opentime.append(candle[0])
@@ -85,44 +85,36 @@ class Binance_opr(ApiData):
             lclose.append(candle[4])
             lvol.append(candle[5])
             closetime.append(candle[6])
-
-        lopen = np.array(lclose).astype(np.float)
-        lhigh = np.array(lhigh).astype(np.float)
-        llow = np.array(llow).astype(np.float)
-        lclose = np.array(lclose).astype(np.float)
-        lvol = np.array(lvol).astype(np.float)
+            
+        lopen=np.array(lopen).astype(np.float)
+        lhigh=np.array(lhigh).astype(np.float)
+        llow=np.array(llow).astype(np.float)
+        lclose=np.array(lclose).astype(np.float)
+        lvol=np.array(lvol).astype(np.float)
         return lopen, lhigh, llow, lclose, lvol, closetime
 
     def getBTCCandles(self, period):
         return self.getCandles('BTCUSDT', period)
-    
-    def getMean(self, coin, bot_config):
-        lclose = self.getCandles(coin, bot_config['period'])
-        lclose = np.array(lclose).astype(np.float)
-        lclose = lclose[len(lclose)-30:len(lclose)]
-        return lclose.mean()
 
     def createBuyOrder(self, data, bot_config, data_decision, price_now):
-        check = routines.Routines()
-        wallet = bot_config['wallet']
-        wallet = float(wallet)*(1 - bot_config['order_value'])
-        data['wallet'] = wallet
-        data['buy_wallet'] = data['wallet']
-        print(data['wallet'])
+        check=routines.Routines()
+        wallet=bot_config['wallet']
+        wallet=float(wallet)*(1 - bot_config['order_value'])
+        data['wallet']=wallet
+        data['buy_wallet']=data['wallet']
         if not (check.orderBuyStatus(bot_config, data_decision)):
-            db = botconfig.Db()
+            db=botconfig.Db()
             if not (bot_config['active']):
                 db.insertBuyOrder(data, bot_config['id'])
 
     def createSellOrder(self, data, bot_config, data_decision, price_now, pos):
-        db = botconfig.Db()
-        open_order, trans = db.getBuyOrders(bot_config['id'])
-        wallet = trans['buy_wallet']
-        wallet = float(wallet) + trans['quantity'] * price_now
-        data['wallet'] = wallet
-        data['sell_wallet'] = data['wallet']
-        data['data'] = data_decision['t'][pos+1]
-        print(data['wallet'])
+        db=botconfig.Db()
+        open_order, trans=db.getBuyOrders(bot_config['id'])
+        wallet=trans['buy_wallet']
+        wallet=float(wallet) + trans['quantity'] * price_now
+        data['wallet']=wallet
+        data['sell_wallet']=data['wallet']
+        day = data_decision['t']
+        data['data']=day[pos+1]
         if not (bot_config['active']):
             db.commitSellOrder(data, bot_config['id'])
-

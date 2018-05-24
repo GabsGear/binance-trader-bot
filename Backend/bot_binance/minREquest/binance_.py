@@ -108,7 +108,7 @@ class Binance_opr(ApiData):
             lvol.append(candle[5])
             closetime.append(candle[6])
 
-        lopen = np.array(lclose).astype(np.float)
+        lopen = np.array(lopen).astype(np.float)
         lhigh = np.array(lhigh).astype(np.float)
         llow = np.array(llow).astype(np.float)
         lclose = np.array(lclose).astype(np.float)
