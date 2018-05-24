@@ -2,6 +2,7 @@ import MySQLdb as mysql
 import os
 import datetime
 import pytz
+import sys
 
 def getConn():
 	db = mysql.connect(host="127.0.0.1", user="root", passwd="Gv9KP70E316v", db="protrader")
@@ -28,32 +29,33 @@ def commitSellOrder(data):
 
 
 def getOrder(bot_id):
-	#try:
-	db, cursor = getConn()
-	query = ("SELECT * FROM transactions WHERE bot_id = %s order by id desc")
-	cursor.execute(query, (bot_id, ))
-	trans = cursor.fetchone()
-	db.commit()
-	#print(trans)
-	if(cursor.rowcount > 0):
-		obj = {
-			'id': trans[0],
-			'bot_id': trans[1],
-			'buy_value': trans[2],
-			'quantity': trans[3],
-			'sell_value': trans[4],
-			'selled': trans[5],
-			'date_open': trans[6],
-			'date_close': trans[7],
-			'buy_uuid': trans[8],
-			'sell_uuid': trans[9],
-		}
-	else:
-		obj = False
-	cursor.close()
-	return obj
-	#except:
-	#print("ERRO: getBuyOrders.")
+	try:
+		db, cursor = getConn()
+		query = ("SELECT * FROM transactions WHERE bot_id = %s order by id desc")
+		cursor.execute(query, (bot_id, ))
+		trans = cursor.fetchone()
+		db.commit()
+		#print(trans)
+		if(cursor.rowcount > 0):
+			obj = {
+				'id': trans[0],
+				'bot_id': trans[1],
+				'buy_value': trans[2],
+				'quantity': trans[3],
+				'sell_value': trans[4],
+				'selled': trans[5],
+				'date_open': trans[6],
+				'date_close': trans[7],
+				'buy_uuid': trans[8],
+				'sell_uuid': trans[9],
+			}
+		else:
+			obj = False
+		cursor.close()
+		return obj
+	except:
+		print("[+] getOrder Function. Error : " + str(sys.exc_info()))
+		sys.exit()
 
 def delete_trans(id):
 	db, cursor = getConn()
@@ -98,7 +100,8 @@ def getConfigAcc(user_id):
 		
 		return obj
 	except:
-		print("ERRO: getConfigAcc.")
+		print("[+] getConfigAcc Function. Error : " + str(sys.exc_info()))
+		sys.exit()
 
 def getConfigBot(bot_id):
 	try:
@@ -120,11 +123,13 @@ def getConfigBot(bot_id):
 				'order_value': float(data[8]),
 				'period': data[9],
 				'stoploss': data[10],
-				'min_order': data[11]
+				'min_order': data[11],
+				'follow': data[13]
 		       }
 		return obj
 	except:
-		print("ERRO: getConfigBot.")
+		print("[+] getConfigBot Function. Error : " + str(sys.exc_info()))
+		sys.exit()
 
 def setPID(bot_id):
 	try:
@@ -135,7 +140,8 @@ def setPID(bot_id):
 		db.commit()
 		cursor.close()
 	except:
-		print("ERRO: setPID.")
+		print("[+] setPID Function. Error : " + str(sys.exc_info()))
+		sys.exit()
 
 def time_now():
 	brasil = pytz.timezone('America/Sao_Paulo')

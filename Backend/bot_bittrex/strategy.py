@@ -3,23 +3,25 @@ import talib as tb
 import bittrex_func
 import db
 import statistics
+import sys
 
 
 def getDataDecision(bot_config):
-	#try:
-	candles = bittrex_func.getCandleList(bot_config['currency'], bot_config['period'])
-	price_now = bittrex_func.getTicker(bot_config['currency'])
-	data = {
-	'price_now': price_now,
-	'o': candles['o'], 
-	'h': candles['h'], 
-	'l': candles['l'], 
-	'c': candles['c'],
-	'v': candles['v'],
-	't': candles['t'], }
-	return data
-	#except:
-	#print("ERRO: getDataDecision.")
+	try:
+		candles = bittrex_func.getCandleList(bot_config['currency'], bot_config['period'])
+		price_now = bittrex_func.getTicker(bot_config['currency'])
+		data = {
+			'price_now': price_now,
+			'o': candles['o'], 
+			'h': candles['h'], 
+			'l': candles['l'], 
+			'c': candles['c'],
+			'v': candles['v'],
+		}
+		return data
+	except:
+		print("[+] getDataDecision Function. Error : " + str(sys.exc_info()))
+		sys.exit()
 
 def contra_turtle(bot_config):
 	data = getDataDecision(bot_config)
@@ -27,7 +29,7 @@ def contra_turtle(bot_config):
 	last_l = data['l'][size-2:size-1]
 
 	tomin = data['l'][size-21:size-1] ##CORTO O VETOR DE CANDLES E DEIXO ELES COM TAMANHO 20
-
+	print("--ALVO COMPRA:"+str(min(tomin))+"|ULTIMO LOW:"+str(last_l[0]))
 	if(len(tomin) > 0):
 		if(last_l[0] <= min(tomin)):
 			return 'buy'
@@ -47,8 +49,6 @@ def break_channel(bot_config):
 		#print "maior que 0"
 		minn = min(tomin) ## CALCULO O MINIMO DESSES 20 CANDLES
 		maxx = max(tomax) ## CALCULO O MINIMO DESSES 20 CANDLES
-		print("--RESISTENCIA:"+str(maxx)+"|HIGH:"+str(last_h))
-		print("--SUPORTE:"+str(minn)+"|LOW:"+str(last_l))
 		if(last_l[0] <= minn):
 			return 'buy'
 
@@ -118,9 +118,10 @@ def perc(buy, sell):
 def rsi_max(bot_config):
 	data = getDataDecision(bot_config)
 	rsi = statistics.getRSI(data)
-	
+	print("RSI EM:", rsi)
 	if(bot_config['period'] == 'day'):
 		if(rsi < 30.0):
+			print("vou compra")
 			return 'buy'
 	if(bot_config['period'] == 'hour'):
 		if(rsi < 30.0):
@@ -129,7 +130,26 @@ def rsi_max(bot_config):
 		if(rsi < 30.0):
 			return 'buy'	
 	return 'none'
-	
+
+
+def btc_percentage():
+	candles = bittrex_func.getCandleList('USDT-BTC', 'Day')
+	price_now = bittrex_func.getTicker('USDT-BTC')
+	##CALCULANDO TAMANHO
+	size = len(candles['c'])
+	##SELECIONANDO ULTIMOS CANDLES FORMADOS
+	prev = candles['c'][size-2:size-1][0]
+	##PORCENTAGEM DE MUDANCA
+	varr = perc(prev, price_now)
+	if(varr > 1):
+		return 1
+	else:
+		return 0
+
+
+
+
+
 
 def map(bot_config):
 	map = {

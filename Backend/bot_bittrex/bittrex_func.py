@@ -3,6 +3,7 @@ import db
 import time as t
 import datetime
 import pytz
+import sys
 
 
 def loadAPI(bot_config):
@@ -42,7 +43,8 @@ def getCandleList(market, time):
 			't': t, }
 		return data
 	except:
-		print "Erro getcandlelist."
+		print("[+] getCandleList Function. Error : " + str(sys.exc_info()))
+		sys.exit()
 
 def getTicker(market):
 	price_now =  float(bittrex_v1.get_ticker(market)['result']['Last'])
@@ -79,9 +81,9 @@ def getBalance(user_id, bot_config):
 
 def buyLimit(data, bot_config, price_now):
 	if(bot_config['active'] == 0):
-		print ("--[6]--Compra executada, via simulacao.. \n")
+		#print ("--[6]--Compra executada, via simulacao.. \n")
 		db.insertBuyOrder(data)
-		t.sleep(60)
+		t.sleep(500)
 	if(bot_config['active'] == 1 and checkConnApi(bot_config= bot_config) == True):
 		acc_config = db.getConfigAcc(bot_config['user_id'])
 		acc_balance = getBalance(user_id= bot_config['user_id'], bot_config= bot_config)
@@ -104,28 +106,28 @@ def buyLimit(data, bot_config, price_now):
 		##CHECKAR SE A ORDEM FOI EXECUTADA
 		while(ORDER_STATUS == None):
 			ORDER_STATUS  = getOrder(uuid= UUID, user_id=  USER_ID)['result']
-		t.sleep(20)
+		##1 min de delay para executar a operacao
+		t.sleep(60)
 
 		if(ORDER_STATUS['IsOpen'] == True):
 			cancel_order(uuid= UUID, user_id= USER_ID)
-			return  ##QUITANDO
+			return
 		
 		#####################################
 		##TRANSFERINDO A QUANTIDADE COMPRADA PARA O DICIONARIO DATA PARA INSERIR NO BANCO DE DADOS
 		data['qnt'] = getOrder(uuid= UUID, user_id= USER_ID)['result']['Quantity']
 		data['buy_uuid'] = UUID
 		db.insertBuyOrder(data)
-		t.sleep(60)
+		t.sleep(500)
 
 
 def sellLimit(data, bot_config, price_now, trans):
 	#print data
 	if(bot_config['active'] == 0):
 		db.commitSellOrder(data)
-		t.sleep(60)
+		t.sleep(500)
 	
 	if(bot_config['active'] == 1 and checkConnApi(bot_config= bot_config) == True and trans['selled'] == 0):
-		print("chama na venda")
 		acc_config = db.getConfigAcc(bot_config['user_id'])
 		bittrex = bittrex_lib.Bittrex(acc_config['bit_api_key'], acc_config['bit_api_secret'], api_version='v1.1')
 		order_sell = bittrex.sell_limit(market=bot_config['currency'], quantity=trans['quantity'], rate=price_now)
@@ -143,7 +145,7 @@ def sellLimit(data, bot_config, price_now, trans):
 		while(ORDER_STATUS == None):
 			ORDER_STATUS  = getOrder(uuid= UUID, user_id=  USER_ID)['result']
 
-		t.sleep(20)
+		t.sleep(60)
 
 		if(ORDER_STATUS['IsOpen'] == True):
 			cancel_order(uuid= UUID, user_id= USER_ID)
@@ -153,7 +155,7 @@ def sellLimit(data, bot_config, price_now, trans):
 		##COMITANDO A ORDEM DE VENDA NO BANCO DE DADOS
 		data['sell_uuid'] = UUID
 		db.commitSellOrder(data)
-		t.sleep(60)
+		t.sleep(500)
 
 
 def check_delta_time(trans_time):

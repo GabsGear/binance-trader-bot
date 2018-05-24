@@ -189,5 +189,5 @@ if __name__ == '__main__':
  
     print('Sharpe Ratio:', backtest[0].analyzers.mySharpe.get_analysis())
     print('Drawdown :', backtest[0].analyzers.myDrawDown.get_analysis())
- 
-	cerebro.plot(style='candlestick', barup='green', bardown='red')
+
+    cerebro.plot(style='candlestick', barup='green', bardown='red')
