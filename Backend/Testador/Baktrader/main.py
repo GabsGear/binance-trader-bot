@@ -5,6 +5,8 @@ import datetime  # For datetime objects
 import os.path  # To manage paths
 import sys  # To find out the script name (in argv[0])
 import strat as st
+#import breackChannel as bc
+import strat as st
 import backtrader as bt
 import binance_ as bn
 import helpers as hp
@@ -22,12 +24,12 @@ def main():
     cerebro = bt.Cerebro()
 
     cerebro.addstrategy(st.TestStrategy)
-    # cerebro.addanalyzer(bt.analyzers.Returns, _name='returns')
-    # cerebro.addanalyzer(bt.analyzers.DrawDown, _name='drawdown')
-    # cerebro.addanalyzer(bt.analyzers.SQN, _name='sqn')
+    cerebro.addanalyzer(bt.analyzers.Returns, _name='returns')
+    cerebro.addanalyzer(bt.analyzers.DrawDown, _name='drawdown')
+    cerebro.addanalyzer(bt.analyzers.SQN, _name='sqn')
 
     datapath = os.path.join(
-        '/home/gabs/Backend/Backend/Testador/Baktrader/databases/BNBBTC-thirtyMin-Jul, 2017-May, 2018.csv')
+        '/home/gabs/Backend/Backend/Testador/Baktrader/databases/LTCBTC-hour-Jul, 2017-May, 2018.csv')
 
     data = bt.feeds.YahooFinanceCSVData(
         dataname=datapath,
@@ -38,12 +40,14 @@ def main():
         reverse=False)
 
     cerebro.adddata(data)
-    cerebro.broker.setcash(100000.0)
+    cerebro.broker.setcash(1.0)
 
     print('Starting Portfolio Value: %.8f' % cerebro.broker.getvalue())
 
-    cerebro.run()
+    res = cerebro.run()
     print('Final Portfolio Value: %.8f' % cerebro.broker.getvalue())
+    print('trades: ', res[0].analyzers.sqn.get_analysis())
+    print('drawdown: ', res[0].analyzers.drawdown.get_analysis())
 
     cerebro.plot()
 

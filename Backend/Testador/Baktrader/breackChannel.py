@@ -8,9 +8,7 @@ import sys  # To find out the script name (in argv[0])
 # Import the backtrader platform
 import backtrader as bt
 
-
-# Create a Stratey
-class TestStrategy(bt.Strategy):
+class breakChannel(bt.Strategy):
 
     def log(self, txt, dt=None):
         ''' Logging function fot this strategy'''
@@ -19,14 +17,11 @@ class TestStrategy(bt.Strategy):
 
     def __init__(self):
         # Keep a reference to the "close" line in the data[0] dataseries
-        self.dataclose = self.datas[0].close
-        self.rsi = bt.indicators.RSI(self.datas[0], period=14)
-        # To keep track of pending orders and buy price/commission
+        self.dataclose = self.datas.close
+        self.datalow = self.datas.low
+        self.datahigh = self.datas.high
+        # To keep track of pending orders
         self.order = None
-        self.buyprice = None
-        self.buycomm = None
-        self.win = self.lose = 0
-        self.trades = [self.win, self.lose]
 
     def notify_order(self, order):
         if order.status in [order.Submitted, order.Accepted]:
@@ -37,9 +32,9 @@ class TestStrategy(bt.Strategy):
         # Attention: broker could reject order if not enough cash
         if order.status in [order.Completed]:
             if order.isbuy():
-                self.log('BUY EXECUTED, %.2f' % order.executed.price)
+                self.log('BUY EXECUTED, %.8f' % order.executed.price)
             elif order.issell():
-                self.log('SELL EXECUTED, %.2f' % order.executed.price)
+                self.log('SELL EXECUTED, %.8f' % order.executed.price)
 
             self.bar_executed = len(self)
 
@@ -49,24 +44,9 @@ class TestStrategy(bt.Strategy):
         # Write down: no pending order
         self.order = None
 
-    def notify_trade(self, trade):
-        if not trade.isclosed:
-            return
-
-        self.log('OPERATION PROFIT, GROSS %.8f, NET %.8f' %
-                 (trade.pnl, trade.pnlcomm))
-        if trade.pnl > 0:
-            self.win += 1
-            self.trades = self.win, self.lose
-            self.log('WIN TRADE   win: ' + str(self.win) + ' loss: ' + str(self.lose))
-        else:
-            self.lose += 1
-            self.trades = self.win, self.lose
-            self.log('LOSS TRADE   win: ' + str(self.win) + ' loss: ' + str(self.lose))
-
     def next(self):
         # Simply log the closing price of the series from the reference
-        self.log('Close, %.8f' % self.dataclose[0])
+        #self.log('Close, %.8f' % self.dataclose[0])
 
         # Check if an order is pending ... if yes, we cannot send a 2nd one
         if self.order:
@@ -74,9 +54,17 @@ class TestStrategy(bt.Strategy):
 
         # Check if we are in the market
         if not self.position:
+            size = len(self.dataclose)
+            tomin = self.datalow[size-21:size-1]
+            tomax = self.datahigh[size-3:size-1]
+            last_l = self.datalow[size-2:size-1]
+            last_h = self.datahigh[size-2:size-1]
+                
+            minn = min(tomin) 
+            maxx = max(tomax) 
 
             # Not yet ... we MIGHT BUY if ...
-            if self.rsi[0] <= 30:
+            if(last_l[0] <= minn):
                 # BUY, BUY, BUY!!! (with default parameters)
                 self.log('BUY CREATE, %.8f' % self.dataclose[0])
 
@@ -84,9 +72,11 @@ class TestStrategy(bt.Strategy):
                 self.order = self.buy()
 
         else:
-            if self.rsi[0] >= 60:
-                # BUY, BUY, BUY!!! (with default parameters)
+
+            # Already in the market ... we might sell
+            if(last_h[0] >= maxx):
+                # SELL, SELL, SELL!!! (with all possible default parameters)
                 self.log('SELL CREATE, %.8f' % self.dataclose[0])
-                
+
                 # Keep track of the created order to avoid a 2nd order
                 self.order = self.sell()
