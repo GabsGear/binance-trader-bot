@@ -14,7 +14,7 @@ import helpers as hp
 
 def main():
     # cd = bn.Binance_opr()
-    # h = hp.Helpers()
+    h = hp.Helpers()
     # lopen, lhigh, llow, lclose, lvol, closetime = cd.getCandles(
     #     'ETHBTC', 'hour')
 
@@ -43,12 +43,14 @@ def main():
     cerebro.broker.setcash(1.0)
 
     print('Starting Portfolio Value: %.8f' % cerebro.broker.getvalue())
-
+    h.logcsv('Starting Portfolio Value: %.8f' % cerebro.broker.getvalue())
     res = cerebro.run()
-    print('Final Portfolio Value: %.8f' % cerebro.broker.getvalue())
-    print('trades: ', res[0].analyzers.sqn.get_analysis())
-    print('drawdown: ', res[0].analyzers.drawdown.get_analysis())
-
+    print('Final Portfolio Value: %.8f \n' % cerebro.broker.getvalue())
+    h.logcsv('Final Portfolio Value: %.8f \n' % cerebro.broker.getvalue() )
+    print('trades: ' + str(res[0].analyzers.sqn.get_analysis()) + '\n')
+    h.logcsv('trades: ' +  str(res[0].analyzers.sqn.get_analysis()) + '\n')
+    print('drawdown: ' + str(res[0].analyzers.drawdown.get_analysis()) + '\n')
+    h.logcsv('drawdown: ' +  str(res[0].analyzers.drawdown.get_analysis()) + '\n')
     cerebro.plot()
 
 

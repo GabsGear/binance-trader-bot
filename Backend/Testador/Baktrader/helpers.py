@@ -63,3 +63,7 @@ class Helpers:
                 str(closetime[item]) + ',' + str(lopen[item]) +
                 ',' + str(lhigh[item]) + ','
                 + str(llow[item]) + ',' + str(lclose[item]) + ',' + str(lclose[item]) +','+ str(lvol[item]) + '\n')
+
+    def logcsv(self,string):
+        thefile = open('/home/gabs/Backend/Backend/Testador/Baktrader/logs/log.csv', 'w')
+        thefile.write(str(string) + '\n')

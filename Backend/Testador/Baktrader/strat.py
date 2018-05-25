@@ -4,7 +4,7 @@ from __future__ import (absolute_import, division, print_function,
 import datetime  # For datetime objects
 import os.path  # To manage paths
 import sys  # To find out the script name (in argv[0])
-
+import helpers 
 # Import the backtrader platform
 import backtrader as bt
 
@@ -50,24 +50,31 @@ class TestStrategy(bt.Strategy):
         self.order = None
 
     def notify_trade(self, trade):
+        hp = helpers.Helpers()
         if not trade.isclosed:
             return
 
         self.log('OPERATION PROFIT, GROSS %.8f, NET %.8f' %
                  (trade.pnl, trade.pnlcomm))
+        hp.logcsv('OPERATION PROFIT, GROSS %.8f, NET %.8f' %
+                 (trade.pnl, trade.pnlcomm))
         if trade.pnl > 0:
             self.win += 1
             self.trades = self.win, self.lose
             self.log('WIN TRADE   win: ' + str(self.win) + ' loss: ' + str(self.lose))
+            hp.logcsv('WIN TRADE   win: ' + str(self.win) + ' loss: ' + str(self.lose))
+
         else:
             self.lose += 1
             self.trades = self.win, self.lose
             self.log('LOSS TRADE   win: ' + str(self.win) + ' loss: ' + str(self.lose))
+            hp.logcsv('LOSS TRADE   win: ' + str(self.win) + ' loss: ' + str(self.lose))
 
     def next(self):
+        hp = helpers.Helpers()
         # Simply log the closing price of the series from the reference
         self.log('Close, %.8f' % self.dataclose[0])
-
+        hp.logcsv('Close, %.8f' % self.dataclose[0])
         # Check if an order is pending ... if yes, we cannot send a 2nd one
         if self.order:
             return
@@ -79,7 +86,7 @@ class TestStrategy(bt.Strategy):
             if self.rsi[0] <= 30:
                 # BUY, BUY, BUY!!! (with default parameters)
                 self.log('BUY CREATE, %.8f' % self.dataclose[0])
-
+                hp.logcsv('BUY CREATE, %.8f' % self.dataclose[0])
                 # Keep track of the created order to avoid a 2nd order
                 self.order = self.buy()
 
@@ -87,6 +94,6 @@ class TestStrategy(bt.Strategy):
             if self.rsi[0] >= 60:
                 # BUY, BUY, BUY!!! (with default parameters)
                 self.log('SELL CREATE, %.8f' % self.dataclose[0])
-                
+                hp.logcsv('SELL CREATE, %.8f' % self.dataclose[0])
                 # Keep track of the created order to avoid a 2nd order
                 self.order = self.sell()

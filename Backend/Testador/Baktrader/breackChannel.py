@@ -4,6 +4,7 @@ from __future__ import (absolute_import, division, print_function,
 import datetime  # For datetime objects
 import os.path  # To manage paths
 import sys  # To find out the script name (in argv[0])
+import helpers
 
 # Import the backtrader platform
 import backtrader as bt
@@ -31,6 +32,8 @@ class breakChannel(bt.Strategy):
         # Check if an order has been completed
         # Attention: broker could reject order if not enough cash
         if order.status in [order.Completed]:
+
+
             if order.isbuy():
                 self.log('BUY EXECUTED, %.8f' % order.executed.price)
             elif order.issell():
@@ -40,6 +43,7 @@ class breakChannel(bt.Strategy):
 
         elif order.status in [order.Canceled, order.Margin, order.Rejected]:
             self.log('Order Canceled/Margin/Rejected')
+
 
         # Write down: no pending order
         self.order = None
