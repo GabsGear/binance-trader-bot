@@ -117,7 +117,7 @@ def perc(buy, sell):
 
 def rsi_max(bot_config):
 	data = getDataDecision(bot_config)
-	rsi = statistics.getRSI(data)
+	rsi = statistics.getRSI(data['c'])
 	print("RSI EM:", rsi)
 	if(bot_config['period'] == 'day'):
 		if(rsi < 30.0):
@@ -128,6 +128,8 @@ def rsi_max(bot_config):
 			return 'buy'	
 	if(bot_config['period'] == 'thirtyMin'):
 		if(rsi < 30.0):
+			print("[+] Vou compra.")
+			print("[+] RSI EM:", rsi)
 			return 'buy'	
 	return 'none'
 
@@ -145,9 +147,6 @@ def btc_percentage():
 		return 1
 	else:
 		return 0
-
-
-
 
 
 

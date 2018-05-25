@@ -103,11 +103,11 @@ def buyLimit(data, bot_config, price_now):
 		UUID = order_buy['result']['uuid']
 		USER_ID = bot_config['user_id']
 		ORDER_STATUS  = None
+		t.sleep(60)
 		##CHECKAR SE A ORDEM FOI EXECUTADA
 		while(ORDER_STATUS == None):
 			ORDER_STATUS  = getOrder(uuid= UUID, user_id=  USER_ID)['result']
 		##1 min de delay para executar a operacao
-		t.sleep(60)
 
 		if(ORDER_STATUS['IsOpen'] == True):
 			cancel_order(uuid= UUID, user_id= USER_ID)
@@ -141,11 +141,10 @@ def sellLimit(data, bot_config, price_now, trans):
 		UUID = order_sell['result']['uuid']
 		USER_ID = bot_config['user_id']
 		ORDER_STATUS  = None
+		t.sleep(60)
 		##CHECKAR SE A ORDEM FOI EXECUTADA
 		while(ORDER_STATUS == None):
 			ORDER_STATUS  = getOrder(uuid= UUID, user_id=  USER_ID)['result']
-
-		t.sleep(60)
 
 		if(ORDER_STATUS['IsOpen'] == True):
 			cancel_order(uuid= UUID, user_id= USER_ID)
