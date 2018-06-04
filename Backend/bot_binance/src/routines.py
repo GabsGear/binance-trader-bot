@@ -4,7 +4,7 @@ import binance_
 import strategies
 import helpers
 import botconfig
-import time as t
+import time
 
 class Functions():
     def buyOrder(self, bot_config, data_decision):
@@ -80,7 +80,6 @@ class Functions():
             bot_config {[dict]} -- bot setup
             data_decision {[dict]} -- transactions detals
         """
-<<<<<<< HEAD
         print('Selecionando estrategia numero ' + str(bot_config['strategy_buy']))
         st = strategies.StrategiesBase()
         if(bot_config['strategy_buy'] == 0):
@@ -104,20 +103,6 @@ class Functions():
     def sellOrder(self, bot_config, data_decision):
         bn = binance_.Binance_opr()
         hp = helpers.Helpers()
-=======
-        bn = binance_.Binance_opr()
-        for i in range(0, 5): #0 ate 5
-            if(bot_config['strategy_buy'] == i):
-                if(self.mapStrategy(bot_config)[i] == 'buy'):
-                    bn.createBuyOrder(data, bot_config, data_decision)
-
-# ----------------------------------------sell 
-    def sellOrder(self, bot_config):
-        bn = binance_.Binance_opr()
-        lopen, lhigh, llow, lclose, lvol, closetime = bn.getCandles(str(bot_config['currency']), bot_config['period'])
-        st = strategies.Desicion(lopen, lhigh, llow, lclose, lvol, closetime)
-        data_decision = st.getDataDecision(bot_config)
->>>>>>> 16a0b954ffb031d38ffc5bb59ef366fd3aab1144
         fixProfit = self.getFixProfit(bot_config, data_decision)
         stoploss = self.getStopLoss(bot_config, data_decision)
         st = strategies.StrategiesBase()
@@ -142,7 +127,6 @@ class Functions():
             log = ('---Venda stop loss alvo ' + str(stoploss))
             hp.writeOutput(bot_config['id'], log)
             bn.createSellOrder(data, bot_config, data_decision)
-            t.sleep(1800)
             return
            
         elif(bot_config['strategy_buy'] == 6):
@@ -181,32 +165,6 @@ class Functions():
     def getStopLoss(self, bot_config, data_decision):
         return float(data_decision['trans']['buy_value']*(1-float(bot_config['stoploss'])))
     
-<<<<<<< HEAD
-=======
-    def mapStrategy(self, bot_config): 
-        """map the strategies
-        
-        Arguments:s
-            bot_config {[dict]} -- bot setup
-        
-        Returns:
-            [type] -- return a map with all strategies
-        """
-        bn = binance_.Binance_opr()
-        lopen, lhigh, llow, lclose, lvol, closetime = bn.getCandles(str(bot_config['currency']), bot_config['period'])
-        st = strategies.StrategiesBase(lopen, lhigh, llow, lclose, lvol)
-        map = {
-            0: st.startTurtle(bot_config), #CONTRA TURTLE
-            1: st.startInside(bot_config), #INSIDE BAR
-            2: st.startDoubleUp(bot_config), #DOUBLLE UP
-            3: st.startPivotUp(bot_config), #PIVOT UP
-            #4: st.startRSIMax(bot_config), #RSI
-            4: st.startFollowBTC(bot_config), #BTC
-        }
-        return map
-    
-
->>>>>>> 16a0b954ffb031d38ffc5bb59ef366fd3aab1144
 class Routines(Functions):
     def get_config(self, bot_config):
         bn = binance_.Binance_opr()
@@ -220,6 +178,12 @@ class Routines(Functions):
         log = ('1- Iniciando rotina de compra')
         hp.writeOutput(bot_config['id'], log)
         data_decision = self.get_config(bot_config)
+        st = strategies.StrategiesBase()
+
+        if(st.btcPercentage() == 0):
+            print("--Bitcoin sem forca nao vou comprar.")
+            return
+            
         if(super().orderBuyStatus(bot_config, data_decision)):
             hp = helpers.Helpers()
             log = ('---Existem ordens em aberto no banco de dados\n')

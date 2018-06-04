@@ -1,11 +1,13 @@
 import Bittrex as _BITTREX
+import time
 
 class Strategy():
 	def __init__(self, bot_id, pair):
 		Bittrex = _BITTREX.Bittrex(bot_id)
 		O, H, C, L = Bittrex.getCandleList(pair) # Size fixed in 100
 		self.pair  = pair
-		self.timeframe = Bittrex.bot.timeframe
+		self.timeframe = 'hour'
+		# PATTERN OHCL
 		self.open  = O
 		self.high  = H
 		self.close = C
@@ -21,6 +23,8 @@ class Strategy():
 		print("[+] TIMEFRAME: %s"% (self.timeframe))
 		print("[+] LAST LOW: %.8f"% (last_l))
 		print("[+] SUPORTE: %.8f"% (min(tomin)))
+		print("------------------------------")
+		time.sleep(60)
 		
 		if(last_l <= min(tomin)):
 			return 'buy'

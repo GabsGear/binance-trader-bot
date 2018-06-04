@@ -10,6 +10,7 @@ def main():
 	
 	while(True):
 		Bot.check_buy()
+		Bot.check_sell()
 
 	
 

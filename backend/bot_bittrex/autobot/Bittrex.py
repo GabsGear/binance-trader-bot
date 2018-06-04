@@ -17,7 +17,7 @@ class Bittrex():
 
 
 	def getCandles(self, pair):
-		return self.api_2.get_candles(pair, self.bot.timeframe)['result']
+		return self.api_2.get_candles(pair, 'hour')['result']
 
 	def getCandleList(self, pair): 
 		candles = None

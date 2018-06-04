@@ -4,6 +4,7 @@ import datetime
 import pytz
 import sys
 import Bot as _BOT
+import Order as _ORDER
 
 def getConn():
 	db = mysql.connect(host="127.0.0.1", user="root", passwd="libano252528", db="protrader")
@@ -18,45 +19,46 @@ def insertBuyOrder(Order):
 	db.commit()
 	cursor.close()
 
-def commitSellOrder(data):
+def commitSellOrder(Order):
 	db, cursor = getConn()
-	trans = getOrder(data['bot_id'])
-	query = ("UPDATE transactions SET sell_value=(%s), selled=(%s), date_close=(%s), sell_uuid=(%s) WHERE id=(%s)")
-	value = float(data['sell_value'])
-	cursor.execute(query, (value, "1", time_now(), data['sell_uuid'], trans['id'] ))
+	query = ("UPDATE transactions SET sell_value=(%s), status=(%s) WHERE id=(%s)")
+	cursor.execute(query, (Order.sell_value, Order.status, Order.id))
 	db.commit()
 	cursor.close()
 
 
-def getOrder(bot_id):
-	try:
-		db, cursor = getConn()
-		query = ("SELECT * FROM transactions WHERE bot_id = %s order by id desc")
-		cursor.execute(query, (bot_id, ))
-		trans = cursor.fetchone()
-		db.commit()
-		#print(trans)
-		if(cursor.rowcount > 0):
-			obj = {
-				'id': trans[0],
-				'bot_id': trans[1],
-				'buy_value': trans[2],
-				'quantity': trans[3],
-				'sell_value': trans[4],
-				'selled': trans[5],
-				'date_open': trans[6],
-				'date_close': trans[7],
-				'buy_uuid': trans[8],
-				'sell_uuid': trans[9],
-				'pair': trans[11],
-			}
-		else:
-			obj = False
-		cursor.close()
-		return obj
-	except:
-		print("[+] getOrder Function. Error : " + str(sys.exc_info()))
-		sys.exit()
+def getOrders(bot_id):
+	db, cursor = getConn()
+	query = ("SELECT * FROM transactions WHERE bot_id = %s AND status=0 order by id desc")
+	cursor.execute(query, (bot_id, ))
+	Orders = []
+	if(cursor.rowcount > 0):
+		for trans in cursor:
+			Order = _ORDER.Order(
+				id = trans[0],
+				bot_id = trans[1], 
+				market = trans[2], 
+				currency = trans[3], 
+				buy_value = trans[4],
+				sell_value = trans[5],
+				amount = trans[6],
+				status = trans[7], 
+			)
+			Orders.append(Order)
+		return Orders	
+	else:
+		return None
+	cursor.close()
+
+# VERIFICA SE EXISTE UMA ORDEM PENDENTE PARA O PAR SOLICITADO
+# PAIR: MARKET-CURRENCY
+def getPendentOrder(bot_id, market, currency):
+	db, cursor = getConn()
+	query = ("SELECT * FROM transactions WHERE bot_id=%s AND market=%s AND currency=%s order by id desc")
+	cursor.execute(query, (bot_id, market, currency))
+	count = cursor.rowcount
+	cursor.close()
+	return count
 
 def delete_trans(id):
 	db, cursor = getConn()
@@ -110,15 +112,13 @@ def getInstanceBot(bot_id):
 	db.commit()
 	cursor.close()
 	Bot = _BOT.Bot(
-		bot_id = data[0], 
+		id = data[0], 
 		user_id = data[1],
-		exchange = data[2],
-		pid = data[3],
-		strategy = data[4],
-		profit = data[5],
-		status=data[6],
-		timeframe = data[7],
-		stoploss = data[8]
+		strategy = data[3],
+		profit = data[4],
+		pid = data[5],
+		status = data[6],
+		stoploss = data[7]
 	)
 	return Bot
 

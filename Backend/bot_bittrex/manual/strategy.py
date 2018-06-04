@@ -143,7 +143,7 @@ def btc_percentage():
 	prev = candles['c'][size-2:size-1][0]
 	##PORCENTAGEM DE MUDANCA
 	varr = perc(prev, price_now)
-	if(varr > 1):
+	if(varr >= 0.5):
 		return 1
 	else:
 		return 0
