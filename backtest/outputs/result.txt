@@ -1,0 +1,84 @@
+PAR/TIMEFRAME:BTC-XRP/hour
+Patrimonio inicial: 1 BTC
+Patrimonio final:1.0422563910940008
+Lucro (%):4.225639109400078
+Quantia de trades:12
+----------------------------
+PAR/TIMEFRAME:BTC-WAVES/hour
+Patrimonio inicial: 1 BTC
+Patrimonio final:1.2472172984439998
+Lucro (%):24.721729844399974
+Quantia de trades:7
+----------------------------
+PAR/TIMEFRAME:BTC-LTC/hour
+Patrimonio inicial: 1 BTC
+Patrimonio final:1.0645511830660002
+Lucro (%):6.4551183066000135
+Quantia de trades:8
+----------------------------
+PAR/TIMEFRAME:BTC-BCC/hour
+Patrimonio inicial: 1 BTC
+Patrimonio final:1.1833933351240002
+Lucro (%):18.33933351240003
+Quantia de trades:9
+----------------------------
+PAR/TIMEFRAME:BTC-ZEN/hour
+Patrimonio inicial: 1 BTC
+Patrimonio final:1.2595362875920004
+Lucro (%):25.953628759200043
+Quantia de trades:4
+----------------------------
+PAR/TIMEFRAME:BTC-STORJ/hour
+Patrimonio inicial: 1 BTC
+Patrimonio final:1.023649772338
+Lucro (%):2.364977233800005
+Quantia de trades:7
+----------------------------
+PAR/TIMEFRAME:BTC-BCC/hour
+Patrimonio inicial: 1 BTC
+Patrimonio final:1.1833933351240002
+Lucro (%):18.33933351240003
+Quantia de trades:9
+----------------------------
+PAR/TIMEFRAME:BTC-BCC/thirtymin
+Patrimonio inicial: 1 BTC
+Patrimonio final:1.358331899229999
+Lucro (%):35.83318992299991
+Quantia de trades:12
+----------------------------
+PAR/TIMEFRAME:BTC-LTC/thirtymin
+Patrimonio inicial: 1 BTC
+Patrimonio final:1.0258730246800003
+Lucro (%):2.5873024680000327
+Quantia de trades:17
+----------------------------
+PAR/TIMEFRAME:BTC-STORJ/thirtymin
+Patrimonio inicial: 1 BTC
+Patrimonio final:1.1836568157219998
+Lucro (%):18.365681572199975
+Quantia de trades:9
+----------------------------
+PAR/TIMEFRAME:BTC-TRX/thirtymin
+Patrimonio inicial: 1 BTC
+Patrimonio final:1.2745107757720004
+Lucro (%):27.45107757720004
+Quantia de trades:10
+----------------------------
+PAR/TIMEFRAME:BTC-WAVES/thirtymin
+Patrimonio inicial: 1 BTC
+Patrimonio final:1.4223239018020009
+Lucro (%):42.2323901802001
+Quantia de trades:12
+----------------------------
+PAR/TIMEFRAME:BTC-XRP/thirtymin
+Patrimonio inicial: 1 BTC
+Patrimonio final:1.0332111975399998
+Lucro (%):3.32111975399998
+Quantia de trades:25
+----------------------------
+PAR/TIMEFRAME:BTC-ZEN/thirtymin
+Patrimonio inicial: 1 BTC
+Patrimonio final:1.3152699807760002
+Lucro (%):31.526998077600012
+Quantia de trades:9
+----------------------------

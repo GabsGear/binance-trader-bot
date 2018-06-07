@@ -24,14 +24,7 @@ class Strategy(bt.Strategy):
         #self.rsi = bt.indicators.RSI(self.datas[0], period=14)
         self.ctt = bt.indicators.Lowest(self.datas[0].low, period=20)
         self.oa = bt.indicators.AccelerationDecelerationOscillator(self.datas[0], period=10)
-        #self.ama = bt.indicators.AdaptiveMovingAverage(self.datas[0])
-        #self.hurst = bt.indicators.HurstExponent(self.datas[0])
-        #self.lag = bt.indicators.LaguerreFilter(self.datas[0])
-        #self.std = bt.indicators.MeanDeviation(self.datas[0])
-        self.ichimoku = bt.indicators.Ichimoku(self.datas[0])
-        self.rmi = bt.indicators.RelativeMomentumIndex()
-        #print(self.ichimoku.lines.chikou_span[len(size-1)])
-        #self.pp = bt.indicators.PercentagePriceOscillator(self.datas[0])
+        self.ama = bt.indicators.AdaptiveMovingAverage(self.datas[0])
         # To keep track of pending orders and buy price/commission
         self.order = None
         self.buyprice = None
@@ -43,7 +36,7 @@ class Strategy(bt.Strategy):
         ''' Logging function fot this strategy'''
         dt = dt or self.datas[0].datetime.date(0)
         #print("[+]"+str(dt)+"[+]"+str(txt))
-        #self.writeOutput("[+]"+str(dt)+"[+]"+str(txt))
+        self.writeOutput("[+]"+str(dt)+"[+]"+str(txt))
 
     def start(self):
         self.trades = 0
@@ -52,15 +45,14 @@ class Strategy(bt.Strategy):
         if order.status == order.Completed:
             # If a stop loss or take profit is triggered:
             if 'name' in order.info:
-                self.log("%s: REF : %s / %s / BUY AT : %.8f / SELL AT: %.8F  " %
+                self.log("%s: REF : %s / %s / BUY AT : %.8f / SELL AT: %.8F / VAR: %.8f %" %
                          (order.info['name'], order.ref,
                           self.data.num2date(order.executed.dt).date().isoformat(), self.price_at_signal,
-                          order.executed.price ))
-                self.log("PERC: %.2f"% data.perc(self.price_at_signal, order.executed.price))
-            '''else:
+                          order.executed.price, data.perc(self.price_at_signal, order.executed.price) )
+            else:
                 if order.isbuy():
                     # Initialize our take profit and stop loss orders :
-                    stop_loss = order.executed.price * (1.0 - 0.01)
+                    '''stop_loss = order.executed.price * (1.0 - 0.05)
                     take_profit = order.executed.price * (1.0 + 0.03)
                     
                     stop_order = self.sell(exectype=bt.Order.StopLimit, price=stop_loss)
@@ -68,8 +60,16 @@ class Strategy(bt.Strategy):
  
                     #OCO : One cancels the Other =&gt; The execution of one instantaneously cancels the other
                     takeprofit_order = self.sell(exectype=bt.Order.Limit, price=take_profit, oco=stop_order)
-                    takeprofit_order.addinfo(name="PROFIT")
-                    self.buyprice = order.executed.price'''
+                    akeprofit_order.addinfo(name="PROFIT")
+
+                    self.log("SignalPrice : %.8f Buy: %.8f, Stop: %.8f, Profit : %.8f, Cost: %.8f"
+                             % (self.price_at_signal,
+                                order.executed.price,
+                                stop_loss,
+                                take_profit,
+                                order.executed.value))
+                    self.buyprice = order.executed.price
+                    self.order = None''' 
             self.order = None
 
     def notify_trade(self, trade):
@@ -93,35 +93,30 @@ class Strategy(bt.Strategy):
     def next(self):
         # Check if an order is pending ... if yes, we cannot send a 2nd one
         global DATES
-
-        yellow = self.ichimoku.lines.senkou_span_b[0]
-        blue = self.ichimoku.lines.senkou_span_a[0]
-        red = self.ichimoku.lines.tenkan_sen[0]
-        green = self.ichimoku.lines.kijun_sen[0]
-        black = self.ichimoku.lines.chikou_span[0]
         if self.order:
             return
-
+        #print(self.datas[0].btc_var[0])
+        # Check if we are in the market
+        #print("SUPORTE:%.8f, PRICE:%.8f" % (self.ctt[0], self.datas[0].low[0]))
+        print("AMA: %.8f"% self.ama[0])
         if not self.position:
             # Not yet ... we MIGHT BUY if ...
-            if(self.dataclose[0] > yellow and self.dataclose[0] > blue and black > yellow and black > blue ):
-                day = str(self.data.num2date(self.date[0]).date().isoformat())
-                if(day in DATES):
-                    # BUY, BUY, BUY!!! (with default parameters)
-                    self.log('BUY CREATE, %.8f' % (self.dataclose[0]))
-                    self.price_at_signal = self.dataclose[0]
-                    # Keep track of the created order to avoid a 2nd order
-                    self.order = self.buy()
-        else:
-            if(black < yellow or black < blue):
-                day = str(self.data.num2date(self.date[0]).date().isoformat())
-                #if(day in DATES):
+            #if(self.oa[0] > 0 and self.ama[0] < self.dataclose[0]):
+            day = str(self.data.num2date(self.date[0]).date().isoformat())
+            if(day in DATES):
                 # BUY, BUY, BUY!!! (with default parameters)
-                self.log('SELL CREATE, %.8f' % (self.dataclose[0]))
+                self.log('BUY CREATE, %.8f' % (self.dataclose[0]))
                 self.price_at_signal = self.dataclose[0]
                 # Keep track of the created order to avoid a 2nd order
-                takeprofit_order = self.sell()
-                takeprofit_order.addinfo(name="PROFIT")
+                self.order = self.buy()
+        else:
+            #if(self.oa[0] < 0)
+            day = str(self.data.num2date(self.date[0]).date().isoformat())
+            if(day not in DATES):
+                self.log('SELL CREATE, %.8f' % (self.dataclose[0]))
+                # Keep track of the created order to avoid a 2nd order
+                self.order = self.sell()
+                self.order.addinfo(name="PROFIT")
 
     def writeOutput(self, msg):
         x = datapath=(r'''C:\Users\Pichau\Documents\work\protraderbot\git\backend\backtest\outputs\output.txt''')
@@ -130,17 +125,3 @@ class Strategy(bt.Strategy):
         file.close()
 
 
-class Quantity(bt.Sizer):
-        params = (('stake', 1),)
-        def _getsizing(self, comminfo, cash, data, isbuy):
-            position = self.broker.getposition(data)
-            print(position)
-            if(isbuy):
-                amount = math.floor(cash/data.close[0])*0.9
-                self.p.stake = amount
-                return self.p.stake
-            # Sell situation
-            if not position.size:
-                return 0  # do not sell if nothing is open
-
-            return self.p.stake
