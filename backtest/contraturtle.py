@@ -20,18 +20,13 @@ class Strategy(bt.Strategy):
     def __init__(self):
         # Keep a reference to the "close" line in the data[0] dataseries
         self.dataclose = self.datas[0].close
+        self.low = self.datas[0].low
         self.date = self.datas[0].datetime
         #self.rsi = bt.indicators.RSI(self.datas[0], period=14)
-        self.ctt = bt.indicators.Lowest(self.datas[0].low, period=20)
+        self.ctt = bt.indicators.Lowest(self.datas[0].low, period=5)
         self.oa = bt.indicators.AccelerationDecelerationOscillator(self.datas[0], period=10)
-        #self.ama = bt.indicators.AdaptiveMovingAverage(self.datas[0])
-        #self.hurst = bt.indicators.HurstExponent(self.datas[0])
-        #self.lag = bt.indicators.LaguerreFilter(self.datas[0])
-        #self.std = bt.indicators.MeanDeviation(self.datas[0])
         self.ichimoku = bt.indicators.Ichimoku(self.datas[0])
         self.rmi = bt.indicators.RelativeMomentumIndex()
-        #print(self.ichimoku.lines.chikou_span[len(size-1)])
-        #self.pp = bt.indicators.PercentagePriceOscillator(self.datas[0])
         # To keep track of pending orders and buy price/commission
         self.order = None
         self.buyprice = None
@@ -43,7 +38,7 @@ class Strategy(bt.Strategy):
         ''' Logging function fot this strategy'''
         dt = dt or self.datas[0].datetime.date(0)
         #print("[+]"+str(dt)+"[+]"+str(txt))
-        #self.writeOutput("[+]"+str(dt)+"[+]"+str(txt))
+        self.writeOutput("[+]"+str(dt)+"[+]"+str(txt))
 
     def start(self):
         self.trades = 0
@@ -57,11 +52,11 @@ class Strategy(bt.Strategy):
                           self.data.num2date(order.executed.dt).date().isoformat(), self.price_at_signal,
                           order.executed.price ))
                 self.log("PERC: %.2f"% data.perc(self.price_at_signal, order.executed.price))
-            '''else:
+            else:
                 if order.isbuy():
                     # Initialize our take profit and stop loss orders :
                     stop_loss = order.executed.price * (1.0 - 0.01)
-                    take_profit = order.executed.price * (1.0 + 0.03)
+                    take_profit = order.executed.price * (1.0 + 0.015)
                     
                     stop_order = self.sell(exectype=bt.Order.StopLimit, price=stop_loss)
                     stop_order.addinfo(name="STOP")
@@ -69,7 +64,7 @@ class Strategy(bt.Strategy):
                     #OCO : One cancels the Other =&gt; The execution of one instantaneously cancels the other
                     takeprofit_order = self.sell(exectype=bt.Order.Limit, price=take_profit, oco=stop_order)
                     takeprofit_order.addinfo(name="PROFIT")
-                    self.buyprice = order.executed.price'''
+                    self.buyprice = order.executed.price
             self.order = None
 
     def notify_trade(self, trade):
@@ -104,7 +99,7 @@ class Strategy(bt.Strategy):
 
         if not self.position:
             # Not yet ... we MIGHT BUY if ...
-            if(self.dataclose[0] > yellow and self.dataclose[0] > blue and black > yellow and black > blue ):
+            if(self.low[0] <= self.ctt[0]):
                 day = str(self.data.num2date(self.date[0]).date().isoformat())
                 if(day in DATES):
                     # BUY, BUY, BUY!!! (with default parameters)
@@ -112,19 +107,11 @@ class Strategy(bt.Strategy):
                     self.price_at_signal = self.dataclose[0]
                     # Keep track of the created order to avoid a 2nd order
                     self.order = self.buy()
-        else:
-            if(black < yellow or black < blue):
-                day = str(self.data.num2date(self.date[0]).date().isoformat())
-                #if(day in DATES):
-                # BUY, BUY, BUY!!! (with default parameters)
-                self.log('SELL CREATE, %.8f' % (self.dataclose[0]))
-                self.price_at_signal = self.dataclose[0]
-                # Keep track of the created order to avoid a 2nd order
-                takeprofit_order = self.sell()
-                takeprofit_order.addinfo(name="PROFIT")
+
 
     def writeOutput(self, msg):
-        x = datapath=(r'''C:\Users\Pichau\Documents\work\protraderbot\git\backend\backtest\outputs\output.txt''')
+        path = r'''C:\Users\Pichau\Documents\work\protraderbot\git\backend\backtest\outputs'''
+        x = datapath=(path+'\\'+str(sys.argv[1])+"-"+str(sys.argv[2])+".log")
         file = open(x, 'a+')
         file.write('[+] ' + msg + "\n")
         file.close()

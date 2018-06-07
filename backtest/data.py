@@ -2,6 +2,7 @@ import bittrex_lib as bit
 import backtrader.feeds as btfeed
 import pandas as pd
 import sys
+import os.path
 
 def getCandles(market, time):
 	bittrex = bit.Bittrex('', '', api_version='v2.0')
@@ -119,7 +120,11 @@ def create_data(pair, timeframe):
 		msg = "%s %s, %s, %s, %s, %s, %s"% (DATE[0], DATE[1], row['o'], row['h'], row['l'], row['c'],  row['v'])
 		writeOutput(msg, pair, timeframe)
 
-#create_data(sys.argv[1], sys.argv[2])
+path = r'''C:\Users\Pichau\Documents\work\protraderbot\git\backend\backtest\candles'''
+x = datapath=(path+'\\'+str(sys.argv[1])+"-"+str(sys.argv[2])+".csv")
+if(os.path.exists(x) == False):
+	create_data(sys.argv[1], sys.argv[2])
+	
 #create_data('BTC-STORJ', 'hour')
 #btc_var('2018-06-03')
 #count_bars()

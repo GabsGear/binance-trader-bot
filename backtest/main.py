@@ -1,12 +1,13 @@
 from __future__ import (absolute_import, division, print_function,
                         unicode_literals)
-
+import sys
 import datetime
 import backtrader as bt
-import strategy as stt
+import contraturtle as stt
 import backtrader.feeds as btfeed
 import sys
 import data as b
+
 
 def main():
 	cerebro = bt.Cerebro()
@@ -35,7 +36,7 @@ def main():
 	#print('Final Portfolio Value: %.8f' % cerebro.broker.getvalue())
 	perc = cerebro.broker.getvalue()*100-100
 	#cerebro.plot(style='candlestick', barup='green', bardown='red')
-	msg  = "PAR/TIMEFRAME:"+str(sys.argv[1])+"/"+str(sys.argv[2])
+	'''msg  = "PAR/TIMEFRAME/PARAM:NO-BTC:"+str(sys.argv[1])+"/"+str(sys.argv[2])
 	b.write(msg)
 	msg  = "Patrimonio inicial: 1 BTC"
 	b.write(msg)
@@ -45,7 +46,7 @@ def main():
 	b.write(msg)
 	msg = "Quantia de trades:"+str(backtest[0].analyzers.SQN.get_analysis().trades)
 	b.write(msg)
-	b.write("----------------------------")
+	b.write("----------------------------")'''
 
 
 
@@ -60,6 +61,5 @@ class dataFeed(btfeed.GenericCSVData):
         ('volume', 5),
         ('openinterest', -1)
     )
-
 
 main()
