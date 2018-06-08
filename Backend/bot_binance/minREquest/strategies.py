@@ -106,10 +106,7 @@ class StrategiesBase(statics):
         size = len(lclose)
         prev = lclose[size-1:size][0]
         varr = self.perc(prev, price)
-        varr = 1.0000000144
-        if(varr > 1):
-            return 1 
-        else: return 0
+        return float(varr)
 
     def startTurtle(self, bot_config, data):
         price_now = str(data['price_now'])

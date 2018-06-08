@@ -170,18 +170,11 @@ class Functions():
         return float(data_decision['trans']['buy_value']*(1-float(bot_config['stoploss'])))
     
 class Routines(Functions):
-    def get_config(self, bot_config):
-        bn = binance_.Binance_opr()
-        lopen, lhigh, llow, lclose, lvol, closetime = bn.getCandles(str(bot_config['currency']), bot_config['period'])
-        st = strategies.Desicion(lopen, lhigh, llow, lclose, lvol, closetime)
-        data_decision = st.getDataDecision(bot_config)
-        return data_decision
-        
-    def startBuyRoutine(self, bot_config):
+   
+    def startBuyRoutine(self, bot_config, data_decision):
         hp = helpers.Helpers()
         log = ('1- Iniciando rotina de compra')
         hp.writeOutput(bot_config['id'], log)
-        data_decision = self.get_config(bot_config)
         st = strategies.StrategiesBase()
         credits = float(bot_config['credits'])
         if(credits <= 0):
@@ -196,11 +189,10 @@ class Routines(Functions):
             return    
         super().buyOrder(bot_config, data_decision)
 
-    def startSellRoutine(self, bot_config):
+    def startSellRoutine(self, bot_config, data_decision):
         hp = helpers.Helpers()
         log = ('2- Iniciando rotina de venda ')
         hp.writeOutput(bot_config['id'], log)
-        data_decision = self.get_config(bot_config)
         if (super().orderSellStatus(bot_config, data_decision)):
             hp = helpers.Helpers()
             log = ('----Ainda nao ha nada para vender\n')

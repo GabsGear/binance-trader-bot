@@ -6,6 +6,7 @@ import botconfig
 from datetime import datetime
 import numpy as np
 import requests
+import strategies
 import helpers
 import sys
 import json
@@ -270,6 +271,7 @@ class Binance_opr(ApiData):
         check = routines.Routines()
         if not (check.orderBuyStatus(bot_config, data_decision)):
             db = botconfig.Db()
+            st = strategies.StrategiesBase()
             if not (bot_config['active']):
                 log = ('Inserindo simulada')
                 hp.writeOutput(bot_config['id'], log)
@@ -281,10 +283,18 @@ class Binance_opr(ApiData):
                     ammount = float(self.getClientBalance(
                         client, bot_config))*bot_config['order_value']/float(data_decision['price_now'])
                     ammount = self.checkPrecision(bot_config, ammount)
+                   
                     if not self.checkMinOrder(data_decision, bot_config, ammount):
                         log = ('Erro minOrder')
                         hp.writeOutput(bot_config['id'], log)
                         return
+                   
+                    if(st.btcPercentage() < 0.5):
+                        print("--Bitcoin sem forca nao vou comprar.")
+                        log = ("--Bitcoin sem forca nao vou comprar.")
+                        hp.writeOutput(bot_config['id'], log)
+                        return 
+                    
                     try:
                         order = client.create_order(
                             symbol=bot_config['currency'], side=SIDE_BUY, type=ORDER_TYPE_LIMIT, timeInForce=TIME_IN_FORCE_FOK, quantity=ammount, price=str(price))
