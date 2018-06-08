@@ -175,18 +175,16 @@ class Routines(Functions):
         hp = helpers.Helpers()
         log = ('1- Iniciando rotina de compra')
         hp.writeOutput(bot_config['id'], log)
-        st = strategies.StrategiesBase()
         credits = float(bot_config['credits'])
+        
         if(credits <= 0):
             return
+        
         if(super().orderBuyStatus(bot_config, data_decision)):
             hp = helpers.Helpers()
             log = ('---Existem ordens em aberto no banco de dados\n')
             hp.writeOutput(bot_config['id'], log)
-            return 
-        if(st.btcPercentage() == 0):
-            print("--Bitcoin sem forca nao vou comprar.")
-            return    
+            return   
         super().buyOrder(bot_config, data_decision)
 
     def startSellRoutine(self, bot_config, data_decision):
