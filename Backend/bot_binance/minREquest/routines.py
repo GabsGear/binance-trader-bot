@@ -66,9 +66,9 @@ class Functions():
         Returns:
             [bool] -- this method return 0 when everything is ok and you want to buy
         """
-        if (data_decision['open_orders'] and not bot_config['active']):
+        if (data_decision['open_orders']):
             return 1
-        elif (data_decision['open_orders'] and bot_config['active']):
+        elif (data_decision['open_orders']):
             return 1         
         return 0
 
@@ -106,7 +106,6 @@ class Functions():
         fixProfit = self.getFixProfit(bot_config, data_decision)
         stoploss = self.getStopLoss(bot_config, data_decision)
         st = strategies.StrategiesBase()
-        
         log = ('---Price Now')
         hp.writeOutput(bot_config['id'], log)
         log = ('---' + str(data_decision['price_now']))
@@ -123,6 +122,8 @@ class Functions():
         hp.writeOutput(bot_config['id'], log)
         
         data = self.getSellData(bot_config, data_decision)
+        #bn.createSellOrder(data, bot_config, data_decision) 
+        
         if(data_decision['price_now'] <= stoploss):
             log = ('---Venda stop loss alvo ' + str(stoploss))
             hp.writeOutput(bot_config['id'], log)
@@ -156,6 +157,9 @@ class Functions():
             'bot_id': bot_config['id'],
             'sell_value': data_decision['price_now'],
             'sell_uuid': '',
+            'taxa': 0,
+            'profit': 0,
+            'credits': float(bot_config['credits'])
         }
         return data
 
@@ -178,11 +182,18 @@ class Routines(Functions):
         log = ('1- Iniciando rotina de compra')
         hp.writeOutput(bot_config['id'], log)
         data_decision = self.get_config(bot_config)
+        st = strategies.StrategiesBase()
+        credits = float(bot_config['credits'])
+        if(credits <= 0):
+            return
         if(super().orderBuyStatus(bot_config, data_decision)):
             hp = helpers.Helpers()
             log = ('---Existem ordens em aberto no banco de dados\n')
             hp.writeOutput(bot_config['id'], log)
-            return  
+            return 
+        if(st.btcPercentage() == 0):
+            print("--Bitcoin sem forca nao vou comprar.")
+            return    
         super().buyOrder(bot_config, data_decision)
 
     def startSellRoutine(self, bot_config):

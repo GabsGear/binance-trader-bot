@@ -22,6 +22,7 @@ class ApiData:
         else:
             sys.exit(0)
 
+
 def loginAPI(bot_config):
     hp = helpers.Helpers()
     db = botconfig.Db()
@@ -37,11 +38,13 @@ def loginAPI(bot_config):
     else:
         sys.exit(0)
 
+
 db = botconfig.Db()
 bot_id = sys.argv[1]
 global bot_config
 bot_config = db.getConfigBot(bot_id)
 client = loginAPI(bot_config)
+
 
 class Binance_opr(ApiData):
     def getCandles(self, coin, period):
@@ -159,7 +162,6 @@ class Binance_opr(ApiData):
             [dict] -- this function returns a especific order
         """
         try:
-            # (str(bot_config['currency'])), orderId=orderID)
             order = client.get_order(
                 symbol=bot_config['currency'], orderId=orderID)
             return order
@@ -240,24 +242,25 @@ class Binance_opr(ApiData):
     def checkMinOrder(self, data_decision, bot_config, ammount):
         currency = str(bot_config['currency'])
         pair = currency[len(currency)-4:len(currency)]
-        print('minOrder ')
-        print('ammount ' + str(ammount))
-        print('minOrder ' + str(bot_config['min_order']))
         if(pair == 'USDT'):
-            priceBRL = ammount * 3.3 * data_decision ['price_now']
+            priceBRL = ammount * 3.3 * data_decision['price_now']
             print('usdt')
-            print('priceBRL ' + str(priceBRL))           
+            print('priceBRL ' + str(priceBRL))
             if(float(bot_config['min_order']) > priceBRL):
                 return False
             else:
                 return True
         else:
-            priceBRL = ammount * data_decision ['price_now'] * 3.3 * 8900
-            print('priceBRL ' + str(priceBRL))   
+            priceBRL = ammount * data_decision['price_now'] * 3.3 * 8900
+            print('priceBRL ' + str(priceBRL))
             if(float(bot_config['min_order']) > priceBRL):
                 return False
             else:
                 return True
+
+    def getOprProfit(self, data_decision, price, ammount):
+        return float(price) * ammount - data_decision['trans']['buy_value'] * \
+            ammount
 
     def createBuyOrder(self, data, bot_config, data_decision):
         """
@@ -316,12 +319,13 @@ class Binance_opr(ApiData):
         log = ('entrou na funcao de venda')
         hp.writeOutput(bot_config['id'], log)
         db = botconfig.Db()
-        if not (bot_config['active']):
-            log= ('inserindo os dados de venda no bd')
+
+        if bot_config['active'] == 2:
+            log = ('inserindo os dados de venda no bd')
             hp.writeOutput(bot_config['id'], log)
-            db.commitSellOrder(data)
+            db.commitSellOrder(data, bot_config)
         else:
-            if(bot_config['active']):
+            if (bot_config['active']):
                 log = ('Pronto pra criar ordem de venda')
                 hp.writeOutput(bot_config['id'], log)
                 price = "%.8f" % data_decision['price_now']
@@ -340,5 +344,17 @@ class Binance_opr(ApiData):
                 if not (newOrderStatus):
                     return
 
+                profit = 7700 * \
+                    float(self.getOprProfit(data_decision, price, ammount))
+                data['taxa'] = 0
+                if profit > 0:
+                    if (profit > float(bot_config['credits'])):
+                        data['credits'] = 0.0
+                        data['taxa'] = 0.0
+                    else:
+                        data['taxa'] = profit * 0.2
+                        data['credits'] = float(data['credits']) - float(data['taxa'])
+
+                data['profit'] = profit
                 data['sell_uuid'] = orderID
-                db.commitSellOrder(data)
+                db.commitSellOrder(data, bot_config)

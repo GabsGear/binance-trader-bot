@@ -1,0 +1,84 @@
+[2018-06-07 19:20:10] logando na  api
+[2018-06-07 19:20:11] Login Ok
+[2018-06-07 19:20:11] 1- Iniciando rotina de compra
+[2018-06-07 19:20:11] price now = 5.33e-06
+[2018-06-07 19:20:11] Buy at 5.29e-06
+[2018-06-07 19:20:11] price now = 5.33e-06
+[2018-06-07 19:20:11] Buy at 5.29e-06
+[2018-06-07 19:20:11] 2- Iniciando rotina de venda 
+[2018-06-07 19:20:11] ----Ainda nao ha nada para vender
+
+[2018-06-07 19:20:14] 1- Iniciando rotina de compra
+[2018-06-07 19:20:14] price now = 5.33e-06
+[2018-06-07 19:20:14] Buy at 5.29e-06
+[2018-06-07 19:20:14] price now = 5.33e-06
+[2018-06-07 19:20:14] Buy at 5.29e-06
+[2018-06-07 19:20:14] 2- Iniciando rotina de venda 
+[2018-06-07 19:20:14] ----Ainda nao ha nada para vender
+
+[2018-06-07 19:20:16] 1- Iniciando rotina de compra
+[2018-06-07 19:20:16] price now = 5.33e-06
+[2018-06-07 19:20:16] Buy at 5.29e-06
+[2018-06-07 19:20:16] price now = 5.33e-06
+[2018-06-07 19:20:16] Buy at 5.29e-06
+[2018-06-07 19:20:16] 2- Iniciando rotina de venda 
+[2018-06-07 19:20:16] ----Ainda nao ha nada para vender
+
+[2018-06-07 19:20:19] 1- Iniciando rotina de compra
+[2018-06-07 19:20:19] price now = 5.33e-06
+[2018-06-07 19:20:19] Buy at 5.29e-06
+[2018-06-07 19:20:19] price now = 5.33e-06
+[2018-06-07 19:20:19] Buy at 5.29e-06
+[2018-06-07 19:20:19] 2- Iniciando rotina de venda 
+[2018-06-07 19:20:19] ----Ainda nao ha nada para vender
+
+[2018-06-07 19:20:21] 1- Iniciando rotina de compra
+[2018-06-07 19:20:21] price now = 5.33e-06
+[2018-06-07 19:20:21] Buy at 5.29e-06
+[2018-06-07 19:20:21] price now = 5.33e-06
+[2018-06-07 19:20:21] Buy at 5.29e-06
+[2018-06-07 19:20:21] 2- Iniciando rotina de venda 
+[2018-06-07 19:20:21] ----Ainda nao ha nada para vender
+
+[2018-06-07 19:20:24] 1- Iniciando rotina de compra
+[2018-06-07 19:20:24] price now = 5.33e-06
+[2018-06-07 19:20:24] Buy at 5.29e-06
+[2018-06-07 19:20:24] price now = 5.33e-06
+[2018-06-07 19:20:24] Buy at 5.29e-06
+[2018-06-07 19:20:24] 2- Iniciando rotina de venda 
+[2018-06-07 19:20:24] ----Ainda nao ha nada para vender
+
+[2018-06-07 19:21:15] logando na  api
+[2018-06-07 19:21:16] Login Ok
+[2018-06-07 19:21:17] 1- Iniciando rotina de compra
+[2018-06-07 19:21:17] price now = 5.33e-06
+[2018-06-07 19:21:17] Buy at 5.29e-06
+[2018-06-07 19:21:17] price now = 5.33e-06
+[2018-06-07 19:21:17] Buy at 5.29e-06
+[2018-06-07 19:21:17] 2- Iniciando rotina de venda 
+[2018-06-07 19:21:17] ----Ainda nao ha nada para vender
+
+[2018-06-07 19:21:20] 1- Iniciando rotina de compra
+[2018-06-07 19:21:20] price now = 5.33e-06
+[2018-06-07 19:21:20] Buy at 5.29e-06
+[2018-06-07 19:21:20] price now = 5.33e-06
+[2018-06-07 19:21:20] Buy at 5.29e-06
+[2018-06-07 19:21:20] 2- Iniciando rotina de venda 
+[2018-06-07 19:21:20] ----Ainda nao ha nada para vender
+
+[2018-06-07 19:21:23] 1- Iniciando rotina de compra
+[2018-06-07 19:21:23] price now = 5.33e-06
+[2018-06-07 19:21:23] Buy at 5.29e-06
+[2018-06-07 19:21:23] price now = 5.33e-06
+[2018-06-07 19:21:23] Buy at 5.29e-06
+[2018-06-07 19:21:23] 2- Iniciando rotina de venda 
+[2018-06-07 19:21:23] ----Ainda nao ha nada para vender
+
+[2018-06-07 19:21:26] 1- Iniciando rotina de compra
+[2018-06-07 19:21:26] price now = 5.33e-06
+[2018-06-07 19:21:26] Buy at 5.29e-06
+[2018-06-07 19:21:26] price now = 5.33e-06
+[2018-06-07 19:21:26] Buy at 5.29e-06
+[2018-06-07 19:21:26] 2- Iniciando rotina de venda 
+[2018-06-07 19:21:26] ----Ainda nao ha nada para vender
+

@@ -1,0 +1,354 @@
+[2018-06-07 18:48:40] logando na  api
+[2018-06-07 18:48:41] Login Ok
+[2018-06-07 18:48:42] 1- Iniciando rotina de compra
+[2018-06-07 18:48:42] ---Existem ordens em aberto no banco de dados
+
+[2018-06-07 18:48:42] 2- Iniciando rotina de venda 
+[2018-06-07 18:48:42] ---Venda stop loss alvo 0.00713
+[2018-06-07 18:48:42] entrou na funcao de venda
+[2018-06-07 18:48:42] Pronto pra criar ordem de venda
+[2018-06-07 18:48:45] 1- Iniciando rotina de compra
+[2018-06-07 18:48:45] ---Existem ordens em aberto no banco de dados
+
+[2018-06-07 18:48:45] 2- Iniciando rotina de venda 
+[2018-06-07 18:48:45] ---Venda stop loss alvo 0.00713
+[2018-06-07 18:48:45] entrou na funcao de venda
+[2018-06-07 18:48:45] Pronto pra criar ordem de venda
+[2018-06-07 18:48:50] 1- Iniciando rotina de compra
+[2018-06-07 18:48:50] ---Existem ordens em aberto no banco de dados
+
+[2018-06-07 18:48:50] 2- Iniciando rotina de venda 
+[2018-06-07 18:48:50] ---Venda stop loss alvo 0.00713
+[2018-06-07 18:48:50] entrou na funcao de venda
+[2018-06-07 18:48:50] Pronto pra criar ordem de venda
+[2018-06-07 18:48:54] 1- Iniciando rotina de compra
+[2018-06-07 18:48:54] ---Existem ordens em aberto no banco de dados
+
+[2018-06-07 18:48:54] 2- Iniciando rotina de venda 
+[2018-06-07 18:48:54] ---Venda stop loss alvo 0.00713
+[2018-06-07 18:48:54] entrou na funcao de venda
+[2018-06-07 18:48:54] Pronto pra criar ordem de venda
+[2018-06-07 18:48:57] 1- Iniciando rotina de compra
+[2018-06-07 18:48:57] ---Existem ordens em aberto no banco de dados
+
+[2018-06-07 18:48:57] 2- Iniciando rotina de venda 
+[2018-06-07 18:48:57] ---Venda stop loss alvo 0.00713
+[2018-06-07 18:48:57] entrou na funcao de venda
+[2018-06-07 18:48:57] Pronto pra criar ordem de venda
+[2018-06-07 18:49:01] 1- Iniciando rotina de compra
+[2018-06-07 18:49:01] ---Existem ordens em aberto no banco de dados
+
+[2018-06-07 18:49:01] 2- Iniciando rotina de venda 
+[2018-06-07 18:49:01] ---Venda stop loss alvo 0.00713
+[2018-06-07 18:49:01] entrou na funcao de venda
+[2018-06-07 18:49:01] Pronto pra criar ordem de venda
+[2018-06-07 18:49:04] 1- Iniciando rotina de compra
+[2018-06-07 18:49:04] ---Existem ordens em aberto no banco de dados
+
+[2018-06-07 18:49:04] 2- Iniciando rotina de venda 
+[2018-06-07 18:49:04] ---Venda stop loss alvo 0.00713
+[2018-06-07 18:49:04] entrou na funcao de venda
+[2018-06-07 18:49:04] Pronto pra criar ordem de venda
+[2018-06-07 18:49:08] 1- Iniciando rotina de compra
+[2018-06-07 18:49:08] ---Existem ordens em aberto no banco de dados
+
+[2018-06-07 18:49:08] 2- Iniciando rotina de venda 
+[2018-06-07 18:49:08] ---Venda stop loss alvo 0.00713
+[2018-06-07 18:49:08] entrou na funcao de venda
+[2018-06-07 18:49:08] Pronto pra criar ordem de venda
+[2018-06-07 18:49:11] 1- Iniciando rotina de compra
+[2018-06-07 18:49:11] ---Existem ordens em aberto no banco de dados
+
+[2018-06-07 18:49:11] 2- Iniciando rotina de venda 
+[2018-06-07 18:49:11] ---Venda stop loss alvo 0.00713
+[2018-06-07 18:49:11] entrou na funcao de venda
+[2018-06-07 18:49:11] Pronto pra criar ordem de venda
+[2018-06-07 18:51:01] logando na  api
+[2018-06-07 18:51:03] Login Ok
+[2018-06-07 18:51:06] 1- Iniciando rotina de compra
+[2018-06-07 18:51:06] ---Existem ordens em aberto no banco de dados
+
+[2018-06-07 18:51:06] 2- Iniciando rotina de venda 
+[2018-06-07 18:51:06] ---Venda stop loss alvo 0.00713
+[2018-06-07 18:51:06] entrou na funcao de venda
+[2018-06-07 18:51:06] Pronto pra criar ordem de venda
+[2018-06-07 18:51:11] 1- Iniciando rotina de compra
+[2018-06-07 18:51:11] ---Existem ordens em aberto no banco de dados
+
+[2018-06-07 18:51:11] 2- Iniciando rotina de venda 
+[2018-06-07 18:51:11] ---Venda stop loss alvo 0.00713
+[2018-06-07 18:51:11] entrou na funcao de venda
+[2018-06-07 18:51:11] Pronto pra criar ordem de venda
+[2018-06-07 18:51:16] 1- Iniciando rotina de compra
+[2018-06-07 18:51:16] ---Existem ordens em aberto no banco de dados
+
+[2018-06-07 18:51:16] 2- Iniciando rotina de venda 
+[2018-06-07 18:51:16] ---Venda stop loss alvo 0.00713
+[2018-06-07 18:51:16] entrou na funcao de venda
+[2018-06-07 18:51:16] Pronto pra criar ordem de venda
+[2018-06-07 18:51:21] 1- Iniciando rotina de compra
+[2018-06-07 18:51:21] ---Existem ordens em aberto no banco de dados
+
+[2018-06-07 18:51:21] 2- Iniciando rotina de venda 
+[2018-06-07 18:51:21] ---Venda stop loss alvo 0.00713
+[2018-06-07 18:51:21] entrou na funcao de venda
+[2018-06-07 18:51:21] Pronto pra criar ordem de venda
+[2018-06-07 18:51:26] 1- Iniciando rotina de compra
+[2018-06-07 18:51:26] ---Existem ordens em aberto no banco de dados
+
+[2018-06-07 18:51:26] 2- Iniciando rotina de venda 
+[2018-06-07 18:51:26] ---Venda stop loss alvo 0.00713
+[2018-06-07 18:51:26] entrou na funcao de venda
+[2018-06-07 18:51:26] Pronto pra criar ordem de venda
+[2018-06-07 18:51:31] 1- Iniciando rotina de compra
+[2018-06-07 18:51:31] ---Existem ordens em aberto no banco de dados
+
+[2018-06-07 18:51:31] 2- Iniciando rotina de venda 
+[2018-06-07 18:51:31] ---Venda stop loss alvo 0.00713
+[2018-06-07 18:51:31] entrou na funcao de venda
+[2018-06-07 18:51:31] Pronto pra criar ordem de venda
+[2018-06-07 18:51:35] 1- Iniciando rotina de compra
+[2018-06-07 18:51:35] ---Existem ordens em aberto no banco de dados
+
+[2018-06-07 18:51:35] 2- Iniciando rotina de venda 
+[2018-06-07 18:51:35] ---Venda stop loss alvo 0.00713
+[2018-06-07 18:51:35] entrou na funcao de venda
+[2018-06-07 18:51:35] Pronto pra criar ordem de venda
+[2018-06-07 18:51:40] 1- Iniciando rotina de compra
+[2018-06-07 18:51:40] ---Existem ordens em aberto no banco de dados
+
+[2018-06-07 18:51:40] 2- Iniciando rotina de venda 
+[2018-06-07 18:51:40] ---Venda stop loss alvo 0.00713
+[2018-06-07 18:51:40] entrou na funcao de venda
+[2018-06-07 18:51:40] Pronto pra criar ordem de venda
+[2018-06-07 18:51:51] logando na  api
+[2018-06-07 18:51:52] Login Ok
+[2018-06-07 18:51:56] 1- Iniciando rotina de compra
+[2018-06-07 18:51:56] ---Existem ordens em aberto no banco de dados
+
+[2018-06-07 18:51:56] 2- Iniciando rotina de venda 
+[2018-06-07 18:51:56] ---Venda stop loss alvo 0.00713
+[2018-06-07 18:51:56] entrou na funcao de venda
+[2018-06-07 18:51:56] Pronto pra criar ordem de venda
+[2018-06-07 18:52:00] 1- Iniciando rotina de compra
+[2018-06-07 18:52:00] ---Existem ordens em aberto no banco de dados
+
+[2018-06-07 18:52:00] 2- Iniciando rotina de venda 
+[2018-06-07 18:52:00] ---Venda stop loss alvo 0.00713
+[2018-06-07 18:52:00] entrou na funcao de venda
+[2018-06-07 18:52:00] Pronto pra criar ordem de venda
+[2018-06-07 18:52:05] 1- Iniciando rotina de compra
+[2018-06-07 18:52:05] ---Existem ordens em aberto no banco de dados
+
+[2018-06-07 18:52:05] 2- Iniciando rotina de venda 
+[2018-06-07 18:52:05] ---Venda stop loss alvo 0.00713
+[2018-06-07 18:52:05] entrou na funcao de venda
+[2018-06-07 18:52:05] Pronto pra criar ordem de venda
+[2018-06-07 18:52:10] 1- Iniciando rotina de compra
+[2018-06-07 18:52:10] ---Existem ordens em aberto no banco de dados
+
+[2018-06-07 18:52:10] 2- Iniciando rotina de venda 
+[2018-06-07 18:52:10] ---Venda stop loss alvo 0.00713
+[2018-06-07 18:52:10] entrou na funcao de venda
+[2018-06-07 18:52:10] Pronto pra criar ordem de venda
+[2018-06-07 18:52:15] 1- Iniciando rotina de compra
+[2018-06-07 18:52:15] ---Existem ordens em aberto no banco de dados
+
+[2018-06-07 18:52:15] 2- Iniciando rotina de venda 
+[2018-06-07 18:52:15] ---Venda stop loss alvo 0.00713
+[2018-06-07 18:52:15] entrou na funcao de venda
+[2018-06-07 18:52:15] Pronto pra criar ordem de venda
+[2018-06-07 18:52:20] 1- Iniciando rotina de compra
+[2018-06-07 18:52:20] ---Existem ordens em aberto no banco de dados
+
+[2018-06-07 18:52:20] 2- Iniciando rotina de venda 
+[2018-06-07 18:52:20] ---Venda stop loss alvo 0.00713
+[2018-06-07 18:52:20] entrou na funcao de venda
+[2018-06-07 18:52:20] Pronto pra criar ordem de venda
+[2018-06-07 18:52:25] 1- Iniciando rotina de compra
+[2018-06-07 18:52:25] ---Existem ordens em aberto no banco de dados
+
+[2018-06-07 18:52:25] 2- Iniciando rotina de venda 
+[2018-06-07 18:52:25] ---Venda stop loss alvo 0.00713
+[2018-06-07 18:52:25] entrou na funcao de venda
+[2018-06-07 18:52:25] Pronto pra criar ordem de venda
+[2018-06-07 18:53:33] logando na  api
+[2018-06-07 18:53:39] Login Ok
+[2018-06-07 18:53:40] 1- Iniciando rotina de compra
+[2018-06-07 18:53:40] indicou compra no break.
+[2018-06-07 18:53:40] indicou compra no break.
+[2018-06-07 18:53:42] 2- Iniciando rotina de venda 
+[2018-06-07 18:53:42] ----Ainda nao ha nada para vender
+
+[2018-06-07 18:53:45] 1- Iniciando rotina de compra
+[2018-06-07 18:53:45] indicou compra no break.
+[2018-06-07 18:53:45] indicou compra no break.
+[2018-06-07 18:53:46] 2- Iniciando rotina de venda 
+[2018-06-07 18:53:46] ----Ainda nao ha nada para vender
+
+[2018-06-07 18:53:49] 1- Iniciando rotina de compra
+[2018-06-07 18:53:49] indicou compra no break.
+[2018-06-07 18:53:49] indicou compra no break.
+[2018-06-07 18:53:50] 2- Iniciando rotina de venda 
+[2018-06-07 18:53:50] ----Ainda nao ha nada para vender
+
+[2018-06-07 18:53:53] 1- Iniciando rotina de compra
+[2018-06-07 18:53:53] indicou compra no break.
+[2018-06-07 18:53:53] indicou compra no break.
+[2018-06-07 18:53:55] 2- Iniciando rotina de venda 
+[2018-06-07 18:53:55] ----Ainda nao ha nada para vender
+
+[2018-06-07 18:53:58] 1- Iniciando rotina de compra
+[2018-06-07 18:53:58] indicou compra no break.
+[2018-06-07 18:53:58] indicou compra no break.
+[2018-06-07 18:54:00] 2- Iniciando rotina de venda 
+[2018-06-07 18:54:00] ----Ainda nao ha nada para vender
+
+[2018-06-07 18:54:03] 1- Iniciando rotina de compra
+[2018-06-07 18:54:03] indicou compra no break.
+[2018-06-07 18:54:03] indicou compra no break.
+[2018-06-07 18:54:04] 2- Iniciando rotina de venda 
+[2018-06-07 18:54:04] ----Ainda nao ha nada para vender
+
+[2018-06-07 18:54:07] 1- Iniciando rotina de compra
+[2018-06-07 18:54:07] indicou compra no break.
+[2018-06-07 18:54:07] indicou compra no break.
+[2018-06-07 18:54:09] 2- Iniciando rotina de venda 
+[2018-06-07 18:54:09] ----Ainda nao ha nada para vender
+
+[2018-06-07 18:54:11] 1- Iniciando rotina de compra
+[2018-06-07 18:54:11] indicou compra no break.
+[2018-06-07 18:54:11] indicou compra no break.
+[2018-06-07 18:54:13] 2- Iniciando rotina de venda 
+[2018-06-07 18:54:13] ----Ainda nao ha nada para vender
+
+[2018-06-07 18:54:17] 1- Iniciando rotina de compra
+[2018-06-07 18:54:17] indicou compra no break.
+[2018-06-07 18:54:17] indicou compra no break.
+[2018-06-07 18:54:18] 2- Iniciando rotina de venda 
+[2018-06-07 18:54:18] ----Ainda nao ha nada para vender
+
+[2018-06-07 18:54:22] 1- Iniciando rotina de compra
+[2018-06-07 18:54:22] indicou compra no break.
+[2018-06-07 18:54:22] indicou compra no break.
+[2018-06-07 18:54:24] 2- Iniciando rotina de venda 
+[2018-06-07 18:54:24] ----Ainda nao ha nada para vender
+
+[2018-06-07 18:54:27] 1- Iniciando rotina de compra
+[2018-06-07 18:54:27] indicou compra no break.
+[2018-06-07 18:54:27] indicou compra no break.
+[2018-06-07 18:54:28] 2- Iniciando rotina de venda 
+[2018-06-07 18:54:28] ----Ainda nao ha nada para vender
+
+[2018-06-07 18:54:31] 1- Iniciando rotina de compra
+[2018-06-07 18:54:31] indicou compra no break.
+[2018-06-07 18:54:31] indicou compra no break.
+[2018-06-07 18:54:32] 2- Iniciando rotina de venda 
+[2018-06-07 18:54:32] ----Ainda nao ha nada para vender
+
+[2018-06-07 18:54:35] 1- Iniciando rotina de compra
+[2018-06-07 18:54:35] indicou compra no break.
+[2018-06-07 18:54:35] indicou compra no break.
+[2018-06-07 18:54:59] logando na  api
+[2018-06-07 18:55:00] Login Ok
+[2018-06-07 18:55:01] 1- Iniciando rotina de compra
+[2018-06-07 18:55:01] indicou compra no break.
+[2018-06-07 18:55:01] indicou compra no break.
+[2018-06-07 18:55:02] Erro, nao foi possivel abrir a ordem
+[2018-06-07 18:55:02] 2- Iniciando rotina de venda 
+[2018-06-07 18:55:02] ----Ainda nao ha nada para vender
+
+[2018-06-07 18:55:06] 1- Iniciando rotina de compra
+[2018-06-07 18:55:06] indicou compra no break.
+[2018-06-07 18:55:06] indicou compra no break.
+[2018-06-07 18:55:07] Erro, nao foi possivel abrir a ordem
+[2018-06-07 18:55:07] 2- Iniciando rotina de venda 
+[2018-06-07 18:55:07] ----Ainda nao ha nada para vender
+
+[2018-06-07 18:55:10] 1- Iniciando rotina de compra
+[2018-06-07 18:55:10] indicou compra no break.
+[2018-06-07 18:55:10] indicou compra no break.
+[2018-06-07 18:55:12] Erro, nao foi possivel abrir a ordem
+[2018-06-07 18:55:12] 2- Iniciando rotina de venda 
+[2018-06-07 18:55:12] ----Ainda nao ha nada para vender
+
+[2018-06-07 18:55:15] 1- Iniciando rotina de compra
+[2018-06-07 18:55:15] indicou compra no break.
+[2018-06-07 18:55:15] indicou compra no break.
+[2018-06-07 18:55:17] Erro, nao foi possivel abrir a ordem
+[2018-06-07 18:55:17] 2- Iniciando rotina de venda 
+[2018-06-07 18:55:17] ----Ainda nao ha nada para vender
+
+[2018-06-07 18:58:56] logando na  api
+[2018-06-07 18:58:57] Login Ok
+[2018-06-07 18:58:58] 1- Iniciando rotina de compra
+[2018-06-07 18:58:58] indicou compra no break.
+[2018-06-07 18:58:58] indicou compra no break.
+[2018-06-07 18:59:00] BTC SEM FORCA
+[2018-06-07 18:59:00] 2- Iniciando rotina de venda 
+[2018-06-07 18:59:00] ----Ainda nao ha nada para vender
+
+[2018-06-07 18:59:03] 1- Iniciando rotina de compra
+[2018-06-07 18:59:03] indicou compra no break.
+[2018-06-07 18:59:03] indicou compra no break.
+[2018-06-07 18:59:04] BTC SEM FORCA
+[2018-06-07 18:59:04] 2- Iniciando rotina de venda 
+[2018-06-07 18:59:04] ----Ainda nao ha nada para vender
+
+[2018-06-07 18:59:07] 1- Iniciando rotina de compra
+[2018-06-07 18:59:07] indicou compra no break.
+[2018-06-07 18:59:07] indicou compra no break.
+[2018-06-07 18:59:09] BTC SEM FORCA
+[2018-06-07 18:59:09] 2- Iniciando rotina de venda 
+[2018-06-07 18:59:09] ----Ainda nao ha nada para vender
+
+[2018-06-07 18:59:12] 1- Iniciando rotina de compra
+[2018-06-07 18:59:12] indicou compra no break.
+[2018-06-07 18:59:12] indicou compra no break.
+[2018-06-07 18:59:13] BTC SEM FORCA
+[2018-06-07 18:59:13] 2- Iniciando rotina de venda 
+[2018-06-07 18:59:13] ----Ainda nao ha nada para vender
+
+[2018-06-07 18:59:16] 1- Iniciando rotina de compra
+[2018-06-07 18:59:16] indicou compra no break.
+[2018-06-07 18:59:16] indicou compra no break.
+[2018-06-07 18:59:18] BTC SEM FORCA
+[2018-06-07 18:59:18] 2- Iniciando rotina de venda 
+[2018-06-07 18:59:18] ----Ainda nao ha nada para vender
+
+[2018-06-07 18:59:21] 1- Iniciando rotina de compra
+[2018-06-07 18:59:21] indicou compra no break.
+[2018-06-07 18:59:21] indicou compra no break.
+[2018-06-07 18:59:23] BTC SEM FORCA
+[2018-06-07 18:59:23] 2- Iniciando rotina de venda 
+[2018-06-07 18:59:23] ----Ainda nao ha nada para vender
+
+[2018-06-07 18:59:25] 1- Iniciando rotina de compra
+[2018-06-07 18:59:25] indicou compra no break.
+[2018-06-07 18:59:25] indicou compra no break.
+[2018-06-07 18:59:27] BTC SEM FORCA
+[2018-06-07 18:59:27] 2- Iniciando rotina de venda 
+[2018-06-07 18:59:27] ----Ainda nao ha nada para vender
+
+[2018-06-07 18:59:32] logando na  api
+[2018-06-07 18:59:33] Login Ok
+[2018-06-07 18:59:35] 1- Iniciando rotina de compra
+[2018-06-07 18:59:35] indicou compra no break.
+[2018-06-07 18:59:35] indicou compra no break.
+[2018-06-07 18:59:38] BTC SEM FORCA
+[2018-06-07 18:59:38] 2- Iniciando rotina de venda 
+[2018-06-07 18:59:38] ----Ainda nao ha nada para vender
+
+[2018-06-07 18:59:42] 1- Iniciando rotina de compra
+[2018-06-07 18:59:42] indicou compra no break.
+[2018-06-07 18:59:42] indicou compra no break.
+[2018-06-07 19:18:33] logando na  api
+[2018-06-07 19:18:39] Login Ok
+[2018-06-07 19:18:41] 1- Iniciando rotina de compra
+[2018-06-07 19:18:41] 2- Iniciando rotina de venda 
+[2018-06-07 19:18:41] ----Ainda nao ha nada para vender
+
+[2018-06-07 19:18:44] 1- Iniciando rotina de compra
+[2018-06-07 19:18:44] 2- Iniciando rotina de venda 
+[2018-06-07 19:18:44] ----Ainda nao ha nada para vender
+

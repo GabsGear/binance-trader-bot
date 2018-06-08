@@ -65,5 +65,5 @@ class Helpers:
                 + str(llow[item]) + ',' + str(lclose[item]) + ',' + str(lclose[item]) +','+ str(lvol[item]) + '\n')
 
     def logcsv(self,string):
-        thefile = open('/home/gabs/Backend/Backend/Testador/Baktrader/logs/log.csv', 'w')
+        thefile = open('/home/gabs/Backend/Backend/Testador/Baktrader/logs/log.csv', 'a')
         thefile.write(str(string) + '\n')

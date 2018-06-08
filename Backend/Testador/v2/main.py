@@ -7,7 +7,7 @@ import botconfig
 import sys
 import routines
 import time
-import os
+import os 
 from binance.client import Client
 
 
