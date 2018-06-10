@@ -8,7 +8,6 @@ def getCandles(market, time):
 	bittrex = bit.Bittrex('', '', api_version='v2.0')
 	return bittrex.get_candles(market, time)['result']
 
-
 def btc_perc():
 	datas = getCandleList('USDT-BTC', 'day') 
 	###################

@@ -80,7 +80,6 @@ class Functions():
             bot_config {[dict]} -- bot setup
             data_decision {[dict]} -- transactions detals
         """
-        print('Selecionando estrategia numero ' + str(bot_config['strategy_buy']))
         st = strategies.StrategiesBase()
         if(bot_config['strategy_buy'] == 0):
             return st.startTurtle(bot_config, data_decision) #CONTRA TURTLE
@@ -122,7 +121,6 @@ class Functions():
         hp.writeOutput(bot_config['id'], log)
         
         data = self.getSellData(bot_config, data_decision)
-        
         if(data_decision['price_now'] <= stoploss):
             log = ('---Venda stop loss alvo ' + str(stoploss))
             hp.writeOutput(bot_config['id'], log)
@@ -177,6 +175,8 @@ class Routines(Functions):
         credits = float(bot_config['credits'])
         
         if(credits <= 0):
+            log = ('-- CREDITOS INSUFICIENTES')
+            hp.writeOutput(bot_config['id'], log)
             return
         
         if(super().orderBuyStatus(bot_config, data_decision)):

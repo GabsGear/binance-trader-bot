@@ -32,6 +32,7 @@ def loginAPI(bot_config):
     acc_config = db.getConfigAcc(str(bot_config['user_id']))
     client = Client(str(acc_config['api_key']), str(acc_config['api_secret']))
     status = client.get_system_status()
+
     if (status['msg'] == 'normal'):
         log = ("Login Ok")
         hp.writeOutput(bot_config['id'], log)
@@ -206,6 +207,7 @@ class Binance_opr(ApiData):
 
     def checkPrecision(self, bot_config, ammount):
         precision = float(self.getPrecision(bot_config['currency']))
+        
         if (precision == 1):
             return int(ammount)
         elif (precision == 0.01):
@@ -245,15 +247,12 @@ class Binance_opr(ApiData):
         pair = currency[len(currency)-4:len(currency)]
         if(pair == 'USDT'):
             priceBRL = ammount * 3.3 * data_decision['price_now']
-            print('usdt')
-            print('priceBRL ' + str(priceBRL))
             if(float(bot_config['min_order']) > priceBRL):
                 return False
             else:
                 return True
         else:
             priceBRL = ammount * data_decision['price_now'] * 3.3 * 8900
-            print('priceBRL ' + str(priceBRL))
             if(float(bot_config['min_order']) > priceBRL):
                 return False
             else:
@@ -277,20 +276,18 @@ class Binance_opr(ApiData):
                 hp.writeOutput(bot_config['id'], log)
                 db.insertBuyOrder(data)
                 time.sleep(30)
+            
             else:
                 price = "%.8f" % (data_decision['price_now'])
                 if(bot_config['active'] == 1):
                     ammount = float(self.getClientBalance(
                         client, bot_config))*bot_config['order_value']/float(data_decision['price_now'])
                     ammount = self.checkPrecision(bot_config, ammount)
-                   
                     if not self.checkMinOrder(data_decision, bot_config, ammount):
                         log = ('Erro minOrder')
                         hp.writeOutput(bot_config['id'], log)
                         return
-                   
                     if(st.btcPercentage() < 0.5):
-                        print("--Bitcoin sem forca nao vou comprar.")
                         log = ("--Bitcoin sem forca nao vou comprar.")
                         hp.writeOutput(bot_config['id'], log)
                         return 
