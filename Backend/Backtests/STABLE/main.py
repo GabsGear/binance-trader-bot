@@ -19,9 +19,9 @@ def main():
 	cerebro.addanalyzer(bt.analyzers.DrawDown, _name="myDrawDown")
 	cerebro.addanalyzer(bt.analyzers.SQN, _name="SQN")
 
-	datapath=(r'''C:\Users\Pichau\Documents\work\protraderbot\git\backend\backtest\candles''')
-
-	data = dataFeed(dataname=datapath+"\\"+str(sys.argv[1])+"-"+str(sys.argv[2])+".csv", timeframe=bt.TimeFrame.Minutes, compression=60)
+	datapath=('/home/gabs/Backend/Backend/Backtests/STABLE/datasets/')
+	#ADABTC-Day-Jul, 2017-May, 2018
+	data = dataFeed(dataname=datapath+"\\"+str(sys.argv[1])+"-"+str(sys.argv[2])+"-Jul, 2017-May, 2018.csv", timeframe=bt.TimeFrame.Minutes, compression=60)
 
 	cerebro.adddata(data)
 	#data = cerebro.resampledata(data, timeframe=bt.TimeFrame.Minutes, compression=1440)
@@ -58,7 +58,7 @@ class dataFeed(btfeed.GenericCSVData):
         ('high', 2),
         ('low', 3),
         ('close', 4),
-        ('volume', 5),
+        ('volume', 6),
         ('openinterest', -1)
     )
 

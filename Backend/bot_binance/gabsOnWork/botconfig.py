@@ -11,7 +11,7 @@ class Db:
     def getConn(self):
         try:
             db = mysql.connect(host="localhost", user="root",
-                               passwd="gabsghell", db="protrade")
+                               passwd="gabsghell", db="protrader")
             #db = mysql.connect(host="127.0.0.1", user="root", passwd="Gv9KP70E316v", db="protrader")
             cursor = db.cursor()
             return db, cursor
@@ -31,20 +31,17 @@ class Db:
         dt = helpers.Helpers()
         db, cursor = self.getConn()
         row, trans = self.getBuyOrders(data['bot_id'])
-        query = ("UPDATE transactions SET sell_value=(%s), selled=(%s), date_close=(%s), sell_uuid=(%s), taxa=(%s) , profit=(%s)  WHERE id=(%s)")
+        query = ("UPDATE transactions SET sell_value=(%s), selled=(%s), date_close=(%s), sell_uuid=(%s), t_profit=(%s), taxa=(%s)  WHERE id=(%s)")
         value = float(data['sell_value'])
         profit = float(data['profit'])
         taxa = float(data['taxa'])
         cursor.execute(query, (value, "1", dt.time_now(),
-                               data['sell_uuid'], taxa, profit, trans['id']))
+                               data['sell_uuid'], profit, taxa, trans['id']))
         db.commit()
 
-        query = ("UPDATE bot SET credits = (%s) WHERE id=(%s)")
+        query = ("UPDATE users SET credits = (%s) WHERE id=(%s)")
         credits = str(data['credits'])
-        print(credits)
-        print(bot_config['id'])
-        cursor.execute(query, (credits, bot_config['id']))
-        print('a')
+        cursor.execute(query, (credits, bot_config['user_id']))
         db.commit()
         cursor.close()
 
@@ -87,8 +84,8 @@ class Db:
             'id': data[0],
             'name': data[1],
             'email': data[2],
-            'api_secret': data[9],
-            'api_key': data[8],
+            'api_secret': data[8],
+            'api_key': data[7],
         }
         return obj
         # except:
@@ -116,8 +113,16 @@ class Db:
                 'period': data[9],
                 'stoploss': data[10],
                 'min_order': data[11],
-                'credits': data[12]
+                'credits': ''
             }
+
+            db, cursor = self.getConn()
+            query = ("SELECT * FROM users WHERE id = %s")
+            cursor.execute(query, (obj['user_id'],))
+            data = cursor.fetchone()
+            db.commit()
+            cursor.close()
+            obj['credits'] = data[9]
             return obj
         except:
             print('Erro, getCOnfigBot()')

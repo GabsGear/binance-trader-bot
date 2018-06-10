@@ -22,7 +22,7 @@ def main():
         st = strategies.Desicion(lopen, lhigh, llow, lclose, lvol, closetime)
         data_decision = st.getDataDecision(bot_config)
         routine(bot_id, data_decision)
-        time.sleep(30)
+        time.sleep(1)
 
 def routine(bot_id, data_decision):
     db = botconfig.Db()
