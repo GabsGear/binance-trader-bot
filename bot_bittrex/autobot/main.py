@@ -1,16 +1,18 @@
 import Bittrex as _BITTREX
-import Strategy as _STRATEGY
+#import Strategy as _STRATEGY
 import sys
+import Bot as _BOT
+import db as _DATABASE
+import time
 
 def main():
-	bot_id = sys.argv[1]
-	Bittrex = _BITTREX.Bittrex(21) # Instace of class Bittrex
-	Bot = Bittrex.bot # Instace of class Bot
-	User = Bittrex.user # Instace of class Bot
-	
+	#Bittrex = _BITTREX.Bittrex() # Instace of class Bittrex
+	Bot = _BOT.Bot(id =21, user_id=21, pid =None, status=0) # Instace of class Bot
+	#User = Bittrex.user # Instace of class Bot
 	while(True):
-		Bot.check_buy()
-		Bot.check_sell()
+		Bot.buy_routine()
+		Bot.sell_routine()
+		time.sleep(30)
 
 	
 

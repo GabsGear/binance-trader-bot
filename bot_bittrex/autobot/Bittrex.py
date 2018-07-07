@@ -8,33 +8,34 @@ import Bot as _BOT
 import User as _USER
 
 class Bittrex():
-	def __init__(self, bot_id):
-		self.bot   = db.getInstanceBot(bot_id)
-		self.user  = _USER.User(self.bot.user_id)
+	def __init__(self):
 		self.api_1 = _LIB.Bittrex('', '', api_version='v1.1')
 		self.api_2 = _LIB.Bittrex('', '', api_version='v2.0')
-		self.auth  = _LIB.Bittrex(self.user.key, self.user.secret, api_version='v1.1')
 
 
 	def getCandles(self, pair):
+		#print(self.api_2.get_candles(pair, 'hour')['result'])
 		return self.api_2.get_candles(pair, 'hour')['result']
 
 	def getCandleList(self, pair): 
 		candles = None
 		while(candles == None):
+			print("[+] Request Schedule to Bittrex...")
 			candles = self.getCandles(pair)
 			time.sleep(10)
 		###################
-		o, h, c, l = [], [], [], []
+		t, o, h, c, l, v = [], [], [], [], [], []
 		####################
 		size = len(candles)-101
 		total = 0
 		for i in range(size, len(candles)-1):
+			t.append(candles[i]['T'])
 			o.append(candles[i]['O'])
 			h.append(candles[i]['H'])
 			c.append(candles[i]['C'])
 			l.append(candles[i]['L'])
-		return o, h, c, l
+			v.append(candles[i]['V'])
+		return t, o, h, c, l, v
 		
 
 	def getTicker(self, pair):
@@ -49,9 +50,6 @@ class Bittrex():
 	def getOrder(self):
 		return self.api_2.get_order(uuid)
 
-	def getBalance(self):
-		if(self.bot.market == 'USDT'):
-			return self.api_2.get_balance('USDT')['result']['Available']
-		else:
-			return self.api_2.get_balance('BTC')['result']['Available']
+	def getBalance(self, market):
+		return self.api_2.get_balance(market)['result']['Available']
 

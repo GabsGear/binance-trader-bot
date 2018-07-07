@@ -34,7 +34,6 @@ def contra_turtle(bot_config):
 		if(last_l[0] <= min(tomin)):
 			return 'buy'
 
-
 	return 'none'
 
 def break_channel(bot_config):
@@ -155,7 +154,7 @@ def map(bot_config):
 		0: contra_turtle(bot_config), #CONTRA TURTLE
 		1: inside_bar(bot_config), #INSIDE BAR
 		2: double_up(bot_config), #DOUBLLE UP
-		#3:pivot_up(bot_config), #PIVOT UP
+		3: pivot_up(bot_config), #PIVOT UP
 		4: rsi_max(bot_config), #RSI RESISTANCE
 		6: break_channel(bot_config), #BREAK CHANNEL
 	}

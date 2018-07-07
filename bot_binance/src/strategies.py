@@ -106,11 +106,10 @@ class StrategiesBase(statics):
         size = len(lclose)
         prev = lclose[size-1:size][0]
         varr = self.perc(prev, price)
-        if(varr > 0.5):
-            return 1 
-        else: return 0
+        return float(varr)
 
     def startTurtle(self, bot_config, data):
+        print("to na turtle")
         price_now = str(data['price_now'])
         hp = helpers.Helpers()
 
@@ -127,7 +126,10 @@ class StrategiesBase(statics):
         if(len(tomin) > 0):
             minn = min(tomin)
             maxx = max(tomax)
-            log = ('Buy at ' + str(minn))
+            log = ('Buy ata ' + str(minn))
+            hp.writeOutput(bot_config['id'], log)
+            log = ('LASTLOW ' + str(last_l[0]))
+            print('LASTLOW ' + str(last_l[0]))
             hp.writeOutput(bot_config['id'], log)
             if(last_l[0] <= minn):
                 log = ('sinal buy')
@@ -273,6 +275,7 @@ class StrategiesBase(statics):
         interval = 20  # numero de candles
         nDesvios = 2  # numero de desvios padrao
         size = len(lclose)
+        hp = helpers.Helpers()
 
         close = lclose[size - interval: size]
         mean = np.mean(close)
@@ -280,7 +283,7 @@ class StrategiesBase(statics):
 
         upperBand = mean + (desvio * nDesvios)
         lowerBand = mean - (desvio * nDesvios)
-
+        hp.writeOutput(bot_config['id'], "[+] lastlow:"+str(llow[size-1])+"/lowerband:"+str(lowerBand))
         if(llow[size-1] <= lowerBand):
             return 'buy'
 

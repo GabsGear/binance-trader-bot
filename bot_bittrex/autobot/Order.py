@@ -1,4 +1,4 @@
-import db
+import db as _DATABASE
 
 		
 class Order():
@@ -13,11 +13,15 @@ class Order():
 		self.status = status
 
 	def execute_buy(self):
-		db.insertBuyOrder(self)
+		Database = _DATABASE.Database()
+		print("[+4+] Abrindo uma ordem para o par: %s-%s"% (self.market, self.currency))
+		Database.open_order(self)
 		return
 	
 	def execute_sell(self):
-		db.commitSellOrder(self)
+		Database = _DATABASE.Database()
+		print("[+4+] Fechando uma ordem para o par: %s-%s"% (self.market, self.currency))
+		Database.close_order(self)
 		return
 	
 		

@@ -1,15 +1,8 @@
-from talib import MA_Type
 import sys
-import json
-import io
 import numpy as np
-from talib.abstract import *
 import talib as tb
 import time as t
 import datetime
-import urllib2
-import signal
-import pytz
 import strategy
 import db
 import bittrex_func
@@ -29,7 +22,7 @@ def main():
 
 def routine(bot_id):
 	t.sleep(30)
-	#print ("--[1]--Iniciando Rotina... \n")
+	print ("--[1]--Iniciando Rotina... \n")
 	bot_config = db.getConfigBot(bot_id)
 	tryBuy(bot_config) ##VERIFICANDO ESTRATEGIA DE COMPRA
 	trySell(bot_config) ##VERIFICANDO ESTRATEGIA DE VENDA
@@ -38,17 +31,21 @@ def tryBuy(bot_config):
 	##CARREGANDO DADOS DE DECISAO
 	price_now = bittrex_func.getTicker(bot_config['currency'])
 	trans = db.getOrder(bot_config['id'])
+	user = db.getConfigAcc(bot_config['user_id'])
 	#############
-	#print ("--[2]--Checkando se posso comprar... \n")
+	print ("--[2]--Checkando se posso comprar... \n")
 	if(orderBuyStatus(bot_config) == 1): #VERIFICANDO PENDENCIA DE ORDENS
 		return
 	
+	if(bot_config['active'] == 1 and user['credits'] <= 0):
+		return
+		
 	##CHECANDO BITCOIN
-	if(strategy.btc_percentage() == 0 and bot_config['follow'] == 1):
+	if(strategy.btc_percentage() == 0):
 		print("[+] Bitcoin sem forca nao vou comprar.")
 		return
 
-	#print ("--[4]--Checagem de compra concluida, agora posso receber sinais de compra.. \n")
+	print ("--[4]--Checagem de compra concluida, agora posso receber sinais de compra.. \n")
 	
 	####################################
 	#DADOS PARA INSERCAO SQL
@@ -68,10 +65,10 @@ def trySell(bot_config):
 	price_now = bittrex_func.getTicker(bot_config['currency'])
 	trans = db.getOrder(bot_config['id'])
 	#############
-	#print ("--[7]--Checkando se posso vender... \n")
+	print ("--[7]--Checkando se posso vender... \n")
 	if(orderSellStatus(bot_config) == 1): #VERIFICANDO PENDENCIA DE ORDENS
 		return
-	#print ("--[9]--Checagem de venda conluida... \n")
+	print ("--[9]--Checagem de venda conluida... \n")
 	###################################
 	#DADOS SQL PARA INSERCAO
 	data = {
@@ -84,31 +81,51 @@ def trySell(bot_config):
 	###################################
 
 def checkBuy(data, bot_config, price_now):
-	for i in range(0, 7): #0 a 4
-		if(bot_config['strategy_buy'] == i):
-			#print ("--[5]--Recebendo sinais de compra.. \n")
-			if(strategy.map(bot_config)[i] == 'buy'):
-				#print ("--[5]--Tentando comprar.. \n")
-				bittrex_func.buyLimit(data, bot_config, price_now)
+	BUY_FLAG = 0
+	if(bot_config['strategy_buy'] == 0):
+		BUY_SIGNAL = strategy.contra_turtle(bot_config)
+		print("[+] RECEIVING SIGNAL FOR STT: %s, SIGNAL: %s \n"% (0, BUY_SIGNAL))
+		if(BUY_SIGNAL == 'buy'):
+			BUY_FLAG = 1
+	elif (bot_config['strategy_buy'] == 1):
+		BUY_SIGNAL = strategy.inside_bar(bot_config)
+		print("[+] RECEIVING SIGNAL FOR STT: %s, SIGNAL: %s \n"% (1, BUY_SIGNAL))
+		if(BUY_SIGNAL == 'buy'):
+			BUY_FLAG = 1
+	elif (bot_config['strategy_buy'] == 2):
+		BUY_SIGNAL = strategy.double_up(bot_config)
+		print("[+] RECEIVING SIGNAL FOR STT: %s, SIGNAL: %s \n"% (2, BUY_SIGNAL))
+		if(BUY_SIGNAL == 'buy'):
+			BUY_FLAG = 1
+	elif (bot_config['strategy_buy'] == 3):
+		BUY_SIGNAL = strategy.pivot_up(bot_config)
+		print("[+] RECEIVING SIGNAL FOR STT: %s, SIGNAL: %s \n"% (3, BUY_SIGNAL))
+		if(BUY_SIGNAL == 'buy'):
+			BUY_FLAG = 1
+	elif (bot_config['strategy_buy'] == 4):
+		BUY_SIGNAL = strategy.rsi_max(bot_config)
+		print("[+] RECEIVING SIGNAL FOR STT: %s, SIGNAL: %s \n"% (4, BUY_SIGNAL))
+		if(BUY_SIGNAL == 'buy'):
+			BUY_FLAG = 1
+	elif (bot_config['strategy_buy'] == 6):
+		BUY_SIGNAL = strategy.break_channel(bot_config)
+		print("[+] RECEIVING SIGNAL FOR STT: %s, SIGNAL: %s \n"% (5, BUY_SIGNAL))
+		if(BUY_SIGNAL == 'buy'):
+			BUY_FLAG = 1
+
+	print("[+] BUY FLAG FINAL: %s \n"% BUY_FLAG)
+	if(BUY_FLAG == 1):
+		bittrex_func.buyLimit(data, bot_config, price_now)
 
 def checkSell(data, bot_config, trans, price_now):
 	fix_profit = trans['buy_value']+(trans['buy_value']*bot_config['percentage'])
 	stoploss = trans['buy_value']*(1-float(bot_config['stoploss']))
-	
-	#print ("--[9]--Stoploss calculado ... \n")
-	#print("stop em:%.8f"%stoploss)
-	#print("price em:%.8f"%price_now)
-	##CHECANDO BITCOIN
-	#if(strategy.btc_percentage() == 0):
-	##VENDENDO PARA PREVENIR PERDAS
-	#bittrex_func.sellLimit(data, bot_config, price_now, trans)
-	#return
 
 	if(price_now <= stoploss):
 		bittrex_func.sellLimit(data, bot_config, price_now, trans)
 		t.sleep(1800)
 		return
-	#print ("--[9]--Nao atingi o stop entao posso receber sinais de venda ... \n")
+	print ("--[9]--Nao atingi o stop entao posso receber sinais de venda ... \n")
 	##VENDENDO VIA MEDIA MOVEL ID 101 SO TEM PRA ESTRATEGIA BREAK CHANNEL
 	if(bot_config['strategy_buy'] == 6 and strategy.map(bot_config)[6] == 'sell'):
 		bittrex_func.sellLimit(data, bot_config, price_now, trans)

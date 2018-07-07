@@ -1,0 +1,36 @@
+PAR/TIMEFRAME/PARAM:BTC:BTC-WAVES/hour
+Patrimonio inicial: 1 BTC
+Patrimonio final:1.086533853148
+Lucro (%):8.653385314800005
+Quantia de trades:6
+----------------------------
+PAR/TIMEFRAME/PARAM:BTC:BTC-LTC/hour
+Patrimonio inicial: 1 BTC
+Patrimonio final:1.034783540722
+Lucro (%):3.4783540722000055
+Quantia de trades:4
+----------------------------
+PAR/TIMEFRAME/PARAM:BTC:BTC-BCC/hour
+Patrimonio inicial: 1 BTC
+Patrimonio final:1.2636011308419999
+Lucro (%):26.36011308419998
+Quantia de trades:7
+----------------------------
+PAR/TIMEFRAME/PARAM:BTC:BTC-ETH/hour
+Patrimonio inicial: 1 BTC
+Patrimonio final:1.1516825182599995
+Lucro (%):15.168251825999945
+Quantia de trades:6
+----------------------------
+PAR/TIMEFRAME/PARAM:BTC:BTC-XLM/hour
+Patrimonio inicial: 1 BTC
+Patrimonio final:1.0378552913740002
+Lucro (%):3.785529137400019
+Quantia de trades:6
+----------------------------
+PAR/TIMEFRAME/PARAM:BTC:BTC-XRP/hour
+Patrimonio inicial: 1 BTC
+Patrimonio final:1.1215734147640004
+Lucro (%):12.157341476400035
+Quantia de trades:3
+----------------------------

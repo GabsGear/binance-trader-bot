@@ -3,10 +3,11 @@ import backtrader.feeds as btfeed
 import pandas as pd
 import sys
 import os.path
+import datetime
+import ccxt
+import time
+from dateutil import tz
 
-def getCandles(market, time):
-	bittrex = bit.Bittrex('', '', api_version='v2.0')
-	return bittrex.get_candles(market, time)['result']
 
 
 def btc_perc():
@@ -50,44 +51,15 @@ def perc(buy, sell):
 		return float(x-100)*100
 	return float(0)*100
 
-def getCandleList(market, time): 
-	candles = getCandles(market, time)
-	###################
-	o, h, l, c, v, t = [], [], [], [], [], []
-	####################
-	try:
-		for candle in candles:
-			o.append(candle['O'])
-			h.append(candle['H'])
-			l.append(candle['L'])
-			c.append(candle['C'])
-			v.append(candle['BV'])
-			t.append(candle['T'])
-		data = {
-			'o': o, 
-			'h': h, 
-			'l': l, 
-			'c': c,
-			'v': v,
-			't': t, }
-		return data
-	except:
-		print("Erro getcandlelist.")
 
 
-def writeOutput(msg, pair, timeframe):
+def writeOutput(msg, market, currency, timeframe):
 	path = r'''C:\Users\Pichau\Documents\work\protraderbot\git\backend\backtest\candles'''
-	x = datapath=(path+'\\'+str(pair)+"-"+str(timeframe)+".csv")
+	x = (path+'\\'+str(market)+"-"+str(currency)+"-"+str(timeframe)+".csv")
 	file = open(x, 'a+')
 	file.write(msg + "\n")
 	file.close()
 
-def write(msg):
-	path = r'''C:\Users\Pichau\Documents\work\protraderbot\git\backend\backtest\outputs'''
-	x = datapath=(path+"\\result.txt")
-	file = open(x, 'a+')
-	file.write(msg + "\n")
-	file.close()
 
 def btc_var(date):
 	dates = []
@@ -100,31 +72,41 @@ def btc_var(date):
 			return btc_data['p'][i]
 	return 0
 
+def get_date(date):
+	utc = tz.tzutc()
+	date = datetime.datetime.fromtimestamp(
+			int(date)/1000.0
+		).strftime('%Y-%m-%d %H:%M:%S')
+	date = datetime.datetime.strptime(date, "%Y-%m-%d %H:%M:%S")
+	date = date.replace(tzinfo=utc)
+	return date.strftime("%Y-%m-%d %H:%M:%S")
 
-def create_data(pair, timeframe):
-	candles = getCandleList(pair, timeframe)
+def create_data(market, currency, timeframe):
+	_BINANCE = ccxt.binance()
+	_CANDLES = []
+	_UTC = tz.tzutc()
+	_MINUTE = 60 * 1000
+	###########
+	from_timestamp = _BINANCE.parse8601('2018-02-01 00:00:00')
+	#########
 
-	d = {
-		't': candles['t'], 
-		'o': candles['o'],
-		'h': candles['h'],
-		'l': candles['l'],
-		'c': candles['c'],
-		'v': candles['v']
-	}
+	while(from_timestamp < _BINANCE.milliseconds()):
+		print(_BINANCE.milliseconds(), 'Fetching candles starting from', _BINANCE.iso8601(from_timestamp))
+		ohlcvs = _BINANCE.fetch_ohlcv(currency+"/"+market, timeframe, from_timestamp)
+		print(_BINANCE.milliseconds(), 'Fetched', len(ohlcvs), 'candles')
+		first = ohlcvs[0][0]
+		last = ohlcvs[-1][0]
+		print('First candle epoch', first, _BINANCE.iso8601(first))
+		print('Last candle epoch', last, _BINANCE.iso8601(last))
+		from_timestamp += len(ohlcvs) * _MINUTE * 30
+		_CANDLES += ohlcvs
 
-	df = pd.DataFrame(data=d)
-
-	for index, row in df.iterrows():
-		DATE = row['t'].split("T")
-		msg = "%s %s, %s, %s, %s, %s, %s"% (DATE[0], DATE[1], row['o'], row['h'], row['l'], row['c'],  row['v'])
-		writeOutput(msg, pair, timeframe)
+	for CANDLE in _CANDLES:
+		msg = "%s, %s, %s, %s, %s, %s"% (get_date(CANDLE[0]), CANDLE[1], CANDLE[2], CANDLE[3], CANDLE[4],  CANDLE[5])
+		#writeOutput(msg, market, currency, timeframe)
 
 path = r'''C:\Users\Pichau\Documents\work\protraderbot\git\backend\backtest\candles'''
-x = datapath=(path+'\\'+str(sys.argv[1])+"-"+str(sys.argv[2])+".csv")
-if(os.path.exists(x) == False):
-	create_data(sys.argv[1], sys.argv[2])
-	
-#create_data('BTC-STORJ', 'hour')
-#btc_var('2018-06-03')
-#count_bars()
+path = (path+'\\'+str(sys.argv[1])+"-"+str(sys.argv[2])+"-"+str(sys.argv[3])+".csv")
+#if(os.path.exists(path) == False):
+#create_data(sys.argv[1], sys.argv[2], sys.argv[3])
+

@@ -5,7 +5,7 @@ import pytz
 import sys
 
 def getConn():
-	db = mysql.connect(host="127.0.0.1", user="root", passwd="Gv9KP70E316v", db="protrader")
+	db = mysql.connect(host="127.0.0.1", user="root", passwd="J8k5yZDV7z3X", db="protrader")
 	cursor = db.cursor()
 	return db, cursor
 
@@ -18,15 +18,47 @@ def insertBuyOrder(data):
 	db.commit()
 	cursor.close()
 
-def commitSellOrder(data):
+def commitSellOrder(data, bot_config):
 	db, cursor = getConn()
 	trans = getOrder(data['bot_id'])
-	query = ("UPDATE transactions SET sell_value=(%s), selled=(%s), date_close=(%s), sell_uuid=(%s) WHERE id=(%s)")
 	value = float(data['sell_value'])
-	cursor.execute(query, (value, "1", time_now(), data['sell_uuid'], trans['id'] ))
+	if(bot_config['active'] == 1):
+		query = ("UPDATE transactions SET sell_value=(%s), selled=(%s), date_close=(%s), sell_uuid=(%s) WHERE id=(%s)")
+		commitFee(bot_config, data)
+		cursor.execute(query, (value, "1", time_now(), data['sell_uuid'], trans['id'] ))
+	else:
+		query = ("UPDATE transactions SET sell_value=(%s), selled=(%s), date_close=(%s), sell_uuid=(%s) WHERE id=(%s)")
+		cursor.execute(query, (value, "1", time_now(), data['sell_uuid'], trans['id'] ))
+		
 	db.commit()
 	cursor.close()
 
+def commitFee(bot_config, data):
+	db, cursor = getConn()
+	user = getConfigAcc(bot_config['user_id'])
+	trans = getOrder(data['bot_id'])
+	market = bot_config['currency'].split("-")
+	
+	SELL_PRICE = float(data['sell_value'])
+	BUY_PRICE = float(trans['buy_value'])
+	AMOUNT = float(trans['quantity'])
+
+	profit = get_profit(BUY_PRICE, SELL_PRICE, AMOUNT)
+
+	if(market[0] == 'BTC' and SELL_PRICE > BUY_PRICE):
+		fee = profit*7500*0.2
+	else:
+		fee = profit*7500*3.3*0.2
+
+	if(user['credits'] >= fee):
+		user['credits'] = user['credits'] - fee
+		query = ("UPDATE users SET credits=(%s) WHERE id=(%s)")
+		cursor.execute(query, (user['credits'], bot_config['user_id'] ))
+	else:
+		query = ("UPDATE users SET credits=(%s) WHERE id=(%s)")
+		cursor.execute(query, (0, bot_config['user_id'] ))
+	db.commit()
+	cursor.close()
 
 def getOrder(bot_id):
 	try:
@@ -83,25 +115,26 @@ def getOpenOrders(bot_id):
 
 
 def getConfigAcc(user_id):
-	try:
-		db, cursor = getConn()
-		query = ("SELECT * FROM users WHERE id = %s")
-		cursor.execute(query, (user_id))
-		data = cursor.fetchone()
-		db.commit()
-		cursor.close()
-		obj = {
-				'id': data[0],
-				'name': data[1],
-				'email': data[2],
-				'bit_api_secret': data[5],
-				'bit_api_key': data[6],
-		       }
-		
-		return obj
-	except:
-		print("[+] getConfigAcc Function. Error : " + str(sys.exc_info()))
-		sys.exit()
+	db, cursor = getConn()
+	query = ("SELECT * FROM users WHERE id = %s")
+	cursor.execute(query, (user_id,))
+	data = cursor.fetchone()
+	db.commit()
+	cursor.close()
+	obj = {
+			'id': data[0],
+			'name': data[1],
+			'email': data[2],
+			'bit_api_secret': data[5],
+			'bit_api_key': data[6],
+			'credits': data[9]
+			}
+	
+	return obj
+
+def get_profit(buy, sell, amount):
+	return (sell-buy)*amount
+
 
 def getConfigBot(bot_id):
 	try:

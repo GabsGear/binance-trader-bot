@@ -66,9 +66,9 @@ class Functions():
         Returns:
             [bool] -- this method return 0 when everything is ok and you want to buy
         """
-        if (data_decision['open_orders'] and not bot_config['active']):
+        if (data_decision['open_orders']):
             return 1
-        elif (data_decision['open_orders'] and bot_config['active']):
+        elif (data_decision['open_orders']):
             return 1         
         return 0
 
@@ -80,7 +80,6 @@ class Functions():
             bot_config {[dict]} -- bot setup
             data_decision {[dict]} -- transactions detals
         """
-        print('Selecionando estrategia numero ' + str(bot_config['strategy_buy']))
         st = strategies.StrategiesBase()
         if(bot_config['strategy_buy'] == 0):
             return st.startTurtle(bot_config, data_decision) #CONTRA TURTLE
@@ -106,7 +105,6 @@ class Functions():
         fixProfit = self.getFixProfit(bot_config, data_decision)
         stoploss = self.getStopLoss(bot_config, data_decision)
         st = strategies.StrategiesBase()
-        
         log = ('---Price Now')
         hp.writeOutput(bot_config['id'], log)
         log = ('---' + str(data_decision['price_now']))
@@ -156,6 +154,9 @@ class Functions():
             'bot_id': bot_config['id'],
             'sell_value': data_decision['price_now'],
             'sell_uuid': '',
+            'taxa': 0,
+            'profit': 0,
+            'credits': float(bot_config['credits'])
         }
         return data
 
@@ -166,36 +167,29 @@ class Functions():
         return float(data_decision['trans']['buy_value']*(1-float(bot_config['stoploss'])))
     
 class Routines(Functions):
-    def get_config(self, bot_config):
-        bn = binance_.Binance_opr()
-        lopen, lhigh, llow, lclose, lvol, closetime = bn.getCandles(str(bot_config['currency']), bot_config['period'])
-        st = strategies.Desicion(lopen, lhigh, llow, lclose, lvol, closetime)
-        data_decision = st.getDataDecision(bot_config)
-        return data_decision
-        
-    def startBuyRoutine(self, bot_config):
+   
+    def startBuyRoutine(self, bot_config, data_decision):
         hp = helpers.Helpers()
         log = ('1- Iniciando rotina de compra')
         hp.writeOutput(bot_config['id'], log)
-        data_decision = self.get_config(bot_config)
-        st = strategies.StrategiesBase()
-
-        if(st.btcPercentage() == 0):
-            print("--Bitcoin sem forca nao vou comprar.")
+        credits = float(bot_config['credits'])
+        
+        if(credits <= 0):
+            log = ('-- CREDITOS INSUFICIENTES')
+            hp.writeOutput(bot_config['id'], log)
             return
-            
+        
         if(super().orderBuyStatus(bot_config, data_decision)):
             hp = helpers.Helpers()
             log = ('---Existem ordens em aberto no banco de dados\n')
             hp.writeOutput(bot_config['id'], log)
-            return  
+            return   
         super().buyOrder(bot_config, data_decision)
 
-    def startSellRoutine(self, bot_config):
+    def startSellRoutine(self, bot_config, data_decision):
         hp = helpers.Helpers()
         log = ('2- Iniciando rotina de venda ')
         hp.writeOutput(bot_config['id'], log)
-        data_decision = self.get_config(bot_config)
         if (super().orderSellStatus(bot_config, data_decision)):
             hp = helpers.Helpers()
             log = ('----Ainda nao ha nada para vender\n')

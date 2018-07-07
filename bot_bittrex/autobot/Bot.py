@@ -1,79 +1,92 @@
 import Bittrex as _BITTREX
-import db
+import db as _DATABASE
 import Strategy as _STRATEGY
 import Order as _ORDER
 import Lib as _LIB
+from datetime import datetime
+from datetime import timedelta
 
 
 		
 class Bot():
-	def __init__(self, id = None, user_id = None, strategy = None, profit = None, pid = None, status = None, stoploss = None):
+	def __init__(self, id = None, user_id = None, pid = None, status = None):
 		self.id = id
 		self.user_id = user_id
-		self.pairs = ['BTC-ADA', 'BTC-XLM', 'BTC-TRX', 'BTC-GNT', 'BTC-WAVES', 'BTC-DGB', 'BTC-XEM', 
-		'BTC-EMC2', 'BTC-STORJ', 'BTC-OMG', 'BTC-LTC', 'BTC-XEM', 'BTC-ETH', 'BTC-NEO', 'BTC-BTG', 'BTC-DASH'
-		'BTC-LSK', 'BTC-NXT', 'BTC-GNT', 'BTC-POLY', 'BTC-STEEM', 'BTC-ETC', 'BTC-ZRX', 'BTC-RLC', 'BTC-CVC'
-		'BTC-ZEN', 'BTC-QTUM', 'BTC-ZEN', 'BTC-BURST', 'BTC-STRAT']
-		self.strategy = strategy
-		self.profit = profit
 		self.pid = pid
 		self.status = status
-		self.stoploss = stoploss
 		
 
-	def check_buy(self):
-		Bittrex = _BITTREX.Bittrex(self.id)
-		
-		# Not free to make new buy orders exit from routine
-		#if(self.free_buy() == 0):
-		#return
+	def buy_routine(self):
+		Bittrex  = _BITTREX.Bittrex()
+		Database = _DATABASE.Database()
+		Database.filter_signals()
+		print("[+1+] Carregando sinais...")
+		SIGNALS = Database.get_signals()
+		print("[+2+] Sinais carregados com sucesso...")
+		print("--------Signal Book---------------- \n")
+		print(SIGNALS)
+		print("--------------------------------- \n")
+		for signal in SIGNALS:
+			if(self.free_buy(signal['market'], signal['currency']) == 1):
+				PAIR = signal['market']+'-'+signal['currency']
+				PRICE_NOW = Bittrex.getTicker(PAIR)
+				AMOUNT = float(1)/float(PRICE_NOW)
+				Order = _ORDER.Order(bot_id=self.id, market=signal['market'], currency=signal['currency'], buy_value=PRICE_NOW, sell_value=None, amount=AMOUNT, status=0)
+				Order.execute_buy()
+	
 
-		for pair in self.pairs:
-			Strategy  = _STRATEGY.Strategy(self.id, pair)
-			if(Strategy.contra_turtle() == 'buy'):
-				pair = pair.split("-")
-				# CHECK IF EXIST OPEN ORDER FOR PAIR:MARKET-CURRENCY
-				count_order = db.getPendentOrder(self.id, pair[0], pair[1])
-				if(count_order == 0):
-					price_now = Bittrex.getTicker(pair[0]+'-'+pair[1])
-					amount = float(1)/float(price_now)
-					Order = _ORDER.Order(bot_id=self.id, market=pair[0], currency=pair[1], buy_value=price_now, sell_value=None, amount=amount, status=0)
-					Order.execute_buy()
-				else:
-					print ("[+] OPEN ORDER FOR PAIR  %s-%s... \n" % (pair[0], pair[1]))
-
-	def check_sell(self):
-		Bittrex = _BITTREX.Bittrex(self.id)
-		Orders = db.getOrders(self.id)
+	def sell_routine(self):
+		Bittrex = _BITTREX.Bittrex()
+		Database = _DATABASE.Database()
+		Orders = Database.get_open_orders(self.id)
+		print(Orders)
 		for Order in Orders:
-			price_now = Bittrex.getTicker(Order.market+"-"+Order.currency)
-			fix_profit = Order.buy_value + (Order.buy_value * self.profit)
-			stoploss = Order.buy_value * (1 - self.stoploss)
-			print("[+] ORDEM:%d, MARKET:%s, CURRENCY:%s, BUY:%.8f, SELL:%.8f, STOP:%.8f"% (Order.id, Order.market, Order.currency, Order.buy_value, fix_profit, stoploss))
-			if(price_now >= fix_profit):
+			#print("[+] Status da ordem e %s"% Order.status)
+			if(self.free_sell == 0):
+				price_now = Bittrex.getTicker(Order.market+"-"+Order.currency)
+				fix_profit = Order.buy_value + (Order.buy_value * 0.01) # 1% profit
+				print("[+] ORDEM:%d, MARKET:%s, CURRENCY:%s, PRICE:%.8f, SELL:%.8f"% (Order.id, Order.market, Order.currency, Order.buy_value, fix_profit))
+				#if(price_now >= fix_profit):
 				Order.sell_value = price_now
 				Order.status = 1
-				Order.execute_sell()
+				#Order.execute_sell()
 				print ("[+] Venda via lucro fixo ... \n")
 				return
 
+
+	# CHECAGEM PARA LIBERACAO DE VENDA
+	# 0: LIVRE | 1: IMPEDIDO
+	def free_buy(self, market, currency):
+		Bittrex = _BITTREX.Bittrex()
+		Database = _DATABASE.Database()
+		print("[+3+] Checando se o sinal ja foi utilizado...")
+		'''if(self.status == 1):
+			if(market == 'USDT'):
+				balance = Bittrex.getBalance(market)
+			else:
+				balance = Bittrex.getBalance(market)
+				balance = balance*7700 # BTC PRICE
+			
+			# 1-STEP: CHECK IF BALANCE AVAILABLE IS SMALLER 30, RETURN 0 IF TRUE
+			if(balance < 30): # MIN 30 DOLARES
+				print ("[+] Ordem minima nao atingida... \n")
+				return 0'''
+
+		# 2-STEP: CHECK IF EXIST OPEN ORDER FOR PAIR, RETURN 0 IF TRUE
+		count_order = Database.get_order_pair(self.id, market, currency)
+		if(count_order > 0):
+			print ("[+] Temos uma ordem aberta de compra aberta para o par: %s-%s... \n"% (market, currency))
+			return 0
+			
+		return 1
+
+
 	# CHECAGEM PARA LIBERACAO DE COMPRA
 	# 0: LIVRE | 1: IMPEDIDO
-	def free_buy(self):
-		Order = db.getOrder(self.id)
-		#num_order = db.getOpenOrders(self.id)
-		print("checando")
-		##ORDEM DE COMPRA JA ABERTA
-		##BOT EM MODO SIMULACAO
-		if(Order.status == 0):
-			print ("[+] Temos uma ordem aberta de compra... \n")
-			return 0 #ORDEM JA ABERTA DE VENDA
-		else:
-			return 1
-
 	def free_sell(self):
 		trans = db.getOrder(self.id)
-		num_order = db.getOpenOrders(self.id)
+		Database = _DATABASE.Database()
+		Orders = Database.get_open_orders(self.id)
 
 		if(num_order == 0 and self.status == 0):
 			print ("[+] Bot simulando e nao a nenhuma ordem aberta pra vender... \n")
@@ -89,22 +102,3 @@ class Bot():
 
 		return 0
 		#########################
-	
-	def sell_routine(self, pair):
-		#############
-		print ("[+] Checkando se posso vender... \n")
-		
-		if(self.free_sell() == 1): #VERIFICANDO PENDENCIA DE ORDENS
-			return
-
-		trans = db.getOrder(self.id)
-
-		if(trans['pair'] == None):
-			return
-
-		price_now = bittrex_func.getTicker(trans['pair'])
-
-		###################################
-		Order = Order(bot_id=self.id, buy_value=price_now, amount=trans['amount'], pair=trans['pair'], buy_uuid=None)
-		self.checkSell(Order)
-		###################################

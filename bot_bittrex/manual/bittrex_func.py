@@ -124,16 +124,16 @@ def buyLimit(data, bot_config, price_now):
 def sellLimit(data, bot_config, price_now, trans):
 	#print data
 	if(bot_config['active'] == 0):
-		db.commitSellOrder(data)
+		db.commitSellOrder(data, bot_config)
 		t.sleep(500)
 	
 	if(bot_config['active'] == 1 and checkConnApi(bot_config= bot_config) == True and trans['selled'] == 0):
 		acc_config = db.getConfigAcc(bot_config['user_id'])
 		bittrex = bittrex_lib.Bittrex(acc_config['bit_api_key'], acc_config['bit_api_secret'], api_version='v1.1')
 		order_sell = bittrex.sell_limit(market=bot_config['currency'], quantity=trans['quantity'], rate=price_now)
-		
+
 		if(order_sell['success'] == False or order_sell == None):
-			print("ERRO SELLL")
+			print("ERRO SELL")
 			return
 
 		#####################################
@@ -153,7 +153,7 @@ def sellLimit(data, bot_config, price_now, trans):
 		#####################################
 		##COMITANDO A ORDEM DE VENDA NO BANCO DE DADOS
 		data['sell_uuid'] = UUID
-		db.commitSellOrder(data)
+		db.commitSellOrder(data, bot_config)
 		t.sleep(500)
 
 

@@ -1,15 +1,12 @@
 # coding=utf-8
 import numpy as np
-<<<<<<< HEAD
 from binance.client import Client
-=======
-from binance.client import Client 
->>>>>>> 16a0b954ffb031d38ffc5bb59ef366fd3aab1144
 from binance.enums import ORDER_TYPE_LIMIT, TIME_IN_FORCE_GTC, SIDE_BUY, SIDE_SELL, TIME_IN_FORCE_FOK
 import botconfig
 from datetime import datetime
 import numpy as np
 import requests
+import strategies
 import helpers
 import sys
 import json
@@ -26,18 +23,16 @@ class ApiData:
         else:
             sys.exit(0)
 
+
 def loginAPI(bot_config):
-<<<<<<< HEAD
     hp = helpers.Helpers()
-=======
-    
->>>>>>> 16a0b954ffb031d38ffc5bb59ef366fd3aab1144
     db = botconfig.Db()
     log = ("logando na  api")
     hp.writeOutput(bot_config['id'], log)
     acc_config = db.getConfigAcc(str(bot_config['user_id']))
     client = Client(str(acc_config['api_key']), str(acc_config['api_secret']))
     status = client.get_system_status()
+
     if (status['msg'] == 'normal'):
         log = ("Login Ok")
         hp.writeOutput(bot_config['id'], log)
@@ -45,11 +40,13 @@ def loginAPI(bot_config):
     else:
         sys.exit(0)
 
+
 db = botconfig.Db()
 bot_id = sys.argv[1]
 global bot_config
 bot_config = db.getConfigBot(bot_id)
 client = loginAPI(bot_config)
+
 
 class Binance_opr(ApiData):
     def getCandles(self, coin, period):
@@ -116,7 +113,7 @@ class Binance_opr(ApiData):
             lvol.append(candle[5])
             closetime.append(candle[6])
 
-        lopen = np.array(lclose).astype(np.float)
+        lopen = np.array(lopen).astype(np.float)
         lhigh = np.array(lhigh).astype(np.float)
         llow = np.array(llow).astype(np.float)
         lclose = np.array(lclose).astype(np.float)
@@ -167,7 +164,6 @@ class Binance_opr(ApiData):
             [dict] -- this function returns a especific order
         """
         try:
-            # (str(bot_config['currency'])), orderId=orderID)
             order = client.get_order(
                 symbol=bot_config['currency'], orderId=orderID)
             return order
@@ -209,9 +205,9 @@ class Binance_opr(ApiData):
         data = client.get_symbol_info(coin)
         return data['filters'][1]['minQty']
 
-<<<<<<< HEAD
     def checkPrecision(self, bot_config, ammount):
         precision = float(self.getPrecision(bot_config['currency']))
+        
         if (precision == 1):
             return int(ammount)
         elif (precision == 0.01):
@@ -236,29 +232,11 @@ class Binance_opr(ApiData):
     def checkNewOrder(self, bot_config, data_decision, orderID, client):
         """Check if a new order is commited
 
-=======
-
-    def checkPrecision(self, bot_config, ammount):
-        precision = float(self.getPrecision(bot_config['currency']))
-        if (precision == 1):
-            return int(ammount) 
-        elif (precision == 0.01):
-            ammount = str(ammount)[:4]
-            return float(ammount)
-        else: 
-            ammount = str(ammount)[:5]
-            return float(ammount)
-
-    def checkNewOrder(self, bot_config, data_decision, orderID, client):
-        """Check if a new order is commited
-    
->>>>>>> 16a0b954ffb031d38ffc5bb59ef366fd3aab1144
         Returns:
             Returns a executed Qty is the order are commited
         """
         time.sleep(2)
         orders = self.getOrder(bot_config, data_decision, orderID, client)
-<<<<<<< HEAD
         orders['executedQty']
         if(str(orders['status']) == 'EXPIRED'):
             return False
@@ -267,34 +245,23 @@ class Binance_opr(ApiData):
     def checkMinOrder(self, data_decision, bot_config, ammount):
         currency = str(bot_config['currency'])
         pair = currency[len(currency)-4:len(currency)]
-        print('minOrder ')
-        print('ammount ' + str(ammount))
-        print('minOrder ' + str(bot_config['min_order']))
         if(pair == 'USDT'):
-            priceBRL = ammount * 3.3 * data_decision ['price_now']
-            print('usdt')
-            print('priceBRL ' + str(priceBRL))           
+            priceBRL = ammount * 3.3 * data_decision['price_now']
             if(float(bot_config['min_order']) > priceBRL):
                 return False
             else:
                 return True
         else:
-            priceBRL = ammount * data_decision ['price_now'] * 3.3 * 8900
-            print('priceBRL ' + str(priceBRL))   
+            priceBRL = ammount * data_decision['price_now'] * 3.3 * 8900
             if(float(bot_config['min_order']) > priceBRL):
                 return False
             else:
                 return True
 
-=======
-        print(orders['status'])
-        orders['executedQty']
-        if(str(orders['status']) == 'EXPIRED' ):
-            print('---Ordem não executada')
-            return False
-        return orders['executedQty']
-        
->>>>>>> 16a0b954ffb031d38ffc5bb59ef366fd3aab1144
+    def getOprProfit(self, data_decision, price, ammount):
+        return float(price) * ammount - data_decision['trans']['buy_value'] * \
+            ammount
+
     def createBuyOrder(self, data, bot_config, data_decision):
         """
             AQUI A MAGICA ACONTECE 
@@ -303,22 +270,28 @@ class Binance_opr(ApiData):
         check = routines.Routines()
         if not (check.orderBuyStatus(bot_config, data_decision)):
             db = botconfig.Db()
+            st = strategies.StrategiesBase()
             if not (bot_config['active']):
                 log = ('Inserindo simulada')
                 hp.writeOutput(bot_config['id'], log)
                 db.insertBuyOrder(data)
                 time.sleep(30)
+            
             else:
                 price = "%.8f" % (data_decision['price_now'])
-<<<<<<< HEAD
                 if(bot_config['active'] == 1):
                     ammount = float(self.getClientBalance(
                         client, bot_config))*bot_config['order_value']/float(data_decision['price_now'])
                     ammount = self.checkPrecision(bot_config, ammount)
-                    if not self.checkMinOrder(data_decision, bot_config, ammount):
+                    '''if not self.checkMinOrder(data_decision, bot_config, ammount):
                         log = ('Erro minOrder')
                         hp.writeOutput(bot_config['id'], log)
-                        return
+                        return'''
+                    log = ("--Bitcoin status pct:"+str(st.btcPercentage())+"/follow:"+str(bot_config['follow']))
+                    hp.writeOutput(bot_config['id'], log)
+                    if(st.btcPercentage() < 0.5 and bot_config['follow'] == 1):
+                        return 
+                    
                     try:
                         order = client.create_order(
                             symbol=bot_config['currency'], side=SIDE_BUY, type=ORDER_TYPE_LIMIT, timeInForce=TIME_IN_FORCE_FOK, quantity=ammount, price=str(price))
@@ -331,38 +304,15 @@ class Binance_opr(ApiData):
                     orderID = order['orderId']
                     newOrderStatus = self.checkNewOrder(
                         bot_config, data_decision, orderID, client)
-=======
-                print(price)
-
-                if(bot_config['active'] == 1 and status['msg'] == 'normal'):
-                    ammount = float(self.getClientBalance(client, bot_config))*bot_config['order_value']/float(data_decision['price_now'])
-                    ammount = self.checkPrecision(bot_config, ammount)
-                    print('Quantidade')
-                    print(ammount)            
-                    try:
-                        order = client.create_order(symbol=bot_config['currency'],side=SIDE_BUY,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_FOK, quantity=ammount, price= str(price))
-                        print(order)
-                    except:
-                        return
-                    orderID = order['orderId']
-                    newOrderStatus = self.checkNewOrder(bot_config, data_decision, orderID, client)
->>>>>>> 16a0b954ffb031d38ffc5bb59ef366fd3aab1144
                     if not (newOrderStatus):
                         return
                     ammount = float(newOrderStatus)
 
-<<<<<<< HEAD
-=======
-                    print (order)    
->>>>>>> 16a0b954ffb031d38ffc5bb59ef366fd3aab1144
                     orderID = order['orderId']
                     data['qnt'] = ammount
                     data['buy_uuid'] = orderID
                     db.insertBuyOrder(data)
-<<<<<<< HEAD
                     time.sleep(30)
-=======
->>>>>>> 16a0b954ffb031d38ffc5bb59ef366fd3aab1144
 
     def createSellOrder(self, data, bot_config, data_decision):
         """This function start a sell order
@@ -376,49 +326,48 @@ class Binance_opr(ApiData):
         log = ('entrou na funcao de venda')
         hp.writeOutput(bot_config['id'], log)
         db = botconfig.Db()
-        if not (bot_config['active']):
-            log= ('inserindo os dados de venda no bd')
+
+        if bot_config['active'] == 2:
+            log = ('inserindo os dados de venda no bd')
             hp.writeOutput(bot_config['id'], log)
-            db.commitSellOrder(data)
+            db.commitSellOrder(data, bot_config)
         else:
-            if(bot_config['active']):
+            if (bot_config['active']):
                 log = ('Pronto pra criar ordem de venda')
                 hp.writeOutput(bot_config['id'], log)
                 price = "%.8f" % data_decision['price_now']
+
+                log = ('price = ' + str(price))
+                hp.writeOutput(bot_config['id'], log)
+
                 ammount = data_decision['trans']['quantity'] * 0.999
-<<<<<<< HEAD
                 ammount = self.checkPrecision(bot_config, ammount)
+                log = ('ammount = ' + str(ammount))
+                hp.writeOutput(bot_config['id'], log)
+                log = str(client)
+                hp.writeOutput(bot_config['id'], log)
                 try:
                     order = client.create_order(
                         symbol=bot_config['currency'], side=SIDE_SELL, type=ORDER_TYPE_LIMIT, timeInForce=TIME_IN_FORCE_FOK, quantity=ammount, price=str(price))
                     log = (order)
                     hp.writeOutput(bot_config['id'], log)
                 except:
+                    log = ('ERRO NA API AO CRIAR ORDEM VERIFICAR CONTA')
+                    hp.writeOutput(bot_config['id'], log)
                     return
+
+                log = ('VENDI NA BINANCE')
+                hp.writeOutput(bot_config['id'], log)
+
                 orderID = order['orderId']
                 newOrderStatus = self.checkNewOrder(
                     bot_config, data_decision, orderID, client)
-                if not (newOrderStatus):
+
+                if not (newOrderStatus):                  
+                    log = ('ORDEM NAO ACEITA')
+                    hp.writeOutput(bot_config['id'], log)
                     return
 
-                data['sell_uuid'] = orderID
-                db.commitSellOrder(data)
-=======
-                print(ammount)
-                ammount = self.checkPrecision(bot_config, ammount)
-                print('quantidade')
-                print(ammount)
-                try: 
-                    order = client.create_order(symbol=bot_config['currency'],side=SIDE_SELL,type=ORDER_TYPE_LIMIT,timeInForce=TIME_IN_FORCE_FOK, quantity=ammount, price=str(price))
-                    print(order)
-                except:
-                    return
-                orderID = order['orderId']
-                newOrderStatus = self.checkNewOrder(bot_config, data_decision, orderID, client)
-                if not (newOrderStatus):
-                    return
 
-                print ('ORDEM DE VENDA ID ' + str(order['orderId']))
                 data['sell_uuid'] = orderID
-                db.commitSellOrder(data)
->>>>>>> 16a0b954ffb031d38ffc5bb59ef366fd3aab1144
+                db.commitSellOrder(data, bot_config)
