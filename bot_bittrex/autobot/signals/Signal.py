@@ -7,13 +7,12 @@ import sys
 
 class Signal():
 	
-	def __init__(self, path=None, market=None, currency=None, strategy=None, signal=None, timeframe=None):
-		self.market = market
-		self.currency = currency
-		self.strategy = strategy
-		self.signal = signal
-		self.timeframe = timeframe
-		self.path = path
+	def __init__(self, params={}):
+		self.market = params['market']
+		self.currency = params['currency']
+		self.strategy = params['strategy']
+		self.signal = params['signal']
+		self.timeframe = params['timeframe']
 
 	# Get instance connection with database
 	def get_socket(self):
@@ -38,7 +37,7 @@ class Signal():
 		if(count > 0):
 			date_utc = datetime.utcnow()
 			elapsed = date_utc-signal[5]
-			if(self.timeframe == 'hour'):
+			if(True):
 				minutes = 120
 			else:
 				minutes = 60
