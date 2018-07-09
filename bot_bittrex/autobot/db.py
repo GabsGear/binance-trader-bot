@@ -35,16 +35,17 @@ class Database():
 		Orders = []
 		if(self.cursor.rowcount > 0):
 			for trans in self.cursor:
-				Order = _ORDER.Order(
-					id = trans[0],
-					bot_id = trans[1], 
-					market = trans[2], 
-					currency = trans[3], 
-					buy_value = trans[4],
-					sell_value = trans[5],
-					amount = trans[6],
-					status = trans[7], 
-				)
+				params = {
+					'id': trans[0],
+					'bot_id': trans[1],
+					'market': trans[2],
+					'currency': trans[3],
+					'buy_value': trans[4],
+					'sell_value': trans[5],
+					'amount': trans[6],
+					'status': trans[7]
+				}
+				Order = _ORDER.Order(params)
 				Orders.append(Order)
 			return Orders	
 		else:
@@ -78,6 +79,26 @@ class Database():
 		count = self.cursor.rowcount
 		self.cursor.close()
 		return count
+	
+	def get_order(self, order_id):
+		query = ("SELECT * FROM transactions WHERE id = %s")
+		self.cursor.execute(query, (bot_id, 0))
+		trans = self.cursor.fetchone()
+		params = {
+			'id': trans[0],
+			'bot_id': trans[1],
+			'market': trans[2],
+			'currency': trans[3],
+			'buy_value': trans[4],
+			'sell_value': trans[5],
+			'amount': trans[6],
+			'status': trans[7]
+		}
+		Order = _ORDER.Order(params)
+		self.db.commit()
+		count = self.cursor.rowcount
+		self.cursor.close()
+		return count
 
 
 	def getConfigAcc(self, user_id):
@@ -104,21 +125,22 @@ class Database():
 		data = self.cursor.fetchone()
 		self.db.commit()
 		self.cursor.close()
-		Bot = _BOT.Bot(
-			id = data[0], 
-			user_id = data[1],
-			strategy = data[3],
-			profit = data[4],
-			pid = data[5],
-			status = data[6],
-			stoploss = data[7]
-		)
+		params = {
+			'id': data[0],
+			'user_id': data[1],
+			'exchange': data[2],
+			'strategy': data[3],
+			'pid': data[4],
+			'status': data[5],
+		}
+		Bot = _BOT.Bot(params)
 		return Bot
 
-	def get_signals(self):
+	def get_signals(self, strategy):
+		#self.filter_signals(strategy)
 		SIGNALS = []
-		query = ("SELECT * FROM signals")
-		self.cursor.execute(query, )
+		query = ("SELECT * FROM signals WHERE strategy = %s")
+		self.cursor.execute(query, (strategy,))
 		for sig in self.cursor:
 			signal = {
 				'id': sig[0],
@@ -132,7 +154,7 @@ class Database():
 		return SIGNALS
 	
 	def filter_signals(self):
-		SIGNALS = self.get_signals()
+		SIGNALS = self.get_signals(strategy)
 		for sig in SIGNALS:
 			date_utc = datetime.utcnow()
 			elapsed = date_utc-sig['date']

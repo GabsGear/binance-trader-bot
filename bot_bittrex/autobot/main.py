@@ -1,13 +1,21 @@
-import Bittrex as _BITTREX
-#import Strategy as _STRATEGY
 import sys
 import Bot as _BOT
 import db as _DATABASE
 import time
+import Exchange as _EXCHANGE
 
 def main():
 	#Bittrex = _BITTREX.Bittrex() # Instace of class Bittrex
-	Bot = _BOT.Bot(id =21, user_id=21, pid =None, status=0) # Instace of class Bot
+	params = {
+			'id': 21,
+			'user_id': 21,
+			'exchange': 'bittrex',
+			'strategy': 0,
+			'pid': 0,
+			'status': 0,
+		}
+	Bot = _BOT.Bot(params) # Instace of class Bot
+	#balance = _EXCHANGE.Exchange({'exchange':'binance'}).balance()
 	#User = Bittrex.user # Instace of class Bot
 	while(True):
 		Bot.buy_routine()
