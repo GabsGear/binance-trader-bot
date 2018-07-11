@@ -1,0 +1,24 @@
+[2018-06-28 17:38:19] logando na  api
+[2018-06-28 17:38:20] Login Ok
+[2018-06-28 17:38:22] 1- Iniciando rotina de compra
+[2018-06-28 17:38:22] price now = 0.0012643
+[2018-06-28 17:38:22] Buy at 0.0012605
+[2018-06-28 17:38:22] sinal buy
+[2018-06-28 17:38:22] price now = 0.0012643
+[2018-06-28 17:38:22] Buy at 0.0012605
+[2018-06-28 17:38:22] sinal buy
+[2018-06-28 17:38:22] Erro minOrder
+[2018-06-28 17:38:22] 2- Iniciando rotina de venda 
+[2018-06-28 17:38:22] ----Ainda nao ha nada para vender
+
+[2018-06-28 17:38:53] 1- Iniciando rotina de compra
+[2018-06-28 17:38:53] price now = 0.0012644
+[2018-06-28 17:38:53] Buy at 0.0012605
+[2018-06-28 17:38:53] sinal buy
+[2018-06-28 17:38:53] price now = 0.0012644
+[2018-06-28 17:38:53] Buy at 0.0012605
+[2018-06-28 17:38:53] sinal buy
+[2018-06-28 17:38:54] Erro minOrder
+[2018-06-28 17:38:54] 2- Iniciando rotina de venda 
+[2018-06-28 17:38:54] ----Ainda nao ha nada para vender
+

@@ -1,0 +1,44 @@
+[2018-07-02 02:17:17] logando na  api
+[2018-07-02 02:17:18] Login Ok
+[2018-07-02 02:17:19] 1- Iniciando rotina de compra
+[2018-07-02 02:17:19] [+] lastlow:1.68e-06/lowerband:1.6496201926168685e-06
+[2018-07-02 02:17:19] [+] lastlow:1.68e-06/lowerband:1.6496201926168685e-06
+[2018-07-02 02:17:19] 2- Iniciando rotina de venda 
+[2018-07-02 02:17:19] ----Ainda nao ha nada para vender
+
+[2018-07-02 02:17:49] 1- Iniciando rotina de compra
+[2018-07-02 02:17:49] [+] lastlow:1.68e-06/lowerband:1.6496201926168685e-06
+[2018-07-02 02:17:49] [+] lastlow:1.68e-06/lowerband:1.6496201926168685e-06
+[2018-07-02 02:17:49] 2- Iniciando rotina de venda 
+[2018-07-02 02:17:49] ----Ainda nao ha nada para vender
+
+[2018-07-02 02:18:20] 1- Iniciando rotina de compra
+[2018-07-02 02:18:20] [+] lastlow:1.68e-06/lowerband:1.6496201926168685e-06
+[2018-07-02 02:18:20] [+] lastlow:1.68e-06/lowerband:1.6496201926168685e-06
+[2018-07-02 02:18:20] 2- Iniciando rotina de venda 
+[2018-07-02 02:18:20] ----Ainda nao ha nada para vender
+
+[2018-07-02 02:18:50] 1- Iniciando rotina de compra
+[2018-07-02 02:18:50] [+] lastlow:1.68e-06/lowerband:1.6496201926168685e-06
+[2018-07-02 02:18:50] [+] lastlow:1.68e-06/lowerband:1.6496201926168685e-06
+[2018-07-02 02:18:50] 2- Iniciando rotina de venda 
+[2018-07-02 02:18:50] ----Ainda nao ha nada para vender
+
+[2018-07-02 02:19:21] 1- Iniciando rotina de compra
+[2018-07-02 02:19:21] [+] lastlow:1.68e-06/lowerband:1.6496201926168685e-06
+[2018-07-02 02:19:21] [+] lastlow:1.68e-06/lowerband:1.6496201926168685e-06
+[2018-07-02 02:19:21] 2- Iniciando rotina de venda 
+[2018-07-02 02:19:21] ----Ainda nao ha nada para vender
+
+[2018-07-02 02:19:51] 1- Iniciando rotina de compra
+[2018-07-02 02:19:51] [+] lastlow:1.68e-06/lowerband:1.6496201926168685e-06
+[2018-07-02 02:19:51] [+] lastlow:1.68e-06/lowerband:1.6496201926168685e-06
+[2018-07-02 02:19:51] 2- Iniciando rotina de venda 
+[2018-07-02 02:19:51] ----Ainda nao ha nada para vender
+
+[2018-07-02 02:20:22] 1- Iniciando rotina de compra
+[2018-07-02 02:20:22] [+] lastlow:1.68e-06/lowerband:1.6496201926168685e-06
+[2018-07-02 02:20:22] [+] lastlow:1.68e-06/lowerband:1.6496201926168685e-06
+[2018-07-02 02:20:22] 2- Iniciando rotina de venda 
+[2018-07-02 02:20:22] ----Ainda nao ha nada para vender
+

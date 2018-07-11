@@ -1,0 +1,101 @@
+[2018-06-23 02:17:31] logando na  api
+[2018-06-23 02:17:32] Login Ok
+[2018-06-23 02:17:34] 1- Iniciando rotina de compra
+[2018-06-23 02:17:34] price now = 1.81e-06
+[2018-06-23 02:17:34] Buy at 1.77e-06
+[2018-06-23 02:17:34] sinal buy
+[2018-06-23 02:17:34] price now = 1.81e-06
+[2018-06-23 02:17:34] Buy at 1.77e-06
+[2018-06-23 02:17:34] sinal buy
+[2018-06-23 02:17:34] Erro minOrder
+[2018-06-23 02:17:34] 2- Iniciando rotina de venda 
+[2018-06-23 02:17:34] ----Ainda nao ha nada para vender
+
+[2018-06-23 02:18:05] 1- Iniciando rotina de compra
+[2018-06-23 02:18:05] price now = 1.81e-06
+[2018-06-23 02:18:05] Buy at 1.77e-06
+[2018-06-23 02:18:05] sinal buy
+[2018-06-23 02:18:05] price now = 1.81e-06
+[2018-06-23 02:18:05] Buy at 1.77e-06
+[2018-06-23 02:18:05] sinal buy
+[2018-06-23 02:18:06] Erro minOrder
+[2018-06-23 02:18:06] 2- Iniciando rotina de venda 
+[2018-06-23 02:18:06] ----Ainda nao ha nada para vender
+
+[2018-06-23 02:18:37] 1- Iniciando rotina de compra
+[2018-06-23 02:18:37] price now = 1.81e-06
+[2018-06-23 02:18:37] Buy at 1.77e-06
+[2018-06-23 02:18:37] sinal buy
+[2018-06-23 02:18:37] price now = 1.81e-06
+[2018-06-23 02:18:37] Buy at 1.77e-06
+[2018-06-23 02:18:37] sinal buy
+[2018-06-23 02:18:38] Erro minOrder
+[2018-06-23 02:18:38] 2- Iniciando rotina de venda 
+[2018-06-23 02:18:38] ----Ainda nao ha nada para vender
+
+[2018-06-23 02:19:09] 1- Iniciando rotina de compra
+[2018-06-23 02:19:09] price now = 1.81e-06
+[2018-06-23 02:19:09] Buy at 1.77e-06
+[2018-06-23 02:19:09] sinal buy
+[2018-06-23 02:19:09] price now = 1.81e-06
+[2018-06-23 02:19:09] Buy at 1.77e-06
+[2018-06-23 02:19:09] sinal buy
+[2018-06-23 02:19:09] Erro minOrder
+[2018-06-23 02:19:09] 2- Iniciando rotina de venda 
+[2018-06-23 02:19:09] ----Ainda nao ha nada para vender
+
+[2018-06-23 02:19:40] 1- Iniciando rotina de compra
+[2018-06-23 02:19:40] price now = 1.81e-06
+[2018-06-23 02:19:40] Buy at 1.77e-06
+[2018-06-23 02:19:40] sinal buy
+[2018-06-23 02:19:40] price now = 1.81e-06
+[2018-06-23 02:19:40] Buy at 1.77e-06
+[2018-06-23 02:19:40] sinal buy
+[2018-06-23 02:19:41] Erro minOrder
+[2018-06-23 02:19:41] 2- Iniciando rotina de venda 
+[2018-06-23 02:19:41] ----Ainda nao ha nada para vender
+
+[2018-06-23 02:20:12] 1- Iniciando rotina de compra
+[2018-06-23 02:20:12] price now = 1.81e-06
+[2018-06-23 02:20:12] Buy at 1.77e-06
+[2018-06-23 02:20:12] sinal buy
+[2018-06-23 02:20:12] price now = 1.81e-06
+[2018-06-23 02:20:12] Buy at 1.77e-06
+[2018-06-23 02:20:12] sinal buy
+[2018-06-23 02:20:13] Erro minOrder
+[2018-06-23 02:20:13] 2- Iniciando rotina de venda 
+[2018-06-23 02:20:13] ----Ainda nao ha nada para vender
+
+[2018-06-23 02:20:43] 1- Iniciando rotina de compra
+[2018-06-23 02:20:43] price now = 1.81e-06
+[2018-06-23 02:20:43] Buy at 1.77e-06
+[2018-06-23 02:20:43] sinal buy
+[2018-06-23 02:20:43] price now = 1.81e-06
+[2018-06-23 02:20:43] Buy at 1.77e-06
+[2018-06-23 02:20:43] sinal buy
+[2018-06-23 02:20:44] Erro minOrder
+[2018-06-23 02:20:44] 2- Iniciando rotina de venda 
+[2018-06-23 02:20:44] ----Ainda nao ha nada para vender
+
+[2018-06-23 02:21:15] 1- Iniciando rotina de compra
+[2018-06-23 02:21:15] price now = 1.81e-06
+[2018-06-23 02:21:15] Buy at 1.77e-06
+[2018-06-23 02:21:15] sinal buy
+[2018-06-23 02:21:15] price now = 1.81e-06
+[2018-06-23 02:21:15] Buy at 1.77e-06
+[2018-06-23 02:21:15] sinal buy
+[2018-06-23 02:21:16] Erro minOrder
+[2018-06-23 02:21:16] 2- Iniciando rotina de venda 
+[2018-06-23 02:21:16] ----Ainda nao ha nada para vender
+
+[2018-06-23 02:21:47] 1- Iniciando rotina de compra
+[2018-06-23 02:21:47] price now = 1.81e-06
+[2018-06-23 02:21:47] Buy at 1.77e-06
+[2018-06-23 02:21:47] sinal buy
+[2018-06-23 02:21:47] price now = 1.81e-06
+[2018-06-23 02:21:47] Buy at 1.77e-06
+[2018-06-23 02:21:47] sinal buy
+[2018-06-23 02:21:47] Erro minOrder
+[2018-06-23 02:21:47] 2- Iniciando rotina de venda 
+[2018-06-23 02:21:47] ----Ainda nao ha nada para vender
+

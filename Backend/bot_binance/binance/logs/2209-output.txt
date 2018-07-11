@@ -1,0 +1,270 @@
+[2018-07-06 14:09:12] logando na  api
+[2018-07-06 14:09:13] Login Ok
+[2018-07-06 14:09:15] 1- Iniciando rotina de compra
+[2018-07-06 14:09:15] 2- Iniciando rotina de venda 
+[2018-07-06 14:09:15] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:09:47] 1- Iniciando rotina de compra
+[2018-07-06 14:09:47] 2- Iniciando rotina de venda 
+[2018-07-06 14:09:47] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:10:18] 1- Iniciando rotina de compra
+[2018-07-06 14:10:18] 2- Iniciando rotina de venda 
+[2018-07-06 14:10:18] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:10:49] 1- Iniciando rotina de compra
+[2018-07-06 14:10:49] 2- Iniciando rotina de venda 
+[2018-07-06 14:10:49] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:11:21] 1- Iniciando rotina de compra
+[2018-07-06 14:11:21] 2- Iniciando rotina de venda 
+[2018-07-06 14:11:21] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:11:52] 1- Iniciando rotina de compra
+[2018-07-06 14:11:52] 2- Iniciando rotina de venda 
+[2018-07-06 14:11:52] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:12:23] 1- Iniciando rotina de compra
+[2018-07-06 14:12:23] 2- Iniciando rotina de venda 
+[2018-07-06 14:12:23] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:12:55] 1- Iniciando rotina de compra
+[2018-07-06 14:12:55] 2- Iniciando rotina de venda 
+[2018-07-06 14:12:55] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:13:25] 1- Iniciando rotina de compra
+[2018-07-06 14:13:25] 2- Iniciando rotina de venda 
+[2018-07-06 14:13:25] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:13:56] 1- Iniciando rotina de compra
+[2018-07-06 14:13:56] 2- Iniciando rotina de venda 
+[2018-07-06 14:13:56] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:14:27] 1- Iniciando rotina de compra
+[2018-07-06 14:14:27] 2- Iniciando rotina de venda 
+[2018-07-06 14:14:27] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:14:59] 1- Iniciando rotina de compra
+[2018-07-06 14:14:59] 2- Iniciando rotina de venda 
+[2018-07-06 14:14:59] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:15:29] 1- Iniciando rotina de compra
+[2018-07-06 14:15:29] 2- Iniciando rotina de venda 
+[2018-07-06 14:15:29] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:16:02] 1- Iniciando rotina de compra
+[2018-07-06 14:16:02] 2- Iniciando rotina de venda 
+[2018-07-06 14:16:02] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:16:33] 1- Iniciando rotina de compra
+[2018-07-06 14:16:33] 2- Iniciando rotina de venda 
+[2018-07-06 14:16:33] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:17:05] 1- Iniciando rotina de compra
+[2018-07-06 14:17:05] 2- Iniciando rotina de venda 
+[2018-07-06 14:17:05] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:17:35] 1- Iniciando rotina de compra
+[2018-07-06 14:17:35] 2- Iniciando rotina de venda 
+[2018-07-06 14:17:35] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:18:08] 1- Iniciando rotina de compra
+[2018-07-06 14:18:08] 2- Iniciando rotina de venda 
+[2018-07-06 14:18:08] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:18:39] 1- Iniciando rotina de compra
+[2018-07-06 14:18:39] 2- Iniciando rotina de venda 
+[2018-07-06 14:18:39] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:19:11] 1- Iniciando rotina de compra
+[2018-07-06 14:19:11] 2- Iniciando rotina de venda 
+[2018-07-06 14:19:11] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:19:41] 1- Iniciando rotina de compra
+[2018-07-06 14:19:41] 2- Iniciando rotina de venda 
+[2018-07-06 14:19:41] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:20:12] 1- Iniciando rotina de compra
+[2018-07-06 14:20:12] 2- Iniciando rotina de venda 
+[2018-07-06 14:20:12] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:20:43] 1- Iniciando rotina de compra
+[2018-07-06 14:20:43] 2- Iniciando rotina de venda 
+[2018-07-06 14:20:43] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:21:14] 1- Iniciando rotina de compra
+[2018-07-06 14:21:14] 2- Iniciando rotina de venda 
+[2018-07-06 14:21:14] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:21:45] 1- Iniciando rotina de compra
+[2018-07-06 14:21:45] 2- Iniciando rotina de venda 
+[2018-07-06 14:21:45] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:22:16] 1- Iniciando rotina de compra
+[2018-07-06 14:22:16] 2- Iniciando rotina de venda 
+[2018-07-06 14:22:16] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:22:47] 1- Iniciando rotina de compra
+[2018-07-06 14:22:47] 2- Iniciando rotina de venda 
+[2018-07-06 14:22:47] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:23:19] 1- Iniciando rotina de compra
+[2018-07-06 14:23:19] 2- Iniciando rotina de venda 
+[2018-07-06 14:23:19] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:23:49] 1- Iniciando rotina de compra
+[2018-07-06 14:23:49] 2- Iniciando rotina de venda 
+[2018-07-06 14:23:49] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:24:21] 1- Iniciando rotina de compra
+[2018-07-06 14:24:21] 2- Iniciando rotina de venda 
+[2018-07-06 14:24:21] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:24:51] 1- Iniciando rotina de compra
+[2018-07-06 14:24:51] 2- Iniciando rotina de venda 
+[2018-07-06 14:24:51] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:25:22] 1- Iniciando rotina de compra
+[2018-07-06 14:25:22] 2- Iniciando rotina de venda 
+[2018-07-06 14:25:22] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:25:53] 1- Iniciando rotina de compra
+[2018-07-06 14:25:53] 2- Iniciando rotina de venda 
+[2018-07-06 14:25:53] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:26:24] 1- Iniciando rotina de compra
+[2018-07-06 14:26:24] 2- Iniciando rotina de venda 
+[2018-07-06 14:26:24] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:26:56] 1- Iniciando rotina de compra
+[2018-07-06 14:26:56] 2- Iniciando rotina de venda 
+[2018-07-06 14:26:56] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:27:27] 1- Iniciando rotina de compra
+[2018-07-06 14:27:27] 2- Iniciando rotina de venda 
+[2018-07-06 14:27:27] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:27:58] 1- Iniciando rotina de compra
+[2018-07-06 14:27:58] 2- Iniciando rotina de venda 
+[2018-07-06 14:27:58] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:28:29] 1- Iniciando rotina de compra
+[2018-07-06 14:28:29] 2- Iniciando rotina de venda 
+[2018-07-06 14:28:29] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:29:00] 1- Iniciando rotina de compra
+[2018-07-06 14:29:00] 2- Iniciando rotina de venda 
+[2018-07-06 14:29:00] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:29:31] 1- Iniciando rotina de compra
+[2018-07-06 14:29:31] 2- Iniciando rotina de venda 
+[2018-07-06 14:29:31] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:30:01] 1- Iniciando rotina de compra
+[2018-07-06 14:30:01] 2- Iniciando rotina de venda 
+[2018-07-06 14:30:01] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:30:33] 1- Iniciando rotina de compra
+[2018-07-06 14:30:33] 2- Iniciando rotina de venda 
+[2018-07-06 14:30:33] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:31:03] 1- Iniciando rotina de compra
+[2018-07-06 14:31:03] 2- Iniciando rotina de venda 
+[2018-07-06 14:31:03] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:31:34] 1- Iniciando rotina de compra
+[2018-07-06 14:31:34] 2- Iniciando rotina de venda 
+[2018-07-06 14:31:34] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:32:05] 1- Iniciando rotina de compra
+[2018-07-06 14:32:05] 2- Iniciando rotina de venda 
+[2018-07-06 14:32:05] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:32:37] 1- Iniciando rotina de compra
+[2018-07-06 14:32:37] 2- Iniciando rotina de venda 
+[2018-07-06 14:32:37] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:33:07] 1- Iniciando rotina de compra
+[2018-07-06 14:33:07] 2- Iniciando rotina de venda 
+[2018-07-06 14:33:07] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:33:39] 1- Iniciando rotina de compra
+[2018-07-06 14:33:39] 2- Iniciando rotina de venda 
+[2018-07-06 14:33:39] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:34:10] 1- Iniciando rotina de compra
+[2018-07-06 14:34:10] 2- Iniciando rotina de venda 
+[2018-07-06 14:34:10] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:34:41] 1- Iniciando rotina de compra
+[2018-07-06 14:34:41] 2- Iniciando rotina de venda 
+[2018-07-06 14:34:41] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:35:12] 1- Iniciando rotina de compra
+[2018-07-06 14:35:12] 2- Iniciando rotina de venda 
+[2018-07-06 14:35:12] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:35:43] 1- Iniciando rotina de compra
+[2018-07-06 14:35:43] 2- Iniciando rotina de venda 
+[2018-07-06 14:35:43] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:36:14] 1- Iniciando rotina de compra
+[2018-07-06 14:36:14] 2- Iniciando rotina de venda 
+[2018-07-06 14:36:14] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:36:46] 1- Iniciando rotina de compra
+[2018-07-06 14:36:46] 2- Iniciando rotina de venda 
+[2018-07-06 14:36:46] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:37:16] 1- Iniciando rotina de compra
+[2018-07-06 14:37:16] 2- Iniciando rotina de venda 
+[2018-07-06 14:37:16] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:37:48] 1- Iniciando rotina de compra
+[2018-07-06 14:37:48] 2- Iniciando rotina de venda 
+[2018-07-06 14:37:48] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:38:19] 1- Iniciando rotina de compra
+[2018-07-06 14:38:19] 2- Iniciando rotina de venda 
+[2018-07-06 14:38:19] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:38:50] 1- Iniciando rotina de compra
+[2018-07-06 14:38:50] 2- Iniciando rotina de venda 
+[2018-07-06 14:38:50] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:39:21] 1- Iniciando rotina de compra
+[2018-07-06 14:39:21] 2- Iniciando rotina de venda 
+[2018-07-06 14:39:21] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:39:52] 1- Iniciando rotina de compra
+[2018-07-06 14:39:52] 2- Iniciando rotina de venda 
+[2018-07-06 14:39:52] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:40:23] 1- Iniciando rotina de compra
+[2018-07-06 14:40:23] 2- Iniciando rotina de venda 
+[2018-07-06 14:40:23] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:40:55] 1- Iniciando rotina de compra
+[2018-07-06 14:40:55] 2- Iniciando rotina de venda 
+[2018-07-06 14:40:55] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:41:26] 1- Iniciando rotina de compra
+[2018-07-06 14:41:26] 2- Iniciando rotina de venda 
+[2018-07-06 14:41:26] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:41:58] 1- Iniciando rotina de compra
+[2018-07-06 14:41:58] 2- Iniciando rotina de venda 
+[2018-07-06 14:41:58] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:42:30] 1- Iniciando rotina de compra
+[2018-07-06 14:42:30] 2- Iniciando rotina de venda 
+[2018-07-06 14:42:30] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:43:03] 1- Iniciando rotina de compra
+[2018-07-06 14:43:03] 2- Iniciando rotina de venda 
+[2018-07-06 14:43:03] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:43:34] 1- Iniciando rotina de compra
+[2018-07-06 14:43:34] 2- Iniciando rotina de venda 
+[2018-07-06 14:43:34] ----Ainda nao ha nada para vender
+

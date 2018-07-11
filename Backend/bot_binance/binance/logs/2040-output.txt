@@ -1,0 +1,162 @@
+[2018-06-28 14:10:12] logando na  api
+[2018-06-28 14:10:12] Login Ok
+[2018-06-28 14:10:14] 1- Iniciando rotina de compra
+[2018-06-28 14:10:14] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:10:14] 2- Iniciando rotina de venda 
+[2018-06-28 14:10:14] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:10:44] 1- Iniciando rotina de compra
+[2018-06-28 14:10:44] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:10:44] 2- Iniciando rotina de venda 
+[2018-06-28 14:10:44] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:11:15] 1- Iniciando rotina de compra
+[2018-06-28 14:11:15] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:11:15] 2- Iniciando rotina de venda 
+[2018-06-28 14:11:15] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:11:46] 1- Iniciando rotina de compra
+[2018-06-28 14:11:46] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:11:46] 2- Iniciando rotina de venda 
+[2018-06-28 14:11:46] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:12:17] 1- Iniciando rotina de compra
+[2018-06-28 14:12:17] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:12:17] 2- Iniciando rotina de venda 
+[2018-06-28 14:12:17] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:12:47] 1- Iniciando rotina de compra
+[2018-06-28 14:12:47] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:12:47] 2- Iniciando rotina de venda 
+[2018-06-28 14:12:47] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:13:18] 1- Iniciando rotina de compra
+[2018-06-28 14:13:18] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:13:18] 2- Iniciando rotina de venda 
+[2018-06-28 14:13:18] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:13:48] 1- Iniciando rotina de compra
+[2018-06-28 14:13:48] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:13:48] 2- Iniciando rotina de venda 
+[2018-06-28 14:13:48] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:14:19] 1- Iniciando rotina de compra
+[2018-06-28 14:14:19] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:14:19] 2- Iniciando rotina de venda 
+[2018-06-28 14:14:19] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:14:50] 1- Iniciando rotina de compra
+[2018-06-28 14:14:50] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:14:50] 2- Iniciando rotina de venda 
+[2018-06-28 14:14:50] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:15:20] 1- Iniciando rotina de compra
+[2018-06-28 14:15:20] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:15:20] 2- Iniciando rotina de venda 
+[2018-06-28 14:15:20] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:15:51] 1- Iniciando rotina de compra
+[2018-06-28 14:15:51] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:15:51] 2- Iniciando rotina de venda 
+[2018-06-28 14:15:51] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:16:21] 1- Iniciando rotina de compra
+[2018-06-28 14:16:21] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:16:21] 2- Iniciando rotina de venda 
+[2018-06-28 14:16:21] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:16:52] 1- Iniciando rotina de compra
+[2018-06-28 14:16:52] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:16:52] 2- Iniciando rotina de venda 
+[2018-06-28 14:16:52] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:17:22] 1- Iniciando rotina de compra
+[2018-06-28 14:17:22] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:17:22] 2- Iniciando rotina de venda 
+[2018-06-28 14:17:22] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:17:53] 1- Iniciando rotina de compra
+[2018-06-28 14:17:53] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:17:53] 2- Iniciando rotina de venda 
+[2018-06-28 14:17:53] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:18:23] 1- Iniciando rotina de compra
+[2018-06-28 14:18:23] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:18:23] 2- Iniciando rotina de venda 
+[2018-06-28 14:18:23] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:18:54] 1- Iniciando rotina de compra
+[2018-06-28 14:18:54] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:18:54] 2- Iniciando rotina de venda 
+[2018-06-28 14:18:54] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:19:24] 1- Iniciando rotina de compra
+[2018-06-28 14:19:24] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:19:24] 2- Iniciando rotina de venda 
+[2018-06-28 14:19:24] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:19:55] 1- Iniciando rotina de compra
+[2018-06-28 14:19:55] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:19:55] 2- Iniciando rotina de venda 
+[2018-06-28 14:19:55] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:20:25] 1- Iniciando rotina de compra
+[2018-06-28 14:20:25] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:20:25] 2- Iniciando rotina de venda 
+[2018-06-28 14:20:25] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:20:56] 1- Iniciando rotina de compra
+[2018-06-28 14:20:56] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:20:56] 2- Iniciando rotina de venda 
+[2018-06-28 14:20:56] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:21:26] 1- Iniciando rotina de compra
+[2018-06-28 14:21:26] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:21:26] 2- Iniciando rotina de venda 
+[2018-06-28 14:21:26] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:21:57] 1- Iniciando rotina de compra
+[2018-06-28 14:21:57] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:21:57] 2- Iniciando rotina de venda 
+[2018-06-28 14:21:57] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:22:27] 1- Iniciando rotina de compra
+[2018-06-28 14:22:27] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:22:27] 2- Iniciando rotina de venda 
+[2018-06-28 14:22:27] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:22:58] 1- Iniciando rotina de compra
+[2018-06-28 14:22:58] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:22:58] 2- Iniciando rotina de venda 
+[2018-06-28 14:22:58] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:23:28] 1- Iniciando rotina de compra
+[2018-06-28 14:23:28] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:23:28] 2- Iniciando rotina de venda 
+[2018-06-28 14:23:28] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:23:59] 1- Iniciando rotina de compra
+[2018-06-28 14:23:59] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:23:59] 2- Iniciando rotina de venda 
+[2018-06-28 14:23:59] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:24:29] 1- Iniciando rotina de compra
+[2018-06-28 14:24:29] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:24:29] 2- Iniciando rotina de venda 
+[2018-06-28 14:24:29] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:25:00] 1- Iniciando rotina de compra
+[2018-06-28 14:25:00] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:25:00] 2- Iniciando rotina de venda 
+[2018-06-28 14:25:00] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:25:30] 1- Iniciando rotina de compra
+[2018-06-28 14:25:30] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:25:30] 2- Iniciando rotina de venda 
+[2018-06-28 14:25:30] ----Ainda nao ha nada para vender
+
+[2018-06-28 14:26:01] 1- Iniciando rotina de compra
+[2018-06-28 14:26:01] -- CREDITOS INSUFICIENTES
+[2018-06-28 14:26:01] 2- Iniciando rotina de venda 
+[2018-06-28 14:26:01] ----Ainda nao ha nada para vender
+

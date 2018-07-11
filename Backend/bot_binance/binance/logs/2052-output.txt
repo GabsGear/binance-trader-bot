@@ -1,0 +1,224 @@
+[2018-06-28 18:42:59] logando na  api
+[2018-06-28 18:43:00] Login Ok
+[2018-06-28 18:44:00] logando na  api
+[2018-06-28 18:44:01] Login Ok
+[2018-06-28 18:44:02] 1- Iniciando rotina de compra
+[2018-06-28 18:44:02] price now = 0.00015614
+[2018-06-28 18:44:02] Buy at 0.00015636
+[2018-06-28 18:44:02] sinal buy
+[2018-06-28 18:44:02] price now = 0.00015614
+[2018-06-28 18:44:02] Buy at 0.00015636
+[2018-06-28 18:44:02] sinal buy
+[2018-06-28 18:44:03] --Bitcoin sem forca nao vou comprar.
+[2018-06-28 18:44:03] 2- Iniciando rotina de venda 
+[2018-06-28 18:44:03] ----Ainda nao ha nada para vender
+
+[2018-06-28 18:44:33] 1- Iniciando rotina de compra
+[2018-06-28 18:44:33] price now = 0.00015608
+[2018-06-28 18:44:33] Buy at 0.00015636
+[2018-06-28 18:44:33] sinal buy
+[2018-06-28 18:44:33] price now = 0.00015608
+[2018-06-28 18:44:33] Buy at 0.00015636
+[2018-06-28 18:44:33] sinal buy
+[2018-06-28 18:44:34] --Bitcoin sem forca nao vou comprar.
+[2018-06-28 18:44:34] 2- Iniciando rotina de venda 
+[2018-06-28 18:44:34] ----Ainda nao ha nada para vender
+
+[2018-06-28 18:45:05] 1- Iniciando rotina de compra
+[2018-06-28 18:45:05] price now = 0.00015614
+[2018-06-28 18:45:05] Buy at 0.00015636
+[2018-06-28 18:45:05] sinal buy
+[2018-06-28 18:45:05] price now = 0.00015614
+[2018-06-28 18:45:05] Buy at 0.00015636
+[2018-06-28 18:45:05] sinal buy
+[2018-06-28 18:45:06] --Bitcoin sem forca nao vou comprar.
+[2018-06-28 18:45:06] 2- Iniciando rotina de venda 
+[2018-06-28 18:45:06] ----Ainda nao ha nada para vender
+
+[2018-06-28 18:45:37] 1- Iniciando rotina de compra
+[2018-06-28 18:45:37] price now = 0.00015614
+[2018-06-28 18:45:37] Buy at 0.00015636
+[2018-06-28 18:45:37] sinal buy
+[2018-06-28 18:45:37] price now = 0.00015614
+[2018-06-28 18:45:37] Buy at 0.00015636
+[2018-06-28 18:45:37] sinal buy
+[2018-06-28 18:45:37] --Bitcoin sem forca nao vou comprar.
+[2018-06-28 18:45:37] 2- Iniciando rotina de venda 
+[2018-06-28 18:45:37] ----Ainda nao ha nada para vender
+
+[2018-06-28 18:46:08] 1- Iniciando rotina de compra
+[2018-06-28 18:46:08] price now = 0.00015636
+[2018-06-28 18:46:08] Buy at 0.00015636
+[2018-06-28 18:46:08] sinal buy
+[2018-06-28 18:46:08] price now = 0.00015636
+[2018-06-28 18:46:08] Buy at 0.00015636
+[2018-06-28 18:46:08] sinal buy
+[2018-06-28 18:46:09] --Bitcoin sem forca nao vou comprar.
+[2018-06-28 18:46:09] 2- Iniciando rotina de venda 
+[2018-06-28 18:46:09] ----Ainda nao ha nada para vender
+
+[2018-06-28 18:46:40] 1- Iniciando rotina de compra
+[2018-06-28 18:46:40] price now = 0.00015637
+[2018-06-28 18:46:40] Buy at 0.00015636
+[2018-06-28 18:46:40] sinal buy
+[2018-06-28 18:46:40] price now = 0.00015637
+[2018-06-28 18:46:40] Buy at 0.00015636
+[2018-06-28 18:46:40] sinal buy
+[2018-06-28 18:46:41] --Bitcoin sem forca nao vou comprar.
+[2018-06-28 18:46:41] 2- Iniciando rotina de venda 
+[2018-06-28 18:46:41] ----Ainda nao ha nada para vender
+
+[2018-06-28 18:47:11] 1- Iniciando rotina de compra
+[2018-06-28 18:47:11] price now = 0.00015637
+[2018-06-28 18:47:11] Buy at 0.00015636
+[2018-06-28 18:47:11] sinal buy
+[2018-06-28 18:47:11] price now = 0.00015637
+[2018-06-28 18:47:11] Buy at 0.00015636
+[2018-06-28 18:47:11] sinal buy
+[2018-06-28 18:47:12] --Bitcoin sem forca nao vou comprar.
+[2018-06-28 18:47:12] 2- Iniciando rotina de venda 
+[2018-06-28 18:47:12] ----Ainda nao ha nada para vender
+
+[2018-06-28 18:47:43] 1- Iniciando rotina de compra
+[2018-06-28 18:47:43] price now = 0.00015645
+[2018-06-28 18:47:43] Buy at 0.00015636
+[2018-06-28 18:47:43] sinal buy
+[2018-06-28 18:47:43] price now = 0.00015645
+[2018-06-28 18:47:43] Buy at 0.00015636
+[2018-06-28 18:47:43] sinal buy
+[2018-06-28 18:47:45] --Bitcoin sem forca nao vou comprar.
+[2018-06-28 18:47:45] 2- Iniciando rotina de venda 
+[2018-06-28 18:47:45] ----Ainda nao ha nada para vender
+
+[2018-06-28 18:48:15] 1- Iniciando rotina de compra
+[2018-06-28 18:48:15] price now = 0.00015649
+[2018-06-28 18:48:15] Buy at 0.00015636
+[2018-06-28 18:48:15] sinal buy
+[2018-06-28 18:48:15] price now = 0.00015649
+[2018-06-28 18:48:15] Buy at 0.00015636
+[2018-06-28 18:48:15] sinal buy
+[2018-06-28 18:48:16] --Bitcoin sem forca nao vou comprar.
+[2018-06-28 18:48:16] 2- Iniciando rotina de venda 
+[2018-06-28 18:48:16] ----Ainda nao ha nada para vender
+
+[2018-06-28 18:48:47] 1- Iniciando rotina de compra
+[2018-06-28 18:48:47] price now = 0.0001565
+[2018-06-28 18:48:47] Buy at 0.00015636
+[2018-06-28 18:48:47] sinal buy
+[2018-06-28 18:48:47] price now = 0.0001565
+[2018-06-28 18:48:47] Buy at 0.00015636
+[2018-06-28 18:48:47] sinal buy
+[2018-06-28 18:48:48] --Bitcoin sem forca nao vou comprar.
+[2018-06-28 18:48:48] 2- Iniciando rotina de venda 
+[2018-06-28 18:48:48] ----Ainda nao ha nada para vender
+
+[2018-06-28 18:49:19] 1- Iniciando rotina de compra
+[2018-06-28 18:49:19] price now = 0.00015683
+[2018-06-28 18:49:19] Buy at 0.00015636
+[2018-06-28 18:49:19] sinal buy
+[2018-06-28 18:49:19] price now = 0.00015683
+[2018-06-28 18:49:19] Buy at 0.00015636
+[2018-06-28 18:49:19] sinal buy
+[2018-06-28 18:49:20] --Bitcoin sem forca nao vou comprar.
+[2018-06-28 18:49:20] 2- Iniciando rotina de venda 
+[2018-06-28 18:49:20] ----Ainda nao ha nada para vender
+
+[2018-06-28 18:49:50] 1- Iniciando rotina de compra
+[2018-06-28 18:49:50] price now = 0.00015729
+[2018-06-28 18:49:50] Buy at 0.00015636
+[2018-06-28 18:49:50] sinal buy
+[2018-06-28 18:49:50] price now = 0.00015729
+[2018-06-28 18:49:50] Buy at 0.00015636
+[2018-06-28 18:49:50] sinal buy
+[2018-06-28 18:49:51] --Bitcoin sem forca nao vou comprar.
+[2018-06-28 18:49:51] 2- Iniciando rotina de venda 
+[2018-06-28 18:49:51] ----Ainda nao ha nada para vender
+
+[2018-06-28 18:50:22] 1- Iniciando rotina de compra
+[2018-06-28 18:50:22] price now = 0.00015696
+[2018-06-28 18:50:22] Buy at 0.00015636
+[2018-06-28 18:50:22] sinal buy
+[2018-06-28 18:50:22] price now = 0.00015696
+[2018-06-28 18:50:22] Buy at 0.00015636
+[2018-06-28 18:50:22] sinal buy
+[2018-06-28 18:50:23] --Bitcoin sem forca nao vou comprar.
+[2018-06-28 18:50:23] 2- Iniciando rotina de venda 
+[2018-06-28 18:50:23] ----Ainda nao ha nada para vender
+
+[2018-06-28 18:50:54] 1- Iniciando rotina de compra
+[2018-06-28 18:50:54] price now = 0.00015684
+[2018-06-28 18:50:54] Buy at 0.00015636
+[2018-06-28 18:50:54] sinal buy
+[2018-06-28 18:50:54] price now = 0.00015684
+[2018-06-28 18:50:54] Buy at 0.00015636
+[2018-06-28 18:50:54] sinal buy
+[2018-06-28 18:50:55] --Bitcoin sem forca nao vou comprar.
+[2018-06-28 18:50:55] 2- Iniciando rotina de venda 
+[2018-06-28 18:50:55] ----Ainda nao ha nada para vender
+
+[2018-06-28 18:51:25] 1- Iniciando rotina de compra
+[2018-06-28 18:51:25] price now = 0.00015722
+[2018-06-28 18:51:25] Buy at 0.00015636
+[2018-06-28 18:51:25] sinal buy
+[2018-06-28 18:51:25] price now = 0.00015722
+[2018-06-28 18:51:25] Buy at 0.00015636
+[2018-06-28 18:51:25] sinal buy
+[2018-06-28 18:51:26] --Bitcoin sem forca nao vou comprar.
+[2018-06-28 18:51:26] 2- Iniciando rotina de venda 
+[2018-06-28 18:51:26] ----Ainda nao ha nada para vender
+
+[2018-06-28 18:51:57] 1- Iniciando rotina de compra
+[2018-06-28 18:51:57] price now = 0.00015772
+[2018-06-28 18:51:57] Buy at 0.00015636
+[2018-06-28 18:51:57] sinal buy
+[2018-06-28 18:51:57] price now = 0.00015772
+[2018-06-28 18:51:57] Buy at 0.00015636
+[2018-06-28 18:51:57] sinal buy
+[2018-06-28 18:51:58] --Bitcoin sem forca nao vou comprar.
+[2018-06-28 18:51:58] 2- Iniciando rotina de venda 
+[2018-06-28 18:51:58] ----Ainda nao ha nada para vender
+
+[2018-06-28 18:52:29] 1- Iniciando rotina de compra
+[2018-06-28 18:52:29] price now = 0.00015734
+[2018-06-28 18:52:29] Buy at 0.00015636
+[2018-06-28 18:52:29] sinal buy
+[2018-06-28 18:52:29] price now = 0.00015734
+[2018-06-28 18:52:29] Buy at 0.00015636
+[2018-06-28 18:52:29] sinal buy
+[2018-06-28 18:52:30] --Bitcoin sem forca nao vou comprar.
+[2018-06-28 18:52:30] 2- Iniciando rotina de venda 
+[2018-06-28 18:52:30] ----Ainda nao ha nada para vender
+
+[2018-06-28 18:53:01] 1- Iniciando rotina de compra
+[2018-06-28 18:53:01] price now = 0.00015769
+[2018-06-28 18:53:01] Buy at 0.00015636
+[2018-06-28 18:53:01] sinal buy
+[2018-06-28 18:53:01] price now = 0.00015769
+[2018-06-28 18:53:01] Buy at 0.00015636
+[2018-06-28 18:53:01] sinal buy
+[2018-06-28 18:53:02] --Bitcoin sem forca nao vou comprar.
+[2018-06-28 18:53:02] 2- Iniciando rotina de venda 
+[2018-06-28 18:53:02] ----Ainda nao ha nada para vender
+
+[2018-06-28 18:53:33] 1- Iniciando rotina de compra
+[2018-06-28 18:53:33] price now = 0.00015752
+[2018-06-28 18:53:33] Buy at 0.00015636
+[2018-06-28 18:53:33] sinal buy
+[2018-06-28 18:53:33] price now = 0.00015752
+[2018-06-28 18:53:33] Buy at 0.00015636
+[2018-06-28 18:53:33] sinal buy
+[2018-06-28 18:53:33] --Bitcoin sem forca nao vou comprar.
+[2018-06-28 18:53:33] 2- Iniciando rotina de venda 
+[2018-06-28 18:53:33] ----Ainda nao ha nada para vender
+
+[2018-06-28 18:54:05] 1- Iniciando rotina de compra
+[2018-06-28 18:54:05] price now = 0.0001575
+[2018-06-28 18:54:05] Buy at 0.00015636
+[2018-06-28 18:54:05] sinal buy
+[2018-06-28 18:54:05] price now = 0.0001575
+[2018-06-28 18:54:05] Buy at 0.00015636
+[2018-06-28 18:54:05] sinal buy
+[2018-06-28 18:54:06] --Bitcoin sem forca nao vou comprar.
+[2018-06-28 18:54:06] 2- Iniciando rotina de venda 
+[2018-06-28 18:54:06] ----Ainda nao ha nada para vender
+

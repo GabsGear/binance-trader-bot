@@ -1,0 +1,100 @@
+[2018-06-29 23:04:09] logando na  api
+[2018-06-29 23:04:10] Login Ok
+[2018-06-29 23:05:11] logando na  api
+[2018-06-29 23:05:11] Login Ok
+[2018-06-29 23:05:13] 1- Iniciando rotina de compra
+[2018-06-29 23:05:13] price now = 14.6599
+[2018-06-29 23:05:13] Buy at 13.83
+[2018-06-29 23:05:13] price now = 14.6599
+[2018-06-29 23:05:13] Buy at 13.83
+[2018-06-29 23:05:13] 2- Iniciando rotina de venda 
+[2018-06-29 23:05:13] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:05:44] 1- Iniciando rotina de compra
+[2018-06-29 23:05:44] price now = 14.6181
+[2018-06-29 23:05:44] Buy at 13.83
+[2018-06-29 23:05:44] price now = 14.6181
+[2018-06-29 23:05:44] Buy at 13.83
+[2018-06-29 23:05:44] 2- Iniciando rotina de venda 
+[2018-06-29 23:05:44] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:06:14] 1- Iniciando rotina de compra
+[2018-06-29 23:06:14] price now = 14.5971
+[2018-06-29 23:06:14] Buy at 13.83
+[2018-06-29 23:06:14] price now = 14.5971
+[2018-06-29 23:06:14] Buy at 13.83
+[2018-06-29 23:06:14] 2- Iniciando rotina de venda 
+[2018-06-29 23:06:14] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:06:45] 1- Iniciando rotina de compra
+[2018-06-29 23:06:45] price now = 14.5638
+[2018-06-29 23:06:45] Buy at 13.83
+[2018-06-29 23:06:45] price now = 14.5638
+[2018-06-29 23:06:45] Buy at 13.83
+[2018-06-29 23:06:45] 2- Iniciando rotina de venda 
+[2018-06-29 23:06:45] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:07:16] 1- Iniciando rotina de compra
+[2018-06-29 23:07:16] price now = 14.5967
+[2018-06-29 23:07:16] Buy at 13.83
+[2018-06-29 23:07:16] price now = 14.5967
+[2018-06-29 23:07:16] Buy at 13.83
+[2018-06-29 23:07:16] 2- Iniciando rotina de venda 
+[2018-06-29 23:07:16] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:07:46] 1- Iniciando rotina de compra
+[2018-06-29 23:07:46] price now = 14.6038
+[2018-06-29 23:07:46] Buy at 13.83
+[2018-06-29 23:07:46] price now = 14.6038
+[2018-06-29 23:07:46] Buy at 13.83
+[2018-06-29 23:07:46] 2- Iniciando rotina de venda 
+[2018-06-29 23:07:46] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:08:17] 1- Iniciando rotina de compra
+[2018-06-29 23:08:17] price now = 14.5968
+[2018-06-29 23:08:17] Buy at 13.83
+[2018-06-29 23:08:17] price now = 14.5968
+[2018-06-29 23:08:17] Buy at 13.83
+[2018-06-29 23:08:17] 2- Iniciando rotina de venda 
+[2018-06-29 23:08:17] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:08:47] 1- Iniciando rotina de compra
+[2018-06-29 23:08:47] price now = 14.6252
+[2018-06-29 23:08:47] Buy at 13.83
+[2018-06-29 23:08:47] price now = 14.6252
+[2018-06-29 23:08:47] Buy at 13.83
+[2018-06-29 23:08:47] 2- Iniciando rotina de venda 
+[2018-06-29 23:08:47] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:09:18] 1- Iniciando rotina de compra
+[2018-06-29 23:09:18] price now = 14.64
+[2018-06-29 23:09:18] Buy at 13.83
+[2018-06-29 23:09:18] price now = 14.64
+[2018-06-29 23:09:18] Buy at 13.83
+[2018-06-29 23:09:18] 2- Iniciando rotina de venda 
+[2018-06-29 23:09:18] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:09:49] 1- Iniciando rotina de compra
+[2018-06-29 23:09:49] price now = 14.6647
+[2018-06-29 23:09:49] Buy at 13.83
+[2018-06-29 23:09:49] price now = 14.6647
+[2018-06-29 23:09:49] Buy at 13.83
+[2018-06-29 23:09:49] 2- Iniciando rotina de venda 
+[2018-06-29 23:09:49] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:10:19] 1- Iniciando rotina de compra
+[2018-06-29 23:10:19] price now = 14.6658
+[2018-06-29 23:10:19] Buy at 13.83
+[2018-06-29 23:10:19] price now = 14.6658
+[2018-06-29 23:10:19] Buy at 13.83
+[2018-06-29 23:10:19] 2- Iniciando rotina de venda 
+[2018-06-29 23:10:19] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:10:50] 1- Iniciando rotina de compra
+[2018-06-29 23:10:50] price now = 14.6615
+[2018-06-29 23:10:50] Buy at 13.83
+[2018-06-29 23:10:50] price now = 14.6615
+[2018-06-29 23:10:50] Buy at 13.83
+[2018-06-29 23:10:50] 2- Iniciando rotina de venda 
+[2018-06-29 23:10:50] ----Ainda nao ha nada para vender
+

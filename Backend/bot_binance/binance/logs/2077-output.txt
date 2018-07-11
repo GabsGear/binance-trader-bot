@@ -1,0 +1,52 @@
+[2018-06-29 23:00:09] logando na  api
+[2018-06-29 23:00:10] Login Ok
+[2018-06-29 23:00:10] 1- Iniciando rotina de compra
+[2018-06-29 23:00:10] price now = 0.0004272
+[2018-06-29 23:00:10] Buy at 0.0004153
+[2018-06-29 23:00:10] price now = 0.0004272
+[2018-06-29 23:00:10] Buy at 0.0004153
+[2018-06-29 23:00:10] 2- Iniciando rotina de venda 
+[2018-06-29 23:00:10] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:00:41] 1- Iniciando rotina de compra
+[2018-06-29 23:00:41] price now = 0.0004265
+[2018-06-29 23:00:41] Buy at 0.0004153
+[2018-06-29 23:00:41] price now = 0.0004265
+[2018-06-29 23:00:41] Buy at 0.0004153
+[2018-06-29 23:00:41] 2- Iniciando rotina de venda 
+[2018-06-29 23:00:41] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:01:11] 1- Iniciando rotina de compra
+[2018-06-29 23:01:11] price now = 0.0004275
+[2018-06-29 23:01:11] Buy at 0.0004153
+[2018-06-29 23:01:11] sinal sell
+[2018-06-29 23:01:11] price now = 0.0004275
+[2018-06-29 23:01:11] Buy at 0.0004153
+[2018-06-29 23:01:11] sinal sell
+[2018-06-29 23:01:11] 2- Iniciando rotina de venda 
+[2018-06-29 23:01:11] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:01:42] 1- Iniciando rotina de compra
+[2018-06-29 23:01:42] price now = 0.0004267
+[2018-06-29 23:01:42] Buy at 0.0004153
+[2018-06-29 23:01:42] price now = 0.0004267
+[2018-06-29 23:01:42] Buy at 0.0004153
+[2018-06-29 23:01:42] 2- Iniciando rotina de venda 
+[2018-06-29 23:01:42] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:02:13] 1- Iniciando rotina de compra
+[2018-06-29 23:02:13] price now = 0.0004267
+[2018-06-29 23:02:13] Buy at 0.0004153
+[2018-06-29 23:02:13] price now = 0.0004267
+[2018-06-29 23:02:13] Buy at 0.0004153
+[2018-06-29 23:02:13] 2- Iniciando rotina de venda 
+[2018-06-29 23:02:13] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:02:43] 1- Iniciando rotina de compra
+[2018-06-29 23:02:43] price now = 0.0004266
+[2018-06-29 23:02:43] Buy at 0.0004153
+[2018-06-29 23:02:43] price now = 0.0004266
+[2018-06-29 23:02:43] Buy at 0.0004153
+[2018-06-29 23:02:43] 2- Iniciando rotina de venda 
+[2018-06-29 23:02:43] ----Ainda nao ha nada para vender
+

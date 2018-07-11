@@ -1,0 +1,151 @@
+[2018-07-02 03:30:19] logando na  api
+[2018-07-02 03:30:21] Login Ok
+[2018-07-02 03:31:20] logando na  api
+[2018-07-02 03:31:21] Login Ok
+[2018-07-02 03:31:22] 1- Iniciando rotina de compra
+[2018-07-02 03:31:22] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:31:22] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:31:23] --Bitcoin status pct:-1.0181207240738672/follow:1
+[2018-07-02 03:31:24] 2- Iniciando rotina de venda 
+[2018-07-02 03:31:24] ----Ainda nao ha nada para vender
+
+[2018-07-02 03:31:55] 1- Iniciando rotina de compra
+[2018-07-02 03:31:55] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:31:55] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:31:57] --Bitcoin status pct:-1.0129294410246672/follow:1
+[2018-07-02 03:31:57] 2- Iniciando rotina de venda 
+[2018-07-02 03:31:57] ----Ainda nao ha nada para vender
+
+[2018-07-02 03:32:28] 1- Iniciando rotina de compra
+[2018-07-02 03:32:28] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:32:28] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:32:30] --Bitcoin status pct:-1.051156161659705/follow:1
+[2018-07-02 03:32:31] 2- Iniciando rotina de venda 
+[2018-07-02 03:32:31] ----Ainda nao ha nada para vender
+
+[2018-07-02 03:33:01] 1- Iniciando rotina de compra
+[2018-07-02 03:33:01] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:33:01] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:33:02] --Bitcoin status pct:-1.051156161659705/follow:1
+[2018-07-02 03:33:03] 2- Iniciando rotina de venda 
+[2018-07-02 03:33:03] ----Ainda nao ha nada para vender
+
+[2018-07-02 03:33:35] 1- Iniciando rotina de compra
+[2018-07-02 03:33:35] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:33:35] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:33:36] --Bitcoin status pct:-1.0714493590338634/follow:1
+[2018-07-02 03:33:37] 2- Iniciando rotina de venda 
+[2018-07-02 03:33:37] ----Ainda nao ha nada para vender
+
+[2018-07-02 03:34:08] 1- Iniciando rotina de compra
+[2018-07-02 03:34:08] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:34:08] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:34:09] --Bitcoin status pct:-1.1762188896632182/follow:1
+[2018-07-02 03:34:11] 2- Iniciando rotina de venda 
+[2018-07-02 03:34:11] ----Ainda nao ha nada para vender
+
+[2018-07-02 03:34:42] 1- Iniciando rotina de compra
+[2018-07-02 03:34:42] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:34:42] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:34:43] --Bitcoin status pct:-1.1247779939938454/follow:1
+[2018-07-02 03:34:43] 2- Iniciando rotina de venda 
+[2018-07-02 03:34:43] ----Ainda nao ha nada para vender
+
+[2018-07-02 03:35:14] 1- Iniciando rotina de compra
+[2018-07-02 03:35:14] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:35:14] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:35:15] --Bitcoin status pct:-1.192579296848578/follow:1
+[2018-07-02 03:35:16] 2- Iniciando rotina de venda 
+[2018-07-02 03:35:16] ----Ainda nao ha nada para vender
+
+[2018-07-02 03:35:47] 1- Iniciando rotina de compra
+[2018-07-02 03:35:47] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:35:47] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:35:49] --Bitcoin status pct:-1.2238843067513443/follow:1
+[2018-07-02 03:35:50] 2- Iniciando rotina de venda 
+[2018-07-02 03:35:50] ----Ainda nao ha nada para vender
+
+[2018-07-02 03:36:20] 1- Iniciando rotina de compra
+[2018-07-02 03:36:20] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:36:20] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:36:22] --Bitcoin status pct:-0.9360040649319501/follow:1
+[2018-07-02 03:36:22] 2- Iniciando rotina de venda 
+[2018-07-02 03:36:22] ----Ainda nao ha nada para vender
+
+[2018-07-02 03:36:54] 1- Iniciando rotina de compra
+[2018-07-02 03:36:54] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:36:54] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:36:55] --Bitcoin status pct:-0.9120927005841111/follow:1
+[2018-07-02 03:36:56] 2- Iniciando rotina de venda 
+[2018-07-02 03:36:56] ----Ainda nao ha nada para vender
+
+[2018-07-02 03:37:27] 1- Iniciando rotina de compra
+[2018-07-02 03:37:27] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:37:27] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:37:28] --Bitcoin status pct:-0.9715564882386047/follow:1
+[2018-07-02 03:37:30] 2- Iniciando rotina de venda 
+[2018-07-02 03:37:30] ----Ainda nao ha nada para vender
+
+[2018-07-02 03:38:01] 1- Iniciando rotina de compra
+[2018-07-02 03:38:01] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:38:01] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:38:02] --Bitcoin status pct:-0.7664221519913355/follow:1
+[2018-07-02 03:38:03] 2- Iniciando rotina de venda 
+[2018-07-02 03:38:03] ----Ainda nao ha nada para vender
+
+[2018-07-02 03:38:33] 1- Iniciando rotina de compra
+[2018-07-02 03:38:33] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:38:33] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:38:35] --Bitcoin status pct:-0.8342234548460681/follow:1
+[2018-07-02 03:38:35] 2- Iniciando rotina de venda 
+[2018-07-02 03:38:35] ----Ainda nao ha nada para vender
+
+[2018-07-02 03:39:06] 1- Iniciando rotina de compra
+[2018-07-02 03:39:06] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:39:06] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:39:07] --Bitcoin status pct:-0.9240483827580306/follow:1
+[2018-07-02 03:39:07] 2- Iniciando rotina de venda 
+[2018-07-02 03:39:07] ----Ainda nao ha nada para vender
+
+[2018-07-02 03:39:39] 1- Iniciando rotina de compra
+[2018-07-02 03:39:39] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:39:39] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:39:39] --Bitcoin status pct:-0.8455498905897798/follow:1
+[2018-07-02 03:39:40] 2- Iniciando rotina de venda 
+[2018-07-02 03:39:40] ----Ainda nao ha nada para vender
+
+[2018-07-02 03:40:11] 1- Iniciando rotina de compra
+[2018-07-02 03:40:11] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:40:11] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:40:13] --Bitcoin status pct:-0.8249420700005317/follow:1
+[2018-07-02 03:40:14] 2- Iniciando rotina de venda 
+[2018-07-02 03:40:14] ----Ainda nao ha nada para vender
+
+[2018-07-02 03:40:45] 1- Iniciando rotina de compra
+[2018-07-02 03:40:45] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:40:45] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:40:46] --Bitcoin status pct:-0.6992500955668106/follow:1
+[2018-07-02 03:40:47] 2- Iniciando rotina de venda 
+[2018-07-02 03:40:47] ----Ainda nao ha nada para vender
+
+[2018-07-02 03:41:18] 1- Iniciando rotina de compra
+[2018-07-02 03:41:18] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:41:18] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:41:19] --Bitcoin status pct:-0.7373195045942964/follow:1
+[2018-07-02 03:41:20] 2- Iniciando rotina de venda 
+[2018-07-02 03:41:20] ----Ainda nao ha nada para vender
+
+[2018-07-02 03:41:51] 1- Iniciando rotina de compra
+[2018-07-02 03:41:51] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:41:51] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:41:52] --Bitcoin status pct:-0.6737656151434521/follow:1
+[2018-07-02 03:41:53] 2- Iniciando rotina de venda 
+[2018-07-02 03:41:53] ----Ainda nao ha nada para vender
+
+[2018-07-02 03:42:24] 1- Iniciando rotina de compra
+[2018-07-02 03:42:24] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:42:24] [+] lastlow:1.64e-06/lowerband:1.6450140471609296e-06
+[2018-07-02 03:42:25] --Bitcoin status pct:-0.7360610117338808/follow:1
+[2018-07-02 03:42:25] 2- Iniciando rotina de venda 
+[2018-07-02 03:42:25] ----Ainda nao ha nada para vender
+

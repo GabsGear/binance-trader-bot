@@ -1,0 +1,44 @@
+[2018-06-29 23:00:09] logando na  api
+[2018-06-29 23:00:10] Login Ok
+[2018-06-29 23:00:11] 1- Iniciando rotina de compra
+[2018-06-29 23:00:11] indicou compra no break.
+[2018-06-29 23:00:11] indicou compra no break.
+[2018-06-29 23:00:12] Erro minOrder
+[2018-06-29 23:00:12] 2- Iniciando rotina de venda 
+[2018-06-29 23:00:12] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:00:42] 1- Iniciando rotina de compra
+[2018-06-29 23:00:42] indicou compra no break.
+[2018-06-29 23:00:42] indicou compra no break.
+[2018-06-29 23:00:43] Erro minOrder
+[2018-06-29 23:00:43] 2- Iniciando rotina de venda 
+[2018-06-29 23:00:43] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:01:13] 1- Iniciando rotina de compra
+[2018-06-29 23:01:13] indicou compra no break.
+[2018-06-29 23:01:13] indicou compra no break.
+[2018-06-29 23:01:15] Erro minOrder
+[2018-06-29 23:01:15] 2- Iniciando rotina de venda 
+[2018-06-29 23:01:15] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:01:45] 1- Iniciando rotina de compra
+[2018-06-29 23:01:45] indicou compra no break.
+[2018-06-29 23:01:45] indicou compra no break.
+[2018-06-29 23:01:46] Erro minOrder
+[2018-06-29 23:01:46] 2- Iniciando rotina de venda 
+[2018-06-29 23:01:46] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:02:16] 1- Iniciando rotina de compra
+[2018-06-29 23:02:16] indicou compra no break.
+[2018-06-29 23:02:16] indicou compra no break.
+[2018-06-29 23:02:17] Erro minOrder
+[2018-06-29 23:02:17] 2- Iniciando rotina de venda 
+[2018-06-29 23:02:17] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:02:48] 1- Iniciando rotina de compra
+[2018-06-29 23:02:48] indicou compra no break.
+[2018-06-29 23:02:48] indicou compra no break.
+[2018-06-29 23:02:48] Erro minOrder
+[2018-06-29 23:02:48] 2- Iniciando rotina de venda 
+[2018-06-29 23:02:48] ----Ainda nao ha nada para vender
+

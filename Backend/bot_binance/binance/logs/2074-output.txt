@@ -1,0 +1,52 @@
+[2018-06-29 22:59:08] logando na  api
+[2018-06-29 22:59:09] Login Ok
+[2018-06-29 23:00:10] logando na  api
+[2018-06-29 23:00:10] Login Ok
+[2018-06-29 23:00:11] 1- Iniciando rotina de compra
+[2018-06-29 23:00:11] price now = 0.0012635
+[2018-06-29 23:00:11] Buy at 0.0012363
+[2018-06-29 23:00:11] price now = 0.0012635
+[2018-06-29 23:00:11] Buy at 0.0012363
+[2018-06-29 23:00:11] 2- Iniciando rotina de venda 
+[2018-06-29 23:00:11] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:00:42] 1- Iniciando rotina de compra
+[2018-06-29 23:00:42] price now = 0.0012641
+[2018-06-29 23:00:42] Buy at 0.0012363
+[2018-06-29 23:00:42] price now = 0.0012641
+[2018-06-29 23:00:42] Buy at 0.0012363
+[2018-06-29 23:00:42] 2- Iniciando rotina de venda 
+[2018-06-29 23:00:42] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:01:12] 1- Iniciando rotina de compra
+[2018-06-29 23:01:12] price now = 0.0012647
+[2018-06-29 23:01:12] Buy at 0.0012363
+[2018-06-29 23:01:12] price now = 0.0012647
+[2018-06-29 23:01:12] Buy at 0.0012363
+[2018-06-29 23:01:12] 2- Iniciando rotina de venda 
+[2018-06-29 23:01:12] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:01:42] 1- Iniciando rotina de compra
+[2018-06-29 23:01:42] price now = 0.0012619
+[2018-06-29 23:01:42] Buy at 0.0012363
+[2018-06-29 23:01:42] price now = 0.0012619
+[2018-06-29 23:01:42] Buy at 0.0012363
+[2018-06-29 23:01:42] 2- Iniciando rotina de venda 
+[2018-06-29 23:01:42] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:02:13] 1- Iniciando rotina de compra
+[2018-06-29 23:02:13] price now = 0.0012607
+[2018-06-29 23:02:13] Buy at 0.0012363
+[2018-06-29 23:02:13] price now = 0.0012607
+[2018-06-29 23:02:13] Buy at 0.0012363
+[2018-06-29 23:02:13] 2- Iniciando rotina de venda 
+[2018-06-29 23:02:13] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:02:43] 1- Iniciando rotina de compra
+[2018-06-29 23:02:43] price now = 0.0012601
+[2018-06-29 23:02:43] Buy at 0.0012363
+[2018-06-29 23:02:43] price now = 0.0012601
+[2018-06-29 23:02:43] Buy at 0.0012363
+[2018-06-29 23:02:43] 2- Iniciando rotina de venda 
+[2018-06-29 23:02:43] ----Ainda nao ha nada para vender
+

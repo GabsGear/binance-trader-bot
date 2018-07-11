@@ -1,0 +1,680 @@
+[2018-07-06 14:12:15] logando na  api
+[2018-07-06 14:12:16] Login Ok
+[2018-07-06 14:12:19] 1- Iniciando rotina de compra
+[2018-07-06 14:12:19] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:12:19] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:12:19] 2- Iniciando rotina de venda 
+[2018-07-06 14:12:19] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:12:51] 1- Iniciando rotina de compra
+[2018-07-06 14:12:51] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:12:51] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:12:51] 2- Iniciando rotina de venda 
+[2018-07-06 14:12:51] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:13:22] 1- Iniciando rotina de compra
+[2018-07-06 14:13:22] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:13:22] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:13:22] 2- Iniciando rotina de venda 
+[2018-07-06 14:13:22] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:13:54] 1- Iniciando rotina de compra
+[2018-07-06 14:13:54] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:13:54] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:13:54] 2- Iniciando rotina de venda 
+[2018-07-06 14:13:54] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:14:26] 1- Iniciando rotina de compra
+[2018-07-06 14:14:26] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:14:26] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:14:26] 2- Iniciando rotina de venda 
+[2018-07-06 14:14:26] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:14:57] 1- Iniciando rotina de compra
+[2018-07-06 14:14:57] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:14:57] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:14:57] 2- Iniciando rotina de venda 
+[2018-07-06 14:14:57] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:15:28] 1- Iniciando rotina de compra
+[2018-07-06 14:15:28] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:15:28] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:15:28] 2- Iniciando rotina de venda 
+[2018-07-06 14:15:28] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:16:01] 1- Iniciando rotina de compra
+[2018-07-06 14:16:01] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:16:01] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:16:01] 2- Iniciando rotina de venda 
+[2018-07-06 14:16:01] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:16:32] 1- Iniciando rotina de compra
+[2018-07-06 14:16:32] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:16:32] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:16:32] 2- Iniciando rotina de venda 
+[2018-07-06 14:16:32] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:17:04] 1- Iniciando rotina de compra
+[2018-07-06 14:17:04] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:17:04] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:17:04] 2- Iniciando rotina de venda 
+[2018-07-06 14:17:04] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:17:35] 1- Iniciando rotina de compra
+[2018-07-06 14:17:35] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:17:35] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:17:35] 2- Iniciando rotina de venda 
+[2018-07-06 14:17:35] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:18:08] 1- Iniciando rotina de compra
+[2018-07-06 14:18:08] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:18:08] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:18:08] 2- Iniciando rotina de venda 
+[2018-07-06 14:18:08] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:18:40] 1- Iniciando rotina de compra
+[2018-07-06 14:18:40] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:18:40] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:18:40] 2- Iniciando rotina de venda 
+[2018-07-06 14:18:40] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:19:11] 1- Iniciando rotina de compra
+[2018-07-06 14:19:11] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:19:11] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:19:11] 2- Iniciando rotina de venda 
+[2018-07-06 14:19:11] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:19:41] 1- Iniciando rotina de compra
+[2018-07-06 14:19:41] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:19:41] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:19:41] 2- Iniciando rotina de venda 
+[2018-07-06 14:19:41] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:20:13] 1- Iniciando rotina de compra
+[2018-07-06 14:20:13] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:20:13] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:20:13] 2- Iniciando rotina de venda 
+[2018-07-06 14:20:13] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:20:43] 1- Iniciando rotina de compra
+[2018-07-06 14:20:43] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:20:43] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:20:43] 2- Iniciando rotina de venda 
+[2018-07-06 14:20:43] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:21:15] 1- Iniciando rotina de compra
+[2018-07-06 14:21:15] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:21:15] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:21:15] 2- Iniciando rotina de venda 
+[2018-07-06 14:21:15] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:21:46] 1- Iniciando rotina de compra
+[2018-07-06 14:21:46] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:21:46] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:21:46] 2- Iniciando rotina de venda 
+[2018-07-06 14:21:46] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:22:17] 1- Iniciando rotina de compra
+[2018-07-06 14:22:17] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:22:17] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:22:17] 2- Iniciando rotina de venda 
+[2018-07-06 14:22:17] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:22:48] 1- Iniciando rotina de compra
+[2018-07-06 14:22:48] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:22:48] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:22:48] 2- Iniciando rotina de venda 
+[2018-07-06 14:22:48] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:23:19] 1- Iniciando rotina de compra
+[2018-07-06 14:23:19] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:23:19] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:23:19] 2- Iniciando rotina de venda 
+[2018-07-06 14:23:19] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:23:50] 1- Iniciando rotina de compra
+[2018-07-06 14:23:50] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:23:50] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:23:50] 2- Iniciando rotina de venda 
+[2018-07-06 14:23:50] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:24:22] 1- Iniciando rotina de compra
+[2018-07-06 14:24:22] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:24:22] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:24:22] 2- Iniciando rotina de venda 
+[2018-07-06 14:24:22] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:24:53] 1- Iniciando rotina de compra
+[2018-07-06 14:24:53] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:24:53] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:24:53] 2- Iniciando rotina de venda 
+[2018-07-06 14:24:53] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:25:24] 1- Iniciando rotina de compra
+[2018-07-06 14:25:24] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:25:24] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:25:24] 2- Iniciando rotina de venda 
+[2018-07-06 14:25:24] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:25:55] 1- Iniciando rotina de compra
+[2018-07-06 14:25:55] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:25:55] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:25:55] 2- Iniciando rotina de venda 
+[2018-07-06 14:25:55] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:26:27] 1- Iniciando rotina de compra
+[2018-07-06 14:26:27] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:26:27] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:26:27] 2- Iniciando rotina de venda 
+[2018-07-06 14:26:27] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:26:58] 1- Iniciando rotina de compra
+[2018-07-06 14:26:58] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:26:58] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:26:58] 2- Iniciando rotina de venda 
+[2018-07-06 14:26:58] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:27:29] 1- Iniciando rotina de compra
+[2018-07-06 14:27:29] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:27:29] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:27:29] 2- Iniciando rotina de venda 
+[2018-07-06 14:27:29] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:28:01] 1- Iniciando rotina de compra
+[2018-07-06 14:28:01] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:28:01] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:28:01] 2- Iniciando rotina de venda 
+[2018-07-06 14:28:01] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:28:32] 1- Iniciando rotina de compra
+[2018-07-06 14:28:32] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:28:32] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:28:32] 2- Iniciando rotina de venda 
+[2018-07-06 14:28:32] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:29:04] 1- Iniciando rotina de compra
+[2018-07-06 14:29:04] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:29:04] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:29:04] 2- Iniciando rotina de venda 
+[2018-07-06 14:29:04] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:29:35] 1- Iniciando rotina de compra
+[2018-07-06 14:29:35] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:29:35] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:29:35] 2- Iniciando rotina de venda 
+[2018-07-06 14:29:35] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:30:07] 1- Iniciando rotina de compra
+[2018-07-06 14:30:07] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:30:08] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:30:08] 2- Iniciando rotina de venda 
+[2018-07-06 14:30:08] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:30:39] 1- Iniciando rotina de compra
+[2018-07-06 14:30:39] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:30:39] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:30:39] 2- Iniciando rotina de venda 
+[2018-07-06 14:30:39] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:31:11] 1- Iniciando rotina de compra
+[2018-07-06 14:31:11] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:31:11] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:31:11] 2- Iniciando rotina de venda 
+[2018-07-06 14:31:11] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:31:42] 1- Iniciando rotina de compra
+[2018-07-06 14:31:42] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:31:42] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:31:42] 2- Iniciando rotina de venda 
+[2018-07-06 14:31:42] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:32:14] 1- Iniciando rotina de compra
+[2018-07-06 14:32:14] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:32:14] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:32:14] 2- Iniciando rotina de venda 
+[2018-07-06 14:32:14] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:32:46] 1- Iniciando rotina de compra
+[2018-07-06 14:32:46] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:32:46] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:32:46] 2- Iniciando rotina de venda 
+[2018-07-06 14:32:46] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:33:18] 1- Iniciando rotina de compra
+[2018-07-06 14:33:18] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:33:18] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:33:18] 2- Iniciando rotina de venda 
+[2018-07-06 14:33:18] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:33:49] 1- Iniciando rotina de compra
+[2018-07-06 14:33:49] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:33:49] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:33:49] 2- Iniciando rotina de venda 
+[2018-07-06 14:33:49] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:34:21] 1- Iniciando rotina de compra
+[2018-07-06 14:34:21] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:34:21] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:34:21] 2- Iniciando rotina de venda 
+[2018-07-06 14:34:21] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:34:52] 1- Iniciando rotina de compra
+[2018-07-06 14:34:52] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:34:52] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:34:52] 2- Iniciando rotina de venda 
+[2018-07-06 14:34:52] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:35:24] 1- Iniciando rotina de compra
+[2018-07-06 14:35:24] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:35:24] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:35:24] 2- Iniciando rotina de venda 
+[2018-07-06 14:35:24] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:35:55] 1- Iniciando rotina de compra
+[2018-07-06 14:35:55] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:35:55] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:35:55] 2- Iniciando rotina de venda 
+[2018-07-06 14:35:55] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:36:27] 1- Iniciando rotina de compra
+[2018-07-06 14:36:27] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:36:27] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:36:27] 2- Iniciando rotina de venda 
+[2018-07-06 14:36:27] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:36:58] 1- Iniciando rotina de compra
+[2018-07-06 14:36:58] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:36:58] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:36:58] 2- Iniciando rotina de venda 
+[2018-07-06 14:36:58] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:37:29] 1- Iniciando rotina de compra
+[2018-07-06 14:37:29] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:37:29] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:37:29] 2- Iniciando rotina de venda 
+[2018-07-06 14:37:29] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:38:01] 1- Iniciando rotina de compra
+[2018-07-06 14:38:01] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:38:01] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:38:01] 2- Iniciando rotina de venda 
+[2018-07-06 14:38:01] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:38:32] 1- Iniciando rotina de compra
+[2018-07-06 14:38:32] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:38:32] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:38:32] 2- Iniciando rotina de venda 
+[2018-07-06 14:38:32] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:39:02] 1- Iniciando rotina de compra
+[2018-07-06 14:39:02] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:39:02] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:39:02] 2- Iniciando rotina de venda 
+[2018-07-06 14:39:02] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:39:33] 1- Iniciando rotina de compra
+[2018-07-06 14:39:33] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:39:33] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:39:33] 2- Iniciando rotina de venda 
+[2018-07-06 14:39:33] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:40:04] 1- Iniciando rotina de compra
+[2018-07-06 14:40:04] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:40:04] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:40:04] 2- Iniciando rotina de venda 
+[2018-07-06 14:40:04] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:40:36] 1- Iniciando rotina de compra
+[2018-07-06 14:40:36] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:40:36] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:40:36] 2- Iniciando rotina de venda 
+[2018-07-06 14:40:36] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:41:07] 1- Iniciando rotina de compra
+[2018-07-06 14:41:07] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:41:07] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:41:07] 2- Iniciando rotina de venda 
+[2018-07-06 14:41:07] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:41:38] 1- Iniciando rotina de compra
+[2018-07-06 14:41:38] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:41:38] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:41:38] 2- Iniciando rotina de venda 
+[2018-07-06 14:41:38] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:42:09] 1- Iniciando rotina de compra
+[2018-07-06 14:42:09] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:42:09] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:42:09] 2- Iniciando rotina de venda 
+[2018-07-06 14:42:09] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:42:41] 1- Iniciando rotina de compra
+[2018-07-06 14:42:41] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:42:41] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:42:41] 2- Iniciando rotina de venda 
+[2018-07-06 14:42:41] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:43:12] 1- Iniciando rotina de compra
+[2018-07-06 14:43:12] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:43:12] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:43:12] 2- Iniciando rotina de venda 
+[2018-07-06 14:43:12] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:43:44] 1- Iniciando rotina de compra
+[2018-07-06 14:43:44] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:43:44] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:43:44] 2- Iniciando rotina de venda 
+[2018-07-06 14:43:44] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:44:17] 1- Iniciando rotina de compra
+[2018-07-06 14:44:17] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:44:17] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:44:17] 2- Iniciando rotina de venda 
+[2018-07-06 14:44:17] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:44:50] 1- Iniciando rotina de compra
+[2018-07-06 14:44:50] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:44:50] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:44:50] 2- Iniciando rotina de venda 
+[2018-07-06 14:44:50] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:45:23] 1- Iniciando rotina de compra
+[2018-07-06 14:45:23] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:45:23] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:45:23] 2- Iniciando rotina de venda 
+[2018-07-06 14:45:23] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:45:56] 1- Iniciando rotina de compra
+[2018-07-06 14:45:56] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:45:56] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:45:56] 2- Iniciando rotina de venda 
+[2018-07-06 14:45:56] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:46:27] 1- Iniciando rotina de compra
+[2018-07-06 14:46:27] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:46:27] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:46:27] 2- Iniciando rotina de venda 
+[2018-07-06 14:46:27] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:46:59] 1- Iniciando rotina de compra
+[2018-07-06 14:46:59] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:46:59] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:46:59] 2- Iniciando rotina de venda 
+[2018-07-06 14:46:59] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:47:30] 1- Iniciando rotina de compra
+[2018-07-06 14:47:30] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:47:30] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:47:30] 2- Iniciando rotina de venda 
+[2018-07-06 14:47:30] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:48:01] 1- Iniciando rotina de compra
+[2018-07-06 14:48:01] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:48:01] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:48:01] 2- Iniciando rotina de venda 
+[2018-07-06 14:48:01] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:48:31] 1- Iniciando rotina de compra
+[2018-07-06 14:48:31] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:48:31] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:48:31] 2- Iniciando rotina de venda 
+[2018-07-06 14:48:31] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:49:03] 1- Iniciando rotina de compra
+[2018-07-06 14:49:03] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:49:03] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:49:03] 2- Iniciando rotina de venda 
+[2018-07-06 14:49:03] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:49:34] 1- Iniciando rotina de compra
+[2018-07-06 14:49:34] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:49:34] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:49:34] 2- Iniciando rotina de venda 
+[2018-07-06 14:49:34] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:50:06] 1- Iniciando rotina de compra
+[2018-07-06 14:50:06] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:50:06] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:50:06] 2- Iniciando rotina de venda 
+[2018-07-06 14:50:06] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:50:36] 1- Iniciando rotina de compra
+[2018-07-06 14:50:36] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:50:36] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:50:36] 2- Iniciando rotina de venda 
+[2018-07-06 14:50:36] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:51:08] 1- Iniciando rotina de compra
+[2018-07-06 14:51:08] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:51:08] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:51:08] 2- Iniciando rotina de venda 
+[2018-07-06 14:51:08] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:51:39] 1- Iniciando rotina de compra
+[2018-07-06 14:51:39] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:51:39] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:51:39] 2- Iniciando rotina de venda 
+[2018-07-06 14:51:39] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:52:11] 1- Iniciando rotina de compra
+[2018-07-06 14:52:11] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:52:11] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:52:11] 2- Iniciando rotina de venda 
+[2018-07-06 14:52:11] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:52:42] 1- Iniciando rotina de compra
+[2018-07-06 14:52:42] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:52:42] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:52:42] 2- Iniciando rotina de venda 
+[2018-07-06 14:52:42] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:53:14] 1- Iniciando rotina de compra
+[2018-07-06 14:53:14] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:53:14] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:53:15] 2- Iniciando rotina de venda 
+[2018-07-06 14:53:15] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:53:46] 1- Iniciando rotina de compra
+[2018-07-06 14:53:46] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:53:46] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:53:46] 2- Iniciando rotina de venda 
+[2018-07-06 14:53:46] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:54:19] 1- Iniciando rotina de compra
+[2018-07-06 14:54:19] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:54:19] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:54:19] 2- Iniciando rotina de venda 
+[2018-07-06 14:54:19] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:54:50] 1- Iniciando rotina de compra
+[2018-07-06 14:54:50] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:54:50] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:54:50] 2- Iniciando rotina de venda 
+[2018-07-06 14:54:50] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:55:24] 1- Iniciando rotina de compra
+[2018-07-06 14:55:24] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:55:24] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:55:24] 2- Iniciando rotina de venda 
+[2018-07-06 14:55:24] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:55:56] 1- Iniciando rotina de compra
+[2018-07-06 14:55:56] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:55:56] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:55:56] 2- Iniciando rotina de venda 
+[2018-07-06 14:55:56] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:56:29] 1- Iniciando rotina de compra
+[2018-07-06 14:56:29] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:56:29] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:56:29] 2- Iniciando rotina de venda 
+[2018-07-06 14:56:29] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:57:00] 1- Iniciando rotina de compra
+[2018-07-06 14:57:00] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:57:00] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:57:00] 2- Iniciando rotina de venda 
+[2018-07-06 14:57:00] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:57:32] 1- Iniciando rotina de compra
+[2018-07-06 14:57:32] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:57:32] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:57:32] 2- Iniciando rotina de venda 
+[2018-07-06 14:57:32] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:58:03] 1- Iniciando rotina de compra
+[2018-07-06 14:58:03] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:58:03] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:58:03] 2- Iniciando rotina de venda 
+[2018-07-06 14:58:03] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:58:35] 1- Iniciando rotina de compra
+[2018-07-06 14:58:35] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:58:35] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:58:35] 2- Iniciando rotina de venda 
+[2018-07-06 14:58:35] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:59:06] 1- Iniciando rotina de compra
+[2018-07-06 14:59:06] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:59:06] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:59:06] 2- Iniciando rotina de venda 
+[2018-07-06 14:59:06] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:59:38] 1- Iniciando rotina de compra
+[2018-07-06 14:59:38] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:59:38] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 14:59:38] 2- Iniciando rotina de venda 
+[2018-07-06 14:59:38] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:00:09] 1- Iniciando rotina de compra
+[2018-07-06 15:00:09] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 15:00:09] ---Estrategia RSI -- RSI = 53.84144899285454
+[2018-07-06 15:00:09] 2- Iniciando rotina de venda 
+[2018-07-06 15:00:09] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:00:42] 1- Iniciando rotina de compra
+[2018-07-06 15:00:42] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:00:42] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:00:42] 2- Iniciando rotina de venda 
+[2018-07-06 15:00:42] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:01:14] 1- Iniciando rotina de compra
+[2018-07-06 15:01:14] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:01:14] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:01:14] 2- Iniciando rotina de venda 
+[2018-07-06 15:01:14] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:01:45] 1- Iniciando rotina de compra
+[2018-07-06 15:01:45] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:01:45] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:01:45] 2- Iniciando rotina de venda 
+[2018-07-06 15:01:45] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:02:17] 1- Iniciando rotina de compra
+[2018-07-06 15:02:17] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:02:17] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:02:17] 2- Iniciando rotina de venda 
+[2018-07-06 15:02:17] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:02:48] 1- Iniciando rotina de compra
+[2018-07-06 15:02:48] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:02:48] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:02:48] 2- Iniciando rotina de venda 
+[2018-07-06 15:02:48] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:03:20] 1- Iniciando rotina de compra
+[2018-07-06 15:03:20] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:03:20] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:03:20] 2- Iniciando rotina de venda 
+[2018-07-06 15:03:20] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:03:51] 1- Iniciando rotina de compra
+[2018-07-06 15:03:51] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:03:51] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:03:51] 2- Iniciando rotina de venda 
+[2018-07-06 15:03:51] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:04:23] 1- Iniciando rotina de compra
+[2018-07-06 15:04:23] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:04:23] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:04:23] 2- Iniciando rotina de venda 
+[2018-07-06 15:04:23] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:04:54] 1- Iniciando rotina de compra
+[2018-07-06 15:04:54] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:04:54] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:04:54] 2- Iniciando rotina de venda 
+[2018-07-06 15:04:54] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:05:26] 1- Iniciando rotina de compra
+[2018-07-06 15:05:26] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:05:26] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:05:26] 2- Iniciando rotina de venda 
+[2018-07-06 15:05:26] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:05:57] 1- Iniciando rotina de compra
+[2018-07-06 15:05:57] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:05:57] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:05:57] 2- Iniciando rotina de venda 
+[2018-07-06 15:05:57] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:06:29] 1- Iniciando rotina de compra
+[2018-07-06 15:06:29] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:06:29] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:06:29] 2- Iniciando rotina de venda 
+[2018-07-06 15:06:29] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:06:59] 1- Iniciando rotina de compra
+[2018-07-06 15:06:59] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:06:59] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:06:59] 2- Iniciando rotina de venda 
+[2018-07-06 15:06:59] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:07:31] 1- Iniciando rotina de compra
+[2018-07-06 15:07:31] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:07:31] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:07:31] 2- Iniciando rotina de venda 
+[2018-07-06 15:07:31] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:08:02] 1- Iniciando rotina de compra
+[2018-07-06 15:08:02] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:08:02] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:08:02] 2- Iniciando rotina de venda 
+[2018-07-06 15:08:02] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:08:35] 1- Iniciando rotina de compra
+[2018-07-06 15:08:35] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:08:35] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:08:35] 2- Iniciando rotina de venda 
+[2018-07-06 15:08:35] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:09:06] 1- Iniciando rotina de compra
+[2018-07-06 15:09:06] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:09:06] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:09:06] 2- Iniciando rotina de venda 
+[2018-07-06 15:09:06] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:09:38] 1- Iniciando rotina de compra
+[2018-07-06 15:09:38] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:09:38] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:09:38] 2- Iniciando rotina de venda 
+[2018-07-06 15:09:38] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:10:09] 1- Iniciando rotina de compra
+[2018-07-06 15:10:09] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:10:09] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:10:09] 2- Iniciando rotina de venda 
+[2018-07-06 15:10:09] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:10:43] 1- Iniciando rotina de compra
+[2018-07-06 15:10:43] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:10:43] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:10:43] 2- Iniciando rotina de venda 
+[2018-07-06 15:10:43] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:11:17] 1- Iniciando rotina de compra
+[2018-07-06 15:11:17] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:11:17] ---Estrategia RSI -- RSI = 59.851011309919755
+[2018-07-06 15:11:17] 2- Iniciando rotina de venda 
+[2018-07-06 15:11:17] ----Ainda nao ha nada para vender
+

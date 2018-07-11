@@ -1,0 +1,1529 @@
+[2018-07-06 01:39:06] logando na  api
+[2018-07-06 01:39:07] Login Ok
+[2018-07-06 01:40:09] logando na  api
+[2018-07-06 01:40:10] Login Ok
+[2018-07-06 01:41:09] logando na  api
+[2018-07-06 01:41:10] Login Ok
+[2018-07-06 01:42:12] logando na  api
+[2018-07-06 01:42:13] Login Ok
+[2018-07-06 01:43:10] logando na  api
+[2018-07-06 01:43:11] Login Ok
+[2018-07-06 01:44:15] logando na  api
+[2018-07-06 01:44:16] Login Ok
+[2018-07-06 01:45:16] logando na  api
+[2018-07-06 01:45:17] Login Ok
+[2018-07-06 01:46:12] logando na  api
+[2018-07-06 01:46:13] Login Ok
+[2018-07-06 01:47:15] logando na  api
+[2018-07-06 01:47:16] Login Ok
+[2018-07-06 01:48:23] logando na  api
+[2018-07-06 01:48:25] Login Ok
+[2018-07-06 01:49:17] logando na  api
+[2018-07-06 01:49:18] Login Ok
+[2018-07-06 01:50:20] logando na  api
+[2018-07-06 01:50:23] Login Ok
+[2018-07-06 01:51:19] logando na  api
+[2018-07-06 01:51:20] Login Ok
+[2018-07-06 01:52:20] logando na  api
+[2018-07-06 01:52:21] Login Ok
+[2018-07-06 01:53:22] logando na  api
+[2018-07-06 01:53:23] Login Ok
+[2018-07-06 01:54:22] logando na  api
+[2018-07-06 01:54:24] Login Ok
+[2018-07-06 01:55:25] logando na  api
+[2018-07-06 01:55:26] Login Ok
+[2018-07-06 01:56:25] logando na  api
+[2018-07-06 01:56:26] Login Ok
+[2018-07-06 01:57:26] logando na  api
+[2018-07-06 01:57:27] Login Ok
+[2018-07-06 01:58:30] logando na  api
+[2018-07-06 01:58:32] Login Ok
+[2018-07-06 01:59:29] logando na  api
+[2018-07-06 01:59:31] Login Ok
+[2018-07-06 02:00:36] logando na  api
+[2018-07-06 02:00:38] Login Ok
+[2018-07-06 02:01:36] logando na  api
+[2018-07-06 02:01:37] Login Ok
+[2018-07-06 02:02:35] logando na  api
+[2018-07-06 02:02:37] Login Ok
+[2018-07-06 02:03:35] logando na  api
+[2018-07-06 02:03:36] Login Ok
+[2018-07-06 02:04:35] logando na  api
+[2018-07-06 02:04:36] Login Ok
+[2018-07-06 02:05:40] logando na  api
+[2018-07-06 02:05:41] Login Ok
+[2018-07-06 02:06:39] logando na  api
+[2018-07-06 02:06:40] Login Ok
+[2018-07-06 02:07:40] logando na  api
+[2018-07-06 02:07:42] Login Ok
+[2018-07-06 02:08:41] logando na  api
+[2018-07-06 02:08:42] Login Ok
+[2018-07-06 02:09:43] logando na  api
+[2018-07-06 02:09:45] Login Ok
+[2018-07-06 02:10:46] logando na  api
+[2018-07-06 02:10:48] Login Ok
+[2018-07-06 02:11:44] logando na  api
+[2018-07-06 02:11:46] Login Ok
+[2018-07-06 02:12:46] logando na  api
+[2018-07-06 02:12:48] Login Ok
+[2018-07-06 02:13:50] logando na  api
+[2018-07-06 02:13:51] Login Ok
+[2018-07-06 02:14:48] logando na  api
+[2018-07-06 02:14:50] Login Ok
+[2018-07-06 02:15:47] logando na  api
+[2018-07-06 02:15:49] Login Ok
+[2018-07-06 02:16:53] logando na  api
+[2018-07-06 02:16:55] Login Ok
+[2018-07-06 02:17:54] logando na  api
+[2018-07-06 02:17:55] Login Ok
+[2018-07-06 02:18:52] logando na  api
+[2018-07-06 02:18:54] Login Ok
+[2018-07-06 02:19:56] logando na  api
+[2018-07-06 02:19:58] Login Ok
+[2018-07-06 02:20:55] logando na  api
+[2018-07-06 02:20:57] Login Ok
+[2018-07-06 02:21:54] logando na  api
+[2018-07-06 02:21:54] Login Ok
+[2018-07-06 02:23:02] logando na  api
+[2018-07-06 02:23:03] Login Ok
+[2018-07-06 02:24:03] logando na  api
+[2018-07-06 02:24:04] Login Ok
+[2018-07-06 02:25:03] logando na  api
+[2018-07-06 02:25:04] Login Ok
+[2018-07-06 02:26:06] logando na  api
+[2018-07-06 02:26:07] Login Ok
+[2018-07-06 02:27:05] logando na  api
+[2018-07-06 02:27:06] Login Ok
+[2018-07-06 02:28:06] logando na  api
+[2018-07-06 02:28:07] Login Ok
+[2018-07-06 02:29:07] logando na  api
+[2018-07-06 02:29:08] Login Ok
+[2018-07-06 02:30:13] logando na  api
+[2018-07-06 02:30:14] Login Ok
+[2018-07-06 02:31:14] logando na  api
+[2018-07-06 02:31:16] Login Ok
+[2018-07-06 02:32:14] logando na  api
+[2018-07-06 02:32:16] Login Ok
+[2018-07-06 02:33:15] logando na  api
+[2018-07-06 02:33:18] Login Ok
+[2018-07-06 02:34:15] logando na  api
+[2018-07-06 02:34:17] Login Ok
+[2018-07-06 02:35:23] logando na  api
+[2018-07-06 02:35:26] Login Ok
+[2018-07-06 02:36:23] logando na  api
+[2018-07-06 02:36:26] Login Ok
+[2018-07-06 02:37:29] logando na  api
+[2018-07-06 02:37:31] Login Ok
+[2018-07-06 02:38:29] logando na  api
+[2018-07-06 02:38:30] Login Ok
+[2018-07-06 02:39:29] logando na  api
+[2018-07-06 02:39:30] Login Ok
+[2018-07-06 02:40:32] logando na  api
+[2018-07-06 02:40:33] Login Ok
+[2018-07-06 02:41:31] logando na  api
+[2018-07-06 02:41:32] Login Ok
+[2018-07-06 02:42:32] logando na  api
+[2018-07-06 02:42:33] Login Ok
+[2018-07-06 02:43:33] logando na  api
+[2018-07-06 02:43:35] Login Ok
+[2018-07-06 02:44:36] logando na  api
+[2018-07-06 02:44:38] Login Ok
+[2018-07-06 02:45:37] logando na  api
+[2018-07-06 02:45:38] Login Ok
+[2018-07-06 02:46:37] logando na  api
+[2018-07-06 02:46:38] Login Ok
+[2018-07-06 02:47:38] logando na  api
+[2018-07-06 02:47:40] Login Ok
+[2018-07-06 02:48:39] logando na  api
+[2018-07-06 02:48:40] Login Ok
+[2018-07-06 02:49:38] logando na  api
+[2018-07-06 02:49:39] Login Ok
+[2018-07-06 02:50:43] logando na  api
+[2018-07-06 02:50:44] Login Ok
+[2018-07-06 02:51:41] logando na  api
+[2018-07-06 02:51:42] Login Ok
+[2018-07-06 02:52:44] logando na  api
+[2018-07-06 02:52:45] Login Ok
+[2018-07-06 02:53:49] logando na  api
+[2018-07-06 02:53:51] Login Ok
+[2018-07-06 02:54:48] logando na  api
+[2018-07-06 02:54:49] Login Ok
+[2018-07-06 02:55:52] logando na  api
+[2018-07-06 02:55:53] Login Ok
+[2018-07-06 02:56:54] logando na  api
+[2018-07-06 02:56:55] Login Ok
+[2018-07-06 02:57:51] logando na  api
+[2018-07-06 02:57:51] Login Ok
+[2018-07-06 02:58:53] logando na  api
+[2018-07-06 02:58:54] Login Ok
+[2018-07-06 02:59:52] logando na  api
+[2018-07-06 02:59:53] Login Ok
+[2018-07-06 03:00:58] logando na  api
+[2018-07-06 03:00:59] Login Ok
+[2018-07-06 03:02:01] logando na  api
+[2018-07-06 03:02:02] Login Ok
+[2018-07-06 03:03:01] logando na  api
+[2018-07-06 03:03:02] Login Ok
+[2018-07-06 03:04:03] logando na  api
+[2018-07-06 03:04:04] Login Ok
+[2018-07-06 03:05:03] logando na  api
+[2018-07-06 03:05:04] Login Ok
+[2018-07-06 03:06:01] logando na  api
+[2018-07-06 03:06:03] Login Ok
+[2018-07-06 03:07:09] logando na  api
+[2018-07-06 03:07:10] Login Ok
+[2018-07-06 03:08:12] logando na  api
+[2018-07-06 03:08:13] Login Ok
+[2018-07-06 03:09:06] logando na  api
+[2018-07-06 03:09:08] Login Ok
+[2018-07-06 03:10:15] logando na  api
+[2018-07-06 03:10:17] Login Ok
+[2018-07-06 03:11:14] logando na  api
+[2018-07-06 03:11:16] Login Ok
+[2018-07-06 03:12:13] logando na  api
+[2018-07-06 03:12:14] Login Ok
+[2018-07-06 03:13:19] logando na  api
+[2018-07-06 03:13:20] Login Ok
+[2018-07-06 03:14:15] logando na  api
+[2018-07-06 03:14:16] Login Ok
+[2018-07-06 03:15:20] logando na  api
+[2018-07-06 03:15:21] Login Ok
+[2018-07-06 03:16:22] logando na  api
+[2018-07-06 03:16:23] Login Ok
+[2018-07-06 03:17:20] logando na  api
+[2018-07-06 03:17:21] Login Ok
+[2018-07-06 03:18:24] logando na  api
+[2018-07-06 03:18:25] Login Ok
+[2018-07-06 03:19:28] logando na  api
+[2018-07-06 03:19:29] Login Ok
+[2018-07-06 03:20:32] logando na  api
+[2018-07-06 03:20:33] Login Ok
+[2018-07-06 03:21:27] logando na  api
+[2018-07-06 03:21:28] Login Ok
+[2018-07-06 03:22:29] logando na  api
+[2018-07-06 03:22:31] Login Ok
+[2018-07-06 03:23:32] logando na  api
+[2018-07-06 03:23:33] Login Ok
+[2018-07-06 03:24:36] logando na  api
+[2018-07-06 03:24:37] Login Ok
+[2018-07-06 03:25:35] logando na  api
+[2018-07-06 03:25:36] Login Ok
+[2018-07-06 03:26:34] logando na  api
+[2018-07-06 03:26:36] Login Ok
+[2018-07-06 03:27:30] logando na  api
+[2018-07-06 03:27:32] Login Ok
+[2018-07-06 03:28:37] logando na  api
+[2018-07-06 03:28:39] Login Ok
+[2018-07-06 03:29:38] logando na  api
+[2018-07-06 03:29:39] Login Ok
+[2018-07-06 03:30:44] logando na  api
+[2018-07-06 03:30:45] Login Ok
+[2018-07-06 03:31:47] logando na  api
+[2018-07-06 03:31:48] Login Ok
+[2018-07-06 03:32:50] logando na  api
+[2018-07-06 03:32:51] Login Ok
+[2018-07-06 03:33:51] logando na  api
+[2018-07-06 03:33:52] Login Ok
+[2018-07-06 03:34:49] logando na  api
+[2018-07-06 03:34:50] Login Ok
+[2018-07-06 03:35:51] logando na  api
+[2018-07-06 03:35:52] Login Ok
+[2018-07-06 03:36:53] logando na  api
+[2018-07-06 03:36:53] Login Ok
+[2018-07-06 03:37:51] logando na  api
+[2018-07-06 03:37:54] Login Ok
+[2018-07-06 03:38:58] logando na  api
+[2018-07-06 03:38:59] Login Ok
+[2018-07-06 03:39:59] logando na  api
+[2018-07-06 03:40:01] Login Ok
+[2018-07-06 03:41:05] logando na  api
+[2018-07-06 03:41:07] Login Ok
+[2018-07-06 03:41:58] logando na  api
+[2018-07-06 03:42:00] Login Ok
+[2018-07-06 03:43:07] logando na  api
+[2018-07-06 03:43:10] Login Ok
+[2018-07-06 03:44:08] logando na  api
+[2018-07-06 03:44:10] Login Ok
+[2018-07-06 03:45:01] logando na  api
+[2018-07-06 03:45:03] Login Ok
+[2018-07-06 03:46:08] logando na  api
+[2018-07-06 03:46:11] Login Ok
+[2018-07-06 03:47:13] logando na  api
+[2018-07-06 03:47:16] Login Ok
+[2018-07-06 03:48:14] logando na  api
+[2018-07-06 03:48:16] Login Ok
+[2018-07-06 03:49:15] logando na  api
+[2018-07-06 03:49:17] Login Ok
+[2018-07-06 03:50:19] logando na  api
+[2018-07-06 03:50:22] Login Ok
+[2018-07-06 03:51:15] logando na  api
+[2018-07-06 03:51:17] Login Ok
+[2018-07-06 03:52:19] logando na  api
+[2018-07-06 03:52:21] Login Ok
+[2018-07-06 03:53:26] logando na  api
+[2018-07-06 03:53:27] Login Ok
+[2018-07-06 03:54:25] logando na  api
+[2018-07-06 03:54:27] Login Ok
+[2018-07-06 03:55:28] logando na  api
+[2018-07-06 03:55:29] Login Ok
+[2018-07-06 03:56:25] logando na  api
+[2018-07-06 03:56:26] Login Ok
+[2018-07-06 03:57:23] logando na  api
+[2018-07-06 03:57:25] Login Ok
+[2018-07-06 03:58:23] logando na  api
+[2018-07-06 03:58:25] Login Ok
+[2018-07-06 03:59:33] logando na  api
+[2018-07-06 03:59:35] Login Ok
+[2018-07-06 04:00:38] logando na  api
+[2018-07-06 04:00:40] Login Ok
+[2018-07-06 04:01:33] logando na  api
+[2018-07-06 04:01:36] Login Ok
+[2018-07-06 04:02:47] logando na  api
+[2018-07-06 04:02:49] Login Ok
+[2018-07-06 04:03:34] logando na  api
+[2018-07-06 04:03:35] Login Ok
+[2018-07-06 04:04:39] logando na  api
+[2018-07-06 04:04:41] Login Ok
+[2018-07-06 04:05:49] logando na  api
+[2018-07-06 04:05:53] Login Ok
+[2018-07-06 04:06:41] logando na  api
+[2018-07-06 04:06:42] Login Ok
+[2018-07-06 04:07:45] logando na  api
+[2018-07-06 04:07:46] Login Ok
+[2018-07-06 04:08:45] logando na  api
+[2018-07-06 04:08:46] Login Ok
+[2018-07-06 04:09:43] logando na  api
+[2018-07-06 04:09:44] Login Ok
+[2018-07-06 04:10:45] logando na  api
+[2018-07-06 04:10:47] Login Ok
+[2018-07-06 04:11:46] logando na  api
+[2018-07-06 04:11:48] Login Ok
+[2018-07-06 04:12:56] logando na  api
+[2018-07-06 04:12:59] Login Ok
+[2018-07-06 04:13:54] logando na  api
+[2018-07-06 04:13:55] Login Ok
+[2018-07-06 04:14:55] logando na  api
+[2018-07-06 04:14:56] Login Ok
+[2018-07-06 04:16:00] logando na  api
+[2018-07-06 04:16:01] Login Ok
+[2018-07-06 04:16:59] logando na  api
+[2018-07-06 04:17:00] Login Ok
+[2018-07-06 04:18:03] logando na  api
+[2018-07-06 04:18:04] Login Ok
+[2018-07-06 04:18:59] logando na  api
+[2018-07-06 04:19:00] Login Ok
+[2018-07-06 04:20:02] logando na  api
+[2018-07-06 04:20:03] Login Ok
+[2018-07-06 04:21:03] logando na  api
+[2018-07-06 04:21:04] Login Ok
+[2018-07-06 04:22:07] logando na  api
+[2018-07-06 04:22:08] Login Ok
+[2018-07-06 04:23:07] logando na  api
+[2018-07-06 04:23:08] Login Ok
+[2018-07-06 04:24:04] logando na  api
+[2018-07-06 04:24:05] Login Ok
+[2018-07-06 04:25:08] logando na  api
+[2018-07-06 04:25:10] Login Ok
+[2018-07-06 04:26:14] logando na  api
+[2018-07-06 04:26:15] Login Ok
+[2018-07-06 04:27:20] logando na  api
+[2018-07-06 04:27:21] Login Ok
+[2018-07-06 04:28:16] logando na  api
+[2018-07-06 04:28:17] Login Ok
+[2018-07-06 04:29:15] logando na  api
+[2018-07-06 04:29:17] Login Ok
+[2018-07-06 04:30:20] logando na  api
+[2018-07-06 04:30:21] Login Ok
+[2018-07-06 04:31:21] logando na  api
+[2018-07-06 04:31:22] Login Ok
+[2018-07-06 04:32:23] logando na  api
+[2018-07-06 04:32:25] Login Ok
+[2018-07-06 04:33:26] logando na  api
+[2018-07-06 04:33:27] Login Ok
+[2018-07-06 04:34:30] logando na  api
+[2018-07-06 04:34:31] Login Ok
+[2018-07-06 04:35:34] logando na  api
+[2018-07-06 04:35:37] Login Ok
+[2018-07-06 04:36:34] logando na  api
+[2018-07-06 04:36:35] Login Ok
+[2018-07-06 04:37:46] logando na  api
+[2018-07-06 04:37:47] Login Ok
+[2018-07-06 04:38:36] logando na  api
+[2018-07-06 04:38:38] Login Ok
+[2018-07-06 04:39:40] logando na  api
+[2018-07-06 04:39:42] Login Ok
+[2018-07-06 04:40:48] logando na  api
+[2018-07-06 04:40:49] Login Ok
+[2018-07-06 04:41:53] logando na  api
+[2018-07-06 04:41:55] Login Ok
+[2018-07-06 04:42:54] logando na  api
+[2018-07-06 04:42:56] Login Ok
+[2018-07-06 04:43:52] logando na  api
+[2018-07-06 04:43:53] Login Ok
+[2018-07-06 04:45:00] logando na  api
+[2018-07-06 04:45:02] Login Ok
+[2018-07-06 04:45:56] logando na  api
+[2018-07-06 04:45:58] Login Ok
+[2018-07-06 04:47:02] logando na  api
+[2018-07-06 04:47:04] Login Ok
+[2018-07-06 04:47:58] logando na  api
+[2018-07-06 04:47:59] Login Ok
+[2018-07-06 04:49:05] logando na  api
+[2018-07-06 04:49:06] Login Ok
+[2018-07-06 04:50:06] logando na  api
+[2018-07-06 04:50:07] Login Ok
+[2018-07-06 04:51:07] logando na  api
+[2018-07-06 04:51:09] Login Ok
+[2018-07-06 04:52:10] logando na  api
+[2018-07-06 04:52:11] Login Ok
+[2018-07-06 04:53:11] logando na  api
+[2018-07-06 04:53:13] Login Ok
+[2018-07-06 04:54:09] logando na  api
+[2018-07-06 04:54:11] Login Ok
+[2018-07-06 04:55:13] logando na  api
+[2018-07-06 04:55:14] Login Ok
+[2018-07-06 04:56:16] logando na  api
+[2018-07-06 04:56:18] Login Ok
+[2018-07-06 04:57:16] logando na  api
+[2018-07-06 04:57:17] Login Ok
+[2018-07-06 04:58:20] logando na  api
+[2018-07-06 04:58:22] Login Ok
+[2018-07-06 04:59:24] logando na  api
+[2018-07-06 04:59:25] Login Ok
+[2018-07-06 05:00:29] logando na  api
+[2018-07-06 05:00:30] Login Ok
+[2018-07-06 05:01:24] logando na  api
+[2018-07-06 05:02:26] logando na  api
+[2018-07-06 05:02:27] Login Ok
+[2018-07-06 05:03:27] logando na  api
+[2018-07-06 05:03:29] Login Ok
+[2018-07-06 05:04:30] logando na  api
+[2018-07-06 05:04:32] Login Ok
+[2018-07-06 05:05:31] logando na  api
+[2018-07-06 05:05:32] Login Ok
+[2018-07-06 05:06:24] logando na  api
+[2018-07-06 05:06:27] Login Ok
+[2018-07-06 05:07:29] logando na  api
+[2018-07-06 05:07:31] Login Ok
+[2018-07-06 05:08:33] logando na  api
+[2018-07-06 05:08:36] Login Ok
+[2018-07-06 05:09:29] logando na  api
+[2018-07-06 05:09:30] Login Ok
+[2018-07-06 05:10:35] logando na  api
+[2018-07-06 05:10:37] Login Ok
+[2018-07-06 05:11:35] logando na  api
+[2018-07-06 05:11:36] Login Ok
+[2018-07-06 05:12:35] logando na  api
+[2018-07-06 05:12:37] Login Ok
+[2018-07-06 05:13:45] logando na  api
+[2018-07-06 05:13:48] Login Ok
+[2018-07-06 05:14:41] logando na  api
+[2018-07-06 05:14:42] Login Ok
+[2018-07-06 05:15:42] logando na  api
+[2018-07-06 05:15:43] Login Ok
+[2018-07-06 05:16:42] logando na  api
+[2018-07-06 05:16:43] Login Ok
+[2018-07-06 05:17:43] logando na  api
+[2018-07-06 05:17:44] Login Ok
+[2018-07-06 05:18:44] logando na  api
+[2018-07-06 05:18:46] Login Ok
+[2018-07-06 05:19:47] logando na  api
+[2018-07-06 05:19:49] Login Ok
+[2018-07-06 05:20:48] logando na  api
+[2018-07-06 05:20:49] Login Ok
+[2018-07-06 05:21:50] logando na  api
+[2018-07-06 05:21:52] Login Ok
+[2018-07-06 05:22:51] logando na  api
+[2018-07-06 05:22:52] Login Ok
+[2018-07-06 05:23:51] logando na  api
+[2018-07-06 05:23:53] Login Ok
+[2018-07-06 05:24:52] logando na  api
+[2018-07-06 05:24:53] Login Ok
+[2018-07-06 05:25:53] logando na  api
+[2018-07-06 05:25:55] Login Ok
+[2018-07-06 05:27:00] logando na  api
+[2018-07-06 05:27:01] Login Ok
+[2018-07-06 05:27:59] logando na  api
+[2018-07-06 05:28:00] Login Ok
+[2018-07-06 05:28:57] logando na  api
+[2018-07-06 05:28:59] Login Ok
+[2018-07-06 05:30:00] logando na  api
+[2018-07-06 05:30:01] Login Ok
+[2018-07-06 05:31:09] logando na  api
+[2018-07-06 05:31:12] Login Ok
+[2018-07-06 05:32:03] logando na  api
+[2018-07-06 05:32:05] Login Ok
+[2018-07-06 05:33:06] logando na  api
+[2018-07-06 05:33:08] Login Ok
+[2018-07-06 05:34:14] logando na  api
+[2018-07-06 05:34:17] Login Ok
+[2018-07-06 05:35:14] logando na  api
+[2018-07-06 05:35:16] Login Ok
+[2018-07-06 05:36:16] logando na  api
+[2018-07-06 05:36:17] Login Ok
+[2018-07-06 05:37:16] logando na  api
+[2018-07-06 05:37:18] Login Ok
+[2018-07-06 05:38:23] logando na  api
+[2018-07-06 05:38:25] Login Ok
+[2018-07-06 05:39:24] logando na  api
+[2018-07-06 05:39:25] Login Ok
+[2018-07-06 05:40:27] logando na  api
+[2018-07-06 05:40:29] Login Ok
+[2018-07-06 05:41:25] logando na  api
+[2018-07-06 05:41:26] Login Ok
+[2018-07-06 05:42:30] logando na  api
+[2018-07-06 05:42:32] Login Ok
+[2018-07-06 05:43:32] logando na  api
+[2018-07-06 05:43:34] Login Ok
+[2018-07-06 05:44:28] logando na  api
+[2018-07-06 05:44:30] Login Ok
+[2018-07-06 05:45:33] logando na  api
+[2018-07-06 05:45:34] Login Ok
+[2018-07-06 05:46:34] logando na  api
+[2018-07-06 05:46:35] Login Ok
+[2018-07-06 05:47:35] logando na  api
+[2018-07-06 05:47:36] Login Ok
+[2018-07-06 05:48:36] logando na  api
+[2018-07-06 05:48:38] Login Ok
+[2018-07-06 05:49:39] logando na  api
+[2018-07-06 05:49:41] Login Ok
+[2018-07-06 05:50:41] logando na  api
+[2018-07-06 05:50:42] Login Ok
+[2018-07-06 05:51:42] logando na  api
+[2018-07-06 05:51:44] Login Ok
+[2018-07-06 05:52:45] logando na  api
+[2018-07-06 05:52:47] Login Ok
+[2018-07-06 05:53:47] logando na  api
+[2018-07-06 05:53:49] Login Ok
+[2018-07-06 05:54:47] logando na  api
+[2018-07-06 05:54:49] Login Ok
+[2018-07-06 05:55:49] logando na  api
+[2018-07-06 05:55:50] Login Ok
+[2018-07-06 05:56:49] logando na  api
+[2018-07-06 05:56:50] Login Ok
+[2018-07-06 05:57:53] logando na  api
+[2018-07-06 05:57:54] Login Ok
+[2018-07-06 05:58:53] logando na  api
+[2018-07-06 05:58:55] Login Ok
+[2018-07-06 05:59:57] logando na  api
+[2018-07-06 05:59:59] Login Ok
+[2018-07-06 06:00:58] logando na  api
+[2018-07-06 06:00:59] Login Ok
+[2018-07-06 06:01:50] logando na  api
+[2018-07-06 06:01:51] Login Ok
+[2018-07-06 06:02:50] logando na  api
+[2018-07-06 06:02:51] Login Ok
+[2018-07-06 06:03:52] logando na  api
+[2018-07-06 06:03:52] Login Ok
+[2018-07-06 06:04:53] logando na  api
+[2018-07-06 06:04:54] Login Ok
+[2018-07-06 06:05:53] logando na  api
+[2018-07-06 06:05:54] Login Ok
+[2018-07-06 06:06:56] logando na  api
+[2018-07-06 06:06:57] Login Ok
+[2018-07-06 06:07:55] logando na  api
+[2018-07-06 06:07:56] Login Ok
+[2018-07-06 06:08:57] logando na  api
+[2018-07-06 06:08:58] Login Ok
+[2018-07-06 06:09:59] logando na  api
+[2018-07-06 06:10:00] Login Ok
+[2018-07-06 06:10:59] logando na  api
+[2018-07-06 06:11:01] Login Ok
+[2018-07-06 06:12:01] logando na  api
+[2018-07-06 06:12:02] Login Ok
+[2018-07-06 06:13:01] logando na  api
+[2018-07-06 06:13:02] Login Ok
+[2018-07-06 06:14:03] logando na  api
+[2018-07-06 06:14:04] Login Ok
+[2018-07-06 06:15:10] logando na  api
+[2018-07-06 06:15:11] Login Ok
+[2018-07-06 06:16:06] logando na  api
+[2018-07-06 06:16:07] Login Ok
+[2018-07-06 06:17:07] logando na  api
+[2018-07-06 06:17:08] Login Ok
+[2018-07-06 06:18:10] logando na  api
+[2018-07-06 06:18:10] Login Ok
+[2018-07-06 06:19:08] logando na  api
+[2018-07-06 06:19:09] Login Ok
+[2018-07-06 06:20:12] logando na  api
+[2018-07-06 06:20:13] Login Ok
+[2018-07-06 06:21:13] logando na  api
+[2018-07-06 06:21:14] Login Ok
+[2018-07-06 06:22:12] logando na  api
+[2018-07-06 06:22:13] Login Ok
+[2018-07-06 06:23:12] logando na  api
+[2018-07-06 06:23:13] Login Ok
+[2018-07-06 06:24:15] logando na  api
+[2018-07-06 06:24:17] Login Ok
+[2018-07-06 06:25:14] logando na  api
+[2018-07-06 06:25:15] Login Ok
+[2018-07-06 06:26:15] logando na  api
+[2018-07-06 06:26:16] Login Ok
+[2018-07-06 06:27:19] logando na  api
+[2018-07-06 06:27:20] Login Ok
+[2018-07-06 06:28:15] logando na  api
+[2018-07-06 06:28:16] Login Ok
+[2018-07-06 06:29:19] logando na  api
+[2018-07-06 06:29:19] Login Ok
+[2018-07-06 06:30:23] logando na  api
+[2018-07-06 06:30:23] Login Ok
+[2018-07-06 06:31:26] logando na  api
+[2018-07-06 06:31:27] Login Ok
+[2018-07-06 06:32:24] logando na  api
+[2018-07-06 06:32:25] Login Ok
+[2018-07-06 06:33:25] logando na  api
+[2018-07-06 06:33:26] Login Ok
+[2018-07-06 06:34:24] logando na  api
+[2018-07-06 06:34:25] Login Ok
+[2018-07-06 06:35:30] logando na  api
+[2018-07-06 06:35:32] Login Ok
+[2018-07-06 06:36:27] logando na  api
+[2018-07-06 06:36:29] Login Ok
+[2018-07-06 06:37:27] logando na  api
+[2018-07-06 06:37:29] Login Ok
+[2018-07-06 06:38:33] logando na  api
+[2018-07-06 06:38:34] Login Ok
+[2018-07-06 06:39:33] logando na  api
+[2018-07-06 06:39:34] Login Ok
+[2018-07-06 06:40:37] logando na  api
+[2018-07-06 06:40:38] Login Ok
+[2018-07-06 06:41:34] logando na  api
+[2018-07-06 06:41:35] Login Ok
+[2018-07-06 06:42:36] logando na  api
+[2018-07-06 06:42:37] Login Ok
+[2018-07-06 06:43:38] logando na  api
+[2018-07-06 06:43:39] Login Ok
+[2018-07-06 06:44:37] logando na  api
+[2018-07-06 06:44:38] Login Ok
+[2018-07-06 06:45:38] logando na  api
+[2018-07-06 06:45:40] Login Ok
+[2018-07-06 06:46:41] logando na  api
+[2018-07-06 06:46:42] Login Ok
+[2018-07-06 06:47:43] logando na  api
+[2018-07-06 06:47:43] Login Ok
+[2018-07-06 06:48:45] logando na  api
+[2018-07-06 06:48:47] Login Ok
+[2018-07-06 06:49:43] logando na  api
+[2018-07-06 06:49:44] Login Ok
+[2018-07-06 06:50:48] logando na  api
+[2018-07-06 06:50:49] Login Ok
+[2018-07-06 06:51:47] logando na  api
+[2018-07-06 06:51:48] Login Ok
+[2018-07-06 06:52:49] logando na  api
+[2018-07-06 06:52:50] Login Ok
+[2018-07-06 06:53:50] logando na  api
+[2018-07-06 06:53:51] Login Ok
+[2018-07-06 06:54:51] logando na  api
+[2018-07-06 06:54:52] Login Ok
+[2018-07-06 06:55:49] logando na  api
+[2018-07-06 06:55:50] Login Ok
+[2018-07-06 06:56:51] logando na  api
+[2018-07-06 06:56:52] Login Ok
+[2018-07-06 06:57:52] logando na  api
+[2018-07-06 06:57:52] Login Ok
+[2018-07-06 06:59:03] logando na  api
+[2018-07-06 06:59:05] Login Ok
+[2018-07-06 06:59:59] logando na  api
+[2018-07-06 07:00:00] Login Ok
+[2018-07-06 07:01:08] logando na  api
+[2018-07-06 07:01:09] Login Ok
+[2018-07-06 07:02:06] logando na  api
+[2018-07-06 07:02:07] Login Ok
+[2018-07-06 07:03:06] logando na  api
+[2018-07-06 07:03:08] Login Ok
+[2018-07-06 07:04:11] logando na  api
+[2018-07-06 07:04:11] Login Ok
+[2018-07-06 07:05:09] logando na  api
+[2018-07-06 07:05:11] Login Ok
+[2018-07-06 07:06:08] logando na  api
+[2018-07-06 07:06:10] Login Ok
+[2018-07-06 07:07:15] logando na  api
+[2018-07-06 07:07:16] Login Ok
+[2018-07-06 07:08:19] logando na  api
+[2018-07-06 07:08:20] Login Ok
+[2018-07-06 07:09:21] logando na  api
+[2018-07-06 07:09:23] Login Ok
+[2018-07-06 07:10:18] logando na  api
+[2018-07-06 07:10:19] Login Ok
+[2018-07-06 07:11:18] logando na  api
+[2018-07-06 07:11:19] Login Ok
+[2018-07-06 07:12:17] logando na  api
+[2018-07-06 07:12:18] Login Ok
+[2018-07-06 07:13:22] logando na  api
+[2018-07-06 07:13:23] Login Ok
+[2018-07-06 07:14:20] logando na  api
+[2018-07-06 07:14:21] Login Ok
+[2018-07-06 07:15:25] logando na  api
+[2018-07-06 07:15:26] Login Ok
+[2018-07-06 07:16:25] logando na  api
+[2018-07-06 07:16:27] Login Ok
+[2018-07-06 07:17:26] logando na  api
+[2018-07-06 07:17:28] Login Ok
+[2018-07-06 07:18:32] logando na  api
+[2018-07-06 07:18:34] Login Ok
+[2018-07-06 07:19:30] logando na  api
+[2018-07-06 07:19:30] Login Ok
+[2018-07-06 07:20:35] logando na  api
+[2018-07-06 07:20:36] Login Ok
+[2018-07-06 07:21:36] logando na  api
+[2018-07-06 07:21:37] Login Ok
+[2018-07-06 07:22:37] logando na  api
+[2018-07-06 07:22:38] Login Ok
+[2018-07-06 07:23:37] logando na  api
+[2018-07-06 07:23:38] Login Ok
+[2018-07-06 07:24:39] logando na  api
+[2018-07-06 07:24:40] Login Ok
+[2018-07-06 07:25:43] logando na  api
+[2018-07-06 07:25:44] Login Ok
+[2018-07-06 07:26:45] logando na  api
+[2018-07-06 07:26:47] Login Ok
+[2018-07-06 07:27:49] logando na  api
+[2018-07-06 07:27:50] Login Ok
+[2018-07-06 07:28:44] logando na  api
+[2018-07-06 07:28:45] Login Ok
+[2018-07-06 07:29:45] logando na  api
+[2018-07-06 07:29:46] Login Ok
+[2018-07-06 07:30:49] logando na  api
+[2018-07-06 07:30:49] Login Ok
+[2018-07-06 07:31:41] logando na  api
+[2018-07-06 07:31:42] Login Ok
+[2018-07-06 07:32:45] logando na  api
+[2018-07-06 07:32:46] Login Ok
+[2018-07-06 07:33:49] logando na  api
+[2018-07-06 07:33:49] Login Ok
+[2018-07-06 07:34:53] logando na  api
+[2018-07-06 07:34:54] Login Ok
+[2018-07-06 07:35:52] logando na  api
+[2018-07-06 07:35:53] Login Ok
+[2018-07-06 07:36:51] logando na  api
+[2018-07-06 07:36:53] Login Ok
+[2018-07-06 07:37:54] logando na  api
+[2018-07-06 07:37:56] Login Ok
+[2018-07-06 07:38:52] logando na  api
+[2018-07-06 07:38:53] Login Ok
+[2018-07-06 07:39:55] logando na  api
+[2018-07-06 07:39:57] Login Ok
+[2018-07-06 07:40:56] logando na  api
+[2018-07-06 07:40:57] Login Ok
+[2018-07-06 07:41:54] logando na  api
+[2018-07-06 07:41:55] Login Ok
+[2018-07-06 07:42:56] logando na  api
+[2018-07-06 07:42:58] Login Ok
+[2018-07-06 07:43:59] logando na  api
+[2018-07-06 07:44:00] Login Ok
+[2018-07-06 07:44:58] logando na  api
+[2018-07-06 07:45:00] Login Ok
+[2018-07-06 07:46:00] logando na  api
+[2018-07-06 07:46:01] Login Ok
+[2018-07-06 07:47:06] logando na  api
+[2018-07-06 07:47:07] Login Ok
+[2018-07-06 07:48:05] logando na  api
+[2018-07-06 07:48:06] Login Ok
+[2018-07-06 07:49:08] logando na  api
+[2018-07-06 07:49:09] Login Ok
+[2018-07-06 07:50:06] logando na  api
+[2018-07-06 07:50:07] Login Ok
+[2018-07-06 07:51:09] logando na  api
+[2018-07-06 07:51:10] Login Ok
+[2018-07-06 07:52:07] logando na  api
+[2018-07-06 07:52:09] Login Ok
+[2018-07-06 07:53:06] logando na  api
+[2018-07-06 07:53:08] Login Ok
+[2018-07-06 07:54:09] logando na  api
+[2018-07-06 07:54:10] Login Ok
+[2018-07-06 07:55:12] logando na  api
+[2018-07-06 07:55:14] Login Ok
+[2018-07-06 07:56:13] logando na  api
+[2018-07-06 07:56:15] Login Ok
+[2018-07-06 07:57:14] logando na  api
+[2018-07-06 07:57:16] Login Ok
+[2018-07-06 07:58:17] logando na  api
+[2018-07-06 07:58:19] Login Ok
+[2018-07-06 07:59:18] logando na  api
+[2018-07-06 07:59:20] Login Ok
+[2018-07-06 08:00:22] logando na  api
+[2018-07-06 08:00:23] Login Ok
+[2018-07-06 08:01:23] logando na  api
+[2018-07-06 08:01:24] Login Ok
+[2018-07-06 08:02:23] logando na  api
+[2018-07-06 08:02:26] Login Ok
+[2018-07-06 08:03:22] logando na  api
+[2018-07-06 08:03:23] Login Ok
+[2018-07-06 08:04:24] logando na  api
+[2018-07-06 08:04:26] Login Ok
+[2018-07-06 08:05:27] logando na  api
+[2018-07-06 08:05:29] Login Ok
+[2018-07-06 08:06:26] logando na  api
+[2018-07-06 08:06:27] Login Ok
+[2018-07-06 08:07:28] logando na  api
+[2018-07-06 08:07:29] Login Ok
+[2018-07-06 08:08:30] logando na  api
+[2018-07-06 08:08:31] Login Ok
+[2018-07-06 08:09:35] logando na  api
+[2018-07-06 08:09:37] Login Ok
+[2018-07-06 08:10:36] logando na  api
+[2018-07-06 08:10:38] Login Ok
+[2018-07-06 08:11:27] logando na  api
+[2018-07-06 08:11:28] Login Ok
+[2018-07-06 08:12:34] logando na  api
+[2018-07-06 08:12:35] Login Ok
+[2018-07-06 08:13:33] logando na  api
+[2018-07-06 08:13:34] Login Ok
+[2018-07-06 08:14:41] logando na  api
+[2018-07-06 08:14:43] Login Ok
+[2018-07-06 08:15:36] logando na  api
+[2018-07-06 08:15:38] Login Ok
+[2018-07-06 08:16:50] logando na  api
+[2018-07-06 08:16:51] Login Ok
+[2018-07-06 08:17:39] logando na  api
+[2018-07-06 08:17:40] Login Ok
+[2018-07-06 08:18:48] logando na  api
+[2018-07-06 08:18:49] Login Ok
+[2018-07-06 08:19:47] logando na  api
+[2018-07-06 08:19:48] Login Ok
+[2018-07-06 08:20:48] logando na  api
+[2018-07-06 08:20:49] Login Ok
+[2018-07-06 08:21:45] logando na  api
+[2018-07-06 08:21:47] Login Ok
+[2018-07-06 08:22:44] logando na  api
+[2018-07-06 08:22:46] Login Ok
+[2018-07-06 08:23:50] logando na  api
+[2018-07-06 08:23:52] Login Ok
+[2018-07-06 08:24:52] logando na  api
+[2018-07-06 08:24:54] Login Ok
+[2018-07-06 08:25:53] logando na  api
+[2018-07-06 08:25:54] Login Ok
+[2018-07-06 08:26:56] logando na  api
+[2018-07-06 08:26:57] Login Ok
+[2018-07-06 08:27:53] logando na  api
+[2018-07-06 08:27:54] Login Ok
+[2018-07-06 08:28:56] logando na  api
+[2018-07-06 08:28:57] Login Ok
+[2018-07-06 08:29:55] logando na  api
+[2018-07-06 08:29:57] Login Ok
+[2018-07-06 08:30:57] logando na  api
+[2018-07-06 08:30:58] Login Ok
+[2018-07-06 08:31:58] logando na  api
+[2018-07-06 08:31:59] Login Ok
+[2018-07-06 08:33:01] logando na  api
+[2018-07-06 08:33:02] Login Ok
+[2018-07-06 08:34:07] logando na  api
+[2018-07-06 08:34:08] Login Ok
+[2018-07-06 08:35:04] logando na  api
+[2018-07-06 08:35:05] Login Ok
+[2018-07-06 08:36:04] logando na  api
+[2018-07-06 08:36:05] Login Ok
+[2018-07-06 08:37:04] logando na  api
+[2018-07-06 08:37:05] Login Ok
+[2018-07-06 08:38:06] logando na  api
+[2018-07-06 08:38:07] Login Ok
+[2018-07-06 08:39:10] logando na  api
+[2018-07-06 08:39:12] Login Ok
+[2018-07-06 08:40:09] logando na  api
+[2018-07-06 08:40:10] Login Ok
+[2018-07-06 08:41:11] logando na  api
+[2018-07-06 08:41:13] Login Ok
+[2018-07-06 08:42:09] logando na  api
+[2018-07-06 08:42:11] Login Ok
+[2018-07-06 08:43:10] logando na  api
+[2018-07-06 08:43:11] Login Ok
+[2018-07-06 08:44:13] logando na  api
+[2018-07-06 08:44:14] Login Ok
+[2018-07-06 08:45:13] logando na  api
+[2018-07-06 08:45:15] Login Ok
+[2018-07-06 08:46:17] logando na  api
+[2018-07-06 08:46:18] Login Ok
+[2018-07-06 08:47:18] logando na  api
+[2018-07-06 08:47:18] Login Ok
+[2018-07-06 08:48:18] logando na  api
+[2018-07-06 08:48:19] Login Ok
+[2018-07-06 08:49:17] logando na  api
+[2018-07-06 08:49:20] Login Ok
+[2018-07-06 08:50:18] logando na  api
+[2018-07-06 08:50:19] Login Ok
+[2018-07-06 08:51:20] logando na  api
+[2018-07-06 08:51:21] Login Ok
+[2018-07-06 08:52:22] logando na  api
+[2018-07-06 08:52:24] Login Ok
+[2018-07-06 08:53:21] logando na  api
+[2018-07-06 08:53:23] Login Ok
+[2018-07-06 08:54:27] logando na  api
+[2018-07-06 08:54:29] Login Ok
+[2018-07-06 08:55:28] logando na  api
+[2018-07-06 08:55:29] Login Ok
+[2018-07-06 08:56:28] logando na  api
+[2018-07-06 08:56:29] Login Ok
+[2018-07-06 08:57:25] logando na  api
+[2018-07-06 08:57:26] Login Ok
+[2018-07-06 08:58:30] logando na  api
+[2018-07-06 08:58:31] Login Ok
+[2018-07-06 08:59:27] logando na  api
+[2018-07-06 08:59:28] Login Ok
+[2018-07-06 09:00:35] logando na  api
+[2018-07-06 09:00:36] Login Ok
+[2018-07-06 09:01:32] logando na  api
+[2018-07-06 09:01:32] Login Ok
+[2018-07-06 09:02:34] logando na  api
+[2018-07-06 09:02:35] Login Ok
+[2018-07-06 09:03:34] logando na  api
+[2018-07-06 09:03:35] Login Ok
+[2018-07-06 09:04:34] logando na  api
+[2018-07-06 09:04:36] Login Ok
+[2018-07-06 09:05:36] logando na  api
+[2018-07-06 09:05:37] Login Ok
+[2018-07-06 09:06:40] logando na  api
+[2018-07-06 09:06:41] Login Ok
+[2018-07-06 09:07:42] logando na  api
+[2018-07-06 09:07:42] Login Ok
+[2018-07-06 09:08:41] logando na  api
+[2018-07-06 09:08:41] Login Ok
+[2018-07-06 09:09:42] logando na  api
+[2018-07-06 09:09:43] Login Ok
+[2018-07-06 09:10:45] logando na  api
+[2018-07-06 09:10:46] Login Ok
+[2018-07-06 09:11:45] logando na  api
+[2018-07-06 09:12:45] logando na  api
+[2018-07-06 09:12:46] Login Ok
+[2018-07-06 09:13:47] logando na  api
+[2018-07-06 09:13:48] Login Ok
+[2018-07-06 09:14:46] logando na  api
+[2018-07-06 09:15:46] logando na  api
+[2018-07-06 09:15:46] Login Ok
+[2018-07-06 09:16:48] logando na  api
+[2018-07-06 09:16:49] Login Ok
+[2018-07-06 09:17:49] logando na  api
+[2018-07-06 09:17:51] Login Ok
+[2018-07-06 09:18:51] logando na  api
+[2018-07-06 09:18:52] Login Ok
+[2018-07-06 09:19:52] logando na  api
+[2018-07-06 09:19:53] Login Ok
+[2018-07-06 09:20:52] logando na  api
+[2018-07-06 09:20:53] Login Ok
+[2018-07-06 09:21:56] logando na  api
+[2018-07-06 09:21:58] Login Ok
+[2018-07-06 09:22:54] logando na  api
+[2018-07-06 09:22:55] Login Ok
+[2018-07-06 09:23:57] logando na  api
+[2018-07-06 09:23:57] Login Ok
+[2018-07-06 09:24:57] logando na  api
+[2018-07-06 09:24:58] Login Ok
+[2018-07-06 09:25:59] logando na  api
+[2018-07-06 09:26:01] Login Ok
+[2018-07-06 09:26:59] logando na  api
+[2018-07-06 09:27:00] Login Ok
+[2018-07-06 09:28:03] logando na  api
+[2018-07-06 09:28:04] Login Ok
+[2018-07-06 09:29:02] logando na  api
+[2018-07-06 09:29:04] Login Ok
+[2018-07-06 09:30:01] logando na  api
+[2018-07-06 09:30:03] Login Ok
+[2018-07-06 09:31:03] logando na  api
+[2018-07-06 09:31:05] Login Ok
+[2018-07-06 09:32:06] logando na  api
+[2018-07-06 09:32:08] Login Ok
+[2018-07-06 09:33:08] logando na  api
+[2018-07-06 09:33:09] Login Ok
+[2018-07-06 09:34:09] logando na  api
+[2018-07-06 09:35:11] logando na  api
+[2018-07-06 09:35:12] Login Ok
+[2018-07-06 09:36:12] logando na  api
+[2018-07-06 09:36:13] Login Ok
+[2018-07-06 09:37:10] logando na  api
+[2018-07-06 09:37:11] Login Ok
+[2018-07-06 09:38:12] logando na  api
+[2018-07-06 09:38:13] Login Ok
+[2018-07-06 09:39:16] logando na  api
+[2018-07-06 09:39:17] Login Ok
+[2018-07-06 09:40:17] logando na  api
+[2018-07-06 09:40:18] Login Ok
+[2018-07-06 09:41:20] logando na  api
+[2018-07-06 09:41:21] Login Ok
+[2018-07-06 09:42:20] logando na  api
+[2018-07-06 09:42:22] Login Ok
+[2018-07-06 09:43:19] logando na  api
+[2018-07-06 09:43:20] Login Ok
+[2018-07-06 09:44:16] logando na  api
+[2018-07-06 09:44:17] Login Ok
+[2018-07-06 09:45:23] logando na  api
+[2018-07-06 09:45:24] Login Ok
+[2018-07-06 09:46:29] logando na  api
+[2018-07-06 09:46:32] Login Ok
+[2018-07-06 09:47:23] logando na  api
+[2018-07-06 09:47:24] Login Ok
+[2018-07-06 09:48:34] logando na  api
+[2018-07-06 09:48:36] Login Ok
+[2018-07-06 09:49:35] logando na  api
+[2018-07-06 09:49:37] Login Ok
+[2018-07-06 09:50:37] logando na  api
+[2018-07-06 09:50:39] Login Ok
+[2018-07-06 09:51:38] logando na  api
+[2018-07-06 09:51:39] Login Ok
+[2018-07-06 09:52:42] logando na  api
+[2018-07-06 09:52:44] Login Ok
+[2018-07-06 09:53:43] logando na  api
+[2018-07-06 09:53:44] Login Ok
+[2018-07-06 09:54:46] logando na  api
+[2018-07-06 09:54:47] Login Ok
+[2018-07-06 09:55:46] logando na  api
+[2018-07-06 09:55:48] Login Ok
+[2018-07-06 09:56:46] logando na  api
+[2018-07-06 09:56:48] Login Ok
+[2018-07-06 09:57:51] logando na  api
+[2018-07-06 09:57:52] Login Ok
+[2018-07-06 09:58:53] logando na  api
+[2018-07-06 09:58:55] Login Ok
+[2018-07-06 09:59:49] logando na  api
+[2018-07-06 09:59:50] Login Ok
+[2018-07-06 10:00:53] logando na  api
+[2018-07-06 10:00:55] Login Ok
+[2018-07-06 10:01:55] logando na  api
+[2018-07-06 10:01:56] Login Ok
+[2018-07-06 10:02:53] logando na  api
+[2018-07-06 10:02:54] Login Ok
+[2018-07-06 10:03:56] logando na  api
+[2018-07-06 10:03:56] Login Ok
+[2018-07-06 10:05:00] logando na  api
+[2018-07-06 10:05:01] Login Ok
+[2018-07-06 10:05:56] logando na  api
+[2018-07-06 10:05:57] Login Ok
+[2018-07-06 10:07:01] logando na  api
+[2018-07-06 10:07:03] Login Ok
+[2018-07-06 10:08:04] logando na  api
+[2018-07-06 10:08:06] Login Ok
+[2018-07-06 10:09:07] logando na  api
+[2018-07-06 10:09:08] Login Ok
+[2018-07-06 10:10:06] logando na  api
+[2018-07-06 10:10:07] Login Ok
+[2018-07-06 10:11:08] logando na  api
+[2018-07-06 10:11:10] Login Ok
+[2018-07-06 10:12:10] logando na  api
+[2018-07-06 10:12:12] Login Ok
+[2018-07-06 10:13:09] logando na  api
+[2018-07-06 10:13:11] Login Ok
+[2018-07-06 10:14:12] logando na  api
+[2018-07-06 10:14:14] Login Ok
+[2018-07-06 10:15:20] logando na  api
+[2018-07-06 10:15:21] Login Ok
+[2018-07-06 10:16:22] logando na  api
+[2018-07-06 10:16:24] Login Ok
+[2018-07-06 10:17:18] logando na  api
+[2018-07-06 10:17:19] Login Ok
+[2018-07-06 10:18:16] logando na  api
+[2018-07-06 10:18:17] Login Ok
+[2018-07-06 10:19:19] logando na  api
+[2018-07-06 10:19:20] Login Ok
+[2018-07-06 10:20:22] logando na  api
+[2018-07-06 10:20:23] Login Ok
+[2018-07-06 10:21:23] logando na  api
+[2018-07-06 10:21:24] Login Ok
+[2018-07-06 10:22:25] logando na  api
+[2018-07-06 10:22:26] Login Ok
+[2018-07-06 10:23:29] logando na  api
+[2018-07-06 10:23:31] Login Ok
+[2018-07-06 10:24:25] logando na  api
+[2018-07-06 10:24:26] Login Ok
+[2018-07-06 10:25:32] logando na  api
+[2018-07-06 10:25:33] Login Ok
+[2018-07-06 10:26:32] logando na  api
+[2018-07-06 10:26:33] Login Ok
+[2018-07-06 10:27:30] logando na  api
+[2018-07-06 10:27:32] Login Ok
+[2018-07-06 10:28:32] logando na  api
+[2018-07-06 10:28:33] Login Ok
+[2018-07-06 10:29:37] logando na  api
+[2018-07-06 10:29:39] Login Ok
+[2018-07-06 10:30:40] logando na  api
+[2018-07-06 10:31:37] logando na  api
+[2018-07-06 10:31:38] Login Ok
+[2018-07-06 10:32:41] logando na  api
+[2018-07-06 10:32:42] Login Ok
+[2018-07-06 10:33:40] logando na  api
+[2018-07-06 10:33:41] Login Ok
+[2018-07-06 10:34:44] logando na  api
+[2018-07-06 10:34:45] Login Ok
+[2018-07-06 10:35:44] logando na  api
+[2018-07-06 10:35:45] Login Ok
+[2018-07-06 10:36:45] logando na  api
+[2018-07-06 10:36:47] Login Ok
+[2018-07-06 10:37:51] logando na  api
+[2018-07-06 10:37:53] Login Ok
+[2018-07-06 10:38:49] logando na  api
+[2018-07-06 10:38:51] Login Ok
+[2018-07-06 10:39:51] logando na  api
+[2018-07-06 10:39:52] Login Ok
+[2018-07-06 10:40:55] logando na  api
+[2018-07-06 10:40:57] Login Ok
+[2018-07-06 10:41:53] logando na  api
+[2018-07-06 10:41:55] Login Ok
+[2018-07-06 10:42:54] logando na  api
+[2018-07-06 10:42:56] Login Ok
+[2018-07-06 10:43:59] logando na  api
+[2018-07-06 10:44:01] Login Ok
+[2018-07-06 10:45:07] logando na  api
+[2018-07-06 10:45:09] Login Ok
+[2018-07-06 10:46:07] logando na  api
+[2018-07-06 10:46:09] Login Ok
+[2018-07-06 10:47:07] logando na  api
+[2018-07-06 10:47:08] Login Ok
+[2018-07-06 10:48:08] logando na  api
+[2018-07-06 10:48:09] Login Ok
+[2018-07-06 10:49:09] logando na  api
+[2018-07-06 10:49:10] Login Ok
+[2018-07-06 10:50:10] logando na  api
+[2018-07-06 10:50:11] Login Ok
+[2018-07-06 10:51:11] logando na  api
+[2018-07-06 10:51:12] Login Ok
+[2018-07-06 10:52:16] logando na  api
+[2018-07-06 10:52:17] Login Ok
+[2018-07-06 10:53:19] logando na  api
+[2018-07-06 10:53:20] Login Ok
+[2018-07-06 10:54:17] logando na  api
+[2018-07-06 10:54:17] Login Ok
+[2018-07-06 10:55:16] logando na  api
+[2018-07-06 10:55:18] Login Ok
+[2018-07-06 10:56:22] logando na  api
+[2018-07-06 10:56:23] Login Ok
+[2018-07-06 10:57:24] logando na  api
+[2018-07-06 10:57:26] Login Ok
+[2018-07-06 10:58:23] logando na  api
+[2018-07-06 10:58:24] Login Ok
+[2018-07-06 10:59:29] logando na  api
+[2018-07-06 10:59:30] Login Ok
+[2018-07-06 11:00:30] logando na  api
+[2018-07-06 11:00:31] Login Ok
+[2018-07-06 11:01:32] logando na  api
+[2018-07-06 11:01:34] Login Ok
+[2018-07-06 11:02:34] logando na  api
+[2018-07-06 11:02:35] Login Ok
+[2018-07-06 11:03:32] logando na  api
+[2018-07-06 11:03:33] Login Ok
+[2018-07-06 11:04:32] logando na  api
+[2018-07-06 11:04:34] Login Ok
+[2018-07-06 11:05:36] logando na  api
+[2018-07-06 11:05:38] Login Ok
+[2018-07-06 11:06:37] logando na  api
+[2018-07-06 11:06:38] Login Ok
+[2018-07-06 11:07:40] logando na  api
+[2018-07-06 11:07:42] Login Ok
+[2018-07-06 11:08:41] logando na  api
+[2018-07-06 11:08:42] Login Ok
+[2018-07-06 11:09:45] logando na  api
+[2018-07-06 11:09:47] Login Ok
+[2018-07-06 11:10:43] logando na  api
+[2018-07-06 11:10:45] Login Ok
+[2018-07-06 11:11:43] logando na  api
+[2018-07-06 11:11:46] Login Ok
+[2018-07-06 11:12:52] logando na  api
+[2018-07-06 11:12:53] Login Ok
+[2018-07-06 11:13:52] logando na  api
+[2018-07-06 11:13:54] Login Ok
+[2018-07-06 11:14:52] logando na  api
+[2018-07-06 11:14:53] Login Ok
+[2018-07-06 11:15:51] logando na  api
+[2018-07-06 11:15:53] Login Ok
+[2018-07-06 11:16:54] logando na  api
+[2018-07-06 11:16:55] Login Ok
+[2018-07-06 11:17:56] logando na  api
+[2018-07-06 11:17:57] Login Ok
+[2018-07-06 11:18:59] logando na  api
+[2018-07-06 11:19:00] Login Ok
+[2018-07-06 11:19:58] logando na  api
+[2018-07-06 11:19:59] Login Ok
+[2018-07-06 11:21:01] logando na  api
+[2018-07-06 11:21:02] Login Ok
+[2018-07-06 11:22:02] logando na  api
+[2018-07-06 11:22:04] Login Ok
+[2018-07-06 11:22:59] logando na  api
+[2018-07-06 11:23:01] Login Ok
+[2018-07-06 11:24:07] logando na  api
+[2018-07-06 11:24:08] Login Ok
+[2018-07-06 11:25:07] logando na  api
+[2018-07-06 11:25:08] Login Ok
+[2018-07-06 11:26:09] logando na  api
+[2018-07-06 11:26:10] Login Ok
+[2018-07-06 11:27:09] logando na  api
+[2018-07-06 11:27:11] Login Ok
+[2018-07-06 11:28:12] logando na  api
+[2018-07-06 11:28:13] Login Ok
+[2018-07-06 11:29:08] logando na  api
+[2018-07-06 11:29:09] Login Ok
+[2018-07-06 11:30:16] logando na  api
+[2018-07-06 11:30:17] Login Ok
+[2018-07-06 11:31:13] logando na  api
+[2018-07-06 11:31:14] Login Ok
+[2018-07-06 11:32:17] logando na  api
+[2018-07-06 11:32:18] Login Ok
+[2018-07-06 11:33:15] logando na  api
+[2018-07-06 11:33:16] Login Ok
+[2018-07-06 11:34:15] logando na  api
+[2018-07-06 11:34:17] Login Ok
+[2018-07-06 11:35:19] logando na  api
+[2018-07-06 11:35:21] Login Ok
+[2018-07-06 11:36:20] logando na  api
+[2018-07-06 11:36:22] Login Ok
+[2018-07-06 11:37:21] logando na  api
+[2018-07-06 11:37:23] Login Ok
+[2018-07-06 11:38:26] logando na  api
+[2018-07-06 11:38:28] Login Ok
+[2018-07-06 11:39:26] logando na  api
+[2018-07-06 11:39:28] Login Ok
+[2018-07-06 11:40:28] logando na  api
+[2018-07-06 11:40:30] Login Ok
+[2018-07-06 11:41:23] logando na  api
+[2018-07-06 11:41:25] Login Ok
+[2018-07-06 11:42:27] logando na  api
+[2018-07-06 11:42:28] Login Ok
+[2018-07-06 11:43:32] logando na  api
+[2018-07-06 11:43:34] Login Ok
+[2018-07-06 11:44:40] logando na  api
+[2018-07-06 11:44:42] Login Ok
+[2018-07-06 11:45:33] logando na  api
+[2018-07-06 11:45:35] Login Ok
+[2018-07-06 11:46:31] logando na  api
+[2018-07-06 11:46:33] Login Ok
+[2018-07-06 11:47:42] logando na  api
+[2018-07-06 11:47:43] Login Ok
+[2018-07-06 11:48:43] logando na  api
+[2018-07-06 11:48:45] Login Ok
+[2018-07-06 11:49:43] logando na  api
+[2018-07-06 11:49:44] Login Ok
+[2018-07-06 11:50:48] logando na  api
+[2018-07-06 11:50:49] Login Ok
+[2018-07-06 11:51:50] logando na  api
+[2018-07-06 11:51:51] Login Ok
+[2018-07-06 11:52:53] logando na  api
+[2018-07-06 11:52:54] Login Ok
+[2018-07-06 11:53:54] logando na  api
+[2018-07-06 11:53:56] Login Ok
+[2018-07-06 11:54:53] logando na  api
+[2018-07-06 11:54:54] Login Ok
+[2018-07-06 11:55:49] logando na  api
+[2018-07-06 11:55:50] Login Ok
+[2018-07-06 11:56:52] logando na  api
+[2018-07-06 11:56:53] Login Ok
+[2018-07-06 11:57:51] logando na  api
+[2018-07-06 11:57:52] Login Ok
+[2018-07-06 11:58:59] logando na  api
+[2018-07-06 11:59:00] Login Ok
+[2018-07-06 12:00:00] logando na  api
+[2018-07-06 12:00:01] Login Ok
+[2018-07-06 12:01:00] logando na  api
+[2018-07-06 12:01:02] Login Ok
+[2018-07-06 12:01:59] logando na  api
+[2018-07-06 12:02:00] Login Ok
+[2018-07-06 12:02:58] logando na  api
+[2018-07-06 12:02:59] Login Ok
+[2018-07-06 12:04:01] logando na  api
+[2018-07-06 12:04:02] Login Ok
+[2018-07-06 12:05:03] logando na  api
+[2018-07-06 12:05:04] Login Ok
+[2018-07-06 12:06:06] logando na  api
+[2018-07-06 12:06:07] Login Ok
+[2018-07-06 12:07:10] logando na  api
+[2018-07-06 12:07:10] Login Ok
+[2018-07-06 12:08:08] logando na  api
+[2018-07-06 12:08:10] Login Ok
+[2018-07-06 12:09:16] logando na  api
+[2018-07-06 12:09:18] Login Ok
+[2018-07-06 12:10:14] logando na  api
+[2018-07-06 12:10:15] Login Ok
+[2018-07-06 12:11:11] logando na  api
+[2018-07-06 12:11:13] Login Ok
+[2018-07-06 12:12:14] logando na  api
+[2018-07-06 12:12:15] Login Ok
+[2018-07-06 12:13:15] logando na  api
+[2018-07-06 12:13:17] Login Ok
+[2018-07-06 12:14:19] logando na  api
+[2018-07-06 12:14:20] Login Ok
+[2018-07-06 12:15:20] logando na  api
+[2018-07-06 12:15:21] Login Ok
+[2018-07-06 12:16:22] logando na  api
+[2018-07-06 12:16:23] Login Ok
+[2018-07-06 12:17:23] logando na  api
+[2018-07-06 12:17:24] Login Ok
+[2018-07-06 12:18:28] logando na  api
+[2018-07-06 12:18:29] Login Ok
+[2018-07-06 12:19:25] logando na  api
+[2018-07-06 12:19:26] Login Ok
+[2018-07-06 12:20:26] logando na  api
+[2018-07-06 12:20:28] Login Ok
+[2018-07-06 12:21:29] logando na  api
+[2018-07-06 12:21:31] Login Ok
+[2018-07-06 12:22:30] logando na  api
+[2018-07-06 12:22:32] Login Ok
+[2018-07-06 12:23:36] logando na  api
+[2018-07-06 12:23:37] Login Ok
+[2018-07-06 12:24:36] logando na  api
+[2018-07-06 12:24:38] Login Ok
+[2018-07-06 12:25:36] logando na  api
+[2018-07-06 12:25:37] Login Ok
+[2018-07-06 12:26:34] logando na  api
+[2018-07-06 12:26:35] Login Ok
+[2018-07-06 12:27:33] logando na  api
+[2018-07-06 12:27:35] Login Ok
+[2018-07-06 12:28:38] logando na  api
+[2018-07-06 12:28:39] Login Ok
+[2018-07-06 12:29:38] logando na  api
+[2018-07-06 12:29:39] Login Ok
+[2018-07-06 12:30:44] logando na  api
+[2018-07-06 12:30:45] Login Ok
+[2018-07-06 12:31:42] logando na  api
+[2018-07-06 12:31:43] Login Ok
+[2018-07-06 12:32:44] logando na  api
+[2018-07-06 12:32:46] Login Ok
+[2018-07-06 12:33:44] logando na  api
+[2018-07-06 12:34:51] logando na  api
+[2018-07-06 12:34:52] Login Ok
+[2018-07-06 12:35:47] logando na  api
+[2018-07-06 12:35:49] Login Ok
+[2018-07-06 12:36:51] logando na  api
+[2018-07-06 12:36:53] Login Ok
+[2018-07-06 12:37:58] logando na  api
+[2018-07-06 12:37:59] Login Ok
+[2018-07-06 12:38:58] logando na  api
+[2018-07-06 12:38:59] Login Ok
+[2018-07-06 12:39:53] logando na  api
+[2018-07-06 12:39:54] Login Ok
+[2018-07-06 12:40:56] logando na  api
+[2018-07-06 12:40:58] Login Ok
+[2018-07-06 12:42:00] logando na  api
+[2018-07-06 12:42:01] Login Ok
+[2018-07-06 12:43:00] logando na  api
+[2018-07-06 12:43:01] Login Ok
+[2018-07-06 12:44:03] logando na  api
+[2018-07-06 12:44:04] Login Ok
+[2018-07-06 12:45:04] logando na  api
+[2018-07-06 12:45:05] Login Ok
+[2018-07-06 12:46:04] logando na  api
+[2018-07-06 12:46:05] Login Ok
+[2018-07-06 12:47:12] logando na  api
+[2018-07-06 12:47:14] Login Ok
+[2018-07-06 12:48:06] logando na  api
+[2018-07-06 12:48:08] Login Ok
+[2018-07-06 12:49:04] logando na  api
+[2018-07-06 12:49:06] Login Ok
+[2018-07-06 12:50:13] logando na  api
+[2018-07-06 12:50:15] Login Ok
+[2018-07-06 12:51:12] logando na  api
+[2018-07-06 12:51:15] Login Ok
+[2018-07-06 12:52:23] logando na  api
+[2018-07-06 12:52:24] Login Ok
+[2018-07-06 12:53:21] logando na  api
+[2018-07-06 12:53:23] Login Ok
+[2018-07-06 12:54:24] logando na  api
+[2018-07-06 12:54:25] Login Ok
+[2018-07-06 12:55:23] logando na  api
+[2018-07-06 12:55:24] Login Ok
+[2018-07-06 12:56:27] logando na  api
+[2018-07-06 12:56:28] Login Ok
+[2018-07-06 12:57:30] logando na  api
+[2018-07-06 12:57:32] Login Ok
+[2018-07-06 12:58:26] logando na  api
+[2018-07-06 12:58:28] Login Ok
+[2018-07-06 12:59:27] logando na  api
+[2018-07-06 12:59:28] Login Ok
+[2018-07-06 13:00:35] logando na  api
+[2018-07-06 13:00:36] Login Ok
+[2018-07-06 13:01:31] logando na  api
+[2018-07-06 13:01:33] Login Ok
+[2018-07-06 13:02:35] logando na  api
+[2018-07-06 13:02:36] Login Ok
+[2018-07-06 13:03:35] logando na  api
+[2018-07-06 13:03:36] Login Ok
+[2018-07-06 13:04:39] logando na  api
+[2018-07-06 13:04:40] Login Ok
+[2018-07-06 13:05:36] logando na  api
+[2018-07-06 13:05:37] Login Ok
+[2018-07-06 13:06:42] logando na  api
+[2018-07-06 13:06:44] Login Ok
+[2018-07-06 13:07:41] logando na  api
+[2018-07-06 13:07:43] Login Ok
+[2018-07-06 13:08:47] logando na  api
+[2018-07-06 13:08:48] Login Ok
+[2018-07-06 13:09:49] logando na  api
+[2018-07-06 13:09:51] Login Ok
+[2018-07-06 13:10:47] logando na  api
+[2018-07-06 13:10:49] Login Ok
+[2018-07-06 13:11:46] logando na  api
+[2018-07-06 13:11:47] Login Ok
+[2018-07-06 13:12:52] logando na  api
+[2018-07-06 13:12:53] Login Ok
+[2018-07-06 13:13:47] logando na  api
+[2018-07-06 13:13:49] Login Ok
+[2018-07-06 13:14:53] logando na  api
+[2018-07-06 13:14:55] Login Ok
+[2018-07-06 13:15:55] logando na  api
+[2018-07-06 13:15:57] Login Ok
+[2018-07-06 13:16:57] logando na  api
+[2018-07-06 13:16:59] Login Ok
+[2018-07-06 13:17:54] logando na  api
+[2018-07-06 13:17:55] Login Ok
+[2018-07-06 13:18:57] logando na  api
+[2018-07-06 13:18:58] Login Ok
+[2018-07-06 13:20:02] logando na  api
+[2018-07-06 13:20:03] Login Ok
+[2018-07-06 13:21:03] logando na  api
+[2018-07-06 13:21:04] Login Ok
+[2018-07-06 13:22:04] logando na  api
+[2018-07-06 13:22:05] Login Ok
+[2018-07-06 13:23:06] logando na  api
+[2018-07-06 13:23:07] Login Ok
+[2018-07-06 13:24:10] logando na  api
+[2018-07-06 13:24:12] Login Ok
+[2018-07-06 13:25:06] logando na  api
+[2018-07-06 13:25:07] Login Ok
+[2018-07-06 13:26:09] logando na  api
+[2018-07-06 13:26:10] Login Ok
+[2018-07-06 13:27:08] logando na  api
+[2018-07-06 13:27:08] Login Ok
+[2018-07-06 13:28:11] logando na  api
+[2018-07-06 13:28:12] Login Ok
+[2018-07-06 13:29:16] logando na  api
+[2018-07-06 13:29:17] Login Ok
+[2018-07-06 13:30:18] logando na  api
+[2018-07-06 13:30:20] Login Ok
+[2018-07-06 13:31:15] logando na  api
+[2018-07-06 13:31:16] Login Ok
+[2018-07-06 13:32:11] logando na  api
+[2018-07-06 13:32:13] Login Ok
+[2018-07-06 13:33:16] logando na  api
+[2018-07-06 13:33:18] Login Ok
+[2018-07-06 13:34:18] logando na  api
+[2018-07-06 13:34:20] Login Ok
+[2018-07-06 13:35:23] logando na  api
+[2018-07-06 13:35:24] Login Ok
+[2018-07-06 13:36:21] logando na  api
+[2018-07-06 13:36:23] Login Ok
+[2018-07-06 13:37:24] logando na  api
+[2018-07-06 13:37:25] Login Ok
+[2018-07-06 13:38:23] logando na  api
+[2018-07-06 13:38:25] Login Ok
+[2018-07-06 13:39:23] logando na  api
+[2018-07-06 13:39:25] Login Ok
+[2018-07-06 13:40:30] logando na  api
+[2018-07-06 13:40:31] Login Ok
+[2018-07-06 13:41:27] logando na  api
+[2018-07-06 13:41:28] Login Ok
+[2018-07-06 13:42:32] logando na  api
+[2018-07-06 13:42:33] Login Ok
+[2018-07-06 13:43:30] logando na  api
+[2018-07-06 13:43:31] Login Ok
+[2018-07-06 13:44:30] logando na  api
+[2018-07-06 13:44:31] Login Ok
+[2018-07-06 13:45:32] logando na  api
+[2018-07-06 13:45:33] Login Ok
+[2018-07-06 13:46:36] logando na  api
+[2018-07-06 13:46:38] Login Ok
+[2018-07-06 13:47:33] logando na  api
+[2018-07-06 13:47:34] Login Ok
+[2018-07-06 13:48:33] logando na  api
+[2018-07-06 13:48:34] Login Ok
+[2018-07-06 13:49:36] logando na  api
+[2018-07-06 13:49:37] Login Ok
+[2018-07-06 13:50:45] logando na  api
+[2018-07-06 13:50:47] Login Ok
+[2018-07-06 13:51:36] logando na  api
+[2018-07-06 13:51:38] Login Ok
+[2018-07-06 13:52:47] logando na  api
+[2018-07-06 13:52:49] Login Ok
+[2018-07-06 13:53:52] logando na  api
+[2018-07-06 13:53:54] Login Ok
+[2018-07-06 13:54:51] logando na  api
+[2018-07-06 13:54:52] Login Ok
+[2018-07-06 13:55:45] logando na  api
+[2018-07-06 13:55:48] Login Ok
+[2018-07-06 13:56:49] logando na  api
+[2018-07-06 13:56:51] Login Ok
+[2018-07-06 13:57:55] logando na  api
+[2018-07-06 13:57:57] Login Ok
+[2018-07-06 13:58:56] logando na  api
+[2018-07-06 13:58:57] Login Ok
+[2018-07-06 14:00:00] logando na  api
+[2018-07-06 14:00:01] Login Ok
+[2018-07-06 14:00:59] logando na  api
+[2018-07-06 14:01:01] Login Ok
+[2018-07-06 14:02:04] logando na  api
+[2018-07-06 14:02:05] Login Ok
+[2018-07-06 14:03:03] logando na  api
+[2018-07-06 14:03:05] Login Ok
+[2018-07-06 14:03:59] logando na  api
+[2018-07-06 14:04:01] Login Ok
+[2018-07-06 14:05:04] logando na  api
+[2018-07-06 14:05:05] Login Ok
+[2018-07-06 14:06:10] logando na  api
+[2018-07-06 14:06:12] Login Ok
+[2018-07-06 14:07:10] logando na  api
+[2018-07-06 14:07:12] Login Ok
+[2018-07-06 14:08:07] logando na  api
+[2018-07-06 14:08:09] Login Ok
+[2018-07-06 14:09:12] logando na  api
+[2018-07-06 14:09:13] Login Ok
+[2018-07-06 14:10:13] logando na  api
+[2018-07-06 14:10:15] Login Ok
+[2018-07-06 14:11:17] logando na  api
+[2018-07-06 14:11:18] Login Ok
+[2018-07-06 14:12:14] logando na  api
+[2018-07-06 14:12:16] Login Ok
+[2018-07-06 14:13:20] logando na  api
+[2018-07-06 14:13:21] Login Ok
+[2018-07-06 14:14:20] logando na  api
+[2018-07-06 14:15:22] logando na  api
+[2018-07-06 14:15:24] Login Ok
+[2018-07-06 14:16:19] logando na  api
+[2018-07-06 14:16:21] Login Ok
+[2018-07-06 14:17:20] logando na  api
+[2018-07-06 14:17:22] Login Ok
+[2018-07-06 14:18:27] logando na  api
+[2018-07-06 14:18:29] Login Ok
+[2018-07-06 14:19:25] logando na  api
+[2018-07-06 14:19:26] Login Ok
+[2018-07-06 14:20:30] logando na  api
+[2018-07-06 14:20:31] Login Ok
+[2018-07-06 14:21:28] logando na  api
+[2018-07-06 14:21:29] Login Ok
+[2018-07-06 14:22:29] logando na  api
+[2018-07-06 14:22:31] Login Ok
+[2018-07-06 14:23:32] logando na  api
+[2018-07-06 14:23:33] Login Ok
+[2018-07-06 14:24:33] logando na  api
+[2018-07-06 14:24:35] Login Ok
+[2018-07-06 14:25:34] logando na  api
+[2018-07-06 14:25:35] Login Ok
+[2018-07-06 14:26:36] logando na  api
+[2018-07-06 14:26:36] Login Ok
+[2018-07-06 14:27:39] logando na  api
+[2018-07-06 14:27:40] Login Ok
+[2018-07-06 14:28:38] logando na  api
+[2018-07-06 14:28:39] Login Ok
+[2018-07-06 14:29:38] logando na  api
+[2018-07-06 14:29:39] Login Ok
+[2018-07-06 14:30:41] logando na  api
+[2018-07-06 14:30:42] Login Ok
+[2018-07-06 14:31:39] logando na  api
+[2018-07-06 14:31:41] Login Ok
+[2018-07-06 14:32:43] logando na  api
+[2018-07-06 14:32:44] Login Ok
+[2018-07-06 14:33:42] logando na  api
+[2018-07-06 14:33:43] Login Ok
+[2018-07-06 14:34:47] logando na  api
+[2018-07-06 14:34:48] Login Ok
+[2018-07-06 14:35:46] logando na  api
+[2018-07-06 14:35:48] Login Ok
+[2018-07-06 14:36:47] logando na  api
+[2018-07-06 14:36:48] Login Ok
+[2018-07-06 14:37:49] logando na  api
+[2018-07-06 14:37:50] Login Ok
+[2018-07-06 14:38:52] logando na  api
+[2018-07-06 14:38:53] Login Ok
+[2018-07-06 14:39:49] logando na  api
+[2018-07-06 14:39:50] Login Ok
+[2018-07-06 14:40:55] logando na  api
+[2018-07-06 14:40:56] Login Ok
+[2018-07-06 14:41:59] logando na  api
+[2018-07-06 14:42:00] Login Ok
+[2018-07-06 14:43:06] logando na  api
+[2018-07-06 14:43:08] Login Ok
+[2018-07-06 14:44:10] logando na  api
+[2018-07-06 14:44:11] Login Ok
+[2018-07-06 14:45:14] logando na  api
+[2018-07-06 14:45:15] Login Ok

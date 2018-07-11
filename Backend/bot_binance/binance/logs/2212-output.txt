@@ -1,0 +1,923 @@
+[2018-07-06 14:14:21] logando na  api
+[2018-07-06 14:15:21] logando na  api
+[2018-07-06 14:15:23] Login Ok
+[2018-07-06 14:15:26] 1- Iniciando rotina de compra
+[2018-07-06 14:15:26] price now = 6561.9
+[2018-07-06 14:15:26] Buy ata 5750.0
+[2018-07-06 14:15:26] LASTLOW 6453.33
+[2018-07-06 14:15:26] price now = 6561.9
+[2018-07-06 14:15:26] Buy ata 5750.0
+[2018-07-06 14:15:26] LASTLOW 6453.33
+[2018-07-06 14:15:26] 2- Iniciando rotina de venda 
+[2018-07-06 14:15:26] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:15:57] 1- Iniciando rotina de compra
+[2018-07-06 14:15:57] price now = 6560.33
+[2018-07-06 14:15:57] Buy ata 5750.0
+[2018-07-06 14:15:57] LASTLOW 6453.33
+[2018-07-06 14:15:57] price now = 6560.33
+[2018-07-06 14:15:57] Buy ata 5750.0
+[2018-07-06 14:15:57] LASTLOW 6453.33
+[2018-07-06 14:15:57] 2- Iniciando rotina de venda 
+[2018-07-06 14:15:57] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:16:28] 1- Iniciando rotina de compra
+[2018-07-06 14:16:28] price now = 6563.43
+[2018-07-06 14:16:28] Buy ata 5750.0
+[2018-07-06 14:16:28] LASTLOW 6453.33
+[2018-07-06 14:16:28] price now = 6563.43
+[2018-07-06 14:16:28] Buy ata 5750.0
+[2018-07-06 14:16:28] LASTLOW 6453.33
+[2018-07-06 14:16:28] 2- Iniciando rotina de venda 
+[2018-07-06 14:16:28] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:17:00] 1- Iniciando rotina de compra
+[2018-07-06 14:17:00] price now = 6563.38
+[2018-07-06 14:17:00] Buy ata 5750.0
+[2018-07-06 14:17:00] LASTLOW 6453.33
+[2018-07-06 14:17:00] price now = 6563.38
+[2018-07-06 14:17:00] Buy ata 5750.0
+[2018-07-06 14:17:00] LASTLOW 6453.33
+[2018-07-06 14:17:00] 2- Iniciando rotina de venda 
+[2018-07-06 14:17:00] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:17:31] 1- Iniciando rotina de compra
+[2018-07-06 14:17:31] price now = 6560.66
+[2018-07-06 14:17:31] Buy ata 5750.0
+[2018-07-06 14:17:31] LASTLOW 6453.33
+[2018-07-06 14:17:31] price now = 6560.66
+[2018-07-06 14:17:31] Buy ata 5750.0
+[2018-07-06 14:17:31] LASTLOW 6453.33
+[2018-07-06 14:17:31] 2- Iniciando rotina de venda 
+[2018-07-06 14:17:31] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:18:04] 1- Iniciando rotina de compra
+[2018-07-06 14:18:04] price now = 6560.66
+[2018-07-06 14:18:04] Buy ata 5750.0
+[2018-07-06 14:18:04] LASTLOW 6453.33
+[2018-07-06 14:18:04] price now = 6560.66
+[2018-07-06 14:18:04] Buy ata 5750.0
+[2018-07-06 14:18:04] LASTLOW 6453.33
+[2018-07-06 14:18:04] 2- Iniciando rotina de venda 
+[2018-07-06 14:18:04] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:18:35] 1- Iniciando rotina de compra
+[2018-07-06 14:18:35] price now = 6563.42
+[2018-07-06 14:18:35] Buy ata 5750.0
+[2018-07-06 14:18:35] LASTLOW 6453.33
+[2018-07-06 14:18:35] price now = 6563.42
+[2018-07-06 14:18:35] Buy ata 5750.0
+[2018-07-06 14:18:35] LASTLOW 6453.33
+[2018-07-06 14:18:35] 2- Iniciando rotina de venda 
+[2018-07-06 14:18:35] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:19:07] 1- Iniciando rotina de compra
+[2018-07-06 14:19:07] price now = 6565.03
+[2018-07-06 14:19:07] Buy ata 5750.0
+[2018-07-06 14:19:07] LASTLOW 6453.33
+[2018-07-06 14:19:07] price now = 6565.03
+[2018-07-06 14:19:07] Buy ata 5750.0
+[2018-07-06 14:19:07] LASTLOW 6453.33
+[2018-07-06 14:19:07] 2- Iniciando rotina de venda 
+[2018-07-06 14:19:07] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:19:38] 1- Iniciando rotina de compra
+[2018-07-06 14:19:38] price now = 6565.03
+[2018-07-06 14:19:38] Buy ata 5750.0
+[2018-07-06 14:19:38] LASTLOW 6453.33
+[2018-07-06 14:19:38] price now = 6565.03
+[2018-07-06 14:19:38] Buy ata 5750.0
+[2018-07-06 14:19:38] LASTLOW 6453.33
+[2018-07-06 14:19:38] 2- Iniciando rotina de venda 
+[2018-07-06 14:19:38] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:20:10] 1- Iniciando rotina de compra
+[2018-07-06 14:20:11] price now = 6561.35
+[2018-07-06 14:20:11] Buy ata 5750.0
+[2018-07-06 14:20:11] LASTLOW 6453.33
+[2018-07-06 14:20:11] price now = 6561.35
+[2018-07-06 14:20:11] Buy ata 5750.0
+[2018-07-06 14:20:11] LASTLOW 6453.33
+[2018-07-06 14:20:11] 2- Iniciando rotina de venda 
+[2018-07-06 14:20:11] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:20:42] 1- Iniciando rotina de compra
+[2018-07-06 14:20:42] price now = 6562.46
+[2018-07-06 14:20:42] Buy ata 5750.0
+[2018-07-06 14:20:42] LASTLOW 6453.33
+[2018-07-06 14:20:42] price now = 6562.46
+[2018-07-06 14:20:42] Buy ata 5750.0
+[2018-07-06 14:20:42] LASTLOW 6453.33
+[2018-07-06 14:20:42] 2- Iniciando rotina de venda 
+[2018-07-06 14:20:42] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:21:14] 1- Iniciando rotina de compra
+[2018-07-06 14:21:14] price now = 6562.71
+[2018-07-06 14:21:14] Buy ata 5750.0
+[2018-07-06 14:21:14] LASTLOW 6453.33
+[2018-07-06 14:21:14] price now = 6562.71
+[2018-07-06 14:21:14] Buy ata 5750.0
+[2018-07-06 14:21:14] LASTLOW 6453.33
+[2018-07-06 14:21:14] 2- Iniciando rotina de venda 
+[2018-07-06 14:21:14] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:21:45] 1- Iniciando rotina de compra
+[2018-07-06 14:21:45] price now = 6564.07
+[2018-07-06 14:21:45] Buy ata 5750.0
+[2018-07-06 14:21:45] LASTLOW 6453.33
+[2018-07-06 14:21:45] price now = 6564.07
+[2018-07-06 14:21:45] Buy ata 5750.0
+[2018-07-06 14:21:45] LASTLOW 6453.33
+[2018-07-06 14:21:45] 2- Iniciando rotina de venda 
+[2018-07-06 14:21:45] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:22:16] 1- Iniciando rotina de compra
+[2018-07-06 14:22:16] price now = 6567.29
+[2018-07-06 14:22:16] Buy ata 5750.0
+[2018-07-06 14:22:16] LASTLOW 6453.33
+[2018-07-06 14:22:16] price now = 6567.29
+[2018-07-06 14:22:16] Buy ata 5750.0
+[2018-07-06 14:22:16] LASTLOW 6453.33
+[2018-07-06 14:22:16] 2- Iniciando rotina de venda 
+[2018-07-06 14:22:16] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:22:47] 1- Iniciando rotina de compra
+[2018-07-06 14:22:47] price now = 6567.54
+[2018-07-06 14:22:47] Buy ata 5750.0
+[2018-07-06 14:22:47] LASTLOW 6453.33
+[2018-07-06 14:22:47] price now = 6567.54
+[2018-07-06 14:22:47] Buy ata 5750.0
+[2018-07-06 14:22:47] LASTLOW 6453.33
+[2018-07-06 14:22:47] 2- Iniciando rotina de venda 
+[2018-07-06 14:22:47] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:23:19] 1- Iniciando rotina de compra
+[2018-07-06 14:23:19] price now = 6568.9
+[2018-07-06 14:23:19] Buy ata 5750.0
+[2018-07-06 14:23:19] LASTLOW 6453.33
+[2018-07-06 14:23:19] price now = 6568.9
+[2018-07-06 14:23:19] Buy ata 5750.0
+[2018-07-06 14:23:19] LASTLOW 6453.33
+[2018-07-06 14:23:19] 2- Iniciando rotina de venda 
+[2018-07-06 14:23:19] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:23:49] 1- Iniciando rotina de compra
+[2018-07-06 14:23:49] price now = 6566.91
+[2018-07-06 14:23:49] Buy ata 5750.0
+[2018-07-06 14:23:49] LASTLOW 6453.33
+[2018-07-06 14:23:49] price now = 6566.91
+[2018-07-06 14:23:49] Buy ata 5750.0
+[2018-07-06 14:23:49] LASTLOW 6453.33
+[2018-07-06 14:23:49] 2- Iniciando rotina de venda 
+[2018-07-06 14:23:49] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:24:21] 1- Iniciando rotina de compra
+[2018-07-06 14:24:21] price now = 6565.99
+[2018-07-06 14:24:21] Buy ata 5750.0
+[2018-07-06 14:24:21] LASTLOW 6453.33
+[2018-07-06 14:24:21] price now = 6565.99
+[2018-07-06 14:24:21] Buy ata 5750.0
+[2018-07-06 14:24:21] LASTLOW 6453.33
+[2018-07-06 14:24:21] 2- Iniciando rotina de venda 
+[2018-07-06 14:24:21] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:24:52] 1- Iniciando rotina de compra
+[2018-07-06 14:24:52] price now = 6566.01
+[2018-07-06 14:24:52] Buy ata 5750.0
+[2018-07-06 14:24:52] LASTLOW 6453.33
+[2018-07-06 14:24:52] price now = 6566.01
+[2018-07-06 14:24:52] Buy ata 5750.0
+[2018-07-06 14:24:52] LASTLOW 6453.33
+[2018-07-06 14:24:52] 2- Iniciando rotina de venda 
+[2018-07-06 14:24:52] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:25:23] 1- Iniciando rotina de compra
+[2018-07-06 14:25:23] price now = 6568.97
+[2018-07-06 14:25:23] Buy ata 5750.0
+[2018-07-06 14:25:23] LASTLOW 6453.33
+[2018-07-06 14:25:23] price now = 6568.97
+[2018-07-06 14:25:23] Buy ata 5750.0
+[2018-07-06 14:25:23] LASTLOW 6453.33
+[2018-07-06 14:25:23] 2- Iniciando rotina de venda 
+[2018-07-06 14:25:23] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:25:53] 1- Iniciando rotina de compra
+[2018-07-06 14:25:53] price now = 6567.33
+[2018-07-06 14:25:53] Buy ata 5750.0
+[2018-07-06 14:25:53] LASTLOW 6453.33
+[2018-07-06 14:25:53] price now = 6567.33
+[2018-07-06 14:25:53] Buy ata 5750.0
+[2018-07-06 14:25:53] LASTLOW 6453.33
+[2018-07-06 14:25:53] 2- Iniciando rotina de venda 
+[2018-07-06 14:25:53] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:26:25] 1- Iniciando rotina de compra
+[2018-07-06 14:26:25] price now = 6566.37
+[2018-07-06 14:26:25] Buy ata 5750.0
+[2018-07-06 14:26:25] LASTLOW 6453.33
+[2018-07-06 14:26:25] price now = 6566.37
+[2018-07-06 14:26:25] Buy ata 5750.0
+[2018-07-06 14:26:25] LASTLOW 6453.33
+[2018-07-06 14:26:25] 2- Iniciando rotina de venda 
+[2018-07-06 14:26:25] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:26:55] 1- Iniciando rotina de compra
+[2018-07-06 14:26:55] price now = 6569.8
+[2018-07-06 14:26:55] Buy ata 5750.0
+[2018-07-06 14:26:55] LASTLOW 6453.33
+[2018-07-06 14:26:55] price now = 6569.8
+[2018-07-06 14:26:55] Buy ata 5750.0
+[2018-07-06 14:26:55] LASTLOW 6453.33
+[2018-07-06 14:26:55] 2- Iniciando rotina de venda 
+[2018-07-06 14:26:55] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:27:27] 1- Iniciando rotina de compra
+[2018-07-06 14:27:27] price now = 6567.32
+[2018-07-06 14:27:27] Buy ata 5750.0
+[2018-07-06 14:27:27] LASTLOW 6453.33
+[2018-07-06 14:27:27] price now = 6567.32
+[2018-07-06 14:27:27] Buy ata 5750.0
+[2018-07-06 14:27:27] LASTLOW 6453.33
+[2018-07-06 14:27:27] 2- Iniciando rotina de venda 
+[2018-07-06 14:27:27] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:27:58] 1- Iniciando rotina de compra
+[2018-07-06 14:27:58] price now = 6566.53
+[2018-07-06 14:27:58] Buy ata 5750.0
+[2018-07-06 14:27:58] LASTLOW 6453.33
+[2018-07-06 14:27:58] price now = 6566.53
+[2018-07-06 14:27:58] Buy ata 5750.0
+[2018-07-06 14:27:58] LASTLOW 6453.33
+[2018-07-06 14:27:58] 2- Iniciando rotina de venda 
+[2018-07-06 14:27:58] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:28:29] 1- Iniciando rotina de compra
+[2018-07-06 14:28:29] price now = 6569.7
+[2018-07-06 14:28:29] Buy ata 5750.0
+[2018-07-06 14:28:29] LASTLOW 6453.33
+[2018-07-06 14:28:29] price now = 6569.7
+[2018-07-06 14:28:29] Buy ata 5750.0
+[2018-07-06 14:28:29] LASTLOW 6453.33
+[2018-07-06 14:28:30] 2- Iniciando rotina de venda 
+[2018-07-06 14:28:30] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:29:00] 1- Iniciando rotina de compra
+[2018-07-06 14:29:00] price now = 6569.7
+[2018-07-06 14:29:00] Buy ata 5750.0
+[2018-07-06 14:29:00] LASTLOW 6453.33
+[2018-07-06 14:29:00] price now = 6569.7
+[2018-07-06 14:29:00] Buy ata 5750.0
+[2018-07-06 14:29:00] LASTLOW 6453.33
+[2018-07-06 14:29:00] 2- Iniciando rotina de venda 
+[2018-07-06 14:29:00] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:29:31] 1- Iniciando rotina de compra
+[2018-07-06 14:29:31] price now = 6569.8
+[2018-07-06 14:29:31] Buy ata 5750.0
+[2018-07-06 14:29:31] LASTLOW 6453.33
+[2018-07-06 14:29:31] price now = 6569.8
+[2018-07-06 14:29:31] Buy ata 5750.0
+[2018-07-06 14:29:31] LASTLOW 6453.33
+[2018-07-06 14:29:31] 2- Iniciando rotina de venda 
+[2018-07-06 14:29:31] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:30:02] 1- Iniciando rotina de compra
+[2018-07-06 14:30:02] price now = 6570.02
+[2018-07-06 14:30:02] Buy ata 5750.0
+[2018-07-06 14:30:02] LASTLOW 6453.33
+[2018-07-06 14:30:02] price now = 6570.02
+[2018-07-06 14:30:02] Buy ata 5750.0
+[2018-07-06 14:30:02] LASTLOW 6453.33
+[2018-07-06 14:30:02] 2- Iniciando rotina de venda 
+[2018-07-06 14:30:02] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:30:33] 1- Iniciando rotina de compra
+[2018-07-06 14:30:33] price now = 6570.03
+[2018-07-06 14:30:33] Buy ata 5750.0
+[2018-07-06 14:30:33] LASTLOW 6453.33
+[2018-07-06 14:30:33] price now = 6570.03
+[2018-07-06 14:30:33] Buy ata 5750.0
+[2018-07-06 14:30:33] LASTLOW 6453.33
+[2018-07-06 14:30:33] 2- Iniciando rotina de venda 
+[2018-07-06 14:30:33] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:31:05] 1- Iniciando rotina de compra
+[2018-07-06 14:31:05] price now = 6571.0
+[2018-07-06 14:31:05] Buy ata 5750.0
+[2018-07-06 14:31:05] LASTLOW 6453.33
+[2018-07-06 14:31:05] price now = 6571.0
+[2018-07-06 14:31:05] Buy ata 5750.0
+[2018-07-06 14:31:05] LASTLOW 6453.33
+[2018-07-06 14:31:05] 2- Iniciando rotina de venda 
+[2018-07-06 14:31:05] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:31:37] 1- Iniciando rotina de compra
+[2018-07-06 14:31:37] price now = 6570.04
+[2018-07-06 14:31:37] Buy ata 5750.0
+[2018-07-06 14:31:37] LASTLOW 6453.33
+[2018-07-06 14:31:37] price now = 6570.04
+[2018-07-06 14:31:37] Buy ata 5750.0
+[2018-07-06 14:31:37] LASTLOW 6453.33
+[2018-07-06 14:31:37] 2- Iniciando rotina de venda 
+[2018-07-06 14:31:37] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:32:09] 1- Iniciando rotina de compra
+[2018-07-06 14:32:09] price now = 6569.02
+[2018-07-06 14:32:09] Buy ata 5750.0
+[2018-07-06 14:32:09] LASTLOW 6453.33
+[2018-07-06 14:32:09] price now = 6569.02
+[2018-07-06 14:32:09] Buy ata 5750.0
+[2018-07-06 14:32:09] LASTLOW 6453.33
+[2018-07-06 14:32:09] 2- Iniciando rotina de venda 
+[2018-07-06 14:32:09] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:32:40] 1- Iniciando rotina de compra
+[2018-07-06 14:32:40] price now = 6560.01
+[2018-07-06 14:32:40] Buy ata 5750.0
+[2018-07-06 14:32:40] LASTLOW 6453.33
+[2018-07-06 14:32:40] price now = 6560.01
+[2018-07-06 14:32:40] Buy ata 5750.0
+[2018-07-06 14:32:40] LASTLOW 6453.33
+[2018-07-06 14:32:40] 2- Iniciando rotina de venda 
+[2018-07-06 14:32:40] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:33:12] 1- Iniciando rotina de compra
+[2018-07-06 14:33:12] price now = 6560.01
+[2018-07-06 14:33:12] Buy ata 5750.0
+[2018-07-06 14:33:12] LASTLOW 6453.33
+[2018-07-06 14:33:12] price now = 6560.01
+[2018-07-06 14:33:12] Buy ata 5750.0
+[2018-07-06 14:33:12] LASTLOW 6453.33
+[2018-07-06 14:33:12] 2- Iniciando rotina de venda 
+[2018-07-06 14:33:12] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:33:44] 1- Iniciando rotina de compra
+[2018-07-06 14:33:44] price now = 6563.39
+[2018-07-06 14:33:44] Buy ata 5750.0
+[2018-07-06 14:33:44] LASTLOW 6453.33
+[2018-07-06 14:33:44] price now = 6563.39
+[2018-07-06 14:33:44] Buy ata 5750.0
+[2018-07-06 14:33:44] LASTLOW 6453.33
+[2018-07-06 14:33:44] 2- Iniciando rotina de venda 
+[2018-07-06 14:33:44] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:34:15] 1- Iniciando rotina de compra
+[2018-07-06 14:34:15] price now = 6562.21
+[2018-07-06 14:34:15] Buy ata 5750.0
+[2018-07-06 14:34:15] LASTLOW 6453.33
+[2018-07-06 14:34:15] price now = 6562.21
+[2018-07-06 14:34:15] Buy ata 5750.0
+[2018-07-06 14:34:15] LASTLOW 6453.33
+[2018-07-06 14:34:16] 2- Iniciando rotina de venda 
+[2018-07-06 14:34:16] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:34:47] 1- Iniciando rotina de compra
+[2018-07-06 14:34:47] price now = 6559.98
+[2018-07-06 14:34:47] Buy ata 5750.0
+[2018-07-06 14:34:47] LASTLOW 6453.33
+[2018-07-06 14:34:47] price now = 6559.98
+[2018-07-06 14:34:47] Buy ata 5750.0
+[2018-07-06 14:34:47] LASTLOW 6453.33
+[2018-07-06 14:34:47] 2- Iniciando rotina de venda 
+[2018-07-06 14:34:47] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:35:19] 1- Iniciando rotina de compra
+[2018-07-06 14:35:19] price now = 6552.36
+[2018-07-06 14:35:19] Buy ata 5750.0
+[2018-07-06 14:35:19] LASTLOW 6453.33
+[2018-07-06 14:35:19] price now = 6552.36
+[2018-07-06 14:35:19] Buy ata 5750.0
+[2018-07-06 14:35:19] LASTLOW 6453.33
+[2018-07-06 14:35:19] 2- Iniciando rotina de venda 
+[2018-07-06 14:35:19] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:35:50] 1- Iniciando rotina de compra
+[2018-07-06 14:35:50] price now = 6553.11
+[2018-07-06 14:35:50] Buy ata 5750.0
+[2018-07-06 14:35:50] LASTLOW 6453.33
+[2018-07-06 14:35:50] price now = 6553.11
+[2018-07-06 14:35:50] Buy ata 5750.0
+[2018-07-06 14:35:50] LASTLOW 6453.33
+[2018-07-06 14:35:50] 2- Iniciando rotina de venda 
+[2018-07-06 14:35:50] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:36:21] 1- Iniciando rotina de compra
+[2018-07-06 14:36:21] price now = 6554.0
+[2018-07-06 14:36:21] Buy ata 5750.0
+[2018-07-06 14:36:21] LASTLOW 6453.33
+[2018-07-06 14:36:21] price now = 6554.0
+[2018-07-06 14:36:21] Buy ata 5750.0
+[2018-07-06 14:36:22] LASTLOW 6453.33
+[2018-07-06 14:36:22] 2- Iniciando rotina de venda 
+[2018-07-06 14:36:22] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:36:52] 1- Iniciando rotina de compra
+[2018-07-06 14:36:52] price now = 6558.15
+[2018-07-06 14:36:52] Buy ata 5750.0
+[2018-07-06 14:36:52] LASTLOW 6453.33
+[2018-07-06 14:36:52] price now = 6558.15
+[2018-07-06 14:36:52] Buy ata 5750.0
+[2018-07-06 14:36:52] LASTLOW 6453.33
+[2018-07-06 14:36:52] 2- Iniciando rotina de venda 
+[2018-07-06 14:36:52] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:37:24] 1- Iniciando rotina de compra
+[2018-07-06 14:37:24] price now = 6558.61
+[2018-07-06 14:37:24] Buy ata 5750.0
+[2018-07-06 14:37:24] LASTLOW 6453.33
+[2018-07-06 14:37:24] price now = 6558.61
+[2018-07-06 14:37:24] Buy ata 5750.0
+[2018-07-06 14:37:24] LASTLOW 6453.33
+[2018-07-06 14:37:24] 2- Iniciando rotina de venda 
+[2018-07-06 14:37:24] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:37:55] 1- Iniciando rotina de compra
+[2018-07-06 14:37:55] price now = 6555.51
+[2018-07-06 14:37:55] Buy ata 5750.0
+[2018-07-06 14:37:55] LASTLOW 6453.33
+[2018-07-06 14:37:55] price now = 6555.51
+[2018-07-06 14:37:55] Buy ata 5750.0
+[2018-07-06 14:37:55] LASTLOW 6453.33
+[2018-07-06 14:37:55] 2- Iniciando rotina de venda 
+[2018-07-06 14:37:55] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:38:27] 1- Iniciando rotina de compra
+[2018-07-06 14:38:27] price now = 6569.36
+[2018-07-06 14:38:27] Buy ata 5750.0
+[2018-07-06 14:38:27] LASTLOW 6453.33
+[2018-07-06 14:38:27] price now = 6569.36
+[2018-07-06 14:38:27] Buy ata 5750.0
+[2018-07-06 14:38:27] LASTLOW 6453.33
+[2018-07-06 14:38:27] 2- Iniciando rotina de venda 
+[2018-07-06 14:38:27] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:38:57] 1- Iniciando rotina de compra
+[2018-07-06 14:38:57] price now = 6570.18
+[2018-07-06 14:38:57] Buy ata 5750.0
+[2018-07-06 14:38:57] LASTLOW 6453.33
+[2018-07-06 14:38:57] price now = 6570.18
+[2018-07-06 14:38:57] Buy ata 5750.0
+[2018-07-06 14:38:57] LASTLOW 6453.33
+[2018-07-06 14:38:57] 2- Iniciando rotina de venda 
+[2018-07-06 14:38:57] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:39:28] 1- Iniciando rotina de compra
+[2018-07-06 14:39:28] price now = 6586.87
+[2018-07-06 14:39:28] Buy ata 5750.0
+[2018-07-06 14:39:28] LASTLOW 6453.33
+[2018-07-06 14:39:28] price now = 6586.87
+[2018-07-06 14:39:28] Buy ata 5750.0
+[2018-07-06 14:39:28] LASTLOW 6453.33
+[2018-07-06 14:39:28] 2- Iniciando rotina de venda 
+[2018-07-06 14:39:28] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:39:59] 1- Iniciando rotina de compra
+[2018-07-06 14:39:59] price now = 6585.51
+[2018-07-06 14:39:59] Buy ata 5750.0
+[2018-07-06 14:39:59] LASTLOW 6453.33
+[2018-07-06 14:39:59] price now = 6585.51
+[2018-07-06 14:39:59] Buy ata 5750.0
+[2018-07-06 14:39:59] LASTLOW 6453.33
+[2018-07-06 14:39:59] 2- Iniciando rotina de venda 
+[2018-07-06 14:39:59] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:40:31] 1- Iniciando rotina de compra
+[2018-07-06 14:40:31] price now = 6587.9
+[2018-07-06 14:40:31] Buy ata 5750.0
+[2018-07-06 14:40:31] LASTLOW 6453.33
+[2018-07-06 14:40:31] price now = 6587.9
+[2018-07-06 14:40:31] Buy ata 5750.0
+[2018-07-06 14:40:31] LASTLOW 6453.33
+[2018-07-06 14:40:31] 2- Iniciando rotina de venda 
+[2018-07-06 14:40:31] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:41:02] 1- Iniciando rotina de compra
+[2018-07-06 14:41:02] price now = 6587.19
+[2018-07-06 14:41:02] Buy ata 5750.0
+[2018-07-06 14:41:02] LASTLOW 6453.33
+[2018-07-06 14:41:02] price now = 6587.19
+[2018-07-06 14:41:02] Buy ata 5750.0
+[2018-07-06 14:41:02] LASTLOW 6453.33
+[2018-07-06 14:41:02] 2- Iniciando rotina de venda 
+[2018-07-06 14:41:02] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:41:34] 1- Iniciando rotina de compra
+[2018-07-06 14:41:34] price now = 6590.99
+[2018-07-06 14:41:34] Buy ata 5750.0
+[2018-07-06 14:41:34] LASTLOW 6453.33
+[2018-07-06 14:41:34] price now = 6590.99
+[2018-07-06 14:41:34] Buy ata 5750.0
+[2018-07-06 14:41:34] LASTLOW 6453.33
+[2018-07-06 14:41:34] 2- Iniciando rotina de venda 
+[2018-07-06 14:41:34] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:42:06] 1- Iniciando rotina de compra
+[2018-07-06 14:42:06] price now = 6593.09
+[2018-07-06 14:42:06] Buy ata 5750.0
+[2018-07-06 14:42:06] LASTLOW 6453.33
+[2018-07-06 14:42:06] price now = 6593.09
+[2018-07-06 14:42:06] Buy ata 5750.0
+[2018-07-06 14:42:06] LASTLOW 6453.33
+[2018-07-06 14:42:06] 2- Iniciando rotina de venda 
+[2018-07-06 14:42:06] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:42:40] 1- Iniciando rotina de compra
+[2018-07-06 14:42:40] price now = 6617.12
+[2018-07-06 14:42:40] Buy ata 5750.0
+[2018-07-06 14:42:40] LASTLOW 6453.33
+[2018-07-06 14:42:40] price now = 6617.12
+[2018-07-06 14:42:40] Buy ata 5750.0
+[2018-07-06 14:42:40] LASTLOW 6453.33
+[2018-07-06 14:42:40] 2- Iniciando rotina de venda 
+[2018-07-06 14:42:40] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:43:11] 1- Iniciando rotina de compra
+[2018-07-06 14:43:11] price now = 6598.67
+[2018-07-06 14:43:11] Buy ata 5750.0
+[2018-07-06 14:43:11] LASTLOW 6453.33
+[2018-07-06 14:43:11] price now = 6598.67
+[2018-07-06 14:43:11] Buy ata 5750.0
+[2018-07-06 14:43:11] LASTLOW 6453.33
+[2018-07-06 14:43:11] 2- Iniciando rotina de venda 
+[2018-07-06 14:43:11] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:43:43] 1- Iniciando rotina de compra
+[2018-07-06 14:43:43] price now = 6599.81
+[2018-07-06 14:43:43] Buy ata 5750.0
+[2018-07-06 14:43:43] LASTLOW 6453.33
+[2018-07-06 14:43:43] price now = 6599.81
+[2018-07-06 14:43:43] Buy ata 5750.0
+[2018-07-06 14:43:43] LASTLOW 6453.33
+[2018-07-06 14:43:43] 2- Iniciando rotina de venda 
+[2018-07-06 14:43:43] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:44:17] 1- Iniciando rotina de compra
+[2018-07-06 14:44:17] price now = 6597.35
+[2018-07-06 14:44:17] Buy ata 5750.0
+[2018-07-06 14:44:17] LASTLOW 6453.33
+[2018-07-06 14:44:17] price now = 6597.35
+[2018-07-06 14:44:17] Buy ata 5750.0
+[2018-07-06 14:44:17] LASTLOW 6453.33
+[2018-07-06 14:44:17] 2- Iniciando rotina de venda 
+[2018-07-06 14:44:17] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:44:48] 1- Iniciando rotina de compra
+[2018-07-06 14:44:48] price now = 6600.08
+[2018-07-06 14:44:48] Buy ata 5750.0
+[2018-07-06 14:44:48] LASTLOW 6453.33
+[2018-07-06 14:44:48] price now = 6600.08
+[2018-07-06 14:44:48] Buy ata 5750.0
+[2018-07-06 14:44:48] LASTLOW 6453.33
+[2018-07-06 14:44:48] 2- Iniciando rotina de venda 
+[2018-07-06 14:44:48] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:45:21] 1- Iniciando rotina de compra
+[2018-07-06 14:45:21] price now = 6615.58
+[2018-07-06 14:45:21] Buy ata 5750.0
+[2018-07-06 14:45:21] LASTLOW 6453.33
+[2018-07-06 14:45:21] price now = 6615.58
+[2018-07-06 14:45:21] Buy ata 5750.0
+[2018-07-06 14:45:21] LASTLOW 6453.33
+[2018-07-06 14:45:21] 2- Iniciando rotina de venda 
+[2018-07-06 14:45:21] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:45:53] 1- Iniciando rotina de compra
+[2018-07-06 14:45:53] price now = 6613.0
+[2018-07-06 14:45:53] Buy ata 5750.0
+[2018-07-06 14:45:53] LASTLOW 6453.33
+[2018-07-06 14:45:53] price now = 6613.0
+[2018-07-06 14:45:53] Buy ata 5750.0
+[2018-07-06 14:45:53] LASTLOW 6453.33
+[2018-07-06 14:45:53] 2- Iniciando rotina de venda 
+[2018-07-06 14:45:53] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:46:25] 1- Iniciando rotina de compra
+[2018-07-06 14:46:25] price now = 6609.77
+[2018-07-06 14:46:25] Buy ata 5750.0
+[2018-07-06 14:46:25] LASTLOW 6453.33
+[2018-07-06 14:46:25] price now = 6609.77
+[2018-07-06 14:46:25] Buy ata 5750.0
+[2018-07-06 14:46:25] LASTLOW 6453.33
+[2018-07-06 14:46:25] 2- Iniciando rotina de venda 
+[2018-07-06 14:46:25] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:46:57] 1- Iniciando rotina de compra
+[2018-07-06 14:46:57] price now = 6619.36
+[2018-07-06 14:46:57] Buy ata 5750.0
+[2018-07-06 14:46:57] LASTLOW 6453.33
+[2018-07-06 14:46:57] price now = 6619.36
+[2018-07-06 14:46:57] Buy ata 5750.0
+[2018-07-06 14:46:57] LASTLOW 6453.33
+[2018-07-06 14:46:57] 2- Iniciando rotina de venda 
+[2018-07-06 14:46:57] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:47:28] 1- Iniciando rotina de compra
+[2018-07-06 14:47:28] price now = 6626.96
+[2018-07-06 14:47:28] Buy ata 5750.0
+[2018-07-06 14:47:28] LASTLOW 6453.33
+[2018-07-06 14:47:28] price now = 6626.96
+[2018-07-06 14:47:28] Buy ata 5750.0
+[2018-07-06 14:47:28] LASTLOW 6453.33
+[2018-07-06 14:47:28] 2- Iniciando rotina de venda 
+[2018-07-06 14:47:28] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:48:00] 1- Iniciando rotina de compra
+[2018-07-06 14:48:00] price now = 6614.87
+[2018-07-06 14:48:00] Buy ata 5750.0
+[2018-07-06 14:48:00] LASTLOW 6453.33
+[2018-07-06 14:48:00] price now = 6614.87
+[2018-07-06 14:48:00] Buy ata 5750.0
+[2018-07-06 14:48:00] LASTLOW 6453.33
+[2018-07-06 14:48:00] 2- Iniciando rotina de venda 
+[2018-07-06 14:48:00] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:48:31] 1- Iniciando rotina de compra
+[2018-07-06 14:48:31] price now = 6607.28
+[2018-07-06 14:48:31] Buy ata 5750.0
+[2018-07-06 14:48:31] LASTLOW 6453.33
+[2018-07-06 14:48:31] price now = 6607.28
+[2018-07-06 14:48:31] Buy ata 5750.0
+[2018-07-06 14:48:31] LASTLOW 6453.33
+[2018-07-06 14:48:31] 2- Iniciando rotina de venda 
+[2018-07-06 14:48:31] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:49:03] 1- Iniciando rotina de compra
+[2018-07-06 14:49:03] price now = 6603.85
+[2018-07-06 14:49:03] Buy ata 5750.0
+[2018-07-06 14:49:03] LASTLOW 6453.33
+[2018-07-06 14:49:03] price now = 6603.85
+[2018-07-06 14:49:03] Buy ata 5750.0
+[2018-07-06 14:49:03] LASTLOW 6453.33
+[2018-07-06 14:49:03] 2- Iniciando rotina de venda 
+[2018-07-06 14:49:03] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:49:34] 1- Iniciando rotina de compra
+[2018-07-06 14:49:34] price now = 6600.99
+[2018-07-06 14:49:34] Buy ata 5750.0
+[2018-07-06 14:49:34] LASTLOW 6453.33
+[2018-07-06 14:49:34] price now = 6600.99
+[2018-07-06 14:49:34] Buy ata 5750.0
+[2018-07-06 14:49:34] LASTLOW 6453.33
+[2018-07-06 14:49:34] 2- Iniciando rotina de venda 
+[2018-07-06 14:49:34] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:50:06] 1- Iniciando rotina de compra
+[2018-07-06 14:50:06] price now = 6603.3
+[2018-07-06 14:50:06] Buy ata 5750.0
+[2018-07-06 14:50:06] LASTLOW 6453.33
+[2018-07-06 14:50:06] price now = 6603.3
+[2018-07-06 14:50:06] Buy ata 5750.0
+[2018-07-06 14:50:06] LASTLOW 6453.33
+[2018-07-06 14:50:06] 2- Iniciando rotina de venda 
+[2018-07-06 14:50:06] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:50:38] 1- Iniciando rotina de compra
+[2018-07-06 14:50:38] price now = 6609.98
+[2018-07-06 14:50:38] Buy ata 5750.0
+[2018-07-06 14:50:38] LASTLOW 6453.33
+[2018-07-06 14:50:38] price now = 6609.98
+[2018-07-06 14:50:38] Buy ata 5750.0
+[2018-07-06 14:50:38] LASTLOW 6453.33
+[2018-07-06 14:50:38] 2- Iniciando rotina de venda 
+[2018-07-06 14:50:38] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:51:09] 1- Iniciando rotina de compra
+[2018-07-06 14:51:09] price now = 6607.05
+[2018-07-06 14:51:09] Buy ata 5750.0
+[2018-07-06 14:51:09] LASTLOW 6453.33
+[2018-07-06 14:51:09] price now = 6607.05
+[2018-07-06 14:51:09] Buy ata 5750.0
+[2018-07-06 14:51:09] LASTLOW 6453.33
+[2018-07-06 14:51:09] 2- Iniciando rotina de venda 
+[2018-07-06 14:51:09] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:51:40] 1- Iniciando rotina de compra
+[2018-07-06 14:51:40] price now = 6613.35
+[2018-07-06 14:51:40] Buy ata 5750.0
+[2018-07-06 14:51:40] LASTLOW 6453.33
+[2018-07-06 14:51:40] price now = 6613.35
+[2018-07-06 14:51:40] Buy ata 5750.0
+[2018-07-06 14:51:40] LASTLOW 6453.33
+[2018-07-06 14:51:40] 2- Iniciando rotina de venda 
+[2018-07-06 14:51:40] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:52:11] 1- Iniciando rotina de compra
+[2018-07-06 14:52:11] price now = 6606.17
+[2018-07-06 14:52:11] Buy ata 5750.0
+[2018-07-06 14:52:11] LASTLOW 6453.33
+[2018-07-06 14:52:11] price now = 6606.17
+[2018-07-06 14:52:11] Buy ata 5750.0
+[2018-07-06 14:52:11] LASTLOW 6453.33
+[2018-07-06 14:52:11] 2- Iniciando rotina de venda 
+[2018-07-06 14:52:11] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:52:43] 1- Iniciando rotina de compra
+[2018-07-06 14:52:43] price now = 6602.99
+[2018-07-06 14:52:43] Buy ata 5750.0
+[2018-07-06 14:52:43] LASTLOW 6453.33
+[2018-07-06 14:52:43] price now = 6602.99
+[2018-07-06 14:52:43] Buy ata 5750.0
+[2018-07-06 14:52:43] LASTLOW 6453.33
+[2018-07-06 14:52:43] 2- Iniciando rotina de venda 
+[2018-07-06 14:52:43] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:53:15] 1- Iniciando rotina de compra
+[2018-07-06 14:53:15] price now = 6597.99
+[2018-07-06 14:53:15] Buy ata 5750.0
+[2018-07-06 14:53:15] LASTLOW 6453.33
+[2018-07-06 14:53:15] price now = 6597.99
+[2018-07-06 14:53:15] Buy ata 5750.0
+[2018-07-06 14:53:15] LASTLOW 6453.33
+[2018-07-06 14:53:15] 2- Iniciando rotina de venda 
+[2018-07-06 14:53:15] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:53:47] 1- Iniciando rotina de compra
+[2018-07-06 14:53:47] price now = 6597.97
+[2018-07-06 14:53:47] Buy ata 5750.0
+[2018-07-06 14:53:47] LASTLOW 6453.33
+[2018-07-06 14:53:47] price now = 6597.97
+[2018-07-06 14:53:47] Buy ata 5750.0
+[2018-07-06 14:53:47] LASTLOW 6453.33
+[2018-07-06 14:53:47] 2- Iniciando rotina de venda 
+[2018-07-06 14:53:47] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:54:19] 1- Iniciando rotina de compra
+[2018-07-06 14:54:19] price now = 6596.33
+[2018-07-06 14:54:19] Buy ata 5750.0
+[2018-07-06 14:54:19] LASTLOW 6453.33
+[2018-07-06 14:54:19] price now = 6596.33
+[2018-07-06 14:54:19] Buy ata 5750.0
+[2018-07-06 14:54:19] LASTLOW 6453.33
+[2018-07-06 14:54:19] 2- Iniciando rotina de venda 
+[2018-07-06 14:54:19] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:54:51] 1- Iniciando rotina de compra
+[2018-07-06 14:54:51] price now = 6609.15
+[2018-07-06 14:54:51] Buy ata 5750.0
+[2018-07-06 14:54:51] LASTLOW 6453.33
+[2018-07-06 14:54:51] price now = 6609.15
+[2018-07-06 14:54:51] Buy ata 5750.0
+[2018-07-06 14:54:51] LASTLOW 6453.33
+[2018-07-06 14:54:51] 2- Iniciando rotina de venda 
+[2018-07-06 14:54:51] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:55:23] 1- Iniciando rotina de compra
+[2018-07-06 14:55:23] price now = 6599.58
+[2018-07-06 14:55:23] Buy ata 5750.0
+[2018-07-06 14:55:23] LASTLOW 6453.33
+[2018-07-06 14:55:23] price now = 6599.58
+[2018-07-06 14:55:23] Buy ata 5750.0
+[2018-07-06 14:55:23] LASTLOW 6453.33
+[2018-07-06 14:55:23] 2- Iniciando rotina de venda 
+[2018-07-06 14:55:23] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:55:54] 1- Iniciando rotina de compra
+[2018-07-06 14:55:54] price now = 6597.29
+[2018-07-06 14:55:54] Buy ata 5750.0
+[2018-07-06 14:55:54] LASTLOW 6453.33
+[2018-07-06 14:55:54] price now = 6597.29
+[2018-07-06 14:55:54] Buy ata 5750.0
+[2018-07-06 14:55:54] LASTLOW 6453.33
+[2018-07-06 14:55:54] 2- Iniciando rotina de venda 
+[2018-07-06 14:55:54] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:56:27] 1- Iniciando rotina de compra
+[2018-07-06 14:56:27] price now = 6589.96
+[2018-07-06 14:56:27] Buy ata 5750.0
+[2018-07-06 14:56:27] LASTLOW 6453.33
+[2018-07-06 14:56:27] price now = 6589.96
+[2018-07-06 14:56:27] Buy ata 5750.0
+[2018-07-06 14:56:27] LASTLOW 6453.33
+[2018-07-06 14:56:27] 2- Iniciando rotina de venda 
+[2018-07-06 14:56:27] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:56:58] 1- Iniciando rotina de compra
+[2018-07-06 14:56:58] price now = 6594.49
+[2018-07-06 14:56:58] Buy ata 5750.0
+[2018-07-06 14:56:59] LASTLOW 6453.33
+[2018-07-06 14:56:59] price now = 6594.49
+[2018-07-06 14:56:59] Buy ata 5750.0
+[2018-07-06 14:56:59] LASTLOW 6453.33
+[2018-07-06 14:56:59] 2- Iniciando rotina de venda 
+[2018-07-06 14:56:59] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:57:31] 1- Iniciando rotina de compra
+[2018-07-06 14:57:31] price now = 6599.77
+[2018-07-06 14:57:31] Buy ata 5750.0
+[2018-07-06 14:57:31] LASTLOW 6453.33
+[2018-07-06 14:57:31] price now = 6599.77
+[2018-07-06 14:57:31] Buy ata 5750.0
+[2018-07-06 14:57:31] LASTLOW 6453.33
+[2018-07-06 14:57:31] 2- Iniciando rotina de venda 
+[2018-07-06 14:57:31] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:58:02] 1- Iniciando rotina de compra
+[2018-07-06 14:58:02] price now = 6598.81
+[2018-07-06 14:58:02] Buy ata 5750.0
+[2018-07-06 14:58:02] LASTLOW 6453.33
+[2018-07-06 14:58:02] price now = 6598.81
+[2018-07-06 14:58:02] Buy ata 5750.0
+[2018-07-06 14:58:02] LASTLOW 6453.33
+[2018-07-06 14:58:02] 2- Iniciando rotina de venda 
+[2018-07-06 14:58:02] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:58:35] 1- Iniciando rotina de compra
+[2018-07-06 14:58:35] price now = 6594.21
+[2018-07-06 14:58:35] Buy ata 5750.0
+[2018-07-06 14:58:35] LASTLOW 6453.33
+[2018-07-06 14:58:35] price now = 6594.21
+[2018-07-06 14:58:35] Buy ata 5750.0
+[2018-07-06 14:58:35] LASTLOW 6453.33
+[2018-07-06 14:58:35] 2- Iniciando rotina de venda 
+[2018-07-06 14:58:35] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:59:07] 1- Iniciando rotina de compra
+[2018-07-06 14:59:07] price now = 6594.23
+[2018-07-06 14:59:07] Buy ata 5750.0
+[2018-07-06 14:59:07] LASTLOW 6453.33
+[2018-07-06 14:59:07] price now = 6594.23
+[2018-07-06 14:59:07] Buy ata 5750.0
+[2018-07-06 14:59:07] LASTLOW 6453.33
+[2018-07-06 14:59:07] 2- Iniciando rotina de venda 
+[2018-07-06 14:59:07] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:59:38] 1- Iniciando rotina de compra
+[2018-07-06 14:59:38] price now = 6594.23
+[2018-07-06 14:59:38] Buy ata 5750.0
+[2018-07-06 14:59:38] LASTLOW 6453.33
+[2018-07-06 14:59:38] price now = 6594.23
+[2018-07-06 14:59:38] Buy ata 5750.0
+[2018-07-06 14:59:38] LASTLOW 6453.33
+[2018-07-06 14:59:39] 2- Iniciando rotina de venda 
+[2018-07-06 14:59:39] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:00:10] 1- Iniciando rotina de compra
+[2018-07-06 15:00:10] price now = 6597.83
+[2018-07-06 15:00:10] Buy ata 5750.0
+[2018-07-06 15:00:10] LASTLOW 6453.33
+[2018-07-06 15:00:10] price now = 6597.83
+[2018-07-06 15:00:10] Buy ata 5750.0
+[2018-07-06 15:00:10] LASTLOW 6453.33
+[2018-07-06 15:00:10] 2- Iniciando rotina de venda 
+[2018-07-06 15:00:10] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:00:42] 1- Iniciando rotina de compra
+[2018-07-06 15:00:42] price now = 6596.2
+[2018-07-06 15:00:42] Buy ata 5750.0
+[2018-07-06 15:00:42] LASTLOW 6453.33
+[2018-07-06 15:00:42] price now = 6596.2
+[2018-07-06 15:00:42] Buy ata 5750.0
+[2018-07-06 15:00:42] LASTLOW 6453.33
+[2018-07-06 15:00:42] 2- Iniciando rotina de venda 
+[2018-07-06 15:00:42] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:01:13] 1- Iniciando rotina de compra
+[2018-07-06 15:01:13] price now = 6601.05
+[2018-07-06 15:01:13] Buy ata 5750.0
+[2018-07-06 15:01:13] LASTLOW 6453.33
+[2018-07-06 15:01:13] price now = 6601.05
+[2018-07-06 15:01:13] Buy ata 5750.0
+[2018-07-06 15:01:13] LASTLOW 6453.33
+[2018-07-06 15:01:13] 2- Iniciando rotina de venda 
+[2018-07-06 15:01:13] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:01:44] 1- Iniciando rotina de compra
+[2018-07-06 15:01:44] price now = 6606.47
+[2018-07-06 15:01:44] Buy ata 5750.0
+[2018-07-06 15:01:44] LASTLOW 6453.33
+[2018-07-06 15:01:44] price now = 6606.47
+[2018-07-06 15:01:44] Buy ata 5750.0
+[2018-07-06 15:01:44] LASTLOW 6453.33
+[2018-07-06 15:01:44] 2- Iniciando rotina de venda 
+[2018-07-06 15:01:44] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:02:16] 1- Iniciando rotina de compra
+[2018-07-06 15:02:16] price now = 6602.21
+[2018-07-06 15:02:16] Buy ata 5750.0
+[2018-07-06 15:02:16] LASTLOW 6453.33
+[2018-07-06 15:02:16] price now = 6602.21
+[2018-07-06 15:02:16] Buy ata 5750.0
+[2018-07-06 15:02:16] LASTLOW 6453.33
+[2018-07-06 15:02:16] 2- Iniciando rotina de venda 
+[2018-07-06 15:02:16] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:02:47] 1- Iniciando rotina de compra
+[2018-07-06 15:02:47] price now = 6607.96
+[2018-07-06 15:02:47] Buy ata 5750.0
+[2018-07-06 15:02:47] LASTLOW 6453.33
+[2018-07-06 15:02:47] price now = 6607.96
+[2018-07-06 15:02:47] Buy ata 5750.0
+[2018-07-06 15:02:47] LASTLOW 6453.33
+[2018-07-06 15:02:47] 2- Iniciando rotina de venda 
+[2018-07-06 15:02:47] ----Ainda nao ha nada para vender
+
+[2018-07-06 15:03:18] 1- Iniciando rotina de compra
+[2018-07-06 15:03:18] price now = 6603.83
+[2018-07-06 15:03:18] Buy ata 5750.0
+[2018-07-06 15:03:18] LASTLOW 6453.33
+[2018-07-06 15:03:18] price now = 6603.83
+[2018-07-06 15:03:18] Buy ata 5750.0
+[2018-07-06 15:03:18] LASTLOW 6453.33
+[2018-07-06 15:03:18] 2- Iniciando rotina de venda 
+[2018-07-06 15:03:18] ----Ainda nao ha nada para vender
+

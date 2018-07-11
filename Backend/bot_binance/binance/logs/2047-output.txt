@@ -1,0 +1,50 @@
+[2018-06-28 17:36:18] logando na  api
+[2018-06-28 17:36:18] Login Ok
+[2018-06-28 17:36:19] 1- Iniciando rotina de compra
+[2018-06-28 17:36:19] price now = 6.25e-06
+[2018-06-28 17:36:19] Buy at 6.22e-06
+[2018-06-28 17:36:19] price now = 6.25e-06
+[2018-06-28 17:36:19] Buy at 6.22e-06
+[2018-06-28 17:36:19] 2- Iniciando rotina de venda 
+[2018-06-28 17:36:19] ----Ainda nao ha nada para vender
+
+[2018-06-28 17:36:51] 1- Iniciando rotina de compra
+[2018-06-28 17:36:51] price now = 6.25e-06
+[2018-06-28 17:36:51] Buy at 6.22e-06
+[2018-06-28 17:36:51] price now = 6.25e-06
+[2018-06-28 17:36:51] Buy at 6.22e-06
+[2018-06-28 17:36:51] 2- Iniciando rotina de venda 
+[2018-06-28 17:36:51] ----Ainda nao ha nada para vender
+
+[2018-06-28 17:37:22] 1- Iniciando rotina de compra
+[2018-06-28 17:37:22] price now = 6.26e-06
+[2018-06-28 17:37:22] Buy at 6.22e-06
+[2018-06-28 17:37:22] price now = 6.26e-06
+[2018-06-28 17:37:22] Buy at 6.22e-06
+[2018-06-28 17:37:22] 2- Iniciando rotina de venda 
+[2018-06-28 17:37:22] ----Ainda nao ha nada para vender
+
+[2018-06-28 17:37:53] 1- Iniciando rotina de compra
+[2018-06-28 17:37:53] price now = 6.25e-06
+[2018-06-28 17:37:53] Buy at 6.22e-06
+[2018-06-28 17:37:53] price now = 6.25e-06
+[2018-06-28 17:37:53] Buy at 6.22e-06
+[2018-06-28 17:37:53] 2- Iniciando rotina de venda 
+[2018-06-28 17:37:53] ----Ainda nao ha nada para vender
+
+[2018-06-28 17:38:24] 1- Iniciando rotina de compra
+[2018-06-28 17:38:24] price now = 6.25e-06
+[2018-06-28 17:38:24] Buy at 6.22e-06
+[2018-06-28 17:38:24] price now = 6.25e-06
+[2018-06-28 17:38:24] Buy at 6.22e-06
+[2018-06-28 17:38:24] 2- Iniciando rotina de venda 
+[2018-06-28 17:38:24] ----Ainda nao ha nada para vender
+
+[2018-06-28 17:38:55] 1- Iniciando rotina de compra
+[2018-06-28 17:38:55] price now = 6.25e-06
+[2018-06-28 17:38:55] Buy at 6.22e-06
+[2018-06-28 17:38:55] price now = 6.25e-06
+[2018-06-28 17:38:55] Buy at 6.22e-06
+[2018-06-28 17:38:55] 2- Iniciando rotina de venda 
+[2018-06-28 17:38:55] ----Ainda nao ha nada para vender
+

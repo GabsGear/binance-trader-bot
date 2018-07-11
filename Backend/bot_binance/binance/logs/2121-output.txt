@@ -1,0 +1,14 @@
+[2018-07-02 03:43:29] logando na  api
+[2018-07-02 03:43:31] Login Ok
+[2018-07-02 03:44:31] logando na  api
+[2018-07-02 03:44:32] Login Ok
+[2018-07-02 03:45:31] logando na  api
+[2018-07-02 03:45:33] Login Ok
+[2018-07-02 03:46:33] logando na  api
+[2018-07-02 03:46:34] Login Ok
+[2018-07-02 03:47:33] logando na  api
+[2018-07-02 03:47:35] Login Ok
+[2018-07-02 03:48:34] logando na  api
+[2018-07-02 03:48:35] Login Ok
+[2018-07-02 03:49:35] logando na  api
+[2018-07-02 03:49:36] Login Ok

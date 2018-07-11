@@ -1,0 +1,96 @@
+[2018-06-23 01:35:51] logando na  api
+[2018-06-23 01:35:52] Login Ok
+[2018-06-23 01:36:48] logando na  api
+[2018-06-23 01:36:50] Login Ok
+[2018-06-23 01:37:51] logando na  api
+[2018-06-23 01:37:53] Login Ok
+[2018-06-23 01:38:50] logando na  api
+[2018-06-23 01:38:51] Login Ok
+[2018-06-23 01:38:53] 1- Iniciando rotina de compra
+[2018-06-23 01:38:53] price now = 1.81e-06
+[2018-06-23 01:38:53] Buy at 1.8e-06
+[2018-06-23 01:38:53] price now = 1.81e-06
+[2018-06-23 01:38:53] Buy at 1.8e-06
+[2018-06-23 01:38:53] 2- Iniciando rotina de venda 
+[2018-06-23 01:38:53] ----Ainda nao ha nada para vender
+
+[2018-06-23 01:39:23] 1- Iniciando rotina de compra
+[2018-06-23 01:39:23] price now = 1.81e-06
+[2018-06-23 01:39:23] Buy at 1.8e-06
+[2018-06-23 01:39:23] price now = 1.81e-06
+[2018-06-23 01:39:23] Buy at 1.8e-06
+[2018-06-23 01:39:23] 2- Iniciando rotina de venda 
+[2018-06-23 01:39:23] ----Ainda nao ha nada para vender
+
+[2018-06-23 01:39:55] 1- Iniciando rotina de compra
+[2018-06-23 01:39:55] price now = 1.81e-06
+[2018-06-23 01:39:55] Buy at 1.8e-06
+[2018-06-23 01:39:55] price now = 1.81e-06
+[2018-06-23 01:39:55] Buy at 1.8e-06
+[2018-06-23 01:39:55] 2- Iniciando rotina de venda 
+[2018-06-23 01:39:55] ----Ainda nao ha nada para vender
+
+[2018-06-23 01:40:26] 1- Iniciando rotina de compra
+[2018-06-23 01:40:26] price now = 1.81e-06
+[2018-06-23 01:40:26] Buy at 1.8e-06
+[2018-06-23 01:40:26] price now = 1.81e-06
+[2018-06-23 01:40:26] Buy at 1.8e-06
+[2018-06-23 01:40:26] 2- Iniciando rotina de venda 
+[2018-06-23 01:40:26] ----Ainda nao ha nada para vender
+
+[2018-06-23 01:40:58] 1- Iniciando rotina de compra
+[2018-06-23 01:40:58] price now = 1.81e-06
+[2018-06-23 01:40:58] Buy at 1.8e-06
+[2018-06-23 01:40:58] price now = 1.81e-06
+[2018-06-23 01:40:58] Buy at 1.8e-06
+[2018-06-23 01:40:58] 2- Iniciando rotina de venda 
+[2018-06-23 01:40:58] ----Ainda nao ha nada para vender
+
+[2018-06-23 01:41:28] 1- Iniciando rotina de compra
+[2018-06-23 01:41:29] price now = 1.81e-06
+[2018-06-23 01:41:29] Buy at 1.8e-06
+[2018-06-23 01:41:29] price now = 1.81e-06
+[2018-06-23 01:41:29] Buy at 1.8e-06
+[2018-06-23 01:41:29] 2- Iniciando rotina de venda 
+[2018-06-23 01:41:29] ----Ainda nao ha nada para vender
+
+[2018-06-23 01:41:59] 1- Iniciando rotina de compra
+[2018-06-23 01:41:59] price now = 1.81e-06
+[2018-06-23 01:41:59] Buy at 1.8e-06
+[2018-06-23 01:41:59] price now = 1.81e-06
+[2018-06-23 01:41:59] Buy at 1.8e-06
+[2018-06-23 01:41:59] 2- Iniciando rotina de venda 
+[2018-06-23 01:41:59] ----Ainda nao ha nada para vender
+
+[2018-06-23 01:42:30] 1- Iniciando rotina de compra
+[2018-06-23 01:42:30] price now = 1.81e-06
+[2018-06-23 01:42:30] Buy at 1.8e-06
+[2018-06-23 01:42:30] price now = 1.81e-06
+[2018-06-23 01:42:30] Buy at 1.8e-06
+[2018-06-23 01:42:30] 2- Iniciando rotina de venda 
+[2018-06-23 01:42:30] ----Ainda nao ha nada para vender
+
+[2018-06-23 01:43:01] 1- Iniciando rotina de compra
+[2018-06-23 01:43:01] price now = 1.81e-06
+[2018-06-23 01:43:01] Buy at 1.8e-06
+[2018-06-23 01:43:01] price now = 1.81e-06
+[2018-06-23 01:43:01] Buy at 1.8e-06
+[2018-06-23 01:43:01] 2- Iniciando rotina de venda 
+[2018-06-23 01:43:01] ----Ainda nao ha nada para vender
+
+[2018-06-23 01:43:32] 1- Iniciando rotina de compra
+[2018-06-23 01:43:32] price now = 1.81e-06
+[2018-06-23 01:43:32] Buy at 1.8e-06
+[2018-06-23 01:43:32] price now = 1.81e-06
+[2018-06-23 01:43:32] Buy at 1.8e-06
+[2018-06-23 01:43:32] 2- Iniciando rotina de venda 
+[2018-06-23 01:43:32] ----Ainda nao ha nada para vender
+
+[2018-06-23 01:44:02] 1- Iniciando rotina de compra
+[2018-06-23 01:44:02] price now = 1.81e-06
+[2018-06-23 01:44:02] Buy at 1.8e-06
+[2018-06-23 01:44:02] price now = 1.81e-06
+[2018-06-23 01:44:02] Buy at 1.8e-06
+[2018-06-23 01:44:02] 2- Iniciando rotina de venda 
+[2018-06-23 01:44:02] ----Ainda nao ha nada para vender
+

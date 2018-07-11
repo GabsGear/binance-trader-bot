@@ -1,0 +1,34 @@
+[2018-06-28 17:19:07] logando na  api
+[2018-06-28 17:19:08] Login Ok
+[2018-06-28 17:19:08] 1- Iniciando rotina de compra
+[2018-06-28 17:19:08] price now = 6.26e-06
+[2018-06-28 17:19:08] Buy at 6.22e-06
+[2018-06-28 17:19:08] sinal buy
+[2018-06-28 17:19:08] price now = 6.26e-06
+[2018-06-28 17:19:08] Buy at 6.22e-06
+[2018-06-28 17:19:08] sinal buy
+[2018-06-28 17:19:09] --Bitcoin sem forca nao vou comprar.
+[2018-06-28 17:19:09] 2- Iniciando rotina de venda 
+[2018-06-28 17:19:09] ----Ainda nao ha nada para vender
+
+[2018-06-28 17:19:40] 1- Iniciando rotina de compra
+[2018-06-28 17:19:40] price now = 6.25e-06
+[2018-06-28 17:19:40] Buy at 6.22e-06
+[2018-06-28 17:19:40] sinal buy
+[2018-06-28 17:19:40] price now = 6.25e-06
+[2018-06-28 17:19:40] Buy at 6.22e-06
+[2018-06-28 17:19:40] sinal buy
+[2018-06-28 17:19:41] --Bitcoin sem forca nao vou comprar.
+[2018-06-28 17:19:41] 2- Iniciando rotina de venda 
+[2018-06-28 17:19:41] ----Ainda nao ha nada para vender
+
+[2018-06-28 17:20:12] 1- Iniciando rotina de compra
+[2018-06-28 17:20:12] price now = 6.25e-06
+[2018-06-28 17:20:12] Buy at 6.22e-06
+[2018-06-28 17:20:12] sinal buy
+[2018-06-28 17:20:12] price now = 6.25e-06
+[2018-06-28 17:20:12] Buy at 6.22e-06
+[2018-06-28 17:20:12] sinal buy
+[2018-06-28 17:20:12] 2- Iniciando rotina de venda 
+[2018-06-28 17:20:12] ----Ainda nao ha nada para vender
+

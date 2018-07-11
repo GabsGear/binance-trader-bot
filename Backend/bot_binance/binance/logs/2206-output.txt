@@ -1,0 +1,584 @@
+[2018-07-06 14:02:03] logando na  api
+[2018-07-06 14:02:04] Login Ok
+[2018-07-06 14:02:06] 1- Iniciando rotina de compra
+[2018-07-06 14:02:06] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:02:06] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:02:06] 2- Iniciando rotina de venda 
+[2018-07-06 14:02:06] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:02:37] 1- Iniciando rotina de compra
+[2018-07-06 14:02:37] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:02:37] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:02:37] 2- Iniciando rotina de venda 
+[2018-07-06 14:02:37] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:03:09] 1- Iniciando rotina de compra
+[2018-07-06 14:03:09] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:03:09] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:03:09] 2- Iniciando rotina de venda 
+[2018-07-06 14:03:09] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:03:41] 1- Iniciando rotina de compra
+[2018-07-06 14:03:41] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:03:41] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:03:41] 2- Iniciando rotina de venda 
+[2018-07-06 14:03:41] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:04:12] 1- Iniciando rotina de compra
+[2018-07-06 14:04:12] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:04:12] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:04:12] 2- Iniciando rotina de venda 
+[2018-07-06 14:04:12] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:04:43] 1- Iniciando rotina de compra
+[2018-07-06 14:04:43] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:04:43] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:04:43] 2- Iniciando rotina de venda 
+[2018-07-06 14:04:43] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:05:14] 1- Iniciando rotina de compra
+[2018-07-06 14:05:14] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:05:14] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:05:14] 2- Iniciando rotina de venda 
+[2018-07-06 14:05:14] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:05:46] 1- Iniciando rotina de compra
+[2018-07-06 14:05:46] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:05:46] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:05:46] 2- Iniciando rotina de venda 
+[2018-07-06 14:05:46] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:06:17] 1- Iniciando rotina de compra
+[2018-07-06 14:06:17] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:06:17] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:06:17] 2- Iniciando rotina de venda 
+[2018-07-06 14:06:17] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:06:49] 1- Iniciando rotina de compra
+[2018-07-06 14:06:49] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:06:49] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:06:49] 2- Iniciando rotina de venda 
+[2018-07-06 14:06:49] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:07:21] 1- Iniciando rotina de compra
+[2018-07-06 14:07:21] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:07:21] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:07:21] 2- Iniciando rotina de venda 
+[2018-07-06 14:07:21] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:07:52] 1- Iniciando rotina de compra
+[2018-07-06 14:07:52] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:07:52] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:07:52] 2- Iniciando rotina de venda 
+[2018-07-06 14:07:52] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:08:23] 1- Iniciando rotina de compra
+[2018-07-06 14:08:23] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:08:23] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:08:23] 2- Iniciando rotina de venda 
+[2018-07-06 14:08:23] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:08:55] 1- Iniciando rotina de compra
+[2018-07-06 14:08:55] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:08:56] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:08:56] 2- Iniciando rotina de venda 
+[2018-07-06 14:08:56] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:09:27] 1- Iniciando rotina de compra
+[2018-07-06 14:09:27] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:09:27] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:09:27] 2- Iniciando rotina de venda 
+[2018-07-06 14:09:27] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:09:59] 1- Iniciando rotina de compra
+[2018-07-06 14:09:59] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:09:59] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:09:59] 2- Iniciando rotina de venda 
+[2018-07-06 14:09:59] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:10:29] 1- Iniciando rotina de compra
+[2018-07-06 14:10:29] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:10:29] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:10:29] 2- Iniciando rotina de venda 
+[2018-07-06 14:10:29] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:11:02] 1- Iniciando rotina de compra
+[2018-07-06 14:11:02] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:11:02] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:11:02] 2- Iniciando rotina de venda 
+[2018-07-06 14:11:02] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:11:33] 1- Iniciando rotina de compra
+[2018-07-06 14:11:33] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:11:33] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:11:33] 2- Iniciando rotina de venda 
+[2018-07-06 14:11:33] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:12:05] 1- Iniciando rotina de compra
+[2018-07-06 14:12:05] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:12:05] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:12:05] 2- Iniciando rotina de venda 
+[2018-07-06 14:12:05] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:12:36] 1- Iniciando rotina de compra
+[2018-07-06 14:12:36] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:12:36] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:12:36] 2- Iniciando rotina de venda 
+[2018-07-06 14:12:36] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:13:08] 1- Iniciando rotina de compra
+[2018-07-06 14:13:08] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:13:08] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:13:08] 2- Iniciando rotina de venda 
+[2018-07-06 14:13:08] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:13:39] 1- Iniciando rotina de compra
+[2018-07-06 14:13:39] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:13:39] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:13:39] 2- Iniciando rotina de venda 
+[2018-07-06 14:13:39] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:14:10] 1- Iniciando rotina de compra
+[2018-07-06 14:14:10] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:14:10] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:14:10] 2- Iniciando rotina de venda 
+[2018-07-06 14:14:10] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:14:41] 1- Iniciando rotina de compra
+[2018-07-06 14:14:41] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:14:41] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:14:41] 2- Iniciando rotina de venda 
+[2018-07-06 14:14:41] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:15:13] 1- Iniciando rotina de compra
+[2018-07-06 14:15:13] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:15:13] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:15:13] 2- Iniciando rotina de venda 
+[2018-07-06 14:15:13] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:15:44] 1- Iniciando rotina de compra
+[2018-07-06 14:15:44] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:15:44] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:15:44] 2- Iniciando rotina de venda 
+[2018-07-06 14:15:44] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:16:16] 1- Iniciando rotina de compra
+[2018-07-06 14:16:16] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:16:16] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:16:16] 2- Iniciando rotina de venda 
+[2018-07-06 14:16:16] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:16:48] 1- Iniciando rotina de compra
+[2018-07-06 14:16:48] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:16:48] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:16:48] 2- Iniciando rotina de venda 
+[2018-07-06 14:16:48] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:17:19] 1- Iniciando rotina de compra
+[2018-07-06 14:17:19] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:17:20] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:17:20] 2- Iniciando rotina de venda 
+[2018-07-06 14:17:20] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:17:51] 1- Iniciando rotina de compra
+[2018-07-06 14:17:51] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:17:51] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:17:51] 2- Iniciando rotina de venda 
+[2018-07-06 14:17:51] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:18:23] 1- Iniciando rotina de compra
+[2018-07-06 14:18:23] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:18:23] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:18:23] 2- Iniciando rotina de venda 
+[2018-07-06 14:18:23] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:18:54] 1- Iniciando rotina de compra
+[2018-07-06 14:18:54] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:18:54] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:18:54] 2- Iniciando rotina de venda 
+[2018-07-06 14:18:54] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:19:26] 1- Iniciando rotina de compra
+[2018-07-06 14:19:26] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:19:26] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:19:26] 2- Iniciando rotina de venda 
+[2018-07-06 14:19:26] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:19:58] 1- Iniciando rotina de compra
+[2018-07-06 14:19:58] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:19:58] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:19:58] 2- Iniciando rotina de venda 
+[2018-07-06 14:19:58] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:20:30] 1- Iniciando rotina de compra
+[2018-07-06 14:20:30] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:20:30] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:20:30] 2- Iniciando rotina de venda 
+[2018-07-06 14:20:30] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:21:02] 1- Iniciando rotina de compra
+[2018-07-06 14:21:02] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:21:02] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:21:02] 2- Iniciando rotina de venda 
+[2018-07-06 14:21:02] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:21:34] 1- Iniciando rotina de compra
+[2018-07-06 14:21:34] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:21:34] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:21:34] 2- Iniciando rotina de venda 
+[2018-07-06 14:21:34] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:22:06] 1- Iniciando rotina de compra
+[2018-07-06 14:22:06] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:22:06] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:22:06] 2- Iniciando rotina de venda 
+[2018-07-06 14:22:06] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:22:37] 1- Iniciando rotina de compra
+[2018-07-06 14:22:37] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:22:37] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:22:37] 2- Iniciando rotina de venda 
+[2018-07-06 14:22:37] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:23:09] 1- Iniciando rotina de compra
+[2018-07-06 14:23:09] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:23:09] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:23:09] 2- Iniciando rotina de venda 
+[2018-07-06 14:23:09] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:23:40] 1- Iniciando rotina de compra
+[2018-07-06 14:23:40] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:23:40] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:23:40] 2- Iniciando rotina de venda 
+[2018-07-06 14:23:40] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:24:12] 1- Iniciando rotina de compra
+[2018-07-06 14:24:12] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:24:12] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:24:12] 2- Iniciando rotina de venda 
+[2018-07-06 14:24:12] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:24:43] 1- Iniciando rotina de compra
+[2018-07-06 14:24:43] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:24:43] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:24:43] 2- Iniciando rotina de venda 
+[2018-07-06 14:24:43] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:25:15] 1- Iniciando rotina de compra
+[2018-07-06 14:25:15] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:25:15] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:25:15] 2- Iniciando rotina de venda 
+[2018-07-06 14:25:15] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:25:46] 1- Iniciando rotina de compra
+[2018-07-06 14:25:46] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:25:46] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:25:46] 2- Iniciando rotina de venda 
+[2018-07-06 14:25:46] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:26:18] 1- Iniciando rotina de compra
+[2018-07-06 14:26:18] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:26:18] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:26:18] 2- Iniciando rotina de venda 
+[2018-07-06 14:26:18] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:26:50] 1- Iniciando rotina de compra
+[2018-07-06 14:26:50] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:26:50] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:26:50] 2- Iniciando rotina de venda 
+[2018-07-06 14:26:50] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:27:21] 1- Iniciando rotina de compra
+[2018-07-06 14:27:21] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:27:21] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:27:22] 2- Iniciando rotina de venda 
+[2018-07-06 14:27:22] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:27:52] 1- Iniciando rotina de compra
+[2018-07-06 14:27:52] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:27:52] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:27:52] 2- Iniciando rotina de venda 
+[2018-07-06 14:27:52] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:28:24] 1- Iniciando rotina de compra
+[2018-07-06 14:28:24] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:28:24] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:28:24] 2- Iniciando rotina de venda 
+[2018-07-06 14:28:24] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:28:56] 1- Iniciando rotina de compra
+[2018-07-06 14:28:56] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:28:56] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:28:56] 2- Iniciando rotina de venda 
+[2018-07-06 14:28:56] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:29:28] 1- Iniciando rotina de compra
+[2018-07-06 14:29:28] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:29:28] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:29:28] 2- Iniciando rotina de venda 
+[2018-07-06 14:29:28] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:29:58] 1- Iniciando rotina de compra
+[2018-07-06 14:29:58] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:29:58] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:29:58] 2- Iniciando rotina de venda 
+[2018-07-06 14:29:58] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:30:30] 1- Iniciando rotina de compra
+[2018-07-06 14:30:30] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:30:30] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:30:30] 2- Iniciando rotina de venda 
+[2018-07-06 14:30:30] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:31:02] 1- Iniciando rotina de compra
+[2018-07-06 14:31:02] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:31:02] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:31:02] 2- Iniciando rotina de venda 
+[2018-07-06 14:31:02] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:31:33] 1- Iniciando rotina de compra
+[2018-07-06 14:31:33] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:31:33] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:31:33] 2- Iniciando rotina de venda 
+[2018-07-06 14:31:33] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:32:04] 1- Iniciando rotina de compra
+[2018-07-06 14:32:04] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:32:04] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:32:04] 2- Iniciando rotina de venda 
+[2018-07-06 14:32:04] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:32:36] 1- Iniciando rotina de compra
+[2018-07-06 14:32:36] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:32:36] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:32:36] 2- Iniciando rotina de venda 
+[2018-07-06 14:32:36] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:33:07] 1- Iniciando rotina de compra
+[2018-07-06 14:33:07] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:33:07] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:33:07] 2- Iniciando rotina de venda 
+[2018-07-06 14:33:07] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:33:38] 1- Iniciando rotina de compra
+[2018-07-06 14:33:38] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:33:39] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:33:39] 2- Iniciando rotina de venda 
+[2018-07-06 14:33:39] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:34:10] 1- Iniciando rotina de compra
+[2018-07-06 14:34:10] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:34:10] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:34:10] 2- Iniciando rotina de venda 
+[2018-07-06 14:34:10] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:34:42] 1- Iniciando rotina de compra
+[2018-07-06 14:34:42] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:34:42] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:34:42] 2- Iniciando rotina de venda 
+[2018-07-06 14:34:42] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:35:13] 1- Iniciando rotina de compra
+[2018-07-06 14:35:13] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:35:13] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:35:13] 2- Iniciando rotina de venda 
+[2018-07-06 14:35:13] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:35:45] 1- Iniciando rotina de compra
+[2018-07-06 14:35:45] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:35:45] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:35:45] 2- Iniciando rotina de venda 
+[2018-07-06 14:35:45] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:36:17] 1- Iniciando rotina de compra
+[2018-07-06 14:36:17] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:36:17] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:36:17] 2- Iniciando rotina de venda 
+[2018-07-06 14:36:17] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:36:48] 1- Iniciando rotina de compra
+[2018-07-06 14:36:48] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:36:48] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:36:48] 2- Iniciando rotina de venda 
+[2018-07-06 14:36:48] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:37:20] 1- Iniciando rotina de compra
+[2018-07-06 14:37:20] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:37:20] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:37:20] 2- Iniciando rotina de venda 
+[2018-07-06 14:37:20] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:37:52] 1- Iniciando rotina de compra
+[2018-07-06 14:37:52] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:37:52] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:37:52] 2- Iniciando rotina de venda 
+[2018-07-06 14:37:52] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:38:24] 1- Iniciando rotina de compra
+[2018-07-06 14:38:24] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:38:24] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:38:24] 2- Iniciando rotina de venda 
+[2018-07-06 14:38:24] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:38:56] 1- Iniciando rotina de compra
+[2018-07-06 14:38:56] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:38:56] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:38:56] 2- Iniciando rotina de venda 
+[2018-07-06 14:38:56] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:39:27] 1- Iniciando rotina de compra
+[2018-07-06 14:39:27] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:39:27] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:39:27] 2- Iniciando rotina de venda 
+[2018-07-06 14:39:27] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:39:58] 1- Iniciando rotina de compra
+[2018-07-06 14:39:58] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:39:58] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:39:58] 2- Iniciando rotina de venda 
+[2018-07-06 14:39:58] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:40:29] 1- Iniciando rotina de compra
+[2018-07-06 14:40:29] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:40:29] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:40:29] 2- Iniciando rotina de venda 
+[2018-07-06 14:40:29] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:41:02] 1- Iniciando rotina de compra
+[2018-07-06 14:41:02] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:41:02] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:41:02] 2- Iniciando rotina de venda 
+[2018-07-06 14:41:02] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:41:34] 1- Iniciando rotina de compra
+[2018-07-06 14:41:34] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:41:34] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:41:34] 2- Iniciando rotina de venda 
+[2018-07-06 14:41:34] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:42:05] 1- Iniciando rotina de compra
+[2018-07-06 14:42:05] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:42:05] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:42:05] 2- Iniciando rotina de venda 
+[2018-07-06 14:42:05] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:42:40] 1- Iniciando rotina de compra
+[2018-07-06 14:42:40] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:42:40] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:42:40] 2- Iniciando rotina de venda 
+[2018-07-06 14:42:40] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:43:12] 1- Iniciando rotina de compra
+[2018-07-06 14:43:12] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:43:12] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:43:12] 2- Iniciando rotina de venda 
+[2018-07-06 14:43:12] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:43:44] 1- Iniciando rotina de compra
+[2018-07-06 14:43:44] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:43:44] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:43:44] 2- Iniciando rotina de venda 
+[2018-07-06 14:43:44] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:44:17] 1- Iniciando rotina de compra
+[2018-07-06 14:44:17] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:44:17] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:44:17] 2- Iniciando rotina de venda 
+[2018-07-06 14:44:17] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:44:49] 1- Iniciando rotina de compra
+[2018-07-06 14:44:49] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:44:49] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:44:49] 2- Iniciando rotina de venda 
+[2018-07-06 14:44:49] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:45:22] 1- Iniciando rotina de compra
+[2018-07-06 14:45:22] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:45:22] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:45:22] 2- Iniciando rotina de venda 
+[2018-07-06 14:45:22] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:45:54] 1- Iniciando rotina de compra
+[2018-07-06 14:45:54] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:45:54] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:45:55] 2- Iniciando rotina de venda 
+[2018-07-06 14:45:55] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:46:25] 1- Iniciando rotina de compra
+[2018-07-06 14:46:25] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:46:25] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:46:25] 2- Iniciando rotina de venda 
+[2018-07-06 14:46:25] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:46:57] 1- Iniciando rotina de compra
+[2018-07-06 14:46:57] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:46:57] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:46:57] 2- Iniciando rotina de venda 
+[2018-07-06 14:46:57] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:47:28] 1- Iniciando rotina de compra
+[2018-07-06 14:47:28] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:47:28] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:47:28] 2- Iniciando rotina de venda 
+[2018-07-06 14:47:28] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:48:00] 1- Iniciando rotina de compra
+[2018-07-06 14:48:00] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:48:00] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:48:00] 2- Iniciando rotina de venda 
+[2018-07-06 14:48:00] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:48:31] 1- Iniciando rotina de compra
+[2018-07-06 14:48:31] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:48:31] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:48:31] 2- Iniciando rotina de venda 
+[2018-07-06 14:48:31] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:49:03] 1- Iniciando rotina de compra
+[2018-07-06 14:49:03] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:49:03] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:49:03] 2- Iniciando rotina de venda 
+[2018-07-06 14:49:03] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:49:34] 1- Iniciando rotina de compra
+[2018-07-06 14:49:34] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:49:34] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:49:34] 2- Iniciando rotina de venda 
+[2018-07-06 14:49:34] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:50:06] 1- Iniciando rotina de compra
+[2018-07-06 14:50:06] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:50:06] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:50:06] 2- Iniciando rotina de venda 
+[2018-07-06 14:50:06] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:50:38] 1- Iniciando rotina de compra
+[2018-07-06 14:50:38] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:50:38] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:50:38] 2- Iniciando rotina de venda 
+[2018-07-06 14:50:38] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:51:10] 1- Iniciando rotina de compra
+[2018-07-06 14:51:10] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:51:10] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:51:10] 2- Iniciando rotina de venda 
+[2018-07-06 14:51:10] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:51:42] 1- Iniciando rotina de compra
+[2018-07-06 14:51:42] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:51:42] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:51:42] 2- Iniciando rotina de venda 
+[2018-07-06 14:51:42] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:52:14] 1- Iniciando rotina de compra
+[2018-07-06 14:52:14] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:52:14] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:52:14] 2- Iniciando rotina de venda 
+[2018-07-06 14:52:14] ----Ainda nao ha nada para vender
+
+[2018-07-06 14:52:45] 1- Iniciando rotina de compra
+[2018-07-06 14:52:45] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:52:45] [+] lastlow:3.143e-05/lowerband:3.0276790886130152e-05
+[2018-07-06 14:52:45] 2- Iniciando rotina de venda 
+[2018-07-06 14:52:45] ----Ainda nao ha nada para vender
+

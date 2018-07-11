@@ -1,0 +1,80 @@
+[2018-06-29 23:05:11] logando na  api
+[2018-06-29 23:05:12] Login Ok
+[2018-06-29 23:05:13] 1- Iniciando rotina de compra
+[2018-06-29 23:05:13] indicou venda no break.
+[2018-06-29 23:05:13] indicou venda no break.
+[2018-06-29 23:05:13] 2- Iniciando rotina de venda 
+[2018-06-29 23:05:13] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:05:43] 1- Iniciando rotina de compra
+[2018-06-29 23:05:43] indicou venda no break.
+[2018-06-29 23:05:43] indicou venda no break.
+[2018-06-29 23:05:43] 2- Iniciando rotina de venda 
+[2018-06-29 23:05:43] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:06:13] 1- Iniciando rotina de compra
+[2018-06-29 23:06:13] indicou venda no break.
+[2018-06-29 23:06:13] indicou venda no break.
+[2018-06-29 23:06:13] 2- Iniciando rotina de venda 
+[2018-06-29 23:06:13] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:06:44] 1- Iniciando rotina de compra
+[2018-06-29 23:06:44] indicou venda no break.
+[2018-06-29 23:06:44] indicou venda no break.
+[2018-06-29 23:06:44] 2- Iniciando rotina de venda 
+[2018-06-29 23:06:44] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:07:14] 1- Iniciando rotina de compra
+[2018-06-29 23:07:14] indicou venda no break.
+[2018-06-29 23:07:14] indicou venda no break.
+[2018-06-29 23:07:14] 2- Iniciando rotina de venda 
+[2018-06-29 23:07:14] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:07:45] 1- Iniciando rotina de compra
+[2018-06-29 23:07:45] indicou venda no break.
+[2018-06-29 23:07:45] indicou venda no break.
+[2018-06-29 23:07:45] 2- Iniciando rotina de venda 
+[2018-06-29 23:07:45] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:08:15] 1- Iniciando rotina de compra
+[2018-06-29 23:08:15] indicou venda no break.
+[2018-06-29 23:08:15] indicou venda no break.
+[2018-06-29 23:08:15] 2- Iniciando rotina de venda 
+[2018-06-29 23:08:15] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:08:46] 1- Iniciando rotina de compra
+[2018-06-29 23:08:46] indicou venda no break.
+[2018-06-29 23:08:46] indicou venda no break.
+[2018-06-29 23:08:46] 2- Iniciando rotina de venda 
+[2018-06-29 23:08:46] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:09:16] 1- Iniciando rotina de compra
+[2018-06-29 23:09:16] indicou venda no break.
+[2018-06-29 23:09:16] indicou venda no break.
+[2018-06-29 23:09:16] 2- Iniciando rotina de venda 
+[2018-06-29 23:09:16] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:09:47] 1- Iniciando rotina de compra
+[2018-06-29 23:09:47] indicou venda no break.
+[2018-06-29 23:09:47] indicou venda no break.
+[2018-06-29 23:09:47] 2- Iniciando rotina de venda 
+[2018-06-29 23:09:47] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:10:17] 1- Iniciando rotina de compra
+[2018-06-29 23:10:17] indicou venda no break.
+[2018-06-29 23:10:17] indicou venda no break.
+[2018-06-29 23:10:17] 2- Iniciando rotina de venda 
+[2018-06-29 23:10:17] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:10:48] 1- Iniciando rotina de compra
+[2018-06-29 23:10:48] indicou venda no break.
+[2018-06-29 23:10:48] indicou venda no break.
+[2018-06-29 23:10:48] 2- Iniciando rotina de venda 
+[2018-06-29 23:10:48] ----Ainda nao ha nada para vender
+
+[2018-06-29 23:11:18] 1- Iniciando rotina de compra
+[2018-06-29 23:11:18] indicou venda no break.
+[2018-06-29 23:11:18] indicou venda no break.
+[2018-06-29 23:11:18] 2- Iniciando rotina de venda 
+[2018-06-29 23:11:18] ----Ainda nao ha nada para vender
+
