@@ -9,8 +9,7 @@ import helpers
 class Db:
     def getConn(self):
         try:
-            #db = mysql.connect(host="localhost", user="root", passwd="gabsghell", db="protrade")
-            db = mysql.connect(" ")
+            db = mysql.connect(" try do it")
             cursor = db.cursor()
             return db, cursor  
         except:
